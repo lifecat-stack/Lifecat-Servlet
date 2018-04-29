@@ -1,0 +1,77 @@
+img.loginBackgroundImg{
+    display: block;
+    margin:0px auto;
+  }
+  div.loginSmallDiv{
+    background-color: white;
+    position: absolute;
+    right:80px;
+    top:180px;
+    width:350px;
+    height:400px;
+    padding:60px 25px 80px 25px;
+  }
+  div.login_account_text{
+    color: #3c3c3c;
+    font-size:16px;
+    font-weight:bold;
+    margin-top: 25px;
+  }
+  div.loginInput{
+    border:1px solid #CBCBCB;
+    margin:20px 0px;
+  }
+  div.loginInput span.loginInputIcon{
+    margin:0px;
+    background-color: #CBCBCB;
+    width:40px;
+    height:40px;
+    display:inline-block;
+  }
+  span.loginInputIcon span.glyphicon{
+    font-size: 22px;
+    position: relative;
+    left:9px;
+    top: 9px;
+    color: #606060;
+
+  }
+  div.loginInput input{
+    display: inline-block;
+    border:0px solid transparent;
+    width:244px;
+    height:30px;
+    position:relative;;
+    left:6px;
+    top:6px;
+  }
+  div.loginDiv{
+    font-size:15px;
+    font-family: "Microsoft YaHei UI";
+  }
+  a{
+    color: #999;
+
+  }
+  a:hover{
+    text-decoration: none;
+    color:#428BCA;
+  }
+  button.blueButton{
+    color:white;
+    background-color: #428BCA;
+    font-size: 14px;
+    font-weight: bold;
+
+  }
+  div.nav{
+    height:100px;
+    font-size:30px;
+    color: #464646;
+  }
+  div.loginErrorMessageDiv {
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    display: none;
+  }

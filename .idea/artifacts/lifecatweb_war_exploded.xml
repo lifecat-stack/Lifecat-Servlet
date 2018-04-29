@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lifecatweb:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/lifecatweb_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="lifecatweb/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="lifecatweb" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lifecatweb:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/lifecatweb_war</output-path>
+    <root id="archive" name="lifecatweb_war.war">
+      <element id="artifact" artifact-name="lifecatweb:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
