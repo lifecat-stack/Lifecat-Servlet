@@ -34,10 +34,10 @@ public class DiaryDAO extends BaseDAO implements DAO {
     public ArrayList<Diary> getDiaryList(int id) {
         ArrayList<Diary> diaries = new ArrayList<>();
         ResultSet resultSet = exeSelect("*", table, id);
-        System.out.println("diary成功获取到resultset");
+        logger.info("diary成功获取到resultset");
         try {
             while (resultSet.next()) {
-                Diary diary=new Diary();
+                Diary diary = new Diary();
                 diary.setName(resultSet.getString(diaryname));
                 diary.setDescription(resultSet.getString(diarydescription));
                 diary.setDate(resultSet.getString(diarydate));
@@ -45,7 +45,7 @@ public class DiaryDAO extends BaseDAO implements DAO {
                 diaries.add(diary);
             }
         } catch (SQLException e) {
-            System.out.println("读取diary的时候出错");
+            logger.warning("读取diary的时候出错");
             e.printStackTrace();
         }
         return diaries;

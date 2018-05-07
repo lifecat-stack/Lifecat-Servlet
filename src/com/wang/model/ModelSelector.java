@@ -30,9 +30,6 @@ public class ModelSelector {
             case "GetDiary":
                 model = new GetDiaryModel();
                 break;
-            case "GetImg":
-                model = new GetImgModel();
-                break;
             case "GetMsg":
                 model = new GetMsgModel();
                 break;

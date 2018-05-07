@@ -1,16 +1,11 @@
 package com.wang.model;
 
-import com.wang.bean.Bean;
 import com.wang.bean.User;
-import com.wang.dao.BaseDAO;
 import com.wang.dao.UserDAO;
-import com.wang.db.HOST;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.ResultSet;
 
 /**
  * @name LoginModel
@@ -63,17 +58,17 @@ public class LoginModel extends MyModel{
         /* 用户名不存在 */
         if (bean.getName() == null) {
             errorMsg.setError("用户名不存在");
-            page = host_index;
+            page = page_index;
         }
         /* 密码错误 */
         else if (!bean.getPassword().equals(password)) {
             errorMsg.setError("密码错误");
-            page = host_index;
+            page = page_index;
         }
         /* username password通过验证 */
         else {
             /* 转发到userhome.jsp */
-            page = host_userhome;
+            page = page_userhome;
             req.getSession().setAttribute("User", bean);
             success = true;
         }

@@ -34,7 +34,7 @@ public class ImageDAO extends BaseDAO implements DAO {
     public ArrayList getImageList(int id) {
         ArrayList<Image> images = new ArrayList<>();
         ResultSet resultSet = exeSelect("*", table, id);
-        System.out.println("image成功获取到resultset");
+        logger.info("image成功获取到resultset");
         try {
             while (resultSet.next()) {
                 Image image = new Image();
@@ -45,7 +45,7 @@ public class ImageDAO extends BaseDAO implements DAO {
                 images.add(image);
             }
         } catch (SQLException e) {
-            System.out.println("读取image的时候出错");
+            logger.warning("读取image的时候出错");
             e.printStackTrace();
         }
         return images;

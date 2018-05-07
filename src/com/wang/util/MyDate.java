@@ -1,4 +1,4 @@
-package com.wang.db;
+package com.wang.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

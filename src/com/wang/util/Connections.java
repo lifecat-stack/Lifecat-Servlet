@@ -1,22 +1,26 @@
-package com.wang.db;
+package com.wang.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Logger;
+
 /**
  * @name Connections
  * @description 获取数据库连接 
  * @auther ten
  */
 public class Connections implements HOST{
+
+	private static Logger logger=Logger.getLogger("connections");
 	
 	/* jdbc驱动 */
 	static {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-//			System.out.println("success to load jdbc.Driver");
+			logger.info("success to load jdbc.Driver");
 		} catch (ClassNotFoundException e) {
-		    System.out.println("failure to load jdbc.Driver");
+		    logger.warning("failure to load jdbc.Driver");
 			e.printStackTrace();
 		}
 	}
@@ -29,12 +33,12 @@ public class Connections implements HOST{
 		String url = String.format(
 				"jdbc:mysql://%s:%d/%s",
 				ip, port, database);
-//		System.out.println("try to connect database!");
+//		logger.info();("try to connect database!");
 		Connection c= DriverManager.getConnection(url, loginName, password);
 		if(!c.isClosed()){
-//			System.out.println("Succeeded connecting to the Database!");
+			logger.info("Succeeded connecting to the Database!");
 		}else{
-			System.out.println("connecting error!");
+			logger.warning("connecting error!");
 		}
 		return c;
 	}

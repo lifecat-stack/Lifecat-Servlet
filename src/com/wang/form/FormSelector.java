@@ -1,11 +1,15 @@
 package com.wang.form;
 
+import java.util.logging.Logger;
+
 /**
  * @name FormSelector
  * @description 工厂模式:根据action选择返回对应的Form
  * @auther ten
  */
 public class FormSelector {
+        private static Logger logger=Logger.getLogger("FormSelector");
+
     public static MyForm select(String action) {
         MyForm form;
         switch (action) {
@@ -28,7 +32,7 @@ public class FormSelector {
                 form = new UpDiaryForm();
                 break;
             default:
-                System.out.println("FormSelector没有此表单项");
+                logger.warning("FormSelector没有此表单项");
                 form = null;
         }
         return form;

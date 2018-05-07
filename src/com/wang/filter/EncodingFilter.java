@@ -1,6 +1,7 @@
 package com.wang.filter;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -18,6 +19,8 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class EncodingFilter implements Filter {
 
+    private static Logger logger=Logger.getLogger("EncodingFilter");
+
     @Override
     public void destroy() {
     }
@@ -29,14 +32,14 @@ public class EncodingFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
 
-        System.out.println("EncodingFilter doFilter()");
+        logger.info("EncodingFilter doFilter()");
 
         request.setCharacterEncoding("UTF-8");
 
-        System.out.println("EncodinFilter执行完毕");
+        logger.info("EncodinFilter执行完毕");
 
         if (chain==null){
-            System.out.println("encoding chain null 异常");
+            logger.warning("encoding chain null 异常");
         }else {
              chain.doFilter(request, response);
         }

@@ -1,11 +1,12 @@
 package com.wang.dao;
 
-import com.wang.db.Connections;
+import com.wang.util.Connections;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.logging.Logger;
 
 /**
  * @name BaseDAO实现类
@@ -13,6 +14,8 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class BaseDAO implements DAO {
+    protected static Logger logger = Logger.getLogger("BaseDAO");
+
     /*  insert into "table" values("attributes") */
     @Override
     public boolean exeInsert(String table, Object[] attributes) {
@@ -40,7 +43,8 @@ public class BaseDAO implements DAO {
             }
         }
         String sql = builder.toString();
-        System.out.println("插入操作：" + sql);
+
+        logger.info("插入操作：" + sql);
 
         /* 执行sql */
         return exeSQLIDU(sql);
@@ -51,7 +55,8 @@ public class BaseDAO implements DAO {
     public boolean exeDelete(String table, String attribute, String value) {
         /* 生成sql */
         String sql = "delete from " + table + " where " + attribute + " = " + value;
-        System.out.println("删除操作：" + sql);
+
+        logger.info("删除操作：" + sql);
 
         /* 执行sql */
         return exeSQLIDU(sql);
@@ -62,7 +67,8 @@ public class BaseDAO implements DAO {
     public boolean exeUpdate(String table, String attribute, String value, int id) {
         /* 生成sql */
         String sql = "update " + table + " set " + attribute + " = \"" + value + "\" where " + "id = " + id;
-        System.out.println("更新操作：" + sql);
+
+        logger.info("更新操作：" + sql);
 
         /* 执行sql */
         return exeSQLIDU(sql);
@@ -73,7 +79,8 @@ public class BaseDAO implements DAO {
     public ResultSet exeSelect(String attribute, String table, int id) {
         /* 生成sql */
         String sql = "select " + attribute + " from " + table + " where id = " + id;
-        System.out.println("选择操作：" + sql);
+
+        logger.info("选择操作：" + sql);
 
         ResultSet resultSet = exeSQLS(sql);
 
@@ -90,10 +97,10 @@ public class BaseDAO implements DAO {
             /* 获取结果集 */
             preparedStatement.executeUpdate();
 
-            System.out.println("exeSQLIDU成功");
+            logger.info("exeSQLIDU成功");
             return true;
         } catch (SQLException e) {
-            System.out.println("exeSQLIDU失败");
+            logger.warning("exeSQLIDU失败");
             e.printStackTrace();
             return false;
         }
@@ -109,10 +116,10 @@ public class BaseDAO implements DAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             /* 获取结果集 */
             resultSet = preparedStatement.executeQuery();
-            System.out.println("exeSQLS成功");
+            logger.info("exeSQLS成功");
             return resultSet;
         } catch (SQLException e) {
-            System.out.println("exeSQLS失败");
+            logger.warning("exeSQLS失败");
             e.printStackTrace();
             return null;
         }
@@ -120,6 +127,6 @@ public class BaseDAO implements DAO {
 
     /* 打印错误信息 */
     public static void errorMsg(String msg) {
-        System.out.println(msg + " ERROR");
+        logger.warning(msg + " ERROR");
     }
 }

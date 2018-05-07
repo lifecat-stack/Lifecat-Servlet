@@ -3,11 +3,9 @@ package com.wang.model;
 import com.wang.bean.User;
 import com.wang.dao.UserDAO;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.ResultSet;
 
 /**
  * @name RegisterModel
@@ -54,14 +52,14 @@ public class RegisterModel extends MyModel {
         /* 若创建成功 */
         if (success) {
             System.out.println("注册成功");
-            page = host_userhome;
+            page = page_userhome;
             req.getSession().setAttribute("User", bean);
 
         }
         /* 注册失败 */
         else {
             System.out.println("注册失败");
-            page = host_index;
+            page = page_index;
         }
         try {
             resp.sendRedirect(page);

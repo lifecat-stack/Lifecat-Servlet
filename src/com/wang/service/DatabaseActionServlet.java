@@ -1,6 +1,6 @@
 package com.wang.service;
 
-import com.wang.db.HOST;
+import com.wang.util.HOST;
 import com.wang.form.FormResult;
 import com.wang.model.ModelSelector;
 import com.wang.model.MyModel;
@@ -12,11 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @name ActionServlet
+ * @name DatabaseActionServlet
  * @description 控制器:处理业务逻辑,调用模型model
  * @auther ten
  */
-public class ActionServlet extends HttpServlet implements HOST {
+public class DatabaseActionServlet extends HttpServlet implements HOST {
     private static int flag=0;
 
     @Override
@@ -35,7 +35,7 @@ public class ActionServlet extends HttpServlet implements HOST {
             /* 若有错误，转发到请求页面page */
             if (result.getIsError()) {
                 String page = req.getRequestURI();
-                page=host_index;
+                page= page_index;
 
                 //测试request.getRequestURI()能否重定向回请求界面
                 System.out.println("测试:请求URI为-->" + page);
@@ -67,7 +67,7 @@ public class ActionServlet extends HttpServlet implements HOST {
         }else {
             System.out.println("post 请求为 null");
             if (flag==0) {
-                resp.sendRedirect(host_index);
+                resp.sendRedirect(page_index);
                 flag++;
             }
         }

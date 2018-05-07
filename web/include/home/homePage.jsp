@@ -5,7 +5,8 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.wang.model.GetDiaryModel" %>
 <%@ page import="com.wang.model.GetImgModel" %>
-<%@ page import="static com.wang.db.HOST.*" %>
+<%@ page import="static com.wang.util.HOST.*" %>
+<%@ page import="java.util.logging.Logger" %>
 
 <script>
     $(function () {
@@ -101,12 +102,11 @@
 
             <%-- 个人信息栏 --%>
             <div class="row" status="information">
-                <div class="col-md-3">
-
+                <div class="col-md-1">
 
                 </div>
                 <div class="col-md-3">
-                    <h2>信息:</h2>
+                    <h2>个人信息:</h2>
 
                     <table>
                         <%
@@ -194,7 +194,7 @@
 
                 <!-- /.row -->
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-1">
 
                     </div>
 
@@ -216,7 +216,7 @@
                                     no_diary.setName("成长寄语" + i);
                                     no_diary.setDescription("美好的午后，写下成长的寄语" + i);
                                     no_diary.setDate("2018-" + i);
-                                    no_diary.setPath(host_userhome);
+                                    no_diary.setPath(page_userhome);
                                     diaries.add(no_diary);
                                 }
                             }
@@ -261,39 +261,38 @@
                         <a href=imageshowpage.jsp><h2>成长相册:</h2></a>
                         <%--获取图片链接--%>
                         <%
-                            ArrayList<Image> images = null;
-                            /* 若当期有用户登录 */
-                            if (user != null && !user.getName().equals("admin")) {
-                                GetImgModel model = new GetImgModel();
-                                images = model.getImages(id);
-                            }
-                            /* 若无用户登录，添加3条默认图片 */
-                            if (images == null) {
-                                images = new ArrayList<>();
-                                for (int i = 0; i < 3; i++) {
-                                    Image no_image = new Image();
-                                    no_image.setImagename("成长相册" + i);
-                                    no_image.setImagedescription("美好的午后，记录美好的时刻" + i);
-                                    no_image.setImagedate("2018-" + i);
-                                    no_image.setImagepath("http://"+ip+":8080/lifecatweb/upimage/image" + i + ".jpg");
-                                    images.add(no_image);
-                                }
-                            }
+                            //获取demo图片在服务器上的路径
+                            String[] paths = new GetImgModel().getDemoImages();
                         %>
                         <table>
                             <%
-                                /* 循环打印图片信息 */
-                                for (Image image : images) {
+                                /*  循环打印demo图片img
+                                 *  倒叙:最新上传的图片最前展示
+                                 *  日志:demo_image_path打印demo图片链接
+                                 */
+                                for (int i = paths.length - 1; i > 3; i -= 4) {
+                                    Logger logger = Logger.getLogger("demo_image_path");
+                                    logger.info(paths[i]);
+                                    logger.info(paths[i - 1]);
+                                    logger.info(paths[i - 2]);
+                                    logger.info(paths[i - 3]);
                             %>
                             <tr class="row">
-                                <td class="col-md-3"></td>
-                                <td class="col-md-3"><span><img src=<%=image.getImagepath()%>
-                                                                        height="100" width="100"
+                                <td class="col-md-3"><span><img src=<%=paths[i]%>
+                                                                        height="200" width="200"
                                                                 style="margin-top: 20px;"/> </span>
                                 </td>
-                                <td class="col-md-6">
-                                    <span><%=image.getImagename() + ":"%></span>
-                                    <span><%=image.getImagedescription()%></span>
+                                <td class="col-md-3"><span><img src=<%=paths[i-1]%>
+                                                                        height="200" width="200"
+                                                                style="margin-top: 20px;"/> </span>
+                                </td>
+                                <td class="col-md-3"><span><img src=<%=paths[i-2]%>
+                                                                        height="200" width="200"
+                                                                style="margin-top: 20px;"/> </span>
+                                </td>
+                                <td class="col-md-3"><span><img src=<%=paths[i-3]%>
+                                                                        height="200" width="200"
+                                                                style="margin-top: 20px;"/> </span>
                                 </td>
                             </tr>
                             <%

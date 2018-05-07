@@ -1,34 +1,45 @@
 package com.wang.model;
 
-import com.wang.bean.Image;
-import com.wang.dao.ImageDAO;
+import com.wang.util.HOST;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.sql.ResultSet;
-import java.util.ArrayList;
+import java.io.*;
+import java.util.Arrays;
+
 /**
  * @name GetImgModel
- * @description 获取图片列表
+ * @description 获取upimage文件夹下的所有图片路径
  * @auther ten
  */
-public class GetImgModel extends MyModel {
-    private ImageDAO dao;
-    private ArrayList<Image> images;
+public class GetImgModel implements HOST {
+    /**
+     * @name 获取图片链接
+     * @description imageshow.jsp-->获取所有图片的路径
+     */
+    public static String[] getImages() {
+        //获取图片目录
+        File directory = new File(image_path);
+        //获取目录下所有文件
+        File[] files = directory.listFiles();
+        //绝对路径数组
+        String[] paths = new String[files.length];
 
-    /* 初始化 */
-    public GetImgModel() {
-        dao = new ImageDAO();
-        images = new ArrayList<>();
+        for (int i = 0; i < files.length; i++) {
+            paths[i] = host_image_path + files[i].getName();
+        }
+
+        return paths;
     }
 
-    @Override
-    public void execute(HttpServletRequest req, HttpServletResponse resp) {
-    }
+    /**
+     * @name 获取部分图片链接
+     * @description homePage.jsp-->获取demo图片路径
+     */
+    public static String[] getDemoImages() {
+        //获取全部路径
+        String[] paths = getImages();
+        //截取部分路径
+        String[] demo_paths = Arrays.copyOfRange(paths, paths.length - 8, paths.length);
 
-    /* 获取用户日记列表 */
-    public ArrayList<Image> getImages(int id) {
-        images = dao.getImageList(id);
-        return images;
+        return demo_paths;
     }
 }

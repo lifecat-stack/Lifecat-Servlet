@@ -3,11 +3,9 @@ package com.wang.model;
 import com.wang.bean.User;
 import com.wang.dao.UserDAO;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.ResultSet;
 
 /**
  * @name ModifyPswModel
@@ -45,7 +43,7 @@ public class ModifyPswModel extends MyModel {
             userid = bean.getId();
         }
 
-        String page = host_userhome;
+        String page = page_userhome;
 
         /* 获取数据库中对应的bean */
         String db_password = dao.queryPassword(userid);

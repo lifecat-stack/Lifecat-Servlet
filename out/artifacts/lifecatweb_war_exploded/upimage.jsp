@@ -3,28 +3,30 @@
 
 <%@include file="include/header.jsp" %>
 <%@include file="include/top.jsp" %>
+<script>
+    function showPreview(obj) {
+        var str=obj.value;
+        document.getElementById(upimage).innerHTML="<img src='"+str+"'/>";
+    }
+
+</script>
 
 <%-- 上传照片 --%>
 
 <div class="container">
     <div class="table-responsive">
         <h2>编辑照片描述</h2>
-        <form method="post" id="editForm" action="service/UpImg" enctype="multipart/form-data">
-            <div class="form-group">
-                <textarea  rows="1" class="form-control" name="imagename"
-                          id="name">name...</textarea>
-            </div>
-            <div class="form-group">
-                <textarea  rows="3" class="form-control" name="imagedescription"
-                          id="description">description...</textarea>
-            </div>
+        <form method="post" id="editForm" action="upimage.do" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="file" class="form-control" name="image"
-                          id="image">
+                       id="upimage" onchange="showPreview()">
             </div>
-            <input type="hidden" name="action" value="UpImg">
             <button type="submit" class="btn btn-primary btn-md btn-block">提交</button>
         </form>
+
+        <div>
+            <img src="http://localhost:8080/lifecatweb/getimg.do" alt=""/>
+        </div>
     </div>
 </div>
 

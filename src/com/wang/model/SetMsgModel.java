@@ -2,14 +2,11 @@ package com.wang.model;
 
 import com.wang.bean.User;
 import com.wang.bean.UserMsg;
-import com.wang.dao.DAO;
 import com.wang.dao.UserMsgDAO;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.ResultSet;
 
 /**
  * @name SetMsgModel
@@ -53,7 +50,7 @@ public class SetMsgModel extends MyModel {
         bean.setBirthday(birthday);
         bean.setEmail(email);
 
-        String page = host_userhome;
+        String page = page_userhome;
 
         boolean success = dao.insertUser(bean);
 

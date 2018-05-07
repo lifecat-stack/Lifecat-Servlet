@@ -1,8 +1,6 @@
 package com.wang.model;
 
-import com.wang.bean.Bean;
-import com.wang.dao.DAO;
-import com.wang.db.HOST;
+import com.wang.util.HOST;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

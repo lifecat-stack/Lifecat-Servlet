@@ -2,6 +2,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.wang.model.GetImgModel" %>
 <%@ page import="static com.wang.db.HOST.ip" %>
+<%@ page import="java.util.logging.Logger" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 
@@ -18,43 +19,40 @@
                 </div>
                 <div class="col-md-11">
                     <h2>成长相册:</h2>
-                    <%--获取图片链接--%>
+
                     <%
-                        User user = (User) request.getSession().getAttribute("User");
-                        int id = user.getId();
-                        ArrayList<Image> images = null;
-                        /* 若当期有用户登录 */
-                        if (user != null && !user.getName().equals("admin")) {
-                            GetImgModel model = new GetImgModel();
-                            images = model.getImages(id);
-                        }
-                        /* 若无用户登录，添加3条默认图片 */
-                        if (images == null) {
-                            images = new ArrayList<>();
-                            for (int i = 0; i < 3; i++) {
-                                Image no_image = new Image();
-                                no_image.setImagename("成长相册" + i);
-                                no_image.setImagedescription("美好的午后，记录美好的时刻" + i);
-                                no_image.setImagedate("2018-" + i);
-                                no_image.setImagepath("http://"+ip+":8080/lifecatweb/upimage/image" + i + ".jpg");
-                                images.add(no_image);
-                            }
-                        }
+                        //获取图片在服务器上的路径
+                        String[] paths = new GetImgModel().getImages();
                     %>
                     <table>
                         <%
-                            /* 循环打印图片信息 */
-                            for (Image image : images) {
+                            /* 倒叙循环打印图片img
+                            *  倒叙:最新上传的图片最前展示
+                            *  日志:image_path打印图片链接
+                            */
+                            for (int i = paths.length - 1; i > 3; i -= 4) {
+                                Logger logger=Logger.getLogger("image_path");
+                                logger.info(paths[i]);
+                                logger.info(paths[i-1]);
+                                logger.info(paths[i-2]);
+                                logger.info(paths[i-3]);
                         %>
                         <tr class="row">
-                            <td class="col-md-3"></td>
-                            <td class="col-md-3"><span><img src=<%=image.getImagepath()%>
-                                                                    height="100" width="100"
+                            <td class="col-md-3"><span><img src=<%=paths[i]%>
+                                                                    height="200" width="200"
                                                             style="margin-top: 20px;"/> </span>
                             </td>
-                            <td class="col-md-6">
-                                <span><%=image.getImagename() + ":"%></span>
-                                <span><%=image.getImagedescription()%></span>
+                            <td class="col-md-3"><span><img src=<%=paths[i-1]%>
+                                                                    height="200" width="200"
+                                                            style="margin-top: 20px;"/> </span>
+                            </td>
+                            <td class="col-md-3"><span><img src=<%=paths[i-2]%>
+                                                                    height="200" width="200"
+                                                            style="margin-top: 20px;"/> </span>
+                            </td>
+                            <td class="col-md-3"><span><img src=<%=paths[i-3]%>
+                                                                    height="200" width="200"
+                                                            style="margin-top: 20px;"/> </span>
                             </td>
                         </tr>
                         <%

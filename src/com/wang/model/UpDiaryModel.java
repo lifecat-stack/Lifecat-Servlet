@@ -3,7 +3,7 @@ package com.wang.model;
 import com.wang.bean.Diary;
 import com.wang.bean.User;
 import com.wang.dao.DiaryDAO;
-import com.wang.db.MyDate;
+import com.wang.util.MyDate;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -49,7 +49,7 @@ public class UpDiaryModel extends MyModel {
         bean.setDate(diarydate);
         bean.setPath(diarypath);
 
-         String page = host_userhome;
+         String page = page_userhome;
 
         boolean success = dao.uploadDiary(bean);
 

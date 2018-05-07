@@ -1,5 +1,7 @@
 package com.wang.form;
 
+import java.util.logging.Logger;
+
 /**
  * @name FormResult
  * @description 表单验证返回结果集
@@ -8,6 +10,7 @@ package com.wang.form;
 public class FormResult {
     private Boolean isError;
     private String errorMsg;
+    private static Logger logger=Logger.getLogger("FormResult");
 
     public Boolean getIsError() {
         return isError;
@@ -29,13 +32,13 @@ public class FormResult {
     public void setError(String msg) {
         this.setIsError(true);
         this.setErrorMsg(msg);
-        System.out.println(msg);
+        logger.warning(msg);
     }
 
     /* 设置正确result,并打印正确信息 */
     public void setTrue() {
         this.setIsError(false);
         this.setErrorMsg(null);
-        System.out.println("Form验证通过");
+        logger.info("Form验证通过");
     }
 }

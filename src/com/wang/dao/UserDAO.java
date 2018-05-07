@@ -31,10 +31,10 @@ public class UserDAO extends BaseDAO implements DAO {
 
     /* 查询id:根据username生成HashCode */
     public int queryId(String username) {
-        if (username==null){
-            System.out.println("用户名为空！");
+        if (username == null) {
+            logger.warning("用户名为空！");
             return 0;
-        }else {
+        } else {
             return username.hashCode();
         }
     }
@@ -63,7 +63,7 @@ public class UserDAO extends BaseDAO implements DAO {
     /* 获取结果集对应的字段 */
     private String getString(int id, String str, String table_name) {
         try {
-            ResultSet resultSet=this.exeSelect(table_name, table, id);
+            ResultSet resultSet = this.exeSelect(table_name, table, id);
             resultSet.next();
             str = resultSet.getString(table_name);
         } catch (SQLException e) {
@@ -91,9 +91,9 @@ public class UserDAO extends BaseDAO implements DAO {
         boolean success;
         success = this.exeUpdate(table, password, newpassword, id);
         if (success) {
-            System.out.println("更新密码成功");
+            logger.info("更新密码成功");
         } else {
-            System.out.println("更新密码失败");
+            logger.warning("更新密码失败");
         }
     }
 }
