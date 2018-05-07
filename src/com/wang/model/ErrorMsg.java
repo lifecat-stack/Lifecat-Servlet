@@ -8,7 +8,7 @@ import java.util.logging.Logger;
  * @auther
  */
 public class ErrorMsg {
-            private static Logger logger=Logger.getLogger("ErrorMsg");
+    private static Logger logger = Logger.getLogger("ErrorMsg");
 
 
     private boolean isError;
@@ -38,13 +38,13 @@ public class ErrorMsg {
     }
 
     /* model执行正确 */
-    public void setTrue(){
+    public void setTrue() {
         logger.info("model执行成功");
         this.setIsError(false);
         this.setMessage(null);
     }
 
-    public void printError(String err){
-        logger.warning(err+"方法错误");
+    public void printError(String err) {
+        logger.warning(err + "方法错误");
     }
 }

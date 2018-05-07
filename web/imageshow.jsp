@@ -1,7 +1,7 @@
 <%@ page import="com.wang.bean.Image" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.wang.model.GetImgModel" %>
-<%@ page import="static com.wang.db.HOST.ip" %>
+<%@ page import="static com.wang.util.HOST.ip" %>
 <%@ page import="java.util.logging.Logger" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
@@ -18,8 +18,7 @@
                 <div class="col-md-1">
                 </div>
                 <div class="col-md-11">
-                    <h2>成长相册:</h2>
-
+                    <span><h2><a href="imageshow2.jsp">智能分类</a></h2></span>
                     <%
                         //获取图片在服务器上的路径
                         String[] paths = new GetImgModel().getImages();
@@ -27,15 +26,15 @@
                     <table>
                         <%
                             /* 倒叙循环打印图片img
-                            *  倒叙:最新上传的图片最前展示
-                            *  日志:image_path打印图片链接
-                            */
+                             *  倒叙:最新上传的图片最前展示
+                             *  日志:image_path打印图片链接
+                             */
                             for (int i = paths.length - 1; i > 3; i -= 4) {
-                                Logger logger=Logger.getLogger("image_path");
+                                Logger logger = Logger.getLogger("image_path");
                                 logger.info(paths[i]);
-                                logger.info(paths[i-1]);
-                                logger.info(paths[i-2]);
-                                logger.info(paths[i-3]);
+                                logger.info(paths[i - 1]);
+                                logger.info(paths[i - 2]);
+                                logger.info(paths[i - 3]);
                         %>
                         <tr class="row">
                             <td class="col-md-3"><span><img src=<%=paths[i]%>

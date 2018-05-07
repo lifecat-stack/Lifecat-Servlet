@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pics url="pics">
+    <folder name="1" class="class.jpg">人物</folder>
+    <folder name="2" class="class.jpg">风景</folder>
+    <folder name="3" class="class.jpg">考试</folder>
+</pics>

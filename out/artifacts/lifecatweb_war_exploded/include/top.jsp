@@ -13,6 +13,16 @@
 <%----%>
 <%--</script>--%>
 
+<style>
+      body {
+        font-family: Verdana, Arial, sans-serif;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        background: url("../img/back.jpg") repeat;
+    }
+</style>
+
 <body>
 
 <div class="navbar navbar-default">

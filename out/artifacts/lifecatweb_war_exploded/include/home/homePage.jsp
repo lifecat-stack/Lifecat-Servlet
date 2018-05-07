@@ -5,7 +5,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.wang.model.GetDiaryModel" %>
 <%@ page import="com.wang.model.GetImgModel" %>
-<%@ page import="static com.wang.db.HOST.*" %>
+<%@ page import="static com.wang.util.HOST.*" %>
 <%@ page import="java.util.logging.Logger" %>
 
 <script>
@@ -105,69 +105,74 @@
                 <div class="col-md-1">
 
                 </div>
-                <div class="col-md-3">
-                    <h2>个人信息:</h2>
+                <div class="col-md-10">
+                    <div class="col-md-4">
+                        <h2>个人信息:</h2>
 
-                    <table>
-                        <%
-                            UserMsg usermsg;
-                            /* 若当期有用户登录 */
-                            if (user != null && !user.getName().equals("admin")) {
-                                GetMsgModel model = new GetMsgModel();
-                                usermsg = model.getUserMsg(id);
-                            }
-                            /* 若无用户登录，默认信息 */
-                            else {
-                                usermsg = new UserMsg();
-                                usermsg.setNickname("admin");
-                                usermsg.setSex("man");
-                                usermsg.setAge("21");
-                                usermsg.setBirthday("1997");
-                                usermsg.setEmail("wshten@gmail.com");
-                            }
-                        %>
-                        <tr class="msg">
-                            <span>昵称: <%=usermsg.getNickname() %> </span>
-                        </tr>
-                        <br>
-                        <tr class="msg">
-                            <span>性别: <%=usermsg.getSex() %></span>
-                        </tr>
-                        <br>
-                        <tr class="msg">
-                            <span>年龄: <%=usermsg.getAge() %> </span>
-                        </tr>
-                        <br>
-                        <tr class="msg">
-                            <span>生日: <%=usermsg.getBirthday() %> </span>
-                        </tr>
-                        <br>
-                        <tr class="msg">
-                            <span>邮箱: <%=usermsg.getEmail() %> </span>
-                        </tr>
-                        <br>
-                        <br>
+                        <table>
+                            <%
+                                UserMsg usermsg;
+                                /* 若当期有用户登录 */
+                                if (user != null && !user.getName().equals("admin")) {
+                                    GetMsgModel model = new GetMsgModel();
+                                    usermsg = model.getUserMsg(id);
+                                }
+                                /* 若无用户登录，默认信息 */
+                                else {
+                                    usermsg = new UserMsg();
+                                    usermsg.setNickname("admin");
+                                    usermsg.setSex("man");
+                                    usermsg.setAge("21");
+                                    usermsg.setBirthday("1997");
+                                    usermsg.setEmail("wshten@gmail.com");
+                                }
+                            %>
+                            <tr class="msg">
+                                <span>昵称: <%=usermsg.getNickname() %> </span>
+                            </tr>
+                            <br>
+                            <tr class="msg">
+                                <span>性别: <%=usermsg.getSex() %></span>
+                            </tr>
+                            <br>
+                            <tr class="msg">
+                                <span>年龄: <%=usermsg.getAge() %> </span>
+                            </tr>
+                            <br>
+                            <tr class="msg">
+                                <span>生日: <%=usermsg.getBirthday() %> </span>
+                            </tr>
+                            <br>
+                            <tr class="msg">
+                                <span>邮箱: <%=usermsg.getEmail() %> </span>
+                            </tr>
+                            <br>
+                            <br>
 
-                    </table>
+                        </table>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h2>成长格言:</h2>
+
+                        <table>
+                            <tr class="bigmsg">
+                                <span>路漫漫其修远兮，</span>
+                            </tr>
+                            <br>
+                            <tr class="bigmsg">
+                                <span>吾将上下而求索。</span>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img height="140" width="140" src="img/headicon.jpg">
+                    </div>
                 </div>
+                <div class="col-md-1">
 
-                <div class="col-md-3">
-                    <h2>成长格言:</h2>
-
-                    <table>
-                        <tr class="bigmsg">
-                            <span>路漫漫其修远兮，</span>
-                        </tr>
-                        <br>
-                        <tr class="bigmsg">
-                            <span>吾将上下而求索。</span>
-                        </tr>
-
-                    </table>
-                </div>
-
-                <div class="col-md-3">
-                    <img height="140" width="140" src="img/headicon.jpg">
                 </div>
 
             </div>
@@ -198,7 +203,7 @@
 
                     </div>
 
-                    <div class="col-md-9">
+                    <div class="col-md-10">
                         <h2>成长日记:</h2>
                         <%--获取日记链接--%>
                         <%
@@ -216,7 +221,7 @@
                                     no_diary.setName("成长寄语" + i);
                                     no_diary.setDescription("美好的午后，写下成长的寄语" + i);
                                     no_diary.setDate("2018-" + i);
-                                    no_diary.setPath(host_userhome);
+                                    no_diary.setPath(page_userhome);
                                     diaries.add(no_diary);
                                 }
                             }
@@ -247,6 +252,9 @@
                             <%--<% %>--%>
                         </table>
                     </div>
+                    <div class="col-md-1">
+
+                    </div>
                 </div>
             </div>
 
@@ -257,8 +265,8 @@
                     <div class="col-md-1">
 
                     </div>
-                    <div class="col-md-11">
-                        <a href=imageshowpage.jsp><h2>成长相册:</h2></a>
+                    <div class="col-md-10">
+                        <a href=imageshow.jsp><h2>成长相册:</h2></a>
                         <%--获取图片链接--%>
                         <%
                             //获取demo图片在服务器上的路径
@@ -299,6 +307,9 @@
                                 }
                             %>
                         </table>
+                    </div>
+                    <div class="col-md-1">
+
                     </div>
                 </div>
             </div>

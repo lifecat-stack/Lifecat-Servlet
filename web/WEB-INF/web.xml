@@ -47,15 +47,4 @@
         <servlet-name>UpImageService</servlet-name>
         <url-pattern>/upimage.do</url-pattern>
     </servlet-mapping>
-
-    <!--获取图片servlet-->
-    <servlet>
-        <servlet-name>GetImageService</servlet-name>
-        <servlet-class>com.wang.service.GetImageServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>GetImageService</servlet-name>
-        <url-pattern>/getimage.do</url-pattern>
-    </servlet-mapping>
-
 </web-app>

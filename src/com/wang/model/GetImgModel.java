@@ -42,4 +42,23 @@ public class GetImgModel implements HOST {
 
         return demo_paths;
     }
+
+    /**
+     * @name 获取分类的某类图片
+     * @description 从本地路径读取目录，然后返回服务器路径
+     */
+    public static String[] getCategoryImages(int num) {
+        //获取图片目录
+        File directory = new File(category_image_path + num + "/");
+        //获取目录下所有文件
+        File[] files = directory.listFiles();
+        //绝对路径数组
+        String[] paths = new String[files.length];
+
+        for (int i = 0; i < files.length; i++) {
+            paths[i] = host_category_image_path + num + "/" + files[i].getName();
+        }
+
+        return paths;
+    }
 }

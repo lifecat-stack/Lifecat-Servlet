@@ -32,7 +32,7 @@ public class Connections implements HOST{
 	public static Connection getConnection() throws SQLException {
 		String url = String.format(
 				"jdbc:mysql://%s:%d/%s",
-				ip, port, database);
+				ip, databaseport, database);
 //		logger.info();("try to connect database!");
 		Connection c= DriverManager.getConnection(url, loginName, password);
 		if(!c.isClosed()){
