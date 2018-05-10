@@ -32,7 +32,7 @@ public class UpDiaryModel extends MyModel {
         String diaryname = (String) req.getParameter("diaryname");
         String diarydescription = (String) req.getParameter("diarydescription");
 
-        String diarydate=MyDate.GetNowDate();
+        String diarydate=MyDate.getCurrentTime();
         String diarypath= "http://"+ip+":8080/lifecatweb/diary";
 
         /* 获取session中的user对象 */
