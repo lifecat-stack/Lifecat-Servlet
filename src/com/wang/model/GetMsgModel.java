@@ -11,12 +11,12 @@ import java.sql.ResultSet;
  * @description 获取用户个人信息
  * @auther ten
  */
-public class GetMsgModel extends MyModel {
-    private UserMsg userMsg;
-    private UserMsgDAO dao;
+class GetMsgModel implements MyModel {
+        private GetMsgModel() {
+    }
 
-    public GetMsgModel(){
-        dao=new UserMsgDAO();
+    static MyModel getModel() {
+        return new GetMsgModel();
     }
 
     @Override

@@ -1,39 +1,33 @@
 package com.wang.form;
 
-import java.util.logging.Logger;
-
 /**
- * @name FormSelector
- * @description 工厂模式:根据action选择返回对应的Form
+ * Form工厂
+ *
  * @auther ten
  */
 public class FormSelector {
-        private static Logger logger=Logger.getLogger("FormSelector");
-
+    /**
+     * @param action post.do类型
+     * @return form
+     */
     public static MyForm select(String action) {
         MyForm form;
         switch (action) {
-            case "Login":
-                form = new LoginForm();
+            case "login":
+                form = LoginForm.getForm();
                 break;
-            case "Register":
-                form = new RegisterForm();
+            case "register":
+                form = RegisterForm.getForm();
                 break;
-            case "ModifyPsw":
-                form = new ModifyPswForm();
+            case "modifypsw":
+                form = ModifyPswForm.getForm();
                 break;
-            case "SetMsg":
-                form = new SetMsgForm();
+            case "setmsg":
+                form = SetMsgForm.getForm();
                 break;
-            case "UpImg":
-                form = new UpImgForm();
-                break;
-            case "UpDiary":
-                form = new UpDiaryForm();
-                break;
+
             default:
-                logger.warning("FormSelector没有此表单项");
-                form = null;
+                throw new NullPointerException("Error Form Type");
         }
         return form;
     }

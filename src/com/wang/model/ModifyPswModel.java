@@ -12,16 +12,14 @@ import java.io.IOException;
  * @description 修改密码，对应表单ModifyPsw，对应页面userhome.jsp，对应bean是user
  * @auther
  */
-public class ModifyPswModel extends MyModel {
-    private UserDAO dao;
-    private User bean;
-
-    /* 初始化 */
-    public ModifyPswModel() {
-        dao = new UserDAO();
-        bean = new User();
-        errorMsg = new ErrorMsg();
+ class ModifyPswModel implements MyModel {
+    private ModifyPswModel() {
     }
+
+    static MyModel getModel() {
+        return new ModifyPswModel();
+    }
+
 
     /**
      * @name

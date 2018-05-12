@@ -6,48 +6,62 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * @name Connections
- * @description 获取数据库连接 
+ * jdbc连接mysql
+ *
  * @auther ten
  */
-public class Connections implements HOST{
+public class Connections {
 
-	private static Logger logger=Logger.getLogger("connections");
-	
-	/* jdbc驱动 */
-	static {
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			logger.info("success to load jdbc.Driver");
-		} catch (ClassNotFoundException e) {
-		    logger.warning("failure to load jdbc.Driver");
-			e.printStackTrace();
-		}
-	}
+    //不可实例化
+    private Connections(){
+        throw new AssertionError();
+    }
 
-	/**
-	 * @name 连接数据库
-	 * @description 获取Conection对象
-	 */
-	public static Connection getConnection() throws SQLException {
-		String url = String.format(
-				"jdbc:mysql://%s:%d/%s",
-				ip, databaseport, database);
-//		logger.info();("try to connect database!");
-		Connection c= DriverManager.getConnection(url, loginName, password);
-		if(!c.isClosed()){
-			logger.info("Succeeded connecting to the Database!");
-		}else{
-			logger.warning("connecting error!");
-		}
-		return c;
-	}
+    private static final String URL = String.format(
+            "jdbc:mysql://%s:%d/%s",
+            HOST.IP, HOST.DATABASEPORT, HOST.DATABASE);
 
-	/**
-	 * @name 数据库连接单元测试 java类入口
-	 * @description 检测是否能连接到数据库
-	 */
-	public static void main(String[] args) throws SQLException {
-	    Connection c=Connections.getConnection();
-	}
+    private static Logger logger = Logger.getLogger("connections");
+
+    /*
+     * reflect
+     *
+     */
+    static {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            logger.warning("ClassNotFoundException");
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
+
+    /**
+     * 获取数据库连接
+     *
+     * @throws SQLException         连接数据库异常
+     * @throws NullPointerException 连接关闭
+     */
+    public static Connection getConnection() throws SQLException {
+        Connection c = DriverManager.getConnection(URL, HOST.LOGIN_NAME, HOST.PASSWORD);
+        if (!c.isClosed()) {
+            logger.info("Succeeded connecting to the Database!");
+        } else {
+            throw new NullPointerException("Connection id closed");
+        }
+        return c;
+    }
+
+    /**
+     * 加载驱动
+     */
+    public static void main(String[] args) {
+        try {
+            Connection c = Connections.getConnection();
+        } catch (SQLException e) {
+            logger.warning("Connection Error");
+            e.printStackTrace();
+        }
+    }
 }

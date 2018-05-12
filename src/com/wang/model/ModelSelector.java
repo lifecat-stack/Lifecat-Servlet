@@ -1,40 +1,28 @@
 package com.wang.model;
+
 /**
- * @name ModelSelector
- * @description 选择模型
+ * Model工厂
+ *
  * @auther ten
  */
 public class ModelSelector {
     public static MyModel select(String action) {
         MyModel model;
         switch (action) {
-            case "Login":
+            case "login":
                 model = new LoginModel();
                 break;
-            case "Register":
+            case "register":
                 model = new RegisterModel();
                 break;
-            case "ModifyPsw":
+            case "modifypsw":
                 model = new ModifyPswModel();
                 break;
-            case "SetMsg":
+            case "setmsg":
                 model = new SetMsgModel();
                 break;
-            case "UpImg":
-                model = new UpImgModel();
-                break;
-            case "UpDiary":
-                model = new UpDiaryModel();
-                break;
-            /* Get模型,由jsp调用 */
-            case "GetDiary":
-                model = new GetDiaryModel();
-                break;
-            case "GetMsg":
-                model = new GetMsgModel();
-                break;
+
             default:
-                System.out.println("ModelSelector没有此表单项");
                 model = null;
         }
         return model;

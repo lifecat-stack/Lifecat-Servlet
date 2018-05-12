@@ -1,5 +1,6 @@
 package com.wang.model;
 
+import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMsg;
 import com.wang.bean.User;
 import com.wang.bean.UserMsg;
 import com.wang.dao.UserMsgDAO;
@@ -13,15 +14,12 @@ import java.io.IOException;
  * @description 设置个人信息，对应表单SetMsg，对应页面userhome.jsp
  * @auther ten
  */
-public class SetMsgModel extends MyModel {
-    private UserMsgDAO dao;
-    private UserMsg bean;
+ class SetMsgModel implements MyModel {
+    private SetMsgModel() {
+    }
 
-    /* 初始化 */
-    public SetMsgModel() {
-        dao = new UserMsgDAO();
-        bean = new UserMsg();
-        errorMsg = new ErrorMsg();
+    static MyModel getModel() {
+        return new SetMsgModel();
     }
 
     @Override

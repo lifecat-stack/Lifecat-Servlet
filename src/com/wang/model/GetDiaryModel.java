@@ -15,14 +15,12 @@ import java.util.ArrayList;
  * @description 获取用户日记信息
  * @auther ten
  */
-public class GetDiaryModel extends MyModel {
-    private DiaryDAO dao;
-    private ArrayList<Diary> diaries;
+class  GetDiaryModel implements MyModel {
+        private GetDiaryModel() {
+    }
 
-    /* 初始化 */
-    public GetDiaryModel() {
-        dao = new DiaryDAO();
-        diaries = new ArrayList<>();
+    static MyModel getModel() {
+        return new GetDiaryModel();
     }
 
     @Override

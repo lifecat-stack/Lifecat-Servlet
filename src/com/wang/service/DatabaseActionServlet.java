@@ -1,7 +1,6 @@
 package com.wang.service;
 
-import com.wang.util.HOST;
-import com.wang.form.FormResult;
+import com.wang.model.ModelResult;
 import com.wang.model.ModelSelector;
 import com.wang.model.MyModel;
 
@@ -12,64 +11,49 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @name DatabaseActionServlet
- * @description 控制器:处理业务逻辑,调用模型model
+ * Database Servlet
+ * <p>
+ * 对数据库的操作
+ *
  * @auther ten
  */
-public class DatabaseActionServlet extends HttpServlet implements HOST {
-    private static int flag=0;
+public class DatabaseActionServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     }
 
+    /**
+     * 1. 获取action类型
+     * 2. 执行model.execute()
+     * 3. 获取返回结果ModelResult
+     * 4. 检查异常
+     * 5. 跳转
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("service 接收到请求");
-        /* 检查过滤器是否为空 */
-        if (req.getAttribute("result")!=null) {
+        String page;
 
-            /* 验证filter是否检查出错误 */
-            FormResult result = (FormResult) req.getAttribute("result");
+        //提取请求信息
+        String action = req.getParameter("action");
 
-            /* 若有错误，转发到请求页面page */
-            if (result.getIsError()) {
-                String page = req.getRequestURI();
-                page= page_index;
+        //model
+        MyModel model = ModelSelector.select(action);
 
-                //测试request.getRequestURI()能否重定向回请求界面
-                System.out.println("测试:请求URI为-->" + page);
+        ModelResult result = model.execute(req, resp);
 
-                req.getSession().setAttribute("errormsg", result.getErrorMsg());
-                resp.sendRedirect(page);
-            }
-
-            /* Form通过 */
-            /* 调用模型进行DAO处理  */
-            else {
-                /* 提取请求信息 */
-                String action_type = (String) req.getParameter("action");
-
-                /* 转发到Model,获取对应Model对象 */
-                MyModel model = ModelSelector.select(action_type);
-
-                try {
-                    /* 转发行为在model中实现 */
-                    model.execute(req, resp);
-                } catch (Exception e) {
-                    /* 若Model未发生转发:异常情况 */
-                    System.out.println("model未执行转发 : ");
-                    e.printStackTrace();
-                    String page = req.getRequestURI();
-                    req.getRequestDispatcher(page).forward(req, resp);
-                }
-            }
-        }else {
-            System.out.println("post 请求为 null");
-            if (flag==0) {
-                resp.sendRedirect(page_index);
-                flag++;
-            }
+        //error == false
+        if (!result.error()) {
+            page = result.getPage();
         }
+        //error == true
+        else {
+            page = req.getRequestURI();
+            req.setAttribute("errormsg", result.getErrormsg());
+        }
+
+        //执行跳转
+        req.getRequestDispatcher(page).forward(req, resp);
     }
 }
+

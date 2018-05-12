@@ -21,7 +21,7 @@
                     <span><h2><a href="imageshow2.jsp">智能分类</a></h2></span>
                     <%
                         //获取图片在服务器上的路径
-                        String[] paths = new GetImgModel().getImages();
+                        String[] paths = new GetImgModel().getImagesById();
                     %>
                     <table>
                         <%
@@ -30,7 +30,7 @@
                              *  日志:image_path打印图片链接
                              */
                             for (int i = paths.length - 1; i > 3; i -= 4) {
-                                Logger logger = Logger.getLogger("image_path");
+                                Logger logger = Logger.getLogger("IMAGE_PATH");
                                 logger.info(paths[i]);
                                 logger.info(paths[i - 1]);
                                 logger.info(paths[i - 2]);

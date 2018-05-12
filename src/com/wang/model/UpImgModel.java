@@ -1,8 +1,5 @@
 package com.wang.model;
 
-import com.wang.bean.Image;
-import com.wang.dao.ImageDAO;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -11,19 +8,18 @@ import javax.servlet.http.HttpServletResponse;
  * @description 上传图片，对应表单UpImg，对应页面uploadimage.jsp
  * @auther ten
  */
-public class UpImgModel extends MyModel {
-    private ImageDAO dao;
-    private Image bean;
+ class UpImgModel implements MyModel {
 
-    /* 初始化 */
-    public UpImgModel() {
-        dao = new ImageDAO();
-        bean = new Image();
-        errorMsg = new ErrorMsg();
+    private UpImgModel() {
+    }
+
+    static MyModel getModel() {
+        return new UpImgModel();
     }
 
     @Override
-    public void execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
+        return null;
     }
 }

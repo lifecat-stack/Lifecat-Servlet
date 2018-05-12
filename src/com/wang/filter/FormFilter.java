@@ -7,15 +7,15 @@ import com.wang.form.MyForm;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
- * @name FormFilter
- * @description 表单验证过滤器
+ * Form Filter
+ * <p>
+ * 对POST请求提交的表单进行验证
+ *
  * @auther ten
  */
 public class FormFilter implements Filter {
@@ -23,33 +23,70 @@ public class FormFilter implements Filter {
     private static Logger logger = Logger.getLogger("FormFilter");
 
     /**
-     * @name doFilter
-     * @description 验证表单过滤器
+     * Form表单验证
+     * <p>
+     * 1. 获取action
+     * 2. 获取对应form对象
+     * 3. 执行validate(),获取返回结果
+     * 4. 分析返回结果
+     * 5. 若验证通过,执行转发到相应servlet
+     *
+     * @throws IOException
+     * @throws ServletException
      */
     @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        /* 提取请求信息 */
-//        String action_type= (String) servletRequest.getAttribute("action");
-        String action_type = servletRequest.getParameter("action");
+    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) req;
+        HttpServletResponse response = (HttpServletResponse) resp;
 
-        logger.info("formfilter 请求信息为:" + action_type);
+        //1. 获取action
+        String action = request.getParameter("action");
+        logger.info("action:" + action);
 
-        if (action_type != null) {
-            /* 转发到Form,获取对应Form对象 */
-            MyForm form = FormSelector.select(action_type);
-
-            /* 获取Form验证的结果集 */
-            FormResult result = form.validate(servletRequest);
-
-            /* 设置result到req */
-            servletRequest.setAttribute("result", result);
+        //检查异常
+        if (chain == null) {
+            throw new NullPointerException("FormFilter is null");
         }
 
-        if (filterChain == null) {
-            logger.warning("formfilter chain null 异常");
-        } else {
-            /* 转发req到servlet */
-            filterChain.doFilter(servletRequest, servletResponse);
+        /*
+         * action != null: url is (设置对应form项) post
+         * action == null: url is get or (未设置对应form项) post
+         */
+        if (action != null) {
+            //2. 获取对应form对象
+            MyForm form = FormSelector.select(action);
+
+            //3. 执行validate(),获取返回结果
+            FormResult result = form.validate(request);
+
+            //5. 若验证通过,执行转发到相应servlet
+            if (!result.error()) {
+                chain.doFilter(req, resp);
+            }
+
+            //验证未通过,将ErrorMsg发送回请求界面
+            request.setAttribute("errormsg", result.getErrormsg());
+            request.getRequestDispatcher(String.valueOf(request.getRequestURL())).forward(req, resp);
         }
+
+        //action == null : do nothing
+    }
+
+    /**
+     * filter.init()
+     *
+     * @throws ServletException filter init failure
+     */
+    @Override
+    public void init(FilterConfig arg0) throws ServletException {
+        logger.config("FormFilter init()");
+    }
+
+    /**
+     * filter.destroy()
+     */
+    @Override
+    public void destroy() {
+        logger.config("FormFilter destroy()");
     }
 }

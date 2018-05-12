@@ -12,16 +12,14 @@ import java.io.IOException;
  * @description 验证登录 对应表单LoginForm
  * @auther ten
  */
-public class LoginModel extends MyModel{
-    private UserDAO dao;
-    private User bean;
-
-    /* 初始化 */
-    public LoginModel() {
-        dao = new UserDAO();
-        bean = new User();
-        errorMsg = new ErrorMsg();
+class LoginModel implements MyModel {
+    private LoginModel() {
     }
+
+    static MyModel getModel() {
+        return new LoginModel();
+    }
+
 
     /**
      * @name excute
@@ -32,7 +30,7 @@ public class LoginModel extends MyModel{
 
         /* 获取表单的提交数据 */
         String username = (String) req.getParameter("username");
-        String password = (String) req.getParameter("password");
+        String password = (String) req.getParameter("PASSWORD");
 
         System.out.println("获取的username " + username);
         System.out.println("获取的password " + password);

@@ -1,7 +1,9 @@
 package com.wang.bean;
+
 /**
- * @name Bean
- * @description model返回bean实体
+ * 标记接口
+ * Bean:对应数据库table
+ *
  * @auther ten
  */
 public interface Bean {

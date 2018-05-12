@@ -13,19 +13,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @name EncodingFilter
- * @description 字符格式统一为 UTF-8
+ * Filter:Encoding
+ * <p>
+ * 编码为utf-8
+ *
  * @auther ten
  */
 public class EncodingFilter implements Filter {
 
-    private static Logger logger=Logger.getLogger("EncodingFilter");
+    private static Logger logger = Logger.getLogger("EncodingFilter");
 
-    @Override
-    public void destroy() {
-    }
-
-    /* 转换格式 */
+    /**
+     * doFilter
+     *
+     * @throws IOException      IO failure
+     * @throws ServletException servlet failure
+     */
     @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
             throws IOException, ServletException {
@@ -34,20 +37,31 @@ public class EncodingFilter implements Filter {
 
         logger.info("EncodingFilter doFilter()");
 
+        //检查异常
+        if (chain == null) {
+            throw new NullPointerException("EncodingFilter is null");
+        }
+
         request.setCharacterEncoding("UTF-8");
 
-        logger.info("EncodinFilter执行完毕");
-
-        if (chain==null){
-            logger.warning("encoding chain null 异常");
-        }else {
-             chain.doFilter(request, response);
-        }
+        chain.doFilter(request, response);
     }
 
+    /**
+     * filter.init()
+     *
+     * @throws ServletException filter init failure
+     */
     @Override
     public void init(FilterConfig arg0) throws ServletException {
-        System.out.println("EncodingFilter init()");
+        logger.config("EncodingFilter init()");
     }
 
+    /**
+     * filter.destroy()
+     */
+    @Override
+    public void destroy() {
+        logger.config("EncodingFilter destroy()");
+    }
 }

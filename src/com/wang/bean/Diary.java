@@ -38,4 +38,6 @@ public class Diary implements Bean{
 	public void setPath(String path) {
 		this.diarypath = path;
 	}
+
+
 }

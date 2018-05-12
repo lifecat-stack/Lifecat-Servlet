@@ -1,8 +1,8 @@
 package com.wang.bean;
 
 /**
- * @name BeanBuilder
- * @description Bean类构建器
+ * Bean构建器:四个参数及以上时使用
+ *
  * @auther ten
  */
 public interface BeanBuilder<T> {

@@ -1,6 +1,8 @@
 package com.wang.service;
 
+import com.wang.bean.User;
 import com.wang.util.HOST;
+import com.wang.util.MyDate;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -9,35 +11,64 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
 /**
- * @name UpImageServlet
- * @description 上传图片到tomcat/webapps/lifecatweb/upimage
+ * ImageServlet
+ * <p>
+ * 获取图片数据写入服务器文件目录下
+ *
  * @auther ten
  */
-public class UpImageServlet extends HttpServlet implements HOST {
+public class UpImageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp);
     }
 
+    /**
+     * 将图片写入服务器文件夹,并保存到数据库中
+     * <p>
+     * 1. 获取二进制输入流
+     * 2. 获取图片存储目录: user_id
+     * 3. 获取图片存储命名: date
+     * <p>
+     * 4. 检查目录是否存在 ? 通过 : 创建目录
+     * 5. 获取图片完整路径,写入图片
+     * <p>
+     * 6. 上传完后跳转界面
+     *
+     * @throws
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            //获取客户端传过来图片的二进制流
+            //1. 获取二进制输入流
             InputStream stream = req.getInputStream();
 
-            //当前图片命名编号
-            int num = currentImageNum();
-            //图片命名
-            String imagename = "image" + num + ".jpg";
+            //2. 获取图片存储目录: user_id
+            int user_id = ((User) req.getSession().getAttribute("user")).getId();
+            String directoryname = HOST.IMAGE_PATH + user_id;
 
-            String imagePath = image_path + imagename;
+            //3. 获取图片存储命名: date
+            String date = MyDate.getInstance().getCurrentTime();
+            String imagename = date + ".jpg";
+
+            //4. 检查目录是否存在 ? 通过 : 创建目录
+            File directory = new File(directoryname);
+            if (!directory.exists()) {
+                directory.mkdir();
+            }
+
+            //5. 获取图片完整路径,写入图片
+            String imagePath = directoryname + "/" + imagename;
 
             FileOutputStream fos = new FileOutputStream(imagePath);
             byte[] bbuf = new byte[32];
             int hasRead = 0;
+
+            //将文件写入服务器的硬盘上
             while ((hasRead = stream.read(bbuf)) > 0) {
-                fos.write(bbuf, 0, hasRead);//将文件写入服务器的硬盘上
+                fos.write(bbuf, 0, hasRead);
             }
+
             fos.close();
             stream.close();
 
@@ -103,20 +134,9 @@ public class UpImageServlet extends HttpServlet implements HOST {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            resp.sendRedirect(page_imageshow);
+            //6. 上传完后跳转界面
+            resp.sendRedirect(HOST.PAGE_IMAGESHOW);
         }
 
-    }
-
-    /**
-     * @name current image number
-     * @description 当前图片的数量——>图片命名
-     */
-    private static int currentImageNum() {
-        //获取图片目录
-        File directory = new File(image_path);
-        //获取目录下所有文件
-        File[] files = directory.listFiles();
-        return files.length;
     }
 }

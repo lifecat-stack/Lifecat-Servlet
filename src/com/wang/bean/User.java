@@ -1,13 +1,17 @@
 package com.wang.bean;
 
 /**
- * @name User
- * @description User用户登录信息数据库
+ * user表: 用户账户信息
+ * <p>
+ * id: 主键
+ * name: 用户名
+ * password: 密码
+ * level: 访问权限
+ *
  * @auther ten
  */
 public class User implements Bean {
 
-    //数据表属性
     private final int id;
     private final String name;
     private final String password;
@@ -16,11 +20,16 @@ public class User implements Bean {
     //hashcode:若无则生成，若存在则直接调用
     private volatile int hashCode;
 
-
     /**
-     * @name Builder
-     * @description User构建器
-     * @auther
+     * user构建器
+     * <p>
+     * name: 用户名
+     * password: 密码
+     * <p>
+     * id: hashCode()
+     * level: user等级
+     *
+     * @auther ten
      */
     public static class Builder implements BeanBuilder<User> {
         //必要参数

@@ -1,44 +1,65 @@
 package com.wang.form;
 
-import java.util.logging.Logger;
+import com.wang.bean.BeanBuilder;
+
 
 /**
- * @name FormResult
- * @description 表单验证返回结果集
+ * FormResult: 返回Form验证结果对象
+ * <p>
+ * 访问范围: 构造器包访问,getter全局
+ * 应用模式: 构造器模式
+ * 不可变对象
+ *
  * @auther ten
  */
 public class FormResult {
-    private Boolean isError;
-    private String errorMsg;
-    private static Logger logger=Logger.getLogger("FormResult");
 
-    public Boolean getIsError() {
-        return isError;
+    private final boolean error;
+    private final String errormsg;
+
+    private FormResult(Builder builder) {
+        this.error = builder.error;
+        this.errormsg = builder.errormsg;
     }
 
-    public String getErrorMsg() {
-        return errorMsg;
+    /**
+     * Builder: FormResult构建器
+     *
+     * @auther ten
+     */
+    protected static class Builder implements BeanBuilder<FormResult> {
+
+        private final boolean error;
+
+        private String errormsg = "null";
+
+        public Builder(boolean error) {
+            this.error = error;
+        }
+
+        public Builder errormsg(String errormsg) {
+            this.errormsg = errormsg;
+            return this;
+        }
+
+        @Override
+        public FormResult build() {
+            return new FormResult(this);
+        }
     }
 
-    public void setIsError(Boolean isError) {
-        this.isError = isError;
+    //FormResult@{error:true,errormsg:'null'}
+    @Override
+    public String toString() {
+        return "FormResult@{error:" + error + ",errormsg:" + errormsg + "}";
     }
 
-    public void setErrorMsg(String errorMsg) {
-        this.errorMsg = errorMsg;
+    //getter
+    public boolean error() {
+        return error;
     }
 
-    /* 设置错误result,并打印错误信息*/
-    public void setError(String msg) {
-        this.setIsError(true);
-        this.setErrorMsg(msg);
-        logger.warning(msg);
-    }
-
-    /* 设置正确result,并打印正确信息 */
-    public void setTrue() {
-        this.setIsError(false);
-        this.setErrorMsg(null);
-        logger.info("Form验证通过");
+    public String getErrormsg() {
+        return errormsg;
     }
 }

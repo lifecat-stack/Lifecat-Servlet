@@ -14,16 +14,13 @@ import java.io.IOException;
  * @description 上传日记，对应表单UpDiary，对应页面userhome.jsp
  * @auther tem
  */
-public class UpDiaryModel extends MyModel {
+ class UpDiaryModel implements MyModel {
 
-    private DiaryDAO dao;
-    private Diary bean;
+    private UpDiaryModel() {
+    }
 
-    /* 初始化 */
-    public UpDiaryModel() {
-        dao = new DiaryDAO();
-        bean = new Diary();
-        errorMsg = new ErrorMsg();
+    static MyModel getModel() {
+        return new UpDiaryModel();
     }
 
     @Override

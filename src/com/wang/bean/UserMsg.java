@@ -1,35 +1,44 @@
 package com.wang.bean;
 
 /**
- * @name UserMsg
- * @description UserMsg用户个人信息
+ * usermsg表: 用户资料
+ * <p>
+ * user_id: 外键
+ * nickname: 昵称
+ * sex: 性别
+ * age: 年龄
+ * birthday: 生日
+ * email: 邮箱
+ * icon: 用户头像图片路径
+ *
  * @auther ten
  */
 public class UserMsg implements Bean {
-    //根据id插入对应user数值
-    private int id;
 
-    private String nickname;
-    private String sex;
-    private String age;
-    private String birthday;
-    private String email;
+    private final int user_id;
+    private final String nickname;
+    private final String sex;
+    private final String age;
+    private final String birthday;
+    private final String email;
+    private final String icon;
 
     /**
-     * @name Builder
-     * @description UserMsg构建器
+     * usermsg构建器
+     *
      * @auther
      */
     public static class Builder implements BeanBuilder<UserMsg> {
         //必要参数
-        private int id;
+        private final int id;
 
         //默认参数
-        private String nickname = "nickname";
-        private String sex = "sex";
-        private String age = "age";
-        private String birthday = "birthday";
-        private String email = "email";
+        private String nickname = "default_nickname";
+        private String sex = "default_sex";
+        private String age = "default_age";
+        private String birthday = "default_birthday";
+        private String email = "default_email";
+        private String icon = "default_icon";
 
         //构造器
         public Builder(int id) {
@@ -62,6 +71,11 @@ public class UserMsg implements Bean {
             return this;
         }
 
+        public UserMsg.Builder icon(String val) {
+            icon = val;
+            return this;
+        }
+
         //build
         @Override
         public UserMsg build() {
@@ -71,28 +85,30 @@ public class UserMsg implements Bean {
 
     //私有构造器
     private UserMsg(UserMsg.Builder builder) {
-        id = builder.id;
+        user_id = builder.id;
         nickname = builder.nickname;
         age = builder.age;
         sex = builder.sex;
         birthday = builder.birthday;
         email = builder.email;
+        icon = builder.icon;
     }
 
-    //对象描述 UserMsg@1234{nickname:'',sex:'',age:'',birthday:'',email:''}
+    //对象描述 UserMsg@1234{nickname:'',sex:'',age:'',birthday:'',email:'',icon:''}
     @Override
     public String toString() {
-        return "UserMsg@" + id + "{"
+        return "UserMsg@" + user_id + "{"
                 + "nickname:" + nickname + ","
                 + "sex" + sex + ","
                 + "age" + age + ","
                 + "birthday" + birthday + ","
-                + "email" + email + "}";
+                + "email" + email + ","
+                + "icon" + icon + "}";
     }
 
     //getter
-    public int getId() {
-        return id;
+    public int getUser_id() {
+        return user_id;
     }
 
     public String getNickname() {
@@ -114,4 +130,9 @@ public class UserMsg implements Bean {
     public String getEmail() {
         return email;
     }
+
+    public String getIcon() {
+        return icon;
+    }
+
 }

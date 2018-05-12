@@ -1,5 +1,6 @@
 package com.wang.model;
 
+import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMsg;
 import com.wang.bean.User;
 import com.wang.dao.UserDAO;
 
@@ -12,15 +13,12 @@ import java.io.IOException;
  * @description 注册，对应表单Register，对应页面index.jsp->userhome.jsp
  * @auther
  */
-public class RegisterModel extends MyModel {
-    private UserDAO dao;
-    private User bean;
+ class RegisterModel implements MyModel {
+    private RegisterModel() {
+    }
 
-    /* 初始化 */
-    public RegisterModel() {
-        dao = new UserDAO();
-        bean = new User();
-        errorMsg = new ErrorMsg();
+    static MyModel getModel() {
+        return new RegisterModel();
     }
 
     /**

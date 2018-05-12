@@ -3,29 +3,48 @@ package com.wang.form;
 import javax.servlet.ServletRequest;
 
 /**
- * @name RegisterForm
- * @description 注册表单验证
+ * register.do
+ *
+ * 访问权限: 包访问
+ *
  * @auther ten
  */
-public class RegisterForm implements MyForm {
-    @Override
-    public FormResult validate(ServletRequest req) {
-        FormResult result = new FormResult();
+class RegisterForm implements MyForm {
+    private RegisterForm() {
+    }
 
-        /* 用户名为空 */
-        if (req.getParameter("rusername") == null) {
+    static MyForm getForm() {
+        return new RegisterForm();
+    }
+
+    /**
+     * 1. username == null
+     * 2. password == null
+     * 3. password1 != password2
+     * 4. username > 10
+     * 5. password > 20
+     *
+     * @param request request
+     * @return FormResult
+     */
+    @Override
+    public FormResult validate(ServletRequest request) {
+        FormResult result = new FormResult();
+        String rusername = request.getParameter("rusername");
+        String rpassword1 = request.getParameter("rpassword1");
+        String rpassword2 = request.getParameter("rpassword2");
+
+        if (rusername == null) {
             result.setError("username is empty");
-        }
-        /* 密码为空 */
-        else if (req.getParameter("rpassword1") == null || req.getParameter("rpassword2") == null) {
+        } else if (rpassword1 == null || rpassword2 == null) {
             result.setError("password is empty");
-        }
-        /* 两次密码不一致 */
-        else if (!req.getParameter("rpassword1").equals(req.getParameter("rpassword2"))) {
-            result.setError("两次密码不一致");
-        }
-        /* 正确 */
-        else {
+        } else if (!rpassword1.equals(rpassword2)) {
+            result.setError("password1 != password2");
+        } else if (rusername.length() > 10) {
+            result.setError("username is too lang > 10");
+        } else if (rpassword1.length() > 20) {
+            result.setError("password is too lang > 20");
+        } else {
             result.setTrue();
         }
 

@@ -498,7 +498,7 @@ a.pic7:hover {
 				<div class="modal-body">
 
 					<!-- 提交post请求 -> LoginServlet -->
-					<form class="form-group" action="service/Login"
+					<form class="form-group" action="./login.do"
 						method="post">
 						<div class="form-group">
 							<label for="username">账号</label> <input class="form-control"

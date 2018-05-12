@@ -1,99 +1,103 @@
 package com.wang.dao;
 
-import com.wang.bean.User;
+import com.wang.util.Connections;
 
 import java.sql.*;
 
 /**
- * @name UserDAO
- * @description 对user数据库进行操作
+ * user表
+ * <p>
+ * 注册: 插入(id,name,password,level)
+ * 登录: 查询(name,password) and 返回(id)
+ * 更新密码: 查询(password) and 更新(password)
+ *
  * @auther ten
  */
 public class UserDAO extends BaseDAO implements DAO {
-    /* 属性和数据库列名的映射 */
-    private static final String username = "name";
-    private static final String password = "password";
-    private static final String level = "level";
-    private static final String table = "user";
-
     /**
-     * @name queryUser
-     * @description 返回User的bean对象
+     * 注册user到user表
+     *
+     * @param id       id
+     * @param name     name
+     * @param password password
+     * @param level    level
+     * @throws SQLException
      */
-    public User queryUser(int id) {
-        User user = new User();
-        user.setId(id);
-        user.setName(queryUsername(id));
-        user.setPassword(queryPassword(id));
-        user.setLevel(queryLevel(id));
-        return user;
-    }
+    public void registerUser(int id, String name, String password, String level) throws SQLException {
+        String sql = "insert into user values(?,?,?,?)";
 
-    /* 查询id:根据username生成HashCode */
-    public int queryId(String username) {
-        if (username == null) {
-            logger.warning("用户名为空！");
-            return 0;
-        } else {
-            return username.hashCode();
-        }
-    }
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
-    /* 查询username:根据id */
-    public String queryUsername(int id) {
-        String name = null;
-        name = getString(id, name, username);
-        return name;
-    }
+        preparedStatement.setInt(1, id);
+        preparedStatement.setString(2, name);
+        preparedStatement.setString(3, password);
+        preparedStatement.setString(4, level);
 
-    /* 查询password:根据id */
-    public String queryPassword(int id) {
-        String psw = null;
-        psw = getString(id, psw, password);
-        return psw;
-    }
-
-    /* 查询level:根据id */
-    public String queryLevel(int id) {
-        String lel = null;
-        lel = getString(id, lel, level);
-        return lel;
-    }
-
-    /* 获取结果集对应的字段 */
-    private String getString(int id, String str, String table_name) {
-        try {
-            ResultSet resultSet = this.exeSelect(table_name, table, id);
-            resultSet.next();
-            str = resultSet.getString(table_name);
-        } catch (SQLException e) {
-            errorMsg(table_name);
-            e.printStackTrace();
-        }
-        return str;
+        preparedStatement.executeUpdate();
     }
 
     /**
-     * @name insertUser
-     * @description 新建一个User对象到数据库中
+     * 从user表中获取User
+     *
+     * @param name 根据用户名name进行查询
+     * @throws SQLException
      */
-    public boolean insertUser(User user) {
-        Object[] attributes = new Object[4];
-        attributes[0] = user.getId();
-        attributes[1] = user.getName();
-        attributes[2] = user.getPassword();
-        attributes[3] = user.getLevel();
-        return this.exeInsert(table, attributes);
+    public ResultSet selectUser(String name) throws SQLException {
+        String sql = "select * from user where name = " + name;
+
+        ResultSet resultSet;
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        resultSet = preparedStatement.executeQuery();
+
+        if (resultSet == null) {
+            throw new NullPointerException();
+        }
+
+        return resultSet;
     }
 
-    /* 更新密码 */
-    public void updatePassword(String newpassword, int id) {
-        boolean success;
-        success = this.exeUpdate(table, password, newpassword, id);
-        if (success) {
-            logger.info("更新密码成功");
-        } else {
-            logger.warning("更新密码失败");
+    /**
+     * 重载: 从user表中获取User
+     *
+     * @param id 根据用户id进行查询
+     * @throws SQLException
+     */
+    public ResultSet selectUser(int id) throws SQLException {
+        String sql = "select * from user where id = " + id;
+
+        ResultSet resultSet;
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        resultSet = preparedStatement.executeQuery();
+
+        if (resultSet == null) {
+            throw new NullPointerException();
         }
+
+        return resultSet;
+    }
+
+
+    /**
+     * 更新用户密码user
+     *
+     * @param id 用户id
+     * @throws SQLException
+     */
+    public void updateUserPsw(int id, String password) throws SQLException {
+        String sql = "update user set password = " + password + " where id = " + id;
+
+        ResultSet resultSet;
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        preparedStatement.executeUpdate();
     }
 }
