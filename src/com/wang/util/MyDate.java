@@ -12,13 +12,20 @@ import java.util.Date;
  */
 public class MyDate {
 
-    private static final MyDate INSTANCE = new MyDate();
+    private static volatile MyDate INSTANCE = null;
 
     private MyDate() {
-        System.out.println("MyDate加载:" + this);
+        System.out.println("MyDate延迟加载时间:" + this);
     }
 
     public static MyDate getInstance() {
+        if (INSTANCE == null) {
+            synchronized (MyDate.class) {
+                if (INSTANCE == null) {
+                    INSTANCE = new MyDate();
+                }
+            }
+        }
         return INSTANCE;
     }
 
@@ -32,7 +39,6 @@ public class MyDate {
         return temp_str;
     }
 
-    //返回当前时间
     @Override
     public String toString() {
         return this.getCurrentTime();

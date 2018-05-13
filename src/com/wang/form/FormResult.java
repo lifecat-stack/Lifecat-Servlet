@@ -1,14 +1,13 @@
 package com.wang.form;
 
-import com.wang.bean.BeanBuilder;
+import com.wang.util.MyBuilder;
 
 
 /**
  * FormResult: 返回Form验证结果对象
  * <p>
  * 访问范围: 构造器包访问,getter全局
- * 应用模式: 构造器模式
- * 不可变对象
+ * 获取实例: 构建器
  *
  * @auther ten
  */
@@ -27,7 +26,7 @@ public class FormResult {
      *
      * @auther ten
      */
-    protected static class Builder implements BeanBuilder<FormResult> {
+    protected static class Builder implements MyBuilder<FormResult> {
 
         private final boolean error;
 
@@ -55,7 +54,7 @@ public class FormResult {
     }
 
     //getter
-    public boolean error() {
+    public boolean isError() {
         return error;
     }
 

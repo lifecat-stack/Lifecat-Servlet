@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 <%@page import="com.wang.bean.*" %>
-<%@ page import="com.wang.model.GetMsgModel" %>
+<%@ page import="com.wang.servicemodel.UserMsgModel" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.wang.model.GetDiaryModel" %>
-<%@ page import="com.wang.model.GetImgModel" %>
+<%@ page import="com.wang.servicemodel.DiaryModel" %>
+<%@ page import="com.wang.imgmodel.GetImgModel" %>
 <%@ page import="static com.wang.util.HOST.*" %>
 <%@ page import="java.util.logging.Logger" %>
 

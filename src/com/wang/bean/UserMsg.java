@@ -1,5 +1,7 @@
 package com.wang.bean;
 
+import com.wang.util.MyBuilder;
+
 /**
  * usermsg表: 用户资料
  * <p>
@@ -9,7 +11,7 @@ package com.wang.bean;
  * age: 年龄
  * birthday: 生日
  * email: 邮箱
- * icon: 用户头像图片路径
+ * iconpath: 用户头像图片路径
  *
  * @auther ten
  */
@@ -21,31 +23,28 @@ public class UserMsg implements Bean {
     private final String age;
     private final String birthday;
     private final String email;
-    private final String icon;
+    private final String iconpath;
 
     /**
      * usermsg构建器
      *
      * @auther
      */
-    public static class Builder implements BeanBuilder<UserMsg> {
-        //必要参数
+    public static class Builder implements MyBuilder<UserMsg> {
+
         private final int id;
 
-        //默认参数
-        private String nickname = "default_nickname";
-        private String sex = "default_sex";
-        private String age = "default_age";
-        private String birthday = "default_birthday";
-        private String email = "default_email";
-        private String icon = "default_icon";
+        private String nickname = "wang";
+        private String sex = "男";
+        private String age = "21";
+        private String birthday = "1997";
+        private String email = "@qq.com";
+        private String iconpath = "image/icon.jpg";
 
-        //构造器
         public Builder(int id) {
             this.id = id;
         }
 
-        //设置可选参数
         public UserMsg.Builder nickname(String val) {
             nickname = val;
             return this;
@@ -71,8 +70,8 @@ public class UserMsg implements Bean {
             return this;
         }
 
-        public UserMsg.Builder icon(String val) {
-            icon = val;
+        public UserMsg.Builder iconpath(String val) {
+            iconpath = val;
             return this;
         }
 
@@ -91,10 +90,10 @@ public class UserMsg implements Bean {
         sex = builder.sex;
         birthday = builder.birthday;
         email = builder.email;
-        icon = builder.icon;
+        iconpath = builder.iconpath;
     }
 
-    //对象描述 UserMsg@1234{nickname:'',sex:'',age:'',birthday:'',email:'',icon:''}
+    //UserMsg@1234{nickname:'',sex:'',age:'',birthday:'',email:'',iconpath:''}
     @Override
     public String toString() {
         return "UserMsg@" + user_id + "{"
@@ -103,7 +102,7 @@ public class UserMsg implements Bean {
                 + "age" + age + ","
                 + "birthday" + birthday + ","
                 + "email" + email + ","
-                + "icon" + icon + "}";
+                + "iconpath" + iconpath + "}";
     }
 
     //getter
@@ -131,8 +130,8 @@ public class UserMsg implements Bean {
         return email;
     }
 
-    public String getIcon() {
-        return icon;
+    public String getIconPath() {
+        return iconpath;
     }
 
 }

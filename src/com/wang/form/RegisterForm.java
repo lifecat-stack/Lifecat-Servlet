@@ -4,7 +4,7 @@ import javax.servlet.ServletRequest;
 
 /**
  * register.do
- *
+ * <p>
  * 访问权限: 包访问
  *
  * @auther ten
@@ -29,25 +29,26 @@ class RegisterForm implements MyForm {
      */
     @Override
     public FormResult validate(ServletRequest request) {
-        FormResult result = new FormResult();
+        String errormsg;
+
         String rusername = request.getParameter("rusername");
         String rpassword1 = request.getParameter("rpassword1");
         String rpassword2 = request.getParameter("rpassword2");
 
         if (rusername == null) {
-            result.setError("username is empty");
+            errormsg = "username is empty";
         } else if (rpassword1 == null || rpassword2 == null) {
-            result.setError("password is empty");
+            errormsg = "password is empty";
         } else if (!rpassword1.equals(rpassword2)) {
-            result.setError("password1 != password2");
+            errormsg = "password1 != password2";
         } else if (rusername.length() > 10) {
-            result.setError("username is too lang > 10");
+            errormsg = "username is too lang > 10";
         } else if (rpassword1.length() > 20) {
-            result.setError("password is too lang > 20");
+            errormsg = "password is too lang > 20";
         } else {
-            result.setTrue();
+            return new FormResult.Builder(false).build();
         }
 
-        return result;
+        return new FormResult.Builder(true).errormsg(errormsg).build();
     }
 }

@@ -1,53 +1,128 @@
 package com.wang.dao;
 
 import com.wang.bean.Diary;
+import com.wang.util.Connections;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @name DiaryDAO
- * @description 对diary数据库进行操作
+ * DiaryDAO: diary表数据库操作
+ * <p>
+ * 访问范围: 全局
+ * 获取实例: 包权限
+ * 调用者: Model
+ * <p>
+ * 1. 查询diary queryDiary(user_id,diary_id)
+ * 2. 插入diary insertDiary(user_id,diary)
+ * 3. 获取diaries queryDiaries(user_id)
+ *
  * @auther ten
  */
-public class DiaryDAO extends BaseDAO implements DAO {
-    private static final String diaryname = "diaryname";
-    private static final String diarydescription = "diarydescription";
-    private static final String diarydate = "diarydate";
-    private static final String diarypath = "diarypath";
-    private static final String table = "diary";
-
-    /* 上传form内容到数据库 */
-    public boolean uploadDiary(Diary diary) {
-        Object[] attributes = new Object[5];
-        attributes[0] = diary.getId();
-        attributes[1] = diary.getName();
-        attributes[2] = diary.getDescription();
-        attributes[3] = diary.getDate();
-        attributes[4] = diary.getPath();
-        return this.exeInsert(table, attributes);
+public class DiaryDAO implements DAO {
+    private DiaryDAO() {
     }
 
-    /* 根据用户ID获取diary数据集 */
-    public ArrayList<Diary> getDiaryList(int id) {
-        ArrayList<Diary> diaries = new ArrayList<>();
-        ResultSet resultSet = exeSelect("*", table, id);
-        logger.info("diary成功获取到resultset");
-        try {
-            while (resultSet.next()) {
-                Diary diary = new Diary();
-                diary.setName(resultSet.getString(diaryname));
-                diary.setDescription(resultSet.getString(diarydescription));
-                diary.setDate(resultSet.getString(diarydate));
-                diary.setPath(resultSet.getString(diarypath));
-                diaries.add(diary);
-            }
-        } catch (SQLException e) {
-            logger.warning("读取diary的时候出错");
-            e.printStackTrace();
+    static DAO newDiaryDAO() {
+        return new DiaryDAO();
+    }
+
+    /**
+     * 查询diary queryDiary(user_id,diary_id)
+     *
+     * @param user_id  user_id
+     * @param diary_id diary_id
+     * @return Diary 数据库返回Diary对象
+     * @throws SQLException         SQL异常
+     * @throws NullPointerException 数据库查询为空
+     */
+    public Diary queryDiary(int user_id, int diary_id) throws SQLException {
+
+        String sql = "select * from diary where user_id = " + user_id + " and diary_id = " + diary_id;
+
+        ResultSet resultSet;
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        resultSet = preparedStatement.executeQuery();
+
+        if (resultSet == null) {
+            throw new NullPointerException();
         }
-        return diaries;
+
+        String diary_name = resultSet.getString("diary_name");
+        String diary_date = resultSet.getString("diary_date");
+        String diary_desc = resultSet.getString("diary_desc");
+
+        return new Diary.Builder().diary_id(diary_id).diary_name(diary_name).diary_date(diary_date).diary_desc(diary_desc).build();
+    }
+
+    /**
+     * 插入diary insertDiary(userid,diary)
+     *
+     * @param diary diary
+     * @throws SQLException SQL异常
+     */
+    public void insertDiary(int userid, Diary diary) throws SQLException {
+
+        String sql = "insert into diary values(?,?,?,?,?)";
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        preparedStatement.setInt(1, userid);
+        preparedStatement.setInt(2, diary.getDiary_id());
+        preparedStatement.setString(3, diary.getDiary_name());
+        preparedStatement.setString(4, diary.getDiary_date());
+        preparedStatement.setString(5, diary.getDiary_desc());
+
+        preparedStatement.executeUpdate();
+    }
+
+    /**
+     * 获取全部diaries queryDiaries(user_id)
+     *
+     * @param user_id user_id
+     * @return List Diary 数据库返回Diary数据集
+     * @throws SQLException         SQL异常
+     * @throws NullPointerException 数据库查询为空
+     */
+    public List<Diary> queryDiaries(int user_id) throws SQLException {
+
+        String sql = "select * from diary where id = " + user_id;
+
+        ResultSet resultSet;
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        resultSet = preparedStatement.executeQuery();
+
+        if (resultSet == null) {
+            throw new NullPointerException();
+        }
+
+        List<Diary> list = new ArrayList<>();
+
+        //获取数据库返回数据集
+        int diary_id;
+        String diary_name;
+        String diary_date;
+        String diary_desc;
+        while (resultSet.next()) {
+            diary_id = resultSet.getInt("diary_id");
+            diary_name = resultSet.getString("diary_name");
+            diary_date = resultSet.getString("diary_date");
+            diary_desc = resultSet.getString("diary_desc");
+            list.add(new Diary.Builder().diary_id(diary_id).diary_name(diary_name).diary_date(diary_date)
+                    .diary_desc(diary_desc).build());
+        }
+
+        return list;
     }
 }

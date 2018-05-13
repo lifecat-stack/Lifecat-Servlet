@@ -1,72 +1,46 @@
 package com.wang.dao;
 
+import com.wang.bean.User;
 import com.wang.util.Connections;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
- * user表
+ * UserDAO: user表数据库操作
  * <p>
- * 注册: 插入(id,name,password,level)
- * 登录: 查询(name,password) and 返回(id)
- * 更新密码: 查询(password) and 更新(password)
+ * 访问范围: 全局
+ * 获取实例: 包权限
+ * 调用者: Model
+ * <p>
+ * 1. 查询user queryUser(user_id)
+ * 2. 插入user insertUser(User)
+ * 3. 查询密码 queryUserPsw(user_id)
+ * 4. 更新密码 updateUserPsw(password)
  *
  * @auther ten
  */
-public class UserDAO extends BaseDAO implements DAO {
-    /**
-     * 注册user到user表
-     *
-     * @param id       id
-     * @param name     name
-     * @param password password
-     * @param level    level
-     * @throws SQLException
-     */
-    public void registerUser(int id, String name, String password, String level) throws SQLException {
-        String sql = "insert into user values(?,?,?,?)";
+public class UserDAO implements DAO {
 
-        Connection connection = Connections.getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+    private UserDAO() {
+    }
 
-        preparedStatement.setInt(1, id);
-        preparedStatement.setString(2, name);
-        preparedStatement.setString(3, password);
-        preparedStatement.setString(4, level);
-
-        preparedStatement.executeUpdate();
+    static DAO newUserDAO() {
+        return new UserDAO();
     }
 
     /**
-     * 从user表中获取User
+     * 查询user queryUser(user_id)
      *
-     * @param name 根据用户名name进行查询
-     * @throws SQLException
+     * @param id user_id
+     * @return User 数据库返回User对象
+     * @throws SQLException         SQL异常
+     * @throws NullPointerException 数据库查询为空
      */
-    public ResultSet selectUser(String name) throws SQLException {
-        String sql = "select * from user where name = " + name;
+    public User queryUser(int id) throws SQLException {
 
-        ResultSet resultSet;
-
-        Connection connection = Connections.getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-        resultSet = preparedStatement.executeQuery();
-
-        if (resultSet == null) {
-            throw new NullPointerException();
-        }
-
-        return resultSet;
-    }
-
-    /**
-     * 重载: 从user表中获取User
-     *
-     * @param id 根据用户id进行查询
-     * @throws SQLException
-     */
-    public ResultSet selectUser(int id) throws SQLException {
         String sql = "select * from user where id = " + id;
 
         ResultSet resultSet;
@@ -80,20 +54,64 @@ public class UserDAO extends BaseDAO implements DAO {
             throw new NullPointerException();
         }
 
-        return resultSet;
+        String name = resultSet.getString("name");
+        String password = resultSet.getString("password");
+        String level = resultSet.getString("level");
+
+        return new User.Builder(name, password).id(id).level(level).build();
+    }
+
+    /**
+     * 插入user insertUser(User)
+     *
+     * @param user User对象
+     * @throws SQLException SQL异常
+     */
+    public void insertUser(User user) throws SQLException {
+
+        String sql = "insert into user values(?,?,?,?)";
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        preparedStatement.setInt(1, user.getId());
+        preparedStatement.setString(2, user.getName());
+        preparedStatement.setString(3, user.getPassword());
+        preparedStatement.setString(4, user.getLevel());
+
+        preparedStatement.executeUpdate();
     }
 
 
     /**
-     * 更新用户密码user
+     * 查询密码 queryUserPsw(user_id)
      *
      * @param id 用户id
-     * @throws SQLException
+     * @return password
+     * @throws SQLException SQL异常
+     */
+    public String queryUserPsw(int id) throws SQLException {
+
+        String sql = "select password from user where id = " + id;
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        return resultSet.getString("password");
+    }
+
+    /**
+     * 更新密码 updateUserPsw(id,password)
+     *
+     * @param id       用户id
+     * @param password 新密码
+     * @throws SQLException SQL异常
      */
     public void updateUserPsw(int id, String password) throws SQLException {
-        String sql = "update user set password = " + password + " where id = " + id;
 
-        ResultSet resultSet;
+        String sql = "update user set password = " + password + " where id = " + id;
 
         Connection connection = Connections.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql);

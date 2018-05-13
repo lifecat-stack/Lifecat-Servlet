@@ -1,10 +1,9 @@
 package com.wang.form;
 
 import javax.servlet.ServletRequest;
-import java.util.logging.Logger;
 
 /**
- * Form接口
+ * MyForm: Form接口
  *
  * @auther ten
  */

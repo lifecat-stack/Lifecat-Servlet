@@ -1,7 +1,9 @@
 package com.wang.bean;
 
+import com.wang.util.MyBuilder;
+
 /**
- * user表: 用户账户信息
+ * User: user表用户账户信息
  * <p>
  * id: 主键
  * name: 用户名
@@ -17,8 +19,18 @@ public class User implements Bean {
     private final String password;
     private final String level;
 
-    //hashcode:若无则生成，若存在则直接调用
     private volatile int hashCode;
+
+    private User(Builder builder) {
+        if (builder.id == 0) {
+            id = hashCode();
+        } else {
+            id = builder.id;
+        }
+        name = builder.name;
+        password = builder.password;
+        level = builder.level;
+    }
 
     /**
      * user构建器
@@ -31,44 +43,80 @@ public class User implements Bean {
      *
      * @auther ten
      */
-    public static class Builder implements BeanBuilder<User> {
-        //必要参数
+    public static class Builder implements MyBuilder<User> {
+
         private final String name;
         private final String password;
 
-        //默认参数
+        private int id = 0;
         private String level = "user";
 
-        //构造器
         public Builder(String name, String password) {
             this.name = name;
             this.password = password;
         }
 
-        //设置可选参数
+        public Builder id(int val) {
+            id = val;
+            return this;
+        }
+
         public Builder level(String val) {
             level = val;
             return this;
         }
 
-        //build
         @Override
         public User build() {
             return new User(this);
         }
     }
 
-    //私有构造器
-    private User(Builder builder) {
-        //id不能由外部设置，由hashCode()计算
-        id = hashCode();
-
-        name = builder.name;
-        password = builder.password;
-        level = builder.level;
+    /**
+     * equals: 判断User是否相等
+     * 1. 引用检测
+     * 1. 类型检测
+     * <p>
+     * 2. id
+     * 3. name
+     * 4. password
+     * 5. level
+     *
+     * @param obj Object
+     * @return boolean
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof User)) {
+            return false;
+        }
+        if (this.id != ((User) obj).id) {
+            return false;
+        }
+        if (!this.name.equals(((User) obj).name)) {
+            return false;
+        }
+        if (!this.password.equals(((User) obj).password)) {
+            return false;
+        }
+        if (!this.level.equals(((User) obj).level)) {
+            return false;
+        }
+        return true;
     }
 
-    //UserHash
+    /**
+     * hashCode: 计算user_id
+     * <p>
+     * 1. name
+     * 2. password
+     * 3. level
+     *
+     * @return image_id
+     */
     @Override
     public int hashCode() {
         int result = hashCode;
@@ -76,15 +124,16 @@ public class User implements Bean {
             result = 17;
             result = 31 * result + name.hashCode();
             result = 31 * result + password.hashCode();
+            result = 31 * result + level.hashCode();
             hashCode = result;
         }
         return result;
     }
 
-    //对象描述 User@1234{wang:123456}
+    //User@1234{wang:123456,LEVEL}
     @Override
     public String toString() {
-        return "User@" + id + "{" + name + ":" + password + "}";
+        return "User@" + id + "{" + name + ":" + password + "," + level + "}";
     }
 
     //getter方法
@@ -101,6 +150,6 @@ public class User implements Bean {
     }
 
     public String getLevel() {
-        return level;
+        return String.valueOf(level);
     }
 }

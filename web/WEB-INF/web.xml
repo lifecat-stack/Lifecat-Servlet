@@ -28,10 +28,10 @@
         <url-pattern>/*.do</url-pattern>
     </filter-mapping>
 
-    <!--数据库操作:DatabaseActionServlet-->
+    <!--数据库操作:ActionServlet-->
     <servlet>
         <servlet-name>DBService</servlet-name>
-        <servlet-class>com.wang.service.DatabaseActionServlet</servlet-class>
+        <servlet-class>com.wang.service.ActionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>DBService</servlet-name>
@@ -41,7 +41,7 @@
     <!--上传图片servlet-->
     <servlet>
         <servlet-name>UpImageService</servlet-name>
-        <servlet-class>com.wang.service.UpImageServlet</servlet-class>
+        <servlet-class>com.wang.service.ImageServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UpImageService</servlet-name>

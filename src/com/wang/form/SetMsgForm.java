@@ -4,7 +4,7 @@ import javax.servlet.ServletRequest;
 
 /**
  * setmsg.do
- *
+ * <p>
  * 访问权限: 包访问
  *
  * @auther ten
@@ -33,7 +33,7 @@ class SetMsgForm implements MyForm {
      */
     @Override
     public FormResult validate(ServletRequest request) {
-        FormResult result = new FormResult();
+        String errormsg;
 
         String nickname = request.getParameter("nickname");
         String sex = request.getParameter("sex");
@@ -42,25 +42,25 @@ class SetMsgForm implements MyForm {
         String email = request.getParameter("email");
 
         if (nickname == null) {
-            result.setError("nickname is empty");
+            errormsg = "nickname is empty";
         } else if (sex == null) {
-            result.setError("sex is empty");
+            errormsg = "sex is empty";
         } else if (age == null) {
-            result.setError("age is empty");
+            errormsg = "age is empty";
         } else if (birthday == null) {
-            result.setError("birthday is empty");
+            errormsg = "birthday is empty";
         } else if (email == null) {
-            result.setError("email is empty");
+            errormsg = "email is empty";
         } else if (nickname.length() > 20) {
-            result.setError("nickname is too lang > 20");
+            errormsg = "nickname is too lang > 20";
         } else if (!sex.equals("男") && !sex.equals("女")) {
-            result.setError("sex must be 男 or 女");
+            errormsg = "sex must be 男 or 女";
         } else if (Integer.valueOf(age) < 0 || Integer.valueOf(age) > 100) {
-            result.setError("age must be 0 ~ 100");
+            errormsg = "age must be 0 ~ 100";
         } else {
-            result.setTrue();
+            return new FormResult.Builder(false).build();
         }
 
-        return result;
+        return new FormResult.Builder(true).errormsg(errormsg).build();
     }
 }

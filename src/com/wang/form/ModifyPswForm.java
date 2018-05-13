@@ -28,24 +28,24 @@ class ModifyPswForm implements MyForm {
      */
     @Override
     public FormResult validate(ServletRequest request) {
-        FormResult result = new FormResult();
+        String errormsg;
 
         String oldpassword = request.getParameter("oldpassword");
         String newpassword1 = request.getParameter("newpassword1");
         String newpassword2 = request.getParameter("newpassword2");
 
         if (oldpassword == null) {
-            result.setError("oldpassword is empty");
+            errormsg = "oldpassword is empty";
         } else if (newpassword1 == null || newpassword2 == null) {
-            result.setError("newpassword is empty");
+            errormsg = "newpassword is empty";
         } else if (!newpassword1.equals(newpassword2)) {
-            result.setError("newpassword1 != newpassword2");
+            errormsg = "newpassword1 != newpassword2";
         } else if (newpassword1.length() > 20) {
-            result.setError("newpassword is too lang > 20");
+            errormsg = "newpassword is too lang > 20";
         } else {
-            result.setTrue();
+            return new FormResult.Builder(false).build();
         }
 
-        return result;
+        return new FormResult.Builder(true).errormsg(errormsg).build();
     }
 }

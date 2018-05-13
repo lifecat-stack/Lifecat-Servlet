@@ -1,28 +1,105 @@
 package com.wang.dao;
 
 import com.wang.bean.UserMsg;
+import com.wang.util.Connections;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * usermsg表
+ * UserMsgDAO: usermsg表数据库操作
  * <p>
- * 查询: 根据id查询usermsg
- * 更新: 更新(usermsg)到(id)中
- * 上传头像: 插入/更新(icon)到(id)中
+ * 访问范围: 全局
+ * 获取实例: 包权限
+ * 调用者: Model
+ * <p>
+ * 1. 查询usermsg queryUserMsg(user_id)
+ * 2. 插入usermsg insertUserMsg(User)
+ * 3. 更新iconpath updateUserIcon(userid,iconpath)
  *
  * @auther ten
  */
-public class UserMsgDAO extends BaseDAO implements DAO {
-    /* 属性和数据库列名的映射 */
-    private static final String nickname = "nickname";
-    private static final String sex = "sex";
-    private static final String age = "age";
-    private static final String birthday = "birthday";
-    private static final String email = "email";
-    private static final String table = "usermsg";
+public class UserMsgDAO implements DAO {
 
-   public void selectUserMsg(){
+    private UserMsgDAO() {
+    }
 
-   }
+    static DAO newUserMsgDAO() {
+        return new UserMsgDAO();
+    }
+
+    /**
+     * 查询usermsg queryUserMsg(user_id)
+     *
+     * @param id user_id
+     * @throws SQLException         SQL异常
+     * @throws NullPointerException 数据库查询为空
+     */
+    public UserMsg queryUserMsg(int id) throws SQLException {
+
+        String sql = "select * from usermsg where id = " + id;
+
+        ResultSet resultSet;
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        resultSet = preparedStatement.executeQuery();
+
+        if (resultSet == null) {
+            throw new NullPointerException();
+        }
+
+        String nickname = resultSet.getString("nickname");
+        String age = resultSet.getString("age");
+        String sex = resultSet.getString("sex");
+        String birthday = resultSet.getString("birthday");
+        String email = resultSet.getString("email");
+        String iconpath = resultSet.getString("iconpath");
+
+        return new UserMsg.Builder(id).nickname(nickname).age(age).sex(sex).birthday(birthday).email(email).iconpath(iconpath).build();
+    }
+
+    /**
+     * 插入usermsg insertUserMsg(User)
+     *
+     * @param usermsg UserMsg
+     * @throws SQLException SQL异常
+     */
+    public void insertUserMsg(UserMsg usermsg) throws SQLException {
+
+        String sql = "insert into usermsg values(?,?,?,?,?,?,?)";
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        preparedStatement.setInt(1, usermsg.getUser_id());
+        preparedStatement.setString(2, usermsg.getNickname());
+        preparedStatement.setString(3, usermsg.getAge());
+        preparedStatement.setString(4, usermsg.getSex());
+        preparedStatement.setString(5, usermsg.getBirthday());
+        preparedStatement.setString(6, usermsg.getEmail());
+        preparedStatement.setString(7, usermsg.getIconPath());
+
+        preparedStatement.executeUpdate();
+    }
+
+    /**
+     * 更新iconpath updateUserIcon(userid,iconpath)
+     *
+     * @param userid   user_id
+     * @param iconpath iconpath
+     * @throws SQLException SQL异常
+     */
+    public void updateUserIcon(int userid, String iconpath) throws SQLException {
+
+        String sql = "update usermsg set iconpath = " + iconpath + " where id = " + userid;
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        preparedStatement.executeUpdate();
+    }
 }

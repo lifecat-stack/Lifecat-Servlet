@@ -1,16 +1,10 @@
 package com.wang.filter;
 
-import java.io.IOException;
-import java.util.logging.Logger;
-
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.logging.Logger;
 
 /**
  * Filter:Encoding
@@ -26,8 +20,9 @@ public class EncodingFilter implements Filter {
     /**
      * doFilter
      *
-     * @throws IOException      IO failure
-     * @throws ServletException servlet failure
+     * @throws IOException          IO failure
+     * @throws ServletException     servlet failure
+     * @throws NullPointerException 过滤器链异常
      */
     @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
