@@ -7,42 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/wang/servicemodel/UserLoginModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wang/servicemodel/UserRegisterModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifecatweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lifecatweb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/android/AndroidGetImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/android/AndroidGetImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/android/AndroidUpImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/android/AndroidUpImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/DiaryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/dao/DiaryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/ImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/dao/ImageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/UserMsgDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/dao/UserMsgDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/domodel/LoginModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/domodel/ModelSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/servicemodel/ModelFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/domodel/ModifyPswModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/servicemodel/UpUserPswModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/domodel/MyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/servicemodel/ServiceModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/domodel/RegisterModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/domodel/SetMsgModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/servicemodel/SetUserMsgModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/domodel/UpDiaryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/servicemodel/UpDiaryModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/filter/FormFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/filter/FormFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/form/FormSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/form/FormSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/form/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/form/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/form/ModifyPswForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/form/ModifyPswForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/form/MyForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/form/Form.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/form/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/form/RegisterForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/form/SetMsgForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/form/SetMsgForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/imgmodel/GetImgModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/servicemodel/GetImagesModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/imgmodel/UpImgModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/servicemodel/UpImageModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ActionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/service/ActionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ImageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/service/ImageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/servicemodel/DiaryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/daomodel/DiaryDAOModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/servicemodel/UserMsgModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/daomodel/UserMsgDAOModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/util/Connections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/util/Connections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/util/HOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/util/HOST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/util/MyBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/util/MyBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/imageshow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/imageshow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/imageshow2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/imageshow2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/include/home/homePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/include/home/homePage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,11 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Readme.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -151,15 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DAOModelFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wang/daomodel/DAOModelFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DiaryDAOModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wang/daomodel/DiaryDAOModel.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -195,6 +162,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="kevinten10 &lt;596823919@qq.com&gt;" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -206,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/wang/service/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/com/wang/service/UserMsgServlet.java" />
         <option value="$PROJECT_DIR$/src/com/wang/service/ImageServlet.java" />
         <option value="$PROJECT_DIR$/src/com/wang/service/DiaryServlet.java" />
@@ -255,8 +226,9 @@
         <option value="$PROJECT_DIR$/src/com/wang/servicemodel/GetImagesModel.java" />
         <option value="$PROJECT_DIR$/src/com/wang/util/HOST.java" />
         <option value="$PROJECT_DIR$/src/com/wang/servicemodel/ModelResult.java" />
-        <option value="$PROJECT_DIR$/src/database.txt" />
         <option value="$PROJECT_DIR$/src/test/com/wang/dao/jk.http" />
+        <option value="$PROJECT_DIR$/src/database.txt" />
+        <option value="$PROJECT_DIR$/Readme.txt" />
       </list>
     </option>
   </component>
@@ -280,10 +252,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="30" />
-    <option name="y" value="15" />
-    <option name="width" value="1335" />
-    <option name="height" value="750" />
+    <option name="x" value="991" />
+    <option name="width" value="938" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -406,6 +377,25 @@
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
@@ -430,7 +420,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -729,7 +719,7 @@
       <workItem from="1526179182540" duration="30850000" />
       <workItem from="1526259784818" duration="10511000" />
       <workItem from="1526303139671" duration="8007000" />
-      <workItem from="1526370778514" duration="9254000" />
+      <workItem from="1526370778514" duration="15301000" />
     </task>
     <task id="LOCAL-00001" summary="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法">
       <created>1525965840652</created>
@@ -752,19 +742,32 @@
       <option name="project" value="LOCAL" />
       <updated>1526218748622</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="version1.3 plus&#10; --添加了构建着模式&#10; --组件修改为不可变对象模式&#10; --Model层实现逻辑执行&#10; --DAO层实现数据库执行&#10; --Servlet实现分层结构&#10; --添加了Local方法调用&#10; --优化了SQL语句&#10; --优化了业务逻辑&#10; --......">
+      <created>1526389856833</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526389856833</updated>
+    </task>
+    <task id="LOCAL-00005" summary="version2.0.0&#10; --effective&#10; --design">
+      <created>1526390008841</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526390008841</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223635000" />
+    <option name="totallyTimeSpent" value="229682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32859176" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32816902" />
       <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32887325" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
@@ -777,18 +780,18 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.15299027" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.15299027" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.15789473" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.15789473" />
       <window_info anchor="right" id="Run" order="12" weight="0.17229255" />
-      <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18309858" />
+      <window_info anchor="bottom" id="Terminal" order="15" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24788733" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.0" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.18724559" />
@@ -878,7 +881,8 @@
     <MESSAGE value="version1.2&#10;--添加了智能分类页面&#10;--修复了bug" />
     <MESSAGE value="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法" />
     <MESSAGE value="version1.3 plus&#10; --添加了构建着模式&#10; --组件修改为不可变对象模式&#10; --Model层实现逻辑执行&#10; --DAO层实现数据库执行&#10; --Servlet实现分层结构&#10; --添加了Local方法调用&#10; --优化了SQL语句&#10; --优化了业务逻辑&#10; --......" />
-    <option name="LAST_COMMIT_MESSAGE" value="version1.3 plus&#10; --添加了构建着模式&#10; --组件修改为不可变对象模式&#10; --Model层实现逻辑执行&#10; --DAO层实现数据库执行&#10; --Servlet实现分层结构&#10; --添加了Local方法调用&#10; --优化了SQL语句&#10; --优化了业务逻辑&#10; --......" />
+    <MESSAGE value="version2.0.0&#10; --effective&#10; --design" />
+    <option name="LAST_COMMIT_MESSAGE" value="version2.0.0&#10; --effective&#10; --design" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -890,13 +894,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="126" column="33" lean-forward="true" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wang/service/ActionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -968,6 +965,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="25" column="6" selection-start-line="25" selection-end-line="25" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1284,8 +1284,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
