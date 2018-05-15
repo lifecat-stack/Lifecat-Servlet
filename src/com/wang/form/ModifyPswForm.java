@@ -9,11 +9,11 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class ModifyPswForm implements MyForm {
+class ModifyPswForm implements Form {
     private ModifyPswForm() {
     }
 
-    static MyForm getForm() {
+    static Form getForm() {
         return new ModifyPswForm();
     }
 

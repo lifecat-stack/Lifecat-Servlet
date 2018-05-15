@@ -1,4 +1,4 @@
-package com.wang.servicemodel;
+package com.wang.daomodel;
 
 import com.wang.bean.UserMsg;
 import com.wang.dao.DAOFactory;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * UserMsgModel: usermsg表逻辑操作
+ * UserMsgDAOModel: usermsg表逻辑操作
  * <p>
  * 访问范围: 全局
  * 调用者: Service
@@ -20,19 +20,19 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-class UserMsgModel implements Model {
+public class UserMsgDAOModel implements DAOModel {
     private final int userid;
     private final UserMsgDAO dao;
     private final Logger logger;
 
-    private UserMsgModel(int userid) {
+    private UserMsgDAOModel(int userid) {
         this.userid = userid;
         this.dao = (UserMsgDAO) DAOFactory.getDAOByName("UserMsgDAO");
-        this.logger = Logger.getLogger("UserMsgModel@" + userid);
+        this.logger = Logger.getLogger("UserMsgDAOModel@" + userid);
     }
 
-    static Model getUserMsgModel(int userid) {
-        return new UserMsgModel(userid);
+    static DAOModel getUserMsgModel(int userid) {
+        return new UserMsgDAOModel(userid);
     }
 
     /**
@@ -49,7 +49,7 @@ class UserMsgModel implements Model {
     }
 
     /**
-     * 插入usermsg
+     * 插入usermsg except iconpath
      *
      * @throws SQLException             insertUserMsg()异常
      * @throws IllegalArgumentException usermsg属性为空
@@ -57,7 +57,9 @@ class UserMsgModel implements Model {
     public void insertUserMsg(UserMsg userMsg) throws SQLException {
         logger.info("inserUserMsg()");
 
-        if (userMsg.getNickname() == null || userMsg.getAge() == null || userMsg.getSex() == null || userMsg.getBirthday() == null || userMsg.getEmail() == null || userMsg.getIconPath() == null) {
+        final boolean isNull = userMsg.getNickname() == null || userMsg.getAge() == null || userMsg.getSex() == null || userMsg.getBirthday() == null || userMsg.getEmail() == null;
+
+        if (isNull) {
             throw new IllegalArgumentException("usermsg argument is null");
         }
 
@@ -77,7 +79,7 @@ class UserMsgModel implements Model {
             throw new IllegalArgumentException("usermsg argument is null");
         }
 
-        dao.updateUserIcon(userid,iconpath);
+        dao.updateUserIcon(userid, iconpath);
     }
 }
 

@@ -8,11 +8,11 @@ package com.wang.form;
 public class FormSelector {
     /**
      * @param action *.do
-     * @return MyForm
+     * @return Form
      * @throws NullPointerException 无此请求对应的Form
      */
-    public static MyForm select(String action) {
-        MyForm form;
+    public static Form select(String action) {
+        Form form;
         switch (action) {
             case "login.do":
                 form = LoginForm.getForm();

@@ -2,6 +2,7 @@ package com.wang.service;
 
 import com.wang.bean.User;
 import com.wang.util.HOST;
+import com.wang.util.ImageWriter;
 import com.wang.util.MyDate;
 
 import javax.servlet.ServletException;
@@ -116,15 +117,7 @@ public class ImageServlet extends HttpServlet {
             long endPosition = random.getFilePointer();
             long mark = endPosition;
             int j = 1;
-            while ((mark >= 0) && (j <= 6)) {
-                mark--;
-                random.seek(mark);
-                n = random.readByte();
-                if (n == '\n') {
-                    endPosition = random.getFilePointer();
-                    j++;
-                }
-            }
+            endPosition = ImageWriter.getEndPosition(random, endPosition, mark, j);
 
             //locate to the begin of content.Count for 4 lines's end position.
             random.seek(forthEndPosition);

@@ -1,8 +1,8 @@
 package com.wang.service;
 
-import com.wang.domodel.ModelResult;
-import com.wang.domodel.ModelSelector;
-import com.wang.domodel.MyModel;
+import com.wang.servicemodel.ModelFactory;
+import com.wang.servicemodel.ModelResult;
+import com.wang.servicemodel.ServiceModel;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -35,10 +35,18 @@ public class ActionServlet extends HttpServlet {
         String page;
 
         //提取请求信息
-        String action = req.getParameter("action");
+        String path = req.getRequestURI();
+        String action = path.substring(path.lastIndexOf("/"), path.indexOf("."));
+        if (action.equals("/regist")) {
+            //相应处理代码
+        }
+        if (action.equals("/login")) {
+            //相应处理代码
+
+        }
 
         //model
-        MyModel model = ModelSelector.select(action);
+        ServiceModel model = ModelFactory.getModelByAction(action);
 
         ModelResult result = model.execute(req, resp);
 

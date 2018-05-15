@@ -13,7 +13,7 @@ import java.sql.SQLException;
  * <p>
  * 访问范围: 全局
  * 获取实例: 包权限
- * 调用者: Model
+ * 调用者: DAOModel
  * <p>
  * 1. 查询usermsg queryUserMsg(user_id)
  * 2. 插入usermsg insertUserMsg(User)
@@ -70,7 +70,7 @@ public class UserMsgDAO implements DAO {
      */
     public void insertUserMsg(UserMsg usermsg) throws SQLException {
 
-        String sql = "insert into usermsg values(?,?,?,?,?,?,?)";
+        String sql = "insert into usermsg(user_id,nickname,age,sex,birthday,email) values(?,?,?,?,?,?)";
 
         Connection connection = Connections.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -81,7 +81,6 @@ public class UserMsgDAO implements DAO {
         preparedStatement.setString(4, usermsg.getSex());
         preparedStatement.setString(5, usermsg.getBirthday());
         preparedStatement.setString(6, usermsg.getEmail());
-        preparedStatement.setString(7, usermsg.getIconPath());
 
         preparedStatement.executeUpdate();
     }

@@ -3,12 +3,18 @@ package com.wang.form;
 import javax.servlet.ServletRequest;
 
 /**
- * MyForm: Form接口
+ * Form: Form接口
+ *
+ * 1. 检查格式
+ * 2. 检查字符串长度
+ * 3.
+ *
+ * 不进行逻辑判断
  *
  * @auther ten
  */
-public interface MyForm {
-    static MyForm getForm() {
+public interface Form {
+    static Form getForm() {
         return null;
     }
 

@@ -1,4 +1,4 @@
-package com.wang.servicemodel;
+package com.wang.daomodel;
 
 import com.wang.bean.Diary;
 import com.wang.dao.DAOFactory;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 /**
- * DiaryModel: diary表操作
+ * DiaryDAOModel: diary表操作
  * <p>
  * 访问范围: 全局
  * 调用者: Service
@@ -22,19 +22,19 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-class DiaryModel implements Model {
+public class DiaryDAOModel implements DAOModel {
     private final int userid;
     private final DiaryDAO dao;
     private final Logger logger;
 
-    private DiaryModel(int userid) {
+    private DiaryDAOModel(int userid) {
         this.userid = userid;
         this.dao = (DiaryDAO) DAOFactory.getDAOByName("DiaryDAO");
-        this.logger = Logger.getLogger("DiaryModel@" + userid);
+        this.logger = Logger.getLogger("DiaryDAOModel@" + userid);
     }
 
-    static Model getUserDiaryModel(int userid) {
-        return new DiaryModel(userid);
+    static DAOModel getUserDiaryModel(int userid) {
+        return new DiaryDAOModel(userid);
     }
 
     /**
@@ -59,11 +59,13 @@ class DiaryModel implements Model {
     public void insertDiary(Diary diary) throws SQLException {
         logger.info("insertDiary()");
 
-        if (diary.getDiary_name() == null || diary.getDiary_date() == null || diary.getDiary_desc() == null) {
+        final boolean isNull = diary.getDiary_name() == null || diary.getDiary_date() == null || diary.getDiary_desc() == null;
+
+        if (isNull) {
             throw new IllegalArgumentException("diary argument is null");
         }
 
-        dao.insertDiary(userid,diary);
+        dao.insertDiary(userid, diary);
     }
 
     /**

@@ -1,33 +1,77 @@
-package com.wang.imgmodel;
+package com.wang.servicemodel;
 
 import com.wang.bean.Image;
-import com.wang.domodel.ModelResult;
-import com.wang.domodel.MyModel;
+import com.wang.bean.User;
+import com.wang.daomodel.DAOModelFactory;
+import com.wang.daomodel.ImageDAOModel;
 import com.wang.util.HOST;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
- * {@literal 获取ArrayList<Image>}
+ * UserLoginModel: 用户登录
+ * <p>
+ * 访问范围: 全局
+ * 调用者: Servlet
+ * 异常检测: try-catch异常处理层
+ * <p>
+ * 1. 通过DAOModel获取对应id对象
+ * 2. 验证登录表单User是否与数据库相同
  *
  * @auther ten
  */
-class GetImgModel implements MyModel {
-        private GetImgModel() {
+class GetImagesModel implements ServiceModel {
+    private Logger logger;
+
+    private GetImagesModel() {
+        logger = Logger.getLogger("GetImagesModel");
     }
 
-    static MyModel getModel() {
-        return new GetImgModel();
+    static ServiceModel getModel() {
+        return new GetImagesModel();
     }
 
     @Override
     public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
-        return null;
+
+        User user = (User) req.getSession().getAttribute("user");
+
+        ImageDAOModel daoModel = (ImageDAOModel) DAOModelFactory.getDAOModelByName(user.getId(), "ImageDAOModel");
+
+        List<Image> images = null;
+
+        boolean isSuccess;
+        String errormsg = null;
+
+        //获取images
+        try {
+            images = daoModel.queryDiaries(user.getId());
+            isSuccess = true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            isSuccess = false;
+            errormsg = "SQLException";
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+            isSuccess = false;
+            errormsg = "数据库查询为空";
+        }
+
+        if (isSuccess) {
+            req.getSession().setAttribute("diarys", diaries);
+            return new ModelResult.Builder(false).page(HOST.PAGE_USERHOME).build();
+        }
+
+        diaries = new ArrayList<>();
+        req.getSession().setAttribute("diarys", diaries);
+        return new ModelResult.Builder(true).errormsg(errormsg).page(HOST.PAGE_USERHOME).build();
+    }
     }
 
     /**

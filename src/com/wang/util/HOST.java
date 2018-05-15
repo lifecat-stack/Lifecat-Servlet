@@ -8,6 +8,7 @@ package com.wang.util;
  * @auther ten
  */
 public class HOST {
+
     private HOST() {
         throw new AssertionError();
     }
@@ -17,7 +18,7 @@ public class HOST {
     private static final String PROJECT = "lifecatweb";
 
     //数据库配置
-    private static final int TOMCATPORT = 8080;
+    private static final int TOMCAT_PORT = 8080;
     static final int DATABASEPORT = 3306;
     static final String DATABASE = "users";
     static final String ENCODING = "UTF-8";
@@ -25,7 +26,7 @@ public class HOST {
     static final String PASSWORD = "wangshihao";
 
     //应用上下文路径
-    public static final String PROJECTCONTEXT = "http://" + IP + ":" + TOMCATPORT + "/" + PROJECT + "/";
+    public static final String PROJECTCONTEXT = "http://" + IP + ":" + TOMCAT_PORT + "/" + PROJECT + "/";
 
     //image存储路径--本地路径
     public static final String IMAGE_PATH = "/usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/upimage/";

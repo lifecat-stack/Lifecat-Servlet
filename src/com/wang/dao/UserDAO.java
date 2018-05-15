@@ -13,12 +13,13 @@ import java.sql.SQLException;
  * <p>
  * 访问范围: 全局
  * 获取实例: 包权限
- * 调用者: Model
+ * 调用者: DAOModel
  * <p>
  * 1. 查询user queryUser(user_id)
  * 2. 插入user insertUser(User)
  * 3. 查询密码 queryUserPsw(user_id)
  * 4. 更新密码 updateUserPsw(password)
+ * 5. 查询username queryUserName(user_id)
  *
  * @auther ten
  */
@@ -117,5 +118,23 @@ public class UserDAO implements DAO {
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
         preparedStatement.executeUpdate();
+    }
+
+    /**
+     * 查询username queryUserName(user_id)
+     *
+     * @param id 用户id
+     * @throws SQLException SQL异常
+     */
+    public String  queryUserName(int id) throws SQLException {
+
+        String sql = "select name from user where id = " + id;
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        return resultSet.getString("name");
     }
 }

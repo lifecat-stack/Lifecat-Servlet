@@ -9,12 +9,12 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class LoginForm implements MyForm {
+class LoginForm implements Form {
 
     private LoginForm() {
     }
 
-    static MyForm getForm() {
+    static Form getForm() {
         return new LoginForm();
     }
 

@@ -9,11 +9,11 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class RegisterForm implements MyForm {
+class RegisterForm implements Form {
     private RegisterForm() {
     }
 
-    static MyForm getForm() {
+    static Form getForm() {
         return new RegisterForm();
     }
 
@@ -41,7 +41,7 @@ class RegisterForm implements MyForm {
             errormsg = "password is empty";
         } else if (!rpassword1.equals(rpassword2)) {
             errormsg = "password1 != password2";
-        } else if (rusername.length() > 10) {
+        } else  if (rusername.length() > 10) {
             errormsg = "username is too lang > 10";
         } else if (rpassword1.length() > 20) {
             errormsg = "password is too lang > 20";

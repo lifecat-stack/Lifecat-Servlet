@@ -37,13 +37,13 @@ public class Connections {
     public static Connection getConnection() throws SQLException {
         Connection c = DriverManager.getConnection(URL, HOST.LOGIN_NAME, HOST.PASSWORD);
         if (c.isClosed()) {
-            throw new NullPointerException("Connection is closed");
+            throw new IllegalAccessError("Connection is closed");
         }
         return c;
     }
 
     /**
-     * 加载驱动
+     * 加载jdbc驱动
      *
      * @throws SQLException 获取连接失败
      */

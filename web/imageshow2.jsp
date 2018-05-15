@@ -1,6 +1,6 @@
 <%@ page import="com.wang.bean.Image" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.wang.imgmodel.GetImgModel" %>
+<%@ page import="com.wang.servicemodel.GetImagesModel" %>
 <%@ page import="static com.wang.util.HOST.ip" %>
 <%@ page import="java.util.logging.Logger" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"

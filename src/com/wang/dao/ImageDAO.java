@@ -15,7 +15,7 @@ import java.util.List;
  * <p>
  * 访问范围: 全局
  * 获取实例: 包权限
- * 调用者: Model
+ * 调用者: DAOModel
  * <p>
  * 1. 查询image queryImage(userid,image_id)
  * 2. 插入image insertImage(userid,Image)
@@ -165,6 +165,7 @@ public class ImageDAO implements DAO {
         String image_date;
         String image_path;
         String image_type;
+
         while (resultSet.next()) {
             image_id = resultSet.getInt("image_id");
             image_name = resultSet.getString("image_name");

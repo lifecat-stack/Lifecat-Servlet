@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 <%@page import="com.wang.bean.*" %>
-<%@ page import="com.wang.servicemodel.UserMsgModel" %>
+<%@ page import="com.wang.daomodel.UserMsgDAOModel" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.wang.servicemodel.DiaryModel" %>
-<%@ page import="com.wang.imgmodel.GetImgModel" %>
+<%@ page import="com.wang.daomodel.DiaryDAOModel" %>
+<%@ page import="com.wang.servicemodel.GetImagesModel" %>
 <%@ page import="static com.wang.util.HOST.*" %>
 <%@ page import="java.util.logging.Logger" %>
 
@@ -114,8 +114,8 @@
                                 UserMsg usermsg;
                                 /* 若当期有用户登录 */
                                 if (user != null && !user.getName().equals("admin")) {
-                                    GetMsgModel model = new GetMsgModel();
-                                    usermsg = model.getUserMsg(id);
+                                    GetMsgModel DAOModel = new GetMsgModel();
+                                    usermsg = DAOModel.getUserMsg(id);
                                 }
                                 /* 若无用户登录，默认信息 */
                                 else {
@@ -210,8 +210,8 @@
                             ArrayList<Diary> diaries;
                             /* 若当期有用户登录 */
                             if (user != null && !user.getName().equals("admin")) {
-                                GetDiaryModel model = new GetDiaryModel();
-                                diaries = model.getDiaries(id);
+                                GetDiaryModel DAOModel = new GetDiaryModel();
+                                diaries = DAOModel.getDiaries(id);
                             }
                             /* 若无用户登录，添加3条默认信息 */
                             else {

@@ -9,11 +9,11 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class SetMsgForm implements MyForm {
+class SetMsgForm implements Form {
     private SetMsgForm() {
     }
 
-    static MyForm getForm() {
+    static Form getForm() {
         return new SetMsgForm();
     }
 

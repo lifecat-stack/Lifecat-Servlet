@@ -1,8 +1,8 @@
 package com.wang.filter;
 
+import com.wang.form.Form;
 import com.wang.form.FormResult;
 import com.wang.form.FormSelector;
-import com.wang.form.MyForm;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -54,7 +54,7 @@ public class FormFilter implements Filter {
          */
         if (action != null) {
             //2. 获取对应form对象
-            MyForm form = FormSelector.select(action);
+            Form form = FormSelector.select(action);
 
             //3. 执行validate(),获取返回结果
             FormResult result = form.validate(request);
