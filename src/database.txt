@@ -1,0 +1,23 @@
+范式:
+1NF - First Normal Form 符合1NF的关系中的每个属性都是原子的不可再分。
+2NF - Second Normal Form 满足1NF，数据库表中的每列都完全依赖于主键。
+3NF - Third Normal Form 满足2NF，要求一个数据库表中不包含已在其它表中已包含的非主关键字信息。
+BCNF - Boyce–Codd Normal Form 满足3NF，主属性内部不能部分或传递依赖
+
+
+
+user: 用户账号表
+usermsg: 用户资料表
+diary: 日记表
+image: 图片表
+
+user:
+id  name  password  level
+
+usermsg:
+user_id nickname sex age
+
+
+diary:
+user_id diary_id
+
