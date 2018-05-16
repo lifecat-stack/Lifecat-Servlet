@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +53,8 @@
       <file leaf-file-name="Readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="171" column="13" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="13" />
+            <state relative-caret-position="88">
+              <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -640,7 +639,7 @@
       <workItem from="1526303139671" duration="8007000" />
       <workItem from="1526370778514" duration="15514000" />
       <workItem from="1526452024965" duration="37000" />
-      <workItem from="1526471739730" duration="4647000" />
+      <workItem from="1526471739730" duration="4896000" />
     </task>
     <task id="LOCAL-00001" summary="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法">
       <created>1525965840652</created>
@@ -684,15 +683,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526395986386</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="version2.0.2&#10; --添加了Readme文档说明">
+      <created>1526477364119</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1526477364119</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234579000" />
+    <option name="totallyTimeSpent" value="234828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
@@ -716,7 +721,7 @@
       <window_info anchor="bottom" id="Version Control" order="14" weight="1.0" />
       <window_info anchor="right" id="Run" order="12" weight="0.17229255" />
       <window_info anchor="bottom" id="Terminal" order="15" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27565983" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27535212" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -812,7 +817,8 @@
     <MESSAGE value="version1.3 plus&#10; --添加了构建着模式&#10; --组件修改为不可变对象模式&#10; --Model层实现逻辑执行&#10; --DAO层实现数据库执行&#10; --Servlet实现分层结构&#10; --添加了Local方法调用&#10; --优化了SQL语句&#10; --优化了业务逻辑&#10; --......" />
     <MESSAGE value="version2.0.0&#10; --effective&#10; --design" />
     <MESSAGE value="version2.0.1&#10; --添加了Readme文档说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="version2.0.1&#10; --添加了Readme文档说明" />
+    <MESSAGE value="version2.0.2&#10; --添加了Readme文档说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="version2.0.2&#10; --添加了Readme文档说明" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1183,8 +1189,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="171" column="13" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="13" />
+        <state relative-caret-position="88">
+          <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
         </state>
       </provider>
     </entry>
