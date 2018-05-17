@@ -92,27 +92,27 @@
   * @请求流程分析
   *
   *  用户请求
-  *   |          根据result对象, 转发到对应视图, 视图层通过Session访问请求对象
+  *   |          根据result对象, 转发到对应视图, 视图层通过Session访问VO对象
   *   |    +----------------------------------------------------------------+
   *   |    |                                                                |
   *   V    v                                      Form表单验证          控制器: 转发请求
   *  +------+                                         |                 +----------+
   *  | view |                                         v                 |controller|
-  *  +------+  'action.do'      映射      web.xml    过滤器               +----------+
+  *  +------+  'action.do'      映射      web.xml    过滤器     DTO       +----------+
   *  web视图层 ----------- > url-pattern --------- > filter --------- > ActionServlet <---+
   *    jsp                                                                  |            |
   *                                                                         | 根据.do     | 返回模型执行结果
-  *                                               返回数据库处理结果           | 转发请求     | ModelResult对象
+  *                                               返回数据库处理结果VO         | 转发请求     | ModelResult对象
   *                                            +-------------------+        | 调用Model   | 执行相应转发
   *                                            |                   |        |            |
-  *             jdbc                           |                   v        v            |
+  *             jdbc                           |        DTO        v        v            |
   *     DB < ----------- DAO < ----------- DAOModel < ----------- ServiceModel ----------+
-  *     数据库          数据库访问层        处理DAO层具体逻辑            +---------+
-  *     |                 |                    ^                   |  model  | ----------> 将获取的结果对象
+  *     数据库   DO     数据库访问层        处理DAO层具体逻辑            +---------+
+  *     |                 |                    ^                   |  model  | ----------> 将获取的结果对象VO
   *     |                 |                    |                   +---------+             设置到Session
   *     |                 +--------------------+              模型层: 处理具体业务逻辑
-  *     v                       返回Bean对象
-  *  Bean对象对应数据表
+  *     v                       返回VO对象                           处理接收到的DTO对象
+  *  DO对应数据表
   *
   ******************************************************************************
   */
@@ -297,6 +297,7 @@ version1.3.2
     | user_id             | unsigned int| NO   | PRI | NULL    |       | 用户ID, 主键索引. 关联user
     | property_nickname   | varchar(30) | YES  |     | NULL    |       | 用户昵称
     | property_signature  | varchar(50) | YES  |     | NULL    |       | 用户签名
+    | property_sex        | varchar(10) | YES  |     | NULL    |       | 用户性别
     | property_email      | varchar(30) | YES  |     | NULL    |       | 用户邮箱
     | property_Location   | varchar(30) | YES  |     | NULL    |       | 用户地址
     | property_birthday   | unsigned int| YES  |     | NULL    |       | 用户生日
@@ -405,10 +406,20 @@ version1.3.2
 
 /**
   +----------------------------------------------------------------------------+
-  |                                VO 显示层对象 设计                             |
+  |                                DTO 数据传输对象 设计                          |
   +----------------------------------------------------------------------------+
   */
-    ○
+
+    ○Service或Manager向外传输的对象
+    ○展示层与服务层之间的数据传输对象
+    ○DTO到达显示层后变成VO
+    ○由DO对象经过DAO转换为DTO对象，存放在Session中
+    ○提供了DO中的用户可访问的数据域
+
+    ○DTO面向显示层，故采用更直观的命名方式，并非同于DO命名
+    =>采用驼峰命名法
+    ○构建多参数、不定参数、不可变对象：采用构建者模式
+    ○覆盖了equals() hashCode() toString()
 
     +-------------------+
     | Tables_in_lifecat |
@@ -427,81 +438,80 @@ version1.3.2
     | diary             |  Diary
     +-------------------+
 
+    ---------------------
+
     +-------------------+
-    | Admin             | NOT NULL: POJO类型
+    | AdminDTO          | 管理员
     +-------------------+
-    | admin_id          | 管理员ID，由DAO层返回
-    | admin_name        | 管理员用户名，由表单获取
-    | admin_password    | 管理员密码，由表单获取
-    | admin_level       | 管理员权限，默认
-    +-------------------+
-    | admin_gmt_create  | 由DAO层负责维护
-    | admin_gmt_modified| 由DAO层负责维护
+    | adminid           |
+    | adminname         |
+    | adminlevel        |
     +-------------------+
 
     +-------------------+
-    | User              | NOT NULL: POJO类型
+    | UserDTO           | 用户
     +-------------------+
-    | user_id           | 用户ID，由DAO层返回
-    | user_name         | 用户名，表单获取
-    | user_password     | 用户密码，表单获取
-    +-------------------+
-    | user_gmt_creat    | 由DAO层维护
-    | user_gmt_modified | 由DAO层维护
-    +-------------------+
-
-    +----------------------+
-    | UserProperty         | CAN NULL: 构建者模式
-    +----------------------+
-    | user_id              | 用户ID，由user对象提供
-    | property_nickname    | 昵称 默认
-    | property_signature   | 签名 默认
-    | property_email       | 邮箱 默认
-    | property_Location    | 地址 默认
-    | property_birthday    | 生日 默认
-    +----------------------+
-    | property_gmt_create  | 由DAO层维护
-    | property_gmt_modified| 由DAO层维护
-    +----------------------+
-
-    +-------------------+
-    | UserIcon          | NOT NULL: POJO类型
-    +-------------------+
-    | user_id           | 用户ID，由user对象提供
-    | icon_path         | 头像图片的存储路径
-    +-------------------+
-    | icon_gmt_create   | 由DAO层维护
-    | icon_gmt_modified | 由DAO层维护
+    | userid            |
+    | username          |
     +-------------------+
 
     +-------------------+
-    | Image             | NOT NULL: POJO类型
+    | UserPropertyDTO   | 用户资料
     +-------------------+
-    | image_id          | 图片ID，由DAO返回
-    | image_text        | 图片文本描述
-    | image_path        | 图片存储路径
-    +-------------------+
-    | image_gmt_create  | 由DAO层维护
-    | image_gmt_modified| 由DAO层维护
-    +-------------------+
-
-    +-------------------+    +-------------------+
-    | Diary             |    | DiaryType         |
-    +-------------------+    +-------------------+
-    | diary_id          |    | diary_id          |
-    | diary_name        |    | user_id           |
-    | diary_text        |    +-------------------+
-    | image_gmt_create  |
-    | image_gmt_modified|
+    | user_id           |
+    | nickname          |
+    | signature         |
+    | email             |
+    | sex               |
+    | location          |
+    | birthday          |
+    | iconpath          |
     +-------------------+
 
- +-------------------+    +-------------------+    +-------------------+
- | ImageType         |    | ImageClas         |    | ImageFeature      |
-  +-------------------+    +-------------------+    +-------------------+
-  | image_id          |    | image_class_id    |    | image_id          |
-   | user_id           |    | image_class_desc  |    | image_class       |
-    | image_class       |    +-------------------+    | image_feature_path|
-    +-------------------+                             +-------------------+
+    +-------------------+
+    | ImageDTO          | 图片信息
+    +-------------------+
+    | imageid           |
+    | imagetext         |
+    | imagepath         |
+    | imagedate         |
+    | imagetype         |
+    +-------------------+
+
+    +-------------------+
+    | DiariyDTO         | 用户日记
+    +-------------------+
+    | diaryid           |
+    | diaryname         |
+    | diarytext         |
+    | diarydate         |
+    +-------------------+
+
+    不可变对象↑     单个实体
+    ---------------------
+    可变对象↓       实体集合
+
+    +-------------------+
+    | AlbumDTO          | 用户相册-全部
+    +-------------------+
+    | userid            |
+    | List<Image>       |
+    +-------------------+
+
+    +-------------------+
+    | AlbumClassDTO     | 用户相册-分类
+    +-------------------+
+    | userid            |
+    | List<Image>       |
+    | albumclass        |
+    +-------------------+
+
+    +-------------------+
+    | DiariesDTO        | 用户日记集合
+    +-------------------+
+    | userid            |
+    | List<Diary>       |
+    +-------------------+
 
 /**
   +----------------------------------------------------------------------------+
@@ -510,8 +520,8 @@ version1.3.2
   */
 
     ○与数据库表结构一一对应，通过DAO层向上传输数据源对象
-    ○POJO类型
-    ○获取VO对象信息，在DAO层中加入控制信息，构建DO对象
+    ○获取request对象信息，在DAO层中加入控制信息，构建DO对象
+    ○根据返回DO对象，处理构建DTO对象，发送到外部
 
     +-------------------+
     | Tables_in_lifecat |
@@ -561,6 +571,7 @@ version1.3.2
     | property_nickname | VO
     | property_signature| VO
     | property_email    | VO
+    | property_sex      | VO
     | property_Location | VO
     | property_birthday | VO
     | property_gmt_create   DAO

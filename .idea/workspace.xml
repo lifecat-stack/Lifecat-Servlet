@@ -6,9 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
+    <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="version2.1.0&#10; --DO层数据结构">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/bean/Admin.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,307 +42,106 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6077465">
+    <splitter split-orientation="horizontal" split-proportion="0.45365855">
       <split-first>
         <leaf>
-          <file leaf-file-name="AdminDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/wang/DO/AdminDO.java">
+          <file leaf-file-name="Readme.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Readme.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+                <state relative-caret-position="167">
+                  <caret line="388" column="7" lean-forward="true" selection-start-line="388" selection-start-column="7" selection-end-line="388" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AlbumClassDTO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/AlbumClassDTO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-352">
+                  <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
                   <folding>
-                    <element signature="e#74#75#0" expanded="true" />
-                    <element signature="e#105#106#0" expanded="true" />
-                    <element signature="e#150#151#0" expanded="true" />
-                    <element signature="e#190#191#0" expanded="true" />
-                    <element signature="e#227#228#0" expanded="true" />
-                    <element signature="e#260#261#0" expanded="true" />
-                    <element signature="e#312#313#0" expanded="true" />
-                    <element signature="e#356#357#0" expanded="true" />
-                    <element signature="e#397#398#0" expanded="true" />
-                    <element signature="e#434#435#0" expanded="true" />
-                    <element signature="e#494#495#0" expanded="true" />
-                    <element signature="e#546#547#0" expanded="true" />
-                    <element signature="e#584#585#0" expanded="true" />
-                    <element signature="e#618#619#0" expanded="true" />
-                    <element signature="e#672#673#0" expanded="true" />
-                    <element signature="e#718#719#0" expanded="true" />
-                    <element signature="e#761#762#0" expanded="true" />
-                    <element signature="e#800#801#0" expanded="true" />
-                    <element signature="e#864#865#0" expanded="true" />
-                    <element signature="e#920#921#0" expanded="true" />
-                    <element signature="e#965#966#0" expanded="true" />
-                    <element signature="e#1006#1007#0" expanded="true" />
-                    <element signature="e#1074#1075#0" expanded="true" />
-                    <element signature="e#1134#1135#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/wang/DO/UserDO.java">
+          <file leaf-file-name="DiariesDTO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/DiariesDTO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+                <state relative-caret-position="404">
+                  <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
                   <folding>
-                    <element signature="e#73#74#0" expanded="true" />
-                    <element signature="e#103#104#0" expanded="true" />
-                    <element signature="e#146#147#0" expanded="true" />
-                    <element signature="e#184#185#0" expanded="true" />
-                    <element signature="e#220#221#0" expanded="true" />
-                    <element signature="e#252#253#0" expanded="true" />
-                    <element signature="e#302#303#0" expanded="true" />
-                    <element signature="e#344#345#0" expanded="true" />
-                    <element signature="e#384#385#0" expanded="true" />
-                    <element signature="e#420#421#0" expanded="true" />
-                    <element signature="e#478#479#0" expanded="true" />
-                    <element signature="e#528#529#0" expanded="true" />
-                    <element signature="e#570#571#0" expanded="true" />
-                    <element signature="e#608#609#0" expanded="true" />
-                    <element signature="e#670#671#0" expanded="true" />
-                    <element signature="e#724#725#0" expanded="true" />
-                    <element signature="e#768#769#0" expanded="true" />
-                    <element signature="e#808#809#0" expanded="true" />
-                    <element signature="e#874#875#0" expanded="true" />
-                    <element signature="e#932#933#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserPropertyDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/wang/DO/UserPropertyDO.java">
+          <file leaf-file-name="Album.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Album.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#82#83#0" expanded="true" />
-                    <element signature="e#112#113#0" expanded="true" />
-                    <element signature="e#155#156#0" expanded="true" />
-                    <element signature="e#193#194#0" expanded="true" />
-                    <element signature="e#237#238#0" expanded="true" />
-                    <element signature="e#277#278#0" expanded="true" />
-                    <element signature="e#343#344#0" expanded="true" />
-                    <element signature="e#401#402#0" expanded="true" />
-                    <element signature="e#446#447#0" expanded="true" />
-                    <element signature="e#487#488#0" expanded="true" />
-                    <element signature="e#555#556#0" expanded="true" />
-                    <element signature="e#615#616#0" expanded="true" />
-                    <element signature="e#656#657#0" expanded="true" />
-                    <element signature="e#693#694#0" expanded="true" />
-                    <element signature="e#753#754#0" expanded="true" />
-                    <element signature="e#805#806#0" expanded="true" />
-                    <element signature="e#849#850#0" expanded="true" />
-                    <element signature="e#889#890#0" expanded="true" />
-                    <element signature="e#955#956#0" expanded="true" />
-                    <element signature="e#1013#1014#0" expanded="true" />
-                    <element signature="e#1057#1058#0" expanded="true" />
-                    <element signature="e#1097#1098#0" expanded="true" />
-                    <element signature="e#1163#1164#0" expanded="true" />
-                    <element signature="e#1221#1222#0" expanded="true" />
-                    <element signature="e#1267#1268#0" expanded="true" />
-                    <element signature="e#1309#1310#0" expanded="true" />
-                    <element signature="e#1379#1380#0" expanded="true" />
-                    <element signature="e#1441#1442#0" expanded="true" />
-                    <element signature="e#1489#1490#0" expanded="true" />
-                    <element signature="e#1533#1534#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="-190">
+                  <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UserIconDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/wang/DO/UserIconDO.java">
+          <file leaf-file-name="Bean.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Bean.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="110">
-                  <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-                  <folding>
-                    <element signature="e#108#109#0" expanded="true" />
-                    <element signature="e#138#139#0" expanded="true" />
-                    <element signature="e#181#182#0" expanded="true" />
-                    <element signature="e#219#220#0" expanded="true" />
-                    <element signature="e#255#256#0" expanded="true" />
-                    <element signature="e#287#288#0" expanded="true" />
-                    <element signature="e#337#338#0" expanded="true" />
-                    <element signature="e#379#380#0" expanded="true" />
-                    <element signature="e#421#422#0" expanded="true" />
-                    <element signature="e#459#460#0" expanded="true" />
-                    <element signature="e#521#522#0" expanded="true" />
-                    <element signature="e#575#576#0" expanded="true" />
-                    <element signature="e#619#620#0" expanded="true" />
-                    <element signature="e#659#660#0" expanded="true" />
-                    <element signature="e#725#726#0" expanded="true" />
-                    <element signature="e#783#784#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="154">
+                  <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ImageDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/wang/DO/ImageDO.java">
+          <file leaf-file-name="Diary.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Diary.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="9" selection-start-line="9" selection-end-line="15" selection-end-column="38" />
-                  <folding>
-                    <element signature="e#107#108#0" expanded="true" />
-                    <element signature="e#138#139#0" expanded="true" />
-                    <element signature="e#183#184#0" expanded="true" />
-                    <element signature="e#223#224#0" expanded="true" />
-                    <element signature="e#254#255#0" expanded="true" />
-                    <element signature="e#284#285#0" expanded="true" />
-                    <element signature="e#327#328#0" expanded="true" />
-                    <element signature="e#365#366#0" expanded="true" />
-                    <element signature="e#402#403#0" expanded="true" />
-                    <element signature="e#435#436#0" expanded="true" />
-                    <element signature="e#487#488#0" expanded="true" />
-                    <element signature="e#531#532#0" expanded="true" />
-                    <element signature="e#568#569#0" expanded="true" />
-                    <element signature="e#601#602#0" expanded="true" />
-                    <element signature="e#653#654#0" expanded="true" />
-                    <element signature="e#697#698#0" expanded="true" />
-                    <element signature="e#734#735#0" expanded="true" />
-                    <element signature="e#767#768#0" expanded="true" />
-                    <element signature="e#819#820#0" expanded="true" />
-                    <element signature="e#863#864#0" expanded="true" />
-                    <element signature="e#906#907#0" expanded="true" />
-                    <element signature="e#945#946#0" expanded="true" />
-                    <element signature="e#1009#1010#0" expanded="true" />
-                    <element signature="e#1065#1066#0" expanded="true" />
-                    <element signature="e#1110#1111#0" expanded="true" />
-                    <element signature="e#1151#1152#0" expanded="true" />
-                    <element signature="e#1219#1220#0" expanded="true" />
-                    <element signature="e#1279#1280#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="474">
+                  <caret line="185" selection-start-line="14" selection-start-column="4" selection-end-line="185" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ImageTypeDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/wang/DO/ImageTypeDO.java">
+          <file leaf-file-name="Image.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Image.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="110">
-                  <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-                  <folding>
-                    <element signature="e#79#80#0" expanded="true" />
-                    <element signature="e#110#111#0" expanded="true" />
-                    <element signature="e#155#156#0" expanded="true" />
-                    <element signature="e#195#196#0" expanded="true" />
-                    <element signature="e#226#227#0" expanded="true" />
-                    <element signature="e#256#257#0" expanded="true" />
-                    <element signature="e#299#300#0" expanded="true" />
-                    <element signature="e#337#338#0" expanded="true" />
-                    <element signature="e#372#373#0" expanded="true" />
-                    <element signature="e#406#407#0" expanded="true" />
-                    <element signature="e#457#458#0" expanded="true" />
-                    <element signature="e#503#504#0" expanded="true" />
-                    <element signature="e#545#546#0" expanded="true" />
-                    <element signature="e#583#584#0" expanded="true" />
-                    <element signature="e#645#646#0" expanded="true" />
-                    <element signature="e#699#700#0" expanded="true" />
-                    <element signature="e#743#744#0" expanded="true" />
-                    <element signature="e#783#784#0" expanded="true" />
-                    <element signature="e#849#850#0" expanded="true" />
-                    <element signature="e#907#908#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="602">
+                  <caret line="176" column="12" lean-forward="true" selection-start-line="176" selection-start-column="12" selection-end-line="176" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ImageClassDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/wang/DO/ImageClassDO.java">
+          <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/wang/bean/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#161#162#0" expanded="true" />
-                    <element signature="e#198#199#0" expanded="true" />
-                    <element signature="e#255#256#0" expanded="true" />
-                    <element signature="e#307#308#0" expanded="true" />
-                    <element signature="e#350#351#0" expanded="true" />
-                    <element signature="e#389#390#0" expanded="true" />
-                    <element signature="e#453#454#0" expanded="true" />
-                    <element signature="e#509#510#0" expanded="true" />
-                    <element signature="e#552#553#0" expanded="true" />
-                    <element signature="e#591#592#0" expanded="true" />
-                    <element signature="e#655#656#0" expanded="true" />
-                    <element signature="e#711#712#0" expanded="true" />
-                    <element signature="e#754#755#0" expanded="true" />
-                    <element signature="e#793#794#0" expanded="true" />
-                    <element signature="e#857#858#0" expanded="true" />
-                    <element signature="e#913#914#0" expanded="true" />
-                    <element signature="e#958#959#0" expanded="true" />
-                    <element signature="e#999#1000#0" expanded="true" />
-                    <element signature="e#1067#1068#0" expanded="true" />
-                    <element signature="e#1127#1128#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="496">
+                  <caret line="154" lean-forward="true" selection-start-line="15" selection-end-line="154" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ImageFeatureDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/wang/DO/ImageFeatureDO.java">
+          <file leaf-file-name="UserMsg.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/wang/bean/UserMsg.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-                  <folding>
-                    <element signature="e#82#83#0" expanded="true" />
-                    <element signature="e#113#114#0" expanded="true" />
-                    <element signature="e#158#159#0" expanded="true" />
-                    <element signature="e#198#199#0" expanded="true" />
-                    <element signature="e#233#234#0" expanded="true" />
-                    <element signature="e#267#268#0" expanded="true" />
-                    <element signature="e#318#319#0" expanded="true" />
-                    <element signature="e#364#365#0" expanded="true" />
-                    <element signature="e#409#410#0" expanded="true" />
-                    <element signature="e#450#451#0" expanded="true" />
-                    <element signature="e#518#519#0" expanded="true" />
-                    <element signature="e#578#579#0" expanded="true" />
-                    <element signature="e#623#624#0" expanded="true" />
-                    <element signature="e#664#665#0" expanded="true" />
-                    <element signature="e#732#733#0" expanded="true" />
-                    <element signature="e#792#793#0" expanded="true" />
-                    <element signature="e#839#840#0" expanded="true" />
-                    <element signature="e#882#883#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="474">
+                  <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DiaryDO.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/wang/DO/DiaryDO.java">
+          <file leaf-file-name="DiaryDTO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/DiaryDTO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+                <state relative-caret-position="374">
+                  <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
                   <folding>
-                    <element signature="e#130#131#0" expanded="true" />
-                    <element signature="e#161#162#0" expanded="true" />
-                    <element signature="e#206#207#0" expanded="true" />
-                    <element signature="e#246#247#0" expanded="true" />
-                    <element signature="e#277#278#0" expanded="true" />
-                    <element signature="e#307#308#0" expanded="true" />
-                    <element signature="e#350#351#0" expanded="true" />
-                    <element signature="e#388#389#0" expanded="true" />
-                    <element signature="e#425#426#0" expanded="true" />
-                    <element signature="e#458#459#0" expanded="true" />
-                    <element signature="e#510#511#0" expanded="true" />
-                    <element signature="e#554#555#0" expanded="true" />
-                    <element signature="e#591#592#0" expanded="true" />
-                    <element signature="e#624#625#0" expanded="true" />
-                    <element signature="e#676#677#0" expanded="true" />
-                    <element signature="e#720#721#0" expanded="true" />
-                    <element signature="e#757#758#0" expanded="true" />
-                    <element signature="e#790#791#0" expanded="true" />
-                    <element signature="e#842#843#0" expanded="true" />
-                    <element signature="e#886#887#0" expanded="true" />
-                    <element signature="e#929#930#0" expanded="true" />
-                    <element signature="e#968#969#0" expanded="true" />
-                    <element signature="e#1032#1033#0" expanded="true" />
-                    <element signature="e#1088#1089#0" expanded="true" />
-                    <element signature="e#1133#1134#0" expanded="true" />
-                    <element signature="e#1174#1175#0" expanded="true" />
-                    <element signature="e#1242#1243#0" expanded="true" />
-                    <element signature="e#1302#1303#0" expanded="true" />
+                    <element signature="e#880#881#0" expanded="true" />
+                    <element signature="e#911#912#0" expanded="true" />
+                    <element signature="e#1593#1594#0" expanded="true" />
+                    <element signature="e#1639#1640#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -354,8 +154,8 @@
           <file leaf-file-name="Readme.txt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Readme.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="656">
-                  <caret line="397" column="23" lean-forward="true" selection-start-line="397" selection-start-column="23" selection-end-line="397" selection-end-column="23" />
+                <state relative-caret-position="391">
+                  <caret line="643" lean-forward="true" selection-start-line="643" selection-end-line="643" />
                 </state>
               </provider>
             </entry>
@@ -400,14 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/wang/service/ActionServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daomodel/UserMsgModel.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daomodel/DAOModelFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/form/MyForm.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daomodel/UserDAOModel.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/servicemodel/ModelFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/servicemodel/SetMsgModel.java" />
         <option value="$PROJECT_DIR$/src/com/wang/daomodel/UserMsgDAOModel.java" />
         <option value="$PROJECT_DIR$/src/com/wang/dao/UserMsgDAO.java" />
         <option value="$PROJECT_DIR$/src/com/wang/servicemodel/SetUserMsgModel.java" />
@@ -450,7 +242,15 @@
         <option value="$PROJECT_DIR$/src/com/wang/DO/ImageClassDO.java" />
         <option value="$PROJECT_DIR$/src/com/wang/DO/ImageFeatureDO.java" />
         <option value="$PROJECT_DIR$/src/com/wang/DO/DiaryDO.java" />
+        <option value="$PROJECT_DIR$/src/com/wang/DTO/AdminDTO.java" />
+        <option value="$PROJECT_DIR$/src/com/wang/DTO/UserDTO.java" />
+        <option value="$PROJECT_DIR$/src/com/wang/DTO/UserPropertyDTO.java" />
+        <option value="$PROJECT_DIR$/src/com/wang/DTO/ImageDTO.java" />
+        <option value="$PROJECT_DIR$/src/com/wang/DTO/DiaryDTO.java" />
         <option value="$PROJECT_DIR$/Readme.txt" />
+        <option value="$PROJECT_DIR$/src/com/wang/DTO/AlbumClassDTO.java" />
+        <option value="$PROJECT_DIR$/src/com/wang/DTO/AlbumDTO.java" />
+        <option value="$PROJECT_DIR$/src/com/wang/DTO/DiariesDTO.java" />
       </list>
     </option>
   </component>
@@ -474,9 +274,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="990" />
-    <option name="width" value="940" />
-    <option name="height" value="1090" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -507,26 +308,9 @@
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="wang" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
@@ -560,7 +344,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/untitled2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -869,7 +653,7 @@
       <workItem from="1526452024965" duration="37000" />
       <workItem from="1526471739730" duration="12485000" />
       <workItem from="1526512284042" duration="13577000" />
-      <workItem from="1526537923213" duration="3804000" />
+      <workItem from="1526537923213" duration="12511000" />
     </task>
     <task id="LOCAL-00001" summary="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法">
       <created>1525965840652</created>
@@ -941,17 +725,31 @@
       <option name="project" value="LOCAL" />
       <updated>1526529502996</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="version2.1.0&#10; --DO层数据结构">
+      <created>1526541830651</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1526541830651</updated>
+    </task>
+    <task id="LOCAL-00012" summary="version2.1.0&#10; --DO层数据结构">
+      <created>1526542188344</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1526542188344</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259798000" />
+    <option name="totallyTimeSpent" value="268505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50563383" side_tool="true" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32816902" />
       <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32887325" />
@@ -972,9 +770,10 @@
       <window_info anchor="bottom" id="Version Control" order="14" weight="1.0" />
       <window_info anchor="right" id="Run" order="12" weight="0.17229255" />
       <window_info anchor="bottom" id="Terminal" order="15" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17816901" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4943662" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.18724559" />
@@ -983,7 +782,6 @@
       <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.15299027" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="R Packages" order="9" />
@@ -1071,7 +869,8 @@
     <MESSAGE value="version2.0.2&#10; --添加了Readme文档说明" />
     <MESSAGE value="version2.0.3&#10; --重构了数据库设计" />
     <MESSAGE value="version2.0.4&#10; --数据库设计" />
-    <option name="LAST_COMMIT_MESSAGE" value="version2.0.4&#10; --数据库设计" />
+    <MESSAGE value="version2.1.0&#10; --DO层数据结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="version2.1.0&#10; --DO层数据结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1083,83 +882,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/wang/servicemodel/ModelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/servicemodel/ServiceModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/servicemodel/UpDiaryModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/servicemodel/UpUserPswModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="68" column="28" selection-start-line="68" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk/jdk1.8.0_131/src.zip!/java/util/logging/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="217" column="13" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk/jdk1.8.0_131/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk/jdk1.8.0_131/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/util/ImageWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/util/MyBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk/jdk1.8.0_131/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16456">
-          <caret line="748" column="37" selection-start-line="748" selection-start-column="37" selection-end-line="748" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/util/MyDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wang/servicemodel/UpImageModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -1339,34 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
           <caret line="70" column="16" selection-end-line="70" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1618,17 +1312,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="397" column="23" lean-forward="true" selection-start-line="397" selection-start-column="23" selection-end-line="397" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wang/DO/DiaryDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="66">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding>
             <element signature="e#130#131#0" expanded="true" />
             <element signature="e#161#162#0" expanded="true" />
@@ -1659,6 +1346,174 @@
             <element signature="e#1242#1243#0" expanded="true" />
             <element signature="e#1302#1303#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/UserPropertyDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#2764#2765#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
+            <element signature="e#2828#2829#0" expanded="true" />
+            <element signature="e#2859#2860#0" expanded="true" />
+            <element signature="e#2895#2896#0" expanded="true" />
+            <element signature="e#2927#2928#0" expanded="true" />
+            <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#2987#2988#0" expanded="true" />
+            <element signature="e#3017#3018#0" expanded="true" />
+            <element signature="e#3043#3044#0" expanded="true" />
+            <element signature="e#3078#3079#0" expanded="true" />
+            <element signature="e#3109#3110#0" expanded="true" />
+            <element signature="e#3144#3145#0" expanded="true" />
+            <element signature="e#3175#3176#0" expanded="true" />
+            <element signature="e#3210#3211#0" expanded="true" />
+            <element signature="e#3241#3242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/AdminDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-902">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/ImageDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1865#1866#0" expanded="true" />
+            <element signature="e#2147#2148#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#3231#3232#0" expanded="true" />
+            <element signature="e#3261#3262#0" expanded="true" />
+            <element signature="e#3297#3298#0" expanded="true" />
+            <element signature="e#3329#3330#0" expanded="true" />
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#3397#3398#0" expanded="true" />
+            <element signature="e#3433#3434#0" expanded="true" />
+            <element signature="e#3465#3466#0" expanded="true" />
+            <element signature="e#3498#3499#0" expanded="true" />
+            <element signature="e#3530#3531#0" expanded="true" />
+            <element signature="e#3562#3563#0" expanded="true" />
+            <element signature="e#3593#3594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/AlbumDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/AlbumClassDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/DiaryDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="388" column="7" lean-forward="true" selection-start-line="388" selection-start-column="7" selection-end-line="388" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/DTO/DiariesDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Bean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Diary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="185" selection-start-line="14" selection-start-column="4" selection-end-line="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="176" column="12" lean-forward="true" selection-start-line="176" selection-start-column="12" selection-end-line="176" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="154" lean-forward="true" selection-start-line="15" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/UserMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
         </state>
       </provider>
     </entry>
