@@ -14,11 +14,11 @@ import java.util.List;
 import java.util.logging.Logger;
 
 /**
- * GetDiariesModel: 从数据库获取diary数据
+ * DiaryListQuery: 从数据库获取diary数据
  * <p>
  * 访问范围: protected
  * 调用者: ActionServlet
- * Return: ModelResult Object
+ * Return: ServiceResult Object
  * Use try-catch to handle Exception
  * <li>
  * queryDiaries() by user_id from user
@@ -29,20 +29,20 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-public class GetDiariesModel implements ServiceModel {
+public class DiaryListQuery implements Service {
 
     private Logger logger;
 
-    private GetDiariesModel() {
-        logger = Logger.getLogger("GetDiariesModel");
+    private DiaryListQuery() {
+        logger = Logger.getLogger("DiaryListQuery");
     }
 
-    static ServiceModel getModel() {
-        return new GetDiariesModel();
+    static Service getModel() {
+        return new DiaryListQuery();
     }
 
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
         User user = (User) req.getSession().getAttribute("user");
 
@@ -69,11 +69,11 @@ public class GetDiariesModel implements ServiceModel {
 
         if (isSuccess) {
             req.getSession().setAttribute("diarys", diaries);
-            return new ModelResult.Builder(false).page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(false).page(HOST.PAGE_USERHOME).build();
         }
 
         diaries = new ArrayList<>();
         req.getSession().setAttribute("diarys", diaries);
-        return new ModelResult.Builder(true).errormsg(errormsg).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(true).errormsg(errormsg).page(HOST.PAGE_USERHOME).build();
     }
 }

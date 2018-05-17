@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * UserLoginModel: 用户登录
+ * UserLogin: 用户登录
  * <p>
  * 访问范围: 全局
  * 调用者: Servlet
@@ -21,21 +21,21 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-class UserLoginModel implements ServiceModel {
+class UserLogin implements Service {
 
     private Logger logger;
 
-    private UserLoginModel() {
-        logger = Logger.getLogger("UserLoginModel");
+    private UserLogin() {
+        logger = Logger.getLogger("UserLogin");
     }
 
-    static ServiceModel getModel() {
-        return new UserLoginModel();
+    static Service getModel() {
+        return new UserLogin();
     }
 
 
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
         String username = req.getParameter("username");
         String password = req.getParameter("password");
@@ -53,20 +53,20 @@ class UserLoginModel implements ServiceModel {
             dbuser = daoModel.queryUser();
         } catch (NullPointerException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("数据库无此用户").page(req.getRequestURI()).build();
+            return new ServiceResult.Builder(true).errormsg("数据库无此用户").page(req.getRequestURI()).build();
         } catch (SQLException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("数据库查询异常").page(req.getRequestURI()).build();
+            return new ServiceResult.Builder(true).errormsg("数据库查询异常").page(req.getRequestURI()).build();
         }
 
         //判断user是否相同
         final boolean isEquals = (dbuser.getName().equals(username) && dbuser.getPassword().equals(password));
         if (isEquals) {
             req.getSession().setAttribute("user",user);
-            return new ModelResult.Builder(false).page(req.getRequestURI()).build();
+            return new ServiceResult.Builder(false).page(req.getRequestURI()).build();
         }
 
-        return new ModelResult.Builder(true).errormsg("账号或密码错误").page(req.getRequestURI()).build();
+        return new ServiceResult.Builder(true).errormsg("账号或密码错误").page(req.getRequestURI()).build();
     }
 }
 

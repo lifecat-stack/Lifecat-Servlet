@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 /**
- * UserLoginModel: 用户登录
+ * UserLogin: 用户登录
  * <p>
  * 访问范围: 全局
  * 调用者: Servlet
@@ -26,19 +26,19 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-class GetImagesModel implements ServiceModel {
+class ImageQuery implements Service {
     private Logger logger;
 
-    private GetImagesModel() {
-        logger = Logger.getLogger("GetImagesModel");
+    private ImageQuery() {
+        logger = Logger.getLogger("ImageQuery");
     }
 
-    static ServiceModel getModel() {
-        return new GetImagesModel();
+    static Service getModel() {
+        return new ImageQuery();
     }
 
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
         User user = (User) req.getSession().getAttribute("user");
 
@@ -65,12 +65,12 @@ class GetImagesModel implements ServiceModel {
 
         if (isSuccess) {
             req.getSession().setAttribute("diarys", diaries);
-            return new ModelResult.Builder(false).page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(false).page(HOST.PAGE_USERHOME).build();
         }
 
         diaries = new ArrayList<>();
         req.getSession().setAttribute("diarys", diaries);
-        return new ModelResult.Builder(true).errormsg(errormsg).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(true).errormsg(errormsg).page(HOST.PAGE_USERHOME).build();
     }
     }
 

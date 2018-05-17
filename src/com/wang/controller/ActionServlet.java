@@ -1,8 +1,9 @@
 package com.wang.controller;
 
-import com.wang.service.ModelFactory;
-import com.wang.service.ModelResult;
-import com.wang.service.ServiceModel;
+import com.wang.service.ServiceFactory;
+import com.wang.service.ServiceResult;
+import com.wang.service.Service;
+import com.wang.util.HOST;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -11,9 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Database Servlet
+ * 请求处理层 (Web层) :MVC-Controller
  * <p>
- * 对数据库的操作
+ * 对访问控制进行转发, 调用相应Service, 执行逻辑处理
+ * 获取Service返回对象ServiceResult, 根据结果执行页面转发
  *
  * @auther ten
  */
@@ -21,48 +23,44 @@ public class ActionServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req, resp);
     }
 
-    /**
-     * 1. 获取action类型
-     * 2. 执行model.execute()
-     * 3. 获取返回结果ModelResult
-     * 4. 检查异常
-     * 5. 跳转
-     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //需转发界面
         String page;
 
-        //提取请求信息
+        //提取url请求信息 /xxx
         String path = req.getRequestURI();
-        String action = path.substring(path.lastIndexOf("/"), path.indexOf("."));
-        if (action.equals("/regist")) {
-            //相应处理代码
+        String url = path.substring(path.lastIndexOf("/"), path.lastIndexOf("."));
+
+        //根据请求信息 调用相应的service
+        Service service = ServiceFactory.getServiceByUrl(url);
+
+        //无对应请求 进入错误界面 error.jsp
+        if (service == null) {
+            page = HOST.PAGE_ERROR;
+            req.setAttribute("errormsg", "没有此请求");
+            req.getRequestDispatcher(page).forward(req, resp);
         }
-        if (action.equals("/login")) {
-            //相应处理代码
 
-        }
 
-        //model
-        ServiceModel model = ModelFactory.getModelByAction(action);
+        //service执行操作 返回Result结果
+        assert service != null;
+        ServiceResult result = service.execute(req, resp);
 
-        ModelResult result = model.execute(req, resp);
 
-        //isError == false
+        //Result 执行成功 跳转到响应界面
         if (!result.isError()) {
             page = result.getPage();
         }
-        //isError == true
+        //Result 执行错误 跳转到error.jsp
         else {
-            page = req.getRequestURI();
-
-            //TODO 避免使用字符串
-            req.setAttribute("errormsg", result);
+            page = HOST.PAGE_ERROR;
+            req.setAttribute("errormsg", result.getErrormsg());
         }
 
-        //执行跳转
         req.getRequestDispatcher(page).forward(req, resp);
     }
 }

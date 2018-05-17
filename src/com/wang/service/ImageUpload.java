@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.logging.Logger;
 
 /**
- * UserLoginModel: 用户登录
+ * UserLogin: 用户登录
  * <p>
  * 访问范围: 全局
  * 调用者: Servlet
@@ -16,21 +16,21 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
- class UpImageModel implements ServiceModel {
+ class ImageUpload implements Service {
      private Logger logger;
 
 
-    private UpImageModel() {
-        logger=Logger.getLogger("UpImageModel");
+    private ImageUpload() {
+        logger=Logger.getLogger("ImageUpload");
 
     }
 
-    static ServiceModel getModel() {
-        return new UpImageModel();
+    static Service getModel() {
+        return new ImageUpload();
     }
 
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
         return null;
     }

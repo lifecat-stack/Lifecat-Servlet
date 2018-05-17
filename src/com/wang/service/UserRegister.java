@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * UserRegisterModel: 用户注册
+ * UserRegister: 用户注册
  * <p>
  * 访问范围: 全局
  * 调用者: Servlet
@@ -24,20 +24,20 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-class UserRegisterModel implements ServiceModel {
+class UserRegister implements Service {
 
     private Logger logger;
 
-    private UserRegisterModel() {
+    private UserRegister() {
         logger = Logger.getLogger("RigisterModel");
     }
 
-    static ServiceModel getModel() {
-        return new UserRegisterModel();
+    static Service getModel() {
+        return new UserRegister();
     }
 
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         //Form中检测两次密码一致性
         String rusername = req.getParameter("rusername");
         String rpassword1 = req.getParameter("rpassword1");
@@ -53,7 +53,7 @@ class UserRegisterModel implements ServiceModel {
             //判断ID是否存在
             final boolean isNameExited = daoModel.isUserNameExited();
             if (isNameExited) {
-                return new ModelResult.Builder(true).errormsg("用户名已存在").page(HOST.PAGE_INDEX).build();
+                return new ServiceResult.Builder(true).errormsg("用户名已存在").page(HOST.PAGE_INDEX).build();
             }
 
             //插入user
@@ -66,10 +66,10 @@ class UserRegisterModel implements ServiceModel {
          * 2. 跳转page: index
          */ catch (IllegalArgumentException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("IllegalArgumentException").page(HOST.PAGE_INDEX).build();
+            return new ServiceResult.Builder(true).errormsg("IllegalArgumentException").page(HOST.PAGE_INDEX).build();
         } catch (SQLException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_INDEX).build();
+            return new ServiceResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_INDEX).build();
         }
 
         /*
@@ -79,6 +79,6 @@ class UserRegisterModel implements ServiceModel {
          * 2. 跳转page: userhome
          */
         req.getSession().setAttribute("user", user);
-        return new ModelResult.Builder(false).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(false).page(HOST.PAGE_USERHOME).build();
     }
 }

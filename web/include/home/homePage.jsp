@@ -4,7 +4,7 @@
 <%@ page import="com.wang.daomanager.UserMsgDAOModel" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.wang.daomanager.DiaryDAOModel" %>
-<%@ page import="com.wang.service.GetImagesModel" %>
+<%@ page import="com.wang.service.ImageQuery" %>
 <%@ page import="static com.wang.util.HOST.*" %>
 <%@ page import="java.util.logging.Logger" %>
 

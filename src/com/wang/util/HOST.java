@@ -45,6 +45,7 @@ public class HOST {
     public static final String PAGE_USERHOME = PROJECTCONTEXT + "userhome.jsp";
     public static final String PAGE_UPIMAGE = PROJECTCONTEXT + "upimage.jsp";
     public static final String PAGE_IMAGESHOW = PROJECTCONTEXT + "imageshow.jsp";
+    public static final String PAGE_ERROR = PROJECTCONTEXT + "error.jsp";
 
     //@Host{ip:123,project:asd}
     @Override

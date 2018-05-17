@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * UpUserPswModel: 修改密码
+ * UserPswUpdate: 修改密码
  * <p>
  * 访问范围: 全局
  * 调用者: Servlet
@@ -24,21 +24,21 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-class UpUserPswModel implements ServiceModel {
+class UserPswUpdate implements Service {
 
     private Logger logger;
 
-    private UpUserPswModel() {
-        logger = Logger.getLogger("UpUserPswModel");
+    private UserPswUpdate() {
+        logger = Logger.getLogger("UserPswUpdate");
 
     }
 
-    static ServiceModel getModel() {
-        return new UpUserPswModel();
+    static Service getModel() {
+        return new UserPswUpdate();
     }
 
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         //Form中检测两次密码一致性
         String oldpassword = req.getParameter("oldpassword");
         String newpassword1 = req.getParameter("newpassword1");
@@ -66,10 +66,10 @@ class UpUserPswModel implements ServiceModel {
          * 2. 跳转page: userhome
          */ catch (IllegalArgumentException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("原密码错误").page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(true).errormsg("原密码错误").page(HOST.PAGE_USERHOME).build();
         } catch (SQLException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_USERHOME).build();
         }
 
         /*
@@ -79,7 +79,7 @@ class UpUserPswModel implements ServiceModel {
          * 2. 跳转page: userhome
          */
         req.getSession().setAttribute("user", user);
-        return new ModelResult.Builder(false).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(false).page(HOST.PAGE_USERHOME).build();
     }
 }
 

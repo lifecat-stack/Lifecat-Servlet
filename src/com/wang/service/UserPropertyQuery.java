@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * GetUserMsgModel: 获取用户信息
+ * UserPropertyQuery: 获取用户信息
  * <p>
  * 访问范围: 全局
  * 调用者: Servlet
@@ -24,20 +24,20 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-class GetUserMsgModel implements ServiceModel {
+class UserPropertyQuery implements Service {
 
     private Logger logger;
 
-    private GetUserMsgModel() {
-        logger = Logger.getLogger("GetUserMsgModel");
+    private UserPropertyQuery() {
+        logger = Logger.getLogger("UserPropertyQuery");
     }
 
-    static ServiceModel getModel() {
-        return new GetUserMsgModel();
+    static Service getModel() {
+        return new UserPropertyQuery();
     }
 
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
         User user = (User) req.getSession().getAttribute("user");
 
@@ -49,10 +49,10 @@ class GetUserMsgModel implements ServiceModel {
             msg = daoModel.queryUserMsg();
         } catch (NullPointerException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("usermsg in database is null").page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(true).errormsg("usermsg in database is null").page(HOST.PAGE_USERHOME).build();
         } catch (SQLException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_USERHOME).build();
         }
 
         //若数据库中msg==null, 设置msg为默认
@@ -60,12 +60,12 @@ class GetUserMsgModel implements ServiceModel {
             msg = new UserMsg.Builder(user.getId()).build();
             logger.info(msg.toString());
             req.getSession().setAttribute("usermsg", msg);
-            return new ModelResult.Builder(true).errormsg("usermsg is null").page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(true).errormsg("usermsg is null").page(HOST.PAGE_USERHOME).build();
         }
 
         //success
         logger.info(msg.toString());
         req.getSession().setAttribute("usermsg", msg);
-        return new ModelResult.Builder(false).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(false).page(HOST.PAGE_USERHOME).build();
     }
 }

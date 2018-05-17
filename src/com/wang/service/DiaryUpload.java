@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * UpDiaryModel: 上传diary
+ * DiaryUpload: 上传diary
  * <p>
  * 访问范围: 包
  * 调用者: Servlet
@@ -24,20 +24,20 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-class UpDiaryModel implements ServiceModel {
+class DiaryUpload implements Service {
 
     private Logger logger;
 
-    private UpDiaryModel() {
-        logger = Logger.getLogger("UpDiaryModel");
+    private DiaryUpload() {
+        logger = Logger.getLogger("DiaryUpload");
     }
 
-    static ServiceModel getModel() {
-        return new UpDiaryModel();
+    static Service getModel() {
+        return new DiaryUpload();
     }
 
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
         String diary_name = req.getParameter("diary_name");
         String diary_desc = req.getParameter("diary_desc");
@@ -57,12 +57,12 @@ class UpDiaryModel implements ServiceModel {
             daoModel.insertDiary(diary);
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("diary argument has null").page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(true).errormsg("diary argument has null").page(HOST.PAGE_USERHOME).build();
         } catch (SQLException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_USERHOME).build();
         }
 
-        return new ModelResult.Builder(false).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(false).page(HOST.PAGE_USERHOME).build();
     }
 }

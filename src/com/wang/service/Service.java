@@ -4,7 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * ServiceModel: 执行具体业务逻辑操作
+ * Service: 执行具体业务逻辑操作
  * <p>
  * 访问范围: 全局
  * <p>
@@ -13,13 +13,13 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @auther ten
  */
-public interface ServiceModel {
+public interface Service {
     /**
      * 业务逻辑处理
      *
      * @param req  request 请求
      * @param resp response 请求
-     * @return ModelResult 处理结果对象
+     * @return ServiceResult 处理结果对象
      */
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp);
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp);
 }

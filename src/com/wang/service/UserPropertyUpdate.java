@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * SetUserMsgModel: 更新用户信息
+ * UserPropertyUpdate: 更新用户信息
  * <p>
  * 访问范围: 全局
  * 调用者: Servlet
@@ -23,20 +23,20 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-class SetUserMsgModel implements ServiceModel {
+class UserPropertyUpdate implements Service {
 
     private Logger logger;
 
-    private SetUserMsgModel() {
-        logger = Logger.getLogger("SetUserMsgModel");
+    private UserPropertyUpdate() {
+        logger = Logger.getLogger("UserPropertyUpdate");
     }
 
-    static ServiceModel getModel() {
-        return new SetUserMsgModel();
+    static Service getModel() {
+        return new UserPropertyUpdate();
     }
 
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
         String nickname = req.getParameter("nickname");
         String sex = req.getParameter("sex");
@@ -70,10 +70,10 @@ class SetUserMsgModel implements ServiceModel {
          * 2. 跳转page: userhome
          */ catch (IllegalArgumentException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("usermsg argument has null").page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(true).errormsg("usermsg argument has null").page(HOST.PAGE_USERHOME).build();
         } catch (SQLException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(true).errormsg("SQLException").page(HOST.PAGE_USERHOME).build();
         }
 
         /*
@@ -83,6 +83,6 @@ class SetUserMsgModel implements ServiceModel {
          * 2. 跳转page: userhome
          */
         req.getSession().setAttribute("usermsg", msg);
-        return new ModelResult.Builder(false).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(false).page(HOST.PAGE_USERHOME).build();
     }
 }

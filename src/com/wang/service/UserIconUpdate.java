@@ -15,7 +15,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * UpUserIconModel: 上传头像图片到服务器, 并加载路径到usermsg数据库
+ * UserIconUpdate: 上传头像图片到服务器, 并加载路径到usermsg数据库
  * <p>
  * 访问范围: 全局
  * 调用者: Servlet
@@ -27,15 +27,15 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-public class UpUserIconModel implements ServiceModel {
+public class UserIconUpdate implements Service {
     private Logger logger;
 
-    private UpUserIconModel() {
-        logger = Logger.getLogger("UpUserIconModel");
+    private UserIconUpdate() {
+        logger = Logger.getLogger("UserIconUpdate");
     }
 
-    static ServiceModel getModel() {
-        return new UpUserIconModel();
+    static Service getModel() {
+        return new UserIconUpdate();
     }
 
     /**
@@ -45,7 +45,7 @@ public class UpUserIconModel implements ServiceModel {
      * @param resp 响应
      */
     @Override
-    public ModelResult execute(HttpServletRequest req, HttpServletResponse resp) {
+    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
         User user = (User) req.getSession().getAttribute("user");
 
@@ -66,7 +66,7 @@ public class UpUserIconModel implements ServiceModel {
             writer.writeImage(req.getInputStream());
         } catch (IOException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("图片写入服务器失败").page(HOST.PAGE_UPIMAGE).build();
+            return new ServiceResult.Builder(true).errormsg("图片写入服务器失败").page(HOST.PAGE_UPIMAGE).build();
         }
 
         //2. 将路径写入数据库
@@ -76,9 +76,9 @@ public class UpUserIconModel implements ServiceModel {
             daoModel.updateUserIcon(directory_path);
         } catch (SQLException e) {
             e.printStackTrace();
-            return new ModelResult.Builder(true).errormsg("路径写入数据库失败").page(HOST.PAGE_UPIMAGE).build();
+            return new ServiceResult.Builder(true).errormsg("路径写入数据库失败").page(HOST.PAGE_UPIMAGE).build();
         }
 
-        return new ModelResult.Builder(false).page(HOST.PAGE_IMAGESHOW).build();
+        return new ServiceResult.Builder(false).page(HOST.PAGE_IMAGESHOW).build();
     }
 }
