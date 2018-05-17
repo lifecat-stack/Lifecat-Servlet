@@ -395,8 +395,8 @@ version1.3.2
     | diary_name          | varchar(200)| NO   |     | NULL    |       | 日记名称
     | idx_diary_name      | varchar(200)| NO   | IDX | NULL    |       | 索引: diary_name
     | diary_text          | text        | NO   |     | NULL    |       | 日记内容
-    | is_delete           | unsigned tinyint NO|     | NULL    |       | 日记是否删除
-    | idx_is_delete       | unsigned tinyint NO| IDX | NULL    |       | 索引: 日记是否删除
+    | is_deleted          | unsigned tinyint NO|     | NULL    |       | 日记是否删除
+    | idx_is_deleted      | unsigned tinyint NO| IDX | NULL    |       | 索引: 日记是否删除
     | user_id             | unsigned int| NO   |     | NULL    |       | 所属user_id
     | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
     | diary_gmt_create    | datetime    | NO   |     | NULL    |       | 日记上传日期
@@ -405,9 +405,10 @@ version1.3.2
 
 /**
   +----------------------------------------------------------------------------+
-  |                                 DO 设计                                     |
+  |                                 VO 视图对象 设计                             |
   +----------------------------------------------------------------------------+
   */
+    VO 视图对象: 对应于视图层的抽象业务逻辑
 
     +-------------------+
     | Tables_in_lifecat |
@@ -466,20 +467,22 @@ version1.3.2
     +-------------------+
     | UserIcon          | NOT NULL: POJO类型
     +-------------------+
-    | user_id           |
-    | icon_path         |
-    | icon_path         |
-    | icon_path         |
+    | user_id           | 用户ID，由user对象提供
+    | icon_path         | 头像图片的存储路径
+    +-------------------+
+    | icon_gmt_create   | 由DAO层维护
+    | icon_gmt_modified | 由DAO层维护
     +-------------------+
 
-    +-------------------+    +-------------------+    +-------------------+    +-------------------+
-    | Image             |    | ImageType         |    | ImageClas         |    | ImageFeature      |
-    +-------------------+    +-------------------+    +-------------------+    +-------------------+
-    | image_id          |    | image_id          |    | image_class_id    |    | image_id          |
-    | image_text        |    | user_id           |    | image_class_desc  |    | image_class       |
-    | image_path        |    | image_class       |    +-------------------+    | image_feature_path|
-    | image_gmt_create  |    +-------------------+                             +-------------------+
-    | image_gmt_modified|
+    +-------------------+
+    | Image             | NOT NULL: POJO类型
+    +-------------------+
+    | image_id          | 图片ID，由DAO返回
+    | image_text        | 图片文本描述
+    | image_path        | 图片存储路径
+    +-------------------+
+    | image_gmt_create  | 由DAO层维护
+    | image_gmt_modified| 由DAO层维护
     +-------------------+
 
     +-------------------+    +-------------------+
@@ -492,10 +495,158 @@ version1.3.2
     | image_gmt_modified|
     +-------------------+
 
+ +-------------------+    +-------------------+    +-------------------+
+ | ImageType         |    | ImageClas         |    | ImageFeature      |
+  +-------------------+    +-------------------+    +-------------------+
+  | image_id          |    | image_class_id    |    | image_id          |
+   | user_id           |    | image_class_desc  |    | image_class       |
+    | image_class       |    +-------------------+    | image_feature_path|
+    +-------------------+                             +-------------------+
 
 /**
   +----------------------------------------------------------------------------+
-  |                                 文档说明                                     |
+  |                              DO 数据对象 设计                                |
+  +----------------------------------------------------------------------------+
+  */
+
+    ○与数据库表结构一一对应，通过DAO层向上传输数据源对象
+    ○POJO类型
+    ○获取VO对象信息，在DAO层中加入控制信息，构建DO对象
+
+    +-------------------+
+    | Tables_in_lifecat |
+    +-------------------+
+    | admin             | 管理员账号
+    |                   |
+    | user              | 用户账号
+    | user_property     | 用户个人资料
+    | user_icon         | 用户头像信息
+    |                   |
+    | image             | 图片信息
+    | image_type        | 图片所属类别信息
+    | image_class       | 图片类别
+    | image_feature     | 图片特征向量
+    |                   |
+    | diary             | 日记信息
+    +-------------------+
+                                     DB  :由数据库返回信息
+    --------------------- 数据提供者↓ VO  :由模型层提供信息
+                                     DAO :由DAO层提供信息
+
+    +-------------------+
+    | AdminDO           |
+    +-------------------+
+    | admin_id          | DB
+    | admin_name        | VO
+    | admin_password    | VO
+    | admin_level       | VO
+    | admin_gmt_create  | DAO
+    | admin_gmt_modified| DAO
+    +-------------------+
+
+    +-------------------+
+    | UserDO            |
+    +-------------------+
+    | user_id           | DB
+    | user_name         | VO
+    | user_password     | VO
+    | user_gmt_create   | DAO
+    | user_gmt_modified | DAO
+    +-------------------+
+
+    +-------------------+
+    | UserPropertyDO    |
+    +-------------------+
+    | user_id           | VO
+    | property_nickname | VO
+    | property_signature| VO
+    | property_email    | VO
+    | property_Location | VO
+    | property_birthday | VO
+    | property_gmt_create   DAO
+    | property_gmt_modified DAO
+    +-------------------+
+
+    +-------------------+
+    | UserIconDO        |
+    +-------------------+
+    | user_id           | VO
+    | icon_path         | VO
+    | icon_gmt_create   | DAO
+    | icon_gmt_modified | DAO
+    +-------------------+
+
+    +-------------------+
+    | ImageDO           |
+    +-------------------+
+    | image_id          | VO
+    | image_text        | VO
+    | image_path        | VO
+    | is_deleted        | DAO
+    | user_id           | VO
+    | image_gmt_create  | DAO
+    | image_gmt_modified| DAO
+    +-------------------+
+
+    +-------------------+
+    | ImageTypeDO       |
+    +-------------------+
+    | image_id          | VO
+    | user_id           | VO
+    | image_class       | VO
+    | type_gmt_create   | DAO
+    | type_gmt_modified | DAO
+    +-------------------+
+
+    +-------------------+
+    | ImageClassDO      |
+    +-------------------+
+    | image_class_id    | VO
+    | image_class_name  | VO
+    | image_class_desc  | VO
+    | class_gmt_create  | DAO
+    | class_gmt_modified| DAO
+    +-------------------+
+
+    +-------------------+
+    | ImageFeatureDO    |
+    +-------------------+
+    | image_id          | VO
+    | image_class       | VO
+    | image_feature_path| VO
+    | feature_gmt_create|  DAO
+    | feature_gmt_modified DAO
+    +-------------------+
+
+    +-------------------+
+    | DiaryDO           |
+    +-------------------+
+    | diary_id          | VO
+    | diary_name        | VO
+    | diary_text        | VO
+    | is_deleted        | DAO
+    | user_id           | VO
+    | diary_gmt_create  | DAO
+    | diary_gmt_modified| DAO
+    +-------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+  +----------------------------------------------------------------------------+
+  |                              DO 数据库访问对象 设计                           |
   +----------------------------------------------------------------------------+
   */
 
