@@ -221,151 +221,186 @@ version1.3.2
                     unsigned int      :   4    0~2^32
                     unsigned bigint   :   8    0~2^64
 
+=>《Java开发手册》索引规范:
+    ○ps 必须为主键创建主键索引
+    ○5.2.1 业务上具有唯一特性的字段，必须建成唯一索引
+    ○5.2.3 在varchar字段建立索引，指定长度，没有必要全字段建立
+    ○5.2.4 索引使用B-Tree最左前缀匹配特性，严禁左模糊
+    ○5.2.9 建立组合索引时，区分度最高的在最左边 where a=? and b=?
+    ○5.2.9 如存在非等号和等号，则应等号前置 where b=? and a>?
+    ○5.1.5 主键索引pk_xxx  :primary key
+            唯一索引uk_xxx  :unique key
+            普通索引idx_xxx :index
+
+    ○不要宁滥勿缺 不要一个查询就要建一个索引
+    ○不要宁缺毋滥 索引的开销相对较小，在频繁字段建立索引
+    ○不要抵制唯一索引
+
 =>数据库设计: lifecat
 
     +-------------------+
     | Tables_in_lifecat |
     +-------------------+
-    | admin             |
+    | admin             | 管理员账号
     |                   |
-    | user              |
-    | user_msg          |
-    | user_icon         |
+    | user              | 用户账号
+    | user_property     | 用户个人资料
+    | user_icon         | 用户头像信息
     |                   |
-    | image             |
-    | image_user        |
-    | image_type        |
-    | image_class       |
-    | image_feature     |
+    | image             | 图片信息
+    | image_type        | 图片所属类别信息
+    | image_class       | 图片类别
+    | image_feature     | 图片特征向量
     |                   |
-    | diary             |
-    | diary_user        |
+    | diary             | 日记信息
     +-------------------+
 
 ○管理员表: admin
-
+    注册: 插入admin对象，返回admin_id
+    登录: 根据索引uk_admin_name进行查询，返回user对象
+    修改: 根据主键admin_id，进行更新
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | admin_id            | unsigned int| NO   | PRI | NULL    | AUTO  | 管理员ID, 自增长
-    | admin_name          | varchar(20) | NO   |     | NULL    |       | 管理员用户名
-    | admin_password      | varchar(20) | NO   |     | NULL    |       | 管理员密码
+    | admin_id            | unsigned int| NO   | PRI | NULL    | AUTO  | 管理员ID, 主键索引. 自增长
+    | admin_name          | varchar(50) | NO   |     | NULL    |       | 管理员用户名
+    | uk_admin_name       | varchar(50) | NO   | UNQ | NULL    |       | 唯一索引: admin_name
+    | admin_password      | varchar(50) | NO   |     | NULL    |       | 管理员密码
     | admin_level         | varchar(20) | NO   |     | NULL    |       | 管理员权限
-    | admin_gmt_create    | date_time   | NO   |     | NULL    |       | 管理员创建时间
-    | admin_gmt_modified  | date_time   | NO   |     | NULL    |       | 管理员修改时间
+    | admin_gmt_create    | datetime    | NO   |     | NULL    |       | 管理员创建时间
+    | admin_gmt_modified  | datetime    | NO   |     | NULL    |       | 管理员修改时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ------------------------------------------------------------------------
 
 ○用户账号表: user
-
+    注册: 插入user对象，返回user_id
+    登录: 根据索引uk_user_name进行查询，返回user对象
+    修改: 根据主键user_id，进行更新
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | user_id             | unsigned int| NO   | PRI | NULL    | AUTO  | 用户ID, 自增长
-    | user_name           | varchar(20) | NO   |     | NULL    |       | 用户账户名
-    | user_password       | varchar(20) | NO   |     | NULL    |       | 用户密码
-    | user_gmt_create     | date_time   | NO   |     | NULL    |       | 用户注册时间
-    | user_gmt_modified   | date_time   | NO   |     | NULL    |       | 用户账户修改时间
+    | user_id             | unsigned int| NO   | PRI | NULL    | AUTO  | 用户ID, 主键索引, 自增长
+    | user_name           | varchar(50) | NO   |     | NULL    |       | 用户账户名
+    | uk_user_name        | varchar(50) | NO   | UNQ | NULL    |       | 索引: user_name
+    | user_password       | varchar(50) | NO   |     | NULL    |       | 用户密码
+    | user_gmt_create     | datetime    | NO   |     | NULL    |       | 用户注册时间
+    | user_gmt_modified   | datetime    | NO   |     | NULL    |       | 用户账户修改时间
     +---------------------+-------------+------+-----+---------+-------+
 
-○用户信息表: user_msg
-
+○用户信息表: user_property
+    设置资料: 根据主键user_id，插入user_property对象
+    获取资料: 根据主键user_id进行查询
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | user_id             | unsigned int| NO   | PRI | NULL    |       | 用户ID
-    | user_msg_nickname   | varchar(30) | YES  |     | NULL    |       | 用户昵称
-    | user_msg_signature  | varchar(50) | YES  |     | NULL    |       | 用户签名
-    | user_msg_email      | varchar(30) | YES  |     | NULL    |       | 用户邮箱
-    | user_msg_Location   | varchar(30) | YES  |     | NULL    |       | 用户地址
-    | user_msg_birthday   | unsigned int| YES  |     | NULL    |       | 用户生日
-    | user_msg_gmt_create | date_time   | NO   |     | NULL    |       | 用户第一次设置信息
-    | user_msg_gmt_modified|date_time   | NO   |     | NULL    |       | 用户修改信息时间
+    | user_id             | unsigned int| NO   | PRI | NULL    |       | 用户ID, 主键索引. 关联user
+    | property_nickname   | varchar(30) | YES  |     | NULL    |       | 用户昵称
+    | property_signature  | varchar(50) | YES  |     | NULL    |       | 用户签名
+    | property_email      | varchar(30) | YES  |     | NULL    |       | 用户邮箱
+    | property_Location   | varchar(30) | YES  |     | NULL    |       | 用户地址
+    | property_birthday   | unsigned int| YES  |     | NULL    |       | 用户生日
+    | property_gmt_create | datetime    | NO   |     | NULL    |       | 用户第一次设置信息
+    | property_gmt_modified|datetime    | NO   |     | NULL    |       | 用户修改信息时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ○用户头像表: user_icon
-
+    插入: 根据主键user_id进行插入
+    查询: 根据主键user_id进行查询
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
     | user_id             | unsigned int| NO   | PRI | NULL    |       | 用户ID
-    | icon_path           | varchar(100)| NO   |     | NULL    |       | 用户头像图片存储路径
+    | icon_path           | varchar(200)| NO   |     | NULL    |       | 用户头像图片存储路径
+    | icon_gmt_create     | datetime    | NO   |     | NULL    |       | 创建时间
+    | icon_gmt_modified   | datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ------------------------------------------------------------------------
 
 ○图片信息表: image
-
+    上传/插入: 根据user_id进行插入，主键image_id，返回image_id
+    查询/获取所有图片: 根据索引idx_user_id并且idx_is_deleted=1查询同一用户的所有image，并排序
+    查询/获取单个图片: 根据主键image_id并且idx_is_deleted=1进行查询，返回image对象
+    排序: order by 主键image_id
+    删除: 根据image_id，设置isdelete=0
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | image_id            | unsigned int| NO   | PRI | NULL    | AUTO  | 图片ID, 自增长
+    | image_id            | unsigned int| NO   | PRI | NULL    | AUTO  | 图片ID, 主键索引. 自增长
     | image_text          | varchar(200)| YES  |     | NULL    |       | 图片文本内容, 可为空
-    | image_gmt_create    | date_time   | NO   |     | NULL    |       | 图片上传日期
-    | image_gmt_modified  | date_time   | NO   |     | NULL    |       | 图片修改日期
-    | is_delete           | unsigned tinyint NO|     | NULL    |       | 图片是否删除
+    | image_path          | varchar(200)| NO   |     | NULL    |       | 图片路径
+    | is_deleted          | unsigned tinyint NO|     | NULL    |       | 图片是否删除 1是 0否
+    | idx_is_deleted      | unsigned tinyint NO|     | NULL    |       | 索引: isdeleted
+    | user_id             | unsigned int| NO   |     | NULL    |       | 所属user_id
+    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
+    | image_gmt_create    | datetime    | NO   |     | NULL    |       | 图片上传日期
+    | image_gmt_modified  | datetime    | NO   |     | NULL    |       | 图片修改日期
     +---------------------+-------------+------+-----+---------+-------+
 
-○图片用户关联表: image_user
-
+○图片类型关联表: image_type
+    上传/插入: 根据返回的image_id，插入user_id和默认image_class
+    获取分类图片: 根据索引idx_user_id和索引idx_image_class获取此类别的所有image_id
+                然后根据image_id从image表中获取所有image对象
+    插入/修改类别信息: 根据image_id，更新image_class
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
     | image_id            | unsigned int| NO   | PRI | NULL    |       | 图片ID
     | user_id             | unsigned int| NO   |     | NULL    |       | 图片所属user_id
-    +---------------------+-------------+------+-----+---------+-------+
-
-○图片所属类别表: image_type
-
-    +---------------------+-------------+------+-----+---------+-------+
-    | Field               | Type        | Null | Key | Default | Extra |
-    +---------------------+-------------+------+-----+---------+-------+
-    | image_id            | unsigned int| NO   | PRI | NULL    |       | 图片ID
-    | image_type          | unsigned tinyint YES     | NULL    |       | 图片所属类别
+    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
+    | image_class         | unsigned int| NO   |     | NULL    |       | 图片所属类别id
+    | idx_image_class     | unsigned int| NO   | IDX | NULL    |       | 索引: image_id
+    | type_gmt_create     | datetime    | NO   |     | NULL    |       | 创建时间
+    | type_gmt_modified   | datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ○图片类别描述表: image_class
-
+    插入: 插入image_class_name，返回id
+    获取: 根据image_class_id获取
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | image_class         | unsigned tinyint YES     | NULL    |       | 图片类别
-    | image_class_desc    | varchar(30) | YES  |     | NULL    |       | 图片类别描述
+    | image_class_id      | unsigned int| NO   | PRI | NULL    | AUTO  | 图片类别id
+    | image_class_name    | varchar(20) | NO   |     | NULL    |       | 图片类别name
+    | image_class_desc    | varchar(200)| YES  |     | NULL    |       | 图片类别描述
+    | class_gmt_create    | datetime    | NO   |     | NULL    |       | 创建时间
+    | class_gmt_modified  | datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ○机器学习-图片特征向量: image_feature
-
+    上传/插入: 根据image_id，插入信息
+    获取: 根据image_id，获取对象
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
     | image_id            | unsigned int| NO   | PRI | NULL    |       | 图片ID
     | image_class         | unsigned int| YES  |     | NULL    |       | 图片所属类别
     | image_feature_path  | varchar(200)| YES  |     | NULL    |       | 图片PCA之后的特征向量存储的路径
+    | feature_gmt_create  | datetime    | NO   |     | NULL    |       | 创建时间
+    | feature_gmt_modified| datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ------------------------------------------------------------------------
 
 ○用户日记表: diary
-
+    上传/插入: 插入diary对象，返回diary_id
+    获取集合: 根据索引idx_user_id并且idx_is_deleted=1进行查询
+    搜索单篇: 根据索引idx_user_id和索引idx_diary_name并且idx_is_deleted=1进行查询
+    排序: order by 主键diary_id
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
     | diary_id            | unsigned int| NO   | PRI | NULL    | AUTO  | 日记ID, 自增长
     | diary_name          | varchar(200)| NO   |     | NULL    |       | 日记名称
-    | diary_text          | varchar(2000) NO   |     | NULL    |       | 日记内容
-    | image_gmt_create    | date_time   | NO   |     | NULL    |       | 日记上传日期
-    | image_gmt_modified  | date_time   | NO   |     | NULL    |       | 日记修改日期
+    | idx_diary_name      | varchar(200)| NO   | IDX | NULL    |       | 索引: diary_name
+    | diary_text          | text        | NO   |     | NULL    |       | 日记内容
     | is_delete           | unsigned tinyint NO|     | NULL    |       | 日记是否删除
-    +---------------------+-------------+------+-----+---------+-------+
-
-○日记用户关联表: diary_user
-
-    +---------------------+-------------+------+-----+---------+-------+
-    | Field               | Type        | Null | Key | Default | Extra |
-    +---------------------+-------------+------+-----+---------+-------+
-    | diary_id            | unsigned int| NO   | PRI | NULL    |       | 日记ID
-    | user_id             | unsigned int| NO   |     | NULL    |       | 日记所属user_id
+    | idx_is_delete       | unsigned tinyint NO| IDX | NULL    |       | 索引: 日记是否删除
+    | user_id             | unsigned int| NO   |     | NULL    |       | 所属user_id
+    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
+    | diary_gmt_create    | datetime    | NO   |     | NULL    |       | 日记上传日期
+    | diary_gmt_modified  | datetime    | NO   |     | NULL    |       | 日记修改日期
     +---------------------+-------------+------+-----+---------+-------+
 
 /**
@@ -374,6 +409,88 @@ version1.3.2
   +----------------------------------------------------------------------------+
   */
 
+    +-------------------+
+    | Tables_in_lifecat |
+    +-------------------+
+    | admin             |  Admin
+    |                   |
+    | user              |  User
+    | user_property     |  UserProperty
+    | user_icon         |  UserIcon
+    |                   |
+    | image             |  Image
+    | image_type        |  Image
+    | image_class       |  ImageClass
+    | image_feature     |  ImageFeature
+    |                   |
+    | diary             |  Diary
+    +-------------------+
+
+    +-------------------+
+    | Admin             | NOT NULL: POJO类型
+    +-------------------+
+    | admin_id          | 管理员ID，由DAO层返回
+    | admin_name        | 管理员用户名，由表单获取
+    | admin_password    | 管理员密码，由表单获取
+    | admin_level       | 管理员权限，默认
+    +-------------------+
+    | admin_gmt_create  | 由DAO层负责维护
+    | admin_gmt_modified| 由DAO层负责维护
+    +-------------------+
+
+    +-------------------+
+    | User              | NOT NULL: POJO类型
+    +-------------------+
+    | user_id           | 用户ID，由DAO层返回
+    | user_name         | 用户名，表单获取
+    | user_password     | 用户密码，表单获取
+    +-------------------+
+    | user_gmt_creat    | 由DAO层维护
+    | user_gmt_modified | 由DAO层维护
+    +-------------------+
+
+    +----------------------+
+    | UserProperty         | CAN NULL: 构建者模式
+    +----------------------+
+    | user_id              | 用户ID，由user对象提供
+    | property_nickname    | 昵称 默认
+    | property_signature   | 签名 默认
+    | property_email       | 邮箱 默认
+    | property_Location    | 地址 默认
+    | property_birthday    | 生日 默认
+    +----------------------+
+    | property_gmt_create  | 由DAO层维护
+    | property_gmt_modified| 由DAO层维护
+    +----------------------+
+
+    +-------------------+
+    | UserIcon          | NOT NULL: POJO类型
+    +-------------------+
+    | user_id           |
+    | icon_path         |
+    | icon_path         |
+    | icon_path         |
+    +-------------------+
+
+    +-------------------+    +-------------------+    +-------------------+    +-------------------+
+    | Image             |    | ImageType         |    | ImageClas         |    | ImageFeature      |
+    +-------------------+    +-------------------+    +-------------------+    +-------------------+
+    | image_id          |    | image_id          |    | image_class_id    |    | image_id          |
+    | image_text        |    | user_id           |    | image_class_desc  |    | image_class       |
+    | image_path        |    | image_class       |    +-------------------+    | image_feature_path|
+    | image_gmt_create  |    +-------------------+                             +-------------------+
+    | image_gmt_modified|
+    +-------------------+
+
+    +-------------------+    +-------------------+
+    | Diary             |    | DiaryType         |
+    +-------------------+    +-------------------+
+    | diary_id          |    | diary_id          |
+    | diary_name        |    | user_id           |
+    | diary_text        |    +-------------------+
+    | image_gmt_create  |
+    | image_gmt_modified|
+    +-------------------+
 
 
 /**
