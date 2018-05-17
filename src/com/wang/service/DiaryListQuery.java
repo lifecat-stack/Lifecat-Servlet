@@ -2,8 +2,8 @@ package com.wang.service;
 
 import com.wang.bean.Diary;
 import com.wang.bean.User;
-import com.wang.daomanager.DAOModelFactory;
-import com.wang.daomanager.DiaryDAOModel;
+import com.wang.manager.ManagerFactory;
+import com.wang.manager.DiaryManager;
 import com.wang.util.HOST;
 
 import javax.servlet.http.HttpServletRequest;
@@ -46,7 +46,7 @@ public class DiaryListQuery implements Service {
 
         User user = (User) req.getSession().getAttribute("user");
 
-        DiaryDAOModel daoModel = (DiaryDAOModel) DAOModelFactory.getDAOModelByName(user.getId(), "DiaryDAOModel");
+        DiaryManager daoModel = (DiaryManager) ManagerFactory.getManagerByName(user.getId(), "DiaryManager");
 
         List<Diary> diaries = null;
 

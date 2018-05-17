@@ -2,8 +2,8 @@ package com.wang.openfunc;
 
 import com.wang.bean.Image;
 import com.wang.bean.User;
-import com.wang.daomanager.DAOModelFactory;
-import com.wang.daomanager.ImageDAOModel;
+import com.wang.manager.ManagerFactory;
+import com.wang.manager.ImageManager;
 import com.wang.util.HOST;
 import com.wang.util.ImageWriter;
 import com.wang.util.MyDate;
@@ -68,7 +68,7 @@ public class AndroidUpImage extends HttpServlet {
 
         //设置Image对象
         Image image = new Image.Builder(image_path).image_date(image_date).image_name(image_name).image_type("image").build();
-        ImageDAOModel daoModel = (ImageDAOModel) DAOModelFactory.getDAOModelByName(user.getId(), "ImageDAOModel");
+        ImageManager daoModel = (ImageManager) ManagerFactory.getManagerByName(user.getId(), "ImageManager");
 
         //2. 将路径写入数据库
         try {

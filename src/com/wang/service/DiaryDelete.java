@@ -1,4 +1,4 @@
 package com.wang.service;
 
-public class DiaryDelete {
+public class DiaryDelete implements Service {
 }

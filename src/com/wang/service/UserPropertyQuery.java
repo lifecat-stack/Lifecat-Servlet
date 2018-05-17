@@ -2,8 +2,8 @@ package com.wang.service;
 
 import com.wang.bean.User;
 import com.wang.bean.UserMsg;
-import com.wang.daomanager.DAOModelFactory;
-import com.wang.daomanager.UserMsgDAOModel;
+import com.wang.manager.ManagerFactory;
+import com.wang.manager.UserMsgManager;
 import com.wang.util.HOST;
 
 import javax.servlet.http.HttpServletRequest;
@@ -41,7 +41,7 @@ class UserPropertyQuery implements Service {
 
         User user = (User) req.getSession().getAttribute("user");
 
-        UserMsgDAOModel daoModel = (UserMsgDAOModel) DAOModelFactory.getDAOModelByName(user.getId(), "UserMsgDAOModel");
+        UserMsgManager daoModel = (UserMsgManager) ManagerFactory.getManagerByName(user.getId(), "UserMsgManager");
 
         UserMsg msg;
 

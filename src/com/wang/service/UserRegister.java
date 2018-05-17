@@ -1,8 +1,8 @@
 package com.wang.service;
 
 import com.wang.bean.User;
-import com.wang.daomanager.DAOModelFactory;
-import com.wang.daomanager.UserDAOModel;
+import com.wang.manager.ManagerFactory;
+import com.wang.manager.UserManager;
 import com.wang.util.HOST;
 
 import javax.servlet.http.HttpServletRequest;
@@ -47,7 +47,7 @@ class UserRegister implements Service {
 
         logger.info(user.toString());
 
-        UserDAOModel daoModel = (UserDAOModel) DAOModelFactory.getDAOModelByName(user.getId(), "UserDAOModel");
+        UserManager daoModel = (UserManager) ManagerFactory.getManagerByName(user.getId(), "UserManager");
 
         try {
             //判断ID是否存在

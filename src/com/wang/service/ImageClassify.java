@@ -1,4 +1,4 @@
 package com.wang.service;
 
-public class ImageClassify {
+public class ImageClassify implements Service{
 }

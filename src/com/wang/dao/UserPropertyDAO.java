@@ -9,11 +9,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * UserMsgDAO: usermsg表数据库操作
+ * UserPropertyDAO: usermsg表数据库操作
  * <p>
  * 访问范围: 全局
  * 获取实例: 包权限
- * 调用者: DAOModel
+ * 调用者: Manager
  * <p>
  * 1. 查询usermsg queryUserMsg(user_id)
  * 2. 插入usermsg insertUserMsg(User)
@@ -21,13 +21,13 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public class UserMsgDAO implements DAO {
+public class UserPropertyDAO implements DAO {
 
-    private UserMsgDAO() {
+    private UserPropertyDAO() {
     }
 
     static DAO newUserMsgDAO() {
-        return new UserMsgDAO();
+        return new UserPropertyDAO();
     }
 
     /**

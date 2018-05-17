@@ -4,12 +4,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Service: 执行具体业务逻辑操作
+ * Service :执行具体业务逻辑操作
  * <p>
- * 访问范围: 全局
- * <p>
- * 对具体业务逻辑进行处理
- * 调用DAOModel从而对数据库进行操作
+ * MVC-模型层: 处理抽象业务逻辑， 具体的业务逻辑服务层
+ * 对request对象进行处理, 转化为DO对象, 将DO对象交给DAOManager
+ * 调用DAOManager对逻辑处理进行下沉, 对DO对象执行DAO的逻辑处理
  *
  * @auther ten
  */
@@ -18,8 +17,8 @@ public interface Service {
      * 业务逻辑处理
      *
      * @param req  request 请求
-     * @param resp response 请求
-     * @return ServiceResult 处理结果对象
+     * @param resp response 响应
+     * @return ServiceResult 执行结果
      */
-    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp);
+    public  ServiceResult execute(HttpServletRequest req, HttpServletResponse resp);
 }

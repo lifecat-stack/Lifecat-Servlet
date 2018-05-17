@@ -1,8 +1,8 @@
 package com.wang.service;
 
 import com.wang.bean.User;
-import com.wang.daomanager.DAOModelFactory;
-import com.wang.daomanager.UserDAOModel;
+import com.wang.manager.ManagerFactory;
+import com.wang.manager.UserManager;
 import com.wang.util.HOST;
 
 import javax.servlet.http.HttpServletRequest;
@@ -51,7 +51,7 @@ class UserPswUpdate implements Service {
         //获取会话user
         User user = (User) req.getSession().getAttribute("user");
 
-        UserDAOModel daoModel = (UserDAOModel) DAOModelFactory.getDAOModelByName(user.getId(), "UserDAOModel");
+        UserManager daoModel = (UserManager) ManagerFactory.getManagerByName(user.getId(), "UserManager");
 
         try {
             //更新密码: updateUserPsw()负责进行校验

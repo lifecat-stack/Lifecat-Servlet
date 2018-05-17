@@ -1,14 +1,14 @@
-package com.wang.daomanager;
+package com.wang.manager;
 
 import com.wang.bean.UserMsg;
 import com.wang.dao.DAOFactory;
-import com.wang.dao.UserMsgDAO;
+import com.wang.dao.UserPropertyDAO;
 
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * UserMsgDAOModel: usermsg表逻辑操作
+ * UserMsgManager: usermsg表逻辑操作
  * <p>
  * 访问范围: 全局
  * 调用者: Service
@@ -20,19 +20,19 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-public class UserMsgDAOModel implements DAOModel {
+public class UserMsgManager implements Manager {
     private final int userid;
-    private final UserMsgDAO dao;
+    private final UserPropertyDAO dao;
     private final Logger logger;
 
-    private UserMsgDAOModel(int userid) {
+    private UserMsgManager(int userid) {
         this.userid = userid;
-        this.dao = (UserMsgDAO) DAOFactory.getDAOByName("UserMsgDAO");
-        this.logger = Logger.getLogger("UserMsgDAOModel@" + userid);
+        this.dao = (UserPropertyDAO) DAOFactory.getDAOByName("UserPropertyDAO");
+        this.logger = Logger.getLogger("UserMsgManager@" + userid);
     }
 
-    static DAOModel getUserMsgModel(int userid) {
-        return new UserMsgDAOModel(userid);
+    static Manager getUserMsgModel(int userid) {
+        return new UserMsgManager(userid);
     }
 
     /**

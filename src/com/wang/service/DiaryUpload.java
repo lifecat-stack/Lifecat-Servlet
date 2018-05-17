@@ -2,8 +2,8 @@ package com.wang.service;
 
 import com.wang.bean.Diary;
 import com.wang.bean.User;
-import com.wang.daomanager.DAOModelFactory;
-import com.wang.daomanager.DiaryDAOModel;
+import com.wang.manager.ManagerFactory;
+import com.wang.manager.DiaryManager;
 import com.wang.util.HOST;
 import com.wang.util.MyDate;
 
@@ -50,7 +50,7 @@ class DiaryUpload implements Service {
 
         logger.info(diary.toString());
 
-        DiaryDAOModel daoModel = (DiaryDAOModel) DAOModelFactory.getDAOModelByName(user.getId(), "DiaryDAOModel");
+        DiaryManager daoModel = (DiaryManager) ManagerFactory.getManagerByName(user.getId(), "DiaryManager");
 
         //插入diary
         try {

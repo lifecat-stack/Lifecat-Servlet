@@ -1,4 +1,4 @@
-package com.wang.daomanager;
+package com.wang.manager;
 
 import com.wang.bean.Image;
 import com.wang.dao.DAOFactory;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 /**
- * ImageDAOModel: image表操作
+ * ImageManager: image表操作
  * <p>
  * 访问范围: 全局
  * 调用者: Service
@@ -23,19 +23,19 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-public class ImageDAOModel implements DAOModel {
+public class ImageManager implements Manager {
     private final int userid;
     private final ImageDAO dao;
     private final Logger logger;
 
-    private ImageDAOModel(int userid) {
+    private ImageManager(int userid) {
         this.userid = userid;
         this.dao = (ImageDAO) DAOFactory.getDAOByName("ImageDAO");
-        this.logger = Logger.getLogger("ImageDAOModel@" + userid);
+        this.logger = Logger.getLogger("ImageManager@" + userid);
     }
 
-    static DAOModel getImageModel(int userid) {
-        return new ImageDAOModel(userid);
+    static Manager getImageModel(int userid) {
+        return new ImageManager(userid);
     }
 
     /**

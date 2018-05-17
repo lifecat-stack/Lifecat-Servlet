@@ -1,8 +1,8 @@
 package com.wang.openfunc;
 
 import com.wang.bean.Image;
-import com.wang.daomanager.DAOModelFactory;
-import com.wang.daomanager.ImageDAOModel;
+import com.wang.manager.ManagerFactory;
+import com.wang.manager.ImageManager;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -30,7 +30,7 @@ public class AndroidGetImage extends HttpServlet {
 
         int userid = Integer.parseInt(uri.substring(uri.lastIndexOf("?userid=")));
 
-        ImageDAOModel dao = (ImageDAOModel) DAOModelFactory.getDAOModelByName(userid, "ImageDAOModel");
+        ImageManager dao = (ImageManager) ManagerFactory.getManagerByName(userid, "ImageManager");
 
         //获取数据库Image信息
         try {

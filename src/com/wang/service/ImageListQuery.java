@@ -1,4 +1,4 @@
 package com.wang.service;
 
-public class ImageListQuery {
+public class ImageListQuery implements Service {
 }

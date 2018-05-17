@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 <%@page import="com.wang.bean.*" %>
-<%@ page import="com.wang.daomanager.UserMsgDAOModel" %>
+<%@ page import="com.wang.manager.UserMsgManager" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.wang.daomanager.DiaryDAOModel" %>
+<%@ page import="com.wang.manager.DiaryManager" %>
 <%@ page import="com.wang.service.ImageQuery" %>
 <%@ page import="static com.wang.util.HOST.*" %>
 <%@ page import="java.util.logging.Logger" %>
@@ -114,8 +114,8 @@
                                 UserMsg usermsg;
                                 /* 若当期有用户登录 */
                                 if (user != null && !user.getName().equals("admin")) {
-                                    GetMsgModel DAOModel = new GetMsgModel();
-                                    usermsg = DAOModel.getUserMsg(id);
+                                    GetMsgModel DAOManager = new GetMsgModel();
+                                    usermsg = DAOManager.getUserMsg(id);
                                 }
                                 /* 若无用户登录，默认信息 */
                                 else {
@@ -210,8 +210,8 @@
                             ArrayList<Diary> diaries;
                             /* 若当期有用户登录 */
                             if (user != null && !user.getName().equals("admin")) {
-                                GetDiaryModel DAOModel = new GetDiaryModel();
-                                diaries = DAOModel.getDiaries(id);
+                                GetDiaryModel DAOManager = new GetDiaryModel();
+                                diaries = DAOManager.getDiaries(id);
                             }
                             /* 若无用户登录，添加3条默认信息 */
                             else {

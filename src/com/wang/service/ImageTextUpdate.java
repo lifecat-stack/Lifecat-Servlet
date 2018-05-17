@@ -1,4 +1,4 @@
 package com.wang.service;
 
-public class ImageTextUpdate {
+public class ImageTextUpdate implements Service {
 }

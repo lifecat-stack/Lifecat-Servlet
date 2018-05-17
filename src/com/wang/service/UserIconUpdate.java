@@ -1,8 +1,8 @@
 package com.wang.service;
 
 import com.wang.bean.User;
-import com.wang.daomanager.DAOModelFactory;
-import com.wang.daomanager.UserMsgDAOModel;
+import com.wang.manager.ManagerFactory;
+import com.wang.manager.UserMsgManager;
 import com.wang.util.HOST;
 import com.wang.util.ImageWriter;
 import com.wang.util.MyDate;
@@ -70,7 +70,7 @@ public class UserIconUpdate implements Service {
         }
 
         //2. 将路径写入数据库
-        UserMsgDAOModel daoModel = (UserMsgDAOModel) DAOModelFactory.getDAOModelByName(user.getId(), "UserMsgDAOModel");
+        UserMsgManager daoModel = (UserMsgManager) ManagerFactory.getManagerByName(user.getId(), "UserMsgManager");
 
         try {
             daoModel.updateUserIcon(directory_path);

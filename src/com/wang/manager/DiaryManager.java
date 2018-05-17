@@ -1,4 +1,4 @@
-package com.wang.daomanager;
+package com.wang.manager;
 
 import com.wang.bean.Diary;
 import com.wang.dao.DAOFactory;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 /**
- * DiaryDAOModel: diary表操作
+ * DiaryManager: diary表操作
  * <p>
  * 访问范围: 全局
  * 调用者: Service
@@ -22,19 +22,19 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-public class DiaryDAOModel implements DAOModel {
+public class DiaryManager implements Manager {
     private final int userid;
     private final DiaryDAO dao;
     private final Logger logger;
 
-    private DiaryDAOModel(int userid) {
+    private DiaryManager(int userid) {
         this.userid = userid;
         this.dao = (DiaryDAO) DAOFactory.getDAOByName("DiaryDAO");
-        this.logger = Logger.getLogger("DiaryDAOModel@" + userid);
+        this.logger = Logger.getLogger("DiaryManager@" + userid);
     }
 
-    static DAOModel getUserDiaryModel(int userid) {
-        return new DiaryDAOModel(userid);
+    static Manager getUserDiaryModel(int userid) {
+        return new DiaryManager(userid);
     }
 
     /**

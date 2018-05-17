@@ -1,4 +1,4 @@
 package com.wang.service;
 
-public class ImageDelete {
+public class ImageDelete implements Service {
 }

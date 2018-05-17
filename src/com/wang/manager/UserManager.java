@@ -1,4 +1,4 @@
-package com.wang.daomanager;
+package com.wang.manager;
 
 import com.wang.bean.User;
 import com.wang.dao.DAOFactory;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 /**
- * UserDAOModel: user表逻辑操作
+ * UserManager: user表逻辑操作
  * <p>
  * 访问范围: 全局
  * 调用者: Service
@@ -21,19 +21,19 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-public class UserDAOModel implements DAOModel {
+public class UserManager implements Manager {
     private final int userid;
     private final UserDAO dao;
     private final Logger logger;
 
-    private UserDAOModel(int userid) {
+    private UserManager(int userid) {
         this.userid = userid;
         this.dao = (UserDAO) DAOFactory.getDAOByName("UserDAO");
-        this.logger = Logger.getLogger("UserDAOModel@" + userid);
+        this.logger = Logger.getLogger("UserManager@" + userid);
     }
 
-    static DAOModel getUserModel(int userid) {
-        return new UserDAOModel(userid);
+    static Manager getUserModel(int userid) {
+        return new UserManager(userid);
     }
 
     /**

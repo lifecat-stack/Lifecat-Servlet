@@ -1,10 +1,10 @@
 package com.wang.dao;
 
 /**
- * Date Access Object: 数据库操作
+ * Date Access Object :
  * <p>
- * 获取实例: 全局
- * DAO不进行异常检测, 抛出异常
+ * 与数据表一一对应
+ * 数据访问层, 操作DO执行具体jdbc操作, 进行数据库交互 *
  *
  * @auther ten
  */

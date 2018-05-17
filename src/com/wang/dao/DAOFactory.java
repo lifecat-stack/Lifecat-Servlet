@@ -1,35 +1,48 @@
 package com.wang.dao;
 
 /**
- * DAOFactory: 提供全局的DAO获取
+ * DAOFactory :
+ * <p>
+ * 由Manager调用, 返回具体数据表的DAO对象
  *
  * @auther ten
  */
 public class DAOFactory {
-    /**
-     * 获取DAO
-     *
-     * @param name DAO Name
-     * @throws IllegalArgumentException DAO Name 不符合
-     */
+
     public static DAO getDAOByName(String name) {
-        DAO DAO;
+        DAO dao;
         switch (name) {
-            case "UserDAO":
-                DAO = UserDAO.newUserDAO();
+            case "AdminDAO":
+                dao = AdminDAO.newAdminDAO();
                 break;
-            case "UserMsgDAO":
-                DAO = UserMsgDAO.newUserMsgDAO();
+            case "UserDAO":
+                dao = UserDAO.newUserDAO();
+                break;
+            case "UserPropertyDAO":
+                dao = UserPropertyDAO.newUserMsgDAO();
+                break;
+            case "UserIconDAO":
+                dao = UserIconDAO.newUserIconDAO();
                 break;
             case "ImageDAO":
-                DAO = ImageDAO.newImageDAO();
+                dao = ImageDAO.newImageDAO();
+                break;
+            case "ImageTypeDAO":
+                dao = ImageTypeDAO.newImageTypeDAO();
+                break;
+            case "ImageClassDAO":
+                dao = ImageClassDAO.newImageClassDAO();
+                break;
+            case "ImageFeatureDAO":
+                dao = ImageFeatureDAO.newImageFeatureDAO();
                 break;
             case "DiaryDAO":
-                DAO = DiaryDAO.newDiaryDAO();
+                dao = DiaryDAO.newDiaryDAO();
                 break;
+
             default:
-                throw new IllegalArgumentException("DAOFactory cannot create " + name);
+                dao = null;
         }
-        return DAO;
+        return dao;
     }
 }

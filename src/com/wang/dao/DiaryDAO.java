@@ -15,7 +15,7 @@ import java.util.List;
  * <p>
  * 访问范围: 全局
  * 获取实例: 包权限
- * 调用者: DAOModel
+ * 调用者: Manager
  * <p>
  * 1. 查询diary queryDiary(user_id,diary_id)
  * 2. 插入diary insertDiary(user_id,diary)

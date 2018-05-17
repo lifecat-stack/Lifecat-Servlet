@@ -2,8 +2,8 @@ package com.wang.service;
 
 import com.wang.bean.Image;
 import com.wang.bean.User;
-import com.wang.daomanager.DAOModelFactory;
-import com.wang.daomanager.ImageDAOModel;
+import com.wang.manager.ManagerFactory;
+import com.wang.manager.ImageManager;
 import com.wang.util.HOST;
 
 import javax.servlet.http.HttpServletRequest;
@@ -42,7 +42,7 @@ class ImageQuery implements Service {
 
         User user = (User) req.getSession().getAttribute("user");
 
-        ImageDAOModel daoModel = (ImageDAOModel) DAOModelFactory.getDAOModelByName(user.getId(), "ImageDAOModel");
+        ImageManager daoModel = (ImageManager) ManagerFactory.getManagerByName(user.getId(), "ImageManager");
 
         List<Image> images = null;
 
