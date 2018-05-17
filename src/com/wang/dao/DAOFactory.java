@@ -3,14 +3,14 @@ package com.wang.dao;
 /**
  * DAOFactory: 提供全局的DAO获取
  *
- * @auther
+ * @auther ten
  */
 public class DAOFactory {
     /**
      * 获取DAO
      *
-     * @param name DAO name
-     * @throws IllegalArgumentException id 不符合
+     * @param name DAO Name
+     * @throws IllegalArgumentException DAO Name 不符合
      */
     public static DAO getDAOByName(String name) {
         DAO DAO;

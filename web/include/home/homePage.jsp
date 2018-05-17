@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 <%@page import="com.wang.bean.*" %>
-<%@ page import="com.wang.daomodel.UserMsgDAOModel" %>
+<%@ page import="com.wang.daomanager.UserMsgDAOModel" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.wang.daomodel.DiaryDAOModel" %>
-<%@ page import="com.wang.servicemodel.GetImagesModel" %>
+<%@ page import="com.wang.daomanager.DiaryDAOModel" %>
+<%@ page import="com.wang.service.GetImagesModel" %>
 <%@ page import="static com.wang.util.HOST.*" %>
 <%@ page import="java.util.logging.Logger" %>
 

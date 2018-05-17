@@ -31,7 +31,7 @@
     <!--数据库操作:ActionServlet-->
     <servlet>
         <servlet-name>DBService</servlet-name>
-        <servlet-class>com.wang.service.ActionServlet</servlet-class>
+        <servlet-class>com.wang.controller.ActionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>DBService</servlet-name>
@@ -41,7 +41,7 @@
     <!--上传图片servlet-->
     <servlet>
         <servlet-name>UpImageService</servlet-name>
-        <servlet-class>com.wang.service.ImageServlet</servlet-class>
+        <servlet-class>com.wang.controller.ImageServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UpImageService</servlet-name>
