@@ -6,10 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="version2.1.0&#10; --DO层数据结构">
+    <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wang/bean/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/bean/UserMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wang/bean/UserMsg.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +41,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45365855">
+    <splitter split-orientation="horizontal" split-proportion="0.8789386">
       <split-first>
         <leaf>
           <file leaf-file-name="Readme.txt" pinned="false" current-in-tab="false">
@@ -126,8 +125,8 @@
           <file leaf-file-name="UserMsg.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/wang/bean/UserMsg.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="474">
-                  <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+                <state relative-caret-position="44">
+                  <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -154,7 +153,7 @@
           <file leaf-file-name="Readme.txt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Readme.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
+                <state relative-caret-position="12113">
                   <caret line="643" lean-forward="true" selection-start-line="643" selection-end-line="643" />
                 </state>
               </provider>
@@ -200,7 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/wang/daomodel/UserMsgDAOModel.java" />
         <option value="$PROJECT_DIR$/src/com/wang/dao/UserMsgDAO.java" />
         <option value="$PROJECT_DIR$/src/com/wang/servicemodel/SetUserMsgModel.java" />
         <option value="$PROJECT_DIR$/src/com/wang/servicemodel/GetUserMsgModel.java" />
@@ -251,6 +249,7 @@
         <option value="$PROJECT_DIR$/src/com/wang/DTO/AlbumClassDTO.java" />
         <option value="$PROJECT_DIR$/src/com/wang/DTO/AlbumDTO.java" />
         <option value="$PROJECT_DIR$/src/com/wang/DTO/DiariesDTO.java" />
+        <option value="$PROJECT_DIR$/src/com/wang/bean/UserMsg.java" />
       </list>
     </option>
   </component>
@@ -310,7 +309,7 @@
               <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
@@ -653,7 +652,7 @@
       <workItem from="1526452024965" duration="37000" />
       <workItem from="1526471739730" duration="12485000" />
       <workItem from="1526512284042" duration="13577000" />
-      <workItem from="1526537923213" duration="12511000" />
+      <workItem from="1526537923213" duration="13849000" />
     </task>
     <task id="LOCAL-00001" summary="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法">
       <created>1525965840652</created>
@@ -739,11 +738,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526542188344</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="version2.2.0&#10; --完成DTO层设计">
+      <created>1526550983462</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1526550983462</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268505000" />
+    <option name="totallyTimeSpent" value="269843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
@@ -870,7 +876,8 @@
     <MESSAGE value="version2.0.3&#10; --重构了数据库设计" />
     <MESSAGE value="version2.0.4&#10; --数据库设计" />
     <MESSAGE value="version2.1.0&#10; --DO层数据结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="version2.1.0&#10; --DO层数据结构" />
+    <MESSAGE value="version2.2.0&#10; --完成DTO层设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="version2.2.0&#10; --完成DTO层设计" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1512,8 +1519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wang/bean/UserMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+        <state relative-caret-position="44">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
         </state>
       </provider>
     </entry>

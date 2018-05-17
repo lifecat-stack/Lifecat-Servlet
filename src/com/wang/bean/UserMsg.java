@@ -123,7 +123,7 @@ public class UserMsg implements Bean {
     }
 
     public String getBirthday() {
-        return birthday;
+         return birthday;
     }
 
     public String getEmail() {
