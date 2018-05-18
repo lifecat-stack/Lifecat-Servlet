@@ -22,18 +22,11 @@ import java.util.logging.Logger;
  * @auther ten
  */
 public class UserManager implements Manager {
-    private final int userid;
-    private final UserDAO dao;
-    private final Logger logger;
 
-    private UserManager(int userid) {
-        this.userid = userid;
-        this.dao = (UserDAO) DAOFactory.getDAOByName("UserDAO");
-        this.logger = Logger.getLogger("UserManager@" + userid);
-    }
+    private UserManager() {}
 
-    static Manager getUserModel(int userid) {
-        return new UserManager(userid);
+    static Manager getUserModel() {
+        return new UserManager();
     }
 
     /**

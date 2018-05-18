@@ -694,8 +694,8 @@ version1.3.2
     ○管理员注册       AdminRegister         admin                 admin_register.do        POST
 
     ○用户登录         UserLogin            user                   user_login.do            POST
-    ○用户注册         UserRegister         user                   user_register.do         POST
-    ○用户资料查询      UserPropertyQuery    user_property          user_property_query.do   GET
+    ○用户注册         UserRegister         user, _property, _icon user_register.do         POST
+    ○用户资料查询      UserPropertyQuery    user_property, _icon   user_property_query.do   GET
     ○用户资料更新      UserPropertyUpdate   user_property          user_property_update.do  POST
     ○用户头像更新      UserIconUpdate       user_icon              user_icon_update.do      POST
     ○用户密码更新      UserPswUpdate        user                   user_password_update.do  POST
@@ -715,12 +715,84 @@ version1.3.2
 
 /**
   +----------------------------------------------------------------------------+
-  |                              Manager 数据库访问对象 设计                           |
+  |                              Manager 数据库抽象逻辑对象 设计                   |
   +----------------------------------------------------------------------------+
   */
 
+    ○
+
+    +-------------------+
+    | Manager           |
+    +-------------------+
+    | AdminManager      | 管理员模块
+    |                   |
+    | UserManager       | 用户模块
+    |                   |
+    | ImageManager      | 图片模块
+    |                   |
+    | DiaryManager      | 日记模块
+    +-------------------+
+
+    ---------------------  方法名↓       操作的DAO↓
+
+    +-------------------+
+    | AdminManager      |
+    +-------------------+
+    | 注册--插入admin  :insertAdmin(AdminDO)    --adminDAO
+
+    | 登录--获取admin  :queryAdmin()    --adminDAO
+    +-------------------+
+
+    +-------------------+
+    | UserManager       |
+    +-------------------+
+    | 登录--查询user  :queryUser()    --UserDAO
+
+    | 注册--插入user  :insertUser(UserDO)    --UserDAO
+           插入user_property  :insertUserProperty(UserPropertyDO)    --UserPropertyDAO
+           插入user_icon  :insertUserIcon(UserIconDO)    --UserIconDAO
+
+    | 资料查询--查询user_property  :queryUserProperty()    --UserPropertyDAO
+               查询user_icon  :queryUserIcon()    --UserIconDAO
+
+    | 密码更新--更新user  :updateUserPassword(user_password)    --UserDAO
+
+    | 头像更新--更新user_icon  :updateUserIcon(usericonDO)    --UserIconDAO
+
+    | 资料更新--更新user_property  :updateUserProperty(UserPropertyDO)    --UserPropertyDAO
+    +-------------------+
+
+    +-------------------+
+    | ImageManager      |
+    +-------------------+
+    | 图片上传--插入image  :insertImage()    --ImageDAO
+               插入image_type表  :insertImageType()    --ImageTypeDAO
+
+    | 图片删除--从image表删除  :deleteImage()    --ImageDAO
+
+    | 图片文本内容更新--更新image  :updateImage()    --ImageDAO
+
+    | 图片单个查询--查询image  :queryImage()    --ImageDAO
+
+    | 图片全部集合查询--查询image  :queryImageList()    --ImageDAO
+
+    | 图片分类集合查询--查询image,image_type  :queryImageClass()    --ImageDAO,ImageTypeDAO
+
+    | 图片分类--调用外部接口
+    +-------------------+
 
 
+    +-------------------+
+    | DiaryManager      |
+    +-------------------+
+    | 日记上传--插入diary  :insertDiary()    --DiaryDAO
+
+    | 日记更新--更新diary  :updateDiary()    --DiaryDAO
+
+    | 日记数据集获取--查询diary  :queryDiary()   --DiaryDAO
+
+    | 日记删除--删除diary  :deleteDiary()    --DiaryDAO
+    +-------------------+
 
 /**
   +----------------------------------------------------------------------------+
@@ -756,25 +828,31 @@ version1.3.2
     +-------------------+
     | AdminDAO          |
     +-------------------+
-    | 插入AdminDO对象 :insertAdmin(AdminDO)
-    | 获取AdminDO对象 :queryAdmin()
-    | 插入AdminDO对象 :insertAdmin(AdminDO)
-    | 插入AdminDO对象 :insertAdmin(AdminDO)
+    | 注册--插入AdminDO对象 :insertAdmin(AdminDO)
+    | 登录--获取AdminDO对象 :queryAdmin()
     +-------------------+
 
     +-------------------+
     | UserDAO           |
     +-------------------+
+    | 登录--获取UserDO对象  :queryUser()
+    | 注册--插入UserDO对象  :insertUser(UserDO)
+                           insertUserProperty(UserPropertyDO)
+                           insertUserIcon(UserIconDO)
+    | 密码更新--更新UserDO对象  :updateUserPassword(user_password)
     +-------------------+
 
     +-------------------+
     | UserPropertyDAO   |
     +-------------------+
+    | 资料查询--获取UserPropertyDO对象  :queryUserProperty()
+    | 资料更新--更新UserPropertyDO对象  :updateUserProperty(UserPropertyDO)
     +-------------------+
 
     +-------------------+
     | UserIconDAO       |
     +-------------------+
+    | 用户头像更新--插入
     +-------------------+
 
     +-------------------+
