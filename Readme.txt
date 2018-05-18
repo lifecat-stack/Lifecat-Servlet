@@ -82,7 +82,7 @@
   * | |
   * | |-controller    //Web层 :通过请求内容, 调用相应Service, 转发到Service并获取返回结果
   * | |
-  * | |-service       //Service层 :执行具体业务逻辑, 并且通过try-catch处理底层抛出异常, 设置DTO到Session
+  * | |-service       //Service层 :执行具体业务逻辑, 并且通过try-catch处理底层抛出异常, 传输DTO到表现层
   * | |
   * | |-util          //工具类 :包括时间类, 连接类, 图片写入操作, 主机配置等
   * |
@@ -104,7 +104,7 @@
   *       |请求处理层 (web层)  |   |    |                 MVC-控制器层: 负责转发请求
   *       +------------------+   |    |                 对访问控制进行转发, 对各类基本参数校验
   *                              v    |
-  *       +------------------------------+          ○3.Service层: (service包-<ServiceModel>)
+  *       +------------------------------+          ○3.Service层: (service包-<Service>)
   *       |     业务逻辑层 (Service层)     |              MVC-模型层: 处理抽象业务逻辑， 具体的业务逻辑服务层
   *       +------------------------------+              对request对象进行处理, 转化为DO对象
   *         |  ^
@@ -129,7 +129,7 @@
   * @请求流程分析
   *
   *  用户请求
-  *   |          根据result对象, 转发到对应视图, 视图层通过Session访问DTO对象
+  *   |          根据result对象, 转发到对应视图, 视图层通过访问DTO对象
   *   |    +----------------------------------------------------------------+
   *   |    |                                                                |
   *   V    v                                      Form表单验证          控制器: 转发请求
@@ -450,13 +450,13 @@ version1.3.2
     ○Service或Manager向外传输的对象
     ○展示层与服务层之间的数据传输对象
     ○DTO到达显示层后变成VO
-    ○由DO对象经过DAO转换为DTO对象，存放在Session中
+    ○由DO对象经过DAO转换为DTO对象
     ○提供了DO中的用户可访问的数据域
 
     ○DTO面向显示层，故采用更直观的命名方式，并非同于DO命名
     =>采用驼峰命名法
     ○构建多参数、不定参数、不可变对象：采用构建者模式
-    ○覆盖了equals() hashCode() toString()
+    ○覆盖了equals() hashCode() toString() comparable()等
 
     +-------------------+
     | Tables_in_lifecat |
@@ -680,9 +680,46 @@ version1.3.2
 
 /**
   +----------------------------------------------------------------------------+
-  |                              DAO 数据库访问对象 设计                           |
+  |                              Service 逻辑处理 设计                           |
   +----------------------------------------------------------------------------+
   */
+
+    ○ServiceFactory :根据className获取Service接口对象
+    ○ServiceResult  :1.error :执行是否出错? 2.errormsg :若出错, 则记录错误信息 3.page :需跳转的界面
+    ○<Service>接口  :ServiceResult execute()方法
+
+    function         className            需操作的表结构           对应操作请求               请求类型
+
+    ○管理员登录       AdminLogin            admin                 admin_login.do           POST
+    ○管理员注册       AdminRegister         admin                 admin_register.do        POST
+
+    ○用户登录         UserLogin            user                   user_login.do            POST
+    ○用户注册         UserRegister         user                   user_register.do         POST
+    ○用户资料查询      UserPropertyQuery    user_property          user_property_query.do   GET
+    ○用户资料更新      UserPropertyUpdate   user_property          user_property_update.do  POST
+    ○用户头像更新      UserIconUpdate       user_icon              user_icon_update.do      POST
+    ○用户密码更新      UserPswUpdate        user                   user_password_update.do  POST
+
+    ○图片上传         ImageUpload          image, image_type      image_upload.do          POST
+    ○图片删除         ImageDelete          image                  image_delete.do          GET
+    ○图片文本内容更新   ImageTextUpdate      image                  image_text_update.do     POST
+    ○图片单个查询      ImageQuery           image                  image_query.do           GET
+    ○图片全部集合查询   ImageListQuery       image                  image_list_query.do      GET
+    ○图片分类集合查询   ImageClassQuery      image_type, image      image_class_query,do     GET
+    ○图片分类         ImageClassify        image_type              image_classify.do       GET
+
+    ○日记上传         DiaryUpload          diary                  diary_upload.do          POST
+    ○日记更新         DiaryUpdate          diary                  diary_update.do          POST
+    ○日记数据集获取    DiaryListQuery       diary                  diary_list_query.do      GET
+    ○日记删除         DiaryDelete          diary                  diary_delete.do          GET
+
+/**
+  +----------------------------------------------------------------------------+
+  |                              Manager 数据库访问对象 设计                           |
+  +----------------------------------------------------------------------------+
+  */
+
+
 
 
 /**
@@ -697,7 +734,7 @@ version1.3.2
     ○
     ○
     ○
-    ○
+    ○DAO接口, 通过DAOFactory获取
 
     +-------------------+
     | Tables_in_lifecat |
@@ -719,7 +756,10 @@ version1.3.2
     +-------------------+
     | AdminDAO          |
     +-------------------+
-    | 注册 :in
+    | 插入AdminDO对象 :insertAdmin(AdminDO)
+    | 获取AdminDO对象 :queryAdmin()
+    | 插入AdminDO对象 :insertAdmin(AdminDO)
+    | 插入AdminDO对象 :insertAdmin(AdminDO)
     +-------------------+
 
     +-------------------+
