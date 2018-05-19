@@ -9,7 +9,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="ps :txt-&gt;md">
+    <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/read.md" beforeDir="false" afterPath="$PROJECT_DIR$/read.md" afterDir="false" />
     </list>
@@ -58,8 +58,8 @@
         <entry file="file://$PROJECT_DIR$/read.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="651">
-                <caret line="292" column="12" lean-forward="true" selection-start-line="292" selection-start-column="12" selection-end-line="292" selection-end-column="12" />
+              <first_editor relative-caret-position="431">
+                <caret line="203" column="2" lean-forward="true" selection-start-line="203" selection-start-column="2" selection-end-line="203" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -573,7 +573,7 @@
       <workItem from="1526690628833" duration="667000" />
       <workItem from="1526691418279" duration="120000" />
       <workItem from="1526691570797" duration="51000" />
-      <workItem from="1526691650423" duration="20562000" />
+      <workItem from="1526691650423" duration="25064000" />
     </task>
     <task id="LOCAL-00001" summary="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法">
       <created>1525965840652</created>
@@ -736,11 +736,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526720237494</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ps :txt-&gt;md">
+      <created>1526722183834</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1526722183834</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310148000" />
+    <option name="totallyTimeSpent" value="314650000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -753,7 +760,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.51690143" side_tool="true" weight="0.14142857" />
@@ -1247,8 +1253,8 @@
     <entry file="file://$PROJECT_DIR$/read.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="651">
-            <caret line="292" column="12" lean-forward="true" selection-start-line="292" selection-start-column="12" selection-end-line="292" selection-end-column="12" />
+          <first_editor relative-caret-position="431">
+            <caret line="203" column="2" lean-forward="true" selection-start-line="203" selection-start-column="2" selection-end-line="203" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
