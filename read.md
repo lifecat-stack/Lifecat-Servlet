@@ -50,25 +50,43 @@ README
 
   * src
     * main
-        * openfunc      //开放接口层 :接收Android端HTTP请求, 并返回请求结果
-        * doo           //DO包 :对应于数据库表结构, POJO类型
-        * dto           //DTO包 :数据传输对象, 对应逻辑实体，采用构建者模式 或 工厂模式
-        * dao           //DAO层 :执行jdbc数据库交互, DAO层通过静态工厂获取
-        * manager       //Manager层 :DAO层的抽象逻辑操作, Manager层通过静态工厂获取
-        * filter        //Filter过滤器 :对所有请求执行Encoding过滤, 对*.do请求执行Form表单过滤
-        * form          //Form表单验证 :对相应表单执行过滤, 确保格式编码等, 返回Result
-        * exfunc        //外部接口 :通过java call shell方式, 调用本地python脚本, 执行机器学习操作
-        * controller    //Web层 :通过请求内容, 调用相应Service, 转发到Service并获取返回结果
-        * service       //Service层 :执行具体业务逻辑, 并且通过try-catch处理底层抛出异常, 传输DTO到表现层
-        * util          //工具类 :包括时间类, 连接类, 图片写入操作, 主机配置等
+        * openfunc      
+        //开放接口层 :接收Android端HTTP请求, 并返回请求结果
+        * doo           
+        //DO包 :对应于数据库表结构, POJO类型
+        * dto           
+        //DTO包 :数据传输对象, 对应逻辑实体，采用构建者模式 或 工厂模式
+        * dao           
+        //DAO协议层 :定义了DAO层的协议, 接口层, 通过静态工厂获取
+        * daoimpl           
+        //DAO实现层 :通过具体实现, 执行数据库交互, 本例中实现了jdbc形式
+        * manager       
+        //Manager层 :DAO层的抽象逻辑操作, Manager层通过静态工厂获取
+        * filter        
+        //Filter过滤器 :对所有请求执行Encoding过滤, 对*.do请求执行Form表单过滤
+        * form         
+        //Form表单验证 :对相应表单执行过滤, 确保格式编码等, 返回Result
+        * exfunc       
+        //外部接口 :通过java call shell方式, 调用本地python脚本, 执行机器学习操作
+        * controller    
+        //Web层 :通过请求内容, 调用相应Service, 转发到Service并获取返回结果
+        * service       
+        //Service层 :执行具体业务逻辑, 并且通过try-catch处理底层抛出异常, 传输DTO到表现层
+        * util         
+        //工具类 :包括时间类, 连接类, 图片写入操作, 主机配置等
     * test
-        * Test          //单元测试
+        * Test          
+        //单元测试
  
   *******************************************************************************
   
   _@应用分层_  
       ○上层依赖于下层                               
-      ○箭头关系表示可直接依赖     
+      ○箭头关系表示可直接依赖  
+      
+      ![image](应用分层图.png)   
+      ![image](D:\Java\lifecatweb\应用分层图.png)   
+      ![image](https://github.com/kevinten10/lifecatweb/blob/feature-2/应用分层图.png)   
    *                         
                                                     ○1.开放接口层: (openfunc包)
                                                         可直接封装Service方法暴露成RPC接口;
