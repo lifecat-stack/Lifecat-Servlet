@@ -1,8 +1,8 @@
 package com.wang.manager;
 
 import com.wang.bean.UserMsg;
-import com.wang.dao.DAOFactory;
-import com.wang.dao.UserPropertyDAO;
+import com.wang.daoimpl.DAOFactory;
+import com.wang.daoimpl.UserPropertyDAO;
 
 import java.sql.SQLException;
 import java.util.logging.Logger;

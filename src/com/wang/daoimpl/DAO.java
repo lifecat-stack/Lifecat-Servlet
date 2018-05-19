@@ -1,4 +1,4 @@
-package com.wang.dao;
+package com.wang.daoimpl;
 
 /**
  * Date Access Object :

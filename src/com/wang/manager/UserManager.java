@@ -1,11 +1,8 @@
 package com.wang.manager;
 
 import com.wang.bean.User;
-import com.wang.dao.DAOFactory;
-import com.wang.dao.UserDAO;
 
 import java.sql.SQLException;
-import java.util.logging.Logger;
 
 /**
  * UserManager: user表逻辑操作

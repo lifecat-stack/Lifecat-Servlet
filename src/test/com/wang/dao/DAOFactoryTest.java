@@ -1,7 +1,7 @@
 package test.com.wang.dao;
 
-import com.wang.dao.DAO;
-import com.wang.dao.DAOFactory;
+import com.wang.daoimpl.DAO;
+import com.wang.daoimpl.DAOFactory;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;

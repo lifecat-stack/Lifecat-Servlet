@@ -1,47 +1,45 @@
 package com.wang.dao;
 
 import com.wang.doo.AdminDO;
-import com.wang.util.Connections;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
+/**
+ * dao - admin
+ *
+ * @auther ten
+ */
+public interface AdminDAO {
+    /**
+     * 注册 :
+     * 插入AdminDO到admin表
+     * 返回自增长主键admin_id
+     *
+     * @param adminDO AdminDO
+     * @return admin_id
+     * @throws SQLException e
+     */
+    public int insertAdmin(AdminDO adminDO) throws SQLException;
 
-public class AdminDAO implements DAO {
-    private AdminDAO() {
-    }
+    /**
+     * 登录 :
+     * 通过admin_name(uk)进行查询
+     * 获取数据库admin信息
+     * admin信息封装在AdminDO中返回
+     *
+     * @param adminName 用户名
+     * @return AdminDO AdminDO对象
+     * @throws SQLException         e
+     * @throws NullPointerException 记录不存在
+     */
+    public AdminDO queryAdmin(String adminName) throws SQLException;
 
-    static DAO newAdminDAO() {
-        return new AdminDAO();
-    }
-
-    //插入admin对象, 返回自增长主键admin_id
-    public void insertAdmin(AdminDO adminDO) throws SQLException {
-        String sql =
-                "insert into admin(admin_name,admin_password" +
-                        ",admin_levle,admin_gmt_create,admin_gmt_modified) " +
-                        "values(?,?,?,?,?)";
-
-        Connection connection = Connections.getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-        preparedStatement.setString(1, adminDO.getAdmin_name());
-        preparedStatement.setString(2, adminDO.getAdmin_password());
-        preparedStatement.setString(3, adminDO.getAdmin_level());
-        preparedStatement.setString(4, adminDO.getAdmin_gmt_create());
-        preparedStatement.setString(5, adminDO.getAdmin_gmt_modified());
-
-        preparedStatement.executeUpdate();
-    }
-
-    //通过admin_name(uk)获取数据库admin对象
-    public void queryAdmin(String admin_name) {
-
-    }
-
-    public void updateAdmin() {
-
-    }
-
-    public void
+    /**
+     * 注册 :
+     * 通过admin_name(uk)进行查询
+     * 判断Admin对象是否存在
+     *
+     * @param adminName 用户名
+     * @return boolean 用户名是否存在
+     */
+    public boolean isAdminExisted(String adminName) throws SQLException;
 }

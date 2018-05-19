@@ -1,4 +1,4 @@
-package com.wang.dao;
+package com.wang.daoimpl;
 
 /**
  * DAOFactory :
@@ -12,8 +12,8 @@ public class DAOFactory {
     public static DAO getDAOByName(String name) {
         DAO dao;
         switch (name) {
-            case "AdminDAO":
-                dao = AdminDAO.newAdminDAO();
+            case "AdminDAOImpl":
+                dao = AdminDAOImpl.newAdminDAO();
                 break;
             case "UserDAO":
                 dao = UserDAO.newUserDAO();
