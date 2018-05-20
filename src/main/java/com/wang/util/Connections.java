@@ -1,5 +1,8 @@
 package com.wang.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -10,6 +13,8 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class Connections {
+
+    private static Logger logger = LoggerFactory.getLogger(Connections.class);
 
     private Connections() {
         throw new AssertionError();
