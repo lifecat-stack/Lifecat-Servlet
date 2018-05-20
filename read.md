@@ -69,36 +69,30 @@ README
         //单元测试
 *******************************************************************************
   _@应用分层_  
-  * 上层依赖于下层                               
-  * 箭头关系表示可直接依赖  
+  
+   * 上层依赖于下层                               
+   * 箭头关系表示可直接依赖  
   ![应用分层](应用分层图.png)   
-     ○ 1.开放接口层: (openfunc包)
-         可直接封装Service方法暴露成RPC接口;
-         通过web封装成HTTP接口, 可进行远程调用
-          
-     ○ 1.终端显示层: (web包)
-         MVC-表现层: 模板渲染层, 主要是JSP渲染
-        
-     ○ 2.Web层: (controller包-ActionServlet)
-         MVC-控制器层: 负责转发请求
-         对访问控制进行转发, 对各类基本参数校验
-           
-     ○ 3.Service层: (service包-<Service>接口)
-         MVC-模型层: 处理抽象业务逻辑， 具体的业务逻辑服务层
-         对request对象进行处理, 转化为DO对象
-      
-     ○ 4.Manager层: (manager包-<Manager>接口)
-         DAO逻辑层, 接收DO对象, 调用DAO层对DO执行具体操作
-         对service层的下沉处理: 抽象业务逻辑->抽象DAO逻辑
-                      
-     ○ 5.DAO层: (dao包-<DAO>接口)
-         对Manager层的下沉处理: 抽象DAO逻辑->具体DAO操作
-         DAOImpl层为具体实现类, 执行具体jdbc操作, 进行数据库交互
-                           
-     ○ 6.外部接口层: (exfunc包)
-         调用外部python接口, 实现机器学习的操作
-       
-     ○ 以上调用的返回类型 Result接口
+     * 1.开放接口层: (openfunc包)  
+        * 可直接封装Service方法暴露成RPC接口;  
+        * 通过web封装成HTTP接口, 可进行远程调用  
+     * 1.终端显示层: (web包)  
+        * MVC-表现层: 模板渲染层, 主要是JSP渲染  
+     * 2.Web层: (controller包-ActionServlet)
+        * MVC-控制器层: 负责转发请求
+        * 对访问控制进行转发, 对各类基本参数校验
+     * 3.Service层: (service包-<Service>接口)
+        * MVC-模型层: 处理抽象业务逻辑， 具体的业务逻辑服务层
+        * 对request对象进行处理, 转化为DO对象
+     * 4.Manager层: (manager包-<Manager>接口)
+        * DAO逻辑层, 接收DO对象, 调用DAO层对DO执行具体操作
+        * 对service层的下沉处理: 抽象业务逻辑->抽象DAO逻辑
+     * 5.DAO层: (dao包-<DAO>接口)
+        * 对Manager层的下沉处理: 抽象DAO逻辑->具体DAO操作
+        * DAOImpl层为具体实现类, 执行具体jdbc操作, 进行数据库交互
+     * 6.外部接口层: (exfunc包)
+        * 调用外部python接口, 实现机器学习的操作
+     * 以上调用的返回类型 Result接口
   ******************************************************************************
   _@请求流程分析_
   ![请求流程](请求流程图.png) 
@@ -134,7 +128,7 @@ README
     ps:补充
 ---  
     《Effective Java》标记说明
-    ○ 第x条 XXXXX
+    * 第x条 XXXXX
   ******************************************************************************
 ### 异常规范
 #### 分层异常处理:
@@ -335,7 +329,7 @@ version1.3.2
        * ? 10:<isEqual> ?
 ------------------------------------------------------------------------
 ### 数据库设计:            
-    lifecat
+    数据库 :lifecat
 
     +-------------------+
     | Tables_in_lifecat |
@@ -354,9 +348,10 @@ version1.3.2
     | diary             | 日记信息
     +-------------------+
 ------------------------------------------------------------------------
-    ○管理员表: admin
+    * 管理员表: admin
     注册: 插入admin对象，返回admin_id
-    登录: 根据索引uk_admin_name进行查询，返回user对象
+    登录: 根据索引uk_admin_name进行查询
+    查询是否存在: 根据uk_admin_name进行查询
     修改: 根据主键admin_id，进行更新
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
@@ -370,9 +365,10 @@ version1.3.2
     | admin_gmt_modified  | datetime    | NO   |     | NULL    |       | 管理员修改时间
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
-    ○用户账号表: user
+    * 用户账号表: user
     注册: 插入user对象，返回user_id
-    登录: 根据索引uk_user_name进行查询，返回user对象
+    登录: 根据索引uk_user_name进行查询
+    查询存在: 根据user_name进行查询
     修改: 根据主键user_id，进行更新
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
@@ -385,7 +381,7 @@ version1.3.2
     | user_gmt_modified   | datetime    | NO   |     | NULL    |       | 用户账户修改时间
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
-    ○用户信息表: user_property
+    * 用户信息表: user_property
     设置资料: 根据主键user_id，插入user_property对象
     获取资料: 根据主键user_id进行查询
     +---------------------+-------------+------+-----+---------+-------+
@@ -396,13 +392,14 @@ version1.3.2
     | property_signature  | varchar(50) | YES  |     | NULL    |       | 用户签名
     | property_sex        | varchar(10) | YES  |     | NULL    |       | 用户性别
     | property_email      | varchar(30) | YES  |     | NULL    |       | 用户邮箱
+    | uk_property_email   | varchar(30) | YES  |     | NULL    |       | 用户邮箱
     | property_Location   | varchar(30) | YES  |     | NULL    |       | 用户地址
     | property_birthday   | unsigned int| YES  |     | NULL    |       | 用户生日
     | property_gmt_create | datetime    | NO   |     | NULL    |       | 用户第一次设置信息
     | property_gmt_modified|datetime    | NO   |     | NULL    |       | 用户修改信息时间
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
-    ○用户头像表: user_icon
+    * 用户头像表: user_icon
     插入: 根据主键user_id进行插入
     查询: 根据主键user_id进行查询
     +---------------------+-------------+------+-----+---------+-------+
@@ -414,7 +411,7 @@ version1.3.2
     | icon_gmt_modified   | datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
-    ○图片信息表: image
+    * 图片信息表: image
     上传/插入: 根据user_id进行插入，主键image_id，返回image_id
     查询/获取所有图片: 根据索引idx_user_id并且idx_is_deleted=1查询同一用户的所有image，并排序
     查询/获取单个图片: 根据主键image_id并且idx_is_deleted=1进行查询，返回image对象
@@ -430,11 +427,13 @@ version1.3.2
     | idx_is_deleted      | unsigned tinyint NO|     | NULL    |       | 索引: isdeleted
     | user_id             | unsigned int| NO   |     | NULL    |       | 所属user_id
     | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
+    | image_class         | unsigned int| NO   |     | NULL    |       | 冗余信息: 类别
+    | idx_image_class     | unsigned int| NO   | IDX | NULL    |       | 索引: image_class
     | image_gmt_create    | datetime    | NO   |     | NULL    |       | 图片上传日期
     | image_gmt_modified  | datetime    | NO   |     | NULL    |       | 图片修改日期
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
-    ○图片类型关联表: image_type
+    * 图片类型关联表: image_type
     上传/插入: 根据返回的image_id，插入user_id和默认image_class
     获取分类图片: 根据索引idx_user_id和索引idx_image_class获取此类别的所有image_id
                 然后根据image_id从image表中获取所有image对象
@@ -451,7 +450,7 @@ version1.3.2
     | type_gmt_modified   | datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
-    ○图片类别描述表: image_class
+    * 图片类别描述表: image_class
     插入: 插入image_class_name，返回id
     获取: 根据image_class_id获取
     +---------------------+-------------+------+-----+---------+-------+
@@ -464,7 +463,7 @@ version1.3.2
     | class_gmt_modified  | datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
-    ○机器学习-图片特征向量: image_feature
+    * 机器学习-图片特征向量: image_feature
     上传/插入: 根据image_id，插入信息
     获取: 根据image_id，获取对象
     +---------------------+-------------+------+-----+---------+-------+
@@ -477,7 +476,7 @@ version1.3.2
     | feature_gmt_modified| datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
-    ○用户日记表: diary
+    * 用户日记表: diary
     上传/插入: 插入diary对象，返回diary_id
     获取集合: 根据索引idx_user_id并且idx_is_deleted=1进行查询
     搜索单篇: 根据索引idx_user_id和索引idx_diary_name并且idx_is_deleted=1进行查询
@@ -498,17 +497,16 @@ version1.3.2
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
 ### DTO 数据传输对象 设计 
+   * Service或Manager向外传输的对象
+   * 展示层与服务层之间的数据传输对象
+   * DTO到达显示层后变成VO
+   * 由DO对象经过DAO转换为DTO对象
+   * 提供了DO中的用户可访问的数据域
 
-    ○Service或Manager向外传输的对象
-    ○展示层与服务层之间的数据传输对象
-    ○DTO到达显示层后变成VO
-    ○由DO对象经过DAO转换为DTO对象
-    ○提供了DO中的用户可访问的数据域
-
-    ○DTO面向显示层，故采用更直观的命名方式，并非同于DO命名
-    =>采用驼峰命名法
-    ○构建多参数、不定参数、不可变对象：采用构建者模式
-    ○覆盖了equals() hashCode() toString() comparable()等
+   * DTO面向显示层，故采用更直观的命名方式，并非同于DO命名  
+   =>采用驼峰命名法
+   * 构建多参数、不定参数、不可变对象：采用构建者模式
+   * 覆盖了equals() hashCode() toString() comparable()等
 ------------------------------------------------------------------------
     +-------------------+
     | Tables_in_lifecat |
@@ -601,10 +599,9 @@ version1.3.2
     +-------------------+
 ------------------------------------------------------------------------
 ### DO 数据对象 设计
-
-    ○与数据库表结构一一对应，通过DAO层向上传输数据源对象
-    ○获取request对象信息，在DAO层中加入控制信息，构建DO对象
-    ○根据返回DO对象，处理构建DTO对象，发送到外部
+   * 与数据库表结构一一对应，通过DAO层向上传输数据源对象
+   * 获取request对象信息，在DAO层中加入控制信息，构建DO对象
+   * 根据返回DO对象，处理构建DTO对象，发送到外部
 
     +-------------------+
     | Tables_in_lifecat |
@@ -726,41 +723,37 @@ version1.3.2
     +-------------------+
 ------------------------------------------------------------------------
 ### Service 逻辑处理 设计
-
-    ○ServiceFactory :根据className获取Service接口对象
-    ○ServiceResult  :1.error :执行是否出错? 2.errormsg :若出错, 则记录错误信息 3.page :需跳转的界面
-    ○<Service>接口  :ServiceResult execute()方法
+   * ServiceFactory :根据className获取Service接口对象
+   * ServiceResult  :1.error :执行是否出错? 2.errormsg :若出错, 则记录错误信息 3.page :需跳转的界面
+   * <Service>接口  :ServiceResult execute()方法
 
     function         className            需操作的表结构           对应操作请求               请求类型
 
-    ○管理员登录       AdminLogin            admin                 admin_login.do           POST
-    ○管理员注册       AdminRegister         admin                 admin_register.do        POST
+    *管理员登录       AdminLogin            admin                 admin_login.do           POST
+    *管理员注册       AdminRegister         admin                 admin_register.do        POST
 
-    ○用户登录         UserLogin            user                   user_login.do            POST
-    ○用户注册         UserRegister         user, _property, _icon user_register.do         POST
-    ○用户资料查询      UserPropertyQuery    user_property, _icon   user_property_query.do   GET
-    ○用户资料更新      UserPropertyUpdate   user_property          user_property_update.do  POST
-    ○用户头像更新      UserIconUpdate       user_icon              user_icon_update.do      POST
-    ○用户密码更新      UserPswUpdate        user                   user_password_update.do  POST
+    *用户登录         UserLogin            user                   user_login.do            POST
+    *用户注册         UserRegister         user, _property, _icon user_register.do         POST
+    *用户资料查询      UserPropertyQuery    user_property, _icon   user_property_query.do   GET
+    *用户资料更新      UserPropertyUpdate   user_property          user_property_update.do  POST
+    *用户头像更新      UserIconUpdate       user_icon              user_icon_update.do      POST
+    *用户密码更新      UserPswUpdate        user                   user_password_update.do  POST
 
-    ○图片上传         ImageUpload          image, image_type      image_upload.do          POST
-    ○图片删除         ImageDelete          image                  image_delete.do          GET
-    ○图片文本内容更新   ImageTextUpdate      image                  image_text_update.do     POST
-    ○图片单个查询      ImageQuery           image                  image_query.do           GET
-    ○图片全部集合查询   ImageListQuery       image                  image_list_query.do      GET
-    ○图片分类集合查询   ImageClassQuery      image_type, image      image_class_query,do     GET
-    ○图片分类         ImageClassify        image_type              image_classify.do       GET
+    *图片上传         ImageUpload          image, image_type      image_upload.do          POST
+    *图片删除         ImageDelete          image                  image_delete.do          GET
+    *图片文本内容更新   ImageTextUpdate      image                  image_text_update.do     POST
+    *图片单个查询      ImageQuery           image                  image_query.do           GET
+    *图片全部集合查询   ImageListQuery       image                  image_list_query.do      GET
+    *图片分类集合查询   ImageClassQuery      image_type, image      image_class_query,do     GET
+    *图片分类         ImageClassify        image_type              image_classify.do       GET
 
-    ○日记上传         DiaryUpload          diary                  diary_upload.do          POST
-    ○日记更新         DiaryUpdate          diary                  diary_update.do          POST
-    ○日记数据集获取    DiaryListQuery       diary                  diary_list_query.do      GET
-    ○日记删除         DiaryDelete          diary                  diary_delete.do          GET
+    *日记上传         DiaryUpload          diary                  diary_upload.do          POST
+    *日记更新         DiaryUpdate          diary                  diary_update.do          POST
+    *日记数据集获取    DiaryListQuery       diary                  diary_list_query.do      GET
+    *日记删除         DiaryDelete          diary                  diary_delete.do          GET
 
 ------------------------------------------------------------------------
 ### Manager 数据库抽象逻辑对象 设计 
-
-    ○
-
     +-------------------+
     | Manager           |
     +-------------------+
@@ -834,13 +827,11 @@ version1.3.2
     +-------------------+
 ------------------------------------------------------------------------
 ### DAO 数据库访问对象 设计    
-
     com.wang.dao     :dao接口层
     com.wang.daoimpl :dao实现类
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
-
-    ○DAO接口, 通过DAOFactory获取
+   * DAO接口, 通过DAOFactory获取
 
     +-------------------+
     | Tables_in_lifecat |
