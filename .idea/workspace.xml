@@ -10,34 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageTypeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserIconDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserIconDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/AdminDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/DiaryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/DiaryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/ImageClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/ImageClassDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/ImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/ImageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/ImageFeatureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/ImageFeatureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/ImageTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/ImageTypeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/UserIconDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/UserIconDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/UserPropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/UserPropertyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/imageshow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/imageshow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/imageshow2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/imageshow2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/home/homePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/home/homePage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/updiary.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/updiary.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upimage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/upimage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userhome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/userhome.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,9 +50,9 @@
           <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Readme.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="411">
-                    <caret line="145" column="26" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="770">
+                    <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -94,8 +67,8 @@
             <entry file="file://$PROJECT_DIR$/Readme.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="239">
-                    <caret line="1140" column="12" selection-start-line="1140" selection-start-column="4" selection-end-line="1140" selection-end-column="12" />
+                  <first_editor relative-caret-position="3256">
+                    <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -222,7 +195,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="70" />
     <option name="width" value="1232" />
     <option name="height" value="1088" />
@@ -661,7 +634,7 @@
       <workItem from="1526691418279" duration="120000" />
       <workItem from="1526691570797" duration="51000" />
       <workItem from="1526691650423" duration="25106000" />
-      <workItem from="1526774782309" duration="36557000" />
+      <workItem from="1526774782309" duration="37181000" />
     </task>
     <task id="LOCAL-00001" summary="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法">
       <created>1525965840652</created>
@@ -894,11 +867,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526816660406</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary=" --doo toString() JUint">
+      <created>1526821857102</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1526821857102</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351249000" />
+    <option name="totallyTimeSpent" value="351873000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1392,8 +1372,8 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="411">
-            <caret line="145" column="26" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
+          <first_editor relative-caret-position="3256">
+            <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
@@ -1418,7 +1398,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (lifecatweb)|Web</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1430,7 +1410,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>R Skeletons</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
