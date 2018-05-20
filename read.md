@@ -49,29 +49,29 @@ README
   _@Java目录_
   * src
     * main
-        * openfunc      
+        * com.wang.openfunc      
         //开放接口层 :接收Android端HTTP请求, 并返回请求结果
-        * doo           
+        * com.wang.doo           
         //DO包 :对应于数据库表结构, POJO类型
-        * dto           
+        * com.wang.dto           
         //DTO包 :数据传输对象, 对应逻辑实体，采用构建者模式 或 工厂模式
-        * dao           
+        * com.wang.dao           
         //DAO协议层 :定义了DAO层的协议, 接口层, 通过静态工厂获取
-        * daoimpl           
+        * com.wang.daoimpl           
         //DAO实现层 :通过具体实现, 执行数据库交互, 本例中实现了jdbc形式
-        * manager       
+        * com.wang.manager       
         //Manager层 :DAO层的抽象逻辑操作, Manager层通过静态工厂获取
-        * filter        
+        * com.wang.filter        
         //Filter过滤器 :对所有请求执行Encoding过滤, 对*.do请求执行Form表单过滤
-        * form         
+        * com.wang.form         
         //Form表单验证 :对相应表单执行过滤, 确保格式编码等, 返回Result
-        * exfunc       
+        * com.wang.exfunc       
         //外部接口 :通过java call shell方式, 调用本地python脚本, 执行机器学习操作
-        * controller    
+        * com.wang.controller    
         //Web层 :通过请求内容, 调用相应Service, 转发到Service并获取返回结果
-        * service       
+        * com.wang.service       
         //Service层 :执行具体业务逻辑, 并且通过try-catch处理底层抛出异常, 传输DTO到表现层
-        * util         
+        * com.wang.util         
         //工具类 :包括时间类, 连接类, 图片写入操作, 主机配置等
     * test
         * Test          
@@ -180,31 +180,53 @@ README
        
        * √ 8 :捕获异常与抛出异常必须完全匹配，或捕获其父类
        
-       * √!9 :表必备三字段:
-           * id           :主键, unsigned bigint, 单表时自增、步长为1
-           * gmt_create   :date_time类型, 主动创建
-           * gmt_modified :date_time类型, 被动更新
+       * √!9 :方法的返回值可以为null，不强制返回空集合或者空对象等，必须添加注释说明什么情况下返回Null
+              
+       * √!ps:NPE是调用者的责任，即使被调用者返回空集合或空对象，也并非高枕无忧，也要判断NPE
                            
-       * √ 10:表的命名：业务名称_表的作用
+       * √ 10:NPE: 必须检查NPE问题，可能各种情况都会导致NPE问题
        
-       * √ 11:库名与应用名一致
+       * ?!11:避免直接抛出运行时异常，推荐业界定义过的异常如 DAOException、ServiceException
+              不允许直接抛出Exception或Throwable
+             
+       * √ 12:考虑使用Result方式，封装isSuccess()方法、“错误码”、“错误简短信息”
        
-       * √ 12:当修改字段含义或对字段表示的状态追加时, 需更新字段注释
-       
-       * √ 13:适当冗余: 不是频繁修改的字段, 冗余可以避免关联查询
-                       如图片类目使用频率高, 字段长度短, 名称基本不变, 可以冗余存储 
-       
-       * ? 14:单表行数超过500万行或单表超过2GB时, 才推荐进行分库分表
-       
-       * √ 15: 设置合适的字符存储长度            字节  表示范围
-          * unsigned tinyint  :   1    0~255
-          * unsigned smallint :   2    0~65535
-          * unsigned int      :   4    0~2^32
-          * unsigned bigint   :   8    0~2^64
-  
-
+       * √ 13:避免出现重复代码，若修改，需修改所有副本，容易遗漏
+              抽取共性方法，或者抽象公共类，或者将代码组件化
   ******************************************************************************
-  
+### 日记规约
+#### 《Java开发手册》2.2日志规约:  
+       * √ 1 :能通过检查避免的运行时异常，要进行预检查
+        
+       * √ 2 :异常不要用来做流程控制、条件控制
+       
+       * √ 3 :catch分清稳定代码与非稳定代码，不要对大段无异常代码进行try-catch
+       
+       * √ 4 :捕获异常是为了处理它，不要什么都不做，那么请将它抛出到外层调用者
+       
+       * ? 5 :try中若有事务代码，catch后要回滚事务，rollback
+       
+       * √ 6 :finally对资源进行关闭
+         ?    try-with-resources方式 ?
+       
+       * √!7 :finally中不能用return trt(return)-->finally 若存在，则try中的return被覆盖掉
+       
+       * √ 8 :捕获异常与抛出异常必须完全匹配，或捕获其父类
+       
+       * √!9 :方法的返回值可以为null，不强制返回空集合或者空对象等，必须添加注释说明什么情况下返回Null
+              
+       * √!ps:NPE是调用者的责任，即使被调用者返回空集合或空对象，也并非高枕无忧，也要判断NPE
+                           
+       * √ 10:NPE: 必须检查NPE问题，可能各种情况都会导致NPE问题
+       
+       * ?!11:避免直接抛出运行时异常，推荐业界定义过的异常如 DAOException、ServiceException
+              不允许直接抛出Exception或Throwable
+             
+       * √ 12:考虑使用Result方式，封装isSuccess()方法、“错误码”、“错误简短信息”
+       
+       * √ 13:避免出现重复代码，若修改，需修改所有副本，容易遗漏
+              抽取共性方法，或者抽象公共类，或者将代码组件化
+  ******************************************************************************  
 ### 版本管理
 
 version1.1
@@ -911,8 +933,8 @@ version1.3.2
 ------------------------------------------------------------------------
 ### DAO 数据库访问对象 设计    
 
-    dao     :dao接口层
-    daoimpl :dao实现类
+    com.wang.dao     :dao接口层
+    com.wang.daoimpl :dao实现类
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 

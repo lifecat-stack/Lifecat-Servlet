@@ -10,8 +10,693 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lifecatweb_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/lifecatweb_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lifecatweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lifecatweb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/read.md" beforeDir="false" afterPath="$PROJECT_DIR$/read.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/bean/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/bean/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Bean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/bean/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Diary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/bean/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/bean/UserMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/UserMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/controller/ActionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ActionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AdminDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/DiaryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DiaryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/ImageClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ImageClassDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/ImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ImageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/ImageFeatureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ImageFeatureDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/ImageTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ImageTypeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/UserIconDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserIconDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dao/UserPropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserPropertyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/AdminDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/DiaryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/DiaryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/ImageClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/ImageClassDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/ImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/ImageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/ImageFeatureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/ImageFeatureDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/ImageTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/ImageTypeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/UserIconDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/UserIconDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/daoimpl/UserPropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoimpl/UserPropertyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/doo/AdminDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doo/AdminDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/doo/DiaryDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doo/DiaryDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/doo/ImageClassDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doo/ImageClassDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/doo/ImageDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doo/ImageDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/doo/ImageFeatureDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doo/ImageFeatureDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/doo/ImageTypeDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doo/ImageTypeDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/doo/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doo/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/doo/UserIconDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doo/UserIconDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/doo/UserPropertyDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doo/UserPropertyDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dto/AdminDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/AdminDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dto/AlbumClassDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/AlbumClassDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dto/AlbumDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/AlbumDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dto/DiariesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/DiariesDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dto/DiaryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/DiaryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dto/ImageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ImageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/dto/UserPropertyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/UserPropertyDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/exfunc/JavaCallShell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exfunc/JavaCallShell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/filter/FormFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/FormFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/form/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/form/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/form/FormResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/form/FormResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/form/FormSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/form/FormSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/form/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/form/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/form/ModifyPswForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/form/ModifyPswForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/form/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/form/RegisterForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/form/SetMsgForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/form/SetMsgForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/manager/AdminManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/AdminManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/manager/DiaryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/DiaryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/manager/ImageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ImageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/manager/ManagerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ManagerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/manager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/manager/UserMsgManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/UserMsgManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/openfunc/AndroidGetImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/openfunc/AndroidGetImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/openfunc/AndroidUpImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/openfunc/AndroidUpImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AdminLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/AdminRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AdminRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/DiaryDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DiaryDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/DiaryListQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DiaryListQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/DiaryUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DiaryUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/DiaryUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DiaryUpload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ImageClassQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ImageClassQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ImageClassify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ImageClassify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ImageDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ImageDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ImageListQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ImageListQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ImageQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ImageQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ImageTextUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ImageTextUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ImageUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ImageUpload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/ServiceResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ServiceResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/UserIconUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserIconUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/UserPropertyQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserPropertyQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/UserPropertyUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserPropertyUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/UserPswUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserPswUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/service/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/util/Connections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Connections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/util/HOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/HOST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/util/ImageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ImageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/util/MyBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/MyBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wang/util/MyDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/MyDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/wang/dao/DAOFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/wang/dao/jk.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/wang/dao/python.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test/com/wang/dao/AdminDAOImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/wang/db/Connections.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/wang/db/Connections.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/wang/db/HOST.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/wang/db/HOST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/wang/db/MyDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/com/wang/db/MyDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/wang/service/service.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/wang/servicemodel/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jstl.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/3.3.6/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/3.3.6/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/3.3.6/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/3.3.6/bootstrap-theme.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/3.3.6/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/3.3.6/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/3.3.6/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/3.3.6/bootstrap-theme.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/3.3.6/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/3.3.6/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/3.3.6/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/3.3.6/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/3.3.6/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/3.3.6/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/3.3.6/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/3.3.6/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/fore/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/fore/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/imageshow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/imageshow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/imageshow2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/imageshow2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/_notes/dwsync.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/_notes/dwsync.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/back.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/back.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/headicon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/headicon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/homelogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/homelogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/iconimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/iconimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/neqhngwxbxbmhvy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/neqhngwxbxbmhvy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/talk.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/talk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tb1.cmtipxxxxblxvxxxxxxxxxx.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/tb1.cmtipxxxxblxvxxxxxxxxxx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tb12jnkifxxxxxbxxxxxxxxxxxx.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/tb12jnkifxxxxxbxxxxxxxxxxxx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tb17ghmifxxxxxaxfxxxxxxxxxx.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/tb17ghmifxxxxxaxfxxxxxxxxxx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tb1h9xxifxxxxbkxxxxxxxxxxxx.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/tb1h9xxifxxxxbkxxxxxxxxxxxx.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tb1pfg4ifxxxxc6xxxxxxxxxxxx.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/tb1pfg4ifxxxxc6xxxxxxxxxxxx.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tb1pohqifxxxxxbxfxxxxxxxxxx.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/tb1pohqifxxxxxbxfxxxxxxxxxx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tb1sxgyifxxxxc5xpxxxxxxxxxx.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/tb1sxgyifxxxxc5xpxxxxxxxxxx.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/img/tb1uh30ipxxxxxkxvxxxxxxxxxx.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/img/tb1uh30ipxxxxxkxvxxxxxxxxxx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/include/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/include/home/homePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/home/homePage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/include/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap/3.3.6/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/3.3.6/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap/3.3.6/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/3.3.6/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap/3.3.6/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/3.3.6/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jquery/2.0.0/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery/2.0.0/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/t19ctgxcrlxxxxxxxx.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/t19ctgxcrlxxxxxxxx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/class.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/class.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image73.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image74.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image74.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image76.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image77.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image77.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image78.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image78.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image79.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image79.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image81.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image81.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image82.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image82.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image83.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image83.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image84.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image84.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image85.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image85.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image86.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image86.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/image9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/image9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/1/pics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/1/pics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/class.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/class.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image73.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image74.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image74.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image76.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image77.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image77.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image78.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image78.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image79.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image79.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image81.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image81.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image82.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image82.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image83.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image83.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image84.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image84.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image85.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image85.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image86.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image86.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image87.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image87.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image88.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image88.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image89.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image89.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image90.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image90.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image91.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image91.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image92.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image92.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image93.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image93.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image94.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image94.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image95.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image95.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image96.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image96.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image97.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image97.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image98.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image98.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page1_image99.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page1_image99.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image73.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image74.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image74.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image76.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image77.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image77.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image78.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image78.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image79.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image79.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image81.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image81.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image82.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image82.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image83.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image83.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image84.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image84.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image85.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image85.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image86.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image86.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image87.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image87.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image88.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image88.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image89.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image89.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image90.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image90.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image91.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image91.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image92.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image92.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image93.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image93.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image94.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image94.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image95.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image95.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image96.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image96.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image97.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image97.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image98.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image98.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/page2_image99.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/page2_image99.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/2/pics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/2/pics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/class.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/class.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page1_image9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page1_image9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image73.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image74.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image74.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image76.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image77.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image77.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image78.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image78.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image79.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image79.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/page2_image9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/page2_image9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/3/pics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/3/pics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pics/class.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pics/class.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/updiary.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updiary.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image49.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image49.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image52.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image53.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image54.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image55.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image56.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image56.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image57.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image57.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image58.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image58.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image59.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image59.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image61.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image61.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image62.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image62.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image63.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image63.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image64.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image64.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image65.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image65.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image66.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image66.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image67.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image67.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image68.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image68.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image69.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image69.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image71.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image71.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image72.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image73.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image73.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image74.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image74.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image75.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image75.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image76.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image76.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image77.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image77.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image78.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image78.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image79.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image79.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image80.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image81.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image81.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image82.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image82.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image83.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image83.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image84.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image84.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image85.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image85.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image86.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image86.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image88.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image88.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/upimage/image9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upimage/image9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/userhome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userhome.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,46 +729,102 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Readme.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Readme.txt">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Album.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bean/Album.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="650" column="14" lean-forward="true" selection-start-line="650" selection-start-column="14" selection-end-line="650" selection-end-column="14" />
+            <state relative-caret-position="302">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="read.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="read.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/read.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="431">
-                <caret line="203" column="2" lean-forward="true" selection-start-line="203" selection-start-column="2" selection-end-line="203" selection-end-column="2" />
+              <first_editor relative-caret-position="-6">
+                <caret line="197" column="22" selection-start-line="197" selection-start-column="22" selection-end-line="197" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="请求流程图.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/请求流程图.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="应用分层图.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/应用分层图.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="DiaryDO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/doo/DiaryDO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-2398">
-                <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="EncodingFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/filter/EncodingFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageDO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/doo/ImageDO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageDOTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/doo/ImageDOTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dto/AdminDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaCallShell.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exfunc/JavaCallShell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminDOTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AdminDOTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,11 +867,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/wang/DO/ImageClassDO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/DO/ImageFeatureDO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/DO/DiaryDO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/DTO/AdminDTO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/DTO/UserDTO.java" />
         <option value="$PROJECT_DIR$/src/com/wang/DTO/UserPropertyDTO.java" />
         <option value="$PROJECT_DIR$/src/com/wang/DTO/ImageDTO.java" />
         <option value="$PROJECT_DIR$/src/com/wang/DTO/DiaryDTO.java" />
@@ -177,6 +913,11 @@
         <option value="$PROJECT_DIR$/src/com/wang/dao/AdminDAO.java" />
         <option value="$PROJECT_DIR$/Readme.txt" />
         <option value="$PROJECT_DIR$/read.md" />
+        <option value="$PROJECT_DIR$/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/com/wang/util/Connections.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/Connections.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AdminDOTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -193,6 +934,13 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../maven/apache-maven-3.5.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand />
@@ -200,8 +948,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="521" />
-    <option name="y" value="1" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
     <option name="width" value="1400" />
     <option name="height" value="990" />
   </component>
@@ -224,8 +972,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,12 +986,20 @@
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,18 +1011,15 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/untitled2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.wang.model" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.wang.dao" />
       <recent name="com.wang.util" />
@@ -278,6 +1029,13 @@
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\lifecatweb\src\main" />
+      <recent name="D:\Java\lifecatweb\src\main\resources" />
+      <recent name="D:\Java\lifecatweb\src\resources" />
+      <recent name="D:\Java\lifecatweb\src\main\java" />
+      <recent name="D:\MyEclipse\lifecatweb\web\upimage" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java\lifecatweb" />
@@ -289,11 +1047,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wang.db" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MyEclipse\lifecatweb\web\upimage" />
-      <recent name="D:\MyEclipse\lifecatweb\web\img" />
-      <recent name="D:\MyEclipse\lifecatweb\web\WEB-INF\lib" />
-      <recent name="D:\MyEclipse\lifecatweb\web" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wang.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -308,7 +1063,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DAOFactoryTest">
+  <component name="RunManager" selected="Application.Connections">
+    <configuration name="Connections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wang.util.Connections" />
+      <module name="lifecatweb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wang.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Date" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wang.db.Date" />
       <module name="lifecatweb" />
@@ -374,7 +1140,6 @@
       <patterns />
     </configuration>
     <configuration name="imageshow2.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/lifecatweb/service/imageshow2.jsp" />
-    <configuration name="index.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/lifecatweb/service/index.jsp" />
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -504,19 +1269,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.lifecat" />
-      <item itemvalue="JavaScript Debug.index.jsp" />
       <item itemvalue="Application.Date" />
       <item itemvalue="Application.MyDate" />
       <item itemvalue="JavaScript Debug.imageshow2.jsp" />
       <item itemvalue="JUnit.DAOFactoryTest" />
+      <item itemvalue="Application.Connections" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Connections" />
         <item itemvalue="JUnit.DAOFactoryTest" />
         <item itemvalue="JavaScript Debug.imageshow2.jsp" />
         <item itemvalue="Application.MyDate" />
         <item itemvalue="Application.Date" />
-        <item itemvalue="JavaScript Debug.index.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -573,7 +1338,8 @@
       <workItem from="1526690628833" duration="667000" />
       <workItem from="1526691418279" duration="120000" />
       <workItem from="1526691570797" duration="51000" />
-      <workItem from="1526691650423" duration="25064000" />
+      <workItem from="1526691650423" duration="25106000" />
+      <workItem from="1526774782309" duration="5048000" />
     </task>
     <task id="LOCAL-00001" summary="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法">
       <created>1525965840652</created>
@@ -743,11 +1509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526722183834</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="ps :txt-&gt;md">
+      <created>1526727536673</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1526727536673</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314650000" />
+    <option name="totallyTimeSpent" value="319740000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -762,7 +1535,7 @@
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.51690143" side_tool="true" weight="0.14142857" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.36671367" side_tool="true" visible="true" weight="0.32855093" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32816902" />
       <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32887325" />
@@ -770,13 +1543,14 @@
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32960895" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.6332863" visible="true" weight="0.32855093" />
       <window_info anchor="right" id="Database" order="6" weight="0.32981715" />
       <window_info id="Structure" order="1" sideWeight="0.50142854" side_tool="true" weight="0.18661971" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2496474" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.32909605" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.15208034" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Java Enterprise" order="9" side_tool="true" weight="0.32957748" />
@@ -784,10 +1558,9 @@
       <window_info anchor="bottom" id="Version Control" order="13" weight="1.0" />
       <window_info anchor="right" id="Run" order="12" weight="0.17229255" />
       <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49857143" visible="true" weight="0.1897038" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49857143" visible="true" weight="0.1932299" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="JRebel" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4830986" weight="0.32960895" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.18724559" />
@@ -795,7 +1568,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.15299027" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4830986" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="R Packages" order="9" />
@@ -813,7 +1586,6 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964838" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Web" order="8" side_tool="true" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="15" />
       <window_info id="Capture Tool" order="7" />
@@ -821,6 +1593,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
@@ -832,7 +1605,7 @@
       <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
       <window_info anchor="right" id="Database" order="6" weight="0.32981715" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -903,187 +1676,42 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/ImageDelete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/ImageListQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/ImageTextUpdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/ImageUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/UserIconUpdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/UserLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/UserPropertyQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/UserPropertyUpdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/UserPswUpdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/UserRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/UserPropertyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/doo/AdminDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/DiaryListQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/service/ServiceResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/manager/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/manager/UserMsgManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/manager/AdminManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/manager/AdminManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/manager/DiaryManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/manager/DiaryManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/manager/ManagerFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/manager/ManagerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/controller/ActionServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ActionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/manager/UserManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/manager/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/bean/Album.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-592">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lifecatweb.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database.txt" />
     <entry file="file://$PROJECT_DIR$/src/test/test/com/wang/dao/AdminDAOImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1091,126 +1719,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/DAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/DAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/DAOFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/DAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/DiaryDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/DiaryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/ImageClassDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/ImageClassDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/ImageDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/ImageDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/ImageFeatureDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/ImageFeatureDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/ImageTypeDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/ImageTypeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/UserIconDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/UserIconDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/UserIconDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserIconDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/DiaryDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DiaryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/ImageDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ImageDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/UserPropertyDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserPropertyDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/ImageClassDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ImageClassDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/ImageFeatureDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ImageFeatureDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/ImageTypeDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ImageTypeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/dao/AdminDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AdminDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
@@ -1220,7 +1848,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wang/daoimpl/AdminDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/daoimpl/AdminDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
@@ -1230,8 +1858,8 @@
     <entry file="file://$PROJECT_DIR$/src/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-2398">
-            <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <first_editor relative-caret-position="242">
+            <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
@@ -1239,24 +1867,190 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="650" column="14" lean-forward="true" selection-start-line="650" selection-start-column="14" selection-end-line="650" selection-end-column="14" />
+        <state relative-caret-position="14300">
+          <caret line="650" column="14" selection-start-line="650" selection-start-column="14" selection-end-line="650" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/应用分层图.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/请求流程图.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/ImageQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/Connections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/AdminRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/DiaryUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/AdminLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/doo/AdminDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/Diary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/doo/DiaryDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/AdminDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/dto/AdminDTOTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/exfunc/JavaCallShellTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exfunc/JavaCallShell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AdminDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/doo/DiaryDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/src/test/filter/EncodingFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/filter/EncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/doo/ImageDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/doo/ImageDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/read.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="431">
-            <caret line="203" column="2" lean-forward="true" selection-start-line="203" selection-start-column="2" selection-end-line="203" selection-end-column="2" />
+          <first_editor relative-caret-position="-6">
+            <caret line="197" column="22" selection-start-line="197" selection-start-column="22" selection-end-line="197" selection-end-column="22" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1315,12 +2109,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>lifecatweb</last-edited>
+          <last-edited>Web|lifecatweb</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

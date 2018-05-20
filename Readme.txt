@@ -64,27 +64,27 @@
   * |
   * |-main
   * | |
-  * | |-openfunc      //开放接口层 :接收Android端HTTP请求, 并返回请求结果
+  * | |-com.wang.openfunc      //开放接口层 :接收Android端HTTP请求, 并返回请求结果
   * | |
-  * | |-doo           //DO包 :对应于数据库表结构, POJO类型
+  * | |-com.wang.doo           //DO包 :对应于数据库表结构, POJO类型
   * | |
-  * | |-dto           //DTO包 :数据传输对象, 对应逻辑实体，采用构建者模式 或 工厂模式
+  * | |-com.wang.dto           //DTO包 :数据传输对象, 对应逻辑实体，采用构建者模式 或 工厂模式
   * | |
-  * | |-dao           //DAO层 :执行jdbc数据库交互, DAO层通过静态工厂获取
+  * | |-com.wang.dao           //DAO层 :执行jdbc数据库交互, DAO层通过静态工厂获取
   * | |
-  * | |-manager       //Manager层 :DAO层的抽象逻辑操作, Manager层通过静态工厂获取
+  * | |-com.wang.manager       //Manager层 :DAO层的抽象逻辑操作, Manager层通过静态工厂获取
   * | |
-  * | |-filter        //Filter过滤器 :对所有请求执行Encoding过滤, 对*.do请求执行Form表单过滤
+  * | |-com.wang.filter        //Filter过滤器 :对所有请求执行Encoding过滤, 对*.do请求执行Form表单过滤
   * | |
-  * | |-form          //Form表单验证 :对相应表单执行过滤, 确保格式编码等, 返回Result
+  * | |-com.wang.form          //Form表单验证 :对相应表单执行过滤, 确保格式编码等, 返回Result
   * | |
-  * | |-exfunc        //外部接口 :通过java call shell方式, 调用本地python脚本, 执行机器学习操作
+  * | |-com.wang.exfunc        //外部接口 :通过java call shell方式, 调用本地python脚本, 执行机器学习操作
   * | |
-  * | |-controller    //Web层 :通过请求内容, 调用相应Service, 转发到Service并获取返回结果
+  * | |-com.wang.controller    //Web层 :通过请求内容, 调用相应Service, 转发到Service并获取返回结果
   * | |
-  * | |-service       //Service层 :执行具体业务逻辑, 并且通过try-catch处理底层抛出异常, 传输DTO到表现层
+  * | |-com.wang.service       //Service层 :执行具体业务逻辑, 并且通过try-catch处理底层抛出异常, 传输DTO到表现层
   * | |
-  * | |-util          //工具类 :包括时间类, 连接类, 图片写入操作, 主机配置等
+  * | |-com.wang.util          //工具类 :包括时间类, 连接类, 图片写入操作, 主机配置等
   * |
   * |-test
   *   |
@@ -134,9 +134,9 @@
   *   |    |                                                                |
   *   V    v                                      Form表单验证          控制器: 转发请求
   *  +------+                                         |                 +----------+
-  *  | view |                                         v                 |controller|
+  *  | view |                                         v                 |com.wang.controller|
   *  +------+  'action.do'      映射      web.xml    过滤器     DTO       +----------+
-  *  web视图层 ----------- > url-pattern --------- > filter --------- > ActionServlet <---+
+  *  web视图层 ----------- > url-pattern --------- > com.wang.filter --------- > ActionServlet <---+
   *    jsp                                                                  |            |
   *                                                                         | 根据.do     | 返回结果
   *                                               返回数据库处理结果DTO        | 转发请求     | ModelResult
@@ -814,8 +814,8 @@ version1.3.2
   +----------------------------------------------------------------------------+
   */
 
-    dao     :dao接口层
-    daoimpl :dao实现类
+    com.wang.dao     :dao接口层
+    com.wang.daoimpl :dao实现类
 
 =>《Java开发手册》5.3 SQL语句:
     √ 1 :使用count(*)--SQL标准, 与数据库无关; 若使用count(列名)或count(常量), 不会统计NULL行
