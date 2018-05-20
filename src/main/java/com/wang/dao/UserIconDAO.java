@@ -9,7 +9,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public interface UserIconDAO {
+interface UserIconDAO {
     /**
      * 用户头像更新 :
      * 插入UserIconDO到user_icon表
@@ -17,7 +17,7 @@ public interface UserIconDAO {
      * @param userIconDO userIconDO
      * @throws SQLException e
      */
-    public void insertUserIcon(UserIconDO userIconDO) throws SQLException;
+    void insertUserIcon(UserIconDO userIconDO) throws SQLException;
 
     /**
      * 用户头像查询 :
@@ -29,6 +29,6 @@ public interface UserIconDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    public String queryUserIcon(int userId) throws SQLException;
+    String queryUserIcon(int userId) throws SQLException;
 
 }

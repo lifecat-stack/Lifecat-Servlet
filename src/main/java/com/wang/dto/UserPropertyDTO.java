@@ -1,6 +1,6 @@
 package com.wang.dto;
 
-import com.wang.util.HOST;
+import com.wang.constant.HOST;
 import com.wang.util.MyBuilder;
 
 /**

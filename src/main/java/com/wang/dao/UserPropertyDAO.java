@@ -9,7 +9,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public interface UserPropertyDAO {
+interface UserPropertyDAO {
     /**
      * 资料插入 :
      * 插入UserPropertyDO到user_property表
@@ -17,7 +17,7 @@ public interface UserPropertyDAO {
      * @param userPropertyDO userPropertyDO
      * @throws SQLException e
      */
-    public void insertUserProperty(UserPropertyDO userPropertyDO) throws SQLException;
+    void insertUserProperty(UserPropertyDO userPropertyDO) throws SQLException;
 
     /**
      * 资料查询 :
@@ -30,5 +30,5 @@ public interface UserPropertyDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    public UserPropertyDO queryUserProperty(int userId) throws SQLException;
+    UserPropertyDO queryUserProperty(int userId) throws SQLException;
 }

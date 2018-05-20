@@ -3,7 +3,7 @@ package com.wang.controller;
 import com.wang.service.ServiceFactory;
 import com.wang.service.ServiceResult;
 import com.wang.service.Service;
-import com.wang.util.HOST;
+import com.wang.constant.HOST;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

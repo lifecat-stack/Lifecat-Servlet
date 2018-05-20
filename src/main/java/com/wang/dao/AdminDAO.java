@@ -3,12 +3,13 @@ package com.wang.dao;
 import com.wang.doo.AdminDO;
 
 import java.sql.SQLException;
+
 /**
  * dao - admin
  *
  * @auther ten
  */
-public interface AdminDAO {
+interface AdminDAO {
     /**
      * 注册 :
      * 插入AdminDO到admin表
@@ -18,7 +19,7 @@ public interface AdminDAO {
      * @return admin_id
      * @throws SQLException e
      */
-    public int insertAdmin(AdminDO adminDO) throws SQLException;
+    int insertAdmin(AdminDO adminDO) throws SQLException;
 
     /**
      * 登录 :
@@ -31,7 +32,7 @@ public interface AdminDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    public AdminDO queryAdmin(String adminName) throws SQLException;
+    AdminDO queryAdmin(String adminName) throws SQLException;
 
     /**
      * 注册 :
@@ -41,5 +42,5 @@ public interface AdminDAO {
      * @param adminName 用户名
      * @return boolean 用户名是否存在
      */
-    public boolean isAdminExisted(String adminName) throws SQLException;
+    boolean isAdminExisted(String adminName) throws SQLException;
 }

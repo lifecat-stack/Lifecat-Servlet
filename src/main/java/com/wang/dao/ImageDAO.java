@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @auther ten
  */
-public interface ImageDAO {
+interface ImageDAO {
     /**
      * 图片上传 :
      * 插入ImageDO到image表
@@ -20,7 +20,7 @@ public interface ImageDAO {
      * @return image_id
      * @throws SQLException e
      */
-    public int insertImage(ImageDO imageDO) throws SQLException;
+    int insertImage(ImageDO imageDO) throws SQLException;
 
     /**
      * 图片删除 :
@@ -29,7 +29,7 @@ public interface ImageDAO {
      * @param imageId imageId
      * @throws SQLException e
      */
-    public void deleteImage(int imageId) throws SQLException;
+    void deleteImage(int imageId) throws SQLException;
 
     /**
      * 图片内容更新 :
@@ -39,7 +39,7 @@ public interface ImageDAO {
      * @param newText newText
      * @throws SQLException e
      */
-    public void updateImageText(int imageId, String newText) throws SQLException;
+    void updateImageText(int imageId, String newText) throws SQLException;
 
     /**
      * 图片单个查询 :
@@ -52,7 +52,7 @@ public interface ImageDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    public ImageDO queryImage(String imageName) throws SQLException;
+    ImageDO queryImage(String imageName) throws SQLException;
 
     /**
      * 图片全部查询 :
@@ -65,7 +65,7 @@ public interface ImageDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    public List<ImageDO> queryImageList(int userId) throws SQLException;
+    List<ImageDO> queryImageList(int userId) throws SQLException;
 
     /**
      * 图片分类查询 :
@@ -79,5 +79,5 @@ public interface ImageDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    public List<ImageDO> queryImageClass(int userId, int classId) throws SQLException;
+    List<ImageDO> queryImageClass(int userId, int classId) throws SQLException;
 }

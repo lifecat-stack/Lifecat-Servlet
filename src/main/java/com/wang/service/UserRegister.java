@@ -3,7 +3,7 @@ package com.wang.service;
 import com.wang.bean.User;
 import com.wang.manager.ManagerFactory;
 import com.wang.manager.UserManager;
-import com.wang.util.HOST;
+import com.wang.constant.HOST;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

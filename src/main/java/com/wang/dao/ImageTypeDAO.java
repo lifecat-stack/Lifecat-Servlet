@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @auther ten
  */
-public interface ImageTypeDAO {
+interface ImageTypeDAO {
     /**
      * 图片上传 :
      * 上传图片类别信息
@@ -19,7 +19,7 @@ public interface ImageTypeDAO {
      * @param imageTypeDO imageTypeDO
      * @throws SQLException e
      */
-    public void insertImageType(ImageTypeDO imageTypeDO) throws SQLException;
+    void insertImageType(ImageTypeDO imageTypeDO) throws SQLException;
 
     /**
      * 图片分类查询 :
@@ -31,7 +31,7 @@ public interface ImageTypeDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    public List<Integer> queryImageType(int userId, int classId) throws SQLException;
+    List<Integer> queryImageType(int userId, int classId) throws SQLException;
 
     /**
      * 图片类别更新 :
@@ -41,5 +41,5 @@ public interface ImageTypeDAO {
      * @param classId classId
      * @throws SQLException e
      */
-    public void updateImageType(int imageId, int classId) throws SQLException;
+    void updateImageType(int imageId, int classId) throws SQLException;
 }

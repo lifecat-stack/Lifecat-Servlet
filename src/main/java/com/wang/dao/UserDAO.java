@@ -9,7 +9,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public interface UserDAO {
+interface UserDAO {
     /**
      * 注册 :
      * 插入UserDO到user表
@@ -19,7 +19,7 @@ public interface UserDAO {
      * @return user_id
      * @throws SQLException e
      */
-    public int insertUser(UserDO userDO) throws SQLException;
+    int insertUser(UserDO userDO) throws SQLException;
 
     /**
      * 登录 :
@@ -32,7 +32,7 @@ public interface UserDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    public UserDO queryUser(String userName) throws SQLException;
+    UserDO queryUser(String userName) throws SQLException;
 
     /**
      * 注册-用户是否存在 :
@@ -42,7 +42,7 @@ public interface UserDAO {
      * @param userName 用户名
      * @return boolean 用户名是否存在
      */
-    public boolean isUserExisted(String userName) throws SQLException;
+    boolean isUserExisted(String userName) throws SQLException;
 
     /**
      * 密码更新 :
@@ -52,7 +52,7 @@ public interface UserDAO {
      * @return user_password
      * @throws SQLException e
      */
-    public String queryUserPassword(String userName) throws SQLException;
+    String queryUserPassword(String userName) throws SQLException;
 
     /**
      * 密码更新 :
@@ -61,5 +61,5 @@ public interface UserDAO {
      * @param password 新密码
      * @throws SQLException e
      */
-    public void updateUserPassword(String password) throws SQLException;
+    void updateUserPassword(String password) throws SQLException;
 }

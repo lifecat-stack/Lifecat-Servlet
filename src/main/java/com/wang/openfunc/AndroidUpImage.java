@@ -4,7 +4,7 @@ import com.wang.bean.Image;
 import com.wang.bean.User;
 import com.wang.manager.ManagerFactory;
 import com.wang.manager.ImageManager;
-import com.wang.util.HOST;
+import com.wang.constant.HOST;
 import com.wang.util.ImageWriter;
 import com.wang.util.MyDate;
 

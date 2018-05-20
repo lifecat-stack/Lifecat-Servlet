@@ -1,4 +1,4 @@
-package com.wang.util;
+package com.wang.constant;
 
 /**
  * Host工具类

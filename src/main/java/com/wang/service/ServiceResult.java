@@ -1,6 +1,6 @@
 package com.wang.service;
 
-import com.wang.util.HOST;
+import com.wang.constant.HOST;
 import com.wang.util.MyBuilder;
 
 /**
@@ -56,10 +56,10 @@ public class ServiceResult {
         }
     }
 
-    //ServiceResult@{isError:true,page:'http:...index.jsp',errormsg:'null'}
+    //ServiceResult@{isSuccess:true,page:'http:...index.jsp',errormsg:'null'}
     @Override
     public String toString() {
-        return "ServiceResult@{isError:" + error + ",page:" + page + ",errormsg:" + errormsg + "}";
+        return "ServiceResult@{isSuccess:" + error + ",page:" + page + ",errormsg:" + errormsg + "}";
     }
 
     //getter

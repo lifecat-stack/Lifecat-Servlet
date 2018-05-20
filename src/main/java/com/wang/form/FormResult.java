@@ -4,7 +4,7 @@ import com.wang.util.MyBuilder;
 
 
 /**
- * FormResult: 返回Form验证结果对象
+ * FormResult: 返回Form验证Result对象
  * <p>
  * 访问范围: 构造器包访问,getter全局
  * 获取实例: 构建器
@@ -13,11 +13,11 @@ import com.wang.util.MyBuilder;
  */
 public class FormResult {
 
-    private final boolean error;
+    private final boolean success;
     private final String errormsg;
 
     private FormResult(Builder builder) {
-        this.error = builder.error;
+        this.success = builder.success;
         this.errormsg = builder.errormsg;
     }
 
@@ -28,12 +28,12 @@ public class FormResult {
      */
     protected static class Builder implements MyBuilder<FormResult> {
 
-        private final boolean error;
+        private final boolean success;
 
         private String errormsg = "null";
 
-        public Builder(boolean error) {
-            this.error = error;
+        public Builder(boolean success) {
+            this.success = success;
         }
 
         public Builder errormsg(String errormsg) {
@@ -47,15 +47,15 @@ public class FormResult {
         }
     }
 
-    //FormResult@{error:true,errormsg:'null'}
+    //FormResult@{success:true,errormsg:'null'}
     @Override
     public String toString() {
-        return "FormResult@{error:" + error + ",errormsg:" + errormsg + "}";
+        return "FormResult@{success:" + success + ",errormsg:" + errormsg + "}";
     }
 
     //getter
-    public boolean isError() {
-        return error;
+    public boolean isSuccess() {
+        return success;
     }
 
     public String getErrormsg() {

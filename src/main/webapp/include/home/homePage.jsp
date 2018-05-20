@@ -5,7 +5,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.wang.manager.DiaryManager" %>
 <%@ page import="com.wang.service.ImageQuery" %>
-<%@ page import="static com.wang.util.HOST.*" %>
+<%@ page import="static com.wang.constant.HOST.*" %>
 <%@ page import="java.util.logging.Logger" %>
 
 <script>

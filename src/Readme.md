@@ -574,7 +574,7 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
 \*/
 
     ○ServiceFactory :根据className获取Service接口对象
-    ○ServiceResult  :1.error :执行是否出错? 2.errormsg :若出错, 则记录错误信息 3.page :需跳转的界面
+    ○ServiceResult  :1.success :执行是否出错? 2.errormsg :若出错, 则记录错误信息 3.page :需跳转的界面
     ○<Service>接口  :ServiceResult execute()方法
 
     function         className            需操作的表结构           对应操作请求               请求类型

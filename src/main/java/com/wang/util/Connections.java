@@ -1,5 +1,6 @@
 package com.wang.util;
 
+import com.wang.constant.HOST;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

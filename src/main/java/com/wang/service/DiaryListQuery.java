@@ -4,7 +4,7 @@ import com.wang.bean.Diary;
 import com.wang.bean.User;
 import com.wang.manager.ManagerFactory;
 import com.wang.manager.DiaryManager;
-import com.wang.util.HOST;
+import com.wang.constant.HOST;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

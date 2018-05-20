@@ -1,21 +1,24 @@
 package com.wang.filter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.logging.Logger;
+
 
 /**
- * Filter:Encoding
+ * filter - Encoding
  * <p>
- * 编码为utf-8
+ * 设置编码为utf-8
  *
  * @auther ten
  */
 public class EncodingFilter implements Filter {
 
-    private static Logger logger = Logger.getLogger("EncodingFilter");
+    private static final Logger logger = LoggerFactory.getLogger(EncodingFilter.class);
 
     /**
      * doFilter
@@ -27,15 +30,15 @@ public class EncodingFilter implements Filter {
     @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
             throws IOException, ServletException {
+         // 检查NPE
+        if (chain == null) {
+            throw new NullPointerException("EncodingFilter is null");
+        }
+
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
 
         logger.info("EncodingFilter doFilter()");
-
-        //检查异常
-        if (chain == null) {
-            throw new NullPointerException("EncodingFilter is null");
-        }
 
         request.setCharacterEncoding("UTF-8");
 
@@ -43,20 +46,20 @@ public class EncodingFilter implements Filter {
     }
 
     /**
-     * com.wang.filter.init()
+     * init()
      *
-     * @throws ServletException com.wang.filter init failure
+     * @throws ServletException filter init failure
      */
     @Override
     public void init(FilterConfig arg0) throws ServletException {
-        logger.config("EncodingFilter init()");
+        logger.info("EncodingFilter init()");
     }
 
     /**
-     * com.wang.filter.destroy()
+     * destroy()
      */
     @Override
     public void destroy() {
-        logger.config("EncodingFilter destroy()");
+        logger.info("EncodingFilter destroy()");
     }
 }

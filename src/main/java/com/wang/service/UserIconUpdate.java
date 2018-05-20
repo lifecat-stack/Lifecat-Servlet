@@ -3,7 +3,7 @@ package com.wang.service;
 import com.wang.bean.User;
 import com.wang.manager.ManagerFactory;
 import com.wang.manager.UserMsgManager;
-import com.wang.util.HOST;
+import com.wang.constant.HOST;
 import com.wang.util.ImageWriter;
 import com.wang.util.MyDate;
 

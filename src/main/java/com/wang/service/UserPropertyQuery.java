@@ -4,7 +4,7 @@ import com.wang.bean.User;
 import com.wang.bean.UserMsg;
 import com.wang.manager.ManagerFactory;
 import com.wang.manager.UserMsgManager;
-import com.wang.util.HOST;
+import com.wang.constant.HOST;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
