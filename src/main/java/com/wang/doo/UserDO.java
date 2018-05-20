@@ -7,49 +7,63 @@ package com.wang.doo;
  */
 public class UserDO {
 
-    private int user_id;
-    private String user_name;
-    private String user_password;
-    private String user_gmt_create;
-    private String user_gmt_modified;
+    private Integer userId;
+    private String userName;
+    private String userPassword;
+    private String userGmtCreate;
+    private String userGmtModified;
 
-    public int getUser_id() {
-        return user_id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getUser_name() {
-        return user_name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getUser_password() {
-        return user_password;
+    public String getUserPassword() {
+        return userPassword;
     }
 
-    public void setUser_password(String user_password) {
-        this.user_password = user_password;
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
 
-    public String getUser_gmt_create() {
-        return user_gmt_create;
+    public String getUserGmtCreate() {
+        return userGmtCreate;
     }
 
-    public void setUser_gmt_create(String user_gmt_create) {
-        this.user_gmt_create = user_gmt_create;
+    public void setUserGmtCreate(String userGmtCreate) {
+        this.userGmtCreate = userGmtCreate;
     }
 
-    public String getUser_gmt_modified() {
-        return user_gmt_modified;
+    public String getUserGmtModified() {
+        return userGmtModified;
     }
 
-    public void setUser_gmt_modified(String user_gmt_modified) {
-        this.user_gmt_modified = user_gmt_modified;
+    public void setUserGmtModified(String userGmtModified) {
+        this.userGmtModified = userGmtModified;
+    }
+
+    /**
+     * @return UserDO@1234{ID:'',Name:'',Password:'',Create:'',Modified:''}
+     */
+    @Override
+    public String toString() {
+        return "UserDO@" + userId
+                + "{ID:" + userId
+                + ",Name:" + userName
+                + ",Password:" + userPassword
+                + ",Create:" + userGmtCreate
+                + ",Modified:" + userGmtModified
+                + "}";
     }
 }

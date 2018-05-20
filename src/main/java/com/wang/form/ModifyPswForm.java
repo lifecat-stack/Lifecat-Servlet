@@ -9,7 +9,7 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class ModifyPswForm implements Form {
+class ModifyPswForm extends BaseVerification implements Form {
     private ModifyPswForm() {
     }
 

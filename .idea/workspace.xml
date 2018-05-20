@@ -10,44 +10,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lifecatweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lifecatweb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read.md" beforeDir="false" afterPath="$PROJECT_DIR$/read.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageClassDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageFeatureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageFeatureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageTypeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserIconDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserIconDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dto/UserPropertyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dto/UserPropertyDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/filter/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/daoimpl/AdminDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/doo/AdminDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/doo/AdminDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/doo/DiaryDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/doo/DiaryDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/doo/ImageClassDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/doo/ImageClassDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/doo/ImageDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/doo/ImageDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/doo/ImageTypeDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/doo/ImageTypeDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/doo/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/doo/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/doo/UserIconDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/doo/UserIconDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/doo/UserPropertyDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/doo/UserPropertyDO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/filter/FormFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/filter/FormFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/form/FormResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/form/FormResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/openfunc/AndroidUpImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/openfunc/AndroidUpImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryListQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryListQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/form/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/form/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/form/FormSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/form/FormFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/form/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/form/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/form/ModifyPswForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/form/ModifyPswForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/form/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/form/RegisterForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/form/SetMsgForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/form/SetMsgForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/AdminRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/AdminRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageListQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageListQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ServiceResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ServiceResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserIconUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserIconUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPswUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPswUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/util/Connections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/util/Connections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/util/HOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/classes/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/imageshow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/imageshow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/imageshow2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/imageshow2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/home/homePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/home/homePage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AdminDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/doo/ImageDOTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,142 +81,149 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="read.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/read.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-930">
-                <caret line="113" column="56" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HOST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DiaryDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-              <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-              <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-              <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageClassDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageClassDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageFeatureDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageFeatureDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageTypeDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageTypeDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/UserDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-              <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserIconDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/UserIconDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserPropertyDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6365777">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="AdminDO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/AdminDO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="352">
+                  <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AdminDAO.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ImageClassDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageClassDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DiaryDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-594">
+                  <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/UserDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="572">
+                  <caret line="11" selection-start-line="11" selection-end-line="11" />
+                  <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+                  <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+                  <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+                  <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+                  <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserIconDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/UserIconDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="572">
+                  <caret line="11" selection-start-line="11" selection-end-line="11" />
+                  <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+                  <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserPropertyDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ImageTypeDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageTypeDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="554">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" />
+                  <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+                  <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+                  <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ImageFeatureDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageFeatureDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="132">
+                  <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ImageDAO.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="572">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" />
+                  <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+                  <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+                  <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+                  <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+                  <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+                  <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Readme.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="324">
+                    <caret line="571" column="21" selection-start-line="571" selection-start-column="21" selection-end-line="571" selection-end-column="21" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -226,8 +233,8 @@
         <option value="Enum" />
         <option value="HTTP Request" />
         <option value="Arquillian JUnit Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -254,40 +261,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/wang/service/DiaryUpdate.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/service/ImageClassify.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/service/ImageClassQuery.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/service/ImageDelete.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/service/ImageListQuery.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/service/ImageTextUpdate.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/service/Service.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daomanager/DAOModel.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daomanager/DAOManager.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daomanager/DAOModelFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daomanager/DAOManagerFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/manager/DAOManagerFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/manager/ManagerFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/DAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/ImageClassDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/ImageFeatureDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/UserIconDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/ImageTypeDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/manager/AdminManager.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/manager/UserManager.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/AdminDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/com/wang/dao/AdminDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daoimpl/DiaryDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/ImageDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/UserPropertyDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daoimpl/AdminDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/daoimpl/AdminDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/wang/dao/AdminDAO.java" />
-        <option value="$PROJECT_DIR$/Readme.txt" />
         <option value="$PROJECT_DIR$/log4j.properties" />
         <option value="$PROJECT_DIR$/src/com/wang/util/Connections.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/Connections.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AdminDOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/ImageQuery.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -295,7 +271,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageClassDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageFeatureDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/filter/EncodingFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/filter/FormFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/form/FormResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java" />
@@ -305,6 +280,38 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/UserIconDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java" />
         <option value="$PROJECT_DIR$/read.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/form/FormSelector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/filter/FormFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/form/Form.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/form/FormFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/form/Verifiable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/form/BaseVerification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/form/LoginForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/form/ModifyPswForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/form/RegisterForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/form/SetMsgForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/doo/ImageClassDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/ServiceResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/AdminRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryDelete.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryUpdate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassify.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/ImageDelete.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/ImageListQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/doo/UserDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/doo/UserPropertyDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/doo/UserIconDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/doo/DiaryDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/doo/ImageDO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AdminDOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/doo/AdminDO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wang/doo/AdminDOTest.java" />
+        <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/doo/ImageTypeDO.java" />
       </list>
     </option>
   </component>
@@ -397,7 +404,22 @@
               <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wang" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
@@ -426,7 +448,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -473,7 +495,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Connections">
+  <component name="RunManager" selected="JUnit.AdminDOTest.testGetAdminId">
     <configuration name="Connections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wang.util.Connections" />
       <module name="lifecatweb" />
@@ -481,17 +503,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wang.constant.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Date" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wang.db.Date" />
-      <module name="lifecatweb" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -509,6 +520,29 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AdminDOTest.testGetAdminId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lifecatweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wang.doo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.wang.doo" />
+      <option name="MAIN_CLASS_NAME" value="com.wang.doo.AdminDOTest" />
+      <option name="METHOD_NAME" value="testGetAdminId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="DAOFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lifecatweb" />
@@ -679,19 +713,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.lifecat" />
-      <item itemvalue="Application.Date" />
       <item itemvalue="Application.MyDate" />
       <item itemvalue="JavaScript Debug.imageshow2.jsp" />
       <item itemvalue="JUnit.DAOFactoryTest" />
       <item itemvalue="Application.Connections" />
+      <item itemvalue="JUnit.AdminDOTest.testGetAdminId" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminDOTest.testGetAdminId" />
         <item itemvalue="Application.Connections" />
         <item itemvalue="JUnit.DAOFactoryTest" />
         <item itemvalue="JavaScript Debug.imageshow2.jsp" />
         <item itemvalue="Application.MyDate" />
-        <item itemvalue="Application.Date" />
       </list>
     </recent_temporary>
   </component>
@@ -749,7 +783,7 @@
       <workItem from="1526691418279" duration="120000" />
       <workItem from="1526691570797" duration="51000" />
       <workItem from="1526691650423" duration="25106000" />
-      <workItem from="1526774782309" duration="21438000" />
+      <workItem from="1526774782309" duration="31356000" />
     </task>
     <task id="LOCAL-00001" summary="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法">
       <created>1525965840652</created>
@@ -961,11 +995,25 @@
       <option name="project" value="LOCAL" />
       <updated>1526787362028</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary=" --《Java开发手册》规约">
+      <created>1526806190761</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1526806190761</updated>
+    </task>
+    <task id="LOCAL-00032" summary=" --Readme.md">
+      <created>1526806438980</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1526806438980</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336130000" />
+    <option name="totallyTimeSpent" value="346048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -995,7 +1043,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.32909605" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4992948" weight="0.15208034" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4992948" weight="0.0" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Java Enterprise" order="9" side_tool="true" weight="0.32957748" />
@@ -1003,10 +1051,10 @@
       <window_info anchor="bottom" id="Version Control" order="13" weight="1.0" />
       <window_info anchor="right" id="Run" order="12" weight="0.17229255" />
       <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49857143" visible="true" weight="0.1325811" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49857143" visible="true" weight="0.19393513" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info id="JRebel" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.48236954" weight="0.32855093" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.48236954" visible="true" weight="0.0" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.18724559" />
@@ -1110,7 +1158,9 @@
     <MESSAGE value="version2.3.2&#10; --完成了manager层的功能文档说明" />
     <MESSAGE value="ps :txt-&gt;md" />
     <MESSAGE value="ps :使用maven管理项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="ps :使用maven管理项目" />
+    <MESSAGE value=" --《Java开发手册》规约" />
+    <MESSAGE value=" --Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value=" --Readme.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1122,203 +1172,296 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image51.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image52.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image53.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image54.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image55.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image56.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image57.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image58.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image59.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image6.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image60.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image61.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image62.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image63.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image64.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image65.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image66.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image67.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image68.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image69.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image7.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image70.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image71.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image72.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image73.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image74.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image75.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image76.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image77.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image78.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image79.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image8.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/page2_image9.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/3/pics.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pics/class.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="35" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/FormFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        <state relative-caret-position="176">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/form/FormResult.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/EncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <state relative-caret-position="176">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageDelete.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        <state relative-caret-position="176">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageListQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="176">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/UserIconUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/UserPswUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/UserRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/UserLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/AdminManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/ImageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/UserMsgManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-974">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/应用分层图.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/请求流程图.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AdminDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageClassDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/doo/AdminDOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="44">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/doo/DiaryDOTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/doo/ImageClassDOTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/doo/ImageDOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+        <state relative-caret-position="22">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/doo/ImageFeatureDOTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/doo/ImageTypeDOTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/doo/UserDOTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/doo/UserIconDOTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/doo/UserPropertyDOTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/UserPropertyDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="99" column="22" lean-forward="true" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/UserIconDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/UserDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="67" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="324">
+            <caret line="571" column="21" selection-start-line="571" selection-start-column="21" selection-end-line="571" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/ImageTypeDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageFeatureDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/ImageFeatureDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        <state relative-caret-position="290">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/ImageDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="83" column="7" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/ImageClassDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/DiaryDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="77" column="35" lean-forward="true" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+          <folding>
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/doo/AdminDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1332,6 +1475,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageFeatureDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1364,30 +1514,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/ImageClassDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="132">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/read.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-930">
-            <caret line="113" column="56" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

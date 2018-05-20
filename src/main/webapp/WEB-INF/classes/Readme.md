@@ -384,7 +384,7 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     +-------------------+
     | UserPropertyDTO   | 用户资料
     +-------------------+
-    | user_id           |
+    | userId           |
     | nickname          |
     | signature         |
     | email             |
@@ -472,45 +472,45 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     +-------------------+
     | AdminDO           |
     +-------------------+
-    | admin_id          | DB
-    | admin_name        | VO
-    | admin_password    | VO
-    | admin_level       | VO
-    | admin_gmt_create  | DAO
-    | admin_gmt_modified| DAO
+    | adminId          | DB
+    | adminName        | VO
+    | adminPassword    | VO
+    | adminLevel       | VO
+    | adminGmtCreate  | DAO
+    | adminGmtModified| DAO
     +-------------------+
 
     +-------------------+
     | UserDO            |
     +-------------------+
-    | user_id           | DB
-    | user_name         | VO
-    | user_password     | VO
-    | user_gmt_create   | DAO
-    | user_gmt_modified | DAO
+    | userId           | DB
+    | userName         | VO
+    | userPassword     | VO
+    | userGmtCreate   | DAO
+    | userGmtModified | DAO
     +-------------------+
 
     +-------------------+
     | UserPropertyDO    |
     +-------------------+
-    | user_id           | VO
-    | property_nickname | VO
-    | property_signature| VO
-    | property_email    | VO
+    | userId           | VO
+    | propertyNickname | VO
+    | propertySignature| VO
+    | propertyEmail    | VO
     | property_sex      | VO
-    | property_Location | VO
-    | property_birthday | VO
-    | property_gmt_create   DAO
-    | property_gmt_modified DAO
+    | propertyLocation | VO
+    | propertyBirthday | VO
+    | propertyGmtCreate   DAO
+    | propertyGmtModified DAO
     +-------------------+
 
     +-------------------+
     | UserIconDO        |
     +-------------------+
-    | user_id           | VO
-    | icon_path         | VO
-    | icon_gmt_create   | DAO
-    | icon_gmt_modified | DAO
+    | userId           | VO
+    | iconPath         | VO
+    | iconGmtCreate   | DAO
+    | iconGmtModified | DAO
     +-------------------+
 
     +-------------------+
@@ -520,7 +520,7 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     | image_text        | VO
     | image_path        | VO
     | is_deleted        | DAO
-    | user_id           | VO
+    | userId           | VO
     | image_gmt_create  | DAO
     | image_gmt_modified| DAO
     +-------------------+
@@ -529,7 +529,7 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     | ImageTypeDO       |
     +-------------------+
     | image_id          | VO
-    | user_id           | VO
+    | userId           | VO
     | image_class       | VO
     | type_gmt_create   | DAO
     | type_gmt_modified | DAO
@@ -538,7 +538,7 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     +-------------------+
     | ImageClassDO      |
     +-------------------+
-    | image_class_id    | VO
+    | imageClassId    | VO
     | image_class_name  | VO
     | image_class_desc  | VO
     | class_gmt_create  | DAO
@@ -558,11 +558,11 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     +-------------------+
     | DiaryDO           |
     +-------------------+
-    | diary_id          | VO
-    | diary_name        | VO
+    | diaryId          | VO
+    | diaryName        | VO
     | diary_text        | VO
     | is_deleted        | DAO
-    | user_id           | VO
+    | userId           | VO
     | diary_gmt_create  | DAO
     | diary_gmt_modified| DAO
     +-------------------+
@@ -644,7 +644,7 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     | 资料查询--查询user_property  :   queryUserProperty()                        --UserPropertyDAO
                查询user_icon  :       queryUserIcon()                           --UserIconDAO
 
-    | 密码更新--更新user  :            updateUserPassword(user_password)          --UserDAO
+    | 密码更新--更新user  :            updateUserPassword(userPassword)          --UserDAO
 
     | 头像更新--更新user_icon  :        updateUserIcon(usericonDO)                --UserIconDAO
 
@@ -741,8 +741,8 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     | AdminDAO          |
     +-------------------+
     | 注册--插入admin :insertAdmin()    --参数 :AdminDO    --返回 :主键admin_id
-    | 登录--获取admin :queryAdmin()    --参数 :admin_name    --返回 :AdminDO
-    | 注册--判断用户是否存在  :isAdminExisted()    --参数 :admin_name    --返回 :boolean
+    | 登录--获取admin :queryAdmin()    --参数 :adminName    --返回 :AdminDO
+    | 注册--判断用户是否存在  :isAdminExisted()    --参数 :adminName    --返回 :boolean
     +-------------------+
 
     +-------------------+
@@ -750,7 +750,7 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     +-------------------+
     | 登录--获取user  :               queryUser()
     | 注册--插入user  :               insertUser(UserDO)
-    | 密码更新--更新user  :            updateUserPassword(user_password)
+    | 密码更新--更新user  :            updateUserPassword(userPassword)
     +-------------------+
 
     +-------------------+
@@ -774,15 +774,15 @@ user\_id | diary\_gmt\_create | datetime | NO | | NULL | | 日记上传日期
     | 图片删除--删除image              deleteImage()
     | 图片文本内容更新--更新image_text   updateImageText()
     | 图片单个查询--查询image          queryImage(image_name/image_id)
-    | 图片全部集合查询--查询image       queryImageList(user_id)
-    | 图片分类集合查询--查询image       queryImageClass(user_id,class_id)
+    | 图片全部集合查询--查询image       queryImageList(userId)
+    | 图片分类集合查询--查询image       queryImageClass(userId,class_id)
     +-------------------+
 
     +-------------------+
     | ImageTypeDAO      |
     +-------------------+
     | 图片上传--插入图片类别信息        insertImageType()
-    | 图片分类集合查询--查询某类别下的image   queryImageByClass(user_id,class_id)
+    | 图片分类集合查询--查询某类别下的image   queryImageByClass(userId,class_id)
     +-------------------+
 
     +-------------------+

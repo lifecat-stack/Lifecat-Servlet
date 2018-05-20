@@ -9,7 +9,7 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class SetMsgForm implements Form {
+class SetMsgForm extends BaseVerification implements Form {
     private SetMsgForm() {
     }
 
@@ -41,25 +41,33 @@ class SetMsgForm implements Form {
         String birthday = request.getParameter("birthday");
         String email = request.getParameter("email");
 
-        if (nickname == null) {
+        if (isNull(nickname)) {
             errormsg = "nickname is empty";
-        } else if (sex == null) {
-            errormsg = "sex is empty";
-        } else if (age == null) {
-            errormsg = "age is empty";
-        } else if (birthday == null) {
-            errormsg = "birthday is empty";
-        } else if (email == null) {
-            errormsg = "email is empty";
-        } else if (nickname.length() > 20) {
-            errormsg = "nickname is too lang > 20";
-        } else if (!sex.equals("男") && !sex.equals("女")) {
-            errormsg = "sex must be 男 or 女";
-        } else if (Integer.valueOf(age) < 0 || Integer.valueOf(age) > 100) {
-            errormsg = "age must be 0 ~ 100";
-        } else {
-            return new FormResult.Builder(false).build();
         }
+        if (isNull(sex)) {
+            errormsg = "sex is empty";
+        }
+        if (isNull(age)) {
+            errormsg = "age is empty";
+        }
+        if (birthday == null) {
+            errormsg = "birthday is empty";
+        }
+        if (email == null) {
+            errormsg = "email is empty";
+        }
+        if (nickname.length() > 20) {
+            errormsg = "nickname is too lang > 20";
+        }
+        if (!sex.equals("男") && !sex.equals("女")) {
+            errormsg = "sex must be 男 or 女";
+        }
+        if (Integer.valueOf(age) < 0 || Integer.valueOf(age) > 100) {
+            errormsg = "age must be 0 ~ 100";
+        }
+
+        return new FormResult.Builder(false).build();
+
 
         return new FormResult.Builder(true).errormsg(errormsg).build();
     }

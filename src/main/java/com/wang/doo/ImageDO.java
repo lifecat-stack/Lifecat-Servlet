@@ -7,67 +7,92 @@ package com.wang.doo;
  */
 public class ImageDO {
 
-    private int image_id;
-    private int user_id;
-    private String image_text;
-    private String image_path;
-    private String is_deleted;
-    private String image_gmt_create;
-    private String image_gmt_modified;
+    private Integer imageId;
+    private Integer userId;
+    private Integer classId;
+    private String imageText;
+    private String imagePath;
+    private String deleted;
+    private String imageGmtCreate;
+    private String imageGmtModified;
 
-    public int getImage_id() {
-        return image_id;
+    public Integer getImageId() {
+        return imageId;
     }
 
-    public void setImage_id(int image_id) {
-        this.image_id = image_id;
+    public void setImageId(Integer imageId) {
+        this.imageId = imageId;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getImage_text() {
-        return image_text;
+    public Integer getClassId() {
+        return classId;
     }
 
-    public void setImage_text(String image_text) {
-        this.image_text = image_text;
+    public void setClassId(Integer classId) {
+        this.classId = classId;
+    }
+    public String getImageText() {
+        return imageText;
     }
 
-    public String getImage_path() {
-        return image_path;
+    public void setImageText(String imageText) {
+        this.imageText = imageText;
     }
 
-    public void setImage_path(String image_path) {
-        this.image_path = image_path;
+    public String getImagePath() {
+        return imagePath;
     }
 
-    public String getIs_deleted() {
-        return is_deleted;
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 
-    public void setIs_deleted(String is_deleted) {
-        this.is_deleted = is_deleted;
+    public String getDeleted() {
+        return deleted;
     }
 
-    public String getImage_gmt_create() {
-        return image_gmt_create;
+    public void setDeleted(String deleted) {
+        this.deleted = deleted;
     }
 
-    public void setImage_gmt_create(String image_gmt_create) {
-        this.image_gmt_create = image_gmt_create;
+    public String getImageGmtCreate() {
+        return imageGmtCreate;
     }
 
-    public String getImage_gmt_modified() {
-        return image_gmt_modified;
+    public void setImageGmtCreate(String imageGmtCreate) {
+        this.imageGmtCreate = imageGmtCreate;
     }
 
-    public void setImage_gmt_modified(String image_gmt_modified) {
-        this.image_gmt_modified = image_gmt_modified;
+    public String getImageGmtModified() {
+        return imageGmtModified;
+    }
+
+    public void setImageGmtModified(String imageGmtModified) {
+        this.imageGmtModified = imageGmtModified;
+    }
+
+    /**
+     * @return ImageDO@1234{ImageID:'',UserID:'',ClassID:'',Text:'',Path:'',isDeleted:'',Create:'',Modified:''}
+     */
+    @Override
+    public String toString() {
+        return "ImageDO@" + imageId
+                + "{ImageID:" + imageId
+                + ",UserID:" + userId
+                + ",ClassID:" + classId
+                + ",Text:" + imageText
+                + ",Path:" + imagePath
+                + ",isDeleted:" + deleted
+                + ",Create:" + imageGmtCreate
+                + ",Modified:" + imageGmtModified
+                + "}";
     }
 }

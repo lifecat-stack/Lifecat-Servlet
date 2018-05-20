@@ -7,58 +7,73 @@ package com.wang.doo;
  */
 public class AdminDO {
 
-    private int admin_id;
-    private String admin_name;
-    private String admin_password;
-    private String admin_level;
-    private String admin_gmt_create;
-    private String admin_gmt_modified;
+    private Integer adminId;
+    private String adminName;
+    private String adminPassword;
+    private String adminLevel;
+    private String adminGmtCreate;
+    private String adminGmtModified;
 
-    public int getAdmin_id() {
-        return admin_id;
+    public Integer getAdminId() {
+        return adminId;
     }
 
-    public void setAdmin_id(int admin_id) {
-        this.admin_id = admin_id;
+    public void setAdminId(Integer adminId) {
+        this.adminId = adminId;
     }
 
-    public String getAdmin_name() {
-        return admin_name;
+    public String getAdminName() {
+        return adminName;
     }
 
-    public void setAdmin_name(String admin_name) {
-        this.admin_name = admin_name;
+    public void setAdminName(String adminName) {
+        this.adminName = adminName;
     }
 
-    public String getAdmin_password() {
-        return admin_password;
+    public String getAdminPassword() {
+        return adminPassword;
     }
 
-    public void setAdmin_password(String admin_password) {
-        this.admin_password = admin_password;
+    public void setAdminPassword(String adminPassword) {
+        this.adminPassword = adminPassword;
     }
 
-    public String getAdmin_level() {
-        return admin_level;
+    public String getAdminLevel() {
+        return adminLevel;
     }
 
-    public void setAdmin_level(String admin_level) {
-        this.admin_level = admin_level;
+    public void setAdminLevel(String adminLevel) {
+        this.adminLevel = adminLevel;
     }
 
-    public String getAdmin_gmt_create() {
-        return admin_gmt_create;
+    public String getAdminGmtCreate() {
+        return adminGmtCreate;
     }
 
-    public void setAdmin_gmt_create(String admin_gmt_create) {
-        this.admin_gmt_create = admin_gmt_create;
+    public void setAdminGmtCreate(String adminGmtCreate) {
+        this.adminGmtCreate = adminGmtCreate;
     }
 
-    public String getAdmin_gmt_modified() {
-        return admin_gmt_modified;
+    public String getAdminGmtModified() {
+        return adminGmtModified;
     }
 
-    public void setAdmin_gmt_modified(String admin_gmt_modified) {
-        this.admin_gmt_modified = admin_gmt_modified;
+    public void setAdminGmtModified(String adminGmtModified) {
+        this.adminGmtModified = adminGmtModified;
+    }
+
+    /**
+     * @return AdminDO@1234{ID:'',Name:'',Password:'',Level:'',Create:'',Modified:''}
+     */
+    @Override
+    public String toString() {
+        return "AdminDO@" + adminId
+                + "{ID:" + adminId
+                + ",Name:" + adminName
+                + ",Password:" + adminPassword
+                + ",Level:" + adminLevel
+                + ",Create:" + adminGmtCreate
+                + ",Modified:" + adminGmtModified
+                + "}";
     }
 }

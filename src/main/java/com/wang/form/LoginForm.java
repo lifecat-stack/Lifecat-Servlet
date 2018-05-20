@@ -9,7 +9,7 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class LoginForm implements Form {
+class LoginForm extends BaseVerification implements Form {
 
     private LoginForm() {
     }
@@ -34,17 +34,25 @@ class LoginForm implements Form {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        if (username == null) {
+        if (isNull(username)) {
             errormsg = "username is empty";
-        } else if (password == null) {
-            errormsg = "password is empty";
-        } else if (username.length() > 10) {
-            errormsg = "username is too lang > 10";
-        } else if (password.length() > 20) {
-            errormsg = "password is too lang > 20";
-        } else {
-            return new FormResult.Builder(false).build();
         }
+   
+        if (isNull(password)) {
+            errormsg = "password is empty";
+        }
+
+        if (isTooLong(username, 10)) {
+            errormsg = "username is too lang > 10";
+        }
+
+        if (isTooLong(password, 20)) {
+            errormsg = "password is too lang > 20";
+        }
+
+
+        return new FormResult.Builder(false).build();
+
 
         return new FormResult.Builder(true).errormsg(errormsg).build();
     }

@@ -25,17 +25,17 @@ README
   * web
     * include
       * home
-        * homePage.jsp   //用户主页body内容部件
-      * footer.jsp       //页脚部件
-      * header.jsp       //页眉部件
-      * -top.jsp          //页面标题栏部件
+        * homePage.jsp   // 用户主页body内容部件
+      * footer.jsp       // 页脚部件
+      * header.jsp       // 页眉部件
+      * top.jsp          // 页面标题栏部件
     * WEB-INF
-      * imageshow.jsp    //用户图片展示界面
-      * imageshow2.jsp   //用户分类图片展示界面
-      * updiary.jsp      //上传日记
-      * upimage.jsp      //上传图片
-      * userhome.jsp     //用户主页
-    * index.jsp          //登录/注册界面
+      * imageshow.jsp    // 用户图片展示界面
+      * imageshow2.jsp   // 用户分类图片展示界面
+      * updiary.jsp      // 上传日记
+      * upimage.jsp      // 上传图片
+      * userhome.jsp     // 用户主页
+    * index.jsp          // 登录/注册界面
 ******************************************************************************
   _@Java目录_
   * src
@@ -368,7 +368,7 @@ version1.3.2
     属性: 用户ID、日记ID、日记日期、日记名称、日记内容...
     唯一表示: 日记ID
     存储特点: 永久储存
-#### 《Java开发手册》5.1建表规约:  
+#### 建表规约:  
        * √ 1 :字段若非负，必须是unsigned
        * √ 1 :表达是否概念，必须使用is_xxx方式，数据类型为unsigned tinyint(1是，0否)
        * √ 2 :数据库名、表名、字段名必须使用小写, mysql在linux下区分大小写
@@ -393,7 +393,7 @@ version1.3.2
           * unsigned smallint :   2    0~65535
           * unsigned int      :   4    0~2^32
           * unsigned bigint   :   8    0~2^64
-#### 《Java开发手册》5.2索引规范:
+#### 索引规范:
        * √ ps:必须为主键创建主键索引
        * √!1 :业务上具有唯一特性的字段，必须建成唯一索引
        * ? 2 :尽量少用join, 注意索引注意性能
@@ -416,7 +416,7 @@ version1.3.2
            * 主键索引pk_xxx  :primary key
            * 唯一索引uk_xxx  :unique key
            * 普通索引idx_xxx :index
-#### 《Java开发手册》5.3SQL语句:
+#### SQL语句:
        * √ 1 :使用count(*)--SQL标准, 与数据库无关; 若使用count(列名)或count(常量), 不会统计NULL行
        * ? 2 :count(distinct col)计算该列除NULL外的不重复列数, 若出现NULL, 则不统计
        * ? 3 :当一列的值全为NULL, count(col)返回结果为0, sum(col)返回结果为NULL
@@ -436,7 +436,7 @@ version1.3.2
        * √ 10:全球化，使用utf-8编码
            * SELECT LENGTH("数据库"); ==12
            * SELECT CHARCTER_LENGTH("数据库"); ==3
-#### 《Java开发手册》5.4ORM映射:
+#### ORM映射:
        * √ 1 :在表查询中，一律不要使用*作为查询的字段列表，需要哪些字段必须明确写明
             * 增加查询分析器解析成本
             * ? 增减字段容易与resultMap配置不一致
@@ -550,7 +550,7 @@ version1.3.2
     | is_deleted          | unsigned tinyint NO|     | NULL    |       | 图片是否删除 1是 0否
     | idx_is_deleted      | unsigned tinyint NO|     | NULL    |       | 索引: isdeleted
     | user_id             | unsigned int| NO   |     | NULL    |       | 所属user_id
-    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
+    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: userId
     | image_class         | unsigned int| NO   |     | NULL    |       | 冗余信息: 类别
     | idx_image_class     | unsigned int| NO   | IDX | NULL    |       | 索引: image_class
     | image_gmt_create    | datetime    | NO   |     | NULL    |       | 图片上传日期
@@ -567,9 +567,9 @@ version1.3.2
     +---------------------+-------------+------+-----+---------+-------+
     | image_id            | unsigned int| NO   | PRI | NULL    |       | 图片ID
     | user_id             | unsigned int| NO   |     | NULL    |       | 图片所属user_id
-    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
-    | image_class         | unsigned int| NO   |     | NULL    |       | 图片所属类别id
-    | idx_image_class     | unsigned int| NO   | IDX | NULL    |       | 索引: image_id
+    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: userId
+    | class_id            | unsigned int| NO   |     | NULL    |       | 图片所属类别id
+    | idx__class_id       | unsigned int| NO   | IDX | NULL    |       | 索引: image_id
     | type_gmt_create     | datetime    | NO   |     | NULL    |       | 创建时间
     | type_gmt_modified   | datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
@@ -610,12 +610,12 @@ version1.3.2
     +---------------------+-------------+------+-----+---------+-------+
     | diary_id            | unsigned int| NO   | PRI | NULL    | AUTO  | 日记ID, 自增长
     | diary_name          | varchar(200)| NO   |     | NULL    |       | 日记名称
-    | idx_diary_name      | varchar(200)| NO   | IDX | NULL    |       | 索引: diary_name
+    | idx_diary_name      | varchar(200)| NO   | IDX | NULL    |       | 索引: diaryName
     | diary_text          | text        | NO   |     | NULL    |       | 日记内容
     | is_deleted          | unsigned tinyint NO|     | NULL    |       | 日记是否删除
     | idx_is_deleted      | unsigned tinyint NO| IDX | NULL    |       | 索引: 日记是否删除
-    | user_id             | unsigned int| NO   |     | NULL    |       | 所属user_id
-    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
+    | userId             | unsigned int| NO   |     | NULL    |       | 所属user_id
+    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: userId
     | diary_gmt_create    | datetime    | NO   |     | NULL    |       | 日记上传日期
     | diary_gmt_modified  | datetime    | NO   |     | NULL    |       | 日记修改日期
     +---------------------+-------------+------+-----+---------+-------+
@@ -667,7 +667,7 @@ version1.3.2
     +-------------------+
     | UserPropertyDTO   | 用户资料
     +-------------------+
-    | user_id           |
+    | userId           |
     | nickname          |
     | signature         |
     | email             |
@@ -751,28 +751,28 @@ version1.3.2
     +-------------------+
     | AdminDO           |
     +-------------------+
-    | admin_id          | DB
-    | admin_name        | VO
-    | admin_password    | VO
-    | admin_level       | VO
-    | admin_gmt_create  | DAO
-    | admin_gmt_modified| DAO
+    | adminId          | DB
+    | adminName        | VO
+    | adminPassword    | VO
+    | adminLevel       | VO
+    | adminGmtCreate  | DAO
+    | adminGmtModified| DAO
     +-------------------+
 ------------------------------------------------------------------------
     +-------------------+
     | UserDO            |
     +-------------------+
-    | user_id           | DB
-    | user_name         | VO
-    | user_password     | VO
-    | user_gmt_create   | DAO
-    | user_gmt_modified | DAO
+    | userId           | DB
+    | userName         | VO
+    | userPassword     | VO
+    | userGmtCreate   | DAO
+    | userGmtModified | DAO
     +-------------------+
 ------------------------------------------------------------------------
     +-------------------+
     | UserPropertyDO    |
     +-------------------+
-    | user_id           | VO
+    | userId           | VO
     | property_nickname | VO
     | property_signature| VO
     | property_email    | VO
@@ -786,10 +786,10 @@ version1.3.2
     +-------------------+
     | UserIconDO        |
     +-------------------+
-    | user_id           | VO
-    | icon_path         | VO
-    | icon_gmt_create   | DAO
-    | icon_gmt_modified | DAO
+    | userId           | VO
+    | iconPath         | VO
+    | iconGmtCreate   | DAO
+    | iconGmtModified | DAO
     +-------------------+
 ------------------------------------------------------------------------
     +-------------------+
@@ -799,7 +799,7 @@ version1.3.2
     | image_text        | VO
     | image_path        | VO
     | is_deleted        | DAO
-    | user_id           | VO
+    | userId           | VO
     | image_gmt_create  | DAO
     | image_gmt_modified| DAO
     +-------------------+
@@ -808,7 +808,7 @@ version1.3.2
     | ImageTypeDO       |
     +-------------------+
     | image_id          | VO
-    | user_id           | VO
+    | userId           | VO
     | image_class       | VO
     | type_gmt_create   | DAO
     | type_gmt_modified | DAO
@@ -817,7 +817,7 @@ version1.3.2
     +-------------------+
     | ImageClassDO      |
     +-------------------+
-    | image_class_id    | VO
+    | imageClassId    | VO
     | image_class_name  | VO
     | image_class_desc  | VO
     | class_gmt_create  | DAO
@@ -837,11 +837,11 @@ version1.3.2
     +-------------------+
     | DiaryDO           |
     +-------------------+
-    | diary_id          | VO
-    | diary_name        | VO
+    | diaryId          | VO
+    | diaryName        | VO
     | diary_text        | VO
     | is_deleted        | DAO
-    | user_id           | VO
+    | userId           | VO
     | diary_gmt_create  | DAO
     | diary_gmt_modified| DAO
     +-------------------+
@@ -912,7 +912,7 @@ version1.3.2
     | 资料查询--查询user_property  :   queryUserProperty()                        --UserPropertyDAO
                查询user_icon  :       queryUserIcon()                           --UserIconDAO
 
-    | 密码更新--更新user  :            updateUserPassword(user_password)          --UserDAO
+    | 密码更新--更新user  :            updateUserPassword(userPassword)          --UserDAO
 
     | 头像更新--更新user_icon  :        updateUserIcon(usericonDO)                --UserIconDAO
 
@@ -978,8 +978,8 @@ version1.3.2
     | AdminDAO          |
     +-------------------+
     | 注册--插入admin :insertAdmin()    --参数 :AdminDO    --返回 :主键admin_id
-    | 登录--获取admin :queryAdmin()    --参数 :admin_name    --返回 :AdminDO
-    | 注册--判断用户是否存在  :isAdminExisted()    --参数 :admin_name    --返回 :boolean
+    | 登录--获取admin :queryAdmin()    --参数 :adminName    --返回 :AdminDO
+    | 注册--判断用户是否存在  :isAdminExisted()    --参数 :adminName    --返回 :boolean
     +-------------------+
 ------------------------------------------------------------------------
     +-------------------+
@@ -988,7 +988,7 @@ version1.3.2
     | 登录--获取user  :               queryUser()
     | 注册--插入user  :               insertUser(UserDO)
     | 注册--用户是否存在 :              isUserExisted()
-    | 密码更新--更新user  :            updateUserPassword(user_password)
+    | 密码更新--更新user  :            updateUserPassword(userPassword)
     | 密码更新--查询原密码 :            queryUserPassword()
     +-------------------+
 ------------------------------------------------------------------------
@@ -1013,8 +1013,8 @@ version1.3.2
     | 图片删除--删除image              deleteImage()
     | 图片文本内容更新--更新image_text   updateImageText()
     | 图片单个查询--查询image          queryImage(image_name/image_id)
-    | 图片全部集合查询--查询image       queryImageList(user_id)
-    | 图片分类集合查询--查询image       queryImageClass(user_id,class_id)
+    | 图片全部集合查询--查询image       queryImageList(userId)
+    | 图片分类集合查询--查询image       queryImageClass(userId,class_id)
     +-------------------+
 ------------------------------------------------------------------------
     +-------------------+
@@ -1022,7 +1022,7 @@ version1.3.2
     +-------------------+
     | 图片上传--插入图片类别信息            insertImageType()
     | 修改图片分类信息--修改image的classid  updateImageType()
-    | 图片分类集合查询--查询某类别下的image   queryImageByClass(user_id,class_id)
+    | 图片分类集合查询--查询某类别下的image   queryImageByClass(userId,class_id)
     +-------------------+
 ------------------------------------------------------------------------
     +-------------------+
@@ -1048,4 +1048,10 @@ version1.3.2
 ### DO 数据库访问对象 设计
 
 ------------------------------------------------------------------------
+## 设计模式
+### 工厂模式 :Form对象创建
+             
+#### 模式解析：
+  * 可以为多用户提供服务
+   
 

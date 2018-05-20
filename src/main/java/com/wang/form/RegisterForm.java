@@ -9,7 +9,7 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class RegisterForm implements Form {
+class RegisterForm  extends BaseVerification implements Form {
     private RegisterForm() {
     }
 

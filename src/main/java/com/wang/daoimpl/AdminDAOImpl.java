@@ -27,11 +27,11 @@ public class AdminDAOImpl implements DAO, AdminDAO {
         Connection connection = Connections.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
-        preparedStatement.setString(1, adminDO.getAdmin_name());
-        preparedStatement.setString(2, adminDO.getAdmin_password());
-        preparedStatement.setString(3, adminDO.getAdmin_level());
-        preparedStatement.setString(4, adminDO.getAdmin_gmt_create());
-        preparedStatement.setString(5, adminDO.getAdmin_gmt_modified());
+        preparedStatement.setString(1, adminDO.getAdminName());
+        preparedStatement.setString(2, adminDO.getAdminPassword());
+        preparedStatement.setString(3, adminDO.getAdminLevel());
+        preparedStatement.setString(4, adminDO.getAdminGmtCreate());
+        preparedStatement.setString(5, adminDO.getAdminGmtModified());
 
         preparedStatement.executeUpdate();
 
@@ -62,10 +62,10 @@ public class AdminDAOImpl implements DAO, AdminDAO {
         String adminLevel = resultSet.getString("admin_level");
 
         AdminDO adminDO = new AdminDO();
-        adminDO.setAdmin_id(adminId);
-        adminDO.setAdmin_name(adminName);
-        adminDO.setAdmin_password(adminPassword);
-        adminDO.setAdmin_level(adminLevel);
+        adminDO.setAdminId(adminId);
+        adminDO.setAdminName(adminName);
+        adminDO.setAdminPassword(adminPassword);
+        adminDO.setAdminLevel(adminLevel);
 
         return adminDO;
     }

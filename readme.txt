@@ -313,13 +313,13 @@ version1.3.2
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | admin_id            | unsigned int| NO   | PRI | NULL    | AUTO  | 管理员ID, 主键索引. 自增长
-    | admin_name          | varchar(50) | NO   |     | NULL    |       | 管理员用户名
-    | uk_admin_name       | varchar(50) | NO   | UNQ | NULL    |       | 唯一索引: admin_name
-    | admin_password      | varchar(50) | NO   |     | NULL    |       | 管理员密码
-    | admin_level         | varchar(20) | NO   |     | NULL    |       | 管理员权限
-    | admin_gmt_create    | datetime    | NO   |     | NULL    |       | 管理员创建时间
-    | admin_gmt_modified  | datetime    | NO   |     | NULL    |       | 管理员修改时间
+    | adminId            | unsigned int| NO   | PRI | NULL    | AUTO  | 管理员ID, 主键索引. 自增长
+    | adminName          | varchar(50) | NO   |     | NULL    |       | 管理员用户名
+    | uk_admin_name       | varchar(50) | NO   | UNQ | NULL    |       | 唯一索引: adminName
+    | adminPassword      | varchar(50) | NO   |     | NULL    |       | 管理员密码
+    | adminLevel         | varchar(20) | NO   |     | NULL    |       | 管理员权限
+    | adminGmtCreate    | datetime    | NO   |     | NULL    |       | 管理员创建时间
+    | adminGmtModified  | datetime    | NO   |     | NULL    |       | 管理员修改时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ------------------------------------------------------------------------
@@ -331,12 +331,12 @@ version1.3.2
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | user_id             | unsigned int| NO   | PRI | NULL    | AUTO  | 用户ID, 主键索引, 自增长
-    | user_name           | varchar(50) | NO   |     | NULL    |       | 用户账户名
-    | uk_user_name        | varchar(50) | NO   | UNQ | NULL    |       | 索引: user_name
-    | user_password       | varchar(50) | NO   |     | NULL    |       | 用户密码
-    | user_gmt_create     | datetime    | NO   |     | NULL    |       | 用户注册时间
-    | user_gmt_modified   | datetime    | NO   |     | NULL    |       | 用户账户修改时间
+    | userId             | unsigned int| NO   | PRI | NULL    | AUTO  | 用户ID, 主键索引, 自增长
+    | userName           | varchar(50) | NO   |     | NULL    |       | 用户账户名
+    | uk_user_name        | varchar(50) | NO   | UNQ | NULL    |       | 索引: userName
+    | userPassword       | varchar(50) | NO   |     | NULL    |       | 用户密码
+    | userGmtCreate     | datetime    | NO   |     | NULL    |       | 用户注册时间
+    | userGmtModified   | datetime    | NO   |     | NULL    |       | 用户账户修改时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ○用户信息表: user_property
@@ -345,15 +345,15 @@ version1.3.2
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | user_id             | unsigned int| NO   | PRI | NULL    |       | 用户ID, 主键索引. 关联user
-    | property_nickname   | varchar(30) | YES  |     | NULL    |       | 用户昵称
-    | property_signature  | varchar(50) | YES  |     | NULL    |       | 用户签名
+    | userId             | unsigned int| NO   | PRI | NULL    |       | 用户ID, 主键索引. 关联user
+    | propertyNickname   | varchar(30) | YES  |     | NULL    |       | 用户昵称
+    | propertySignature  | varchar(50) | YES  |     | NULL    |       | 用户签名
     | property_sex        | varchar(10) | YES  |     | NULL    |       | 用户性别
-    | property_email      | varchar(30) | YES  |     | NULL    |       | 用户邮箱
-    | property_Location   | varchar(30) | YES  |     | NULL    |       | 用户地址
-    | property_birthday   | unsigned int| YES  |     | NULL    |       | 用户生日
-    | property_gmt_create | datetime    | NO   |     | NULL    |       | 用户第一次设置信息
-    | property_gmt_modified|datetime    | NO   |     | NULL    |       | 用户修改信息时间
+    | propertyEmail      | varchar(30) | YES  |     | NULL    |       | 用户邮箱
+    | propertyLocation   | varchar(30) | YES  |     | NULL    |       | 用户地址
+    | propertyBirthday   | unsigned int| YES  |     | NULL    |       | 用户生日
+    | propertyGmtCreate | datetime    | NO   |     | NULL    |       | 用户第一次设置信息
+    | propertyGmtModified|datetime    | NO   |     | NULL    |       | 用户修改信息时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ○用户头像表: user_icon
@@ -362,10 +362,10 @@ version1.3.2
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | user_id             | unsigned int| NO   | PRI | NULL    |       | 用户ID
-    | icon_path           | varchar(200)| NO   |     | NULL    |       | 用户头像图片存储路径
-    | icon_gmt_create     | datetime    | NO   |     | NULL    |       | 创建时间
-    | icon_gmt_modified   | datetime    | NO   |     | NULL    |       | 修改时间
+    | userId             | unsigned int| NO   | PRI | NULL    |       | 用户ID
+    | iconPath           | varchar(200)| NO   |     | NULL    |       | 用户头像图片存储路径
+    | iconGmtCreate     | datetime    | NO   |     | NULL    |       | 创建时间
+    | iconGmtModified   | datetime    | NO   |     | NULL    |       | 修改时间
     +---------------------+-------------+------+-----+---------+-------+
 
 ------------------------------------------------------------------------
@@ -384,8 +384,8 @@ version1.3.2
     | image_path          | varchar(200)| NO   |     | NULL    |       | 图片路径
     | is_deleted          | unsigned tinyint NO|     | NULL    |       | 图片是否删除 1是 0否
     | idx_is_deleted      | unsigned tinyint NO|     | NULL    |       | 索引: isdeleted
-    | user_id             | unsigned int| NO   |     | NULL    |       | 所属user_id
-    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
+    | userId             | unsigned int| NO   |     | NULL    |       | 所属user_id
+    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: userId
     | image_gmt_create    | datetime    | NO   |     | NULL    |       | 图片上传日期
     | image_gmt_modified  | datetime    | NO   |     | NULL    |       | 图片修改日期
     +---------------------+-------------+------+-----+---------+-------+
@@ -399,8 +399,8 @@ version1.3.2
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
     | image_id            | unsigned int| NO   | PRI | NULL    |       | 图片ID
-    | user_id             | unsigned int| NO   |     | NULL    |       | 图片所属user_id
-    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
+    | userId             | unsigned int| NO   |     | NULL    |       | 图片所属user_id
+    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: userId
     | image_class         | unsigned int| NO   |     | NULL    |       | 图片所属类别id
     | idx_image_class     | unsigned int| NO   | IDX | NULL    |       | 索引: image_id
     | type_gmt_create     | datetime    | NO   |     | NULL    |       | 创建时间
@@ -413,7 +413,7 @@ version1.3.2
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | image_class_id      | unsigned int| NO   | PRI | NULL    | AUTO  | 图片类别id
+    | imageClassId      | unsigned int| NO   | PRI | NULL    | AUTO  | 图片类别id
     | image_class_name    | varchar(20) | NO   |     | NULL    |       | 图片类别name
     | image_class_desc    | varchar(200)| YES  |     | NULL    |       | 图片类别描述
     | class_gmt_create    | datetime    | NO   |     | NULL    |       | 创建时间
@@ -443,14 +443,14 @@ version1.3.2
     +---------------------+-------------+------+-----+---------+-------+
     | Field               | Type        | Null | Key | Default | Extra |
     +---------------------+-------------+------+-----+---------+-------+
-    | diary_id            | unsigned int| NO   | PRI | NULL    | AUTO  | 日记ID, 自增长
-    | diary_name          | varchar(200)| NO   |     | NULL    |       | 日记名称
-    | idx_diary_name      | varchar(200)| NO   | IDX | NULL    |       | 索引: diary_name
+    | diaryId            | unsigned int| NO   | PRI | NULL    | AUTO  | 日记ID, 自增长
+    | diaryName          | varchar(200)| NO   |     | NULL    |       | 日记名称
+    | idx_diary_name      | varchar(200)| NO   | IDX | NULL    |       | 索引: diaryName
     | diary_text          | text        | NO   |     | NULL    |       | 日记内容
     | is_deleted          | unsigned tinyint NO|     | NULL    |       | 日记是否删除
     | idx_is_deleted      | unsigned tinyint NO| IDX | NULL    |       | 索引: 日记是否删除
-    | user_id             | unsigned int| NO   |     | NULL    |       | 所属user_id
-    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: user_id
+    | userId             | unsigned int| NO   |     | NULL    |       | 所属user_id
+    | idx_user_id         | unsigned int| NO   | IDX | NULL    |       | 索引: userId
     | diary_gmt_create    | datetime    | NO   |     | NULL    |       | 日记上传日期
     | diary_gmt_modified  | datetime    | NO   |     | NULL    |       | 日记修改日期
     +---------------------+-------------+------+-----+---------+-------+
@@ -509,7 +509,7 @@ version1.3.2
     +-------------------+
     | UserPropertyDTO   | 用户资料
     +-------------------+
-    | user_id           |
+    | userId           |
     | nickname          |
     | signature         |
     | email             |
@@ -597,45 +597,45 @@ version1.3.2
     +-------------------+
     | AdminDO           |
     +-------------------+
-    | admin_id          | DB
-    | admin_name        | VO
-    | admin_password    | VO
-    | admin_level       | VO
-    | admin_gmt_create  | DAO
-    | admin_gmt_modified| DAO
+    | adminId          | DB
+    | adminName        | VO
+    | adminPassword    | VO
+    | adminLevel       | VO
+    | adminGmtCreate  | DAO
+    | adminGmtModified| DAO
     +-------------------+
 
     +-------------------+
     | UserDO            |
     +-------------------+
-    | user_id           | DB
-    | user_name         | VO
-    | user_password     | VO
-    | user_gmt_create   | DAO
-    | user_gmt_modified | DAO
+    | userId           | DB
+    | userName         | VO
+    | userPassword     | VO
+    | userGmtCreate   | DAO
+    | userGmtModified | DAO
     +-------------------+
 
     +-------------------+
     | UserPropertyDO    |
     +-------------------+
-    | user_id           | VO
-    | property_nickname | VO
-    | property_signature| VO
-    | property_email    | VO
+    | userId           | VO
+    | propertyNickname | VO
+    | propertySignature| VO
+    | propertyEmail    | VO
     | property_sex      | VO
-    | property_Location | VO
-    | property_birthday | VO
-    | property_gmt_create   DAO
-    | property_gmt_modified DAO
+    | propertyLocation | VO
+    | propertyBirthday | VO
+    | propertyGmtCreate   DAO
+    | propertyGmtModified DAO
     +-------------------+
 
     +-------------------+
     | UserIconDO        |
     +-------------------+
-    | user_id           | VO
-    | icon_path         | VO
-    | icon_gmt_create   | DAO
-    | icon_gmt_modified | DAO
+    | userId           | VO
+    | iconPath         | VO
+    | iconGmtCreate   | DAO
+    | iconGmtModified | DAO
     +-------------------+
 
     +-------------------+
@@ -645,7 +645,7 @@ version1.3.2
     | image_text        | VO
     | image_path        | VO
     | is_deleted        | DAO
-    | user_id           | VO
+    | userId           | VO
     | image_gmt_create  | DAO
     | image_gmt_modified| DAO
     +-------------------+
@@ -654,7 +654,7 @@ version1.3.2
     | ImageTypeDO       |
     +-------------------+
     | image_id          | VO
-    | user_id           | VO
+    | userId           | VO
     | image_class       | VO
     | type_gmt_create   | DAO
     | type_gmt_modified | DAO
@@ -663,7 +663,7 @@ version1.3.2
     +-------------------+
     | ImageClassDO      |
     +-------------------+
-    | image_class_id    | VO
+    | imageClassId    | VO
     | image_class_name  | VO
     | image_class_desc  | VO
     | class_gmt_create  | DAO
@@ -683,11 +683,11 @@ version1.3.2
     +-------------------+
     | DiaryDO           |
     +-------------------+
-    | diary_id          | VO
-    | diary_name        | VO
+    | diaryId          | VO
+    | diaryName        | VO
     | diary_text        | VO
     | is_deleted        | DAO
-    | user_id           | VO
+    | userId           | VO
     | diary_gmt_create  | DAO
     | diary_gmt_modified| DAO
     +-------------------+
@@ -769,7 +769,7 @@ version1.3.2
     | 资料查询--查询user_property  :   queryUserProperty()                        --UserPropertyDAO
                查询user_icon  :       queryUserIcon()                           --UserIconDAO
 
-    | 密码更新--更新user  :            updateUserPassword(user_password)          --UserDAO
+    | 密码更新--更新user  :            updateUserPassword(userPassword)          --UserDAO
 
     | 头像更新--更新user_icon  :        updateUserIcon(usericonDO)                --UserIconDAO
 
@@ -866,8 +866,8 @@ version1.3.2
     | AdminDAO          |
     +-------------------+
     | 注册--插入admin :insertAdmin()    --参数 :AdminDO    --返回 :主键admin_id
-    | 登录--获取admin :queryAdmin()    --参数 :admin_name    --返回 :AdminDO
-    | 注册--判断用户是否存在  :isAdminExisted()    --参数 :admin_name    --返回 :boolean
+    | 登录--获取admin :queryAdmin()    --参数 :adminName    --返回 :AdminDO
+    | 注册--判断用户是否存在  :isAdminExisted()    --参数 :adminName    --返回 :boolean
     +-------------------+
 
     +-------------------+
@@ -875,7 +875,7 @@ version1.3.2
     +-------------------+
     | 登录--获取user  :               queryUser()
     | 注册--插入user  :               insertUser(UserDO)
-    | 密码更新--更新user  :            updateUserPassword(user_password)
+    | 密码更新--更新user  :            updateUserPassword(userPassword)
     +-------------------+
 
     +-------------------+
@@ -899,15 +899,15 @@ version1.3.2
     | 图片删除--删除image              deleteImage()
     | 图片文本内容更新--更新image_text   updateImageText()
     | 图片单个查询--查询image          queryImage(image_name/image_id)
-    | 图片全部集合查询--查询image       queryImageList(user_id)
-    | 图片分类集合查询--查询image       queryImageClass(user_id,class_id)
+    | 图片全部集合查询--查询image       queryImageList(userId)
+    | 图片分类集合查询--查询image       queryImageClass(userId,class_id)
     +-------------------+
 
     +-------------------+
     | ImageTypeDAO      |
     +-------------------+
     | 图片上传--插入图片类别信息        insertImageType()
-    | 图片分类集合查询--查询某类别下的image   queryImageByClass(user_id,class_id)
+    | 图片分类集合查询--查询某类别下的image   queryImageByClass(userId,class_id)
     +-------------------+
 
     +-------------------+

@@ -20,5 +20,5 @@ public interface Service {
      * @param resp response 响应
      * @return ServiceResult 执行结果
      */
-    public  ServiceResult execute(HttpServletRequest req, HttpServletResponse resp);
+    ServiceResult execute(HttpServletRequest req, HttpServletResponse resp);
 }

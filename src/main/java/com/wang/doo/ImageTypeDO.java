@@ -7,49 +7,63 @@ package com.wang.doo;
  */
 public class ImageTypeDO {
 
-    private int image_id;
-    private int user_id;
-    private int image_class;
-    private String type_gmt_create;
-    private String type_gmt_modified;
+    private Integer imageId;
+    private Integer userId;
+    private Integer classId;
+    private String typeGmtCreate;
+    private String typeGmtModified;
 
-    public int getImage_id() {
-        return image_id;
+    public Integer getImageId() {
+        return imageId;
     }
 
-    public void setImage_id(int image_id) {
-        this.image_id = image_id;
+    public void setImageId(Integer imageId) {
+        this.imageId = imageId;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public int getImage_class() {
-        return image_class;
+    public Integer getClassId() {
+        return classId;
     }
 
-    public void setImage_class(int image_class) {
-        this.image_class = image_class;
+    public void setClassId(Integer classId) {
+        this.classId = classId;
     }
 
-    public String getType_gmt_create() {
-        return type_gmt_create;
+    public String getTypeGmtCreate() {
+        return typeGmtCreate;
     }
 
-    public void setType_gmt_create(String type_gmt_create) {
-        this.type_gmt_create = type_gmt_create;
+    public void setTypeGmtCreate(String typeGmtCreate) {
+        this.typeGmtCreate = typeGmtCreate;
     }
 
-    public String getType_gmt_modified() {
-        return type_gmt_modified;
+    public String getTypeGmtModified() {
+        return typeGmtModified;
     }
 
-    public void setType_gmt_modified(String type_gmt_modified) {
-        this.type_gmt_modified = type_gmt_modified;
+    public void setTypeGmtModified(String typeGmtModified) {
+        this.typeGmtModified = typeGmtModified;
+    }
+
+    /**
+     * @return ImageTypeDO@1234{ImageID:'',UserID:'',ClassID:'',Create:'',Modified:''}
+     */
+    @Override
+    public String toString() {
+        return "UserDO@" + imageId
+                + "{ImageID:" + imageId
+                + ",UserID:" + userId
+                + ",ClassID:" + classId
+                + ",Create:" + typeGmtCreate
+                + ",Modified:" + typeGmtModified
+                + "}";
     }
 }

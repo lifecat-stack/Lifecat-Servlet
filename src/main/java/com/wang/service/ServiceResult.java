@@ -13,15 +13,16 @@ import com.wang.util.MyBuilder;
  */
 public class ServiceResult {
 
-    private final boolean error;
+    private final boolean success;
     private final String page;
     private final String errormsg;
 
     private ServiceResult(Builder builder) {
-        this.error = builder.error;
+        this.success = builder.success;
         this.page = builder.page;
         this.errormsg = builder.errormsg;
     }
+
 
     /**
      * Builder: ModelResult构建器
@@ -30,14 +31,14 @@ public class ServiceResult {
      */
     protected static class Builder implements MyBuilder<ServiceResult> {
 
-        private final boolean error;
+        private final boolean success;
 
         //page: 默认指向index界面
         private String errormsg = "null";
         private String page = HOST.PAGE_INDEX;
 
-        protected Builder(boolean error) {
-            this.error = error;
+        protected Builder(boolean success) {
+            this.success = success;
         }
 
         protected ServiceResult.Builder errormsg(String errormsg) {
@@ -59,7 +60,7 @@ public class ServiceResult {
     //ServiceResult@{isSuccess:true,page:'http:...index.jsp',errormsg:'null'}
     @Override
     public String toString() {
-        return "ServiceResult@{isSuccess:" + error + ",page:" + page + ",errormsg:" + errormsg + "}";
+        return "ServiceResult@{isSuccess:" + success + ",page:" + page + ",errormsg:" + errormsg + "}";
     }
 
     //getter
@@ -67,9 +68,10 @@ public class ServiceResult {
         return errormsg;
     }
 
-    public Boolean isError() {
-        return error;
+  public boolean isSuccess() {
+        return success;
     }
+
 
     public String getPage() {
         return page;

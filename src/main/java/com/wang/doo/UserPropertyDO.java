@@ -7,76 +7,102 @@ package com.wang.doo;
  */
 public class UserPropertyDO {
 
-    private int user_id;
-    private String property_nickname;
-    private String property_signature;
-    private String property_email;
-    private String property_Location;
-    private String property_birthday;
-    private String property_gmt_create;
-    private String property_gmt_modified;
+    private Integer userId;
+    private String propertyNickname;
+    private String propertySignature;
+    private String propertySex;
+    private String propertyEmail;
+    private String propertyLocation;
+    private String propertyBirthday;
+    private String propertyGmtCreate;
+    private String propertyGmtModified;
 
-    public int getUser_id() {
-        return user_id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getProperty_nickname() {
-        return property_nickname;
+    public String getPropertyNickname() {
+        return propertyNickname;
     }
 
-    public void setProperty_nickname(String property_nickname) {
-        this.property_nickname = property_nickname;
+    public void setPropertyNickname(String propertyNickname) {
+        this.propertyNickname = propertyNickname;
     }
 
-    public String getProperty_signature() {
-        return property_signature;
+    public String getPropertySignature() {
+        return propertySignature;
     }
 
-    public void setProperty_signature(String property_signature) {
-        this.property_signature = property_signature;
+    public void setPropertySignature(String propertySignature) {
+        this.propertySignature = propertySignature;
     }
 
-    public String getProperty_email() {
-        return property_email;
+    public String getPropertySex() {
+        return propertySex;
     }
 
-    public void setProperty_email(String property_email) {
-        this.property_email = property_email;
+    public void setPropertySex(String propertySex) {
+        this.propertySex = propertySex;
+    }
+    public String getPropertyEmail() {
+        return propertyEmail;
     }
 
-    public String getProperty_Location() {
-        return property_Location;
+    public void setPropertyEmail(String propertyEmail) {
+        this.propertyEmail = propertyEmail;
     }
 
-    public void setProperty_Location(String property_Location) {
-        this.property_Location = property_Location;
+    public String getPropertyLocation() {
+        return propertyLocation;
     }
 
-    public String getProperty_birthday() {
-        return property_birthday;
+    public void setPropertyLocation(String propertyLocation) {
+        this.propertyLocation = propertyLocation;
     }
 
-    public void setProperty_birthday(String property_birthday) {
-        this.property_birthday = property_birthday;
+    public String getPropertyBirthday() {
+        return propertyBirthday;
     }
 
-    public String getProperty_gmt_create() {
-        return property_gmt_create;
+    public void setPropertyBirthday(String propertyBirthday) {
+        this.propertyBirthday = propertyBirthday;
     }
 
-    public void setProperty_gmt_create(String property_gmt_create) {
-        this.property_gmt_create = property_gmt_create;
+    public String getPropertyGmtCreate() {
+        return propertyGmtCreate;
     }
 
-    public String getProperty_gmt_modified() {
-        return property_gmt_modified;
+    public void setPropertyGmtCreate(String propertyGmtCreate) {
+        this.propertyGmtCreate = propertyGmtCreate;
     }
 
-    public void setProperty_gmt_modified(String property_gmt_modified) {
-        this.property_gmt_modified = property_gmt_modified;
+    public String getPropertyGmtModified() {
+        return propertyGmtModified;
+    }
+
+    public void setPropertyGmtModified(String propertyGmtModified) {
+        this.propertyGmtModified = propertyGmtModified;
+    }
+
+    /**
+     * @return UserPropertyDO@1234{UserID:'',Nickname:'',Signature:'',Sex:'',Email:'',Location:'',Birthday :'',Create:'',Modified:''}
+     */
+    @Override
+    public String toString() {
+        return "UserDO@" + userId
+                + "{UserID:" + userId
+                + ",Nickname:" + propertyNickname
+                + ",Signature:" + propertySignature
+                + ",Sex:" + propertySex
+                + ",Email:" + propertyEmail
+                + ",Location:" + propertyLocation
+                + ",Birthday:" + propertyBirthday
+                + ",Create:" + propertyGmtCreate
+                + ",Modified:" + propertyGmtModified
+                + "}";
     }
 }

@@ -7,40 +7,55 @@ package com.wang.doo;
  */
 public class UserIconDO {
 
-    private int user_id;
-    private String icon_path;
-    private String icon_gmt_create;
-    private String icon_gmt_modified;
+    private Integer userId;
+    private String iconPath;
+    private String iconGmtCreate;
+    private String iconGmtModified;
 
-    public int getUser_id() {
-        return user_id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getIcon_path() {
-        return icon_path;
+    public String getIconPath() {
+        return iconPath;
     }
 
-    public void setIcon_path(String icon_path) {
-        this.icon_path = icon_path;
+    public void setIconPath(String iconPath) {
+        this.iconPath = iconPath;
     }
 
-    public String getIcon_gmt_create() {
-        return icon_gmt_create;
+    public String getIconGmtCreate() {
+        return iconGmtCreate;
     }
 
-    public void setIcon_gmt_create(String icon_gmt_create) {
-        this.icon_gmt_create = icon_gmt_create;
+    public void setIconGmtCreate(String iconGmtCreate) {
+        this.iconGmtCreate = iconGmtCreate;
     }
 
-    public String getIcon_gmt_modified() {
-        return icon_gmt_modified;
+    public String getIconGmtModified() {
+        return iconGmtModified;
     }
 
-    public void setIcon_gmt_modified(String icon_gmt_modified) {
-        this.icon_gmt_modified = icon_gmt_modified;
+    public void setIconGmtModified(String iconGmtModified) {
+        this.iconGmtModified = iconGmtModified;
+    }
+
+    /**
+     * @return UserIconDO@1234{UserID:'',Path:'',Create:'',Modified:''}
+     */
+    @Override
+    public String toString() {
+        return "UserIconDO@" + userId
+                + "{UserID:" + userId
+                + ",Path:" + iconPath
+                + ",Create:" + iconGmtCreate
+                + ",Modified:" + iconGmtModified
+                + "}";
     }
 }
+
+

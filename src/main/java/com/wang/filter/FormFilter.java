@@ -2,7 +2,7 @@ package com.wang.filter;
 
 import com.wang.form.Form;
 import com.wang.form.FormResult;
-import com.wang.form.FormSelector;
+import com.wang.form.FormFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -53,7 +53,7 @@ public class FormFilter implements Filter {
         logger.info("form filter request url: {}", url);
 
         // 2. 获取对应form对象
-        Form form = FormSelector.select(url);
+        Form form = FormFactory.getFormByName(url);
 
         if (form != null) {
             // 3. 执行validate(),获取返回结果
@@ -65,9 +65,10 @@ public class FormFilter implements Filter {
             }
 
             // 验证未通过
-            logger.warn("form filter failure");
+            logger.warn("Form Filter Failure");
+            request.setAttribute("formResult", result);
 
-            request.setAttribute("formresult", result);
+            // TODO:(ten, 2018-05, 2018-05) 页面转发到请求界面
             request.getRequestDispatcher(String.valueOf(request.getRequestURL())).forward(req, resp);
         }
 
@@ -75,20 +76,18 @@ public class FormFilter implements Filter {
     }
 
     /**
-     * com.wang.filter.init()
-     *
-     * @throws ServletException com.wang.filter init failure
+     * init()
      */
     @Override
-    public void init(FilterConfig arg0) throws ServletException {
-        logger.config("FormFilter init()");
+    public void init(FilterConfig arg0) {
+        logger.info("FormFilter init()");
     }
 
     /**
-     * com.wang.filter.destroy()
+     * destroy()
      */
     @Override
     public void destroy() {
-        logger.config("FormFilter destroy()");
+        logger.info("FormFilter destroy()");
     }
 }

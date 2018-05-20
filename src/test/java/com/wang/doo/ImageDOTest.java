@@ -23,141 +23,171 @@ public void after() throws Exception {
 
 /** 
 * 
-* Method: getImage_id() 
+* Method: getImageId() 
 * 
 */ 
 @Test
-public void testGetImage_id() throws Exception { 
+public void testGetImageId() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: setImage_id(int image_id) 
+* Method: setImageId(Integer imageId) 
 * 
 */ 
 @Test
-public void testSetImage_id() throws Exception { 
+public void testSetImageId() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: getUser_id() 
+* Method: getUserId() 
 * 
 */ 
 @Test
-public void testGetUser_id() throws Exception { 
+public void testGetUserId() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: setUser_id(int user_id) 
+* Method: setUserId(Integer userId) 
 * 
 */ 
 @Test
-public void testSetUser_id() throws Exception { 
+public void testSetUserId() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: getImage_text() 
+* Method: getClassId() 
 * 
 */ 
 @Test
-public void testGetImage_text() throws Exception { 
+public void testGetClassId() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: setImage_text(String image_text) 
+* Method: setClassId(Integer classId) 
 * 
 */ 
 @Test
-public void testSetImage_text() throws Exception { 
+public void testSetClassId() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: getImage_path() 
+* Method: getImageText() 
 * 
 */ 
 @Test
-public void testGetImage_path() throws Exception { 
+public void testGetImageText() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: setImage_path(String image_path) 
+* Method: setImageText(String imageText) 
 * 
 */ 
 @Test
-public void testSetImage_path() throws Exception { 
+public void testSetImageText() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: getIs_deleted() 
+* Method: getImagePath() 
 * 
 */ 
 @Test
-public void testGetIs_deleted() throws Exception { 
+public void testGetImagePath() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: setIs_deleted(String is_deleted) 
+* Method: setImagePath(String imagePath) 
 * 
 */ 
 @Test
-public void testSetIs_deleted() throws Exception { 
+public void testSetImagePath() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: getImage_gmt_create() 
+* Method: getDeleted() 
 * 
 */ 
 @Test
-public void testGetImage_gmt_create() throws Exception { 
+public void testGetDeleted() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: setImage_gmt_create(String image_gmt_create) 
+* Method: setDeleted(String deleted) 
 * 
 */ 
 @Test
-public void testSetImage_gmt_create() throws Exception { 
+public void testSetDeleted() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: getImage_gmt_modified() 
+* Method: getImageGmtCreate() 
 * 
 */ 
 @Test
-public void testGetImage_gmt_modified() throws Exception { 
+public void testGetImageGmtCreate() throws Exception { 
 //TODO: Test goes here... 
 } 
 
 /** 
 * 
-* Method: setImage_gmt_modified(String image_gmt_modified) 
+* Method: setImageGmtCreate(String imageGmtCreate) 
 * 
 */ 
 @Test
-public void testSetImage_gmt_modified() throws Exception { 
+public void testSetImageGmtCreate() throws Exception { 
+//TODO: Test goes here... 
+} 
+
+/** 
+* 
+* Method: getImageGmtModified() 
+* 
+*/ 
+@Test
+public void testGetImageGmtModified() throws Exception { 
+//TODO: Test goes here... 
+} 
+
+/** 
+* 
+* Method: setImageGmtModified(String imageGmtModified) 
+* 
+*/ 
+@Test
+public void testSetImageGmtModified() throws Exception { 
+//TODO: Test goes here... 
+} 
+
+/** 
+* 
+* Method: toString() 
+* 
+*/ 
+@Test
+public void testToString() throws Exception { 
 //TODO: Test goes here... 
 } 
 

@@ -7,18 +7,18 @@ package com.wang.doo;
  */
 public class ImageClassDO {
 
-    private int image_class_id;
+    private int imageClassId;
     private String image_class_name;
     private String image_class_desc;
     private String class_gmt_create;
     private String class_gmt_modified;
 
-    public int getImage_class_id() {
-        return image_class_id;
+    public int getImageClassId() {
+        return imageClassId;
     }
 
-    public void setImage_class_id(int image_class_id) {
-        this.image_class_id = image_class_id;
+    public void setImageClassId(int imageClassId) {
+        this.imageClassId = imageClassId;
     }
 
     public String getImage_class_name() {
