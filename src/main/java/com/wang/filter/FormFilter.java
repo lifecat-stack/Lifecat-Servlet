@@ -60,13 +60,13 @@ public class FormFilter implements Filter {
             FormResult result = form.validate(request);
 
             // 5. 验证通过
-            if (!result.isSuccess()) {
+            if (result.isSuccess()) {
                 chain.doFilter(req, resp);
             }
 
+            // 验证未通过
+            logger.warn("form filter failure");
 
-
-            //验证未通过
             request.setAttribute("formresult", result);
             request.getRequestDispatcher(String.valueOf(request.getRequestURL())).forward(req, resp);
         }
