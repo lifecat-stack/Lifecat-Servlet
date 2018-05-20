@@ -1,5 +1,7 @@
 package com.wang.daoimpl;
 
+import com.wang.dao.DAO;
+
 /**
  * DAOFactory :
  * <p>

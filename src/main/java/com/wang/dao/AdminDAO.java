@@ -9,7 +9,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-interface AdminDAO {
+public interface AdminDAO {
     /**
      * 注册 :
      * 插入AdminDO到admin表

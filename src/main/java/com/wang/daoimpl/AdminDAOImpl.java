@@ -1,6 +1,7 @@
 package com.wang.daoimpl;
 
 import com.wang.dao.AdminDAO;
+import com.wang.dao.DAO;
 import com.wang.doo.AdminDO;
 import com.wang.util.Connections;
 

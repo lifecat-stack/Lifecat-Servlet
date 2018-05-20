@@ -9,7 +9,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-interface UserDAO {
+public interface UserDAO {
     /**
      * 注册 :
      * 插入UserDO到user表

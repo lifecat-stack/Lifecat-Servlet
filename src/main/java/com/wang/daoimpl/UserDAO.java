@@ -1,6 +1,7 @@
 package com.wang.daoimpl;
 
 import com.wang.bean.User;
+import com.wang.dao.DAO;
 import com.wang.util.Connections;
 
 import java.sql.Connection;

@@ -1,6 +1,8 @@
 package com.wang.daoimpl;
 
 import com.wang.bean.UserMsg;
+import com.wang.dao.DAO;
+import com.wang.doo.UserPropertyDO;
 import com.wang.util.Connections;
 
 import java.sql.Connection;
@@ -21,7 +23,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public class UserPropertyDAO implements DAO {
+public class UserPropertyDAO implements DAO, com.wang.dao.UserPropertyDAO {
 
     private UserPropertyDAO() {
     }
@@ -70,19 +72,7 @@ public class UserPropertyDAO implements DAO {
      */
     public void insertUserMsg(UserMsg usermsg) throws SQLException {
 
-        String sql = "insert into usermsg(user_id,nickname,age,sex,birthday,email) values(?,?,?,?,?,?)";
 
-        Connection connection = Connections.getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-        preparedStatement.setInt(1, usermsg.getUser_id());
-        preparedStatement.setString(2, usermsg.getNickname());
-        preparedStatement.setString(3, usermsg.getAge());
-        preparedStatement.setString(4, usermsg.getSex());
-        preparedStatement.setString(5, usermsg.getBirthday());
-        preparedStatement.setString(6, usermsg.getEmail());
-
-        preparedStatement.executeUpdate();
     }
 
     /**
@@ -100,5 +90,32 @@ public class UserPropertyDAO implements DAO {
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
         preparedStatement.executeUpdate();
+    }
+
+    @Override
+    public void insertUserProperty(UserPropertyDO userPropertyDO) throws SQLException {
+        String sql = "insert into user_property(user_id,property_nickname,property_signature,property_sex," +
+                "property_email,property_Location,property_birthday,property_gmt_create,property_gmt_modified) " +
+                "values(?,?,?,?,?,?,?,?,?,?)";
+
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        preparedStatement.setInt(1, userPropertyDO.getUserId());
+        preparedStatement.setString(2, userPropertyDO.getPropertyNickname());
+        preparedStatement.setString(3, userPropertyDO.getPropertySignature());
+        preparedStatement.setString(4, userPropertyDO.getPropertySex());
+        preparedStatement.setString(5, userPropertyDO.getPropertyEmail());
+        preparedStatement.setString(6, userPropertyDO.getPropertyLocation());
+        preparedStatement.setString(6, userPropertyDO.getPropertyBirthday());
+        preparedStatement.setString(6, userPropertyDO.getPropertyGmtCreate());
+        preparedStatement.setString(6, userPropertyDO.getPropertyGmtModified());
+
+        preparedStatement.executeUpdate();
+    }
+
+    @Override
+    public UserPropertyDO queryUserProperty(int userId) throws SQLException {
+        return null;
     }
 }

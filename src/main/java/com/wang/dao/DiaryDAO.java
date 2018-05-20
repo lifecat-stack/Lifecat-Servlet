@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @auther ten
  */
-interface DiaryDAO {
+public interface DiaryDAO {
     /**
      * 日记上传 :
      * 插入DiaryDO到diary表

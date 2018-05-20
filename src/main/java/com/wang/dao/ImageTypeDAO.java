@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @auther ten
  */
-interface ImageTypeDAO {
+public interface ImageTypeDAO {
     /**
      * 图片上传 :
      * 上传图片类别信息

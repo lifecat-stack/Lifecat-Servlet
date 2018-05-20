@@ -9,7 +9,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-interface UserIconDAO {
+public interface UserIconDAO {
     /**
      * 用户头像更新 :
      * 插入UserIconDO到user_icon表

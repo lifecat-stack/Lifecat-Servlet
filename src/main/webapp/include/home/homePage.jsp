@@ -266,7 +266,7 @@
 
                     </div>
                     <div class="col-md-10">
-                        <a href=imageshow.jsp><h2>成长相册:</h2></a>
+                        <a href=../../WEB-INF/imageshow.jsp><h2>成长相册:</h2></a>
                         <%--获取图片链接--%>
                         <%
                             //获取demo图片在服务器上的路径

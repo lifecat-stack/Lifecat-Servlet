@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" import="java.util.*" %>
 
-<%@include file="include/header.jsp" %>
-<%@include file="include/top.jsp" %>
+<%@include file="../include/header.jsp" %>
+<%@include file="../include/top.jsp" %>
 <script>
     function showPreview(obj) {
         var str=obj.value;
@@ -31,4 +31,4 @@
 </div>
 
 
-<%@include file="include/footer.jsp" %>
+<%@include file="../include/footer.jsp" %>

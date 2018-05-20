@@ -14,7 +14,7 @@
         margin: 0;
         font-size: 20px;
         text-align: center;
-        background: #000 url("img/back.jpg") repeat;
+        background: #000 url("../img/back.jpg") repeat;
         color: #656565;
     }
 
@@ -183,19 +183,19 @@
         <div id="side_menu">
             <div>
                 <a href="#">
-                    <img src="pics/1/class.jpg" alt="人物" onclick="change_div('part1')">
+                    <img src="../pics/1/class.jpg" alt="人物" onclick="change_div('part1')">
                 </a>
                 <span>人物</span>
             </div>
             <div>
                 <a href="#">
-                    <img src="pics/2/class.jpg" alt="风景" onclick="change_div('part2')">
+                    <img src="../pics/2/class.jpg" alt="风景" onclick="change_div('part2')">
                 </a>
                 <span>风景</span>
             </div>
             <div>
                 <a href="#">
-                    <img src="pics/3/class.jpg" alt="考试" onclick="change_div('part3')">
+                    <img src="../pics/3/class.jpg" alt="考试" onclick="change_div('part3')">
                 </a>
                 <span>考试</span>
             </div>

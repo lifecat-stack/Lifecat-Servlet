@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @auther ten
  */
-interface ImageDAO {
+public interface ImageDAO {
     /**
      * 图片上传 :
      * 插入ImageDO到image表

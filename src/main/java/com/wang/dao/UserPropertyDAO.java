@@ -6,10 +6,13 @@ import java.sql.SQLException;
 
 /**
  * dao - user property
+ * <p>
+ * 1. 插入数据
+ * 2. 查询数据
  *
  * @auther ten
  */
-interface UserPropertyDAO {
+public interface UserPropertyDAO {
     /**
      * 资料插入 :
      * 插入UserPropertyDO到user_property表

@@ -1,6 +1,8 @@
 package com.wang.daoimpl;
 
-public class ImageTypeDAO implements DAO{
+import com.wang.dao.DAO;
+
+public class ImageTypeDAO implements DAO {
      private ImageTypeDAO() {
     }
 

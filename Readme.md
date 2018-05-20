@@ -13,16 +13,20 @@ README
   * 相册主页 :http://111.230.244.153:8080/lifecatweb
 ******************************************************************************
   _@使用技术_
-  * 前端 :Html CSS JavaScript
-  * 前端框架 :bootstrap jQuery
-  * 后端 :jsp servlet jdbc
-  * 后端框架 :MVC-Model2 sturts设计理念
-  * 设计模式 :构建者模式 静态工厂模式 单例模式
-  * 单元测试 :Junit4
-  * 数据库 :MySql-mariadb
+  
+  |title|content|
+  |---|---
+  |前端|Html CSS JavaScript
+  |前端框架|bootstrap jQuery
+  |后端|jsp servlet jdbc
+  |后端框架|MVC mybatis 
+  |设计模式|构建者模式 静态工厂模式 单例模式
+  |项目管理|maven
+  |单元测试|Junit4
+  |数据库|MySql-mariadb
 ******************************************************************************
   _@Web目录_
-  * web
+  * webapp
     * include
       * home
         * homePage.jsp   // 用户主页body内容部件
@@ -39,32 +43,32 @@ README
 ******************************************************************************
   _@Java目录_
   * src
-    * main
-        * com.wang.openfunc      
+    * main.java.com.wang
+        * openfunc      
         //开放接口层 :接收Android端HTTP请求, 并返回请求结果
-        * com.wang.doo           
+        * doo           
         //DO包 :对应于数据库表结构, POJO类型
-        * com.wang.dto           
+        * dto           
         //DTO包 :数据传输对象, 对应逻辑实体，采用构建者模式 或 工厂模式
-        * com.wang.dao           
+        * dao           
         //DAO协议层 :定义了DAO层的协议, 接口层, 通过静态工厂获取
-        * com.wang.daoimpl           
+        * daoimpl           
         //DAO实现层 :通过具体实现, 执行数据库交互, 本例中实现了jdbc形式
-        * com.wang.manager       
+        * manager       
         //Manager层 :DAO层的抽象逻辑操作, Manager层通过静态工厂获取
-        * com.wang.filter        
+        * filter        
         //Filter过滤器 :对所有请求执行Encoding过滤, 对*.do请求执行Form表单过滤
-        * com.wang.form         
+        * form         
         //Form表单验证 :对相应表单执行过滤, 确保格式编码等, 返回Result
-        * com.wang.exfunc       
+        * exfunc       
         //外部接口 :通过java call shell方式, 调用本地python脚本, 执行机器学习操作
-        * com.wang.controller    
+        * controller    
         //Web层 :通过请求内容, 调用相应Service, 转发到Service并获取返回结果
-        * com.wang.service       
+        * service       
         //Service层 :执行具体业务逻辑, 并且通过try-catch处理底层抛出异常, 传输DTO到表现层
-        * com.wang.util         
+        * util         
         //工具类 :包括时间类, 连接类, 图片写入操作, 主机配置等
-    * test
+    * test.java.com.wang
         * Test          
         //单元测试
 *******************************************************************************
@@ -96,31 +100,66 @@ README
   ******************************************************************************
   _@请求流程分析_
   ![请求流程](请求流程图.png) 
-  ******************************************************************************
+******************************************************************************
+## 文档目录
+  * [项目规范](#项目规范) 
+    * [文档说明](#文档说明)
+    * [编程规约](#编程规约)
+      * [命名风格](#命名风格)
+      * [常量定义](#常量定义)
+      * [代码格式](#代码格式)
+      * [OOP规范](#OOP规范)
+      * [控制语句](#控制语句)
+      * [注释规约](#注释规约)
+    * [Java特性规约](#)
+      * [集合处理](#集合处理)
+      * [并发处理](#并发处理)
+    * [异常规范](#异常规范)
+      * [分层异常处理](#分层异常处理)
+      * [异常处理](#异常处理)
+    * [日志规约](#日志规约)
+      * [日志规约](#日志规约)
+    * [版本管理](#版本管理)
+    * [数据库分析](#数据库分析)
+      * [数据库范式](#数据库范式)
+      * [建表规约](#建表规约)
+      * [索引规范](#索引规范)
+      * [SQL语句](#SQL语句)
+      * [ORM映射](#ORM映射)
+  * [分层架构设计](#分层架构设计)  
+    * [DB层](#DB层)
+      * [数据库关系设计](#数据库关系设计)
+      * [数据库模块设计](#数据库模块设计)
+      * [数据库表设计](#数据库表设计)
+    * [View层](#View层)
+    * [Filter层](#Filter层)
+    * [Form层](#Form层)
+    * [Web层](#Web层)
+    * [Service层](#Service层)
+    * [Manager层](#Manager层)
+    * [DAO层](#DAO层)
+    * [DTO](#DTO)
+    * [DO](#DO)
+    * [Utils](#Utils)
+    * [Constant](#Constant)
+    * [Exfunc](#Exfunc)
+    * [Openfunc](#Openfunc)
+******************************************************************************
+## 项目规范
+
+******************************************************************************
 ### 文档说明
-#### 注释规约
-       * √ 1 :类、类属性、类方法使用Javadoc规范，不得使用//
-       * √ 2 :抽象方法、接口方法，必须用Javadoc注释
-              说明返回值、参数、异常、功能等
-       * √ 3 :类必须添加创建者和创建日期
-       * √ 4 :方法内部单行注释，在上方// ，多行注释 使用/* */
-       * √ 5 :枚举类型字段要有注释
-       * √ 6 :英文说不清楚，不如用中文
-       * √ 7 :修改代码时，要一起修改注释
-       * √ 8 :若注释掉代码，说明原因
-       * √ 9 :注释要明确，描述思路
-       * √ 10:力求精简准确，语义清晰就不用注释了
-       * √ 11:特殊注释   // TODO:(标记人，标记时间，预计处理时间)实际上是Javadoc标签
-                       // FIXME:(标记人，标记时间，预计处理时间)错误，不能工作
----
-    《Java开发手册》标记说明
+
+《Java开发手册》标记说明
+
     √ :项目中使用并遵循
     × :未使用规范
     ? :项目未使用或存疑
     ! :重要
     ps:补充
----  
-    《Effective Java》标记说明
+--------------------------------------------------------------------------------
+《Effective Java》标记说明
+
     * 第x条 XXXXX
 ********************************************************************************
 ### 编程规约:
@@ -246,6 +285,21 @@ README
               被循环调用的方法
               靠近底层的方法，如DAO，应在高层检验
               private只被自己调用的方法，若传入参数确定不会有问题
+#### 注释规约
+       * √ 1 :类、类属性、类方法使用Javadoc规范，不得使用//
+       * √ 2 :抽象方法、接口方法，必须用Javadoc注释
+              说明返回值、参数、异常、功能等
+       * √ 3 :类必须添加创建者和创建日期
+       * √ 4 :方法内部单行注释，在上方// ，多行注释 使用/* */
+       * √ 5 :枚举类型字段要有注释
+       * √ 6 :英文说不清楚，不如用中文
+       * √ 7 :修改代码时，要一起修改注释
+       * √ 8 :若注释掉代码，说明原因
+       * √ 9 :注释要明确，描述思路
+       * √ 10:力求精简准确，语义清晰就不用注释了
+       * √ 11:特殊注释   // TODO:(标记人，标记时间，预计处理时间)实际上是Javadoc标签
+                       // FIXME:(标记人，标记时间，预计处理时间)错误，不能工作
+
 ******************************************************************************
 ### Java特性规约
 #### 集合处理  
@@ -255,11 +309,11 @@ README
        * √ 1 :获取单例对象需要保证线程安全，其中的方法也要保证，如采用双重加锁机制
 ******************************************************************************
 ### 异常规范
-#### 分层异常处理:
+#### 分层异常处理
   * DAO层: 抛出细粒度异常
   * Manager层: 使用catch(Exception e)捕获所有异常, 并throw new DAOException(e), 不需打印日志
   * Service层: 捕获异常, 记录日志, 不可再向上抛出, 并进行错误页面处理
-#### 异常处理:  
+#### 异常处理 
        * √ 1 :能通过检查避免的运行时异常，要进行预检查
        * √ 2 :异常不要用来做流程控制、条件控制
        * √ 3 :catch分清稳定代码与非稳定代码，不要对大段无异常代码进行try-catch
@@ -277,9 +331,9 @@ README
        * √ 12:考虑使用Result方式，封装isSuccess()方法、“错误码”、“错误简短信息”
        * √ 13:避免出现重复代码，若修改，需修改所有副本，容易遗漏
               抽取共性方法，或者抽象公共类，或者将代码组件化
-  ******************************************************************************
+******************************************************************************
 ### 日志规约
-#### 日志规约:  
+#### 日志规约 
        * √ 1 :不可直接使用日志系统log4j等的API，应依赖使用日志框架SLF4J
               import org.slf4j.Logger;
               import org.slf4j.LogerFactory
@@ -297,7 +351,7 @@ README
               思考：这些日志真的有人看吗？这条日志能干什么？能解决问题吗？
        * √ 8 :可以使用warn记录用户参数输入错误，避免投诉
               error级别只记录系统逻辑出错，异常等重要信息
-  ******************************************************************************  
+******************************************************************************  
 ### 版本管理
 version1.1  
     --添加了logger  
@@ -322,53 +376,14 @@ version1.3.2
     --设计方法签名  
     --参数检查  
     --枚举类改进  
-  ******************************************************************************
+******************************************************************************
 ### 数据库分析
-#### 数据库范式:
+#### 数据库范式
     1NF - First Normal Form 符合1NF的关系中的每个属性都是原子的不可再分。
     2NF - Second Normal Form 满足1NF，数据库表中的每列都完全依赖于主键。
     3NF - Third Normal Form 满足2NF，要求一个数据库表中不包含已在其它表中已包含的非主关键字信息。
     BCNF - Boyce–Codd Normal Form 满足3NF，主属性内部不能部分或传递依赖
-#### 数据库关系:
-                 用户资料/头像
-                      ^
-                      |
-                      | 1
-                      | :
-                      | 1
-                      |
-                      v
-    管理员 < ------ > 用户 < ------ > 日记
-             N:N      ^      1:N
-                      |
-                      | 1
-                      | :
-                      | N
-                      |
-                      v
-                     图片 < ------ > 图片类别
-                             1:1
-#### 数据库模块:  
-    管理员模块: admin
-    属性: 管理员ID、用户名、密码...
-    唯一表示: ID、用户名
-    存储特点: 永久储存
-
-    用户模块: user
-    属性: 用户ID、用户名、密码、用户资料...
-    唯一表示: ID、用户名
-    存储特点: 永久储存
-
-    图片模块: image
-    属性: 用户ID、图片ID、图片日期、图片类别、图片描述...
-    唯一表示: 图片ID
-    存储特点: 永久储存
-
-    日记模块: diary
-    属性: 用户ID、日记ID、日记日期、日记名称、日记内容...
-    唯一表示: 日记ID
-    存储特点: 永久储存
-#### 建表规约:  
+#### 建表规约
        * √ 1 :字段若非负，必须是unsigned
        * √ 1 :表达是否概念，必须使用is_xxx方式，数据类型为unsigned tinyint(1是，0否)
        * √ 2 :数据库名、表名、字段名必须使用小写, mysql在linux下区分大小写
@@ -393,7 +408,7 @@ version1.3.2
           * unsigned smallint :   2    0~65535
           * unsigned int      :   4    0~2^32
           * unsigned bigint   :   8    0~2^64
-#### 索引规范:
+#### 索引规范
        * √ ps:必须为主键创建主键索引
        * √!1 :业务上具有唯一特性的字段，必须建成唯一索引
        * ? 2 :尽量少用join, 注意索引注意性能
@@ -416,7 +431,7 @@ version1.3.2
            * 主键索引pk_xxx  :primary key
            * 唯一索引uk_xxx  :unique key
            * 普通索引idx_xxx :index
-#### SQL语句:
+#### SQL语句
        * √ 1 :使用count(*)--SQL标准, 与数据库无关; 若使用count(列名)或count(常量), 不会统计NULL行
        * ? 2 :count(distinct col)计算该列除NULL外的不重复列数, 若出现NULL, 则不统计
        * ? 3 :当一列的值全为NULL, count(col)返回结果为0, sum(col)返回结果为NULL
@@ -436,7 +451,7 @@ version1.3.2
        * √ 10:全球化，使用utf-8编码
            * SELECT LENGTH("数据库"); ==12
            * SELECT CHARCTER_LENGTH("数据库"); ==3
-#### ORM映射:
+#### ORM映射
        * √ 1 :在表查询中，一律不要使用*作为查询的字段列表，需要哪些字段必须明确写明
             * 增加查询分析器解析成本
             * ? 增减字段容易与resultMap配置不一致
@@ -452,9 +467,55 @@ version1.3.2
        * ? 9 :@Transactional事务 ?
        * ? 10:<isEqual> ?
 ------------------------------------------------------------------------
-### 数据库设计:            
-    数据库 :lifecat
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+## 分层架构设计 
+[回到顶部](#readme)  
 
+------------------------------------------------------------------------
+### DB层 数据库表结构 设计  
+[回到顶部](#readme)   
+数据库 :lifecat
+#### 数据库关系设计
+                 用户资料/头像
+                      ^
+                      |
+                      | 1
+                      | :
+                      | 1
+                      |
+                      v
+    管理员 < ------ > 用户 < ------ > 日记
+             N:N      ^      1:N
+                      |
+                      | 1
+                      | :
+                      | N
+                      |
+                      v
+                     图片 < ------ > 图片类别
+                             1:1
+#### 数据库模块设计
+    管理员模块: admin
+    属性: 管理员ID、用户名、密码...
+    唯一表示: ID、用户名
+    存储特点: 永久储存
+
+    用户模块: user
+    属性: 用户ID、用户名、密码、用户资料...
+    唯一表示: ID、用户名
+    存储特点: 永久储存
+
+    图片模块: image
+    属性: 用户ID、图片ID、图片日期、图片类别、图片描述...
+    唯一表示: 图片ID
+    存储特点: 永久储存
+
+    日记模块: diary
+    属性: 用户ID、日记ID、日记日期、日记名称、日记内容...
+    唯一表示: 日记ID
+    存储特点: 永久储存   
+#### 数据库表设计     
     +-------------------+
     | Tables_in_lifecat |
     +-------------------+
@@ -620,7 +681,223 @@ version1.3.2
     | diary_gmt_modified  | datetime    | NO   |     | NULL    |       | 日记修改日期
     +---------------------+-------------+------+-----+---------+-------+
 ------------------------------------------------------------------------
+### View层 终端显示层 设计 
+[回到顶部](#readme)  
+
+------------------------------------------------------------------------
+### Filter层 请求过滤器 设计 
+[回到顶部](#readme)  
+
+------------------------------------------------------------------------
+### Form层 表单过滤组件层 设计 
+[回到顶部](#readme)  
+
+------------------------------------------------------------------------
+### Web层 请求处理层 设计 
+[回到顶部](#readme)  
+
+------------------------------------------------------------------------
+### Service层 业务逻辑层 设计 
+[回到顶部](#readme)  
+   * ServiceFactory :根据className获取Service接口对象
+   * ServiceResult  :1.success :执行是否出错? 2.errormsg :若出错, 则记录错误信息 3.page :需跳转的界面
+   * <Service>接口  :ServiceResult execute()方法
+
+    function         className            需操作的表结构           对应操作请求               请求类型
+
+    *管理员登录       AdminLogin            admin                 admin_login.do           POST
+    *管理员注册       AdminRegister         admin                 admin_register.do        POST
+
+    *用户登录         UserLogin            user                   user_login.do            POST
+    *用户注册         UserRegister         user, _property, _icon user_register.do         POST
+    *用户资料查询      UserPropertyQuery    user_property, _icon   user_property_query.do   GET
+    *用户资料更新      UserPropertyUpdate   user_property          user_property_update.do  POST
+    *用户头像更新      UserIconUpdate       user_icon              user_icon_update.do      POST
+    *用户密码更新      UserPswUpdate        user                   user_password_update.do  POST
+
+    *图片上传         ImageUpload          image, image_type      image_upload.do          POST
+    *图片删除         ImageDelete          image                  image_delete.do          GET
+    *图片文本内容更新   ImageTextUpdate      image                  image_text_update.do     POST
+    *图片单个查询      ImageQuery           image                  image_query.do           GET
+    *图片全部集合查询   ImageListQuery       image                  image_list_query.do      GET
+    *图片分类集合查询   ImageClassQuery      image_type, image      image_class_query,do     GET
+    *图片分类         ImageClassify        image_type              image_classify.do       GET
+
+    *日记上传         DiaryUpload          diary                  diary_upload.do          POST
+    *日记更新         DiaryUpdate          diary                  diary_update.do          POST
+    *日记数据集获取    DiaryListQuery       diary                  diary_list_query.do      GET
+    *日记删除         DiaryDelete          diary                  diary_delete.do          GET
+ 
+------------------------------------------------------------------------
+### Manager层 通用处理层 设计 
+[回到顶部](#readme)  
+    +-------------------+
+    | Manager           |
+    +-------------------+
+    | AdminManager      | 管理员模块
+    |                   |
+    | UserManager       | 用户模块
+    |                   |
+    | ImageManager      | 图片模块
+    |                   |
+    | DiaryManager      | 日记模块
+    +-------------------+
+------------------------------------------------------------------------
+    ---------------------  方法名↓       操作的DAO↓
+------------------------------------------------------------------------
+    +-------------------+
+    | AdminManager      |
+    +-------------------+
+    | 注册--插入admin  :             insertAdmin(AdminDO)                      --adminDAO
+
+    | 登录--获取admin  :             queryAdmin()                              --adminDAO
+    +-------------------+
+------------------------------------------------------------------------
+    +-------------------+
+    | UserManager       |
+    +-------------------+
+    | 登录--查询user  :               queryUser()                               --UserDAO
+
+    | 注册--插入user  :               insertUser(UserDO)                        --UserDAO
+           插入user_property  :       insertUserProperty(UserPropertyDO)        --UserPropertyDAO
+           插入user_icon  :           insertUserIcon(UserIconDO)                --UserIconDAO
+
+    | 资料查询--查询user_property  :   queryUserProperty()                        --UserPropertyDAO
+               查询user_icon  :       queryUserIcon()                           --UserIconDAO
+
+    | 密码更新--更新user  :            updateUserPassword(userPassword)          --UserDAO
+
+    | 头像更新--更新user_icon  :        updateUserIcon(usericonDO)                --UserIconDAO
+
+    | 资料更新--更新user_property  :    updateUserProperty(UserPropertyDO)        --UserPropertyDAO
+    +-------------------+
+------------------------------------------------------------------------
+    +-------------------+
+    | ImageManager      |
+    +-------------------+
+    | 图片上传--插入image  :           insertImage()                              --ImageDAO
+               插入image_type表  :    insertImageType()                          --ImageTypeDAO
+
+    | 图片删除--从image表删除  :        deleteImage()                              --ImageDAO
+
+    | 图片文本内容更新--更新image  :     updateImage()                              --ImageDAO
+
+    | 图片单个查询--查询image  :         queryImage()                               --ImageDAO
+
+    | 图片全部集合查询--查询image  :     queryImageList()                            --ImageDAO
+
+    | 图片分类集合查询--查询image,image_type  :queryImageClass()                     --ImageDAO,ImageTypeDAO
+
+    | 图片分类--调用外部接口
+    +-------------------+
+------------------------------------------------------------------------
+    +-------------------+
+    | DiaryManager      |
+    +-------------------+
+    | 日记上传--插入diary  :            insertDiary()                               --DiaryDAO
+
+    | 日记更新--更新diary  :            updateDiary()                               --DiaryDAO
+
+    | 日记数据集获取--查询diary  :       queryDiary()                                --DiaryDAO
+
+    | 日记删除--删除diary  :            deleteDiary()                               --DiaryDAO
+    +-------------------+
+
+------------------------------------------------------------------------
+### DAO层 数据持久层 设计 
+[回到顶部](#readme)  
+  * dao            :dao接口层以及骨架类实现
+  * daojdbcimpl    :dao接口jdbc实现层
+  * daomybatisimpl :dao接口mybatis实现层
+------------------------------------------------------------------------    
+    +-------------------+
+    | Tables_in_lifecat |  <Interface>
+    +-------------------+
+    | admin             |  AdminDAO
+    |                   |
+    | user              |  UserDAO
+    | user_property     |  UserPropertyDAO
+    | user_icon         |  UserIconDAO
+    |                   |
+    | image             |  ImageDAO
+    | image_type        |  ImageTypeDAO
+    | image_class       |  ImageClassDAO
+    | image_feature     |  ImageFeatureDAO
+    |                   |
+    | diary             |  DiaryDAO
+    +-------------------+
+------------------------------------------------------------------------
+    AdminDAO          
+    //注册--插入admin
+    int insertAdmin(AdminDO)
+    //登录--获取admin
+    AdminDO queryAdmin(adminName)
+    //注册--判断用户是否存在
+    boolean isAdminExisted(adminName)
+------------------------------------------------------------------------
+    UserDAO
+    //登录--获取user              
+     queryUser()
+    //注册--插入user             
+    insertUser(UserDO)
+    //注册--用户是否存在            
+    isUserExisted()
+    //密码更新--更新user          
+    updateUserPassword(userPassword)
+    //密码更新--查询原密码          
+    queryUserPassword()
+------------------------------------------------------------------------
+    +-------------------+
+    | UserPropertyDAO   |
+    +-------------------+
+    | 资料查询--查询user_property  :   queryUserProperty()
+    | 资料更新--更新查询user_property  :insertUserProperty(UserPropertyDO)
+    +-------------------+
+------------------------------------------------------------------------
+    +-------------------+
+    | UserIconDAO       |
+    +-------------------+
+    | 用户头像更新--插入user_icon       insertUserIcon()
+    | 资料查询--查询user_icon          queryUserIcon()
+    +-------------------+
+------------------------------------------------------------------------
+    +-------------------+
+    | ImageDAO          |
+    +-------------------+
+    | 图片上传--插入image              insertImage()
+    | 图片删除--删除image              deleteImage()
+    | 图片文本内容更新--更新image_text   updateImageText()
+    | 图片单个查询--查询image          queryImage(image_name/image_id)
+    | 图片全部集合查询--查询image       queryImageList(userId)
+    | 图片分类集合查询--查询image       queryImageClass(userId,class_id)
+    +-------------------+
+------------------------------------------------------------------------
+    +-------------------+
+    | ImageTypeDAO      |
+    +-------------------+
+    | 图片上传--插入图片类别信息            insertImageType()
+    | 修改图片分类信息--修改image的classid  updateImageType()
+    | 图片分类集合查询--查询某类别下的image   queryImageByClass(userId,class_id)
+    +-------------------+
+------------------------------------------------------------------------
+    ImageClassDAO
+    //TODO
+------------------------------------------------------------------------
+    ImageFeatureDAO
+    //TODO
+------------------------------------------------------------------------
+    DiaryDAO
+    //日记上传--插入diary             
+    void insertDiary(DiaryDO)
+    //日记更新--更新diary             
+    void updateDiary(DiaryDO)
+    //日记数据集获取--查询diaryList    
+    queryDiaries()
+    //日记删除--删除diary             
+    deleteDiary()
+------------------------------------------------------------------------
 ### DTO 数据传输对象 设计 
+[回到顶部](#readme)  
    * Service或Manager向外传输的对象
    * 展示层与服务层之间的数据传输对象
    * DTO到达显示层后变成VO
@@ -721,8 +998,10 @@ version1.3.2
     | userid            |
     | List<Diary>       |
     +-------------------+
+
 ------------------------------------------------------------------------
-### DO 数据对象 设计
+### DO 数据访问对象 设计 
+[回到顶部](#readme)  
    * 与数据库表结构一一对应，通过DAO层向上传输数据源对象
    * 获取request对象信息，在DAO层中加入控制信息，构建DO对象
    * 根据返回DO对象，处理构建DTO对象，发送到外部
@@ -845,213 +1124,23 @@ version1.3.2
     | diary_gmt_create  | DAO
     | diary_gmt_modified| DAO
     +-------------------+
-------------------------------------------------------------------------
-### Service 逻辑处理 设计
-   * ServiceFactory :根据className获取Service接口对象
-   * ServiceResult  :1.success :执行是否出错? 2.errormsg :若出错, 则记录错误信息 3.page :需跳转的界面
-   * <Service>接口  :ServiceResult execute()方法
-
-    function         className            需操作的表结构           对应操作请求               请求类型
-
-    *管理员登录       AdminLogin            admin                 admin_login.do           POST
-    *管理员注册       AdminRegister         admin                 admin_register.do        POST
-
-    *用户登录         UserLogin            user                   user_login.do            POST
-    *用户注册         UserRegister         user, _property, _icon user_register.do         POST
-    *用户资料查询      UserPropertyQuery    user_property, _icon   user_property_query.do   GET
-    *用户资料更新      UserPropertyUpdate   user_property          user_property_update.do  POST
-    *用户头像更新      UserIconUpdate       user_icon              user_icon_update.do      POST
-    *用户密码更新      UserPswUpdate        user                   user_password_update.do  POST
-
-    *图片上传         ImageUpload          image, image_type      image_upload.do          POST
-    *图片删除         ImageDelete          image                  image_delete.do          GET
-    *图片文本内容更新   ImageTextUpdate      image                  image_text_update.do     POST
-    *图片单个查询      ImageQuery           image                  image_query.do           GET
-    *图片全部集合查询   ImageListQuery       image                  image_list_query.do      GET
-    *图片分类集合查询   ImageClassQuery      image_type, image      image_class_query,do     GET
-    *图片分类         ImageClassify        image_type              image_classify.do       GET
-
-    *日记上传         DiaryUpload          diary                  diary_upload.do          POST
-    *日记更新         DiaryUpdate          diary                  diary_update.do          POST
-    *日记数据集获取    DiaryListQuery       diary                  diary_list_query.do      GET
-    *日记删除         DiaryDelete          diary                  diary_delete.do          GET
 
 ------------------------------------------------------------------------
-### Manager 数据库抽象逻辑对象 设计 
-    +-------------------+
-    | Manager           |
-    +-------------------+
-    | AdminManager      | 管理员模块
-    |                   |
-    | UserManager       | 用户模块
-    |                   |
-    | ImageManager      | 图片模块
-    |                   |
-    | DiaryManager      | 日记模块
-    +-------------------+
-------------------------------------------------------------------------
-    ---------------------  方法名↓       操作的DAO↓
-------------------------------------------------------------------------
-    +-------------------+
-    | AdminManager      |
-    +-------------------+
-    | 注册--插入admin  :             insertAdmin(AdminDO)                      --adminDAO
-
-    | 登录--获取admin  :             queryAdmin()                              --adminDAO
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | UserManager       |
-    +-------------------+
-    | 登录--查询user  :               queryUser()                               --UserDAO
-
-    | 注册--插入user  :               insertUser(UserDO)                        --UserDAO
-           插入user_property  :       insertUserProperty(UserPropertyDO)        --UserPropertyDAO
-           插入user_icon  :           insertUserIcon(UserIconDO)                --UserIconDAO
-
-    | 资料查询--查询user_property  :   queryUserProperty()                        --UserPropertyDAO
-               查询user_icon  :       queryUserIcon()                           --UserIconDAO
-
-    | 密码更新--更新user  :            updateUserPassword(userPassword)          --UserDAO
-
-    | 头像更新--更新user_icon  :        updateUserIcon(usericonDO)                --UserIconDAO
-
-    | 资料更新--更新user_property  :    updateUserProperty(UserPropertyDO)        --UserPropertyDAO
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | ImageManager      |
-    +-------------------+
-    | 图片上传--插入image  :           insertImage()                              --ImageDAO
-               插入image_type表  :    insertImageType()                          --ImageTypeDAO
-
-    | 图片删除--从image表删除  :        deleteImage()                              --ImageDAO
-
-    | 图片文本内容更新--更新image  :     updateImage()                              --ImageDAO
-
-    | 图片单个查询--查询image  :         queryImage()                               --ImageDAO
-
-    | 图片全部集合查询--查询image  :     queryImageList()                            --ImageDAO
-
-    | 图片分类集合查询--查询image,image_type  :queryImageClass()                     --ImageDAO,ImageTypeDAO
-
-    | 图片分类--调用外部接口
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | DiaryManager      |
-    +-------------------+
-    | 日记上传--插入diary  :            insertDiary()                               --DiaryDAO
-
-    | 日记更新--更新diary  :            updateDiary()                               --DiaryDAO
-
-    | 日记数据集获取--查询diary  :       queryDiary()                                --DiaryDAO
-
-    | 日记删除--删除diary  :            deleteDiary()                               --DiaryDAO
-    +-------------------+
-------------------------------------------------------------------------
-### DAO 数据库访问对象 设计    
-    com.wang.dao     :dao接口层
-    com.wang.daoimpl :dao实现类
-------------------------------------------------------------------------
-------------------------------------------------------------------------
-   * DAO接口, 通过DAOFactory获取
-
-    +-------------------+
-    | Tables_in_lifecat |
-    +-------------------+
-    | admin             |  AdminDAO
-    |                   |
-    | user              |  UserDAO
-    | user_property     |  UserPropertyDAO
-    | user_icon         |  UserIconDAO
-    |                   |
-    | image             |  ImageDAO
-    | image_type        |  ImageTypeDAO
-    | image_class       |  ImageClassDAO
-    | image_feature     |  ImageFeatureDAO
-    |                   |
-    | diary             |  DiaryDAO
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | AdminDAO          |
-    +-------------------+
-    | 注册--插入admin :insertAdmin()    --参数 :AdminDO    --返回 :主键admin_id
-    | 登录--获取admin :queryAdmin()    --参数 :adminName    --返回 :AdminDO
-    | 注册--判断用户是否存在  :isAdminExisted()    --参数 :adminName    --返回 :boolean
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | UserDAO           |
-    +-------------------+
-    | 登录--获取user  :               queryUser()
-    | 注册--插入user  :               insertUser(UserDO)
-    | 注册--用户是否存在 :              isUserExisted()
-    | 密码更新--更新user  :            updateUserPassword(userPassword)
-    | 密码更新--查询原密码 :            queryUserPassword()
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | UserPropertyDAO   |
-    +-------------------+
-    | 资料查询--查询user_property  :   queryUserProperty()
-    | 资料更新--更新查询user_property  :insertUserProperty(UserPropertyDO)
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | UserIconDAO       |
-    +-------------------+
-    | 用户头像更新--插入user_icon       insertUserIcon()
-    | 资料查询--查询user_icon          queryUserIcon()
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | ImageDAO          |
-    +-------------------+
-    | 图片上传--插入image              insertImage()
-    | 图片删除--删除image              deleteImage()
-    | 图片文本内容更新--更新image_text   updateImageText()
-    | 图片单个查询--查询image          queryImage(image_name/image_id)
-    | 图片全部集合查询--查询image       queryImageList(userId)
-    | 图片分类集合查询--查询image       queryImageClass(userId,class_id)
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | ImageTypeDAO      |
-    +-------------------+
-    | 图片上传--插入图片类别信息            insertImageType()
-    | 修改图片分类信息--修改image的classid  updateImageType()
-    | 图片分类集合查询--查询某类别下的image   queryImageByClass(userId,class_id)
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | ImageClassDAO     |
-    +-------------------+
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | ImageFeatureDAO   |
-    +-------------------+
-    +-------------------+
-------------------------------------------------------------------------
-    +-------------------+
-    | DiaryDAO          |
-    +-------------------+
-    | 日记上传--插入diary             insertDiary()
-    | 日记更新--更新diary             updateDiary()
-    | 日记数据集获取--查询diaryList    queryDiaries()
-    | 日记删除--删除diary             deleteDiary()
-    +-------------------+
-------------------------------------------------------------------------
-
-### DO 数据库访问对象 设计
+### Utils 工具类 设计 
+[回到顶部](#readme)  
 
 ------------------------------------------------------------------------
-## 设计模式
-### 工厂模式 :Form对象创建
-             
-#### 模式解析：
-  * 可以为多用户提供服务
-   
+### Constant 常量类 设计 
+[回到顶部](#readme)  
+
+------------------------------------------------------------------------
+### Exfunc 外部接口层 设计 
+[回到顶部](#readme)  
+
+------------------------------------------------------------------------
+### Openfunc 开放接口层 设计 
+[回到顶部](#readme)  
+
+------------------------------------------------------------------------
+
 
