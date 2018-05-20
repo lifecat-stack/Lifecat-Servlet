@@ -2,13 +2,14 @@ package com.wang.service;
 
 import com.wang.bean.Image;
 import com.wang.bean.User;
-import com.wang.manager.ManagerFactory;
 import com.wang.manager.ImageManager;
+import com.wang.manager.ManagerFactory;
 import com.wang.util.HOST;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
