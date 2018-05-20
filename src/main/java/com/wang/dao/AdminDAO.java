@@ -4,7 +4,7 @@ import com.wang.doo.AdminDO;
 
 import java.sql.SQLException;
 /**
- * com.wang.dao - admin
+ * dao - admin
  *
  * @auther ten
  */

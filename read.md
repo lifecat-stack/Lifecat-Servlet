@@ -863,14 +863,16 @@ version1.3.2
     +-------------------+
     | 登录--获取user  :               queryUser()
     | 注册--插入user  :               insertUser(UserDO)
+    | 注册--用户是否存在 :              isUserExisted()
     | 密码更新--更新user  :            updateUserPassword(user_password)
+    | 密码更新--查询原密码 :            queryUserPassword()
     +-------------------+
 ------------------------------------------------------------------------
     +-------------------+
     | UserPropertyDAO   |
     +-------------------+
     | 资料查询--查询user_property  :   queryUserProperty()
-    | 资料更新--更新查询user_property  :updateUserProperty(UserPropertyDO)
+    | 资料更新--更新查询user_property  :insertUserProperty(UserPropertyDO)
     +-------------------+
 ------------------------------------------------------------------------
     +-------------------+
@@ -894,7 +896,8 @@ version1.3.2
     +-------------------+
     | ImageTypeDAO      |
     +-------------------+
-    | 图片上传--插入图片类别信息        insertImageType()
+    | 图片上传--插入图片类别信息            insertImageType()
+    | 修改图片分类信息--修改image的classid  updateImageType()
     | 图片分类集合查询--查询某类别下的image   queryImageByClass(user_id,class_id)
     +-------------------+
 ------------------------------------------------------------------------
