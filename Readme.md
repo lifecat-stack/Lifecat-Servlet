@@ -567,6 +567,7 @@ version1.3.2
     | user_id           | int(6) unsigned | NO   | PRI | NULL    | auto_increment |
     | user_name         | varchar(30)     | NO   | UNI | NULL    |                |
     | user_password     | varchar(30)     | NO   |     | NULL    |                |
+    | user_level        | varchar(30)     | NO   |     | NULL    |                |
     | user_gmt_create   | datetime        | NO   |     | NULL    |                |
     | user_gmt_modified | datetime        | NO   |     | NULL    |                |
     +-------------------+-----------------+------+-----+---------+----------------+
@@ -612,13 +613,13 @@ version1.3.2
     | image_id           | int(6) unsigned     | NO   | PRI | NULL    | auto_increment |
     | image_text         | varchar(200)        | YES  |     | NULL    |                |
     | image_path         | varchar(200)        | YES  |     | NULL    |                |
-    | is_deleted         | tinyint(1) unsigned | YES  | MUL | NULL    |                |
+    | is_deleted         | tinyint(1) unsigned | NO   | MUL | NULL    |                |
     | user_id            | int(6) unsigned     | NO   | MUL | NULL    |                |
     | class_id           | int(6) unsigned     | NO   | MUL | NULL    |                |
     | image_gmt_create   | datetime            | NO   |     | NULL    |                |
     | image_gmt_modified | datetime            | NO   |     | NULL    |                |
-    +--------------------+---------------------+------+-----+---------+----------------+
-------------------------------------------------------------------------
+    +--------------------+---------------------+------+-----+---------+----------------+------------------------------------------------------------------------
+------------------------------------------------------------------------    
     * 图片类别描述表: image_class
     插入: 插入image_class_name，返回id
     获取: 根据image_class_id获取
@@ -655,12 +656,12 @@ version1.3.2
     | diary_id           | int(6) unsigned     | NO   | PRI | NULL    | auto_increment |
     | diary_name         | varchar(200)        | NO   | UNI | NULL    |                |
     | diary_text         | varchar(2000)       | NO   |     | NULL    |                |
-    | is_deleted         | tinyint(1) unsigned | YES  | MUL | NULL    |                |
+    | is_deleted         | tinyint(1) unsigned | NO   | MUL | NULL    |                |
     | user_id            | int(6) unsigned     | NO   | MUL | NULL    |                |
     | diary_gmt_create   | datetime            | NO   |     | NULL    |                |
     | diary_gmt_modified | datetime            | NO   |     | NULL    |                |
-    +--------------------+---------------------+------+-----+---------+----------------+
-------------------------------------------------------------------------
+    +--------------------+---------------------+------+-----+---------+----------------+------------------------------------------------------------------------
+------------------------------------------------------------------------    
 ### View层终端显示层设计 
 [回到顶部](#readme)  
   * 主页index

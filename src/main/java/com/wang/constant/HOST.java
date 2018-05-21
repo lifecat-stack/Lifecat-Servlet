@@ -29,7 +29,7 @@ public class HOST {
     public static final String PROJECTCONTEXT = "http://" + IP + ":" + TOMCAT_PORT + "/" + PROJECT + "/";
 
     //image存储路径--本地路径
-    public static final String IMAGE_PATH = "/usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/upimage/";
+    public static final String IMAGE_PATH = "/usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/";
 
     //分类展示的父目录--本地路径
     public static final String CATEGORY_IMAGE_PATH = "/usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/pics/";
