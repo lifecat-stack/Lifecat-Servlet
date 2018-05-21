@@ -47,7 +47,9 @@ public class FormResult {
         }
     }
 
-    //FormResult@{success:true,errormsg:'null'}
+    /**
+     * FormResult@{success:true,errormsg:'null'}
+     */
     @Override
     public String toString() {
         return "FormResult@{success:" + success + ",errormsg:" + errormsg + "}";
