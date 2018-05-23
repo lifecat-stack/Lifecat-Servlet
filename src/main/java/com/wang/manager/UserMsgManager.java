@@ -1,7 +1,7 @@
 package com.wang.manager;
 
 import com.wang.bean.UserMsg;
-import com.wang.dao.jdbcimpl.DAOFactory;
+import com.wang.dao.jdbcimpl.JdbcDAOFactory;
 import com.wang.dao.jdbcimpl.UserPropertyDAO;
 
 import java.sql.SQLException;
@@ -27,7 +27,7 @@ public class UserMsgManager implements Manager {
 
     private UserMsgManager(int userid) {
         this.userid = userid;
-        this.dao = (UserPropertyDAO) DAOFactory.getDAOByName("UserPropertyDAO");
+        this.dao = (UserPropertyDAO) JdbcDAOFactory.getDAOByName("UserPropertyDAO");
         this.logger = Logger.getLogger("UserMsgManager@" + userid);
     }
 

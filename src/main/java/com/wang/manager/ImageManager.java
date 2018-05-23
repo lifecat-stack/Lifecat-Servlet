@@ -1,7 +1,7 @@
 package com.wang.manager;
 
 import com.wang.bean.Image;
-import com.wang.dao.jdbcimpl.DAOFactory;
+import com.wang.dao.jdbcimpl.JdbcDAOFactory;
 import com.wang.dao.jdbcimpl.ImageDAO;
 
 import java.sql.SQLException;
@@ -30,7 +30,7 @@ public class ImageManager implements Manager {
 
     private ImageManager(int userid) {
         this.userid = userid;
-        this.dao = (ImageDAO) DAOFactory.getDAOByName("ImageDAO");
+        this.dao = (ImageDAO) JdbcDAOFactory.getDAOByName("ImageDAO");
         this.logger = Logger.getLogger("ImageManager@" + userid);
     }
 

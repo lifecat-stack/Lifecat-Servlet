@@ -65,5 +65,5 @@ public interface UserDAO {
      * @param password 新密码
      * @throws SQLException e
      */
-    void updateUserPassword(String password) throws SQLException;
+    void updateUserPassword(Integer userId,String password) throws SQLException;
 }

@@ -1,8 +1,11 @@
 package com.wang.service;
 
-import com.wang.bean.User;
-import com.wang.manager.ManagerFactory;
-import com.wang.manager.UserManager;
+import com.wang.constant.HOST;
+import com.wang.dao.dao.DAOFactory;
+import com.wang.dao.dao.UserDAO;
+import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.doo.UserDO;
+import com.wang.dto.UserDTO;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -40,33 +43,38 @@ class UserLogin implements Service {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        User user = new User.Builder(username, password).build();
+        // 获取DAO实例
+        DAOFactory factory = new JdbcDAOFactory();
+        UserDAO dao = factory.getUserDAO();
 
-        logger.info(user.toString());
-
-        UserManager daoModel = (UserManager) ManagerFactory.getManagerByName(user.getId(), "UserManager");
-
-        User dbuser;
-
-        //从数据库获取User对象
+        // DAO查询user
+        UserDO userDO = null;
+        boolean success = false;
         try {
-            dbuser = daoModel.queryUser();
-        } catch (NullPointerException e) {
-            e.printStackTrace();
-            return new ServiceResult.Builder(true).errormsg("数据库无此用户").page(req.getRequestURI()).build();
+            userDO = dao.queryUser(username);
+            success = true;
         } catch (SQLException e) {
             e.printStackTrace();
-            return new ServiceResult.Builder(true).errormsg("数据库查询异常").page(req.getRequestURI()).build();
         }
 
-        //判断user是否相同
-        final boolean isEquals = (dbuser.getName().equals(username) && dbuser.getPassword().equals(password));
-        if (isEquals) {
-            req.getSession().setAttribute("user",user);
-            return new ServiceResult.Builder(false).page(req.getRequestURI()).build();
+        if (!success) {
+            return new ServiceResult.Builder(true)
+                    .errormsg("数据库查询异常").page(req.getRequestURI()).build();
         }
 
-        return new ServiceResult.Builder(true).errormsg("账号或密码错误").page(req.getRequestURI()).build();
+        if (userDO == null) {
+            return new ServiceResult.Builder(true)
+                    .errormsg("数据库无此用户").page(req.getRequestURI()).build();
+        }
+
+        if (!password.equals(userDO.getUserPassword())) {
+            return new ServiceResult.Builder(true)
+                    .errormsg("密码错误").page(req.getRequestURI()).build();
+        }
+
+        UserDTO user = new UserDTO.Builder(userDO.getUserId(), userDO.getUserName()).build();
+        req.getSession().setAttribute("user", user);
+        return new ServiceResult.Builder(true).page(HOST.PAGE_USERHOME).build();
     }
 }
 

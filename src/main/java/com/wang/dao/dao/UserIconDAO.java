@@ -11,8 +11,9 @@ import java.sql.SQLException;
  */
 public interface UserIconDAO {
     /**
-     * 用户头像更新 :
-     * 插入UserIconDO到user_icon表
+     * 用户头像插入 :
+     * 用户注册时调用
+     * 插入默认UserIconDO到user_icon表
      *
      * @param userIconDO userIconDO
      * @throws SQLException e
@@ -20,15 +21,23 @@ public interface UserIconDAO {
     void insertUserIcon(UserIconDO userIconDO) throws SQLException;
 
     /**
-     * 用户头像查询 :
-     * 通过user_id进行查询
-     * 获取数据库user_icon信息
+     * 用户头像更新 :
+     * 更新user_icon表
+     *
+     * @param userIconDO userIconDO
+     * @throws SQLException e
+     */
+    void updateUserIcon(UserIconDO userIconDO) throws SQLException;
+
+    /**
+     * 用户头像路径查询 :
+     * 通过user_id进行查询路径Path
      *
      * @param userId 用户ID
      * @return user_icon_path String
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    String queryUserIcon(int userId) throws SQLException;
+    String queryUserIcon(Integer userId) throws SQLException;
 
 }

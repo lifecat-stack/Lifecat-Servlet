@@ -15,12 +15,22 @@ import java.sql.SQLException;
 public interface UserPropertyDAO {
     /**
      * 资料插入 :
+     * 用户注册时启动
      * 插入UserPropertyDO到user_property表
      *
      * @param userPropertyDO userPropertyDO
      * @throws SQLException e
      */
     void insertUserProperty(UserPropertyDO userPropertyDO) throws SQLException;
+
+//    /**
+//     * 资料更新 :
+//     * 更新user_property表
+//     *
+//     * @param userPropertyDO userPropertyDO
+//     * @throws SQLException e
+//     */
+//    void updateUserProperty(UserPropertyDO userPropertyDO) throws SQLException;
 
     /**
      * 资料查询 :
@@ -33,5 +43,5 @@ public interface UserPropertyDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    UserPropertyDO queryUserProperty(int userId) throws SQLException;
+    UserPropertyDO queryUserProperty(Integer userId) throws SQLException;
 }

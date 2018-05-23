@@ -1,7 +1,7 @@
 package com.wang.manager;
 
 import com.wang.bean.Diary;
-import com.wang.dao.jdbcimpl.DAOFactory;
+import com.wang.dao.jdbcimpl.JdbcDAOFactory;
 import com.wang.dao.jdbcimpl.DiaryDAO;
 
 import java.sql.SQLException;
@@ -29,7 +29,7 @@ public class DiaryManager implements Manager {
 
     private DiaryManager(int userid) {
         this.userid = userid;
-        this.dao = (DiaryDAO) DAOFactory.getDAOByName("DiaryDAO");
+        this.dao = (DiaryDAO) JdbcDAOFactory.getDAOByName("DiaryDAO");
         this.logger = Logger.getLogger("DiaryManager@" + userid);
     }
 
