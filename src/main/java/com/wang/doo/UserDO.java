@@ -10,6 +10,7 @@ public class UserDO {
     private Integer userId;
     private String userName;
     private String userPassword;
+    private String userLevel;
     private String userGmtCreate;
     private String userGmtModified;
 
@@ -37,6 +38,14 @@ public class UserDO {
         this.userPassword = userPassword;
     }
 
+    public String getUserLevel() {
+        return userLevel;
+    }
+
+    public void setUserLevel(String userLevel) {
+        this.userLevel = userLevel;
+    }
+
     public String getUserGmtCreate() {
         return userGmtCreate;
     }
@@ -54,7 +63,7 @@ public class UserDO {
     }
 
     /**
-     * @return UserDO@1234{ID:'',Name:'',Password:'',Create:'',Modified:''}
+     * @return UserDO@1234{ID:'',Name:'',Password:'',Level:'',Create:'',Modified:''}
      */
     @Override
     public String toString() {
@@ -62,6 +71,7 @@ public class UserDO {
                 + "{ID:" + userId
                 + ",Name:" + userName
                 + ",Password:" + userPassword
+                + ",Level:" + userLevel
                 + ",Create:" + userGmtCreate
                 + ",Modified:" + userGmtModified
                 + "}";

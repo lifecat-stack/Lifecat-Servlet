@@ -815,7 +815,7 @@ version1.3.2
   */
 
     com.wang.dao     :dao接口层
-    com.wang.daoimpl :dao实现类
+    com.wang.dao.dao.daoimpl :dao实现类
 
 =>《Java开发手册》5.3 SQL语句:
     √ 1 :使用count(*)--SQL标准, 与数据库无关; 若使用count(列名)或count(常量), 不会统计NULL行

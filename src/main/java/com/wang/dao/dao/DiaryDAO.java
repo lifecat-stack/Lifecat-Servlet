@@ -1,4 +1,4 @@
-package com.wang.dao;
+package com.wang.dao.dao;
 
 import com.wang.doo.DiaryDO;
 

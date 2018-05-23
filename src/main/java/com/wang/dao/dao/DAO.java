@@ -1,10 +1,16 @@
-package com.wang.dao;
+package com.wang.dao.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * DAO
+ * DAO :
+ * <p>
+ * 定义数据库操作
+ * 1.insert
+ * 2.delete
+ * 3.update
+ * 4.query
  *
  * @date 2018/5/20
  * @auther ten
@@ -24,7 +30,7 @@ public interface DAO {
      * @param sql sql
      * @throws SQLException SQL异常
      */
-    void delete(String sql, Object[] args) throws SQLException;
+    void delete(String sql) throws SQLException;
 
     /**
      * update
@@ -32,14 +38,13 @@ public interface DAO {
      * @param sql sql
      * @throws SQLException SQL异常
      */
-    void update(String sql, Object[] args) throws SQLException;
+    void update(String sql) throws SQLException;
 
     /**
      * query
      *
      * @param sql  sql
-     * @param args 参数数组
      * @throws SQLException SQL异常
      */
-    ResultSet query(String sql, Object[] args) throws SQLException;
+    ResultSet query(String sql) throws SQLException;
 }

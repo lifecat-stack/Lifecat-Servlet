@@ -16,17 +16,13 @@
 <div class="container">
     <div class="table-responsive">
         <h2>编辑照片描述</h2>
-        <form method="post" id="editForm" action="upimage.do" enctype="multipart/form-data">
+        <form method="post" id="editForm" action="image_upload.do" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="file" class="form-control" name="image"
                        id="upimage" onchange="showPreview()">
             </div>
             <button type="submit" class="btn btn-primary btn-md btn-block">提交</button>
         </form>
-
-        <div>
-            <img src="http://localhost:8080/lifecatweb/getimg.do" alt=""/>
-        </div>
     </div>
 </div>
 

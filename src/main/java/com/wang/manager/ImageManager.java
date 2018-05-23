@@ -1,8 +1,8 @@
 package com.wang.manager;
 
 import com.wang.bean.Image;
-import com.wang.daoimpl.DAOFactory;
-import com.wang.daoimpl.ImageDAO;
+import com.wang.dao.jdbcimpl.DAOFactory;
+import com.wang.dao.jdbcimpl.ImageDAO;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

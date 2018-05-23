@@ -1,8 +1,8 @@
 package com.wang.manager;
 
 import com.wang.bean.Diary;
-import com.wang.daoimpl.DAOFactory;
-import com.wang.daoimpl.DiaryDAO;
+import com.wang.dao.jdbcimpl.DAOFactory;
+import com.wang.dao.jdbcimpl.DiaryDAO;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

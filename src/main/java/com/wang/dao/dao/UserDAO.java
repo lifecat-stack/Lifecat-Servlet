@@ -1,4 +1,4 @@
-package com.wang.dao;
+package com.wang.dao.dao;
 
 import com.wang.doo.UserDO;
 
@@ -6,6 +6,12 @@ import java.sql.SQLException;
 
 /**
  * dao - user
+ * <p>
+ * 1. 查询user queryUser()
+ * 2. 插入user insertUser()
+ * 3. 查询密码 queryUserPassword()
+ * 4. 更新密码 updateUserPassword()
+ * 5. 查询user是否存在 isUserExisted()
  *
  * @auther ten
  */
@@ -13,13 +19,11 @@ public interface UserDAO {
     /**
      * 注册 :
      * 插入UserDO到user表
-     * 返回自增长主键user_id
-     *
+      *
      * @param userDO UserDO
-     * @return user_id
      * @throws SQLException e
      */
-    int insertUser(UserDO userDO) throws SQLException;
+    void insertUser(UserDO userDO) throws SQLException;
 
     /**
      * 登录 :

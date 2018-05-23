@@ -15,7 +15,7 @@
 <div class="container">
 	<div class="table-responsive">
 		<h2>书写成长寄语</h2>
-		<form method="post" id="editForm" action="service/UpDiary">
+		<form method="post" id="editForm" action="diary_upload.do">
 			<div class="form-group">
 				<textarea class="form-control" rows="1"  name="diaryname"
 					id="diaryname">name...</textarea>
@@ -24,7 +24,6 @@
 				<textarea class="form-control" rows="6"  name="diarydescription"
 					id="diarydescription">description...</textarea>
 			</div>
-            <input type="hidden" name="action" value="UpDiary">
 			<button type="submit" class="btn btn-primary btn-md btn-block">提交</button>
 		</form>
 	</div>

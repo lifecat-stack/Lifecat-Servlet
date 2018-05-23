@@ -104,7 +104,7 @@
                 <div class="modal-body">
 
                     <!-- form表单 修改密码信息 action=forechange -->
-                    <form action="service/ModifyPsw" class="form col-md-12 center-block"
+                    <form action="user_password_update.do" class="form col-md-12 center-block"
                           method="post">
                         <div class="form-group">
                             <h4>
@@ -134,7 +134,6 @@
 
                         </div>
                         <div class="form-group">
-                            <input type="hidden" name="action" value="ModifyPsw">
                             <button class="btn btn-primary btn-lg btn-block">修改</button>
                         </div>
                         <input type="hidden" name="action" value="ModifyPsw">
@@ -167,7 +166,7 @@
 
                 <!-- 修改个人信息 -->
                 <div class="modal-body">
-                    <form action="service/SetMsg" class="form col-md-12 center-block"
+                    <form action="user_property_update.do" class="form col-md-12 center-block"
                           method="post">
                         <div class="form-group">
                             <h5>新昵称</h5>
@@ -200,7 +199,6 @@
 
 
                         <div class="form-group">
-                            <input type="hidden" name="action" value="SetMsg">
                             <button class="btn btn-primary btn-lg btn-block">修改</button>
                         </div>
                         <input type="hidden" name="action" value="SetMsg">

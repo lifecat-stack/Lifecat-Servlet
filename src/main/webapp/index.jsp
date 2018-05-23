@@ -498,7 +498,7 @@ a.pic7:hover {
 				<div class="modal-body">
 
 					<!-- 提交post请求 -> LoginServlet -->
-					<form class="form-group" action="./login.do"
+					<form class="form-group" action="user_login.do"
 						method="post">
 						<div class="form-group">
 							<label for="username">账号</label> <input class="form-control"
@@ -509,7 +509,6 @@ a.pic7:hover {
 								placeholder="密码" name="password" id="password" type="password">
 						</div>
 						<div class="text-right">
-							<input type="hidden" name="action" value="Login">
 							<button class="btn btn-primary" type="submit">登录</button>
 							<button class="btn btn-danger" data-dismiss="modal">取消</button>
 						</div>
@@ -537,7 +536,7 @@ a.pic7:hover {
 				<div class="modal-body">
 
 					<!-- 提交post请求 -> RegisterServlet -->
-					<form class="form-group" action="service/Register" method="post">
+					<form class="form-group" action="user_register" method="post">
 						<div class="form-group">
 							<label for="rusername">账号</label> <input class="form-control"
 								type="text" placeholder="请输入想注册的账号" name="rusername" id="rusername">
