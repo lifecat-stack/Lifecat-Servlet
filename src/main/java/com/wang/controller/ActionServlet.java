@@ -1,9 +1,9 @@
 package com.wang.controller;
 
 import com.wang.constant.HOST;
-import com.wang.service.Service;
-import com.wang.service.ServiceFactory;
-import com.wang.service.ServiceResult;
+import com.wang.service.service.Service;
+import com.wang.service.serviceimpl.ServiceFactory;
+import com.wang.service.serviceimpl.ServiceResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

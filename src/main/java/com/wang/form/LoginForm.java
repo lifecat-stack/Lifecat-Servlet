@@ -54,6 +54,5 @@ class LoginForm extends BaseVerification implements Form {
         return new FormResult.Builder(false).build();
 
 
-        return new FormResult.Builder(true).errormsg(errormsg).build();
     }
 }

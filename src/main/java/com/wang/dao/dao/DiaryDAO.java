@@ -1,6 +1,6 @@
 package com.wang.dao.dao;
 
-import com.wang.doo.DiaryDO;
+import com.wang.bean.doo.DiaryDO;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -35,10 +35,10 @@ public interface DiaryDAO {
      * 日记删除 :
      * 根据diary_id进行删除
      *
-     * @param diaryDO diaryDO
+     * @param diaryId diaryId
      * @throws SQLException e
      */
-    void deleteDiary(DiaryDO diaryDO) throws SQLException;
+    void deleteDiary(Integer diaryId) throws SQLException;
 
 
     /**
@@ -65,5 +65,5 @@ public interface DiaryDAO {
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    List<DiaryDO> queryDiaryList(int userId) throws SQLException;
+    List<DiaryDO> queryDiaryList(Integer userId) throws SQLException;
 }

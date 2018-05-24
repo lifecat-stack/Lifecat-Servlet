@@ -66,7 +66,7 @@
   * | |
   * | |-com.wang.openfunc      //开放接口层 :接收Android端HTTP请求, 并返回请求结果
   * | |
-  * | |-com.wang.doo           //DO包 :对应于数据库表结构, POJO类型
+  * | |-com.wang.bean.doo           //DO包 :对应于数据库表结构, POJO类型
   * | |
   * | |-com.wang.dto           //DTO包 :数据传输对象, 对应逻辑实体，采用构建者模式 或 工厂模式
   * | |

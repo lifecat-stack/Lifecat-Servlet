@@ -14,16 +14,16 @@ public class HOST {
     }
 
     //服务器配置
-    static final String IP = "111.230.244.153";
+    public static final String IP = "111.230.244.153";
     private static final String PROJECT = "lifecatweb";
 
     //数据库配置
-    private static final int TOMCAT_PORT = 8080;
-    static final int DATABASEPORT = 3306;
-    static final String DATABASE = "users";
-    static final String ENCODING = "UTF-8";
-    static final String LOGIN_NAME = "root";
-    static final String PASSWORD = "wangshihao";
+    public static final int TOMCAT_PORT = 8080;
+    public static final int DATABASEPORT = 3306;
+    public static final String DATABASE = "users";
+    public static final String ENCODING = "UTF-8";
+    public static final String LOGIN_NAME = "root";
+    public static final String PASSWORD = "wangshihao";
 
     //应用上下文路径
     public static final String PROJECTCONTEXT = "http://" + IP + ":" + TOMCAT_PORT + "/" + PROJECT + "/";
