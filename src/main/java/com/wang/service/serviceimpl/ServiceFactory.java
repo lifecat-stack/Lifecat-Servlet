@@ -5,7 +5,7 @@ import com.wang.service.service.Service;
 /**
  * ServiceFactory :
  * <p>
- * 由controller调用, 根据url请求, 返回相应的service对象
+ * 返回相应的service对象
  *
  * @auther ten
  */

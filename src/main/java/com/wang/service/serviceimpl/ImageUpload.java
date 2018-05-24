@@ -1,14 +1,15 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.constant.HOST;
+import com.wang.bean.doo.ImageDO;
+import com.wang.bean.dto.UserDTO;
+import com.wang.constant.Directory;
+import com.wang.constant.Page;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.dao.ImageDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.bean.doo.ImageDO;
-import com.wang.bean.dto.UserDTO;
 import com.wang.service.service.Service;
+import com.wang.util.DateTimeUtil;
 import com.wang.util.ImageWriter;
-import com.wang.util.MyDate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,12 +20,15 @@ import java.sql.SQLException;
 
 /**
  * 图片上传
+ * <p>
+ * 失败 Page.PAGE_UPIMAGE
+ * 成功 Page.PAGE_USERHOME
  *
  * @date 2018/5/24
  * @auther ten
  */
 class ImageUpload implements Service {
-     private Logger logger = LoggerFactory.getLogger(ImageUpload.class);
+    private Logger logger = LoggerFactory.getLogger(ImageUpload.class);
 
     private ImageUpload() {
     }
@@ -38,9 +42,9 @@ class ImageUpload implements Service {
 
         UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
         Integer userId = userDTO.getUserId();
-        String dateTime = MyDate.getInstance().getCurrentTime();
+        String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
-        String imagePath = HOST.IMAGE_PATH + String.valueOf(userId) + "/image/"
+        String imagePath = Directory.IMAGE_PATH + String.valueOf(userId) + "/image/"
                 + dateTime;
         ImageWriter writer = ImageWriter.newImageWriter(imagePath);
 
@@ -56,7 +60,7 @@ class ImageUpload implements Service {
         if (!success) {
             return new ServiceResult.Builder(false)
                     .errormsg("数据流写入失败")
-                    .page(req.getRequestURI())
+                    .page(Page.PAGE_UPIMAGE)
                     .build();
         }
 
@@ -86,12 +90,12 @@ class ImageUpload implements Service {
         if (!success2) {
             return new ServiceResult.Builder(false)
                     .errormsg("数据库插入异常")
-                    .page(req.getRequestURI())
+                    .page(Page.PAGE_UPIMAGE)
                     .build();
         }
 
         return new ServiceResult.Builder(true)
-                .page(HOST.PAGE_USERHOME)
+                .page(Page.PAGE_IMAGESHOW)
                 .build();
     }
 }

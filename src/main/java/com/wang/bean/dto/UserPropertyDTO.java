@@ -1,7 +1,7 @@
 package com.wang.bean.dto;
 
-import com.wang.constant.HOST;
-import com.wang.util.MyBuilder;
+import com.wang.bean.MyBuilder;
+import com.wang.constant.Directory;
 
 /**
  * DTO :UserProperty用户个人资料
@@ -42,7 +42,7 @@ public class UserPropertyDTO {
         private String sex = "lovely";
         private String location = "无锡, 中国";
         private String birthday = "2018-01-01";
-        private String iconPath = HOST.IMAGE_PATH;
+        private String iconPath = Directory.IMAGE_PATH;
 
         public Builder(int user_id) {
             this.userId = user_id;

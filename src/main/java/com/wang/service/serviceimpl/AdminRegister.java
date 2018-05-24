@@ -6,14 +6,15 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 /**
  * 管理员注册
  *
  * @date 2018/5/24
  * @auther ten
  */
-public class AdminRegister implements Service {
-     private Logger logger = LoggerFactory.getLogger(AdminRegister.class);
+ class AdminRegister implements Service {
+    private Logger logger = LoggerFactory.getLogger(AdminRegister.class);
 
     private AdminRegister() {
     }
@@ -21,6 +22,7 @@ public class AdminRegister implements Service {
     static Service newService() {
         return new AdminRegister();
     }
+
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         // TODO 管理员注册功能

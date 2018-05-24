@@ -1,6 +1,6 @@
 package com.wang.bean.dto;
 
-import com.wang.util.MyBuilder;
+import com.wang.bean.MyBuilder;
 
 /**
  * DTO :Admin管理员账号

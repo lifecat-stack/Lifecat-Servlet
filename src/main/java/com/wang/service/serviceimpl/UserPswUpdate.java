@@ -8,17 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * UserPswUpdate: 修改密码
- * <p>
- * 访问范围: 全局
- * 调用者: Servlet
- * 异常检测: try-catch异常处理层
- * <p>
- * 1. 通过DAOModel获取DAO, 获取Session user
- * 2. 向数据库user更新password
- * <p>
- * ps: updateUserPsw(old,new)负责进行原密码校验
+ * 更新用户密码
  *
+ * @date 2018/5/24
  * @auther ten
  */
 class UserPswUpdate implements Service {

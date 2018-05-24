@@ -9,25 +9,25 @@ import java.io.*;
  */
 public class ImageWriter {
 
-    private final String image_path;
+    private final String imagePath;
 
-    private ImageWriter(String image_path) {
-        this.image_path = image_path;
+    private ImageWriter(String imagePath) {
+        this.imagePath = imagePath;
     }
 
-    public static ImageWriter newImageWriter(String image_path) {
-        return new ImageWriter(image_path);
+    public static ImageWriter newImageWriter(String imagePath) {
+        return new ImageWriter(imagePath);
     }
 
     /**
      * 从输入流写入文件到目录下
      *
      * @param stream request输入流
-     * @throws IOException .jpg写入异常
+     * @throws IOException 写入异常
      */
     public void writeImage(InputStream stream) throws IOException {
 
-        FileOutputStream fos = new FileOutputStream(image_path);
+        FileOutputStream fos = new FileOutputStream(imagePath);
         byte[] bbuf = new byte[32];
         int hasRead = 0;
 
@@ -41,7 +41,7 @@ public class ImageWriter {
 
         Byte n;
         //read the temp file
-        RandomAccessFile random = new RandomAccessFile(image_path, "r");
+        RandomAccessFile random = new RandomAccessFile(imagePath, "r");
         //read line2 to find the name of the upload file.
         int second = 1;
         String secondLine = null;
@@ -65,7 +65,7 @@ public class ImageWriter {
             }
         }
 
-        RandomAccessFile random2 = new RandomAccessFile(image_path, "rw");
+        RandomAccessFile random2 = new RandomAccessFile(imagePath, "rw");
         //locate the end position of the content.Count backwards 6 lines
         random.seek(random.length());
         long endPosition = random.getFilePointer();
@@ -87,7 +87,7 @@ public class ImageWriter {
         random2.close();
     }
 
-    public static long getEndPosition(RandomAccessFile random, long endPosition, long mark, int j) throws IOException {
+    private static long getEndPosition(RandomAccessFile random, long endPosition, long mark, int j) throws IOException {
         Byte n;
         while ((mark >= 0) && (j <= 6)) {
             mark--;

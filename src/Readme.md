@@ -27,7 +27,7 @@
 :执行jdbc数据库交互, DAO层通过静态工厂获取 \* | | \* | |-com.wang.manager
 //Manager层 :DAO层的抽象逻辑操作, Manager层通过静态工厂获取 \* | | \* |
 |-com.wang.filter //Filter过滤器 :对所有请求执行Encoding过滤,
-对*.do请求执行Form表单过滤 * | | \* | |-com.wang.form //Form表单验证
+对*.do请求执行Form表单过滤 * | | \* | |-com.wang.filter.form //Form表单验证
 :对相应表单执行过滤, 确保格式编码等, 返回Result \* | | \* | |-com.wang.exfunc
 //外部接口 :通过java call shell方式, 调用本地python脚本,
 执行机器学习操作 \* | | \* | |-com.wang.controller //Web层 :通过请求内容,

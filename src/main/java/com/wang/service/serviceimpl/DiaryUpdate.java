@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2018/5/24
  * @auther ten
  */
-public class DiaryUpdate implements Service {
+ class DiaryUpdate implements Service {
      private Logger logger = LoggerFactory.getLogger(DiaryUpdate.class);
 
     private DiaryUpdate() {

@@ -1,11 +1,11 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.constant.HOST;
+import com.wang.bean.doo.UserDO;
+import com.wang.bean.dto.UserDTO;
+import com.wang.constant.Page;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.dao.UserDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.bean.doo.UserDO;
-import com.wang.bean.dto.UserDTO;
 import com.wang.service.service.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 /**
  * 用户登录
+ *
+ * 失败 Page.PAGE_INDEX
+ * 成功 Page.PAGE_USERHOME
  *
  * @date 2018/5/24
  * @auther ten
@@ -53,22 +56,22 @@ class UserLogin implements Service {
 
         if (!success) {
             return new ServiceResult.Builder(true)
-                    .errormsg("数据库查询异常").page(req.getRequestURI()).build();
+                    .errormsg("数据库查询异常").page(Page.PAGE_INDEX).build();
         }
 
         if (userDO == null) {
             return new ServiceResult.Builder(true)
-                    .errormsg("数据库无此用户").page(req.getRequestURI()).build();
+                    .errormsg("数据库无此用户").page(Page.PAGE_INDEX).build();
         }
 
         if (!userPassword.equals(userDO.getUserPassword())) {
             return new ServiceResult.Builder(true)
-                    .errormsg("密码错误").page(req.getRequestURI()).build();
+                    .errormsg("密码错误").page(Page.PAGE_INDEX).build();
         }
 
         UserDTO user = new UserDTO.Builder(userDO.getUserId(), userDO.getUserName()).build();
         req.getSession().setAttribute("user", user);
-        return new ServiceResult.Builder(true).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 }
 

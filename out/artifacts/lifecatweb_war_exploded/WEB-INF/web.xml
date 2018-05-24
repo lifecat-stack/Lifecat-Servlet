@@ -8,43 +8,39 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
-    <!--字符过滤器:DatabaseActionServlet-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/jsp/error.jsp</location>
+    </error-page>
+
+    <!--Encoding Filter-->
     <filter>
         <filter-name>EncodingFilter</filter-name>
-        <filter-class>com.wang.filter.EncodingFilter</filter-class>
+        <filter-class>com.wang.filter.filter.EncodingFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>EncodingFilter</filter-name>
-        <url-pattern>/service/*</url-pattern>
+        <url-pattern>*.do</url-pattern>
     </filter-mapping>
 
-    <!--表单过滤器:DatabaseActionServlet-->
+    <!--Form Filter-->
     <filter>
         <filter-name>FormFilter</filter-name>
-        <filter-class>com.wang.filter.FormFilter</filter-class>
+        <filter-class>com.wang.filter.filter.FormFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>FormFilter</filter-name>
-        <url-pattern>/service/*</url-pattern>
+        <url-pattern>*.do</url-pattern>
     </filter-mapping>
 
-    <!--数据库操作:DatabaseActionServlet-->
+    <!--Directory 请求转发器 Servlet-->
     <servlet>
-        <servlet-name>DBService</servlet-name>
-        <servlet-class>com.wang.service.DatabaseActionServlet</servlet-class>
+        <servlet-name>Web</servlet-name>
+        <servlet-class>com.wang.controller.ActionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>DBService</servlet-name>
-        <url-pattern>/service/*</url-pattern>
+        <servlet-name>Web</servlet-name>
+        <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
-    <!--上传图片servlet-->
-    <servlet>
-        <servlet-name>UpImageService</servlet-name>
-        <servlet-class>com.wang.service.UpImageServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>UpImageService</servlet-name>
-        <url-pattern>/upimage.do</url-pattern>
-    </servlet-mapping>
 </web-app>

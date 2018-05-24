@@ -1,11 +1,11 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.constant.HOST;
+import com.wang.bean.doo.AdminDO;
+import com.wang.bean.dto.AdminDTO;
+import com.wang.constant.Page;
 import com.wang.dao.dao.AdminDAO;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.bean.doo.AdminDO;
-import com.wang.bean.dto.AdminDTO;
 import com.wang.service.service.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,11 +17,14 @@ import java.sql.SQLException;
 /**
  * 管理员登录
  *
+ * 失败 Page.PAGE_INDEX
+ * 成功 Page.PAGE_USERHOME
+ *
  * @date 2018/5/24
  * @auther ten
  */
-public class AdminLogin implements Service {
- private Logger logger = LoggerFactory.getLogger(AdminLogin.class);
+ class AdminLogin implements Service {
+    private Logger logger = LoggerFactory.getLogger(AdminLogin.class);
 
     private AdminLogin() {
     }
@@ -29,8 +32,10 @@ public class AdminLogin implements Service {
     static Service newService() {
         return new AdminLogin();
     }
+
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
+
         String adminName = req.getParameter("adminName");
         String adminPassword = req.getParameter("adminPassword");
 
@@ -49,22 +54,22 @@ public class AdminLogin implements Service {
         }
 
         if (!success) {
-            return new ServiceResult.Builder(true)
-                    .errormsg("数据库查询异常").page(req.getRequestURI()).build();
+            return new ServiceResult.Builder(false)
+                    .errormsg("数据库查询异常").page(Page.PAGE_INDEX).build();
         }
 
         if (adminDO == null) {
-            return new ServiceResult.Builder(true)
-                    .errormsg("数据库无此管理员").page(req.getRequestURI()).build();
+            return new ServiceResult.Builder(false)
+                    .errormsg("数据库无此管理员").page(Page.PAGE_INDEX).build();
         }
 
         if (!adminPassword.equals(adminDO.getAdminPassword())) {
-            return new ServiceResult.Builder(true)
-                    .errormsg("管理员密码错误").page(req.getRequestURI()).build();
+            return new ServiceResult.Builder(false)
+                    .errormsg("管理员密码错误").page(Page.PAGE_INDEX).build();
         }
 
         AdminDTO admin = new AdminDTO.Builder(adminDO.getAdminId(), adminDO.getAdminName(), adminDO.getAdminLevel()).build();
         req.getSession().setAttribute("admin", admin);
-        return new ServiceResult.Builder(true).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 }

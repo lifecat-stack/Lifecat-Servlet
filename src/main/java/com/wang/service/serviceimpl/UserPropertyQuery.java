@@ -1,13 +1,13 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.constant.HOST;
+import com.wang.bean.doo.UserPropertyDO;
+import com.wang.bean.dto.UserDTO;
+import com.wang.bean.dto.UserPropertyDTO;
+import com.wang.constant.Page;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.dao.UserIconDAO;
 import com.wang.dao.dao.UserPropertyDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.bean.doo.UserPropertyDO;
-import com.wang.bean.dto.UserDTO;
-import com.wang.bean.dto.UserPropertyDTO;
 import com.wang.service.service.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,21 +17,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 
 /**
- * UserPropertyQuery: 获取用户信息
+ * 查询用户资料
  * <p>
- * 访问范围: 全局
- * 调用者: Servlet
- * 异常检测: try-catch异常处理层
- * <p>
- * 1. 获取DAOModel
- * 2. 获取usermsg
- * 3. 设置Session usermsg
+ * 失败 Page.PAGE_USERHOME
+ * 成功 Page.PAGE_USERHOME
  *
+ * @date 2018/5/24
  * @auther ten
  */
 class UserPropertyQuery implements Service {
 
-   private Logger logger = LoggerFactory.getLogger(UserPropertyQuery.class);
+    private Logger logger = LoggerFactory.getLogger(UserPropertyQuery.class);
 
     private UserPropertyQuery() {
     }
@@ -39,6 +35,7 @@ class UserPropertyQuery implements Service {
     static Service newService() {
         return new UserPropertyQuery();
     }
+
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
@@ -62,12 +59,12 @@ class UserPropertyQuery implements Service {
 
         if (!success) {
             return new ServiceResult.Builder(false)
-                    .errormsg("数据库查询异常").page(req.getRequestURI()).build();
+                    .errormsg("数据库查询异常").page(Page.PAGE_USERHOME).build();
         }
 
         if (userPropertyDO == null && userIconPath == null) {
             return new ServiceResult.Builder(false)
-                    .errormsg("用户信息为空").page(req.getRequestURI()).build();
+                    .errormsg("用户信息为空").page(Page.PAGE_USERHOME).build();
         }
 
         assert userPropertyDO != null;
@@ -82,6 +79,6 @@ class UserPropertyQuery implements Service {
                 .build();
 
         req.getSession().setAttribute("userProperty", userPropertyDTO);
-        return new ServiceResult.Builder(true).page(HOST.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 }

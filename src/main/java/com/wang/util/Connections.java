@@ -1,5 +1,6 @@
 package com.wang.util;
 
+import com.wang.constant.DataBase;
 import com.wang.constant.HOST;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +24,7 @@ public class Connections {
 
     private static final String URL = String.format(
             "jdbc:mysql://%s:%d/%s",
-            HOST.IP, HOST.DATABASEPORT, HOST.DATABASE);
+            HOST.IP, DataBase.MYSQL_PORT, DataBase.DATABASE);
 
     static {
         try {
@@ -41,7 +42,7 @@ public class Connections {
      * @throws NullPointerException 连接关闭
      */
     public static Connection getConnection() throws SQLException {
-        Connection c = DriverManager.getConnection(URL, HOST.LOGIN_NAME, HOST.PASSWORD);
+        Connection c = DriverManager.getConnection(URL, DataBase.MYSQL_NAME, DataBase.MYSQL_PASSWORD);
         if (c.isClosed()) {
             throw new IllegalAccessError("Connection is closed");
         }

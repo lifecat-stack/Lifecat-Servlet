@@ -1,13 +1,13 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.constant.HOST;
+import com.wang.bean.doo.UserPropertyDO;
+import com.wang.bean.dto.UserDTO;
+import com.wang.constant.Page;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.dao.UserPropertyDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.bean.doo.UserPropertyDO;
-import com.wang.bean.dto.UserDTO;
 import com.wang.service.service.Service;
-import com.wang.util.MyDate;
+import com.wang.util.DateTimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,15 +16,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 
 /**
- * UserPropertyUpdate: 更新用户信息
- * <p>
- * 访问范围: 全局
- * 调用者: Servlet
- * 异常检测: try-catch异常处理层
- * <p>
- * 1. 获取DAOModel
- * 2. 更新Usermsg
+ * 用户资料更新
  *
+ * 失败 Page.PAGE_USERHOME
+ * 成功 Page.PAGE_USERHOME
+ *
+ * @date 2018/5/24
  * @auther ten
  */
 class UserPropertyUpdate implements Service {
@@ -49,7 +46,7 @@ class UserPropertyUpdate implements Service {
         String location = req.getParameter("location");
         String birthday = req.getParameter("birthday");
 
-        String dateTime = MyDate.getInstance().getCurrentTime();
+        String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
         // 将图片信息写入数据库
         // 获取DAO实例
@@ -78,12 +75,12 @@ class UserPropertyUpdate implements Service {
         if (!success2) {
             return new ServiceResult.Builder(false)
                     .errormsg("数据库插入异常")
-                    .page(req.getRequestURI())
+                    .page(Page.PAGE_USERHOME)
                     .build();
         }
 
         return new ServiceResult.Builder(true)
-                .page(HOST.PAGE_USERHOME)
+                .page(Page.PAGE_USERHOME)
                 .build();
     }
 }

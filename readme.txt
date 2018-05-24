@@ -76,7 +76,7 @@
   * | |
   * | |-com.wang.filter        //Filter过滤器 :对所有请求执行Encoding过滤, 对*.do请求执行Form表单过滤
   * | |
-  * | |-com.wang.form          //Form表单验证 :对相应表单执行过滤, 确保格式编码等, 返回Result
+  * | |-com.wang.filter.form          //Form表单验证 :对相应表单执行过滤, 确保格式编码等, 返回Result
   * | |
   * | |-com.wang.exfunc        //外部接口 :通过java call shell方式, 调用本地python脚本, 执行机器学习操作
   * | |

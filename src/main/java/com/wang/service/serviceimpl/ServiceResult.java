@@ -1,7 +1,7 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.constant.HOST;
-import com.wang.util.MyBuilder;
+import com.wang.bean.MyBuilder;
+import com.wang.constant.Page;
 
 /**
  * ServiceResult: 返回ServiceModel执行结果对象
@@ -35,7 +35,7 @@ public class ServiceResult {
 
         //page: 默认指向index界面
         private String errormsg = "null";
-        private String page = HOST.PAGE_INDEX;
+        private String page = Page.PAGE_INDEX;
 
         protected Builder(boolean success) {
             this.success = success;

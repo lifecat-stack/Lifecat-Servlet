@@ -1,12 +1,12 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.constant.HOST;
-import com.wang.dao.dao.DAOFactory;
-import com.wang.dao.dao.DiaryDAO;
-import com.wang.dao.jdbcimpl.JdbcDAOFactory;
 import com.wang.bean.doo.DiaryDO;
 import com.wang.bean.dto.DiaryDTO;
 import com.wang.bean.dto.UserDTO;
+import com.wang.constant.Page;
+import com.wang.dao.dao.DAOFactory;
+import com.wang.dao.dao.DiaryDAO;
+import com.wang.dao.jdbcimpl.JdbcDAOFactory;
 import com.wang.service.service.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,22 +18,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * DiaryListQuery: 从数据库获取diary数据
+ * 日记数据集获取
  * <p>
- * 访问范围: protected
- * 调用者: ActionServlet
- * Return: ServiceResult Object
- * Use try-catch to handle Exception
- * <li>
- * queryDiaries() by user_id from user
- * </li>
- * <li>
- * {@literal set List<Diary> to Session}
- * </li>
+ * 失败 Page.PAGE_USERHOME
+ * 成功 Page.PAGE_DIARYSHOW
  *
+ * @date 2018/5/24
  * @auther ten
  */
-public class DiaryListQuery implements Service {
+ class DiaryListQuery implements Service {
 
     private Logger logger = LoggerFactory.getLogger(DiaryListQuery.class);
 
@@ -64,9 +57,9 @@ public class DiaryListQuery implements Service {
         }
 
         if (!success) {
-            return new ServiceResult.Builder(true)
+            return new ServiceResult.Builder(false)
                     .errormsg("数据库查询异常")
-                    .page(req.getRequestURI())
+                    .page(Page.PAGE_USERHOME)
                     .build();
         }
 
@@ -83,7 +76,7 @@ public class DiaryListQuery implements Service {
 
         req.setAttribute("diaryList", diaryList);
         return new ServiceResult.Builder(true)
-                .page(HOST.PAGE_USERHOME)
+                .page(Page.PAGE_DIARYSHOW)
                 .build();
     }
 }

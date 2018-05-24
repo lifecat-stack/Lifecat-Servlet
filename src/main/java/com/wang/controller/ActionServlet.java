@@ -1,6 +1,6 @@
 package com.wang.controller;
 
-import com.wang.constant.HOST;
+import com.wang.constant.Page;
 import com.wang.service.service.Service;
 import com.wang.service.serviceimpl.ServiceFactory;
 import com.wang.service.serviceimpl.ServiceResult;
@@ -46,7 +46,7 @@ public class ActionServlet extends HttpServlet {
 
         //无对应请求 进入错误界面 error.jsp
         if (service == null) {
-            page = HOST.PAGE_ERROR;
+            page = Page.PAGE_ERROR;
             req.setAttribute("errorMsg", "没有此请求");
             req.getRequestDispatcher(page).forward(req, resp);
         }
@@ -61,7 +61,7 @@ public class ActionServlet extends HttpServlet {
         }
         //Result 执行错误 跳转到error.jsp
         else {
-            page = HOST.PAGE_ERROR;
+            page = Page.PAGE_ERROR;
             req.setAttribute("errorMsg", result.getErrormsg());
         }
 

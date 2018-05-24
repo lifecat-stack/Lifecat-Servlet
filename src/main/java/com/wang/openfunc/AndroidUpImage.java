@@ -6,7 +6,7 @@
 //import com.wang.manager.ImageManager;
 //import com.wang.constant.HOST;
 //import com.wang.util.ImageWriter;
-//import com.wang.util.MyDate;
+//import com.wang.util.DateTimeUtil;
 //
 //import javax.servlet.ServletException;
 //import javax.servlet.http.HttpServlet;
@@ -54,8 +54,8 @@
 //        }
 //
 //        //设置图片信息
-//        String image_date = MyDate.getInstance().getCurrentTime();
-//        String image_name = MyDate.getInstance().getCurrentTime() + ".jpg";
+//        String image_date = DateTimeUtil.getInstance().getCurrentTime();
+//        String image_name = DateTimeUtil.getInstance().getCurrentTime() + ".jpg";
 //        String image_path = directory_path + image_name;
 //        ImageWriter writer = ImageWriter.newImageWriter(image_path);
 //

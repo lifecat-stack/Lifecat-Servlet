@@ -1,12 +1,12 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.constant.HOST;
-import com.wang.dao.dao.DAOFactory;
-import com.wang.dao.dao.ImageDAO;
-import com.wang.dao.jdbcimpl.JdbcDAOFactory;
 import com.wang.bean.doo.ImageDO;
 import com.wang.bean.dto.ImageDTO;
 import com.wang.bean.dto.UserDTO;
+import com.wang.constant.Page;
+import com.wang.dao.dao.DAOFactory;
+import com.wang.dao.dao.ImageDAO;
+import com.wang.dao.jdbcimpl.JdbcDAOFactory;
 import com.wang.service.service.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,12 +19,15 @@ import java.util.List;
 
 /**
  * 图片集合获取
+ * <p>
+ * 失败 Page.PAGE_USERHOME
+ * 成功 Page.PAGE_IMAGESHOW
  *
  * @date 2018/5/24
  * @auther ten
  */
-public class ImageListQuery implements Service {
-     private Logger logger = LoggerFactory.getLogger(ImageListQuery.class);
+class ImageListQuery implements Service {
+    private Logger logger = LoggerFactory.getLogger(ImageListQuery.class);
 
     private ImageListQuery() {
     }
@@ -32,6 +35,7 @@ public class ImageListQuery implements Service {
     static Service newService() {
         return new ImageListQuery();
     }
+
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
@@ -53,7 +57,7 @@ public class ImageListQuery implements Service {
         if (!success) {
             return new ServiceResult.Builder(true)
                     .errormsg("数据库查询异常")
-                    .page(req.getRequestURI())
+                    .page(Page.PAGE_USERHOME)
                     .build();
         }
 
@@ -72,7 +76,7 @@ public class ImageListQuery implements Service {
 
         req.setAttribute("imageList", imageList);
         return new ServiceResult.Builder(true)
-                .page(HOST.PAGE_USERHOME)
+                .page(Page.PAGE_IMAGESHOW)
                 .build();
     }
 }
