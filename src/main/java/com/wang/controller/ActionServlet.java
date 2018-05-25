@@ -1,6 +1,7 @@
 package com.wang.controller;
 
 import com.wang.constant.Page;
+import com.wang.filter.form.FormResult;
 import com.wang.service.service.Service;
 import com.wang.service.serviceimpl.ServiceFactory;
 import com.wang.service.serviceimpl.ServiceResult;
@@ -32,11 +33,24 @@ public class ActionServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Logger logger = LoggerFactory.getLogger(ActionServlet.class);
 
-        // 提取url请求信息 /xxx
+        // 获取请求界面的url
         String path = req.getRequestURI();
-        String url = path.substring(path.lastIndexOf("/"), path.lastIndexOf("."));
+        String jspUrl = path.substring(path.lastIndexOf("/"), path.length());
+        logger.info("jsp url is :{}", jspUrl);
 
-        logger.info("servlet url is {}",url);
+        // 验证未通过 转发回请求界面
+        FormResult formResult = (FormResult) req.getAttribute("formResult");
+        if (formResult != null && !formResult.isSuccess()) {
+            logger.warn("Form Filter Failure");
+            req.setAttribute("formResult", formResult);
+            req.getRequestDispatcher(jspUrl).forward(req, resp);
+        }
+
+        logger.info("Form Filter Success");
+
+        // 提取url请求信息 /xxx
+        String url = path.substring(path.lastIndexOf("/"), path.lastIndexOf("."));
+        logger.info("servlet url is :{}", url);
 
         // 根据请求信息 调用相应的service
         Service service = ServiceFactory.getServiceByUrl(url);

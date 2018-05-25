@@ -7,17 +7,17 @@ package com.wang.filter.form;
  */
 public class FormFactory {
     /**
-     * @param url *.do
+     * @param url *
      * @return Form
      * @throws NullPointerException 无此请求对应的Form
      */
     public static Form getFormByName(String url) {
         Form form;
 
-        if ("login.do".equals(url)) {
+        if ("/user_login".equals(url)) {
             form = LoginForm.getForm();
 
-        } else if ("register.do".equals(url)) {
+        } else if ("/user_register".equals(url)) {
             form = RegisterForm.getForm();
 
         } else if ("modifypsw.do".equals(url)) {
@@ -27,7 +27,7 @@ public class FormFactory {
             form = SetMsgForm.getForm();
 
         } else {
-            throw new NullPointerException("Error Form Type");
+            form = null;
         }
         return form;
     }

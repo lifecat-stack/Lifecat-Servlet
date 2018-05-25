@@ -9,10 +9,10 @@
     <meta name="renderer" content="webkit"/>
 
     <title>成长相册</title>
-    <script src="WEB-INF/js/jquery/2.0.0/jquery.min.js"></script>
-    <link href="WEB-INF/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
-    <script src="WEB-INF/js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <link rel="icon" href="WEB-INF/img/webicon.png" type="image/x-icon">
+    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="icon" href="img/webicon.png" type="image/x-icon">
 
     <style>
         * {
@@ -125,7 +125,7 @@
 
         .logo {
             float: left;
-            background-image: url(WEB-INF/img/welcomelogo.png);
+            background-image: url(img/welcomelogo.png);
             display: block;
             width: 280px;
             height: 100px;
@@ -179,7 +179,7 @@
         .slogan {
             width: 600px;
             height: 300px;
-            background: url(WEB-INF/img/backgroundtext.png) no-repeat 0 0;
+            background: url(img/backgroundtext.png) no-repeat 0 0;
             display: inline-block;
             background-size: 600px;
         }
@@ -225,7 +225,7 @@
             position: absolute;
             left: 20px;
             top: 14px;
-            background: url(WEB-INF/img/peopleicon.png) no-repeat 0 0;
+            background: url(img/peopleicon.png) no-repeat 0 0;
             display: block;
             width: 24px;
             height: 24px;
@@ -233,11 +233,15 @@
         }
 
         .main-entry a .title .seller {
-            background-image: url(WEB-INF/img/emailicon.png);
+            background-image: url(img/emailicon.png);
         }
 
         .main-entry a .title .developer {
-            background-image: url(WEB-INF/img/talkicon.png);
+            background-image: url(img/peopleicon.png);
+        }
+
+        .main-entry a .title .developer2 {
+            background-image: url(img/talkicon.png);
         }
 
         .main-entry s {
@@ -370,7 +374,7 @@
             float: left;
             margin-right: 5px;
             height: 28px;
-            background: url(WEB-INF/img/trademark.png) no-repeat 0 0;
+            background: url(img/trademark.png) no-repeat 0 0;
         }
 
         a.pic1 {
@@ -490,7 +494,7 @@
             </div>
             <div class="modal-body">
 
-                <form class="form-group" action="userLogin.do"
+                <form class="form-group" action="index.jsp/user_login.do"
                       method="post">
                     <div class="form-group">
                         <label for="userName">账号</label> <input class="form-control"
@@ -528,13 +532,12 @@
                 <h1 class="text-center">注册</h1>
             </div>
             <div class="modal-body">
-
                 <!-- 注册表单 -->
-                <form class="form-group" action="userRegister.do" method="post">
+                <form class="form-group" action="index.jsp/user_register.do" method="post">
                     <div class="form-group">
                         <label for="rUserName">注册账号</label> <input class="form-control"
                                                                    type="text" placeholder="请输入想注册的账号" name="rusername"
-                                                                   id="rusername">
+                                                                   id="rUserName">
                     </div>
                     <div class="form-group">
                         <label for="rUserPassword1">密码</label> <input class="form-control"
@@ -552,6 +555,8 @@
                         <button class="btn btn-primary" type="submit">注册</button>
                         <button class="btn btn-danger" data-dismiss="modal">取消</button>
                     </div>
+                    <a href="" data-toggle="modal" data-dismiss="modal"
+                       data-target="#login">已有账号？点我登录</a>
                 </form>
             </div>
         </div>
@@ -577,12 +582,20 @@
                 <div class="slogan"></div>
                 <div class="mid">
                     <div class="main-entry">
-                        <a data-toggle="modal" data-target="#login" href=""
-                           class="developer-login"><span class="title"><i
-                                class="developer"></i>登录</span><s></s> </a> <a data-toggle="modal"
-                                                                               data-target="#register" href=""
-                                                                               class="personal-login"><span
-                            class="title"><i class="personal"></i>立即注册</span><s></s> </a>
+                        <a data-toggle="modal" data-target="#login" href="" class="developer-login">
+                            <span class="title">
+                                <i class="developer"></i>用户登录</span><s></s> </a>
+                        <a data-toggle="modal" data-target="#register" href="" class="personal-login">
+                            <span class="title">
+                                <i class="developer"></i>立即注册</span><s></s> </a>
+                    </div>
+                    <div class="main-entry">
+                        <a href="" class="">
+                            <span class="title">
+                                <i class="developer2"></i>管理员登录</span><s></s> </a>
+                        <a href="" class="personal-login">
+                            <span class="title">
+                                <i class="developer2"></i>立即体验</span><s></s> </a>
                     </div>
                 </div>
             </div>
@@ -591,11 +604,11 @@
 
             <div class="items">
                 <div class="item item1"
-                     style="background-image:url(WEB-INF/img/background1.jpg)"></div>
+                     style="background-image:url(img/background1.jpg)"></div>
                 <div class="item item2"
-                     style="background-image:url(WEB-INF/img/background2.jpg)"></div>
+                     style="background-image:url(img/background2.jpg)"></div>
                 <div class="item item3"
-                     style="background-image:url(WEB-INF/img/background3.jpg)"></div>
+                     style="background-image:url(img/background3.jpg)"></div>
             </div>
 
         </div>
@@ -604,15 +617,14 @@
 
 
         <div class="ownership">
-            <span> &copy;2018 - <strong>成长相册-lifecat</strong> - JN</span>
+            <span> &copy;2018 - <strong>成长相册-lifecat</strong> - TEN</span>
         </div>
     </div>
 </div>
-<script src="WEB-INF/js/t19ctgxcrlxxxxxxxx.js"></script>
+<script src="js/t19ctgxcrlxxxxxxxx.js"></script>
 
 <%-- 背景滚动效果 --%>
 <script>
-
     var slideEle = slider($('.items'));
 
     function slider(elem) {
@@ -675,14 +687,7 @@
             slideEle.next();
         }, 4000)
     }
-
-
 </script>
 
 </body>
 </html>
-
-
-
-
-

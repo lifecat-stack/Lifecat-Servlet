@@ -31,9 +31,9 @@ class RegisterForm  extends BaseVerification implements Form {
     public FormResult validate(ServletRequest request) {
         String errormsg;
 
-        String rusername = request.getParameter("rusername");
-        String rpassword1 = request.getParameter("rpassword1");
-        String rpassword2 = request.getParameter("rpassword2");
+        String rusername = request.getParameter("rUserName");
+        String rpassword1 = request.getParameter("rUserPassword1");
+        String rpassword2 = request.getParameter("rUserPassword2");
 
         if (rusername == null) {
             errormsg = "username is empty";

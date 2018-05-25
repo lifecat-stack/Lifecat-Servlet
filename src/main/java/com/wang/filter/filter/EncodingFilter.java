@@ -30,18 +30,16 @@ public class EncodingFilter implements Filter {
     @Override
     public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
             throws IOException, ServletException {
-         // 检查NPE
+        // 检查NPE
         if (chain == null) {
             throw new NullPointerException("EncodingFilter is null");
         }
-
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
 
         logger.info("EncodingFilter doFilter()");
 
         request.setCharacterEncoding("UTF-8");
-
         chain.doFilter(request, response);
     }
 
