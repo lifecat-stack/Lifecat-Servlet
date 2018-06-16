@@ -1,8 +1,10 @@
 package com.wang.bean.doo;
 
-import org.junit.Test;
-import org.junit.Before;
 import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * AdminDO Tester.
@@ -12,13 +14,16 @@ import org.junit.After;
  * @since <pre>ÎåÔÂ 20, 2018</pre>
  */
 public class AdminDOTest {
+    private static AdminDO adminDO;
 
     @Before
     public void before() throws Exception {
+        adminDO = new AdminDO();
     }
 
     @After
     public void after() throws Exception {
+        adminDO = null;
     }
 
     /**
@@ -26,10 +31,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminId() throws Exception {
-        AdminDO adminDO = new AdminDO();
         adminDO.setAdminId(17);
         assert adminDO.getAdminId() == 17;
-//TODO: Test goes here... 
     }
 
     /**
@@ -37,7 +40,6 @@ public class AdminDOTest {
      */
     @Test
     public void testSetAdminId() throws Exception {
-//TODO: Test goes here... 
     }
 
     /**
@@ -45,7 +47,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminName() throws Exception {
-//TODO: Test goes here... 
+        adminDO.setAdminName("wang");
+        assertEquals("wang", adminDO.getAdminName());
     }
 
     /**
@@ -53,7 +56,6 @@ public class AdminDOTest {
      */
     @Test
     public void testSetAdminName() throws Exception {
-//TODO: Test goes here... 
     }
 
     /**
@@ -61,7 +63,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminPassword() throws Exception {
-//TODO: Test goes here... 
+        adminDO.setAdminPassword("123456");
+        assertEquals("123456", adminDO.getAdminPassword());
     }
 
     /**
@@ -69,7 +72,6 @@ public class AdminDOTest {
      */
     @Test
     public void testSetAdminPassword() throws Exception {
-//TODO: Test goes here... 
     }
 
     /**
@@ -77,7 +79,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminLevel() throws Exception {
-//TODO: Test goes here... 
+        adminDO.setAdminLevel("user");
+        assertEquals("user", adminDO.getAdminLevel());
     }
 
     /**
@@ -85,7 +88,6 @@ public class AdminDOTest {
      */
     @Test
     public void testSetAdminLevel() throws Exception {
-//TODO: Test goes here... 
     }
 
     /**
@@ -93,7 +95,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminGmtCreate() throws Exception {
-//TODO: Test goes here... 
+        adminDO.setAdminGmtCreate("2018-06-01 23:59:59");
+        assertEquals("2018-06-01 23:59:59", adminDO.getAdminGmtCreate());
     }
 
     /**
@@ -101,7 +104,6 @@ public class AdminDOTest {
      */
     @Test
     public void testSetAdminGmtCreate() throws Exception {
-//TODO: Test goes here... 
     }
 
     /**
@@ -109,7 +111,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminGmtModified() throws Exception {
-//TODO: Test goes here... 
+        adminDO.setAdminGmtModified("2018-06-01 23:59:59");
+        assertEquals("2018-06-01 23:59:59", adminDO.getAdminGmtModified());
     }
 
     /**
@@ -117,7 +120,6 @@ public class AdminDOTest {
      */
     @Test
     public void testSetAdminGmtModified() throws Exception {
-//TODO: Test goes here... 
     }
 
     /**
@@ -125,8 +127,6 @@ public class AdminDOTest {
      */
     @Test
     public void testToString() throws Exception {
-        System.out.println();
+        System.out.println("AdminDO:" + adminDO.toString());
     }
-
-
 } 

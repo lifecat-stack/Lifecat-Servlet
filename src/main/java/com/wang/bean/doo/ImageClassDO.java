@@ -7,49 +7,49 @@ package com.wang.bean.doo;
  */
 public class ImageClassDO {
 
-    private int imageClassId;
-    private String image_class_name;
-    private String image_class_desc;
-    private String class_gmt_create;
-    private String class_gmt_modified;
+    private Integer imageClassId;
+    private String imageClassName;
+    private String imageClassDesc;
+    private String classGmtCreate;
+    private String classGmtModified;
 
-    public int getImageClassId() {
+    public Integer getImageClassId() {
         return imageClassId;
     }
 
-    public void setImageClassId(int imageClassId) {
+    public void setImageClassId(Integer imageClassId) {
         this.imageClassId = imageClassId;
     }
 
-    public String getImage_class_name() {
-        return image_class_name;
+    public String getImageClassName() {
+        return imageClassName;
     }
 
-    public void setImage_class_name(String image_class_name) {
-        this.image_class_name = image_class_name;
+    public void setImageClassName(String imageClassName) {
+        this.imageClassName = imageClassName;
     }
 
-    public String getImage_class_desc() {
-        return image_class_desc;
+    public String getImageClassDesc() {
+        return imageClassDesc;
     }
 
-    public void setImage_class_desc(String image_class_desc) {
-        this.image_class_desc = image_class_desc;
+    public void setImageClassDesc(String imageClassDesc) {
+        this.imageClassDesc = imageClassDesc;
     }
 
-    public String getClass_gmt_create() {
-        return class_gmt_create;
+    public String getClassGmtCreate() {
+        return classGmtCreate;
     }
 
-    public void setClass_gmt_create(String class_gmt_create) {
-        this.class_gmt_create = class_gmt_create;
+    public void setClassGmtCreate(String classGmtCreate) {
+        this.classGmtCreate = classGmtCreate;
     }
 
-    public String getClass_gmt_modified() {
-        return class_gmt_modified;
+    public String getClassGmtModified() {
+        return classGmtModified;
     }
 
-    public void setClass_gmt_modified(String class_gmt_modified) {
-        this.class_gmt_modified = class_gmt_modified;
+    public void setClassGmtModified(String classGmtModified) {
+        this.classGmtModified = classGmtModified;
     }
 }

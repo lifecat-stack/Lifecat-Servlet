@@ -7,49 +7,49 @@ package com.wang.bean.doo;
  */
 public class ImageFeatureDO {
 
-    private int image_id;
-    private int image_class;
-    private String image_feature_path;
-    private String feature_gmt_create;
-    private String feature_gmt_modified;
+    private Integer imageId;
+    private Integer imageClass;
+    private String imageFeaturePath;
+    private String featureGmtCreate;
+    private String featureGmtModified;
 
-    public int getImage_id() {
-        return image_id;
+    public Integer getImageId() {
+        return imageId;
     }
 
-    public void setImage_id(int image_id) {
-        this.image_id = image_id;
+    public void setImageId(Integer imageId) {
+        this.imageId = imageId;
     }
 
-    public int getImage_class() {
-        return image_class;
+    public Integer getImageClass() {
+        return imageClass;
     }
 
-    public void setImage_class(int image_class) {
-        this.image_class = image_class;
+    public void setImageClass(Integer imageClass) {
+        this.imageClass = imageClass;
     }
 
-    public String getImage_feature_path() {
-        return image_feature_path;
+    public String getImageFeaturePath() {
+        return imageFeaturePath;
     }
 
-    public void setImage_feature_path(String image_feature_path) {
-        this.image_feature_path = image_feature_path;
+    public void setImageFeaturePath(String imageFeaturePath) {
+        this.imageFeaturePath = imageFeaturePath;
     }
 
-    public String getFeature_gmt_create() {
-        return feature_gmt_create;
+    public String getFeatureGmtCreate() {
+        return featureGmtCreate;
     }
 
-    public void setFeature_gmt_create(String feature_gmt_create) {
-        this.feature_gmt_create = feature_gmt_create;
+    public void setFeatureGmtCreate(String featureGmtCreate) {
+        this.featureGmtCreate = featureGmtCreate;
     }
 
-    public String getFeature_gmt_modified() {
-        return feature_gmt_modified;
+    public String getFeatureGmtModified() {
+        return featureGmtModified;
     }
 
-    public void setFeature_gmt_modified(String feature_gmt_modified) {
-        this.feature_gmt_modified = feature_gmt_modified;
+    public void setFeatureGmtModified(String featureGmtModified) {
+        this.featureGmtModified = featureGmtModified;
     }
 }

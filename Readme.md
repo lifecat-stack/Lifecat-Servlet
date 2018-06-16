@@ -139,7 +139,7 @@ README
     * [Manager层通用处理层设计](#manager层)
     * [DAO层数据持久层设计](#dao层数据持久层设计)
     * [DTO数据传输对象设计](#dto数据传输对象设计)
-    * [DO数据访问对象设计](#do数据访问对象设计)
+    * [DO数据访 问对象设计](#do数据访问对象设计)
     * [Utils工具类设计](#utils工具类设计)
     * [Constant常量类设计](#constant常量类设计)
     * [Exfunc外部接口层设计](#exfunc外部接口层设计)
@@ -1040,52 +1040,51 @@ version1.3.2
    * 获取request对象信息，在DAO层中加入控制信息，构建DO对象
    * 根据返回DO对象，处理构建DTO对象，发送到外部
 
-    +-------------------+
-    | Tables_in_lifecat |
-    +-------------------+
-    | admin             | 管理员账号
-    |                   |
-    | user              | 用户账号
-    | user_property     | 用户个人资料
-    | user_icon         | 用户头像信息
-    |                   |
-    | image             | 图片信息
-    | image_type        | 图片所属类别信息
-    | image_class       | 图片类别
-    | image_feature     | 图片特征向量
-    |                   |
-    | diary             | 日记信息
-    +-------------------+
+   |数据表名            |说明
+   |---                |---
+   | admin             | 管理员账号
+   |                   |
+   | user              | 用户账号
+   | user_property     | 用户个人资料
+   | user_icon         | 用户头像信息
+   |                   |
+   | image             | 图片信息
+   | image_type        | 图片所属类别信息
+   | image_class       | 图片类别
+   | image_feature     | 图片特征向量
+   |                   |
+   | diary             | 日记信息
+
 ------------------------------------------------------------------------
-                                     DB  :由数据库返回信息
-    --------------------- 数据提供者↓ VO  :由模型层提供信息
-                                     DAO :由DAO层提供信息
+   * DB  :由数据库返回信息
+   * VO  :由模型层提供信息
+   * DAO :由DAO层提供信息
 ------------------------------------------------------------------------
     +-------------------+
     | AdminDO           |
     +-------------------+
-    | adminId          | DB
-    | adminName        | VO
-    | adminPassword    | VO
-    | adminLevel       | VO
-    | adminGmtCreate  | DAO
-    | adminGmtModified| DAO
+    | adminId           | DB
+    | adminName         | VO
+    | adminPassword     | VO
+    | adminLevel        | VO
+    | adminGmtCreate    | DAO
+    | adminGmtModified  | DAO
     +-------------------+
-------------------------------------------------------------------------
+    
     +-------------------+
     | UserDO            |
     +-------------------+
-    | userId           | DB
-    | userName         | VO
-    | userPassword     | VO
-    | userGmtCreate   | DAO
-    | userGmtModified | DAO
+    | userId            | DB
+    | userName          | VO
+    | userPassword      | VO
+    | userGmtCreate     | DAO
+    | userGmtModified   | DAO
     +-------------------+
-------------------------------------------------------------------------
+    
     +-------------------+
     | UserPropertyDO    |
     +-------------------+
-    | userId           | VO
+    | userId            | VO
     | property_nickname | VO
     | property_signature| VO
     | property_email    | VO
@@ -1095,16 +1094,16 @@ version1.3.2
     | property_gmt_create   DAO
     | property_gmt_modified DAO
     +-------------------+
-------------------------------------------------------------------------
+
     +-------------------+
     | UserIconDO        |
     +-------------------+
-    | userId           | VO
-    | iconPath         | VO
-    | iconGmtCreate   | DAO
-    | iconGmtModified | DAO
+    | userId            | VO
+    | iconPath          | VO
+    | iconGmtCreate     | DAO
+    | iconGmtModified   | DAO
     +-------------------+
-------------------------------------------------------------------------
+
     +-------------------+
     | ImageDO           |
     +-------------------+
@@ -1112,21 +1111,21 @@ version1.3.2
     | image_text        | VO
     | image_path        | VO
     | is_deleted        | DAO
-    | userId           | VO
+    | userId            | VO
     | image_gmt_create  | DAO
     | image_gmt_modified| DAO
     +-------------------+
------------------------------------------------------------------------
+
     +-------------------+
     | ImageClassDO      |
     +-------------------+
-    | imageClassId    | VO
+    | imageClassId      | VO
     | image_class_name  | VO
     | image_class_desc  | VO
     | class_gmt_create  | DAO
     | class_gmt_modified| DAO
     +-------------------+
-------------------------------------------------------------------------
+
     +-------------------+
     | ImageFeatureDO    |
     +-------------------+
@@ -1136,15 +1135,15 @@ version1.3.2
     | feature_gmt_create|  DAO
     | feature_gmt_modified DAO
     +-------------------+
-------------------------------------------------------------------------
+
     +-------------------+
     | DiaryDO           |
     +-------------------+
-    | diaryId          | VO
-    | diaryName        | VO
+    | diaryId           | VO
+    | diaryName         | VO
     | diary_text        | VO
     | is_deleted        | DAO
-    | userId           | VO
+    | userId            | VO
     | diary_gmt_create  | DAO
     | diary_gmt_modified| DAO
     +-------------------+
