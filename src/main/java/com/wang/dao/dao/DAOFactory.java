@@ -15,8 +15,6 @@ public interface DAOFactory {
 
     ImageFeatureDAO getImageFeatureDAO();
 
-    ImageTypeDAO getImageTypeDAO();
-
     ImageClassDAO getImageClassDAO();
 
     UserDAO getUserDAO();

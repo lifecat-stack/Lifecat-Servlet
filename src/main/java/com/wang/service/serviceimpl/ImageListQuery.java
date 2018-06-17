@@ -69,7 +69,7 @@ class ImageListQuery implements Service {
                     imageDO.getImagePath(),
                     imageDO.getImageGmtCreate())
                     .imageText(imageDO.getImageText())
-                    .imageType(imageDO.getClassId())
+                    .imageClassId(imageDO.getClassId())
                     .build();
             imageList.add(imageDTO);
         }

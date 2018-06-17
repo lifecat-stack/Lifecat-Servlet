@@ -11,7 +11,7 @@ import com.wang.bean.MyBuilder;
  */
 public class AdminDTO {
 
-    private final int adminId;
+    private final Integer adminId;
     private final String adminName;
     private final String adminLevel;
 
@@ -28,14 +28,14 @@ public class AdminDTO {
 
     public static class Builder implements MyBuilder<AdminDTO> {
 
-        private final int adminId;
+        private final Integer adminId;
         private final String adminName;
         private final String adminLevel;
 
-        public Builder(int admin_id, String admin_name, String admin_level) {
-            this.adminId = admin_id;
-            this.adminName = admin_name;
-            this.adminLevel = admin_level;
+        public Builder(int adminId, String adminName, String adminLevel) {
+            this.adminId = adminId;
+            this.adminName = adminName;
+            this.adminLevel = adminLevel;
         }
 
         @Override
@@ -55,7 +55,7 @@ public class AdminDTO {
             return false;
         }
         //参数检测
-        if (this.adminId != ((AdminDTO) obj).getAdminId()) {
+        if (!this.adminId.equals(((AdminDTO) obj).getAdminId())) {
             return false;
         }
         if (!this.adminName.equals(((AdminDTO) obj).getAdminName())) {
@@ -80,14 +80,18 @@ public class AdminDTO {
         return result;
     }
 
-    //Admin@1234{wang,LEVEL}
+    /**
+     * Admin@1234{name:wang,level:LEVEL}
+     */
     @Override
     public String toString() {
-        return "Admin@" + adminId + "{" + adminName + "," + adminLevel + "}";
+        return "Admin@" + adminId + "{name:" + adminName + ",level:" + adminLevel + "}";
     }
 
-    //getter方法
-    public int getAdminId() {
+    /**
+     * getter方法
+     */
+    public Integer getAdminId() {
         return adminId;
     }
 

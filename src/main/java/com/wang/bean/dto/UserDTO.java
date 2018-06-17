@@ -12,8 +12,7 @@ import com.wang.bean.MyBuilder;
  */
 public class UserDTO {
 
-
-    private final int userId;
+    private final Integer userId;
     private final String userName;
 
     /**
@@ -31,9 +30,9 @@ public class UserDTO {
         private final int userId;
         private final String userName;
 
-        public Builder(int user_id, String user_name) {
-            this.userId = user_id;
-            this.userName = user_name;
+        public Builder(int userId, String userName) {
+            this.userId = userId;
+            this.userName = userName;
         }
 
         @Override
@@ -53,7 +52,7 @@ public class UserDTO {
             return false;
         }
         //参数检测
-        if (this.userId != ((UserDTO) obj).getUserId()) {
+        if (!this.userId.equals(((UserDTO) obj).getUserId())) {
             return false;
         }
         if (!this.userName.equals(((UserDTO) obj).getUserName())) {
@@ -75,14 +74,18 @@ public class UserDTO {
         return result;
     }
 
-    //User@1234{wang}
+    /**
+     * User@1234{wang}
+     */
     @Override
     public String toString() {
         return "User@" + userId + "{" + userName + "}";
     }
 
-    //getter方法
-    public int getUserId() {
+    /**
+     * getter方法
+     */
+    public Integer getUserId() {
         return userId;
     }
 

@@ -2,17 +2,16 @@ package com.wang.bean.dto;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * DTO :Album集合，用户图片集
  *
  * @auther ten
  */
 public class AlbumDTO {
-    /**
-     * List 引用不可变，值可变
-     */
+
     private final List<ImageDTO> imageList;
-    private final int userId;
+    private final Integer userId;
 
     private AlbumDTO(int userId) {
         this.userId = userId;
@@ -41,7 +40,9 @@ public class AlbumDTO {
         return this.imageList;
     }
 
-    //Album@1234{size:size()}
+    /**
+     * Album@1234{size:size()}
+     */
     @Override
     public String toString() {
         return "Album@" + userId + "{size:" + imageList.size() + "}";

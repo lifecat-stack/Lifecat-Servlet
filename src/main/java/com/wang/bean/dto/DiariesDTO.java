@@ -9,11 +9,9 @@ import java.util.List;
  * @auther ten
  */
 public class DiariesDTO {
-    /**
-     * List 引用不可变，值可变
-     */
+
     private final List<DiaryDTO> diaryList;
-    private final int userId;
+    private final Integer userId;
 
     private DiariesDTO(int userId) {
         this.userId = userId;
@@ -42,7 +40,9 @@ public class DiariesDTO {
         return this.diaryList;
     }
 
-    //Diaries@1234{size:size()}
+    /**
+     * Diaries@1234{size:size()}
+     */
     @Override
     public String toString() {
         return "Diaries@" + userId + "{size:" + diaryList.size() + "}";

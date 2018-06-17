@@ -12,7 +12,7 @@ import com.wang.constant.Directory;
  */
 public class UserPropertyDTO {
 
-    private final int userId;
+    private final Integer userId;
     private String nickname;
     private String signature;
     private String email;
@@ -33,7 +33,7 @@ public class UserPropertyDTO {
     }
 
     public static class Builder implements MyBuilder<UserPropertyDTO> {
-        //NOT NULL
+
         private final int userId;
 
         private String nickname = "lifecat";
@@ -44,8 +44,8 @@ public class UserPropertyDTO {
         private String birthday = "2018-01-01";
         private String iconPath = Directory.IMAGE_PATH;
 
-        public Builder(int user_id) {
-            this.userId = user_id;
+        public Builder(int userId) {
+            this.userId = userId;
         }
 
         public UserPropertyDTO.Builder nickname(String val) {
@@ -89,7 +89,9 @@ public class UserPropertyDTO {
         }
     }
 
-    //UserProperty@1234{nickname:'',signature:'',email:'',sex:'',location:'',birthday:'',iconPath:''}
+    /**
+     * UserProperty@1234{nickname:'',signature:'',email:'',sex:'',location:'',birthday:'',iconPath:''}
+     */
     @Override
     public String toString() {
         return "UserProperty@" + userId + "{"
@@ -102,8 +104,10 @@ public class UserPropertyDTO {
                 + "iconPath" + iconPath + "}";
     }
 
-    //getter
-    public int getUserId() {
+    /**
+     * getter
+     */
+    public Integer getUserId() {
         return userId;
     }
 

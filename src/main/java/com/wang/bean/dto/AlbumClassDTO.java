@@ -2,27 +2,26 @@ package com.wang.bean.dto;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * DTO :Album分类集合，不同类别图片集合
  *
  * @auther ten
  */
 public class AlbumClassDTO {
-    /**
-     * List 引用不可变，值可变
-     */
-    private final List<ImageDTO> imageClassList;
-    private final int userId;
-    private final int imageClass;
 
-    private AlbumClassDTO(int userId, int imageClass) {
+    private final List<ImageDTO> imageClassList;
+    private final Integer userId;
+    private final Integer imageClassId;
+
+    private AlbumClassDTO(int userId, int imageClassId) {
         this.userId = userId;
-        this.imageClass = imageClass;
+        this.imageClassId = imageClassId;
         imageClassList = new ArrayList<>();
     }
 
-    public static AlbumClassDTO newAlbumClass(int userId, int imageClass) {
-        return new AlbumClassDTO(userId, imageClass);
+    public static AlbumClassDTO newAlbumClass(int userId, int imageClassId) {
+        return new AlbumClassDTO(userId, imageClassId);
     }
 
     /**
@@ -43,9 +42,11 @@ public class AlbumClassDTO {
         return this.imageClassList;
     }
 
-    //AlbumClass@1234{size:size(),class:''}
+    /**
+     * AlbumClass@1234{size:size(),classId:''}
+     */
     @Override
     public String toString() {
-        return "AlbumClass@" + userId + "{size:" + imageClassList.size() + ",class:" + imageClass + "}";
+        return "AlbumClass@" + userId + "{size:" + imageClassList.size() + ",classId:" + imageClassId + "}";
     }
 }

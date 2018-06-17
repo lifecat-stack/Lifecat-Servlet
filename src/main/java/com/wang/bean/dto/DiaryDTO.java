@@ -13,7 +13,7 @@ import com.wang.bean.MyBuilder;
  */
 public class DiaryDTO implements Comparable<DiaryDTO> {
 
-    private final int diaryId;
+    private final Integer diaryId;
     private final String diaryName;
     private final String diaryText;
     private final String diaryDate;
@@ -32,11 +32,11 @@ public class DiaryDTO implements Comparable<DiaryDTO> {
 
     public static class Builder implements MyBuilder<DiaryDTO> {
 
-        private final int diaryId;
+        private final Integer diaryId;
 
         private String diaryText = "天气晴朗";
         private String diaryName = "周日, 晴";
-        private String diaryDate = "2018-05-20";
+        private String diaryDate = "2018-05-20 00:00:00";
 
         public Builder(int diaryId) {
             this.diaryId = diaryId;
@@ -68,6 +68,8 @@ public class DiaryDTO implements Comparable<DiaryDTO> {
      * <p>
      * 根据diaryDate进行比较
      * <p>
+     * 时间最近的更大
+     * <p>
      * 1. 小于 负数
      * 2. 等于 零
      * 3. 大于 正数
@@ -77,7 +79,16 @@ public class DiaryDTO implements Comparable<DiaryDTO> {
      */
     @Override
     public int compareTo(DiaryDTO diary) {
-        return Integer.valueOf(this.diaryDate) - Integer.valueOf(diary.getDiaryDate());
+        String date1 = this.diaryDate;
+        String date2 = diary.diaryDate;
+        for (int i = 0; i < date1.length(); i++) {
+            if (date1.charAt(i) > date2.charAt(i)) {
+                return 1;
+            } else if (date1.charAt(i) < date2.charAt(i)) {
+                return -1;
+            }
+        }
+        return 0;
     }
 
 
@@ -92,7 +103,7 @@ public class DiaryDTO implements Comparable<DiaryDTO> {
             return false;
         }
         //参数检测
-        if (this.diaryId != ((DiaryDTO) obj).getDiaryId()) {
+        if (!this.diaryId.equals(((DiaryDTO) obj).getDiaryId())) {
             return false;
         }
         if (!this.diaryName.equals(((DiaryDTO) obj).getDiaryName())) {
@@ -121,15 +132,19 @@ public class DiaryDTO implements Comparable<DiaryDTO> {
         return result;
     }
 
-    //Diary@1234{name:'',text:'',date:''}
+    /**
+     * Diary@1234{name:'',text:'',date:''}
+     */
     @Override
     public String toString() {
         return "Diary@" + diaryId + "{name:" + diaryName + ",text:"
                 + diaryText + ",date:" + diaryDate + "}";
     }
 
-    //getter
-    public int getDiaryId() {
+    /**
+     * getter
+     */
+    public Integer getDiaryId() {
         return diaryId;
     }
 

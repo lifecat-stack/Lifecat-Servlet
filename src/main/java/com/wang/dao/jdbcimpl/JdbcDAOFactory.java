@@ -31,11 +31,6 @@ public class JdbcDAOFactory implements DAOFactory {
     }
 
     @Override
-    public ImageTypeDAO getImageTypeDAO() {
-        return ImageTypeDAOImpl.newImageTypeDAO();
-    }
-
-    @Override
     public ImageClassDAO getImageClassDAO() {
         return ImageClassDAOImpl.newImageClassDAO();
     }

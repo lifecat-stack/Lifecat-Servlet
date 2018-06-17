@@ -13,11 +13,11 @@ import com.wang.bean.MyBuilder;
  */
 public class ImageDTO implements Comparable<ImageDTO> {
 
-    private final int imageId;
+    private final Integer imageId;
     private final String imageText;
     private final String imagePath;
     private final String imageDate;
-    private final int imageType;
+    private final Integer imageClassId;
 
     /**
      * hashCode缓存
@@ -29,7 +29,7 @@ public class ImageDTO implements Comparable<ImageDTO> {
         imageText = builder.imageText;
         imagePath = builder.imagePath;
         imageDate = builder.imageDate;
-        imageType = builder.imageType;
+        imageClassId = builder.imageClassId;
     }
 
     public static class Builder implements MyBuilder<ImageDTO> {
@@ -38,9 +38,7 @@ public class ImageDTO implements Comparable<ImageDTO> {
         private final String imagePath;
         private final String imageDate;
 
-        //默认类别{0:未分类}
-        private int imageType = 0;
-        //默认文本:"成长记录"
+        private int imageClassId = 0;
         private String imageText = "成长记录";
 
         public Builder(int imageId, String imagePath, String imageDate) {
@@ -54,8 +52,8 @@ public class ImageDTO implements Comparable<ImageDTO> {
             return this;
         }
 
-        public Builder imageType(int val) {
-            imageType = val;
+        public Builder imageClassId(int val) {
+            imageClassId = val;
             return this;
         }
 
@@ -70,6 +68,8 @@ public class ImageDTO implements Comparable<ImageDTO> {
      * <p>
      * 根据ImageDate进行比较
      * <p>
+     * 时间最近的更大
+     * <p>
      * 1. 小于 负数
      * 2. 等于 零
      * 3. 大于 正数
@@ -79,10 +79,18 @@ public class ImageDTO implements Comparable<ImageDTO> {
      */
     @Override
     public int compareTo(ImageDTO img) {
-        return Integer.valueOf(this.imageDate) - Integer.valueOf(img.getImageDate());
+        String date1 = this.imageDate;
+        String date2 = img.imageDate;
+        for (int i = 0; i < date1.length(); i++) {
+            if (date1.charAt(i) > date2.charAt(i)) {
+                return 1;
+            } else if (date1.charAt(i) < date2.charAt(i)) {
+                return -1;
+            }
+        }
+        return 0;
     }
 
-    //忽略imageType
     @Override
     public boolean equals(Object obj) {
         //引用检测
@@ -94,7 +102,7 @@ public class ImageDTO implements Comparable<ImageDTO> {
             return false;
         }
         //参数检测
-        if (this.imageId != ((ImageDTO) obj).getImageId()) {
+        if (!this.imageId.equals(((ImageDTO) obj).getImageId())) {
             return false;
         }
         if (!this.imageDate.equals(((ImageDTO) obj).getImageDate())) {
@@ -113,26 +121,30 @@ public class ImageDTO implements Comparable<ImageDTO> {
     public int hashCode() {
         int result = hashCode;
         if (result == 0) {
-            result = 17 ;
+            result = 17;
             result = 31 * result + imageId;
             result = 31 * result + imageDate.hashCode();
             result = 31 * result + imagePath.hashCode();
             result = 31 * result + imageText.hashCode();
-            result = 31 * result + imageType;
+            result = 31 * result + imageClassId;
             hashCode = result;
         }
         return result;
     }
 
-    //Image@1234{text:'',date:'',path:'',type:''}
+    /**
+     * Image@1234{text:'',date:'',path:'',class:''}
+     */
     @Override
     public String toString() {
         return "Image@" + imageId + "{text:" + imageText + ",date:" + imageDate +
-                ",path:" + imagePath + ",type:" + imageType + "}";
+                ",path:" + imagePath + ",class:" + imageClassId + "}";
     }
 
-    //getter
-    public int getImageId() {
+    /**
+     * getter
+     */
+    public Integer getImageId() {
         return imageId;
     }
 
@@ -148,12 +160,11 @@ public class ImageDTO implements Comparable<ImageDTO> {
         return imageDate;
     }
 
-    public int getImageType() {
-        return imageType;
+    public Integer getImageClassId() {
+        return imageClassId;
     }
 
     public int getHashCode() {
         return hashCode;
     }
-
 }
