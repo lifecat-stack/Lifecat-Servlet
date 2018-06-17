@@ -1,125 +1,116 @@
 package com.wang.bean.doo;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import org.junit.*;
 
-/** 
-* ImageClassDO Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>ÎåÔÂ 20, 2018</pre> 
-* @version 1.0 
-*/ 
-public class ImageClassDOTest { 
+import static org.junit.Assert.assertEquals;
 
-@Before
-public void before() throws Exception { 
-} 
+/**
+ * ImageClassDO Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>ÁùÔÂ 17, 2018</pre>
+ */
+public class ImageClassDOTest {
+    private static ImageClassDO imageClassDO;
 
-@After
-public void after() throws Exception { 
-} 
+    @BeforeClass
+    public static void beforeClass() {
+        imageClassDO = new ImageClassDO();
+    }
 
-/** 
-* 
-* Method: getImageClassId() 
-* 
-*/ 
-@Test
-public void testGetImageClassId() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @Before
+    public void before() throws Exception {
+    }
 
-/** 
-* 
-* Method: setImageClassId(int imageClassId) 
-* 
-*/ 
-@Test
-public void testSetImageClassId() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @After
+    public void after() throws Exception {
+    }
 
-/** 
-* 
-* Method: getImage_class_name() 
-* 
-*/ 
-@Test
-public void testGetImage_class_name() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @AfterClass
+    public static void afterClass() {
+        imageClassDO = null;
+    }
 
-/** 
-* 
-* Method: setImage_class_name(String image_class_name) 
-* 
-*/ 
-@Test
-public void testSetImage_class_name() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getImageClassId()
+     */
+    @Test
+    public void testGetImageClassId() throws Exception {
+        imageClassDO.setImageClassId(17);
+        assert imageClassDO.getImageClassId() == 17;
+    }
 
-/** 
-* 
-* Method: getImage_class_desc() 
-* 
-*/ 
-@Test
-public void testGetImage_class_desc() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: setImageClassId(Integer imageClassId)
+     */
+    @Test
+    public void testSetImageClassId() throws Exception {
+    }
 
-/** 
-* 
-* Method: setImage_class_desc(String image_class_desc) 
-* 
-*/ 
-@Test
-public void testSetImage_class_desc() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getImageClassName()
+     */
+    @Test
+    public void testGetImageClassName() throws Exception {
+        imageClassDO.setImageClassName("view");
+        assertEquals("view", imageClassDO.getImageClassName());
+    }
 
-/** 
-* 
-* Method: getClass_gmt_create() 
-* 
-*/ 
-@Test
-public void testGetClass_gmt_create() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: setImageClassName(String imageClassName)
+     */
+    @Test
+    public void testSetImageClassName() throws Exception {
+    }
 
-/** 
-* 
-* Method: setClass_gmt_create(String class_gmt_create) 
-* 
-*/ 
-@Test
-public void testSetClass_gmt_create() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getImageClassDesc()
+     */
+    @Test
+    public void testGetImageClassDesc() throws Exception {
+        imageClassDO.setImageClassDesc("this is view");
+        assertEquals("this is view", imageClassDO.getImageClassDesc());
+    }
 
-/** 
-* 
-* Method: getClass_gmt_modified() 
-* 
-*/ 
-@Test
-public void testGetClass_gmt_modified() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: setImageClassDesc(String imageClassDesc)
+     */
+    @Test
+    public void testSetImageClassDesc() throws Exception {
+    }
 
-/** 
-* 
-* Method: setClass_gmt_modified(String class_gmt_modified) 
-* 
-*/ 
-@Test
-public void testSetClass_gmt_modified() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getClassGmtCreate()
+     */
+    @Test
+    public void testGetClassGmtCreate() throws Exception {
+        imageClassDO.setClassGmtCreate("2018-06-01 23:59:59");
+        assertEquals("2018-06-01 23:59:59", imageClassDO.getClassGmtCreate());
+    }
+
+    /**
+     * Method: setClassGmtCreate(String classGmtCreate)
+     */
+    @Test
+    public void testSetClassGmtCreate() throws Exception {
+    }
+
+    /**
+     * Method: getClassGmtModified()
+     */
+    @Test
+    public void testGetClassGmtModified() throws Exception {
+        imageClassDO.setClassGmtModified("2018-06-01 23:59:59");
+        assertEquals("2018-06-01 23:59:59", imageClassDO.getClassGmtModified());
+    }
+
+    /**
+     * Method: setClassGmtModified(String classGmtModified)
+     */
+    @Test
+    public void testSetClassGmtModified() throws Exception {
+    }
 
 
 } 

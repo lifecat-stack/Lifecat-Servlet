@@ -1,125 +1,120 @@
 package com.wang.bean.doo;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import org.junit.*;
 
-/** 
-* ImageTypeDO Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>ï¿½ï¿½ï¿½ï¿½ 20, 2018</pre> 
-* @version 1.0 
-*/ 
-public class ImageTypeDOTest { 
+/**
+ * ImageTypeDO Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>ÁùÔÂ 17, 2018</pre>
+ */
+public class ImageTypeDOTest {
+    private static ImageTypeDO imageTypeDO;
 
-@Before
-public void before() throws Exception { 
-} 
+    @BeforeClass
+    public static void beforeClass() {
+        imageTypeDO = new ImageTypeDO();
+    }
 
-@After
-public void after() throws Exception { 
-} 
+    @Before
+    public void before() throws Exception {
+    }
 
-/** 
-* 
-* Method: getImage_id() 
-* 
-*/ 
-@Test
-public void testGetImage_id() throws Exception { 
+    @After
+    public void after() throws Exception {
+    }
+
+    @AfterClass
+    public static void afterClass() {
+        imageTypeDO = null;
+    }
+
+    /**
+     * Method: getImageId()
+     */
+    @Test
+    public void testGetImageId() throws Exception {
+        imageTypeDO.setImageId(17);
+        assert imageTypeDO.getImageId() == 17;
+    }
+
+    /**
+     * Method: setImageId(Integer imageId)
+     */
+    @Test
+    public void testSetImageId() throws Exception {
+    }
+
+    /**
+     * Method: getUserId()
+     */
+    @Test
+    public void testGetUserId() throws Exception {
+        imageTypeDO.setUserId(17);
+        assert imageTypeDO.getUserId() == 17;
+    }
+
+    /**
+     * Method: setUserId(Integer userId)
+     */
+    @Test
+    public void testSetUserId() throws Exception {
+    }
+
+    /**
+     * Method: getClassId()
+     */
+    @Test
+    public void testGetClassId() throws Exception {
+        imageTypeDO.setClassId(17);
+        assert imageTypeDO.getClassId() == 17;
+    }
+
+    /**
+     * Method: setClassId(Integer classId)
+     */
+    @Test
+    public void testSetClassId() throws Exception {
+    }
+
+    /**
+     * Method: getTypeGmtCreate()
+     */
+    @Test
+    public void testGetTypeGmtCreate() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: setImage_id(int image_id) 
-* 
-*/ 
-@Test
-public void testSetImage_id() throws Exception { 
+    /**
+     * Method: setTypeGmtCreate(String typeGmtCreate)
+     */
+    @Test
+    public void testSetTypeGmtCreate() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: getUser_id() 
-* 
-*/ 
-@Test
-public void testGetUser_id() throws Exception { 
+    /**
+     * Method: getTypeGmtModified()
+     */
+    @Test
+    public void testGetTypeGmtModified() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: setUser_id(int user_id) 
-* 
-*/ 
-@Test
-public void testSetUser_id() throws Exception { 
+    /**
+     * Method: setTypeGmtModified(String typeGmtModified)
+     */
+    @Test
+    public void testSetTypeGmtModified() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: getImage_class() 
-* 
-*/ 
-@Test
-public void testGetImage_class() throws Exception { 
+    /**
+     * Method: toString()
+     */
+    @Test
+    public void testToString() throws Exception {
 //TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: setImage_class(int image_class) 
-* 
-*/ 
-@Test
-public void testSetImage_class() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: getType_gmt_create() 
-* 
-*/ 
-@Test
-public void testGetType_gmt_create() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: setType_gmt_create(String type_gmt_create) 
-* 
-*/ 
-@Test
-public void testSetType_gmt_create() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: getType_gmt_modified() 
-* 
-*/ 
-@Test
-public void testGetType_gmt_modified() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: setType_gmt_modified(String type_gmt_modified) 
-* 
-*/ 
-@Test
-public void testSetType_gmt_modified() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-
+    }
 } 

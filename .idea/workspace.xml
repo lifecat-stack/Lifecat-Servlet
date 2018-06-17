@@ -11,10 +11,16 @@
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageClassDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageClassDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageFeatureDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageFeatureDO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/DiaryDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/DiaryDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageClassDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageFeatureDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageTypeDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserIconDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserIconDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserPropertyDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserPropertyDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wang/bean/doo/AdminDOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/wang/bean/doo/AdminDOTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,32 +59,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42553192">
+    <splitter split-orientation="horizontal" split-proportion="0.46314907">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="AdminDO.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/AdminDO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="268">
-                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DiaryDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/DiaryDO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-638">
-                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="ImageClassDO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageClassDO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+                <state relative-caret-position="374">
+                  <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -86,26 +74,8 @@
           <file leaf-file-name="ImageDO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageDO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserPropertyDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserPropertyDO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="88">
-                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserIconDO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserIconDO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+                <state relative-caret-position="1188">
+                  <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -119,11 +89,71 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="UserDOTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserDOTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="422">
+                  <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#323#324#0" expanded="true" />
+                    <element signature="e#372#373#0" expanded="true" />
+                    <element signature="e#555#556#0" expanded="true" />
+                    <element signature="e#590#591#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserIconDOTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserIconDOTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="422">
+                  <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#339#340#0" expanded="true" />
+                    <element signature="e#388#389#0" expanded="true" />
+                    <element signature="e#571#572#0" expanded="true" />
+                    <element signature="e#606#607#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserPropertyDOTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserPropertyDOTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="422">
+                  <caret line="182" column="5" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#350#351#0" expanded="true" />
+                    <element signature="e#399#400#0" expanded="true" />
+                    <element signature="e#602#603#0" expanded="true" />
+                    <element signature="e#637#638#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="ImageTypeDO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageTypeDO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+                <state relative-caret-position="264">
+                  <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ImageTypeDOTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageTypeDOTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="422">
+                  <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#341#342#0" expanded="true" />
+                    <element signature="e#390#391#0" expanded="true" />
+                    <element signature="e#573#574#0" expanded="true" />
+                    <element signature="e#608#609#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -131,21 +161,23 @@
           <file leaf-file-name="ImageFeatureDO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageFeatureDO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="444">
-                  <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-                  <folding>
-                    <element signature="e#1158#1159#0" expanded="true" />
-                    <element signature="e#1222#1223#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="290">
+                  <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AdminDTO.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/dto/AdminDTO.java">
+          <file leaf-file-name="ImageFeatureDOTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageFeatureDOTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                <state relative-caret-position="422">
+                  <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#353#354#0" expanded="true" />
+                    <element signature="e#402#403#0" expanded="true" />
+                    <element signature="e#585#586#0" expanded="true" />
+                    <element signature="e#620#621#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -154,15 +186,6 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="UserPropertyDAOImplTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserPropertyDAOImplTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="572">
-                  <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="SQL.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/SQL.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -186,7 +209,7 @@
             <entry file="file://$PROJECT_DIR$/Readme.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="-1304">
+                  <first_editor relative-caret-position="23540">
                     <caret line="1070" column="22" selection-start-line="1070" selection-start-column="22" selection-end-line="1070" selection-end-column="22" />
                   </first_editor>
                   <second_editor />
@@ -194,13 +217,64 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AdminDOTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="AdminDOTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+                <state relative-caret-position="440">
+                  <caret line="104" column="22" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="41" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#318#319#0" expanded="true" />
+                    <element signature="e#357#358#0" expanded="true" />
+                    <element signature="e#536#537#0" expanded="true" />
+                    <element signature="e#566#567#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ImageClassDOTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageClassDOTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="242">
+                  <caret line="41" column="2" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="41" selection-end-column="2" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#385#386#0" expanded="true" />
+                    <element signature="e#424#425#0" expanded="true" />
+                    <element signature="e#627#628#0" expanded="true" />
+                    <element signature="e#657#658#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ImageDOTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageDOTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="312">
+                  <caret line="161" column="18" selection-start-line="161" selection-start-column="18" selection-end-line="161" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#320#321#0" expanded="true" />
+                    <element signature="e#369#370#0" expanded="true" />
+                    <element signature="e#572#573#0" expanded="true" />
+                    <element signature="e#607#608#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DiaryDOTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/DiaryDOTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-198">
+                  <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#272#273#0" expanded="true" />
+                    <element signature="e#311#312#0" expanded="true" />
+                    <element signature="e#573#574#0" expanded="true" />
+                    <element signature="e#603#604#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -219,7 +293,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AdminDAOImpl.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="154">
-                  <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+                  <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -264,14 +338,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/include/top.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/constant/Web.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/util/MyDate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/util/DateTimeUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/bean/MyBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/util/ImageWriter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/constant/Directory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/constant/Page.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/AdminLogin.java" />
@@ -315,6 +381,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageClassDO.java" />
         <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/DiaryDOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageClassDOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageDOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageFeatureDOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageTypeDOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserDOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserIconDOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserPropertyDOTest.java" />
       </list>
     </option>
   </component>
@@ -356,17 +430,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="lifecatweb" type="58d84e3e:PackageViewProjectNode" />
-              <item name="lifecatweb" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -477,6 +540,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lifecatweb" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lifecatweb" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -543,7 +617,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AdminDOTest">
+  <component name="RunManager" selected="JUnit.com.wang.bean.doo in lifecatweb">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -639,20 +713,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ConnectionsTest.testMain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lifecatweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wang.bean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.wang.util" />
-      <option name="MAIN_CLASS_NAME" value="com.wang.util.ConnectionsTest" />
-      <option name="METHOD_NAME" value="testMain" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -662,13 +729,20 @@
       </option>
       <patterns />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration name="com.wang.bean.doo in lifecatweb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lifecatweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wang.bean.doo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
+      <option name="PACKAGE_NAME" value="com.wang.bean.doo" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -807,19 +881,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.lifecat" />
-      <item itemvalue="JUnit.ConnectionsTest.testMain" />
       <item itemvalue="JUnit.ConnectionsTest.testGetConnection" />
       <item itemvalue="JUnit.ConnectionsTest" />
       <item itemvalue="JUnit.AdminDOTest.testGetAdminPassword" />
       <item itemvalue="JUnit.AdminDOTest" />
+      <item itemvalue="JUnit.com.wang.bean.doo in lifecatweb" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.wang.bean.doo in lifecatweb" />
         <item itemvalue="JUnit.AdminDOTest" />
         <item itemvalue="JUnit.AdminDOTest.testGetAdminPassword" />
         <item itemvalue="JUnit.ConnectionsTest" />
         <item itemvalue="JUnit.ConnectionsTest.testGetConnection" />
-        <item itemvalue="JUnit.ConnectionsTest.testMain" />
       </list>
     </recent_temporary>
   </component>
@@ -899,7 +973,8 @@
       <workItem from="1528269793998" duration="928000" />
       <workItem from="1528981098219" duration="2679000" />
       <workItem from="1529060272350" duration="1198000" />
-      <workItem from="1529107079448" duration="7983000" />
+      <workItem from="1529107079448" duration="8496000" />
+      <workItem from="1529194058976" duration="2537000" />
     </task>
     <task id="LOCAL-00001" summary="version1.3.1&#10;--单例模式重构MyDate&#10;--构建器模式重构Bean&#10;--重写了User的hashCode计算&#10;--覆盖了tostring方法">
       <created>1525965840652</created>
@@ -1216,13 +1291,17 @@
       <option name="project" value="LOCAL" />
       <updated>1529111094604</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary=" --version2.0 junit">
+      <created>1529157908368</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1529157908368</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConnectionsTest - 2018.05.25 at 21h 51m 08s.xml">
-      <configuration name="ConnectionsTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConnectionsTest - 2018.05.25 at 21h 51m 49s.xml">
       <configuration name="ConnectionsTest" configurationId="JUnit" />
     </history-entry>
@@ -1250,9 +1329,12 @@
     <history-entry file="AdminDOTest - 2018.06.16 at 10h 55m 21s.xml">
       <configuration name="AdminDOTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AdminDOTest - 2018.06.17 at 08h 23m 32s.xml">
+      <configuration name="AdminDOTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="436590000" />
+    <option name="totallyTimeSpent" value="439640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1265,6 +1347,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
@@ -1288,20 +1371,20 @@
       <window_info id="Java Enterprise" order="9" side_tool="true" weight="0.32957748" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4992948" weight="0.66857964" />
-      <window_info active="true" anchor="right" id="Run" order="12" visible="true" weight="0.038787022" />
+      <window_info anchor="right" id="Run" order="12" weight="0.06770099" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4992948" weight="0.07317073" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8077475" visible="true" weight="0.13822284" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8077475" visible="true" weight="0.15796897" />
       <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info id="JRebel" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32998565" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.6918195" weight="0.32855093" />
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.18724559" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32998565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="R Packages" order="9" />
@@ -1311,6 +1394,7 @@
       <window_info anchor="right" id="R Packages" order="9" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32816902" />
       <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.15299027" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="JRebel" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -1318,16 +1402,15 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964838" />
       <window_info id="UI Designer" order="5" />
+      <window_info id="Web" order="8" side_tool="true" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="15" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.15299027" />
-      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32981715" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="1.0" />
@@ -1336,9 +1419,9 @@
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13169014" />
       <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
-      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32981715" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1421,8 +1504,86 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserLoginTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageTypeDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageFeatureDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/dto/AdminDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserPropertyDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="23540">
+            <caret line="1070" column="22" selection-start-line="1070" selection-start-column="22" selection-end-line="1070" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AbstractDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AdminDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserPropertyQuery.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1431,18 +1592,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPropertyQueryTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserPropertyUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPropertyUpdateTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserPswUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1451,18 +1606,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPswUpdateTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserRegisterTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/service/Service.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1485,18 +1634,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/filter/filter/EncodingFilterTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/filter/FormFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/filter/filter/FormFilterTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/BaseVerification.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1505,18 +1648,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/BaseVerificationTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/FormFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/FormFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/FormResult.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1525,18 +1662,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/FormResultTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/LoginForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/LoginFormTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/ModifyPswForm.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1545,9 +1676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/ModifyPswFormTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/RegisterForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -1555,18 +1683,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/RegisterFormTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/SetMsgForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/SetMsgFormTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/Verifiable.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1582,18 +1704,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/constant/DataBaseTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/constant/DirectoryTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1602,18 +1718,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/constant/HOSTTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/constant/PageTest.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/dto/AdminDTO.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1622,16 +1732,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/DiaryDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserPropertyDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
+        <state relative-caret-position="154">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
@@ -1643,14 +1746,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserDO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AdminDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="23540">
+            <caret line="1070" column="22" selection-start-line="1070" selection-start-column="22" selection-end-line="1070" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/AdminDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/DiaryDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="104" column="22" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageClassDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageTypeDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserDO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -1659,59 +1821,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageFeatureDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="290">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/DiaryDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageDO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageClassDOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AdminDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1304">
-            <caret line="1070" column="22" selection-start-line="1070" selection-start-column="22" selection-end-line="1070" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageClassDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/AdminDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="242">
+          <caret line="41" column="2" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="41" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="161" column="18" selection-start-line="161" selection-start-column="18" selection-end-line="161" selection-end-column="18" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageFeatureDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+          <folding>
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageTypeDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+          <folding>
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+          <folding>
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserIconDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+          <folding>
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserPropertyDOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="182" column="5" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
+          <folding>
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
           </folding>
         </state>
       </provider>

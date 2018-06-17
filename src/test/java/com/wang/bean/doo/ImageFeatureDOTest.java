@@ -1,125 +1,112 @@
 package com.wang.bean.doo;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import org.junit.*;
 
-/** 
-* ImageFeatureDO Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>ï¿½ï¿½ï¿½ï¿½ 20, 2018</pre> 
-* @version 1.0 
-*/ 
-public class ImageFeatureDOTest { 
+/**
+ * ImageFeatureDO Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>ÁùÔÂ 17, 2018</pre>
+ */
+public class ImageFeatureDOTest {
+    private static ImageFeatureDO imageFeatureDO;
 
-@Before
-public void before() throws Exception { 
-} 
+    @BeforeClass
+    public static void beforeClass() {
+        imageFeatureDO = new ImageFeatureDO();
+    }
 
-@After
-public void after() throws Exception { 
-} 
+    @Before
+    public void before() throws Exception {
+    }
 
-/** 
-* 
-* Method: getImage_id() 
-* 
-*/ 
-@Test
-public void testGetImage_id() throws Exception { 
+    @After
+    public void after() throws Exception {
+    }
+
+    @AfterClass
+    public static void afterClass() {
+        imageFeatureDO = null;
+    }
+
+    /**
+     * Method: getImageId()
+     */
+    @Test
+    public void testGetImageId() throws Exception {
+        imageFeatureDO.setImageId(17);
+        assert imageFeatureDO.getImageId() == 17;
+    }
+
+    /**
+     * Method: setImageId(Integer imageId)
+     */
+    @Test
+    public void testSetImageId() throws Exception {
+    }
+
+    /**
+     * Method: getImageClass()
+     */
+    @Test
+    public void testGetImageClass() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: setImage_id(int image_id) 
-* 
-*/ 
-@Test
-public void testSetImage_id() throws Exception { 
+    /**
+     * Method: setImageClass(Integer imageClass)
+     */
+    @Test
+    public void testSetImageClass() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: getImage_class() 
-* 
-*/ 
-@Test
-public void testGetImage_class() throws Exception { 
+    /**
+     * Method: getImageFeaturePath()
+     */
+    @Test
+    public void testGetImageFeaturePath() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: setImage_class(int image_class) 
-* 
-*/ 
-@Test
-public void testSetImage_class() throws Exception { 
+    /**
+     * Method: setImageFeaturePath(String imageFeaturePath)
+     */
+    @Test
+    public void testSetImageFeaturePath() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: getImage_feature_path() 
-* 
-*/ 
-@Test
-public void testGetImage_feature_path() throws Exception { 
+    /**
+     * Method: getFeatureGmtCreate()
+     */
+    @Test
+    public void testGetFeatureGmtCreate() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: setImage_feature_path(String image_feature_path) 
-* 
-*/ 
-@Test
-public void testSetImage_feature_path() throws Exception { 
+    /**
+     * Method: setFeatureGmtCreate(String featureGmtCreate)
+     */
+    @Test
+    public void testSetFeatureGmtCreate() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: getFeature_gmt_create() 
-* 
-*/ 
-@Test
-public void testGetFeature_gmt_create() throws Exception { 
+    /**
+     * Method: getFeatureGmtModified()
+     */
+    @Test
+    public void testGetFeatureGmtModified() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: setFeature_gmt_create(String feature_gmt_create) 
-* 
-*/ 
-@Test
-public void testSetFeature_gmt_create() throws Exception { 
+    /**
+     * Method: setFeatureGmtModified(String featureGmtModified)
+     */
+    @Test
+    public void testSetFeatureGmtModified() throws Exception {
 //TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: getFeature_gmt_modified() 
-* 
-*/ 
-@Test
-public void testGetFeature_gmt_modified() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: setFeature_gmt_modified(String feature_gmt_modified) 
-* 
-*/ 
-@Test
-public void testSetFeature_gmt_modified() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-
+    }
 } 

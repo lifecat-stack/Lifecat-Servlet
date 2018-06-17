@@ -1,8 +1,6 @@
 package com.wang.bean.doo;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.assertEquals;
 
@@ -16,13 +14,21 @@ import static org.junit.Assert.assertEquals;
 public class AdminDOTest {
     private static AdminDO adminDO;
 
+    @BeforeClass
+    public static void beforeClass() {
+        adminDO = new AdminDO();
+    }
+
     @Before
     public void before() throws Exception {
-        adminDO = new AdminDO();
     }
 
     @After
     public void after() throws Exception {
+    }
+
+    @AfterClass
+    public static void afterClass() {
         adminDO = null;
     }
 

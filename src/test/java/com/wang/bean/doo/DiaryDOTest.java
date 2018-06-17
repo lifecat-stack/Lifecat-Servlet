@@ -1,175 +1,155 @@
 package com.wang.bean.doo;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import org.junit.*;
 
-/** 
-* DiaryDO Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>五月 20, 2018</pre> 
-* @version 1.0 
-*/ 
-public class DiaryDOTest { 
+import static org.junit.Assert.assertEquals;
 
-@Before
-public void before() throws Exception { 
-} 
+/**
+ * DiaryDO Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>五月 20, 2018</pre>
+ */
+public class DiaryDOTest {
+    private static DiaryDO diaryDO;
 
-@After
-public void after() throws Exception { 
-} 
+    @BeforeClass
+    public static void beforeClass() {
+        diaryDO = new DiaryDO();
+    }
 
-/** 
-* 
-* Method: getDiaryId() 
-* 
-*/ 
-@Test
-public void testGetDiaryId() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @Before
+    public void before() throws Exception {
+    }
 
-/** 
-* 
-* Method: setDiaryId(Integer diaryId) 
-* 
-*/ 
-@Test
-public void testSetDiaryId() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @After
+    public void after() throws Exception {
+    }
 
-/** 
-* 
-* Method: getUserId() 
-* 
-*/ 
-@Test
-public void testGetUserId() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @AfterClass
+    public static void afterClass() {
+        diaryDO = null;
+    }
 
-/** 
-* 
-* Method: setUserId(Integer userId) 
-* 
-*/ 
-@Test
-public void testSetUserId() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getDiaryId()
+     */
+    @Test
+    public void testGetDiaryId() throws Exception {
+        diaryDO.setDiaryId(17);
+        assert diaryDO.getDiaryId() == 17;
+    }
 
-/** 
-* 
-* Method: getDiaryName() 
-* 
-*/ 
-@Test
-public void testGetDiaryName() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: setDiaryId(Integer diaryId)
+     */
+    @Test
+    public void testSetDiaryId() throws Exception {
+    }
 
-/** 
-* 
-* Method: setDiaryName(String diaryName) 
-* 
-*/ 
-@Test
-public void testSetDiaryName() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getUserId()
+     */
+    @Test
+    public void testGetUserId() throws Exception {
+        diaryDO.setUserId(17);
+        assert diaryDO.getUserId() == 17;
+    }
 
-/** 
-* 
-* Method: getdiaryText() 
-* 
-*/ 
-@Test
-public void testGetdiaryText() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: setUserId(Integer userId)
+     */
+    @Test
+    public void testSetUserId() throws Exception {
+    }
 
-/** 
-* 
-* Method: setdiaryText(String diaryText) 
-* 
-*/ 
-@Test
-public void testSetdiaryText() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getDiaryName()
+     */
+    @Test
+    public void testGetDiaryName() throws Exception {
+        diaryDO.setDiaryName("diary");
+        assertEquals("diary", diaryDO.getDiaryName());
+    }
 
-/** 
-* 
-* Method: getDeleted() 
-* 
-*/ 
-@Test
-public void testGetDeleted() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: setDiaryName(String diaryName)
+     */
+    @Test
+    public void testSetDiaryName() throws Exception {
+    }
 
-/** 
-* 
-* Method: setDeleted(String deleted) 
-* 
-*/ 
-@Test
-public void testSetDeleted() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getdiaryText()
+     */
+    @Test
+    public void testGetdiaryText() throws Exception {
+        diaryDO.setdiaryText("this is text");
+        assertEquals("this is text", diaryDO.getdiaryText());
+    }
 
-/** 
-* 
-* Method: getdiaryGmtCreate() 
-* 
-*/ 
-@Test
-public void testGetdiaryGmtCreate() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: setdiaryText(String diaryText)
+     */
+    @Test
+    public void testSetdiaryText() throws Exception {
+    }
 
-/** 
-* 
-* Method: setdiaryGmtCreate(String diaryGmtCreate) 
-* 
-*/ 
-@Test
-public void testSetdiaryGmtCreate() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getDeleted()
+     */
+    @Test
+    public void testGetDeleted() throws Exception {
+        diaryDO.setDeleted(1);
+        assert diaryDO.getDeleted() == 1;
+    }
 
-/** 
-* 
-* Method: getdiaryGmtModified() 
-* 
-*/ 
-@Test
-public void testGetdiaryGmtModified() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: setdiaryGmtModified(String diaryGmtModified) 
-* 
-*/ 
-@Test
-public void testSetdiaryGmtModified() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: toString() 
-* 
-*/ 
-@Test
-public void testToString() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: setDeleted(String deleted)
+     */
+    @Test
+    public void testSetDeleted() throws Exception {
+    }
 
 
+    /**
+     * Method: getdiaryGmtCreate()
+     */
+    @Test
+    public void testGetdiaryGmtCreate() throws Exception {
+        diaryDO.setdiaryGmtCreate("2018-01-01 23:59:59");
+        assertEquals("2018-01-01 23:59:59", diaryDO.getdiaryGmtCreate());
+    }
+
+    /**
+     * Method: setdiaryGmtCreate(String diaryGmtCreate)
+     */
+    @Test
+    public void testSetdiaryGmtCreate() throws Exception {
+    }
+
+    /**
+     * Method: getdiaryGmtModified()
+     */
+    @Test
+    public void testGetdiaryGmtModified() throws Exception {
+        diaryDO.setdiaryGmtModified("2018-01-01 23:59:59");
+        assertEquals("2018-01-01 23:59:59", diaryDO.getdiaryGmtModified());
+    }
+
+    /**
+     * Method: setdiaryGmtModified(String diaryGmtModified)
+     */
+    @Test
+    public void testSetdiaryGmtModified() throws Exception {
+    }
+
+    /**
+     * Method: toString()
+     */
+    @Test
+    public void testToString() throws Exception {
+        System.out.println("DiaryDO:" + diaryDO.toString());
+    }
 } 
