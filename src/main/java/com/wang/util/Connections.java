@@ -23,7 +23,7 @@ public class Connections {
     }
 
     private static final String URL = String.format(
-            "jdbc:mysql://%s:%d/%s",
+            "jdbc:mysql://%s:%d/%s"+"?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false",
             HOST.IP, DataBase.MYSQL_PORT, DataBase.DATABASE);
 
     static {

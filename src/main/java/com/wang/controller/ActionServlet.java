@@ -31,12 +31,13 @@ public class ActionServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // slf4j日志
         Logger logger = LoggerFactory.getLogger(ActionServlet.class);
 
-        // 获取请求界面的url
+        // 获取请求界面信息
         String path = req.getRequestURI();
         String jspUrl = path.substring(path.lastIndexOf("/"), path.length());
-        logger.info("jsp url is :{}", jspUrl);
+        logger.info("jsp is :{}", jspUrl);
 
         // 验证未通过 转发回请求界面
         FormResult formResult = (FormResult) req.getAttribute("formResult");
@@ -50,7 +51,7 @@ public class ActionServlet extends HttpServlet {
 
         // 提取url请求信息 /xxx
         String url = path.substring(path.lastIndexOf("/"), path.lastIndexOf("."));
-        logger.info("servlet url is :{}", url);
+        logger.info("request url is :{}", url);
 
         // 根据请求信息 调用相应的service
         Service service = ServiceFactory.getServiceByUrl(url);
@@ -58,22 +59,22 @@ public class ActionServlet extends HttpServlet {
         // 需转发界面
         String page;
 
-        //无对应请求 进入错误界面 error.jsp
+        // 无对应请求 进入错误界面 error.jsp
         if (service == null) {
             page = Page.PAGE_ERROR;
             req.setAttribute("errorMsg", "没有此请求");
             req.getRequestDispatcher(page).forward(req, resp);
         }
 
-        //service执行操作 返回Result结果
+        // service执行操作 返回Result结果
         assert service != null;
         ServiceResult result = service.execute(req, resp);
 
-        //Result 执行成功 跳转到响应界面
+        // Result 执行成功 跳转到响应界面
         if (result.isSuccess()) {
             page = result.getPage();
         }
-        //Result 执行错误 跳转到error.jsp
+        // Result 执行错误 跳转到error.jsp
         else {
             page = Page.PAGE_ERROR;
             req.setAttribute("errorMsg", result.getErrormsg());

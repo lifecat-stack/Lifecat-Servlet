@@ -19,6 +19,8 @@
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/controller/ActionServletTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/AbstractDAOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserPropertyDAOImplTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/filter/EncodingFilterTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/filter/FormFilterTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/util/ConnectionsTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/util/DateTimeUtilTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/util/ImageWriterTest.java" charset="GBK" />

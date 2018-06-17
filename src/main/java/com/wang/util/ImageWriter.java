@@ -31,7 +31,7 @@ public class ImageWriter {
         byte[] bbuf = new byte[32];
         int hasRead = 0;
 
-        //将文件写入服务器的硬盘上
+        // 将文件写入服务器的硬盘上
         while ((hasRead = stream.read(bbuf)) > 0) {
             fos.write(bbuf, 0, hasRead);
         }
@@ -40,22 +40,22 @@ public class ImageWriter {
         stream.close();
 
         Byte n;
-        //read the temp file
+        // read the temp file
         RandomAccessFile random = new RandomAccessFile(imagePath, "r");
-        //read line2 to find the name of the upload file.
+        // read line2 to find the name of the upload file.
         int second = 1;
         String secondLine = null;
         while (second <= 2) {
             secondLine = random.readLine();
             second++;
         }
-        //get the last location of the dir char.'\\'
+        // get the last location of the dir char.'\\'
         int position = secondLine.lastIndexOf('\\');
-        //get the name of the upload file.
+        // get the name of the upload file.
         String fileName = secondLine.substring(position + 1, secondLine.length() - 1);
-        //relocate to the head of file
+        // relocate to the head of file
         random.seek(0);
-        //get the location of the char.'Enter' in Line4.
+        // get the location of the char.'Enter' in Line4.
         long forthEndPosition = 0;
         int forth = 1;
         while ((n = random.readByte()) != -1 && (forth <= 4)) {
@@ -66,7 +66,7 @@ public class ImageWriter {
         }
 
         RandomAccessFile random2 = new RandomAccessFile(imagePath, "rw");
-        //locate the end position of the content.Count backwards 6 lines
+        // locate the end position of the content.Count backwards 6 lines
         random.seek(random.length());
         long endPosition = random.getFilePointer();
         long mark = endPosition;
@@ -74,10 +74,10 @@ public class ImageWriter {
 
         endPosition = getEndPosition(random, endPosition, mark, j);
 
-        //locate to the begin of content.Count for 4 lines's end position.
+        // locate to the begin of content.Count for 4 lines's end position.
         random.seek(forthEndPosition);
         long startPoint = random.getFilePointer();
-        //read the real content and write it to the realFile.
+        // read the real content and write it to the realFile.
         while (startPoint < endPosition - 1) {
             n = random.readByte();
             random2.write(n);

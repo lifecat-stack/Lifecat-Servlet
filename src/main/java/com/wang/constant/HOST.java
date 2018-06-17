@@ -13,7 +13,7 @@ public class HOST {
     /**
      * 服务器IP
      */
-    public static final String IP = "111.230.244.153";
+    public static final String IP = "127.0.0.1";
     /**
      * 项目名称
      */

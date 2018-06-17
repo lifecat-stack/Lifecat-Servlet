@@ -1,65 +1,50 @@
 package com.wang.util;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import org.junit.Test;
+import org.junit.Before;
+import org.junit.After;
 
-/** 
-* ImageWriter Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>六月 16, 2018</pre> 
-* @version 1.0 
-*/ 
-public class ImageWriterTest { 
+import static junit.framework.TestCase.assertNotNull;
 
-@Before
-public void before() throws Exception { 
-} 
+/**
+ * ImageWriter Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>六月 16, 2018</pre>
+ */
+public class ImageWriterTest {
 
-@After
-public void after() throws Exception { 
-} 
+    @Before
+    public void before() throws Exception {
+    }
 
-/** 
-* 
-* Method: newImageWriter(String imagePath) 
-* 
-*/ 
-@Test
-public void testNewImageWriter() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @After
+    public void after() throws Exception {
+    }
 
-/** 
-* 
-* Method: writeImage(InputStream stream) 
-* 
-*/ 
-@Test
-public void testWriteImage() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: newImageWriter(String imagePath)
+     */
+    @Test
+    public void testNewImageWriter() throws Exception {
+        ImageWriter writer = ImageWriter.newImageWriter("test");
+        assertNotNull(writer);
+    }
+
+    /**
+     * Method: writeImage(InputStream stream)
+     */
+    @Test
+    public void testWriteImage() throws Exception {
+        //TODO: 测试图片上传功能
+    }
 
 
-/** 
-* 
-* Method: getEndPosition(RandomAccessFile random, long endPosition, long mark, int j) 
-* 
-*/ 
-@Test
-public void testGetEndPosition() throws Exception { 
-//TODO: Test goes here... 
-/* 
-try { 
-   Method method = ImageWriter.getClass().getMethod("getEndPosition", RandomAccessFile.class, long.class, long.class, int.class); 
-   method.setAccessible(true); 
-   method.invoke(<Object>, <Parameters>); 
-} catch(NoSuchMethodException e) { 
-} catch(IllegalAccessException e) { 
-} catch(InvocationTargetException e) { 
-} 
-*/ 
-} 
-
+    /**
+     * Method: getEndPosition(RandomAccessFile random, long endPosition, long mark, int j)
+     */
+    @Test
+    public void testGetEndPosition() throws Exception {
+    }
 } 
