@@ -1,0 +1,25 @@
+## 版本管理
+
+* __version1.1__  
+    * 添加了slf4j-logger  
+    * 添加了图片读取功能  
+    * 修改了常量类  
+* __version1.2__  
+    * 添加了智能分类页面-imageshow2.jsp 
+    * 修复了bug  
+* __version1.3.1__  
+    * 单例模式重构MyDate  
+    * 构建器模式重构Bean-DTO  
+    * 重写了User的hashCode计算,Image的hashCode计算  
+    * 覆盖了bean类型的tostring方法  
+* __version1.3.2__  
+    * 实现了comparable接口，进行日期的比较
+    * HOST实现了标记接口  
+    * 重构了DAO的SQL查询(单条查询->多条查询)  
+* __version1.4__  
+    * 设计方法签名  
+    * 参数检查  
+    * 枚举类改进  
+* __version1.5__
+    * 增加了Junit测试
+* TODO...
