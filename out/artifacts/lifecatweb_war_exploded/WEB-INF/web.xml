@@ -43,4 +43,14 @@
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
+    <!--Directory action转发器 Servlet-->
+    <servlet>
+        <servlet-name>Action</servlet-name>
+        <servlet-class>com.wang.action.DispatcherAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Action</servlet-name>
+        <url-pattern>*.action</url-pattern>
+    </servlet-mapping>
+
 </web-app>
