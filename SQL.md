@@ -1,5 +1,6 @@
-## 创建数据库
+## 数据库SQL
 
+------
 ### 创建admin表
     CREATE TABLE admin (
     admin_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -14,6 +15,7 @@
     CREATE UNIQUE INDEX uk_admin_name
     ON admin(admin_name) 
     
+------
 ### 创建user表
     CREATE TABLE user (
     user_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -28,6 +30,7 @@
     CREATE UNIQUE INDEX uk_user_name
     ON user(user_name) 
         
+------
 ### 创建user_property表
     CREATE TABLE user_property (
     user_id INT(6) UNSIGNED PRIMARY KEY,
@@ -40,7 +43,8 @@
     property_gmt_create DATETIME NOT NULL,
     property_gmt_modified DATETIME NOT NULL
     )
-        
+
+------
 ### 创建user_icon表
     CREATE TABLE user_icon (
     user_id INT(6) UNSIGNED PRIMARY KEY,
@@ -48,7 +52,8 @@
     icon_gmt_create DATETIME NOT NULL,
     icon_gmt_modified DATETIME NOT NULL
     )
-   
+
+------
 ### 创建image表
     CREATE TABLE image (
     image_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -69,6 +74,7 @@
     CREATE INDEX idx_class_id
     ON image(class_id) 
     
+------
 ### 创建image_class
     CREATE TABLE image_class (
     image_class_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -77,7 +83,8 @@
     class_gmt_create DATETIME NOT NULL,
     class_gmt_modified  DATETIME NOT NULL
     )    
-    
+
+------
 ### 创建image_feature
     CREATE TABLE image_feature (
     image_id INT(6) UNSIGNED PRIMARY KEY,
@@ -85,7 +92,8 @@
     feature_gmt_create DATETIME NOT NULL,
     feature_gmt_modified  DATETIME NOT NULL
     )
-      
+
+------
 ### 创建diary表
     CREATE TABLE diary (
     diary_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -105,8 +113,9 @@
     CREATE INDEX idx_is_deleted
     ON diary(is_deleted) 
         
-## DAO实例
+## SQL操作
 
+------
 ### 管理员
 #### 注册管理员账号
     1.验证此账号是否存在
@@ -139,6 +148,8 @@
 ---    
     Demo:
     select admin_password,admin_level from admin where admin_name = 'ten'    
+    
+------
 ### 用户
 #### 注册用户
     1.验证此账号是否存在
@@ -179,6 +190,8 @@
 ---    
     Demo:
     select admin_password,admin_level from admin where admin_name = 'ten'    
+    
+------
 ### 图片
 #### 图片插入
     INSERT INTO image(image_text,image_path,is_deleted,user_id,class_id,image_gmt_create,image_gmt_modified)
