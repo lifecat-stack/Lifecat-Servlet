@@ -9,11 +9,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment=" --version2.0 修复页面访问bug">
+    <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment=" --version2.0 Readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQL.md" beforeDir="false" afterPath="$PROJECT_DIR$/SQL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.md" beforeDir="false" afterPath="$PROJECT_DIR$/database.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,33 +53,45 @@
       <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="284">
-                <caret line="131" column="22" lean-forward="true" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-902">
+                <caret line="159" selection-start-line="159" selection-end-line="159" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQL.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="standard.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/standard.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="7" selection-start-column="7" selection-end-column="7" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQL.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQL.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="-552">
-                <caret line="193" column="6" selection-start-line="193" selection-start-column="6" selection-end-line="193" selection-end-column="6" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="2442">
+                <caret line="111" column="11" lean-forward="true" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="database.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="1386">
-                <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <first_editor relative-caret-position="440">
+                <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               </first_editor>
               <second_editor />
             </state>
@@ -127,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/ImageTypeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/dao/DAOFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/JdbcDAOFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wang/bean/dto/UserPropertyDTOTest.java" />
@@ -178,6 +186,7 @@
         <option value="$PROJECT_DIR$/database.md" />
         <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/SQL.md" />
+        <option value="$PROJECT_DIR$/standard.md" />
       </list>
     </option>
   </component>
@@ -273,9 +282,6 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.wang.model" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.wang.service.serviceimpl" />
       <recent name="com.wang.dao" />
@@ -289,9 +295,16 @@
       <recent name="com.wang" />
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\lifecatweb\src\main\webapp" />
+      <recent name="D:\Java\lifecatweb\src\main\webapp\WEB-INF" />
+      <recent name="D:\Java\lifecatweb\src\main\webapp\include" />
+      <recent name="D:\Java\lifecatweb\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\Java\lifecatweb\src\main" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\lifecatweb\src\main\webapp\WEB-INF\img" />
       <recent name="D:\Java\lifecatweb" />
+      <recent name="D:\Java\lifecatweb\src\main\webapp\WEB-INF\img" />
       <recent name="D:\Java\lifecatweb\src" />
       <recent name="D:\Java\lifecatweb\web\pics\1" />
       <recent name="D:\Java\lifecatweb\web\pics\2" />
@@ -299,12 +312,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wang.db" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Java\lifecatweb\src\main\webapp" />
-      <recent name="D:\Java\lifecatweb\src\main\webapp\WEB-INF" />
-      <recent name="D:\Java\lifecatweb\src\main\webapp\include" />
-      <recent name="D:\Java\lifecatweb\src\main\webapp\WEB-INF\jsp" />
-      <recent name="D:\Java\lifecatweb\src\main" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wang.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -669,21 +678,7 @@
       <workItem from="1529282826129" duration="242000" />
       <workItem from="1529283120417" duration="10294000" />
       <workItem from="1529307304650" duration="824000" />
-      <workItem from="1529318947628" duration="9146000" />
-    </task>
-    <task id="LOCAL-00006" summary="version2.0.1&#10; --添加了Readme文档说明">
-      <created>1526395986386</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1526395986386</updated>
-    </task>
-    <task id="LOCAL-00007" summary="version2.0.2&#10; --添加了Readme文档说明">
-      <created>1526477364119</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1526477364119</updated>
+      <workItem from="1529318947628" duration="10648000" />
     </task>
     <task id="LOCAL-00008" summary="version2.0.2&#10; --添加了Readme文档说明">
       <created>1526477375891</created>
@@ -1014,7 +1009,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529331726473</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary=" --version2.0 Readme">
+      <created>1529332381543</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1529332381543</updated>
+    </task>
+    <task id="LOCAL-00056" summary=" --version2.0 Readme">
+      <created>1529333357782</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1529333357782</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1050,7 +1059,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="478134000" />
+    <option name="totallyTimeSpent" value="479636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1063,6 +1072,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
@@ -1181,7 +1191,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="version2.0.2&#10; --添加了Readme文档说明" />
     <MESSAGE value="version2.0.3&#10; --重构了数据库设计" />
     <MESSAGE value="version2.0.4&#10; --数据库设计" />
     <MESSAGE value="version2.1.0&#10; --DO层数据结构" />
@@ -1206,7 +1215,8 @@
     <MESSAGE value=" --version2.0 junit" />
     <MESSAGE value=" --version2.0 tomcat" />
     <MESSAGE value=" --version2.0 修复页面访问bug" />
-    <option name="LAST_COMMIT_MESSAGE" value=" --version2.0 修复页面访问bug" />
+    <MESSAGE value=" --version2.0 Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value=" --version2.0 Readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1221,13 +1231,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cactus.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="44" selection-start-column="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1552,11 +1555,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SQL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2442">
+            <caret line="111" column="11" lean-forward="true" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/standard.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="7" selection-start-column="7" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="284">
-            <caret line="131" column="22" lean-forward="true" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-902">
+            <caret line="159" selection-start-line="159" selection-end-line="159" />
           </first_editor>
           <second_editor />
         </state>
@@ -1565,18 +1588,8 @@
     <entry file="file://$PROJECT_DIR$/database.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="1386">
-            <caret line="63" selection-start-line="63" selection-end-line="63" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQL.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-552">
-            <caret line="193" column="6" selection-start-line="193" selection-start-column="6" selection-end-line="193" selection-end-column="6" />
+          <first_editor relative-caret-position="440">
+            <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           </first_editor>
           <second_editor />
         </state>
