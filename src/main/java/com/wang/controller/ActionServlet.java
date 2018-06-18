@@ -36,7 +36,7 @@ public class ActionServlet extends HttpServlet {
 
         // 获取请求界面信息
         String path = req.getRequestURI();
-        String jspUrl = path.substring(path.lastIndexOf("/"), path.length());
+        String jspUrl = path.substring(0, path.lastIndexOf("/"));
         logger.info("jsp is :{}", jspUrl);
 
         // 验证未通过 转发回请求界面
@@ -57,10 +57,11 @@ public class ActionServlet extends HttpServlet {
         Service service = ServiceFactory.getServiceByUrl(url);
 
         // 需转发界面
-        String page;
+        String page = jspUrl;
 
         // 无对应请求 进入错误界面 error.jsp
         if (service == null) {
+            logger.info("service is null");
             page = Page.PAGE_ERROR;
             req.setAttribute("errorMsg", "没有此请求");
             req.getRequestDispatcher(page).forward(req, resp);
@@ -72,14 +73,17 @@ public class ActionServlet extends HttpServlet {
 
         // Result 执行成功 跳转到响应界面
         if (result.isSuccess()) {
+            logger.info("service execute success");
             page = result.getPage();
         }
         // Result 执行错误 跳转到error.jsp
         else {
+            logger.info("service execute failure");
             page = Page.PAGE_ERROR;
             req.setAttribute("errorMsg", result.getErrormsg());
         }
 
+        logger.info("转发page:" + page);
         req.getRequestDispatcher(page).forward(req, resp);
     }
 }

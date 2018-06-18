@@ -97,23 +97,23 @@
 
                         <table>
                             <tr class="msg">
-                                <span>昵称: <%=usermsg.getNickname() %> </span>
+                                <span>昵称:  </span>
                             </tr>
                             <br>
                             <tr class="msg">
-                                <span>性别: <%=usermsg.getSex() %></span>
+                                <span>性别: </span>
                             </tr>
                             <br>
                             <tr class="msg">
-                                <span>年龄: <%=usermsg.getAge() %> </span>
+                                <span>年龄:  </span>
                             </tr>
                             <br>
                             <tr class="msg">
-                                <span>生日: <%=usermsg.getBirthday() %> </span>
+                                <span>生日:  </span>
                             </tr>
                             <br>
                             <tr class="msg">
-                                <span>邮箱: <%=usermsg.getEmail() %> </span>
+                                <span>邮箱:  </span>
                             </tr>
                             <br>
                             <br>
@@ -137,7 +137,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <img height="140" width="140" src="WEB-INF/img/headicon.jpg">
+                        <img height="140" width="140" src="../img/usericon.jpg">
                     </div>
                 </div>
                 <div class="col-md-1">
@@ -175,51 +175,51 @@
                     <div class="col-md-10">
                         <h2>成长日记:</h2>
                         <%--获取日记链接--%>
-                        <%
-                            ArrayList<Diary> diaries;
-                            /* 若当期有用户登录 */
-                            if (user != null && !user.getName().equals("admin")) {
-                                GetDiaryModel DAOManager = new GetDiaryModel();
-                                diaries = DAOManager.getDiaries(id);
-                            }
-                            /* 若无用户登录，添加3条默认信息 */
-                            else {
-                                diaries = new ArrayList<>();
-                                for (int i = 0; i < 5; i++) {
-                                    Diary no_diary = new Diary();
-                                    no_diary.setName("成长寄语" + i);
-                                    no_diary.setDescription("美好的午后，写下成长的寄语" + i);
-                                    no_diary.setDate("2018-" + i);
-                                    no_diary.setPath(page_userhome);
-                                    diaries.add(no_diary);
-                                }
-                            }
-                        %>
-                        <table>
-                            <%
-                                /* 循环打印日记信息 */
-                                for (Diary diary : diaries) {
-                            %>
-                            <tr class="msg">
-                                <td>
-                                    <span><a href=<%=diary.getPath()%>><%=diary.getName() + ":"%></a></span>
-                                </td>
-                                <td>
-                                    <span><%=diary.getDescription()%></span>
-                                </td>
-                            </tr>
-                            <%
-                                }
-                            %>
-                            <%--<% %>--%>
-                            <%--<tr class="row">--%>
-                            <%--<span><a href="#">1</a>&nbsp;&nbsp;--%>
-                            <%--<a href="#">2</a>&nbsp;&nbsp;--%>
-                            <%--<a href="#">3</a>&nbsp;&nbsp;--%>
-                            <%--<a href="#">...</a> </span>--%>
+                        <%--<%--%>
+                            <%--ArrayList<Diary> diaries;--%>
+                            <%--/* 若当期有用户登录 */--%>
+                            <%--if (user != null && !user.getName().equals("admin")) {--%>
+                                <%--GetDiaryModel DAOManager = new GetDiaryModel();--%>
+                                <%--diaries = DAOManager.getDiaries(id);--%>
+                            <%--}--%>
+                            <%--/* 若无用户登录，添加3条默认信息 */--%>
+                            <%--else {--%>
+                                <%--diaries = new ArrayList<>();--%>
+                                <%--for (int i = 0; i < 5; i++) {--%>
+                                    <%--Diary no_diary = new Diary();--%>
+                                    <%--no_diary.setName("成长寄语" + i);--%>
+                                    <%--no_diary.setDescription("美好的午后，写下成长的寄语" + i);--%>
+                                    <%--no_diary.setDate("2018-" + i);--%>
+                                    <%--no_diary.setPath(page_userhome);--%>
+                                    <%--diaries.add(no_diary);--%>
+                                <%--}--%>
+                            <%--}--%>
+                        <%--%>--%>
+                        <%--<table>--%>
+                            <%--<%--%>
+                                <%--/* 循环打印日记信息 */--%>
+                                <%--for (Diary diary : diaries) {--%>
+                            <%--%>--%>
+                            <%--<tr class="msg">--%>
+                                <%--<td>--%>
+                                    <%--<span><a href=<%=diary.getPath()%>><%=diary.getName() + ":"%></a></span>--%>
+                                <%--</td>--%>
+                                <%--<td>--%>
+                                    <%--<span><%=diary.getDescription()%></span>--%>
+                                <%--</td>--%>
                             <%--</tr>--%>
-                            <%--<% %>--%>
-                        </table>
+                            <%--<%--%>
+                                <%--}--%>
+                            <%--%>--%>
+                            <%--&lt;%&ndash;<% %>&ndash;%&gt;--%>
+                            <%--&lt;%&ndash;<tr class="row">&ndash;%&gt;--%>
+                            <%--&lt;%&ndash;<span><a href="#">1</a>&nbsp;&nbsp;&ndash;%&gt;--%>
+                            <%--&lt;%&ndash;<a href="#">2</a>&nbsp;&nbsp;&ndash;%&gt;--%>
+                            <%--&lt;%&ndash;<a href="#">3</a>&nbsp;&nbsp;&ndash;%&gt;--%>
+                            <%--&lt;%&ndash;<a href="#">...</a> </span>&ndash;%&gt;--%>
+                            <%--&lt;%&ndash;</tr>&ndash;%&gt;--%>
+                            <%--&lt;%&ndash;<% %>&ndash;%&gt;--%>
+                        <%--</table>--%>
                     </div>
                     <div class="col-md-1">
 
@@ -235,47 +235,47 @@
 
                     </div>
                     <div class="col-md-10">
-                        <a href=../../WEB-INF/imageshow.jsp><h2>成长相册:</h2></a>
+                        <a href=../WEB-INF/jsp/imageshow.jsp><h2>成长相册:</h2></a>
                         <%--获取图片链接--%>
-                        <%
-                            //获取demo图片在服务器上的路径
-                            String[] paths = new GetImgModel().getDemoImages();
-                        %>
-                        <table>
-                            <%
-                                /*  循环打印demo图片img
-                                 *  倒叙:最新上传的图片最前展示
-                                 *  日志:demo_image_path打印demo图片链接
-                                 */
-                                for (int i = paths.length - 1; i > 3; i -= 4) {
-                                    Logger logger = Logger.getLogger("demo_image_path");
-                                    logger.info(paths[i]);
-                                    logger.info(paths[i - 1]);
-                                    logger.info(paths[i - 2]);
-                                    logger.info(paths[i - 3]);
-                            %>
-                            <tr class="row">
-                                <td class="col-md-3"><span><img src=<%=paths[i]%>
-                                                                        height="200" width="200"
-                                                                style="margin-top: 20px;"/> </span>
-                                </td>
-                                <td class="col-md-3"><span><img src=<%=paths[i-1]%>
-                                                                        height="200" width="200"
-                                                                style="margin-top: 20px;"/> </span>
-                                </td>
-                                <td class="col-md-3"><span><img src=<%=paths[i-2]%>
-                                                                        height="200" width="200"
-                                                                style="margin-top: 20px;"/> </span>
-                                </td>
-                                <td class="col-md-3"><span><img src=<%=paths[i-3]%>
-                                                                        height="200" width="200"
-                                                                style="margin-top: 20px;"/> </span>
-                                </td>
-                            </tr>
-                            <%
-                                }
-                            %>
-                        </table>
+                        <%--<%--%>
+                            <%--//获取demo图片在服务器上的路径--%>
+                            <%--String[] paths = new GetImgModel().getDemoImages();--%>
+                        <%--%>--%>
+                        <%--<table>--%>
+                            <%--<%--%>
+                                <%--/*  循环打印demo图片img--%>
+                                 <%--*  倒叙:最新上传的图片最前展示--%>
+                                 <%--*  日志:demo_image_path打印demo图片链接--%>
+                                 <%--*/--%>
+                                <%--for (int i = paths.length - 1; i > 3; i -= 4) {--%>
+                                    <%--Logger logger = Logger.getLogger("demo_image_path");--%>
+                                    <%--logger.info(paths[i]);--%>
+                                    <%--logger.info(paths[i - 1]);--%>
+                                    <%--logger.info(paths[i - 2]);--%>
+                                    <%--logger.info(paths[i - 3]);--%>
+                            <%--%>--%>
+                            <%--<tr class="row">--%>
+                                <%--<td class="col-md-3"><span><img src=<%=paths[i]%>--%>
+                                                                        <%--height="200" width="200"--%>
+                                                                <%--style="margin-top: 20px;"/> </span>--%>
+                                <%--</td>--%>
+                                <%--<td class="col-md-3"><span><img src=<%=paths[i-1]%>--%>
+                                                                        <%--height="200" width="200"--%>
+                                                                <%--style="margin-top: 20px;"/> </span>--%>
+                                <%--</td>--%>
+                                <%--<td class="col-md-3"><span><img src=<%=paths[i-2]%>--%>
+                                                                        <%--height="200" width="200"--%>
+                                                                <%--style="margin-top: 20px;"/> </span>--%>
+                                <%--</td>--%>
+                                <%--<td class="col-md-3"><span><img src=<%=paths[i-3]%>--%>
+                                                                        <%--height="200" width="200"--%>
+                                                                <%--style="margin-top: 20px;"/> </span>--%>
+                                <%--</td>--%>
+                            <%--</tr>--%>
+                            <%--<%--%>
+                                <%--}--%>
+                            <%--%>--%>
+                        <%--</table>--%>
                     </div>
                     <div class="col-md-1">
 

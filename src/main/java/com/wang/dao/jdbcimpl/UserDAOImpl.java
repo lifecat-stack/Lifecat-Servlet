@@ -30,10 +30,11 @@ class UserDAOImpl extends AbstractDAO implements UserDAO {
 
     @Override
     public UserDO queryUser(String userName) throws SQLException {
-        String sql = "select (user_id,user_name,user_password,user_level,user_gmt_create,user_gmt_modified) from user where user_name = " + userName;
+        String sql = "select user_id,user_name,user_password,user_level,user_gmt_create,user_gmt_modified from user where user_name = '" + userName + "'";
         ResultSet resultSet = query(sql);
         UserDO userDO = new UserDO();
-        userDO.setUserId(Integer.valueOf(resultSet.getString("user_id")));
+        resultSet.next();
+        userDO.setUserId(resultSet.getInt("user_id"));
         userDO.setUserName(resultSet.getString("user_name"));
         userDO.setUserPassword(resultSet.getString("user_password"));
         userDO.setUserLevel(resultSet.getString("user_level"));

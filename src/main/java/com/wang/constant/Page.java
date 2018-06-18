@@ -18,7 +18,7 @@ public class Page {
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/userhome.jsp
      */
-    public static final String PAGE_USERHOME = HOST.PROJECT_CONTEXT + "userhome.jsp";
+    public static final String PAGE_USERHOME = "/WEB-INF/jsp/" + "userhome.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/upimage.jsp
      */
@@ -42,5 +42,5 @@ public class Page {
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/error.jsp
      */
-    public static final String PAGE_ERROR = HOST.PROJECT_CONTEXT + "error.jsp";
+    public static final String PAGE_ERROR = HOST.PROJECT_CONTEXT + "jsp/" + "error.jsp";
 }

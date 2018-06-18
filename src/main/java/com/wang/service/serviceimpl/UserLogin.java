@@ -55,17 +55,17 @@ class UserLogin implements Service {
         }
 
         if (!success) {
-            return new ServiceResult.Builder(true)
+            return new ServiceResult.Builder(false)
                     .errormsg("数据库查询异常").page(Page.PAGE_INDEX).build();
         }
 
         if (userDO == null) {
-            return new ServiceResult.Builder(true)
+            return new ServiceResult.Builder(false)
                     .errormsg("数据库无此用户").page(Page.PAGE_INDEX).build();
         }
 
         if (!userPassword.equals(userDO.getUserPassword())) {
-            return new ServiceResult.Builder(true)
+            return new ServiceResult.Builder(false)
                     .errormsg("密码错误").page(Page.PAGE_INDEX).build();
         }
 

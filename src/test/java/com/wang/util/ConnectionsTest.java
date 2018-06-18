@@ -37,8 +37,6 @@ public class ConnectionsTest {
      */
     @Test
     public void testGetConnection() throws Exception {
-        //TODO: Test goes here...
-
         assertNotNull(conn);
     }
 
@@ -47,7 +45,6 @@ public class ConnectionsTest {
      */
     @Test
     public void testMain() throws Exception {
-        //TODO: Test goes here...
         Connection conn = Connections.getConnection();
         assertNotNull(conn);
     }

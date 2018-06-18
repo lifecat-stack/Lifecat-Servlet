@@ -1,3 +1,4 @@
+<%@ page import="com.wang.bean.dto.UserDTO" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 
@@ -29,8 +30,8 @@
 
         <!--导航条头部-->
         <div class="navbar-header">
-            <a href="../../index.jsp" target="_blank" class="navbar-brand">
-                <img src="img/iconimage.png" height="44" width="152" style="margin-top: -13px;"/>
+            <a href="../index.jsp" target="_blank" class="navbar-brand">
+                <img src="../img/iconimage.png" height="44" width="152" style="margin-top: -13px;"/>
             </a>
 
             <!--logo-->
@@ -46,10 +47,10 @@
         <div id="my-collapse" class="collapse navbar-collapse">
             <%
                 String username;
-                User user1 = (User) request.getSession().getAttribute("User");
-                if (user1 != null) {
-                    if (user1.getName() != null) {
-                        username = user1.getName();
+                UserDTO user = (UserDTO) request.getSession().getAttribute("user");
+                if (user != null) {
+                    if (user.getUserName() != null) {
+                        username = user.getUserName();
                     } else {
                         username = "亲爱的用户";
                     }
@@ -82,7 +83,7 @@
                     修改密码</a>
                 </li>
 
-                <li><a href=index.jsp><span
+                <li><a href=../index.jsp><span
                         class="glyphicon glyphicon-log-out"></span>退出</a>
                 </li>
             </ul>

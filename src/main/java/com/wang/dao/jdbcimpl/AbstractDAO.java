@@ -2,6 +2,8 @@ package com.wang.dao.jdbcimpl;
 
 import com.wang.dao.dao.DAO;
 import com.wang.util.Connections;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -20,6 +22,8 @@ import java.sql.SQLException;
  * @auther ten
  */
 abstract class AbstractDAO implements DAO {
+    private static Logger logger = LoggerFactory.getLogger(AbstractDAO.class);
+
     /**
      * insert
      *
@@ -73,6 +77,7 @@ abstract class AbstractDAO implements DAO {
     public ResultSet query(String sql) throws SQLException {
         Connection connection = Connections.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        logger.info(sql);
         return preparedStatement.executeQuery();
     }
 }
