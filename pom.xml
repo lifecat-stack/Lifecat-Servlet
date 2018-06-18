@@ -24,6 +24,11 @@
         <!-- slf4j -->
         <dependency>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.2</version>
         </dependency>
@@ -48,18 +53,17 @@
         </dependency>
         <!-- httpunit -->
         <dependency>
-            <groupId>org.httpunit</groupId>
-            <artifactId>httpunit</artifactId>
-            <version>1.7.2</version>
-            <scope>test</scope>
+        <groupId>org.httpunit</groupId>
+        <artifactId>httpunit</artifactId>
+        <version>1.7.2</version>
+        <scope>test</scope>
         </dependency>
         <!-- cactus -->
         <dependency>
-            <groupId>cactus</groupId>
-            <artifactId>cactus</artifactId>
-            <version>13-1.7.1</version>
-            <scope>test</scope>
+        <groupId>cactus</groupId>
+        <artifactId>cactus</artifactId>
+        <version>13-1.7.1</version>
+        <scope>test</scope>
         </dependency>
-
     </dependencies>
 </project>
