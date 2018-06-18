@@ -14,7 +14,7 @@
 <%--</script>--%>
 
 <style>
-      body {
+    body {
         font-family: Verdana, Arial, sans-serif;
         padding: 0;
         margin: 0;
@@ -46,6 +46,10 @@
         <!--导航条尾部信息栏-->
         <div id="my-collapse" class="collapse navbar-collapse">
             <%
+                /*
+                 *  获取UserDTO
+                 *  获取用户名
+                 */
                 String username;
                 UserDTO user = (UserDTO) request.getSession().getAttribute("user");
                 if (user != null) {
@@ -60,12 +64,12 @@
             %>
             <ul class="nav navbar-nav navbar-right">
                 <%--上传寄语--%>
-                <li><a href=../WEB-INF/jsp/updiary.jsp><span
+                <li><a href=updiary.action><span
                         class="glyphicon glyphicon-pencil"></span>书写寄语</a>
                 </li>
 
                 <%--上传图片--%>
-                <li><a href=../WEB-INF/jsp/upimage.jsp><span
+                <li><a href=upimage.action><span
                         class="glyphicon glyphicon-pencil"></span>记录图片</a>
                 </li>
 

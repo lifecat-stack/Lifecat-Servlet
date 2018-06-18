@@ -2,9 +2,7 @@
          pageEncoding="UTF-8" isELIgnored="false" %>
 <%@page import="com.wang.bean.*" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.wang.service.serviceimpl.ImageQuery" %>
 <%@ page import="static com.wang.constant.HOST.*" %>
-<%@ page import="java.util.logging.Logger" %>
 
 <script>
     $(function () {
@@ -235,7 +233,7 @@
 
                     </div>
                     <div class="col-md-10">
-                        <a href=../WEB-INF/jsp/imageshow.jsp><h2>成长相册:</h2></a>
+                        <a href=imageshow.action><h2>成长相册:</h2></a>
                         <%--获取图片链接--%>
                         <%--<%--%>
                             <%--//获取demo图片在服务器上的路径--%>

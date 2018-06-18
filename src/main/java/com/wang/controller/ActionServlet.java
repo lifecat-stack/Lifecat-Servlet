@@ -83,7 +83,7 @@ public class ActionServlet extends HttpServlet {
             req.setAttribute("errorMsg", result.getErrormsg());
         }
 
-        logger.info("转发page:" + page);
+        logger.info("dispatcher page:" + page);
         req.getRequestDispatcher(page).forward(req, resp);
     }
 }

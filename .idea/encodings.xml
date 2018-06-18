@@ -4,10 +4,8 @@
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/DiaryDOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageClassDOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageClassDOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageDOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageFeatureDOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageTypeDOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/AdminDTOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/AlbumClassDTOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/AlbumDTOTest.java" charset="GBK" />

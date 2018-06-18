@@ -9,10 +9,10 @@
     <meta name="renderer" content="webkit"/>
 
     <title>成长相册</title>
-    <script src="WEB-INF/js/jquery/2.0.0/jquery.min.js"></script>
-    <link href="WEB-INF/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
-    <script src="WEB-INF/js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <link rel="icon" href="WEB-INF/img/webicon.png" type="image/x-icon">
+    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="icon" href="img/webicon.png" type="image/x-icon">
 
     <style>
         * {
@@ -125,7 +125,7 @@
 
         .logo {
             float: left;
-            background-image: url(WEB-INF/img/welcomelogo.png);
+            background-image: url(img/welcomelogo.png);
             display: block;
             width: 280px;
             height: 100px;
@@ -179,7 +179,7 @@
         .slogan {
             width: 600px;
             height: 300px;
-            background: url(WEB-INF/img/backgroundtext.png) no-repeat 0 0;
+            background: url(img/backgroundtext.png) no-repeat 0 0;
             display: inline-block;
             background-size: 600px;
         }
@@ -225,7 +225,7 @@
             position: absolute;
             left: 20px;
             top: 14px;
-            background: url(WEB-INF/img/peopleicon.png) no-repeat 0 0;
+            background: url(img/peopleicon.png) no-repeat 0 0;
             display: block;
             width: 24px;
             height: 24px;
@@ -233,15 +233,15 @@
         }
 
         .main-entry a .title .seller {
-            background-image: url(WEB-INF/img/emailicon.png);
+            background-image: url(img/emailicon.png);
         }
 
         .main-entry a .title .developer {
-            background-image: url(WEB-INF/img/peopleicon.png);
+            background-image: url(img/peopleicon.png);
         }
 
         .main-entry a .title .developer2 {
-            background-image: url(WEB-INF/img/talkicon.png);
+            background-image: url(img/talkicon.png);
         }
 
         .main-entry s {
@@ -374,7 +374,7 @@
             float: left;
             margin-right: 5px;
             height: 28px;
-            background: url(WEB-INF/img/trademark.png) no-repeat 0 0;
+            background: url(img/trademark.png) no-repeat 0 0;
         }
 
         a.pic1 {
@@ -604,11 +604,11 @@
 
             <div class="items">
                 <div class="item item1"
-                     style="background-image:url(WEB-INF/img/background1.jpg)"></div>
+                     style="background-image:url(img/background1.jpg)"></div>
                 <div class="item item2"
-                     style="background-image:url(WEB-INF/img/background2.jpg)"></div>
+                     style="background-image:url(img/background2.jpg)"></div>
                 <div class="item item3"
-                     style="background-image:url(WEB-INF/img/background3.jpg)"></div>
+                     style="background-image:url(img/background3.jpg)"></div>
             </div>
 
         </div>
@@ -621,7 +621,7 @@
         </div>
     </div>
 </div>
-<script src="WEB-INF/js/t19ctgxcrlxxxxxxxx.js"></script>
+<script src="js/t19ctgxcrlxxxxxxxx.js"></script>
 
 <%-- 背景滚动效果 --%>
 <script>

@@ -14,7 +14,7 @@ public class Page {
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/index.jsp
      */
-    public static final String PAGE_INDEX = HOST.PROJECT_CONTEXT + "index.jsp";
+    public static final String PAGE_INDEX = "index.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/userhome.jsp
      */
@@ -22,25 +22,25 @@ public class Page {
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/upimage.jsp
      */
-    public static final String PAGE_UPIMAGE = HOST.PROJECT_CONTEXT + "upimage.jsp";
+    public static final String PAGE_UPIMAGE = "/WEB-INF/jsp/" + "upimage.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/updiary.jsp
      */
-    public static final String PAGE_UPDIARY = HOST.PROJECT_CONTEXT + "updiary.jsp";
+    public static final String PAGE_UPDIARY = "/WEB-INF/jsp/" + "updiary.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/imageshow.jsp
      */
-    public static final String PAGE_IMAGESHOW = HOST.PROJECT_CONTEXT + "imageshow.jsp";
+    public static final String PAGE_IMAGESHOW = "/WEB-INF/jsp/" + "imageshow.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/imageshow2.jsp
      */
-    public static final String PAGE_IMAGESHOW2 = HOST.PROJECT_CONTEXT + "imageshow2.jsp";
+    public static final String PAGE_IMAGESHOW2 = "/WEB-INF/jsp/" + "imageshow2.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/imageshow2.jsp
      */
-    public static final String PAGE_DIARYSHOW = HOST.PROJECT_CONTEXT + "diaryshow.jsp";
+    public static final String PAGE_DIARYSHOW = "/WEB-INF/jsp/" + "diaryshow.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/error.jsp
      */
-    public static final String PAGE_ERROR = HOST.PROJECT_CONTEXT + "jsp/" + "error.jsp";
+    public static final String PAGE_ERROR = "/WEB-INF/jsp/" + "error.jsp";
 }
