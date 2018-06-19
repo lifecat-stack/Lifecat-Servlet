@@ -69,7 +69,18 @@
     建立索引
     CREATE UNIQUE INDEX uk_user_name
     ON user(user_name) 
-        
+    
+    +-------------------+-----------------+------+-----+---------+----------------+
+    | Field             | Type            | Null | Key | Default | Extra          |
+    +-------------------+-----------------+------+-----+---------+----------------+
+    | user_id           | int(6) unsigned | NO   | PRI | NULL    | auto_increment |
+    | user_name         | varchar(30)     | NO   | UNI | NULL    |                |
+    | user_password     | varchar(30)     | NO   |     | NULL    |                |
+    | user_level        | varchar(30)     | NO   |     | NULL    |                |
+    | user_gmt_create   | datetime        | NO   |     | NULL    |                |
+    | user_gmt_modified | datetime        | NO   |     | NULL    |                |
+    +-------------------+-----------------+------+-----+---------+----------------+    
+    
 ------
 ### 创建user_property表
     CREATE TABLE user_property (
@@ -84,6 +95,20 @@
     property_gmt_modified DATETIME NOT NULL
     )
 
+    +-----------------------+-----------------+------+-----+---------+-------+
+    | Field                 | Type            | Null | Key | Default | Extra |
+    +-----------------------+-----------------+------+-----+---------+-------+
+    | user_id               | int(6) unsigned | NO   | PRI | NULL    |       |
+    | property_nickname     | varchar(30)     | YES  |     | NULL    |       |
+    | property_signature    | varchar(50)     | YES  |     | NULL    |       |
+    | property_sex          | varchar(10)     | YES  |     | NULL    |       |
+    | property_email        | varchar(30)     | YES  |     | NULL    |       |
+    | property_location     | varchar(30)     | YES  |     | NULL    |       |
+    | property_birthday     | date            | YES  |     | NULL    |       |
+    | property_gmt_create   | datetime        | NO   |     | NULL    |       |
+    | property_gmt_modified | datetime        | NO   |     | NULL    |       |
+    +-----------------------+-----------------+------+-----+---------+-------+
+    
 ------
 ### 创建user_icon表
     CREATE TABLE user_icon (
@@ -92,6 +117,15 @@
     icon_gmt_create DATETIME NOT NULL,
     icon_gmt_modified DATETIME NOT NULL
     )
+
+    +-------------------+-----------------+------+-----+---------+-------+
+    | Field             | Type            | Null | Key | Default | Extra |
+    +-------------------+-----------------+------+-----+---------+-------+
+    | user_id           | int(6) unsigned | NO   | PRI | NULL    |       |
+    | icon_path         | varchar(200)    | NO   |     | NULL    |       |
+    | icon_gmt_create   | datetime        | NO   |     | NULL    |       |
+    | icon_gmt_modified | datetime        | NO   |     | NULL    |       |
+    +-------------------+-----------------+------+-----+---------+-------+
 
 ------
 ### 创建image表
@@ -114,6 +148,19 @@
     CREATE INDEX idx_class_id
     ON image(class_id) 
     
+    +--------------------+---------------------+------+-----+---------+----------------+
+    | Field              | Type                | Null | Key | Default | Extra          |
+    +--------------------+---------------------+------+-----+---------+----------------+
+    | image_id           | int(6) unsigned     | NO   | PRI | NULL    | auto_increment |
+    | image_text         | varchar(200)        | YES  |     | NULL    |                |
+    | image_path         | varchar(200)        | YES  |     | NULL    |                |
+    | is_deleted         | tinyint(1) unsigned | NO   | MUL | NULL    |                |
+    | user_id            | int(6) unsigned     | NO   | MUL | NULL    |                |
+    | class_id           | int(6) unsigned     | NO   | MUL | NULL    |                |
+    | image_gmt_create   | datetime            | NO   |     | NULL    |                |
+    | image_gmt_modified | datetime            | NO   |     | NULL    |                |
+    +--------------------+---------------------+------+-----+---------+----------------+
+    
 ------
 ### 创建image_class
     CREATE TABLE image_class (
@@ -124,6 +171,16 @@
     class_gmt_modified  DATETIME NOT NULL
     )    
 
+    +--------------------+-----------------+------+-----+---------+----------------+
+    | Field              | Type            | Null | Key | Default | Extra          |
+    +--------------------+-----------------+------+-----+---------+----------------+
+    | image_class_id     | int(6) unsigned | NO   | PRI | NULL    | auto_increment |
+    | image_class_name   | varchar(20)     | YES  |     | NULL    |                |
+    | image_class_desc   | varchar(200)    | YES  |     | NULL    |                |
+    | class_gmt_create   | datetime        | NO   |     | NULL    |                |
+    | class_gmt_modified | datetime        | NO   |     | NULL    |                |
+    +--------------------+-----------------+------+-----+---------+----------------+
+
 ------
 ### 创建image_feature
     CREATE TABLE image_feature (
@@ -132,6 +189,15 @@
     feature_gmt_create DATETIME NOT NULL,
     feature_gmt_modified  DATETIME NOT NULL
     )
+
+    +----------------------+-----------------+------+-----+---------+-------+
+    | Field                | Type            | Null | Key | Default | Extra |
+    +----------------------+-----------------+------+-----+---------+-------+
+    | image_id             | int(6) unsigned | NO   | PRI | NULL    |       |
+    | image_feature        | varchar(2000)   | YES  |     | NULL    |       |
+    | feature_gmt_create   | datetime        | NO   |     | NULL    |       |
+    | feature_gmt_modified | datetime        | NO   |     | NULL    |       |
+    +----------------------+-----------------+------+-----+---------+-------+
 
 ------
 ### 创建diary表
@@ -153,10 +219,23 @@
     CREATE INDEX idx_is_deleted
     ON diary(is_deleted) 
         
+    +--------------------+---------------------+------+-----+---------+----------------+
+    | Field              | Type                | Null | Key | Default | Extra          |
+    +--------------------+---------------------+------+-----+---------+----------------+
+    | diary_id           | int(6) unsigned     | NO   | PRI | NULL    | auto_increment |
+    | diary_name         | varchar(200)        | NO   | UNI | NULL    |                |
+    | diary_text         | varchar(2000)       | NO   |     | NULL    |                |
+    | is_deleted         | tinyint(1) unsigned | NO   | MUL | NULL    |                |
+    | user_id            | int(6) unsigned     | NO   | MUL | NULL    |                |
+    | diary_gmt_create   | datetime            | NO   |     | NULL    |                |
+    | diary_gmt_modified | datetime            | NO   |     | NULL    |                |
+    +--------------------+---------------------+------+-----+---------+----------------+    
+        
+------
 ## SQL操作
 
 ------
-### 管理员
+### admin
 #### 注册管理员账号
     1.验证此账号是否存在
     select count(admin_name) from admin where admin_name = ?
@@ -190,7 +269,7 @@
     select admin_password,admin_level from admin where admin_name = 'ten'    
     
 ------
-### 用户
+### user
 #### 注册用户
     1.验证此账号是否存在
     select count(user_name) from user where user_name = ?
@@ -232,7 +311,57 @@
     select admin_password,admin_level from admin where admin_name = 'ten'    
     
 ------
-### 图片
+### user_property    
+#### 插入用户资料
+    INSERT INTO user_property(user_id,property_nickname,property_signature,property_sex,property_email,property_location,property_birthday,property_gmt_create,property_gmt_modified)
+    VALUES(?,?,?,?,?,?,?,?,?)
+---
+    Demo: 
+    INSERT INTO user_property(user_id,property_nickname,property_signature,property_sex,property_email,property_location,property_birthday,property_gmt_create,property_gmt_modified)
+    VALUES('1','one','this is one','man','one@qq.com','wuxi','2000-01-01','2018-01-01 00:00:00','2018-01-01 00:00:00')
+    INSERT INTO user_property(user_id,property_nickname,property_signature,property_sex,property_email,property_location,property_birthday,property_gmt_create,property_gmt_modified)
+    VALUES('2','two','this is two','man','two@qq.com','wuxi','2000-01-01','2018-01-01 00:00:00','2018-01-01 00:00:00')
+    INSERT INTO user_property(user_id,property_nickname,property_signature,property_sex,property_email,property_location,property_birthday,property_gmt_create,property_gmt_modified)
+    VALUES('3','three','this is three','woman','three@qq.com','wuxi','2000-01-01','2018-01-01 00:00:00','2018-01-01 00:00:00') 
+    +---------+-------------------+--------------------+--------------+----------------+-------------------+-------------------+---------------------+-----------------------+
+    | user_id | property_nickname | property_signature | property_sex | property_email | property_location | property_birthday | property_gmt_create | property_gmt_modified |
+    +---------+-------------------+--------------------+--------------+----------------+-------------------+-------------------+---------------------+-----------------------+
+    |       1 | one               | this is one        | man          | one@qq.com     | wuxi              | 2000-01-01        | 2018-01-01 00:00:00 | 2018-01-01 00:00:00   |
+    |       2 | two               | this is two        | man          | two@qq.com     | wuxi              | 2000-01-01        | 2018-01-01 00:00:00 | 2018-01-01 00:00:00   |
+    |       3 | three             | this is three      | woman        | three@qq.com   | wuxi              | 2000-01-01        | 2018-01-01 00:00:00 | 2018-01-01 00:00:00   |
+    +---------+-------------------+--------------------+--------------+----------------+-------------------+-------------------+---------------------+-----------------------+
+#### 查询用户资料
+    SELECT property_nickname,property_signature,property_sex,property_email,property_location,property_birthday,property_gmt_create from user_property where user_id = ?
+---
+    Demo:
+    SELECT property_nickname,property_signature,property_sex,property_email,property_location,property_birthday,property_gmt_create from user_property where user_id = '1';
+    +-------------------+--------------------+--------------+----------------+-------------------+-------------------+---------------------+
+    | property_nickname | property_signature | property_sex | property_email | property_location | property_birthday | property_gmt_create |
+    +-------------------+--------------------+--------------+----------------+-------------------+-------------------+---------------------+
+    | one               | this is one        | man          | one@qq.com     | wuxi              | 2000-01-01        | 2018-01-01 00:00:00 |
+    +-------------------+--------------------+--------------+----------------+-------------------+-------------------+---------------------+
+    
+------
+### user_icon    
+#### 插入
+    INSERT INTO user_icon(user_id,icon_path,icon_gmt_create,icon_gmt_modified)
+    VALUES(?,?,?,?)
+---
+    Demo:
+    INSERT INTO user_icon(user_id,icon_path,icon_gmt_create,icon_gmt_modified)
+    VALUES('1','D:\Java\lifecatweb\src\main\webapp\image\one\icon\icon.jpg','2018-01-01 00:00:00','2018-01-01 00:00:00')
+    +---------+---------------------------------------------------+---------------------+---------------------+
+    | user_id | icon_path                                         | icon_gmt_create     | icon_gmt_modified   |
+    +---------+---------------------------------------------------+---------------------+---------------------+
+    |       1 | D:Javalifecatwebsrcmainwebappimageoneiconicon.jpg | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
+    +---------+---------------------------------------------------+---------------------+---------------------+
+#### 查询
+    SELECT icon_path FROM user_icon where user_id = ?
+#### 更新
+    UPDATE user_icon set icon_path = ?,icon_gmt_modified = ? where user_id = ?
+    
+------
+### 图片image
 #### 图片插入
     INSERT INTO image(image_text,image_path,is_deleted,user_id,class_id,image_gmt_create,image_gmt_modified)
     VALUES(?,?,?,?,?,?,?)
@@ -259,21 +388,68 @@
     |        2 | lifecat02  | /usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/ten/1/image2.jpg |          1 |       1 |        1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
     |        3 | lifecat03  | /usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/ten/1/image3.jpg |          1 |       1 |        1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
     +----------+------------+---------------------------------------------------------------------------------+------------+---------+----------+---------------------+---------------------+    
-#### 图片更新文本内容
-    UPDATE image(image_id,image_text,image_,) VALUES(?,?,?,?,?)
+#### 图片文本内容更新
+    UPDATE image set image_text = ?,image_gmt_modified = ? where image_id = ?
     
-#### 图片路径及类别更新
-    UPDATE image(image_path,class_id,image_gmt_modified) VALUES(?,?,?) where image_id = ?
+#### 图片路径更新
+    UPDATE image set image_path = ?,image_gmt_modified = ? where image_id = ?
     
 #### 图片删除
-    DELETE from image where image_id = ?
-    
+    UPDATE image set is_delete = '0',image_gmt_modified = ? where image_id = ?
+
 ####图片单个查询
-    SELECT image_id,image_text,image_path,image_gmt_create from image where image_id = ? and is_deleted = 1
+    SELECT image_text,image_path,image_gmt_create from image where image_id = ? and is_deleted = '1'
     
 #### 图片集合查询
-    SELECT image_id,image_text,image_path,image_gmt_create from image where user_id = ? and is_deleted = 1
+    SELECT image_id,image_text,image_path,image_gmt_create from image where user_id = ? and is_deleted = '1'
 
 #### 图片分类集合查询
-    SELECT image_id,image_text,image_path,image_gmt_create from image where user_id = ? and class_id = ? and is_deleted = 1
+    SELECT image_id,image_text,image_path,image_gmt_create from image where user_id = ? and class_id = ? and is_deleted = '1'
 
+------
+### 图片类别image_class
+#### TODO
+
+------
+### 图片特征image_feature
+#### TODO
+
+------
+### 日记diary
+#### 日记插入
+    INSERT INTO diary(diary_name,diary_text,is_deleted,user_id,diary_gmt_create,diary_gmt_modified)
+    VALUES(?,?,?,?,?,?)
+---
+    Demo:
+    INSERT INTO diary(diary_name,diary_text,is_deleted,user_id,diary_gmt_create,diary_gmt_modified)
+    VALUES
+    ('diary01','this is diary01',
+    1,1,'2018-01-01 00:00:00','2018-01-01 00:00:00')
+    
+    INSERT INTO diary(diary_name,diary_text,is_deleted,user_id,diary_gmt_create,diary_gmt_modified)
+    VALUES
+    ('diary02','this is diary02',
+    1,1,'2018-01-01 00:00:00','2018-01-01 00:00:00')
+    
+    INSERT INTO diary(diary_name,diary_text,is_deleted,user_id,diary_gmt_create,diary_gmt_modified)
+    VALUES
+    ('diary03','this is diary03',
+    1,1,'2018-01-01 00:00:00','2018-01-01 00:00:00')
+    +----------+------------+-----------------+------------+---------+---------------------+---------------------+
+    | diary_id | diary_name | diary_text      | is_deleted | user_id | diary_gmt_create    | diary_gmt_modified  |
+    +----------+------------+-----------------+------------+---------+---------------------+---------------------+
+    |        1 | diary01    | this is diary01 |          1 |       1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
+    |        2 | diary02    | this is diary02 |          1 |       1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
+    |        3 | diary03    | this is diary03 |          1 |       1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
+    +----------+------------+-----------------+------------+---------+---------------------+---------------------+#### 图片文本内容更新
+#### 日记文本内容更新    
+    UPDATE diary set diary_text = ?,diary_gmt_modified = ? where diary_id = ?
+    
+#### 日记删除
+    UPDATE diary set is_delete = '0',diary_gmt_modified = ? where diary_id = ?
+
+####日记单个查询
+    SELECT diary_name,diary_text,diary_gmt_create from diary where diary_id = ? and is_deleted = '1'
+    
+#### 日记集合查询
+    SELECT diary_id,diary_name,diary_text,diary_gmt_create from diary where user_id = ? and is_deleted = '1'

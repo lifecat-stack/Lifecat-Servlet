@@ -38,6 +38,7 @@ abstract class AbstractDAO implements DAO {
         for (int i = 0; i < args.length; i++) {
             preparedStatement.setObject(i + 1, args[i]);
         }
+        logger.info(sql);
         preparedStatement.executeUpdate();
     }
 
@@ -51,6 +52,7 @@ abstract class AbstractDAO implements DAO {
     public void delete(String sql) throws SQLException {
         Connection connection = Connections.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        logger.info(sql);
         preparedStatement.executeUpdate();
     }
 
@@ -64,6 +66,7 @@ abstract class AbstractDAO implements DAO {
     public void update(String sql) throws SQLException {
         Connection connection = Connections.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        logger.info(sql);
         preparedStatement.executeUpdate();
     }
 
