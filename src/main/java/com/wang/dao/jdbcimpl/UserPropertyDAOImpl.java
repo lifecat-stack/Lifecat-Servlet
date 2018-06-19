@@ -32,7 +32,7 @@ class UserPropertyDAOImpl extends AbstractDAO implements UserPropertyDAO {
                 "property_birthday," +
                 "property_gmt_create," +
                 "property_gmt_modified)" +
-                "values(?,?,?,?,?,?,?,?,?)";
+                " values(?,?,?,?,?,?,?,?,?)";
         Object[] args = {
                 userPropertyDO.getUserId(),
                 userPropertyDO.getPropertyNickname(),
@@ -49,7 +49,7 @@ class UserPropertyDAOImpl extends AbstractDAO implements UserPropertyDAO {
 
     @Override
     public UserPropertyDO queryUserProperty(Integer userId) throws SQLException {
-        String sql = "select (" +
+        String sql = "select " +
                 "property_nickname," +
                 "property_signature," +
                 "property_sex," +
@@ -57,9 +57,12 @@ class UserPropertyDAOImpl extends AbstractDAO implements UserPropertyDAO {
                 "property_location," +
                 "property_birthday," +
                 "property_gmt_create," +
-                "property_gmt_modified)" +
-                "from user_property where user_id = " + userId;
+                "property_gmt_modified" +
+                " from user_property where user_id = '" + userId + "'";
+
         ResultSet resultSet = query(sql);
+        resultSet.next();
+
         UserPropertyDO userPropertyDO = new UserPropertyDO();
         userPropertyDO.setUserId(userId);
         userPropertyDO.setPropertyNickname(resultSet.getString("property_nickname"));

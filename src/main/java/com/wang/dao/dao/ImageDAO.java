@@ -43,16 +43,16 @@ public interface ImageDAO {
 
     /**
      * 图片单个查询 :
-     * 通过image_name(uk)进行查询
+     * 通过image_id(uk)进行查询
      * 获取数据库image信息
      * image信息封装在ImageDO中返回
      *
-     * @param imageName 图片名
+     * @param imageId 图片ID
      * @return ImageDO ImageDO
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    ImageDO queryImage(String imageName) throws SQLException;
+    ImageDO queryImage(int imageId) throws SQLException;
 
     /**
      * 图片全部查询 :

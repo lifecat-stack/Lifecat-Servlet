@@ -1,14 +1,12 @@
 package com.wang.dao.jdbcimpl;
 
-import com.wang.dao.dao.DAO;
+import com.wang.dao.DAO;
+import com.wang.dao.KeyGenerator;
 import com.wang.util.Connections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * DAO接口骨架类 :
@@ -21,7 +19,7 @@ import java.sql.SQLException;
  * @date 2018/5/22
  * @auther ten
  */
-abstract class AbstractDAO implements DAO {
+abstract class AbstractDAO implements DAO, KeyGenerator {
     private static Logger logger = LoggerFactory.getLogger(AbstractDAO.class);
 
     /**
@@ -82,5 +80,27 @@ abstract class AbstractDAO implements DAO {
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         logger.info(sql);
         return preparedStatement.executeQuery();
+    }
+
+    /**
+     * insert
+     * 返回自增长主键
+     *
+     * @param sql sql
+     * @throws SQLException SQL异常
+     */
+    @Override
+    public int insertAndReturnKey(String sql, Object[] args) throws SQLException {
+        Connection connection = Connections.getConnection();
+        PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+        for (int i = 0; i < args.length; i++) {
+            preparedStatement.setObject(i + 1, args[i]);
+        }
+        logger.info(sql);
+        preparedStatement.executeUpdate();
+        ResultSet rs = preparedStatement.getGeneratedKeys();
+        rs.next();
+        return rs.getInt(1);
     }
 }

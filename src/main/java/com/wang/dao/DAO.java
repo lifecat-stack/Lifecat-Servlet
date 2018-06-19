@@ -1,4 +1,4 @@
-package com.wang.dao.dao;
+package com.wang.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -43,7 +43,7 @@ public interface DAO {
     /**
      * query
      *
-     * @param sql  sql
+     * @param sql sql
      * @throws SQLException SQL异常
      */
     ResultSet query(String sql) throws SQLException;

@@ -19,11 +19,12 @@ public interface UserDAO {
     /**
      * 注册 :
      * 插入UserDO到user表
+     * 返回自增主键user_id
       *
      * @param userDO UserDO
      * @throws SQLException e
      */
-    void insertUser(UserDO userDO) throws SQLException;
+    int insertUser(UserDO userDO) throws SQLException;
 
     /**
      * 登录 :

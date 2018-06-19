@@ -1,65 +1,92 @@
 package com.wang.dao.jdbcimpl;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import com.wang.bean.doo.UserIconDO;
+import com.wang.dao.dao.DAOFactory;
+import com.wang.dao.dao.UserIconDAO;
+import org.junit.*;
 
-/** 
-* UserIconDAOImpl Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>ÁùÔÂ 6, 2018</pre> 
-* @version 1.0 
-*/ 
-public class UserIconDAOImplTest { 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
-@Before
-public void before() throws Exception { 
-} 
+/**
+ * UserIconDAOImpl Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>ÁùÔÂ 6, 2018</pre>
+ */
+public class UserIconDAOImplTest {
+    private static DAOFactory daoFactory;
+    private UserIconDAO dao;
 
-@After
-public void after() throws Exception { 
-} 
+    @BeforeClass
+    public static void beforeClass() throws Exception {
+        daoFactory = new JdbcDAOFactory();
+    }
 
-/** 
-* 
-* Method: newUserIconDAO() 
-* 
-*/ 
-@Test
-public void testNewUserIconDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @Before
+    public void before() throws Exception {
+        dao = daoFactory.getUserIconDAO();
+        assertNotNull(dao);
+    }
 
-/** 
-* 
-* Method: insertUserIcon(UserIconDO userIconDO) 
-* 
-*/ 
-@Test
-public void testInsertUserIcon() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @After
+    public void after() throws Exception {
+        dao = null;
+    }
 
-/** 
-* 
-* Method: updateUserIcon(UserIconDO userIconDO) 
-* 
-*/ 
-@Test
-public void testUpdateUserIcon() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @AfterClass
+    public static void afterClass() throws Exception {
+        daoFactory = null;
+    }
 
-/** 
-* 
-* Method: queryUserIcon(Integer userId) 
-* 
-*/ 
-@Test
-public void testQueryUserIcon() throws Exception { 
-//TODO: Test goes here... 
-} 
+
+    /**
+     * Method: newUserIconDAO()
+     */
+    @Test
+    public void testNewUserIconDAO() throws Exception {
+        assertNotNull(UserIconDAOImpl.newUserIconDAO());
+    }
+
+    /**
+     * Method: insertUserIcon(UserIconDO userIconDO)
+     */
+    @Test
+    public void testInsertUserIcon() throws Exception {
+        UserIconDO userIconDO = new UserIconDO();
+        assertNotNull(userIconDO);
+
+        userIconDO.setUserId(6);
+        userIconDO.setIconPath("D:/Java/lifecatweb/src/main/webapp/image/one/icon/icon.jpg");
+        userIconDO.setIconGmtCreate("2019-01-01 00:00:00");
+        userIconDO.setIconGmtModified("2019-01-01 00:00:00");
+
+        dao.insertUserIcon(userIconDO);
+    }
+
+    /**
+     * Method: updateUserIcon(UserIconDO userIconDO)
+     */
+    @Test
+    public void testUpdateUserIcon() throws Exception {
+        UserIconDO userIconDO = new UserIconDO();
+        assertNotNull(userIconDO);
+
+        userIconDO.setUserId(6);
+        userIconDO.setIconPath("D:/Java/lifecatweb/src/main/webapp/image/one/icon/icon2.jpg");
+        userIconDO.setIconGmtModified("2020-01-01 00:00:00");
+
+        dao.updateUserIcon(userIconDO);
+    }
+
+    /**
+     * Method: queryUserIcon(Integer userId)
+     */
+    @Test
+    public void testQueryUserIcon() throws Exception {
+        assertEquals("D:/Java/lifecatweb/src/main/webapp/image/one/icon/icon2.jpg", dao.queryUserIcon(6));
+    }
 
 
 } 

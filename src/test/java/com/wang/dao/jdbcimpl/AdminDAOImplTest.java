@@ -1,65 +1,57 @@
 package com.wang.dao.jdbcimpl;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import org.junit.Test;
+import org.junit.Before;
+import org.junit.After;
 
-/** 
-* AdminDAOImpl Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>ÁùÔÂ 6, 2018</pre> 
-* @version 1.0 
-*/ 
-public class AdminDAOImplTest { 
+/**
+ * AdminDAOImpl Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>ÁùÔÂ 6, 2018</pre>
+ */
+public class AdminDAOImplTest {
 
-@Before
-public void before() throws Exception { 
-} 
+    @Before
+    public void before() throws Exception {
+    }
 
-@After
-public void after() throws Exception { 
-} 
+    @After
+    public void after() throws Exception {
+    }
 
-/** 
-* 
-* Method: newAdminDAO() 
-* 
-*/ 
-@Test
-public void testNewAdminDAO() throws Exception { 
+    /**
+     * Method: newAdminDAO()
+     */
+    @Test
+    public void testNewAdminDAO() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: insertAdmin(AdminDO adminDO) 
-* 
-*/ 
-@Test
-public void testInsertAdmin() throws Exception { 
+    /**
+     * Method: insertAdmin(AdminDO adminDO)
+     */
+    @Test
+    public void testInsertAdmin() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: queryAdmin(String adminName) 
-* 
-*/ 
-@Test
-public void testQueryAdmin() throws Exception { 
+    /**
+     * Method: queryAdmin(String adminName)
+     */
+    @Test
+    public void testQueryAdmin() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: isAdminExisted(String adminName) 
-* 
-*/ 
-@Test
-public void testIsAdminExisted() throws Exception { 
+    /**
+     * Method: isAdminExisted(String adminName)
+     */
+    @Test
+    public void testIsAdminExisted() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
 
 } 

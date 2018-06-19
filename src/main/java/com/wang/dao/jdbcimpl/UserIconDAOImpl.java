@@ -3,6 +3,7 @@ package com.wang.dao.jdbcimpl;
 import com.wang.dao.dao.UserIconDAO;
 import com.wang.bean.doo.UserIconDO;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -21,24 +22,26 @@ class UserIconDAOImpl extends AbstractDAO implements UserIconDAO {
     @Override
     public void insertUserIcon(UserIconDO userIconDO) throws SQLException {
         String sql = "insert into user_icon(user_id,icon_path,icon_gmt_create,icon_gmt_modified) " +
-                "VALUES( ?,?,?,?)";
+                " VALUES( ?,?,?,?)";
         Object[] args = {userIconDO.getUserId(), userIconDO.getIconPath(), userIconDO.getIconGmtCreate(), userIconDO.getIconGmtModified()};
         insert(sql, args);
     }
 
     @Override
     public void updateUserIcon(UserIconDO userIconDO) throws SQLException {
-        String sql = "update user_icon set icon_path = "
+        String sql = "update user_icon set icon_path = '"
                 + userIconDO.getIconPath()
-                + " ,icon_gmt_modified = "
+                + "' ,icon_gmt_modified = '"
                 + userIconDO.getIconGmtModified()
-                + "  where user_id = " + userIconDO.getUserId();
+                + "'  where user_id = '" + userIconDO.getUserId() + "'";
         update(sql);
     }
 
     @Override
     public String queryUserIcon(Integer userId) throws SQLException {
-        String sql = "select icon_path from user_icon where user_id = " + userId;
-        return query(sql).getString("icon_path");
+        String sql = "select icon_path from user_icon where user_id = '" + userId + "'";
+        ResultSet rs = query(sql);
+        rs.next();
+        return rs.getString("icon_path");
     }
 }

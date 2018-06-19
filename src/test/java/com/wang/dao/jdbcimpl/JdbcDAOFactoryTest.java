@@ -1,115 +1,94 @@
 package com.wang.dao.jdbcimpl;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import com.wang.dao.dao.DAOFactory;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
-/** 
-* JdbcDAOFactory Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>ÁùÔÂ 6, 2018</pre> 
-* @version 1.0 
-*/ 
-public class JdbcDAOFactoryTest { 
+/**
+ * JdbcDAOFactory Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>ÁùÔÂ 6, 2018</pre>
+ */
+public class JdbcDAOFactoryTest {
 
-@Before
-public void before() throws Exception { 
-} 
+    private static DAOFactory daoFactory;
 
-@After
-public void after() throws Exception { 
-} 
+    @BeforeClass
+    public static void before() throws Exception {
+        daoFactory = new JdbcDAOFactory();
+    }
 
-/** 
-* 
-* Method: getAdminDAO() 
-* 
-*/ 
-@Test
-public void testGetAdminDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @AfterClass
+    public static void after() throws Exception {
+        daoFactory = null;
+    }
 
-/** 
-* 
-* Method: getDiaryDAO() 
-* 
-*/ 
-@Test
-public void testGetDiaryDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getAdminDAO()
+     */
+    @Test
+    public void testGetAdminDAO() throws Exception {
+        assert daoFactory.getAdminDAO() instanceof AdminDAOImpl;
+    }
 
-/** 
-* 
-* Method: getImageDAO() 
-* 
-*/ 
-@Test
-public void testGetImageDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getDiaryDAO()
+     */
+    @Test
+    public void testGetDiaryDAO() throws Exception {
+        assert daoFactory.getDiaryDAO() instanceof DiaryDAOImpl;
+    }
 
-/** 
-* 
-* Method: getImageFeatureDAO() 
-* 
-*/ 
-@Test
-public void testGetImageFeatureDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getImageDAO()
+     */
+    @Test
+    public void testGetImageDAO() throws Exception {
+        assert daoFactory.getImageDAO() instanceof ImageDAOImpl;
+    }
 
-/** 
-* 
-* Method: getImageTypeDAO() 
-* 
-*/ 
-@Test
-public void testGetImageTypeDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getImageFeatureDAO()
+     */
+    @Test
+    public void testGetImageFeatureDAO() throws Exception {
+        assert daoFactory.getImageFeatureDAO() instanceof ImageFeatureDAOImpl;
+    }
 
-/** 
-* 
-* Method: getImageClassDAO() 
-* 
-*/ 
-@Test
-public void testGetImageClassDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getImageClassDAO()
+     */
+    @Test
+    public void testGetImageClassDAO() throws Exception {
+        assert daoFactory.getImageClassDAO() instanceof ImageClassDAOImpl;
+    }
 
-/** 
-* 
-* Method: getUserDAO() 
-* 
-*/ 
-@Test
-public void testGetUserDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getUserDAO()
+     */
+    @Test
+    public void testGetUserDAO() throws Exception {
+        assert daoFactory.getUserDAO() instanceof UserDAOImpl;
+    }
 
-/** 
-* 
-* Method: getUserIconDAO() 
-* 
-*/ 
-@Test
-public void testGetUserIconDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getUserIconDAO()
+     */
+    @Test
+    public void testGetUserIconDAO() throws Exception {
+        assert daoFactory.getUserIconDAO() instanceof UserIconDAOImpl;
+    }
 
-/** 
-* 
-* Method: getUserPropertyDAO() 
-* 
-*/ 
-@Test
-public void testGetUserPropertyDAO() throws Exception { 
-//TODO: Test goes here... 
-} 
+    /**
+     * Method: getUserPropertyDAO()
+     */
+    @Test
+    public void testGetUserPropertyDAO() throws Exception {
+        assert daoFactory.getUserPropertyDAO() instanceof UserPropertyDAOImpl;
+    }
 
 
 } 

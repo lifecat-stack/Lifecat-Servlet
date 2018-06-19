@@ -41,6 +41,19 @@
     * ? 10:<isEqual> ?
 
 ------
+### 创建test表
+    CREATE TABLE test (
+    test_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    test_name VARCHAR(20) NOT NULL,
+    test_text VARCHAR(200),
+    test_gmt_create DATETIME NOT NULL,
+    test_gmt_modified DATETIME NOT NULL
+    )
+    ---
+    建立索引
+    CREATE UNIQUE INDEX uk_test_name
+    ON test(test_name)
+
 ### 创建admin表
     CREATE TABLE admin (
     admin_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -309,6 +322,7 @@
 ---    
     Demo:
     select admin_password,admin_level from admin where admin_name = 'ten'    
+---
     
 ------
 ### user_property    
@@ -389,13 +403,13 @@
     |        3 | lifecat03  | /usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/ten/1/image3.jpg |          1 |       1 |        1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
     +----------+------------+---------------------------------------------------------------------------------+------------+---------+----------+---------------------+---------------------+    
 #### 图片文本内容更新
-    UPDATE image set image_text = ?,image_gmt_modified = ? where image_id = ?
+    UPDATE image set image_text = ? where image_id = ?
     
 #### 图片路径更新
     UPDATE image set image_path = ?,image_gmt_modified = ? where image_id = ?
     
 #### 图片删除
-    UPDATE image set is_delete = '0',image_gmt_modified = ? where image_id = ?
+    UPDATE image set is_delete = '0' where image_id = ?
 
 ####图片单个查询
     SELECT image_text,image_path,image_gmt_create from image where image_id = ? and is_deleted = '1'
