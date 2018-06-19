@@ -110,9 +110,9 @@ README -- LifeCat
 ## 文档目录
   * __[项目规范](Read/standard.md)__ 
   * __[版本控制](Read/version.md)__
-  * [数据库设计](Read/database.md)
-  * [数据库sql设计](Read/sql.md)
-  * __[分层架构设计]()__  
+  * __[数据库设计](Read/database.md)__
+  * __[数据库sql设计](Read/sql.md)__
+  * __[分层架构设计](#_@应用分层_)__  
    
     * [View层终端显示层设计](Read/view.md)
     * [Filter层请求过滤器设计](Read/filter.md)
