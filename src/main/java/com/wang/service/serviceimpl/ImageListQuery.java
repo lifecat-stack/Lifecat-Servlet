@@ -55,7 +55,7 @@ class ImageListQuery implements Service {
         }
 
         if (!success) {
-            return new ServiceResult.Builder(true)
+            return new ServiceResult.Builder(false)
                     .errormsg("数据库查询异常")
                     .page(Page.PAGE_USERHOME)
                     .build();

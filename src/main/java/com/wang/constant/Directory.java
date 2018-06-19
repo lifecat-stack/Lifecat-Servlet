@@ -14,15 +14,15 @@ public class Directory {
     /**
      * image存储路径--本地路径
      */
-    public static final String IMAGE_PATH = "/usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/";
+    public static final String IMAGE_PATH = "D:/Java/lifecatweb/src/main/webapp/image/";
     /**
      * 分类展示的父目录--本地路径
      */
-    public static final String CATEGORY_IMAGE_PATH = "/usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/pics/";
+    public static final String CATEGORY_IMAGE_PATH = "D:/Java/lifecatweb/src/main/webapp/pics/";
     /**
      * image存储路径--服务器路径
      */
-    public static final String HOST_IMAGE_PATH = HOST.PROJECT_CONTEXT + "upimage/";
+    public static final String HOST_IMAGE_PATH = HOST.PROJECT_CONTEXT + "image/";
     /**
      * 分类展示的父目录--服务器路径
      */
