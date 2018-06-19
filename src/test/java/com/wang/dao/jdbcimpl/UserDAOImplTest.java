@@ -56,6 +56,7 @@ public class UserDAOImplTest {
     public void testInsertUser() throws Exception {
         UserDO userDO = new UserDO();
         assertNotNull(userDO);
+
         userDO.setUserName("test");
         userDO.setUserPassword("123456");
         userDO.setUserLevel("test");

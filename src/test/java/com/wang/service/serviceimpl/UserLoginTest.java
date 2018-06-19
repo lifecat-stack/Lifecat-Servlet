@@ -1,45 +1,41 @@
 package com.wang.service.serviceimpl;
 
-import org.junit.Test; 
-import org.junit.Before; 
-import org.junit.After; 
+import org.junit.Test;
+import org.junit.Before;
+import org.junit.After;
 
-/** 
-* UserLogin Tester. 
-* 
-* @author <Authors name> 
-* @since <pre>ÁùÔÂ 16, 2018</pre> 
-* @version 1.0 
-*/ 
-public class UserLoginTest { 
+/**
+ * UserLogin Tester.
+ *
+ * @author <Authors name>
+ * @version 1.0
+ * @since <pre>ÁùÔÂ 16, 2018</pre>
+ */
+public class UserLoginTest {
 
-@Before
-public void before() throws Exception { 
-} 
+    @Before
+    public void before() throws Exception {
+    }
 
-@After
-public void after() throws Exception { 
-} 
+    @After
+    public void after() throws Exception {
+    }
 
-/** 
-* 
-* Method: newService() 
-* 
-*/ 
-@Test
-public void testNewService() throws Exception { 
+    /**
+     * Method: newService()
+     */
+    @Test
+    public void testNewService() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
-/** 
-* 
-* Method: execute(HttpServletRequest req, HttpServletResponse resp) 
-* 
-*/ 
-@Test
-public void testExecute() throws Exception { 
+    /**
+     * Method: execute(HttpServletRequest req, HttpServletResponse resp)
+     */
+    @Test
+    public void testExecute() throws Exception {
 //TODO: Test goes here... 
-} 
+    }
 
 
 } 

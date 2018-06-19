@@ -409,7 +409,7 @@
     UPDATE image set image_path = ?,image_gmt_modified = ? where image_id = ?
     
 #### 图片删除
-    UPDATE image set is_delete = '0' where image_id = ?
+    UPDATE image set is_deleted = '0' where image_id = ?
 
 ####图片单个查询
     SELECT image_text,image_path,image_gmt_create from image where image_id = ? and is_deleted = '1'

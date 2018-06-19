@@ -14,10 +14,10 @@ public class FormFactory {
     public static Form getFormByName(String url) {
         Form form;
 
-        if ("/user_login".equals(url)) {
+        if ("user_login".equals(url)) {
             form = LoginForm.getForm();
 
-        } else if ("/user_register".equals(url)) {
+        } else if ("user_register".equals(url)) {
             form = RegisterForm.getForm();
 
         } else if ("modifypsw.do".equals(url)) {

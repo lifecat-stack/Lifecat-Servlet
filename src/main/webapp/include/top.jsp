@@ -30,7 +30,7 @@
 
         <!--导航条头部-->
         <div class="navbar-header">
-            <a href="../index.jsp" target="_blank" class="navbar-brand">
+            <a href="userhome.action" target="_blank" class="navbar-brand">
                 <img src="../img/iconimage.png" height="44" width="152" style="margin-top: -13px;"/>
             </a>
 
@@ -178,29 +178,31 @@
                                    placeholder="" title="输入昵称">
                         </div>
                         <div class="form-group">
+                            <h5>个性签名</h5>
+                            <input type="text" name="signature" class="form-control input-lg"
+                                   placeholder="" title="输入签名">
+                        </div>
+                        <div class="form-group">
                             <h5>性别</h5>
                             <input type="text" name="sex" class="form-control input-lg"
                                    placeholder="" title="输入性别">
                         </div>
 
                         <div class="form-group">
-                            <h5>年龄</h5>
-                            <input type="text" name="age"
-                                   class="form-control input-lg" placeholder="" title="输入年龄">
+                            <h5>邮箱</h5>
+                            <input type="text" name="email"
+                                   class="form-control input-lg" placeholder="" title="输入邮箱">
                         </div>
-
+                        <div class="form-group">
+                            <h5>地址</h5>
+                            <input type="text" name="location" class="form-control input-lg"
+                                   placeholder="" title="你的地址">
+                        </div>
                         <div class="form-group">
                             <h5>生日</h5>
                             <input type="text" name="birthday" class="form-control input-lg"
                                    placeholder="" title="输入生日">
                         </div>
-
-                        <div class="form-group">
-                            <h5>邮箱</h5>
-                            <input type="text" name="email" class="form-control input-lg"
-                                   placeholder="" title="你的邮箱">
-                        </div>
-
 
                         <div class="form-group">
                             <button class="btn btn-primary btn-lg btn-block">修改</button>

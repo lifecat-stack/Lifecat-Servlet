@@ -36,7 +36,7 @@ public class ActionServlet extends HttpServlet {
 
         // 获取请求界面信息
         String path = req.getRequestURI();
-        String jspUrl = path.substring(0, path.lastIndexOf("/"));
+        String jspUrl = path.substring(12, path.lastIndexOf("/"));
         logger.info("jsp is :{}", jspUrl);
 
         // 验证未通过 转发回请求界面

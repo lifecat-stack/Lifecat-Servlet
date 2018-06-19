@@ -563,6 +563,43 @@
     </div>
 </div>
 
+<!-- 管理员登录窗口 -->
+<div id="admin" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">管理员登录</h1>
+            </div>
+            <div class="modal-body">
+                <!-- 登录表单 -->
+                <form class="form-group" action="index.jsp/admin_login.do" method="post">
+                    <div class="form-group">
+                        <label for="adminName">账号</label> <input class="form-control"
+                                                                 type="text" placeholder="请输入账号" name="adminName"
+                                                                 id="adminName">
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPassword">密码</label> <input class="form-control"
+                                                                      placeholder="请输入密码" name="adminPassword"
+                                                                      id="adminPassword"
+                                                                      type="password">
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn btn-primary" type="submit">登录</button>
+                        <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- 主界面窗口 -->
 <div class="main">
     <div class="header">
@@ -590,10 +627,10 @@
                                 <i class="developer"></i>立即注册</span><s></s> </a>
                     </div>
                     <div class="main-entry">
-                        <a href="" class="">
+                        <a data-toggle="modal" class="developer-login" data-target="#admin">
                             <span class="title">
                                 <i class="developer2"></i>管理员登录</span><s></s> </a>
-                        <a href="" class="personal-login">
+                        <a href="userhome.action" class="personal-login">
                             <span class="title">
                                 <i class="developer2"></i>立即体验</span><s></s> </a>
                     </div>

@@ -42,12 +42,13 @@ public class FormFilter implements Filter {
         if (chain == null) {
             throw new NullPointerException("FormFilter is null");
         }
+
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
         // 提取action请求信息
         String path = request.getRequestURI();
-        String url = path.substring(path.lastIndexOf("/"), path.lastIndexOf("."));
+        String url = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));
         logger.info("form filter request url: {}", url);
 
         // 获取对应form对象

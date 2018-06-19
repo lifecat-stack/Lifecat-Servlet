@@ -34,6 +34,7 @@ public class EncodingFilter implements Filter {
         if (chain == null) {
             throw new NullPointerException("EncodingFilter is null");
         }
+
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
 

@@ -41,7 +41,7 @@ class ImageDAOImpl extends AbstractDAO implements ImageDAO {
 
     @Override
     public void deleteImage(int imageId) throws SQLException {
-        String sql = "UPDATE image set is_delete = '0' where image_id = '" + imageId + "'";
+        String sql = "UPDATE image set is_deleted = '0' where image_id = '" + imageId + "'";
         delete(sql);
     }
 
@@ -82,7 +82,7 @@ class ImageDAOImpl extends AbstractDAO implements ImageDAO {
 
     @Override
     public List<ImageDO> queryImageClass(int userId, int classId) throws SQLException {
-        String sql = "SELECT image_id,image_text,image_path,image_gmt_create from image where user_id = '" + userId + "' and class_id = '" + classId + "' is_deleted = '1'";
+        String sql = "SELECT image_id,image_text,image_path,image_gmt_create from image where user_id = '" + userId + "' and class_id = '" + classId + "' and is_deleted = '1'";
         ResultSet rs = query(sql);
         List<ImageDO> list = new ArrayList<>();
         while (rs.next()) {
