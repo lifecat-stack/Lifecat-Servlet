@@ -14,7 +14,7 @@ public class Page {
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/index.jsp
      */
-    public static final String PAGE_INDEX = "index.jsp";
+    public static final String PAGE_INDEX = "/index.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/userhome.jsp
      */

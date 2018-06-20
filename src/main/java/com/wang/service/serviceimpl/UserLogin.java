@@ -13,9 +13,10 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
+
 /**
  * 用户登录
- *
+ * <p>
  * 失败 Page.PAGE_INDEX
  * 成功 Page.PAGE_USERHOME
  *
@@ -24,7 +25,7 @@ import java.sql.SQLException;
  */
 class UserLogin implements Service {
 
-   private Logger logger = LoggerFactory.getLogger(UserLogin.class);
+    private Logger logger = LoggerFactory.getLogger(UserLogin.class);
 
     private UserLogin() {
     }

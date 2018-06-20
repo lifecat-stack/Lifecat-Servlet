@@ -37,8 +37,8 @@
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/FormResultTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/LoginFormTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/ModifyPswFormTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/RegisterFormTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/SetMsgFormTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/UserRegisterFormTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/AdminLoginTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/AdminRegisterTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryDeleteTest.java" charset="GBK" />

@@ -12,23 +12,31 @@ public class FormFactory {
      * @throws NullPointerException 无此请求对应的Form
      */
     public static Form getFormByName(String url) {
-        Form form;
+        Form form = null;
 
         if ("user_login".equals(url)) {
-            form = LoginForm.getForm();
-
+            form = UserLoginForm.getForm();
         } else if ("user_register".equals(url)) {
-            form = RegisterForm.getForm();
+            form = UserRegisterForm.getForm();
 
-        } else if ("modifypsw.do".equals(url)) {
-            form = ModifyPswForm.getForm();
+        } else if ("admin_login".equals(url)) {
+            // TODO
+        } else if ("admin_register".equals(url)) {
+            // TODO
 
-        } else if ("setmsg.do".equals(url)) {
-            form = SetMsgForm.getForm();
+        } else if ("user_property_update".equals(url)) {
+            form = UserPropertyUpdateForm.getForm();
 
-        } else {
-            form = null;
+        } else if ("user_password_update".equals(url)) {
+            form = UserPropertyUpdateForm.getForm();
+
+        } else if ("image_upload".equals(url)) {
+            form = ImageUploadForm.getForm();
+
+        } else if ("diary_upload".equals(url)) {
+            form = DiaryUploadForm.getForm();
         }
+
         return form;
     }
 }

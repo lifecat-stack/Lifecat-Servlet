@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.After;
 
 /**
- * SetMsgForm Tester.
+ * UserPropertyUpdateForm Tester.
  *
  * @author <Authors name>
  * @version 1.0

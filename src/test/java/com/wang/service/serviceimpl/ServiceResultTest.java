@@ -1,8 +1,13 @@
 package com.wang.service.serviceimpl;
 
+import org.easymock.EasyMock;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * ServiceResult Tester.
@@ -13,8 +18,16 @@ import org.junit.After;
  */
 public class ServiceResultTest {
 
+
+    private HttpServletRequest request;
+    private HttpServletResponse response;
+    private HttpSession session;
+
     @Before
-    public void before() throws Exception {
+    public void before() throws Exception { // 创建request和response的Mock
+        request = EasyMock.createMock(HttpServletRequest.class);
+        response = EasyMock.createMock(HttpServletResponse.class);
+        session = EasyMock.createMock(HttpSession.class);
     }
 
     @After

@@ -55,12 +55,14 @@ public class FormFilter implements Filter {
         Form form = FormFactory.getFormByName(url);
 
         FormResult result = null;
+
         if (form != null) {
             // 执行validate(),获取返回结果
             result = form.validate(request);
         }
 
-        request.setAttribute("formResult", result);
+        request.setAttribute("formResult",result);
+
         chain.doFilter(req, resp);
     }
 

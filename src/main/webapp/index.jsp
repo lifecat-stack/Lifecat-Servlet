@@ -536,7 +536,7 @@
                 <form class="form-group" action="index.jsp/user_register.do" method="post">
                     <div class="form-group">
                         <label for="rUserName">注册账号</label> <input class="form-control"
-                                                                   type="text" placeholder="请输入想注册的账号" name="rusername"
+                                                                   type="text" placeholder="请输入想注册的账号" name="rUserName"
                                                                    id="rUserName">
                     </div>
                     <div class="form-group">

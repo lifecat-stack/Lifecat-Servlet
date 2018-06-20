@@ -5,13 +5,13 @@ import org.junit.Before;
 import org.junit.After;
 
 /**
- * RegisterForm Tester.
+ * UserRegisterForm Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>ÁùÔÂ 16, 2018</pre>
  */
-public class RegisterFormTest {
+public class UserRegisterFormTest {
 
     @Before
     public void before() throws Exception {

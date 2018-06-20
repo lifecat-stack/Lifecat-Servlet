@@ -15,7 +15,7 @@ class BaseVerification implements Verifiable {
      */
     @Override
     public boolean isNull(String val) {
-        return val == null;
+        return val.length() == 0;
     }
 
     /**
@@ -51,6 +51,6 @@ class BaseVerification implements Verifiable {
      */
     @Override
     public boolean isDiff(String val1, String val2) {
-        return val1.equals(val2);
+        return !val1.equals(val2);
     }
 }

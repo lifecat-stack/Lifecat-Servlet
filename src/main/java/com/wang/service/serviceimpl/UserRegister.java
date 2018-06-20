@@ -35,7 +35,7 @@ class UserRegister implements Service {
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
         String rUserName = req.getParameter("rUserName");
-        String rUserPassword = req.getParameter("rUserPassword");
+        String rUserPassword = req.getParameter("rUserPassword1");
 
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 

@@ -7,13 +7,13 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class LoginForm extends BaseVerification implements Form {
+class UserLoginForm extends BaseVerification implements Form {
 
-    private LoginForm() {
+    private UserLoginForm() {
     }
 
     static Form getForm() {
-        return new LoginForm();
+        return new UserLoginForm();
     }
 
     /**
@@ -27,12 +27,15 @@ class LoginForm extends BaseVerification implements Form {
      */
     @Override
     public FormResult validate(ServletRequest request) {
-        String errormsg = "";
-
         String username = request.getParameter("userName");
         String password = request.getParameter("userPassword");
 
+        System.out.println(username);
+        System.out.println(password);
+
+        String errormsg = "";
         boolean success = true;
+
         if (isNull(username)) {
             errormsg += "username is empty ";
             success = false;
