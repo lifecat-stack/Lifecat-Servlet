@@ -6,7 +6,7 @@ import com.wang.constant.Page;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.dao.UserDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.service.service.Service;
+import com.wang.service.Service;
 import com.wang.util.DateTimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,8 +51,9 @@ class UserRegister implements Service {
         }
 
         if (isExisted) {
+            logger.warn("username is existed");
             return new ServiceResult.Builder(false)
-                    .errormsg("用户名已存在")
+                    .errormsg("username is existed")
                     .page(Page.PAGE_INDEX)
                     .build();
         }
@@ -73,8 +74,9 @@ class UserRegister implements Service {
         }
 
         if (!success) {
+            logger.warn("sql insert exception");
             return new ServiceResult.Builder(false)
-                    .errormsg("数据库插入异常").page(Page.PAGE_INDEX).build();
+                    .errormsg("sql insert exception").page(Page.PAGE_INDEX).build();
         }
 
         UserDO userDO2 = null;
@@ -87,11 +89,13 @@ class UserRegister implements Service {
         }
 
         if (!success2) {
+            logger.warn("sql query exception");
             return new ServiceResult.Builder(false)
-                    .errormsg("数据库查询异常").page(Page.PAGE_INDEX).build();
+                    .errormsg("sql query exception").page(Page.PAGE_INDEX).build();
         }
         UserDTO user = new UserDTO.Builder(userDO2.getUserId(), userDO2.getUserName()).build();
         req.getSession().setAttribute("user", user);
+        logger.info("user_register success");
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
 
     }

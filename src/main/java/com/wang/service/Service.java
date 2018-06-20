@@ -1,4 +1,4 @@
-package com.wang.service.service;
+package com.wang.service;
 
 import com.wang.service.serviceimpl.ServiceResult;
 

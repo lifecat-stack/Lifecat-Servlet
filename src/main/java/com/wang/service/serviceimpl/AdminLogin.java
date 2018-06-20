@@ -6,7 +6,7 @@ import com.wang.constant.Page;
 import com.wang.dao.dao.AdminDAO;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.service.service.Service;
+import com.wang.service.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,7 +23,7 @@ import java.sql.SQLException;
  * @date 2018/5/24
  * @auther ten
  */
- class AdminLogin implements Service {
+class AdminLogin implements Service {
     private Logger logger = LoggerFactory.getLogger(AdminLogin.class);
 
     private AdminLogin() {

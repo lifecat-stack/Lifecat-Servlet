@@ -1,6 +1,6 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.service.service.Service;
+import com.wang.service.Service;
 import org.easymock.EasyMock;
 import org.junit.Test;
 import org.junit.Before;

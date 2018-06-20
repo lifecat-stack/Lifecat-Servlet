@@ -6,7 +6,7 @@ import com.wang.constant.Page;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.dao.UserPropertyDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.service.service.Service;
+import com.wang.service.Service;
 import com.wang.util.DateTimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,6 +36,7 @@ class UserPropertyUpdate implements Service {
     }
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
+
         UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
         Integer userId = userDTO.getUserId();
 

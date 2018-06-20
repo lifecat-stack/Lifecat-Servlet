@@ -28,9 +28,9 @@ class UserPswUpdateForm extends BaseVerification implements Form {
      */
     @Override
     public FormResult validate(ServletRequest request) {
-        String oldpassword = request.getParameter("oldpassword");
-        String newpassword1 = request.getParameter("newpassword1");
-        String newpassword2 = request.getParameter("newpassword2");
+        String oldpassword = request.getParameter("oldPassword");
+        String newpassword1 = request.getParameter("newPassword1");
+        String newpassword2 = request.getParameter("newPassword2");
 
         boolean success = true;
         String errormsg = "";

@@ -3,6 +3,10 @@
 <%@page import="com.wang.bean.*" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="static com.wang.constant.HOST.*" %>
+<%@ page import="com.wang.service.serviceimpl.ServiceFactory" %>
+<%@ page import="com.wang.bean.dto.DiariesDTO" %>
+<%@ page import="com.wang.bean.dto.DiaryDTO" %>
+<%@ page import="java.util.List" %>
 
 <script>
     $(function () {
@@ -21,6 +25,13 @@
             $(this).parent("li").addClass("active");
         });
     });
+</script>
+
+<script type="text/javascript">
+    window.onload = function (theUrl)//用window的onload事件，窗体加载完毕的时候
+    {
+        document.URL = "image_list_query.do"
+    }
 </script>
 
 <style>
@@ -237,7 +248,7 @@
                         <%--获取图片链接--%>
                         <%
                             //获取demo图片在服务器上的路径
-                            String[] paths = new GetImgModel().getDemoImages();
+                            List<DiaryDTO> diaryList = (List<DiaryDTO>) session.getAttribute("diaryList");
                         %>
                         <table>
                             <%
@@ -245,27 +256,23 @@
                                  *  倒叙:最新上传的图片最前展示
                                  *  日志:demo_image_path打印demo图片链接
                                  */
-                                for (int i = paths.length - 1; i > 3; i -= 4) {
-                                    Logger logger = Logger.getLogger("demo_image_path");
-                                    logger.info(paths[i]);
-                                    logger.info(paths[i - 1]);
-                                    logger.info(paths[i - 2]);
-                                    logger.info(paths[i - 3]);
+                                for (int i = 0; i < diaryList.size(); i++) {
+
                             %>
                             <tr class="row">
-                                <td class="col-md-3"><span><img src=<%=paths[i]%>
+                                <td class="col-md-3"><span><img src=<%=diaryList.get(i).getDiaryName()%>
                                                                         height="200" width="200"
                                                                 style="margin-top: 20px;"/> </span>
                                 </td>
-                                <td class="col-md-3"><span><img src=<%=paths[i-1]%>
+                                <td class="col-md-3"><span><img src=<%=diaryList.get(i+1).getDiaryName()%>
                                                                         height="200" width="200"
                                                                 style="margin-top: 20px;"/> </span>
                                 </td>
-                                <td class="col-md-3"><span><img src=<%=paths[i-2]%>
+                                <td class="col-md-3"><span><img src=<%=diaryList.get(i).getDiaryName()%>
                                                                         height="200" width="200"
                                                                 style="margin-top: 20px;"/> </span>
                                 </td>
-                                <td class="col-md-3"><span><img src=<%=paths[i-3]%>
+                                <td class="col-md-3"><span><img src=<%=diaryList.get(i).getDiaryName()%>
                                                                         height="200" width="200"
                                                                 style="margin-top: 20px;"/> </span>
                                 </td>

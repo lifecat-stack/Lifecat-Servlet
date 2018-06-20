@@ -112,28 +112,28 @@
                           method="post">
                         <div class="form-group">
                             <h4>
-                                <label for="oldpassword">原密码</label>
+                                <label for="oldPassword">原密码</label>
                             </h4>
 
-                            <input type="text" id="oldpassword" name="oldpassword"
+                            <input type="text" id="oldPassword" name="oldPassword"
                                    class="form-control input-md" placeholder="请输入原密码" title="默认账号">
 
                         </div>
                         <div class="form-group">
                             <h4>
-                                <label for="newpassword1">请输入要修改的密码</label>
+                                <label for="newPassword1">请输入要修改的密码</label>
                             </h4>
 
-                            <input name="newpassword1" id="newpassword1" type="text"
+                            <input name="newPassword1" id="newPassword1" type="text"
                                    class="form-control input-md" placeholder="请输入你要修改的密码">
 
                         </div>
                         <div class="form-group">
                             <h4>
-                                <label for="newpassword2">请再次输入</label>
+                                <label for="newPassword2">请再次输入</label>
                             </h4>
 
-                            <input name="newpassword2" id="newpassword2" type="text"
+                            <input name="newPassword2" id="newPassword2" type="text"
                                    class="form-control " placeholder="请再次输入密码">
 
                         </div>

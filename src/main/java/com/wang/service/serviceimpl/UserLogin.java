@@ -6,7 +6,7 @@ import com.wang.constant.Page;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.dao.UserDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.service.service.Service;
+import com.wang.service.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

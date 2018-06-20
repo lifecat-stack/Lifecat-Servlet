@@ -1,6 +1,6 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.service.service.Service;
+import com.wang.service.Service;
 import org.easymock.EasyMock;
 import org.junit.After;
 import org.junit.Before;
@@ -59,9 +59,6 @@ public class UserRegisterTest {
         EasyMock.replay(request);   //保存期望结果
 
         ServiceResult result = service.execute(request, response);
-
-        System.out.println("page " + result.getPage());
-        System.out.println("msg" + result.getErrormsg());
 
         assertNotNull(result.getPage());
         assertNotNull(result.getErrormsg());

@@ -7,7 +7,7 @@ import com.wang.constant.Page;
 import com.wang.dao.dao.DAOFactory;
 import com.wang.dao.dao.UserIconDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.service.service.Service;
+import com.wang.service.Service;
 import com.wang.util.DateTimeUtil;
 import com.wang.util.ImageWriter;
 import org.slf4j.Logger;

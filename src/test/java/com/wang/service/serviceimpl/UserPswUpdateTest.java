@@ -1,10 +1,15 @@
 package com.wang.service.serviceimpl;
 
-import com.wang.service.service.Service;
+import com.wang.bean.dto.UserDTO;
+import com.wang.service.Service;
 import org.easymock.EasyMock;
-import org.junit.Test;
-import org.junit.Before;
 import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.powermock.api.easymock.PowerMock;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,8 +24,8 @@ import static org.junit.Assert.assertNotNull;
  * @version 1.0
  * @since <pre>六月 16, 2018</pre>
  */
+@RunWith(PowerMockRunner.class)
 public class UserPswUpdateTest {
-
 
     private HttpServletRequest request;
     private HttpServletResponse response;
@@ -50,13 +55,31 @@ public class UserPswUpdateTest {
      * Method: execute(HttpServletRequest req, HttpServletResponse resp)
      */
     @Test
+    @PrepareForTest({UserDTO.Builder.class})
     public void testExecute() throws Exception {
         Service service = UserPswUpdate.newService();
 
-        EasyMock.expect(request.getParameter("rUserName")).andReturn("UserRegisterTest").once();    //期望使用参数
-        EasyMock.expect(request.getParameter("rUserPassword1")).andReturn("testtest").times(1);  //期望调用的次数
+        final String path = "directoryPath";
 
-        EasyMock.replay(request);   //保存期望结果
+        UserDTO.Builder fileMock = PowerMock.createMock(UserDTO.Builder.class);
+
+
+        UserDTO tested = fileMock.build();
+
+        PowerMock.expectNew(UserDTO.Builder.class, 8, "a").andReturn(fileMock);
+
+        EasyMock.expect(tested.getUserId()).andReturn(8);
+
+        PowerMock.replay(fileMock, UserDTO.Builder.class);
+
+
+//        UserDTO userDTO = PowerMock.createMockAndExpectNew(UserDTO.Builder.class, 8, "test").build();
+
+        EasyMock.expect(request.getParameter("newPassword1")).andReturn("updatePassword").times(1);  //期望调用的次数
+        EasyMock.expect(request.getSession()).andReturn(session);
+        EasyMock.expect(session.getAttribute("user")).andReturn(tested);
+
+        PowerMock.replay(request, tested);   //保存期望结果
 
         ServiceResult result = service.execute(request, response);
 
@@ -66,6 +89,5 @@ public class UserPswUpdateTest {
         assertNotNull(result.getPage());
         assertNotNull(result.getErrormsg());
     }
-
 
 } 
