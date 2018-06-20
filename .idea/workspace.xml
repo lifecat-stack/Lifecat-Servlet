@@ -11,52 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifecatweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lifecatweb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/filter/form/UserPswUpdateForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/filter/form/UserPswUpdateForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/AdminLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/AdminRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/AdminRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryListQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryListQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageClassQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageClassQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageClassify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageClassify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageListQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageListQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageTextUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageTextUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ImageUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserIconUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserIconUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserPropertyQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserPropertyQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserPropertyUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserPropertyUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserPswUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserPswUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/UserRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/homePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/homePage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/AdminLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/AdminLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/AdminRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/AdminRegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryDeleteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryDeleteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryListQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryListQueryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryUpdateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryUploadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryUploadTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageClassQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageClassQueryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageClassifyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageClassifyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageDeleteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageDeleteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageListQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageListQueryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageQueryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageTextUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageTextUpdateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageUploadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageUploadTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserIconUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserIconUpdateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPropertyQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPropertyQueryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPropertyUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPropertyUpdateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPswUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPswUpdateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserRegisterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,11 +49,11 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="homePage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/include/homePage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="572">
               <caret line="251" selection-start-line="251" selection-end-line="251" />
             </state>
           </provider>
@@ -108,7 +62,7 @@
       <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="528">
               <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
             </state>
           </provider>
@@ -117,7 +71,7 @@
       <file leaf-file-name="DiaryListQuery.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryListQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="1672">
               <caret line="76" column="35" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="35" />
             </state>
           </provider>
@@ -126,7 +80,7 @@
       <file leaf-file-name="ImageDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/ImageDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-660">
+            <state relative-caret-position="330">
               <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
             </state>
           </provider>
@@ -135,8 +89,8 @@
       <file leaf-file-name="ImageManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/ImageManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="78" column="9" lean-forward="true" selection-end-line="117" />
+            <state relative-caret-position="1716">
+              <caret line="78" column="9" selection-end-line="117" />
             </state>
           </provider>
         </entry>
@@ -144,7 +98,7 @@
       <file leaf-file-name="ServiceFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="1694">
               <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="35" />
             </state>
           </provider>
@@ -153,7 +107,7 @@
       <file leaf-file-name="AdminLogin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/AdminLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="550">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
@@ -283,10 +237,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="901" />
-    <option name="y" value="5" />
-    <option name="width" value="940" />
-    <option name="height" value="1090" />
+    <option name="x" value="-10" />
+    <option name="width" value="1220" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -296,7 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -389,6 +341,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -412,7 +365,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lifecatweb1.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -834,14 +787,8 @@
       <workItem from="1529318947628" duration="15654000" />
       <workItem from="1529381853053" duration="24799000" />
       <workItem from="1529411376022" duration="1721000" />
-      <workItem from="1529452822426" duration="20527000" />
-    </task>
-    <task id="LOCAL-00017" summary="version2.3.1&#10; --完成了dao,manager层的功能创建">
-      <created>1526563206914</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1526563206914</updated>
+      <workItem from="1529452822426" duration="20704000" />
+      <workItem from="1529491111171" duration="144000" />
     </task>
     <task id="LOCAL-00018" summary="version2.3.2&#10; --完成了service层的功能文档说明">
       <created>1526605289203</created>
@@ -1179,7 +1126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529474085302</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary=" --version2.0 junit service">
+      <created>1529485831168</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1529485831168</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1215,7 +1169,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="531689000" />
+    <option name="totallyTimeSpent" value="532010000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1246,27 +1200,27 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.32614943" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.25251076" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Java Enterprise" order="9" side_tool="true" weight="0.32957748" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
-      <window_info anchor="right" id="Run" order="12" visible="true" weight="0.09802539" />
+      <window_info anchor="right" id="Run" order="12" weight="0.09802539" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8077475" visible="true" weight="0.26234132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8077475" visible="true" weight="0.26727787" />
       <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info id="JRebel" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32998565" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.6918195" weight="0.32855093" />
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.18724559" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32998565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.25251076" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="R Packages" order="9" />
       <window_info anchor="right" id="R Graphics" order="4" />
@@ -1275,7 +1229,7 @@
       <window_info anchor="right" id="R Packages" order="9" />
       <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.4992948" weight="0.081779055" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.25287357" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="JRebel" order="7" side_tool="true" />
       <window_info id="Image Layers" order="5" />
@@ -1283,6 +1237,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2496474" />
       <window_info id="UI Designer" order="4" />
+      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
       <window_info id="Capture Tool" order="2" />
@@ -1291,26 +1246,25 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
       <window_info anchor="bottom" id="Statistic" order="12" sideWeight="0.4992948" weight="0.69109195" />
-      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.32614943" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
       <window_info id="Java Enterprise" order="9" side_tool="true" weight="0.32957748" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
       <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32863188" />
-      <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32998565" />
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8077475" visible="true" weight="0.16713682" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.25287357" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
+      <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
+      <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
+      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.32614943" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Structure" order="1" sideWeight="0.50142854" side_tool="true" weight="0.18661971" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.18724559" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32998565" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -1405,14 +1359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
           <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
-          <folding>
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1560,10 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
           <caret line="98" column="9" lean-forward="true" selection-start-line="98" selection-end-line="99" />
-          <folding>
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1571,10 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="87" column="19" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
-          <folding>
-            <element signature="e#1783#1784#0" expanded="true" />
-            <element signature="e#1812#1813#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1673,9 +1611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1693,72 +1628,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/service/AdminLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/service/AdminRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/service/DiaryDelete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/service/AdminLogin.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/service/AdminRegister.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/service/DiaryDelete.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/AdminLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="550">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/ServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="1694">
           <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/ImageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="78" column="9" lean-forward="true" selection-end-line="117" />
+        <state relative-caret-position="1716">
+          <caret line="78" column="9" selection-end-line="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/ImageDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
+        <state relative-caret-position="330">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
+        <state relative-caret-position="528">
           <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/serviceimpl/DiaryListQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="1672">
           <caret line="76" column="35" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/include/homePage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="572">
           <caret line="251" selection-start-line="251" selection-end-line="251" />
         </state>
       </provider>
