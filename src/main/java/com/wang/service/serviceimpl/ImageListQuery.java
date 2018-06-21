@@ -74,7 +74,7 @@ class ImageListQuery implements Service {
             imageList.add(imageDTO);
         }
 
-        req.setAttribute("imageList", imageList);
+        req.getSession().setAttribute("imageList", imageList);
         return new ServiceResult.Builder(true)
                 .page(Page.PAGE_IMAGESHOW)
                 .build();

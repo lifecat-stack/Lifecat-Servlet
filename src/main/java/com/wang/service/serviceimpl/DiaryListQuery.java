@@ -74,7 +74,7 @@ import java.util.List;
             diaryList.add(diaryDTO);
         }
 
-        req.setAttribute("diaryList", diaryList);
+        req.getSession().setAttribute("diaryList", diaryList);
         return new ServiceResult.Builder(true)
                 .page(Page.PAGE_DIARYSHOW)
                 .build();

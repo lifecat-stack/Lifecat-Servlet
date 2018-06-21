@@ -7,6 +7,10 @@
 <%@ page import="com.wang.bean.dto.DiariesDTO" %>
 <%@ page import="com.wang.bean.dto.DiaryDTO" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.wang.util.DateTimeUtil" %>
+<%@ page import="com.wang.bean.dto.ImageDTO" %>
+<%@ page import="com.wang.constant.Directory" %>
+<%@ page import="com.wang.bean.dto.UserPropertyDTO" %>
 
 <script>
     $(function () {
@@ -27,12 +31,21 @@
     });
 </script>
 
-<script type="text/javascript">
-    window.onload = function (theUrl)//用window的onload事件，窗体加载完毕的时候
-    {
-        document.URL = "image_list_query.do"
-    }
-</script>
+<%--<script type="text/javascript">--%>
+<%--window.onload = function (theUrl)//用window的onload事件，窗体加载完毕的时候--%>
+<%--{--%>
+<%--document.URL = "image_list_query.do"--%>
+<%--}--%>
+<%--</script>--%>
+
+<%
+    // 从session中获取user信息
+    UserDTO userDTO = (UserDTO) request.getSession().getAttribute("user");
+    Integer userId = userDTO.getUserId();
+    String userName = userDTO.getUserName();
+
+    DateTimeUtil time = DateTimeUtil.getInstance();
+%>
 
 <style>
     .msg {
@@ -104,29 +117,46 @@
                     <div class="col-md-4">
                         <h2>个人信息:</h2>
 
+                        <%
+                            UserPropertyDTO userPropertyDTO = null;
+
+                            userPropertyDTO = (UserPropertyDTO) request.getSession().getAttribute("userProperty");
+
+                            if (userPropertyDTO == null) {
+                                userPropertyDTO = new UserPropertyDTO
+                                        .Builder(userId)
+                                        .nickname("lifecat")
+                                        .signature("lifecat is my love")
+                                        .sex("man")
+                                        .email("wshten@gmail.com")
+                                        .birthday("1997-01-01")
+                                        .location("wuxi china")
+                                        .iconPath(Directory.DEFAULT_IMAGE_PATH)
+                                        .build();
+                            }
+                        %>
                         <table>
                             <tr class="msg">
-                                <span>昵称:  </span>
+                                <span>昵称: <%=userPropertyDTO.getNickname()%> </span>
                             </tr>
                             <br>
                             <tr class="msg">
-                                <span>性别: </span>
+                                <span>个性签名: <%=userPropertyDTO.getSignature()%> </span>
+                            </tr>
+                            <tr class="msg">
+                                <span>性别: <%=userPropertyDTO.getSex()%> </span>
+                            </tr>
+                            <tr class="msg">
+                                <span>邮箱: <%=userPropertyDTO.getEmail()%> </span>
                             </tr>
                             <br>
                             <tr class="msg">
-                                <span>年龄:  </span>
+                                <span>生日: <%=userPropertyDTO.getBirthday()%>  </span>
                             </tr>
                             <br>
                             <tr class="msg">
-                                <span>生日:  </span>
+                                <span>地址: <%=userPropertyDTO.getLocation()%>  </span>
                             </tr>
-                            <br>
-                            <tr class="msg">
-                                <span>邮箱:  </span>
-                            </tr>
-                            <br>
-                            <br>
-
                         </table>
                     </div>
 
@@ -146,7 +176,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <img height="140" width="140" src="../img/usericon.jpg">
+                        <img height="140" width="140" src=<%=userPropertyDTO.getIconPath()%>>
                     </div>
                 </div>
                 <div class="col-md-1">
@@ -183,51 +213,51 @@
 
                     <div class="col-md-10">
                         <h2>成长日记:</h2>
-                        <%--获取日记链接--%>
                         <%
-                            ArrayList<Diary> diaries;
-                            /* 若当期有用户登录 */
-                            if (user != null && !user.getName().equals("admin")) {
-                                GetDiaryModel DAOManager = new GetDiaryModel();
-                                diaries = DAOManager.getDiaries(id);
-                            }
-                            /* 若无用户登录，添加3条默认信息 */
-                            else {
-                                diaries = new ArrayList<>();
-                                for (int i = 0; i < 5; i++) {
-                                    Diary no_diary = new Diary();
-                                    no_diary.setName("成长寄语" + i);
-                                    no_diary.setDescription("美好的午后，写下成长的寄语" + i);
-                                    no_diary.setDate("2018-" + i);
-                                    no_diary.setPath(page_userhome);
-                                    diaries.add(no_diary);
+                            // 获取日记集
+                            List<DiaryDTO> diaries = null;
+
+                            diaries = (List<DiaryDTO>) request.getSession().getAttribute("diaryList");
+
+                            // 获取diaries失败
+                            if (diaries == null) {
+                                diaries = new ArrayList<>(10);
+                                for (int i = 1; i < 10; i++) {
+                                    DiaryDTO defaultDiary = new DiaryDTO
+                                            .Builder(0)
+                                            .diaryName("我的第" + i + "篇成长寄语")
+                                            .diaryText("爱子心无尽，归家喜及辰")
+                                            .diaryDate(time.getCurrentTime())
+                                            .build();
+                                    diaries.add(defaultDiary);
                                 }
                             }
                         %>
                         <table>
                             <%
                                 /* 循环打印日记信息 */
-                                for (Diary diary : diaries) {
+                                for (DiaryDTO diary : diaries) {
                             %>
                             <tr class="msg">
                                 <td>
-                                    <span><a href=<%=diary.getPath()%>><%=diary.getName() + ":"%></a></span>
+                                    <span><%=diary.getDiaryName() + ":"%></span>
                                 </td>
                                 <td>
-                                    <span><%=diary.getDescription()%></span>
+                                    <span><%="日记内容:" + diary.getDiaryText()%></span>
+                                </td>
+                                <td>
+                                    <span><%="发表时间:" + diary.getDiaryDate()%></span>
                                 </td>
                             </tr>
                             <%
                                 }
                             %>
-                            <%--<% %>--%>
-                            <%--<tr class="row">--%>
-                            <%--<span><a href="#">1</a>&nbsp;&nbsp;--%>
-                            <%--<a href="#">2</a>&nbsp;&nbsp;--%>
-                            <%--<a href="#">3</a>&nbsp;&nbsp;--%>
-                            <%--<a href="#">...</a> </span>--%>
-                            <%--</tr>--%>
-                            <%--<% %>--%>
+                            <tr class="row">
+                            <span><a href="#">1</a>&nbsp;&nbsp;
+                            <a href="#">2</a>&nbsp;&nbsp;
+                            <a href="#">3</a>&nbsp;&nbsp;
+                            <a href="#">...</a> </span>
+                            </tr>
                         </table>
                     </div>
                     <div class="col-md-1">
@@ -245,41 +275,44 @@
                     </div>
                     <div class="col-md-10">
                         <a href=imageshow.action><h2>成长相册:</h2></a>
-                        <%--获取图片链接--%>
                         <%
-                            //获取demo图片在服务器上的路径
-                            List<DiaryDTO> diaryList = (List<DiaryDTO>) session.getAttribute("diaryList");
+                            // 获取图片集
+                            List<ImageDTO> images = null;
+
+                            images = (List<ImageDTO>) request.getSession().getAttribute("imageList");
+
+                            // 获取images失败
+                            if (images == null) {
+                                images = new ArrayList<>(10);
+                                for (int i = 0; i < 4; i++) {
+                                    ImageDTO defaultImage = new ImageDTO
+                                            .Builder(0, Directory.DEFAULT_IMAGE_PATH, time.getCurrentTime())
+                                            .imageClassId(0)
+                                            .imageText("美好的时刻，记录在lifecat")
+                                            .build();
+                                    images.add(defaultImage);
+                                }
+                            }
                         %>
                         <table>
-                            <%
-                                /*  循环打印demo图片img
-                                 *  倒叙:最新上传的图片最前展示
-                                 *  日志:demo_image_path打印demo图片链接
-                                 */
-                                for (int i = 0; i < diaryList.size(); i++) {
-
-                            %>
                             <tr class="row">
-                                <td class="col-md-3"><span><img src=<%=diaryList.get(i).getDiaryName()%>
+                                <%
+                                    /*  循环打印demo图片img
+                                     *  倒叙:最新上传的图片最前展示
+                                     *  日志:demo_image_path打印demo图片链接
+                                     */
+                                    for (ImageDTO image : images) {
+
+                                %>
+
+                                <td class="col-md-3"><span><img src=<%=image.getImagePath()%>
                                                                         height="200" width="200"
                                                                 style="margin-top: 20px;"/> </span>
                                 </td>
-                                <td class="col-md-3"><span><img src=<%=diaryList.get(i+1).getDiaryName()%>
-                                                                        height="200" width="200"
-                                                                style="margin-top: 20px;"/> </span>
-                                </td>
-                                <td class="col-md-3"><span><img src=<%=diaryList.get(i).getDiaryName()%>
-                                                                        height="200" width="200"
-                                                                style="margin-top: 20px;"/> </span>
-                                </td>
-                                <td class="col-md-3"><span><img src=<%=diaryList.get(i).getDiaryName()%>
-                                                                        height="200" width="200"
-                                                                style="margin-top: 20px;"/> </span>
-                                </td>
+                                <%
+                                    }
+                                %>
                             </tr>
-                            <%
-                                }
-                            %>
                         </table>
                     </div>
                     <div class="col-md-1">

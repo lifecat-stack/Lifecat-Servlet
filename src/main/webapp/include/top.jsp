@@ -19,10 +19,26 @@
         padding: 0;
         margin: 0;
         text-align: center;
-        background: url("../img/homeback.jpg") repeat;
+        /*background: url("../img/homeback.jpg") repeat;*/
     }
 </style>
-
+<%
+    /*
+     *  获取UserDTO
+     *  获取用户名
+     */
+    String username;
+    UserDTO user = (UserDTO) request.getSession().getAttribute("user");
+    if (user != null) {
+        if (user.getUserName() != null) {
+            username = user.getUserName();
+        } else {
+            username = "亲爱的用户";
+        }
+    } else {
+        username = "您未登录";
+    }
+%>
 <body>
 
 <div class="navbar navbar-default">
@@ -45,23 +61,6 @@
 
         <!--导航条尾部信息栏-->
         <div id="my-collapse" class="collapse navbar-collapse">
-            <%
-                /*
-                 *  获取UserDTO
-                 *  获取用户名
-                 */
-                String username;
-                UserDTO user = (UserDTO) request.getSession().getAttribute("user");
-                if (user != null) {
-                    if (user.getUserName() != null) {
-                        username = user.getUserName();
-                    } else {
-                        username = "亲爱的用户";
-                    }
-                } else {
-                    username = "您未登录";
-                }
-            %>
             <ul class="nav navbar-nav navbar-right">
                 <%--上传寄语--%>
                 <li><a href=updiary.action><span

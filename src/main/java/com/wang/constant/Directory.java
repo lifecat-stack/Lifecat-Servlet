@@ -12,6 +12,11 @@ public class Directory {
     }
 
     /**
+     * 默认显示image存储路径--服务器路径
+     */
+    public static final String DEFAULT_IMAGE_PATH = "http://localhost:8080/lifecatweb/img/usericon.jpg";
+
+    /**
      * image存储路径--本地路径
      */
     public static final String IMAGE_PATH = "D:/Java/lifecatweb/src/main/webapp/image/";
