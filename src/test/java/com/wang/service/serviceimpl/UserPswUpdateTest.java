@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * UserPswUpdate Tester.
+ * UserPswUpdateServiceImpl Tester.
  *
  * @author <Authors name>
  * @version 1.0
@@ -57,7 +57,7 @@ public class UserPswUpdateTest {
     @Test
     @PrepareForTest({UserDTO.Builder.class})
     public void testExecute() throws Exception {
-        Service service = UserPswUpdate.newService();
+        Service service = UserPswUpdateServiceImpl.newService();
 
         final String path = "directoryPath";
 

@@ -1,6 +1,7 @@
 package com.wang.service.serviceimpl;
 
 import com.wang.service.Service;
+import com.wang.service.ServiceMaker;
 import org.easymock.EasyMock;
 import org.junit.Test;
 import org.junit.Before;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * AdminLogin Tester.
+ * AdminLoginServiceImpl Tester.
  *
  * @author <Authors name>
  * @version 1.0
@@ -49,7 +50,7 @@ public class AdminLoginTest {
      */
     @Test
     public void testExecute() throws Exception {
-        Service service = AdminLogin.newService();
+        Service service = ServiceMaker.newService();
 
         EasyMock.expect(request.getParameter("rUserName")).andReturn("UserRegisterTest").once();    //期望使用参数
         EasyMock.expect(request.getParameter("rUserPassword1")).andReturn("testtest").times(1);  //期望调用的次数

@@ -1,7 +1,7 @@
 package com.wang.dao.jdbcimpl;
 
 import com.wang.bean.doo.UserIconDO;
-import com.wang.dao.dao.DAOFactory;
+import com.wang.dao.DAOFactory;
 import com.wang.dao.dao.UserIconDAO;
 import org.junit.*;
 

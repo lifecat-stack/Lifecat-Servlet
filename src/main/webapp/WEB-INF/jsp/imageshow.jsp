@@ -1,5 +1,5 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.wang.service.serviceimpl.ImageQuery" %>
+<%@ page import="com.wang.service.serviceimpl.ImageQueryServiceImpl" %>
 <%@ page import="java.util.logging.Logger" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>

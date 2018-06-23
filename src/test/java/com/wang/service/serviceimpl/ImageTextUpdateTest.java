@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * ImageTextUpdate Tester.
+ * ImageTextUpdateServiceImpl Tester.
  *
  * @author <Authors name>
  * @version 1.0
@@ -49,7 +49,7 @@ public class ImageTextUpdateTest {
      */
     @Test
     public void testExecute() throws Exception {
-        Service service = ImageTextUpdate.newService();
+        Service service = ImageTextUpdateServiceImpl.newService();
 
         EasyMock.expect(request.getParameter("rUserName")).andReturn("UserRegisterTest").once();    //期望使用参数
         EasyMock.expect(request.getParameter("rUserPassword1")).andReturn("testtest").times(1);  //期望调用的次数

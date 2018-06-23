@@ -1,5 +1,6 @@
 package com.wang.dao.jdbcimpl;
 
+import com.wang.dao.DAOFactory;
 import com.wang.dao.dao.*;
 
 /**
@@ -10,43 +11,35 @@ import com.wang.dao.dao.*;
  */
 public class JdbcDAOFactory implements DAOFactory {
 
-    @Override
-    public AdminDAO getAdminDAO() {
+    public static AdminDAO getAdminDAO() {
         return AdminDAOImpl.newAdminDAO();
     }
 
-    @Override
-    public DiaryDAO getDiaryDAO() {
+    public static DiaryDAO getDiaryDAO() {
         return DiaryDAOImpl.newDiaryDAO();
     }
 
-    @Override
-    public ImageDAO getImageDAO() {
+    public static ImageDAO getImageDAO() {
         return ImageDAOImpl.newImageDAO();
     }
 
-    @Override
-    public ImageFeatureDAO getImageFeatureDAO() {
+    public static ImageFeatureDAO getImageFeatureDAO() {
         return ImageFeatureDAOImpl.newImageFeatureDAO();
     }
 
-    @Override
-    public ImageClassDAO getImageClassDAO() {
+    public static ImageClassDAO getImageClassDAO() {
         return ImageClassDAOImpl.newImageClassDAO();
     }
 
-    @Override
-    public UserDAO getUserDAO() {
+    public static UserDAO getUserDAO() {
         return UserDAOImpl.newUserDAO();
     }
 
-    @Override
-    public UserIconDAO getUserIconDAO() {
+    public static UserIconDAO getUserIconDAO() {
         return UserIconDAOImpl.newUserIconDAO();
     }
 
-    @Override
-    public UserPropertyDAO getUserPropertyDAO() {
+    public static UserPropertyDAO getUserPropertyDAO() {
         return UserPropertyDAOImpl.newUserPropertyDAO();
     }
 }

@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * UserIconUpdate Tester.
+ * UserIconUpdateServiceImpl Tester.
  *
  * @author <Authors name>
  * @version 1.0
@@ -50,7 +50,7 @@ public class UserIconUpdateTest {
      */
     @Test
     public void testExecute() throws Exception {
-        Service service = UserIconUpdate.newService();
+        Service service = UserIconUpdateServiceImpl.newService();
 
         EasyMock.expect(request.getParameter("rUserName")).andReturn("UserRegisterTest").once();    //期望使用参数
         EasyMock.expect(request.getParameter("rUserPassword1")).andReturn("testtest").times(1);  //期望调用的次数
