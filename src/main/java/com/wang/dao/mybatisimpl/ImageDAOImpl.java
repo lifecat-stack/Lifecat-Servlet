@@ -1,7 +1,7 @@
 package com.wang.dao.mybatisimpl;
 
 import com.wang.bean.doo.ImageDO;
-import com.wang.dao.dao.ImageDAO;
+import com.wang.dao.ImageDAO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

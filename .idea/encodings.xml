@@ -39,27 +39,27 @@
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/ModifyPswFormTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/SetMsgFormTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/filter/form/UserRegisterFormTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/AdminLoginTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/AdminRegisterTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryDeleteTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryListQueryTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryUpdateTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/DiaryUploadTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageClassQueryTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageClassifyTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageDeleteTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageListQueryTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageQueryTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageTextUpdateTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ImageUploadTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ServiceFactoryTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/ServiceResultTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserIconUpdateTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserLoginTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPropertyQueryTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPropertyUpdateTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserPswUpdateTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/serviceimpl/UserRegisterTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/AdminLoginTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/AdminRegisterTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/DiaryDeleteTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/DiaryListQueryTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/DiaryUpdateTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/DiaryUploadTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/ImageClassQueryTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/ImageClassifyTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/ImageDeleteTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/ImageListQueryTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/ImageQueryTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/ImageTextUpdateTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/ImageUploadTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/ServiceFactoryTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/ServiceResultTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserIconUpdateTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserLoginTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserPropertyQueryTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserPropertyUpdateTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserPswUpdateTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserRegisterTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/util/ConnectionsTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/util/DateTimeUtilTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/util/ImageWriterTest.java" charset="GBK" />

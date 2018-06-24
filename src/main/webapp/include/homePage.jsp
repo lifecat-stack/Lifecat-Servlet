@@ -3,7 +3,7 @@
 <%@page import="com.wang.bean.*" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="static com.wang.constant.HOST.*" %>
-<%@ page import="com.wang.service.serviceimpl.ServiceFactory" %>
+<%@ page import="com.wang.service.impl.ServiceFactory" %>
 <%@ page import="com.wang.bean.dto.DiariesDTO" %>
 <%@ page import="com.wang.bean.dto.DiaryDTO" %>
 <%@ page import="java.util.List" %>

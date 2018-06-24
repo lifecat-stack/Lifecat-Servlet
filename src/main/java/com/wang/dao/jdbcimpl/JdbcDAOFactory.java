@@ -1,7 +1,6 @@
 package com.wang.dao.jdbcimpl;
 
-import com.wang.dao.DAOFactory;
-import com.wang.dao.dao.*;
+import com.wang.dao.*;
 
 /**
  * JdbcDAOFactory :

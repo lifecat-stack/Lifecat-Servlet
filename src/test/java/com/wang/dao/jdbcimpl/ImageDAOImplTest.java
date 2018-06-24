@@ -2,7 +2,7 @@ package com.wang.dao.jdbcimpl;
 
 import com.wang.bean.doo.ImageDO;
 import com.wang.dao.DAOFactory;
-import com.wang.dao.dao.ImageDAO;
+import com.wang.dao.ImageDAO;
 import org.junit.*;
 
 import java.util.List;

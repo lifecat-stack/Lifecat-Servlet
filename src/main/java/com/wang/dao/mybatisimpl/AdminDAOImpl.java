@@ -1,7 +1,7 @@
 package com.wang.dao.mybatisimpl;
 
 import com.wang.bean.doo.AdminDO;
-import com.wang.dao.dao.AdminDAO;
+import com.wang.dao.AdminDAO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

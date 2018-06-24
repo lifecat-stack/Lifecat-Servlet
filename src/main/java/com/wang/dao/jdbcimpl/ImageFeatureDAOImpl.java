@@ -1,6 +1,6 @@
 package com.wang.dao.jdbcimpl;
 
-import com.wang.dao.dao.ImageFeatureDAO;
+import com.wang.dao.ImageFeatureDAO;
 
 /**
  * UserDAO -- jdbc实现类

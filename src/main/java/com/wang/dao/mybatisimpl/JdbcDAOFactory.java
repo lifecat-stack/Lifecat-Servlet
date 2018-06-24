@@ -1,6 +1,6 @@
 package com.wang.dao.mybatisimpl;
 
-import com.wang.dao.dao.*;
+import com.wang.dao.*;
 
 /**
  * JdbcDAOFactory :

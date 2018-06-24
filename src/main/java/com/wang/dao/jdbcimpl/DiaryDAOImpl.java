@@ -1,7 +1,7 @@
 package com.wang.dao.jdbcimpl;
 
 import com.wang.bean.doo.DiaryDO;
-import com.wang.dao.dao.DiaryDAO;
+import com.wang.dao.DiaryDAO;
 
 import java.sql.SQLException;
 import java.util.List;

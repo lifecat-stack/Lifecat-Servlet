@@ -1,6 +1,6 @@
 package com.wang.dao.mybatisimpl;
 
-import com.wang.dao.dao.ImageFeatureDAO;
+import com.wang.dao.ImageFeatureDAO;
 
 /**
  * UserDAO -- jdbc实现类

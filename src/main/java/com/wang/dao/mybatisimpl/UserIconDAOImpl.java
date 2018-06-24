@@ -1,7 +1,7 @@
 package com.wang.dao.mybatisimpl;
 
 import com.wang.bean.doo.UserIconDO;
-import com.wang.dao.dao.UserIconDAO;
+import com.wang.dao.UserIconDAO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

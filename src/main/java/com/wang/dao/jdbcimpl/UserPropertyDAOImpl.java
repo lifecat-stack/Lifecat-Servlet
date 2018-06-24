@@ -1,6 +1,6 @@
 package com.wang.dao.jdbcimpl;
 
-import com.wang.dao.dao.UserPropertyDAO;
+import com.wang.dao.UserPropertyDAO;
 import com.wang.bean.doo.UserPropertyDO;
 
 import java.sql.ResultSet;

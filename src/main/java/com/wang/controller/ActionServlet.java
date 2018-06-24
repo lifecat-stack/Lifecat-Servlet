@@ -2,9 +2,9 @@ package com.wang.controller;
 
 import com.wang.constant.Page;
 import com.wang.filter.form.FormResult;
-import com.wang.service.Service;
-import com.wang.service.serviceimpl.ServiceFactory;
-import com.wang.service.serviceimpl.ServiceResult;
+import com.wang.service.util.Service;
+import com.wang.service.impl.ServiceFactory;
+import com.wang.service.impl.ServiceResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

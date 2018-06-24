@@ -10,13 +10,13 @@
 
     <error-page>
         <error-code>404</error-code>
-        <location>/WEB-INF/jsp/error.jsp</location>
+        <location>/WEB-INF/error.jsp</location>
     </error-page>
 
     <!--Encoding Filter-->
     <filter>
         <filter-name>EncodingFilter</filter-name>
-        <filter-class>com.wang.filter.filter.EncodingFilter</filter-class>
+        <filter-class>com.wang.filter.EncodingFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>EncodingFilter</filter-name>
@@ -26,7 +26,7 @@
     <!--Form Filter-->
     <filter>
         <filter-name>FormFilter</filter-name>
-        <filter-class>com.wang.filter.filter.FormFilter</filter-class>
+        <filter-class>com.wang.filter.FormFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>FormFilter</filter-name>

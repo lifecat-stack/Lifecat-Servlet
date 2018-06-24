@@ -2,7 +2,7 @@ package com.wang.dao.jdbcimpl;
 
 import com.wang.bean.doo.UserIconDO;
 import com.wang.dao.DAOFactory;
-import com.wang.dao.dao.UserIconDAO;
+import com.wang.dao.UserIconDAO;
 import org.junit.*;
 
 import static org.junit.Assert.assertEquals;

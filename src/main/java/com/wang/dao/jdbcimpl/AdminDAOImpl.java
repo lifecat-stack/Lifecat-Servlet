@@ -1,6 +1,6 @@
 package com.wang.dao.jdbcimpl;
 
-import com.wang.dao.dao.AdminDAO;
+import com.wang.dao.AdminDAO;
 import com.wang.bean.doo.AdminDO;
 
 import java.sql.ResultSet;
