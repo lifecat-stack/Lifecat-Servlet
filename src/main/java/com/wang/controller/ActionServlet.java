@@ -1,7 +1,7 @@
 package com.wang.controller;
 
 import com.wang.constant.Page;
-import com.wang.filter.form.FormResult;
+import com.wang.filter.form.impl.FormResult;
 import com.wang.service.util.Service;
 import com.wang.service.impl.ServiceFactory;
 import com.wang.service.impl.ServiceResult;

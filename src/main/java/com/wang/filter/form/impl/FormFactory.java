@@ -1,4 +1,6 @@
-package com.wang.filter.form;
+package com.wang.filter.form.impl;
+
+import com.wang.filter.form.Form;
 
 /**
  * FormFactory: Form工厂

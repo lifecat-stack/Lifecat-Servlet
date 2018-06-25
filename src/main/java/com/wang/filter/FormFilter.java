@@ -1,8 +1,8 @@
 package com.wang.filter;
 
 import com.wang.filter.form.Form;
-import com.wang.filter.form.FormResult;
-import com.wang.filter.form.FormFactory;
+import com.wang.filter.form.impl.FormResult;
+import com.wang.filter.form.impl.FormFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

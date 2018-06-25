@@ -1,13 +1,15 @@
-package com.wang.filter.form;
+package com.wang.filter.form.impl;
+
+import com.wang.filter.form.Form;
 
 import javax.servlet.ServletRequest;
 
-public class ImageUploadForm extends BaseVerification implements Form {
-    private ImageUploadForm() {
+public class DiaryUploadForm extends BaseVerification implements Form {
+    private DiaryUploadForm() {
     }
 
     static Form getForm() {
-        return new ImageUploadForm();
+        return new DiaryUploadForm();
     }
 
     @Override

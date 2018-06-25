@@ -1,5 +1,7 @@
 package com.wang.filter.form;
 
+import com.wang.filter.form.impl.FormResult;
+
 import javax.servlet.ServletRequest;
 
 /**
