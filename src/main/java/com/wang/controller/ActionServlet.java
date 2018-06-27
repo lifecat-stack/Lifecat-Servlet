@@ -35,54 +35,89 @@ public class ActionServlet extends HttpServlet {
         // 获取请求URL /lifecatweb/index.jsp/user_login.do
         String path = req.getRequestURI();
 
+        boolean formResult = verifyResult(req);
+
+        // 验证通过
+        if (formResult) {
+            executeSuccess(path, req, resp);
+
+        }
+
+        // 验证失败
+        else {
+            // 获取请求界面信息
+            String jspUrl = path.substring(11, path.lastIndexOf("/"));
+
+            dispatcher(jspUrl, req, resp);
+        }
+    }
+
+    /**
+     * 表单验证通过
+     * 执行service服务
+     * 返回到对应界面
+     *
+     * @param path 请求界面url路径
+     * @param req  req
+     * @param resp resp
+     * @throws ServletException servlet执行失败
+     */
+    private void executeSuccess(String path, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        // 提取url请求信息 /xxx
+        String url = path.substring(path.lastIndexOf("/"), path.lastIndexOf("."));
+
+        logger.debug("request url is :{}", url);
+
+
+        // 根据请求信息 调用相应的service
+        Service service = ServiceFactory.getServiceByUrl(url);
+
+        // 需转发界面
+        String page;
+
+        // service无对应请求 进入错误界面 error.jsp
+        if (service == null) {
+            logger.info("service is null");
+            page = Page.PAGE_ERROR;
+            req.setAttribute("errorMsg", "没有此请求");
+            req.getRequestDispatcher(page).forward(req, resp);
+        }
+
+        // service执行操作 返回Result结果
+        assert service != null;
+        ServiceResult result = service.execute(req, resp);
+
+        // Result 跳转到响应界面
+        logger.info("service execute {}", result.isSuccess());
+        req.setAttribute("errorMsg", result.getErrormsg());
+
+        page = result.getPage();
+
+        dispatcher(page, req, resp);
+    }
+
+    /**
+     * 获取表单验证结果
+     *
+     * @param req req
+     */
+    private boolean verifyResult(HttpServletRequest req) {
+
         FormResult formResult = (FormResult) req.getAttribute("formResult");
 
         // 验证未通过 转发回请求界面
         if (formResult != null && !formResult.isSuccess()) {
             logger.warn("Form Filter Failure");
 
-            // 获取请求界面信息
-            String jspUrl = path.substring(11, path.lastIndexOf("/"));
-
             logger.debug(formResult.getErrormsg());
 
-            dispatcher(jspUrl, req, resp);
+            return false;
         }
-        // 验证通过
-        else {
-            logger.info("Form Filter Success");
 
-            // 提取url请求信息 /xxx
-            String url = path.substring(path.lastIndexOf("/"), path.lastIndexOf("."));
+        logger.info("Form Filter Success");
 
-            logger.debug("request url is :{}", url);
-
-            // 根据请求信息 调用相应的service
-            Service service = ServiceFactory.getServiceByUrl(url);
-
-            // 需转发界面
-            String page;
-
-            // service无对应请求 进入错误界面 error.jsp
-            if (service == null) {
-                logger.info("service is null");
-                page = Page.PAGE_ERROR;
-                req.setAttribute("errorMsg", "没有此请求");
-                req.getRequestDispatcher(page).forward(req, resp);
-            }
-
-            // service执行操作 返回Result结果
-            assert service != null;
-            ServiceResult result = service.execute(req, resp);
-
-            // Result 跳转到响应界面
-            logger.info("service execute {}", result.isSuccess());
-            req.setAttribute("errorMsg", result.getErrormsg());
-
-            page = result.getPage();
-
-            dispatcher(page, req, resp);
-        }
+        return true;
     }
 
     /**
@@ -92,7 +127,7 @@ public class ActionServlet extends HttpServlet {
      * @throws ServletException 转发时异常
      */
     private void dispatcher(String url, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.debug("dispatcher url: {}" , url);
+        logger.debug("dispatcher url: {}", url);
         // webapp目录下 执行客户端转发
         if ("/index.jsp".equals(url)) {
             url = "http://localhost:8080/lifecatweb/index.jsp";
