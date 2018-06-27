@@ -7,6 +7,7 @@ import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.ImageDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.ImageUploadService;
 import com.wang.service.util.Service;
 import com.wang.util.DateTimeUtil;
 import com.wang.util.ImageWriter;
@@ -97,5 +98,10 @@ class ImageUploadServiceImpl implements ImageUploadService {
         return new ServiceResult.Builder(true)
                 .page(Page.PAGE_IMAGESHOW)
                 .build();
+    }
+
+    @Override
+    public void uploadImage(ImageDO imageDO) {
+
     }
 }

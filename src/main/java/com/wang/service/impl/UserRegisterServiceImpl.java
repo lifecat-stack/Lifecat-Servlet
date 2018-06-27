@@ -6,6 +6,7 @@ import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.UserDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.UserRegisterService;
 import com.wang.service.util.Service;
 import com.wang.util.DateTimeUtil;
 import org.slf4j.Logger;
@@ -97,6 +98,16 @@ class UserRegisterServiceImpl implements UserRegisterService {
         req.getSession().setAttribute("user", user);
         logger.info("user_register success");
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
+
+    }
+
+    @Override
+    public boolean isUserExisted(String userName) {
+        return false;
+    }
+
+    @Override
+    public void insertUserToDatabase(UserDO userDO) {
 
     }
 }

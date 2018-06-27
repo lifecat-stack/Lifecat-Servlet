@@ -1,5 +1,6 @@
 package com.wang.service.impl;
 
+import com.wang.bean.doo.AdminDO;
 import com.wang.service.util.Service;
 import com.wang.service.AdminRegisterService;
 import org.slf4j.Logger;
@@ -28,5 +29,15 @@ import javax.servlet.http.HttpServletResponse;
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         // TODO 管理员注册功能
         return null;
+    }
+
+    @Override
+    public boolean isAdminExisted(String adminName) {
+        return false;
+    }
+
+    @Override
+    public void insertAdminToDatabase(AdminDO adminDO) {
+
     }
 }

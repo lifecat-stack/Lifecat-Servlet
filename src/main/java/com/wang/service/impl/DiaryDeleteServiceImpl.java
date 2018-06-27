@@ -56,4 +56,9 @@ import java.sql.SQLException;
 
         return new ServiceResult.Builder(true).page(Page.PAGE_DIARYSHOW).build();
     }
+
+    @Override
+    public void deleteDiary() {
+
+    }
 }

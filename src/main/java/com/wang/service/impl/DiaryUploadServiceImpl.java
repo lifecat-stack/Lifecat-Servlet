@@ -6,6 +6,7 @@ import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.DiaryDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.DiaryUploadService;
 import com.wang.service.util.Service;
 import com.wang.util.DateTimeUtil;
 import org.slf4j.Logger;
@@ -75,5 +76,10 @@ class DiaryUploadServiceImpl implements DiaryUploadService {
 
         return new ServiceResult.Builder(true)
                 .page(Page.PAGE_USERHOME).build();
+    }
+
+    @Override
+    public void uploadDiary(DiaryDO diaryDO) {
+
     }
 }

@@ -1,11 +1,14 @@
 package com.wang.service.impl;
 
+import com.wang.bean.doo.ImageDO;
+import com.wang.service.ImageClassQueryService;
 import com.wang.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * 图片分类查询
@@ -25,6 +28,11 @@ class ImageClassQueryServiceImpl implements ImageClassQueryService {
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
+        return null;
+    }
+
+    @Override
+    public List<ImageDO> queryImageByClass(int userId, int classId) {
         return null;
     }
 }

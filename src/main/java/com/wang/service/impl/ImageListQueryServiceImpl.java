@@ -7,6 +7,7 @@ import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.ImageDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.ImageListQueryService;
 import com.wang.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -78,5 +79,10 @@ class ImageListQueryServiceImpl implements ImageListQueryService {
         return new ServiceResult.Builder(true)
                 .page(Page.PAGE_IMAGESHOW)
                 .build();
+    }
+
+    @Override
+    public List<ImageDO> queryImageListByUserId(int userId) {
+        return null;
     }
 }

@@ -1,11 +1,13 @@
 package com.wang.service.impl;
 
+import com.wang.bean.doo.UserDO;
 import com.wang.bean.doo.UserPropertyDO;
 import com.wang.bean.dto.UserDTO;
 import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.UserPropertyDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.UserPropertyUpdateService;
 import com.wang.service.util.Service;
 import com.wang.util.DateTimeUtil;
 import org.slf4j.Logger;
@@ -83,5 +85,10 @@ class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService {
         return new ServiceResult.Builder(true)
                 .page(Page.PAGE_USERHOME)
                 .build();
+    }
+
+    @Override
+    public void updateUserProperty(UserDO userDO) {
+
     }
 }

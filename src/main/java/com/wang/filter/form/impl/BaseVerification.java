@@ -1,5 +1,7 @@
 package com.wang.filter.form.impl;
 
+import com.wang.filter.form.Verifiable;
+
 /**
  * 表单验证功能实现
  *

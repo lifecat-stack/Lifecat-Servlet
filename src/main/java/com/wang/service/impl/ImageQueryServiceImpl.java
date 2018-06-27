@@ -1,5 +1,7 @@
 package com.wang.service.impl;
 
+import com.wang.bean.doo.ImageDO;
+import com.wang.service.ImageQueryService;
 import com.wang.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +26,11 @@ class ImageQueryServiceImpl implements ImageQueryService {
     }
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
+        return null;
+    }
+
+    @Override
+    public ImageDO queryImage(String imageName) {
         return null;
     }
 }

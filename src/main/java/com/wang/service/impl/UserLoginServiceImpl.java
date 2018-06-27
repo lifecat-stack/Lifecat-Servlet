@@ -6,6 +6,7 @@ import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.UserDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.UserLoginService;
 import com.wang.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -73,6 +74,16 @@ class UserLoginServiceImpl implements UserLoginService {
         UserDTO user = new UserDTO.Builder(userDO.getUserId(), userDO.getUserName()).build();
         req.getSession().setAttribute("user", user);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
+    }
+
+    @Override
+    public boolean isUserExisted(String userName) {
+        return false;
+    }
+
+    @Override
+    public UserDO queryUserByName(String userName) {
+        return null;
     }
 }
 

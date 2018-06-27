@@ -1,10 +1,12 @@
 package com.wang.service.impl;
 
+import com.wang.bean.doo.UserDO;
 import com.wang.bean.dto.UserDTO;
 import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.UserDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.UserPswUpdateService;
 import com.wang.service.util.Service;
 import com.wang.util.DateTimeUtil;
 import org.slf4j.Logger;
@@ -62,6 +64,11 @@ class UserPswUpdateServiceImpl implements UserPswUpdateService {
 
         logger.info("password update success");
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
+    }
+
+    @Override
+    public void updateUserPassword(UserDO userDO) {
+
     }
 }
 

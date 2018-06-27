@@ -7,6 +7,7 @@ import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.UserIconDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.UserIconUpdateService;
 import com.wang.service.util.Service;
 import com.wang.util.DateTimeUtil;
 import com.wang.util.ImageWriter;
@@ -99,5 +100,10 @@ import java.sql.SQLException;
         return new ServiceResult.Builder(true)
                 .page(Page.PAGE_USERHOME)
                 .build();
+    }
+
+    @Override
+    public void updateUserIcon(UserIconDO userIconDO) {
+
     }
 }

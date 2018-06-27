@@ -8,6 +8,7 @@ import com.wang.dao.DAOFactory;
 import com.wang.dao.UserIconDAO;
 import com.wang.dao.UserPropertyDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.UserPropertyQueryService;
 import com.wang.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -80,5 +81,10 @@ class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
 
         req.getSession().setAttribute("userProperty", userPropertyDTO);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
+    }
+
+    @Override
+    public UserPropertyDO queryUserProperty(int userId) {
+        return null;
     }
 }

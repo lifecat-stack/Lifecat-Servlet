@@ -11,7 +11,7 @@ import com.wang.constant.Page;
  *
  * @auther ten
  */
-public class ServiceResult {
+public class ServiceResult implements com.wang.service.util.ServiceResult {
 
     private final boolean success;
     private final String page;

@@ -95,4 +95,14 @@ class AdminLoginServiceImpl implements AdminLoginService {
     private void result() {
 
     }
+
+    @Override
+    public boolean isAdminExisted(String adminName) {
+        return false;
+    }
+
+    @Override
+    public AdminDO queryAdminByName(String adminName) {
+        return null;
+    }
 }
