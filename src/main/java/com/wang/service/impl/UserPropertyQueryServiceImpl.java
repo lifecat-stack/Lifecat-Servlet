@@ -33,10 +33,6 @@ class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
     private UserPropertyQueryServiceImpl() {
     }
 
-    static Service newService() {
-        return new UserPropertyQueryServiceImpl();
-    }
-
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 

@@ -3,7 +3,7 @@ package com.wang.controller;
 import com.wang.constant.Page;
 import com.wang.filter.form.impl.FormResult;
 import com.wang.service.util.Service;
-import com.wang.service.impl.ServiceFactory;
+import com.wang.service.util.ServiceFactory;
 import com.wang.service.impl.ServiceResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -71,7 +71,7 @@ public class ActionServlet extends HttpServlet {
 
 
         // 根据请求信息 调用相应的service
-        Service service = ServiceFactory.getServiceByUrl(url);
+        Service service = ServiceFactory.getServiceByClassKey(url);
 
         // 需转发界面
         String page;

@@ -34,7 +34,7 @@ public class ServiceFactoryTest {
     }
 
     /**
-     * Method: getServiceByUrl(String url)
+     * Method: getServiceByClassKey(String url)
      */
     @Test
     public void testGetServiceByUrl() throws Exception {

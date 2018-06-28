@@ -8,7 +8,7 @@ import com.wang.dao.*;
  *
  * @auther ten
  */
-public class JdbcDAOFactory {
+public class MybatisDAOFactory {
 
     public static AdminDAO getAdminDAO() {
         return AdminDAOImpl.newAdminDAO();

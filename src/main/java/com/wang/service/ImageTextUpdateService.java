@@ -2,7 +2,6 @@ package com.wang.service;
 
 import com.wang.bean.doo.ImageDO;
 import com.wang.service.util.Service;
-import com.wang.service.util.ServiceMaker;
 
 /**
  * 更新图片信息
