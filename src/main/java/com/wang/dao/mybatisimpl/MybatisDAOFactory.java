@@ -1,6 +1,11 @@
 package com.wang.dao.mybatisimpl;
 
-import com.wang.dao.*;
+import com.wang.dao.DAOFactory;
+import com.wang.util.PropertiesReader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.Map;
 
 /**
  * JdbcDAOFactory :
@@ -8,37 +13,27 @@ import com.wang.dao.*;
  *
  * @auther ten
  */
-public class MybatisDAOFactory {
+public class MybatisDAOFactory implements DAOFactory {
 
-    public static AdminDAO getAdminDAO() {
-        return AdminDAOImpl.newAdminDAO();
-    }
 
-    public static DiaryDAO getDiaryDAO() {
-        return DiaryDAOImpl.newDiaryDAO();
-    }
+    private static Logger logger = LoggerFactory.getLogger(MybatisDAOFactory.class);
 
-    public static ImageDAO getImageDAO() {
-        return ImageDAOImpl.newImageDAO();
-    }
+    @Override
+    public Object getDaoByTableName(String tableName) {
+        Object obj = null;
 
-    public static ImageFeatureDAO getImageFeatureDAO() {
-        return ImageFeatureDAOImpl.newImageFeatureDAO();
-    }
+        String propertiesName = "mybatisDaoName.properties";
 
-    public static ImageClassDAO getImageClassDAO() {
-        return ImageClassDAOImpl.newImageClassDAO();
-    }
+        Map<String, String> map = new PropertiesReader().getPropertiesMap(propertiesName);
+        assert map != null;
 
-    public static UserDAO getUserDAO() {
-        return UserDAOImpl.newUserDAO();
-    }
+        try {
+            obj = Class.forName(map.get(tableName)).newInstance();
+        } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
+            logger.warn("mybatis dao not found in {}", propertiesName);
+            e.printStackTrace();
+        }
 
-    public static UserIconDAO getUserIconDAO() {
-        return UserIconDAOImpl.newUserIconDAO();
-    }
-
-    public static UserPropertyDAO getUserPropertyDAO() {
-        return UserPropertyDAOImpl.newUserPropertyDAO();
+        return obj;
     }
 }

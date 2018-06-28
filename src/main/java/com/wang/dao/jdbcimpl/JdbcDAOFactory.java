@@ -1,44 +1,37 @@
 package com.wang.dao.jdbcimpl;
 
-import com.wang.dao.*;
+import com.wang.dao.DAOFactory;
+import com.wang.util.PropertiesReader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.Map;
 
 /**
- * JdbcDAOFactory :
- * 获取jdbc包的DAO接口实现实例
+ * JdbcDAOFactory
  *
  * @auther ten
  */
 public class JdbcDAOFactory implements DAOFactory {
 
-    public static AdminDAO getAdminDAO() {
-        return AdminDAOImpl.newAdminDAO();
-    }
+    private static Logger logger = LoggerFactory.getLogger(JdbcDAOFactory.class);
 
-    public static DiaryDAO getDiaryDAO() {
-        return DiaryDAOImpl.newDiaryDAO();
-    }
+    @Override
+    public Object getDaoByTableName(String tableName) {
+        Object obj = null;
 
-    public static ImageDAO getImageDAO() {
-        return ImageDAOImpl.newImageDAO();
-    }
+        String propertiesName = "jdbcDaoName.properties";
 
-    public static ImageFeatureDAO getImageFeatureDAO() {
-        return ImageFeatureDAOImpl.newImageFeatureDAO();
-    }
+        Map<String, String> map = new PropertiesReader().getPropertiesMap(propertiesName);
+        assert map != null;
 
-    public static ImageClassDAO getImageClassDAO() {
-        return ImageClassDAOImpl.newImageClassDAO();
-    }
+        try {
+            obj = Class.forName(map.get(tableName)).newInstance();
+        } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
+            logger.warn("jdbc dao not found in {}", propertiesName);
+            e.printStackTrace();
+        }
 
-    public static UserDAO getUserDAO() {
-        return UserDAOImpl.newUserDAO();
-    }
-
-    public static UserIconDAO getUserIconDAO() {
-        return UserIconDAOImpl.newUserIconDAO();
-    }
-
-    public static UserPropertyDAO getUserPropertyDAO() {
-        return UserPropertyDAOImpl.newUserPropertyDAO();
+        return obj;
     }
 }

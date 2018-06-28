@@ -10,14 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/JdbcDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/MybatisDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ServiceFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/util/ServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/homePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/homePage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/impl/ServiceFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/impl/ServiceFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/JdbcDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/JdbcDAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/MybatisDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/MybatisDAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/manager/impl/ManagerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/manager/impl/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/manager/impl/UserManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,17 +58,41 @@
       <file leaf-file-name="ServiceFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/util/ServiceFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="224">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="40" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JdbcDAOFactory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/impl/UserManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/UserDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcDAOFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/JdbcDAOFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="114">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,8 +100,39 @@
       <file leaf-file-name="MybatisDAOFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/MybatisDAOFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="396">
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jdbcDaoName.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbcDaoName.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="7" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mybatisDaoName.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatisDaoName.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sql.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Read/sql.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -87,51 +140,17 @@
       <file leaf-file-name="DAOFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DAOFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="264">
+              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serviceName.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/serviceName.properties">
+      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertiesReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/util/PropertiesReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#392#409#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertiesReaderTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/wang/util/PropertiesReaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-286">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DiaryListQueryServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryListQueryServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="214">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -174,12 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/service/UserLoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/service/UserRegisterService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/service/UserPswUpdateService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/service/UserPropertyUpdateService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/service/UserPropertyQueryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/service/UserIconUpdateService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/service/ImageUploadService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/service/ImageTextUpdateService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/service/ImageQueryService.java" />
@@ -215,7 +228,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageUploadServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserIconUpdateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserLoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPropertyQueryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPropertyUpdateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPswUpdateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserRegisterServiceImpl.java" />
@@ -224,6 +236,13 @@
         <option value="$PROJECT_DIR$/src/test/java/com/wang/service/util/PropertiesReaderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/util/PropertiesReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPropertyQueryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/manager/impl/UserManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/DAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/daoName.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbcDaoName.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatisDaoName.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/JdbcDAOFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/MybatisDAOFactory.java" />
       </list>
     </option>
@@ -418,6 +437,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wang" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wang" type="462c0819:PsiDirectoryNode" />
               <item name="openfunc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -481,54 +510,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -981,14 +962,7 @@
       <workItem from="1529823735774" duration="279000" />
       <workItem from="1529919311421" duration="318000" />
       <workItem from="1530095618370" duration="2674000" />
-      <workItem from="1530149303855" duration="2957000" />
-    </task>
-    <task id="LOCAL-00026" summary="ps :使用maven管理项目">
-      <created>1526780880850</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1526780880850</updated>
+      <workItem from="1530149303855" duration="6001000" />
     </task>
     <task id="LOCAL-00027" summary="ps :使用maven管理项目">
       <created>1526781073816</created>
@@ -1326,7 +1300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530098182231</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="--version2.0 &#10;  --2018.6.28&#10;  --使用properties映射service&#10;  --在工厂中使用反射加载service">
+      <created>1530156471703</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1530156471704</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1362,7 +1343,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="557789000" />
+    <option name="totallyTimeSpent" value="560833000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1493,7 +1474,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" --Readme.md" />
     <MESSAGE value=" --doo toString() JUint" />
     <MESSAGE value=" --read" />
     <MESSAGE value=" --read ok" />
@@ -1518,7 +1498,8 @@
     <MESSAGE value="--version2.0 &#10;  --2018.6.25&#10;  --修复了外部接口bug" />
     <MESSAGE value="--version2.0 &#10;  --2018.6.27&#10;  --controller层函数分解，单一职责原则" />
     <MESSAGE value="--version2.0 &#10;  --2018.6.27&#10;  --service服务接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="--version2.0 &#10;  --2018.6.27&#10;  --service服务接口" />
+    <MESSAGE value="--version2.0 &#10;  --2018.6.28&#10;  --使用properties映射service&#10;  --在工厂中使用反射加载service" />
+    <option name="LAST_COMMIT_MESSAGE" value="--version2.0 &#10;  --2018.6.28&#10;  --使用properties映射service&#10;  --在工厂中使用反射加载service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1533,111 +1514,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/impl/FormResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/impl/UserPropertyUpdateForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/impl/DiaryUploadForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/impl/UserLoginForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/impl/FormFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/impl/UserRegisterForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/impl/UserPswUpdateForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/exfunc/JavaCallShell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/action/DispatcherAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/Directory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/form/Verifiable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/EncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/filter/FormFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-644">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -1675,13 +1551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/util/ServiceResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1812,17 +1681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPropertyQueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="87" column="8" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="20" />
-          <folding>
-            <element signature="e#2922#2923#0" expanded="true" />
-            <element signature="e#2949#2950#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/AdminLoginServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1738">
@@ -1889,27 +1747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/JdbcDAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/MybatisDAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/util/ServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -1917,17 +1754,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/util/ServiceFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryListQueryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state relative-caret-position="431">
+          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryListQueryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPropertyQueryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="418">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/util/ServiceMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/util/ServiceResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/impl/DiaryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/impl/ManagerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/impl/ImageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#3153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/impl/UserMsgManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AdminDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/ImageFeatureDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/util/ServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/impl/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Read/database.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="198">
+            <caret line="9" column="18" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Read/sql.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbcDaoName.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatisDaoName.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/MybatisDAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/JdbcDAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
