@@ -11,7 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * UserManager: user表逻辑操作
+ * UserManagerImpl: user表逻辑操作
  * <p>
  * 访问范围: 全局
  * 调用者: Service
@@ -24,11 +24,11 @@ import org.slf4j.LoggerFactory;
  *
  * @auther ten
  */
-public class UserManager implements Manager {
+public class UserManagerImpl implements Manager {
     /**
      * 日志
      */
-    private static Logger logger = LoggerFactory.getLogger(UserManager.class);
+    private static Logger logger = LoggerFactory.getLogger(UserManagerImpl.class);
     /**
      * DAO组件
      */
@@ -40,7 +40,7 @@ public class UserManager implements Manager {
     /**
      * Generator
      */
-    public UserManager() {
+    public UserManagerImpl() {
         init();
         verify();
     }
