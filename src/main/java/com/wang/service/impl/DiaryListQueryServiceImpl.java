@@ -7,6 +7,7 @@ import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.DiaryDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
+import com.wang.service.DiaryListQueryService;
 import com.wang.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -78,5 +79,10 @@ import java.util.List;
         return new ServiceResult.Builder(true)
                 .page(Page.PAGE_DIARYSHOW)
                 .build();
+    }
+
+    @Override
+    public List<DiaryDO> queryDiaryListByUserId(int userId) {
+        return null;
     }
 }
