@@ -1,8 +1,7 @@
-package com.wang.manager;
+package com.wang.manager.impl.;
 
-import com.wang.bean.Diary;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
-import com.wang.dao.jdbcimpl.DiaryDAO;
+import com.wang.manager.Manager;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -22,7 +21,7 @@ import java.util.logging.Logger;
  *
  * @auther ten
  */
-public class DiaryManager implements Manager {
+public class DiaryManagerImpl implements Manager {
     private final int userid;
     private final DiaryDAO dao;
     private final Logger logger;

@@ -22,4 +22,9 @@
     * 枚举类改进  
 * __version1.5__
     * 增加了Junit测试
+* __version1.6__
+    * 使用观察者模式改进了在线人数统计
+    * 使用外观模式重构了Manager层
+    * 使用抽象工厂重构了DAOFactory
+    * 使用反射加载properties文件重构了ServiceFactory
 * TODO...
