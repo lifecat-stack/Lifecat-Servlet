@@ -1,8 +1,5 @@
 package com.wang.bean.dto;
 
-import com.wang.bean.MyBuilder;
-import com.wang.constant.Directory;
-
 /**
  * DTO :UserProperty用户个人资料
  * <p>
@@ -12,7 +9,7 @@ import com.wang.constant.Directory;
  */
 public class UserPropertyDTO {
 
-    private final Integer userId;
+    private Integer userId;
     private String nickname;
     private String signature;
     private String email;
@@ -21,72 +18,43 @@ public class UserPropertyDTO {
     private String birthday;
     private String iconPath;
 
-    private UserPropertyDTO(UserPropertyDTO.Builder builder) {
-        userId = builder.userId;
-        nickname = builder.nickname;
-        signature = builder.signature;
-        email = builder.email;
-        sex = builder.sex;
-        location = builder.location;
-        birthday = builder.birthday;
-        iconPath = builder.iconPath;
+    public UserPropertyDTO(Integer userId) {
+        this.userId = userId;
     }
 
-    public static class Builder implements MyBuilder<UserPropertyDTO> {
+    public UserPropertyDTO nickname(String val) {
+        this.nickname = val;
+        return this;
+    }
 
-        private final int userId;
+    public UserPropertyDTO signature(String val) {
+        this.signature = val;
+        return this;
+    }
 
-        private String nickname = "lifecat";
-        private String signature = "记录成长的感动";
-        private String email = "lifecat@gmail.com";
-        private String sex = "lovely";
-        private String location = "无锡, 中国";
-        private String birthday = "2018-01-01";
-        private String iconPath = Directory.IMAGE_PATH;
+    public UserPropertyDTO email(String val) {
+        this.email = val;
+        return this;
+    }
 
-        public Builder(int userId) {
-            this.userId = userId;
-        }
+    public UserPropertyDTO sex(String val) {
+        this.sex = val;
+        return this;
+    }
 
-        public UserPropertyDTO.Builder nickname(String val) {
-            nickname = val;
-            return this;
-        }
+    public UserPropertyDTO location(String val) {
+        this.location = val;
+        return this;
+    }
 
-        public UserPropertyDTO.Builder signature(String val) {
-            signature = val;
-            return this;
-        }
+    public UserPropertyDTO birthday(String val) {
+        this.birthday = val;
+        return this;
+    }
 
-        public UserPropertyDTO.Builder email(String val) {
-            email = val;
-            return this;
-        }
-
-        public UserPropertyDTO.Builder sex(String val) {
-            sex = val;
-            return this;
-        }
-
-        public UserPropertyDTO.Builder location(String val) {
-            location = val;
-            return this;
-        }
-
-        public UserPropertyDTO.Builder birthday(String val) {
-            birthday = val;
-            return this;
-        }
-
-        public UserPropertyDTO.Builder iconPath(String val) {
-            iconPath = val;
-            return this;
-        }
-
-        @Override
-        public UserPropertyDTO build() {
-            return new UserPropertyDTO(this);
-        }
+    public UserPropertyDTO iconPath(String val) {
+        this.iconPath = val;
+        return this;
     }
 
     /**

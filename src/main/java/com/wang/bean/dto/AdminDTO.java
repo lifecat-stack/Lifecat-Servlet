@@ -1,7 +1,5 @@
 package com.wang.bean.dto;
 
-import com.wang.bean.MyBuilder;
-
 /**
  * DTO :Admin管理员账号
  * <p>
@@ -11,37 +9,19 @@ import com.wang.bean.MyBuilder;
  */
 public class AdminDTO {
 
-    private final Integer adminId;
-    private final String adminName;
-    private final String adminLevel;
+    private Integer adminId;
+    private String adminName;
+    private String adminLevel;
 
     /**
      * hashCode缓存
      */
     private volatile int hashCode;
 
-    private AdminDTO(AdminDTO.Builder builder) {
-        adminId = builder.adminId;
-        adminName = builder.adminName;
-        adminLevel = builder.adminLevel;
-    }
-
-    public static class Builder implements MyBuilder<AdminDTO> {
-
-        private final Integer adminId;
-        private final String adminName;
-        private final String adminLevel;
-
-        public Builder(int adminId, String adminName, String adminLevel) {
-            this.adminId = adminId;
-            this.adminName = adminName;
-            this.adminLevel = adminLevel;
-        }
-
-        @Override
-        public AdminDTO build() {
-            return new AdminDTO(this);
-        }
+    public AdminDTO(Integer adminId, String adminName, String adminLevel) {
+        this.adminId = adminId;
+        this.adminName = adminName;
+        this.adminLevel = adminLevel;
     }
 
     @Override

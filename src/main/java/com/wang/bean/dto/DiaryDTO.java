@@ -1,7 +1,5 @@
 package com.wang.bean.dto;
 
-import com.wang.bean.MyBuilder;
-
 /**
  * DTO :Diary图片对象
  * <p>
@@ -13,54 +11,21 @@ import com.wang.bean.MyBuilder;
  */
 public class DiaryDTO implements Comparable<DiaryDTO> {
 
-    private final Integer diaryId;
-    private final String diaryName;
-    private final String diaryText;
-    private final String diaryDate;
+    private Integer diaryId;
+    private String diaryName;
+    private String diaryText;
+    private String diaryDate;
 
     /**
      * hashCode缓存
      */
     private volatile int hashCode;
 
-    private DiaryDTO(DiaryDTO.Builder builder) {
-        diaryId = builder.diaryId;
-        diaryName = builder.diaryName;
-        diaryText = builder.diaryText;
-        diaryDate = builder.diaryDate;
-    }
-
-    public static class Builder implements MyBuilder<DiaryDTO> {
-
-        private final Integer diaryId;
-
-        private String diaryText = "天气晴朗";
-        private String diaryName = "周日, 晴";
-        private String diaryDate = "2018-05-20 00:00:00";
-
-        public Builder(int diaryId) {
-            this.diaryId = diaryId;
-        }
-
-        public Builder diaryText(String val) {
-            diaryText = val;
-            return this;
-        }
-
-        public Builder diaryName(String val) {
-            diaryName = val;
-            return this;
-        }
-
-        public Builder diaryDate(String val) {
-            diaryDate = val;
-            return this;
-        }
-
-        @Override
-        public DiaryDTO build() {
-            return new DiaryDTO(this);
-        }
+    public DiaryDTO(Integer diaryId, String diaryName, String diaryText, String diaryDate) {
+        this.diaryId = diaryId;
+        this.diaryName = diaryName;
+        this.diaryText = diaryText;
+        this.diaryDate = diaryDate;
     }
 
     /**

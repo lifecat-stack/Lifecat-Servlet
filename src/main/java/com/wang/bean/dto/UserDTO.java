@@ -1,8 +1,6 @@
 package com.wang.bean.dto;
 
 
-import com.wang.bean.MyBuilder;
-
 /**
  * DTO :User用户账号
  * <p>
@@ -12,33 +10,17 @@ import com.wang.bean.MyBuilder;
  */
 public class UserDTO {
 
-    private final Integer userId;
-    private final String userName;
+    private Integer userId;
+    private String userName;
 
     /**
      * hashCode缓存
      */
     private volatile int hashCode;
 
-    private UserDTO(UserDTO.Builder builder) {
-        userId = builder.userId;
-        userName = builder.userName;
-    }
-
-    public static class Builder implements MyBuilder<UserDTO> {
-
-        private final int userId;
-        private final String userName;
-
-        public Builder(int userId, String userName) {
-            this.userId = userId;
-            this.userName = userName;
-        }
-
-        @Override
-        public UserDTO build() {
-            return new UserDTO(this);
-        }
+    public UserDTO(Integer userId, String userName) {
+        this.userId = userId;
+        this.userName = userName;
     }
 
     @Override

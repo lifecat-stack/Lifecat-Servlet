@@ -1,7 +1,5 @@
 package com.wang.bean.dto;
 
-import com.wang.bean.MyBuilder;
-
 /**
  * DTO :Image图片对象
  * <p>
@@ -13,54 +11,39 @@ import com.wang.bean.MyBuilder;
  */
 public class ImageDTO implements Comparable<ImageDTO> {
 
-    private final Integer imageId;
-    private final String imageText;
-    private final String imagePath;
-    private final String imageDate;
-    private final Integer imageClassId;
+    private Integer imageId;
+    private String imageText;
+    private String imagePath;
+    private String imageDate;
+    private Integer imageClassId;
 
     /**
      * hashCode缓存
      */
     private volatile int hashCode;
 
-    private ImageDTO(ImageDTO.Builder builder) {
-        imageId = builder.imageId;
-        imageText = builder.imageText;
-        imagePath = builder.imagePath;
-        imageDate = builder.imageDate;
-        imageClassId = builder.imageClassId;
+    public ImageDTO(Integer imageId) {
+        this.imageId = imageId;
     }
 
-    public static class Builder implements MyBuilder<ImageDTO> {
+    public ImageDTO imageText(String imageText) {
+        this.imageText = imageText;
+        return this;
+    }
 
-        private final int imageId;
-        private final String imagePath;
-        private final String imageDate;
+    public ImageDTO imagePath(String imagePath) {
+        this.imagePath = imagePath;
+        return this;
+    }
 
-        private int imageClassId = 0;
-        private String imageText = "成长记录";
+    public ImageDTO imageDate(String imageDate) {
+        this.imageDate = imageDate;
+        return this;
+    }
 
-        public Builder(int imageId, String imagePath, String imageDate) {
-            this.imageId = imageId;
-            this.imagePath = imagePath;
-            this.imageDate = imageDate;
-        }
-
-        public Builder imageText(String val) {
-            imageText = val;
-            return this;
-        }
-
-        public Builder imageClassId(int val) {
-            imageClassId = val;
-            return this;
-        }
-
-        @Override
-        public ImageDTO build() {
-            return new ImageDTO(this);
-        }
+    public ImageDTO imageClassId(Integer imageClassId) {
+        this.imageClassId = imageClassId;
+        return this;
     }
 
     /**
