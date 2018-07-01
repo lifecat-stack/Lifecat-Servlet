@@ -6,11 +6,11 @@ README -- LifeCat
 
 |title|content|
 |:---:|:---:
-|desc|智能成长相册网站lifecat
+|desc|智能成长相册系统lifecat
 |author|ten
-|version|Version 2
-|date|2018-05
-|brief|基于MVC的Javaweb网站开发
+|version|Version 1
+|date|2018
+|brief|Java Web
 ******************************************************************************
  #### _@访问链接_  
   * [官网主页](http://47.106.11.84)
@@ -26,9 +26,9 @@ README -- LifeCat
   |---|---
   |前端|Html CSS JavaScript
   |前端框架|bootstrap jQuery
-  |后端|jsp servlet jdbc
-  |后端框架|MVC SOA 
-  |设计模式|构建者模式 静态工厂模式 单例模式 责任链模式
+  |后端|jsp servlet jdbc 反射
+  |设计理念|MVC SOA 
+  |设计模式|构建者模式 工厂模式 单例模式 责任链模式 代理模式 观察者模式 外观模式 MVC
   |项目管理|maven
   |单元测试|Junit4
   |日志框架|slf4j
@@ -37,17 +37,27 @@ README -- LifeCat
  #### _@Web目录_
   * webapp
     * __include__
-      * homePage.jsp     // 用户主页body内容部件
-      * footer.jsp       // 页脚部件
-      * header.jsp       // 页眉部件
-      * top.jsp          // 页面标题栏部件
+      * homePage.jsp     
+      // 用户主页body内容部件
+      * footer.jsp       
+      // 页脚部件
+      * header.jsp       
+      // 页眉部件
+      * top.jsp          
+      // 页面标题栏部件
     * __WEB-INF__
-      * imageshow.jsp    // 用户图片展示界面
-      * imageshow2.jsp   // 用户分类图片展示界面
-      * updiary.jsp      // 上传日记
-      * upimage.jsp      // 上传图片
-      * userhome.jsp     // 用户主页
-    * __index.jsp__      // 登录/注册界面
+      * imageshow.jsp    
+      // 用户图片展示界面
+      * imageshow2.jsp   
+      // 用户分类图片展示界面
+      * updiary.jsp      
+      // 上传日记
+      * upimage.jsp      
+      // 上传图片
+      * userhome.jsp     
+      // 用户主页
+    * __index.jsp__      
+    // 登录/注册界面
 ******************************************************************************
  #### _@Java目录_
   * src
@@ -59,11 +69,11 @@ README -- LifeCat
         * __dto__           
         // DTO包 :数据传输对象, 对应逻辑实体，采用构建者模式 或 工厂模式
         * __dao__           
-        // DAO协议层 :定义了DAO层的协议, 接口层, 通过静态工厂获取
+        // DAO协议层 :定义了DAO层的协议, 接口层, 通过态工厂获取
         * __daoimpl__           
         // DAO实现层 :通过具体实现, 执行数据库交互, 本例中实现了jdbc形式
         * __manager__       
-        // Manager层 :DAO层的抽象逻辑操作, Manager层通过静态工厂获取
+        // Manager层 :DAO层的抽象逻辑操作,使用外观封装了DAO的操作，Manager层通过工厂获取
         * __filter__        
         // Filter过滤器 :对所有请求执行Encoding过滤, 对*.do请求执行Form表单过滤
         * __form__         
@@ -78,6 +88,12 @@ README -- LifeCat
         // 工具类 :包括时间类, 连接类, 图片写入操作, 主机配置等
         * __action__
         // 安全目录WEB-INF转发机制
+        * __constant__  
+        // 配置常量类 -> 使用properties文件进行配置
+        * __observer__  
+        // 观察者，获取主题的信息
+        * __subject__  
+        // 主题，监听网站流量和在线人数的变化
     * test.java.com.wang
         * Test          
         // 单元测试
