@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.spring.mapper.AdminMapper">
+
+    <insert id="insertAdmin" parameterType="adminDO" useGeneratedKeys="true" keyProperty="adminId">
+        insert into admin (admin_name, admin_password, admin_levle, admin_gmt_create, admin_gmt_modified
+        values (#{adminName}, #{adminPassword}, #{adminLevel}, #{adminGmtCreate}, #{adminGmtCreate})
+    </insert>
+
+    <select id="queryAdminByName" parameterType="string" resultType="adminDO">
+        select
+            admin_id,
+            admin_name,
+            admin_password,
+            admin_level
+        from admin
+        where admin_name = #{adminName}
+    </select>
+
+    <select id="isAdminExisted" parameterType="string" resultType="boolean">
+        select count(admin_id)
+        from admin
+        where admin_name = #{adminName}
+    </select>
+
+</mapper>

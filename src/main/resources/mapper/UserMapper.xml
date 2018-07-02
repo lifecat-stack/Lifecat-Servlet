@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.spring.mapper.UserMapper">
+
+    <insert id="insertUserAndGetKey" parameterType="userDO" useGeneratedKeys="true" keyProperty="userId">
+        INSERT INTO user (user_name, user_password, user_level, user_gmt_create, user_gmt_modified)
+        VALUES (#{userName}, #{userPassword}, #{userLevel}, #{userGmtCreate}, #{userGmtModified})
+    </insert>
+
+    <select id="queryUserByName" parameterType="string" resultType="userDO">
+        select
+            user_id,
+            user_password,
+            user_level,
+            user_gmt_create,
+            user_gmt_modified
+        from user
+        where user_name = #{userName}
+
+    </select>
+
+    <select id="isUserExistedByName" parameterType="string" resultType="boolean">
+        select count(user_id) as count
+        from user
+        where user_name = #{userName}
+    </select>
+
+    <select id="queryUserPasswordByName" parameterType="string" resultType="userDO">
+        select user_password
+        from user
+        where user_name = #{serName}
+
+    </select>
+
+    <update id="updateUserPassword" parameterType="userDO">
+        update user
+        set user_password = #{userPassword}
+        where user_id = #{userId}
+
+    </update>
+</mapper>

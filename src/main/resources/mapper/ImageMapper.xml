@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.spring.mapper.ImageMapper">
+
+    <insert id="insertImageAndGetKey" parameterType="imageDO" useGeneratedKeys="true" keyProperty="imageId">
+        INSERT INTO image (image_text, image_path, is_deleted, user_id, class_id, image_gmt_create, image_gmt_modified)
+        VALUES (#{imageText}, #{imagePath}, #{deleted}, #{userId}, #{classId}, #{imageGmtCreate}, #{imageGmtModified})
+    </insert>
+
+    <delete id="deleteImageById" parameterType="int">
+        UPDATE image
+        set is_deleted = '0'
+        where image_id = #{imageId}
+    </delete>
+
+    <update id="updateImageText" parameterType="imageDO">
+        UPDATE image
+        set image_text = #{imageText}
+        where image_id = #{imageId}
+    </update>
+
+    <select id="queryImageByImageId" parameterType="int" resultType="imageDO">
+        SELECT
+            image_text,
+            image_path,
+            image_gmt_create
+        from image
+        where image_id = #{imageId} and is_deleted = '1'
+    </select>
+
+
+    // TODO
+    <select id="queryImageListByUserId" parameterType="int" resultType="role">
+        SELECT
+            image_id,
+            image_text,
+            image_path,
+            image_gmt_create
+        from image
+        where user_id = '" + userId + "' and is_deleted = '1'</select>
+    <select id="queryImageClassById" parameterType="string" resultType="role">
+        SELECT
+            image_id,
+            image_text,
+            image_path,
+            image_gmt_create
+        from image
+        where user_id = '" + userId + "' and class_id = '" + classId + "' and is_deleted = '1'  </select>
+</mapper>

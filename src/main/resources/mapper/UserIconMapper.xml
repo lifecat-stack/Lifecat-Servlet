@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.spring.mapper.UserIconMapper">
+
+    <insert id="insertUserIcon" parameterType="userIconDO">
+        insert into user_icon (user_id, icon_path, icon_gmt_create, icon_gmt_modified)
+        VALUES (#{userId}, #{iconPath}, #{iconGmtCreate}, #{iconGmtModified})    </insert>
+
+
+    <update id="updateUserIcon" parameterType="userIconDO">
+        update user_icon
+        set icon_path           = #{iconPath}
+            , icon_gmt_modified = #{iconGmtModified}
+        where user_id = #{userId}
+    </update>
+
+    <select id="queryUserIconByUserId" parameterType="int" resultType="string">
+        select icon_path
+        from user_icon
+        where user_id = #{userId}
+    </select>
+
+</mapper>

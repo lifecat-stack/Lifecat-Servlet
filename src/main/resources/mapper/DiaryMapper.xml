@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.spring.mapper.DiaryMapper">
+
+    <insert id="insertDiaryAndGetKey" parameterType="userDO" useGeneratedKeys="true" keyProperty="userId">
+
+    </insert>
+
+    <update id="updateDiary" parameterType="diaryDO">
+    </update>
+
+    <delete id="deleteDiaryById" parameterType="int">
+        select count(user_id) as count
+        from user
+        where user_name = #{userName}
+    </delete>
+
+    <select id="queryDiaryByName" parameterType="string" resultType="diaryDO">
+    </select>
+
+
+    // TODO
+    <select id="queryDiaryListByUserId" parameterType="userDO">
+    </select>
+</mapper>
