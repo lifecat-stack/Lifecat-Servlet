@@ -9,6 +9,6 @@ import com.wang.service.util.Service;
  * @date 2018/5/24
  * @auther ten
  */
-public interface ImageTextUpdateService extends Service, ServiceMaker {
+public interface ImageTextUpdateService extends Service{
     void updateImageText(ImageDO imageDO);
 }

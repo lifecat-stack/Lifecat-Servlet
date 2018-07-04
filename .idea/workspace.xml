@@ -11,6 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lifecatweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lifecatweb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,89 +54,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="manager.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/manager.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="Manager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/Manager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="openfunc.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/openfunc.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="ImageManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/ImageManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/service.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14718">
+              <caret line="669" column="9" selection-start-line="669" selection-start-column="9" selection-end-line="669" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/sql.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2046">
+              <caret line="93" column="21" selection-start-line="88" selection-start-column="7" selection-end-line="93" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="standard.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/standard.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="RedisConnections.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/util/RedisConnections.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/utils.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="ImageTextUpdateService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdateService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/version.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="616">
-                <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="DiaryDeleteServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryDeleteServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/view.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="UserPswUpdateServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPswUpdateServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DiaryManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/DiaryManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Read/web.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -182,10 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageClassQueryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageDeleteServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageListQueryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageQueryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageTextUpdateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageUploadServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserIconUpdateServiceImpl.java" />
@@ -233,6 +232,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/UserPropertyDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/manager/ImageManager.java" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdateService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/util/RedisConnections.java" />
       </list>
     </option>
   </component>
@@ -268,10 +271,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="990" />
+    <option name="x" value="70" />
+    <option name="width" value="1155" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -281,7 +283,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,11 +317,26 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wang" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wang" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -331,6 +348,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,7 +360,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SSM-lifecat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -370,11 +388,11 @@
       <recent name="com.wang.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\lifecatweb\src\main\resources" />
       <recent name="D:\Java\lifecatweb\src\main\java\com\wang\service\service" />
       <recent name="D:\Java\lifecatweb\src\main\java\com\wang\dao\mybatisimpl" />
       <recent name="D:\Java\lifecatweb\src\main\webapp\image\one\icon" />
       <recent name="D:\Java\lifecatweb" />
-      <recent name="D:\Java\lifecatweb\src\main\webapp\WEB-INF\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wang.db" />
@@ -399,7 +417,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PropertiesReaderTest.testGetPropertiesMap">
+  <component name="RunManager" selected="Application.RedisConnections">
+    <configuration name="RedisConnections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wang.util.RedisConnections" />
+      <module name="lifecatweb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wang.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -484,29 +513,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.wang.service.impl" />
       <option name="MAIN_CLASS_NAME" value="com.wang.service.impl.UserPswUpdateTest" />
-      <option name="METHOD_NAME" value="testExecute" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="UserRegisterTest.testExecute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lifecatweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wang.service.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.wang.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.wang.service.impl.UserRegisterTest" />
       <option name="METHOD_NAME" value="testExecute" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -663,19 +669,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.lifecat" />
-      <item itemvalue="JUnit.UserRegisterTest.testExecute" />
       <item itemvalue="JUnit.UserPswUpdateTest.testExecute" />
       <item itemvalue="JUnit.UserPswUpdateTest" />
       <item itemvalue="JUnit.ActionServletTest" />
       <item itemvalue="JUnit.PropertiesReaderTest.testGetPropertiesMap" />
+      <item itemvalue="Application.RedisConnections" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RedisConnections" />
         <item itemvalue="JUnit.PropertiesReaderTest.testGetPropertiesMap" />
         <item itemvalue="JUnit.ActionServletTest" />
         <item itemvalue="JUnit.UserPswUpdateTest" />
         <item itemvalue="JUnit.UserPswUpdateTest.testExecute" />
-        <item itemvalue="JUnit.UserRegisterTest.testExecute" />
       </list>
     </recent_temporary>
   </component>
@@ -783,21 +789,12 @@
       <workItem from="1530276057496" duration="5699000" />
       <workItem from="1530311338889" duration="1519000" />
       <workItem from="1530408053760" duration="1141000" />
-      <workItem from="1530527134115" duration="1976000" />
-    </task>
-    <task id="LOCAL-00034" summary=" --doo toString() JUint">
-      <created>1526821857102</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1526821857102</updated>
-    </task>
-    <task id="LOCAL-00035" summary=" --doo toString() JUint">
-      <created>1526822473367</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1526822473367</updated>
+      <workItem from="1530527134115" duration="2133000" />
+      <workItem from="1530579748439" duration="73000" />
+      <workItem from="1530579834562" duration="841000" />
+      <workItem from="1530666281079" duration="2549000" />
+      <workItem from="1530680348649" duration="641000" />
+      <workItem from="1530681663904" duration="66000" />
     </task>
     <task id="LOCAL-00036" summary=" --doo toString() JUint">
       <created>1526822641886</created>
@@ -1128,7 +1125,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530408900486</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="--version2.0 &#10;  --2018.7.2&#10;  --mapper">
+      <created>1530540439130</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1530540439131</updated>
+    </task>
+    <task id="LOCAL-00084" summary="--version2.0 &#10;  --2018.7.2&#10;  --mapper">
+      <created>1530540451679</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1530540451679</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1164,7 +1175,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="582066000" />
+    <option name="totallyTimeSpent" value="586393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1177,6 +1188,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
@@ -1187,7 +1199,7 @@
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="bottom" id="Statistic" order="12" sideWeight="0.4992948" weight="0.69010043" />
+      <window_info anchor="bottom" id="Statistic" order="12" sideWeight="0.4992948" weight="0.68940496" />
       <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
       <window_info id="Structure" order="1" sideWeight="0.50142854" side_tool="true" weight="0.18661971" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2496474" />
@@ -1201,7 +1213,7 @@
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
       <window_info anchor="right" id="Run" order="12" weight="0.18053597" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.22566995" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.17277856" />
       <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info id="JRebel" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -1210,11 +1222,11 @@
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.18724559" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" visible="true" weight="0.05451937" />
+      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32998565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" visible="true" weight="0.1061693" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="R Packages" order="9" />
       <window_info anchor="right" id="R Graphics" order="4" />
@@ -1223,6 +1235,7 @@
       <window_info anchor="right" id="R Packages" order="9" />
       <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.4992948" weight="0.081779055" />
       <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.25287357" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="JRebel" order="7" side_tool="true" />
@@ -1231,7 +1244,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2496474" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
       <window_info id="Capture Tool" order="2" />
@@ -1240,8 +1252,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
       <window_info anchor="bottom" id="Statistic" order="12" sideWeight="0.4992948" weight="0.69109195" />
+      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.32614943" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
       <window_info id="Java Enterprise" order="9" side_tool="true" weight="0.32957748" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
@@ -1250,9 +1262,9 @@
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8077475" visible="true" weight="0.16713682" />
       <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
-      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.32614943" />
+      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Structure" order="1" sideWeight="0.50142854" side_tool="true" weight="0.18661971" />
@@ -1295,7 +1307,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" --version2.0 junit-do" />
     <MESSAGE value=" --version2.0 junit-bean" />
     <MESSAGE value=" --version2.0 junit" />
     <MESSAGE value=" --version2.0 tomcat" />
@@ -1320,7 +1331,8 @@
     <MESSAGE value="--version2.0 &#10;  --2018.6.29&#10;  --Manager层" />
     <MESSAGE value="--version2.0 &#10;  --2018.6.29&#10;  --DTO构建者模式优化" />
     <MESSAGE value="--version2.0 &#10;  --2018.7.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="--version2.0 &#10;  --2018.7.1" />
+    <MESSAGE value="--version2.0 &#10;  --2018.7.2&#10;  --mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="--version2.0 &#10;  --2018.7.2&#10;  --mapper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1335,42 +1347,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Read/web.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/subject/UserLoginSubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/observer/impl/UserLoginDayCountObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/observer/impl/UserLoginTotalObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/observer/UserLoginObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -1424,13 +1400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1307">
           <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1522,27 +1491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/ImageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/DiaryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -1646,7 +1594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Read/manager.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
+        <state split_layout="FIRST">
           <first_editor />
           <second_editor />
         </state>
@@ -1717,6 +1665,69 @@
             <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/DiaryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/manager/ImageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14718">
+          <caret line="669" column="9" selection-start-line="669" selection-start-column="9" selection-end-line="669" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryDeleteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPswUpdateServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="93" column="21" selection-start-line="88" selection-start-column="7" selection-end-line="93" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/util/RedisConnections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
