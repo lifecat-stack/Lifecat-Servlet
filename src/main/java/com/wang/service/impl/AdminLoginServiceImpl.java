@@ -52,7 +52,7 @@ class AdminLoginServiceImpl implements AdminLoginService {
         String adminPassword = req.getParameter("adminPassword");
 
         // 获取DAO实例
-        dao = JdbcDAOFactory.getAdminDAO();
+        dao = (AdminDAO) new JdbcDAOFactory().getDaoByTableName("admin");
 
         // DAO查询admin
         adminDO = null;

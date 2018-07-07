@@ -44,7 +44,7 @@ class ImageListQueryServiceImpl implements ImageListQueryService {
 
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        ImageDAO dao = factory.getImageDAO();
+        ImageDAO dao = (ImageDAO) factory.getDaoByTableName("image");
 
         List<ImageDO> imageDOList = null;
         boolean success = false;

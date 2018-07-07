@@ -44,7 +44,7 @@ class UserPswUpdateServiceImpl implements UserPswUpdateService {
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
         DAOFactory factory = new JdbcDAOFactory();
-        UserDAO dao = factory.getUserDAO();
+        UserDAO dao = (UserDAO) factory.getDaoByTableName("user");
 
         boolean success = false;
         try {

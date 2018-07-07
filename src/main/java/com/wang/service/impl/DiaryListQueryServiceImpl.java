@@ -46,7 +46,7 @@ import java.util.List;
 
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        DiaryDAO dao = factory.getDiaryDAO();
+        DiaryDAO dao = (DiaryDAO) factory.getDaoByTableName("diary");
 
         List<DiaryDO> diaryDOList = null;
         boolean success = false;

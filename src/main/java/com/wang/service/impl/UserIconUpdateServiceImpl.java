@@ -73,7 +73,7 @@ import java.sql.SQLException;
         // 将图片信息写入数据库
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        UserIconDAO dao = factory.getUserIconDAO();
+        UserIconDAO dao = (UserIconDAO) factory.getDaoByTableName("user_icon");
 
 
         UserIconDO userIconDO = new UserIconDO();

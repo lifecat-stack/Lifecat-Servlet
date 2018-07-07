@@ -70,7 +70,7 @@ class ImageUploadServiceImpl implements ImageUploadService {
         // 将图片信息写入数据库
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        ImageDAO dao = factory.getImageDAO();
+        ImageDAO dao = (ImageDAO) factory.getDaoByTableName("image");
 
         ImageDO imageDO = new ImageDO();
         imageDO.setUserId(userId);

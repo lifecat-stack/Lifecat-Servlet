@@ -54,7 +54,7 @@ class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService {
         // 将图片信息写入数据库
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        UserPropertyDAO dao = factory.getUserPropertyDAO();
+        UserPropertyDAO dao = (UserPropertyDAO) factory.getDaoByTableName("user_property");
 
         UserPropertyDO userPropertyDO = new UserPropertyDO();
         userPropertyDO.setUserId(userId);

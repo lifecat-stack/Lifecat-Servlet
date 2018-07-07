@@ -44,7 +44,7 @@ class UserLoginServiceImpl implements UserLoginService {
 
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        UserDAO dao = factory.getUserDAO();
+        UserDAO dao = (UserDAO) factory.getDaoByTableName("user");
 
         // DAO查询user
         UserDO userDO = null;

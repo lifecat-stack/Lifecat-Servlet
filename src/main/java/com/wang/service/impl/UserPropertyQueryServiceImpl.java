@@ -40,8 +40,8 @@ class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
         Integer userId = userDTO.getUserId();
 
         DAOFactory factory = new JdbcDAOFactory();
-        UserPropertyDAO propertyDAO = factory.getUserPropertyDAO();
-        UserIconDAO iconDAO = factory.getUserIconDAO();
+        UserPropertyDAO propertyDAO = (UserPropertyDAO) factory.getDaoByTableName("user_property");
+        UserIconDAO iconDAO = (UserIconDAO) factory.getDaoByTableName("user_icon");
 
         UserPropertyDO userPropertyDO = null;
         String userIconPath = null;

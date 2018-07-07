@@ -39,7 +39,7 @@ import java.sql.SQLException;
 
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        DiaryDAO dao = factory.getDiaryDAO();
+        DiaryDAO dao = (DiaryDAO) factory.getDaoByTableName("diary");
 
         boolean success = false;
         try {
