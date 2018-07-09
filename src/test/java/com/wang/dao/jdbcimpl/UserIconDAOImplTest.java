@@ -26,7 +26,7 @@ public class UserIconDAOImplTest {
 
     @Before
     public void before() throws Exception {
-        dao = daoFactory.getUserIconDAO();
+        dao = (UserIconDAO) daoFactory.getDaoByTableName("user_icon");
         assertNotNull(dao);
     }
 

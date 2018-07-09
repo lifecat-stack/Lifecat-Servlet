@@ -1,0 +1,79 @@
+#top-container {
+    height: 140px;
+}
+
+.jumbotron {
+    height: 120px;
+    padding: 10px;
+}
+
+.jumbotron text {
+    font-size: 50px;
+    font-family: 楷体;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.msg {
+    border: 1px solid;
+    text-align: left;
+    width: 50px;
+    font-family: "arial", serif;
+    font-size: 15pt;
+    padding: 2px
+}
+
+.bigmsg {
+    color: #00bbee;
+    font-family: "arial", serif;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.search-form {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+#diary-form table {
+    width: 100%;
+    /**/
+    table-layout: fixed;
+    /**/
+    empty-cells: show;
+    /**/
+    margin: 0 auto;
+    /**/
+    border-collapse: collapse;
+    /**/
+    border: 1px solid #cad9ea;
+    /**/
+    color: #666666;
+    /**/
+    font-size: 14px;
+}
+
+#diary-form th {
+    /**/
+    background: linear-gradient(to bottom, #ffffff, #adadad);
+    /**/
+    background-repeat: repeat-x;
+    /**/
+    align-content: center;
+    height: 32px;
+    width: 15%;
+}
+
+#diary-form td {
+    height: 24px;
+}
+
+#diary-form td, th {
+    border: 1px solid #cad9ea;
+}
+
+#diary-form tr.a1 {
+    background-color: #f5fafe;
+}

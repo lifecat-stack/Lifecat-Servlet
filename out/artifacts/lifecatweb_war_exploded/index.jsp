@@ -585,9 +585,9 @@
                     </div>
                     <div class="form-group">
                         <label for="adminPassword">密码</label> <input class="form-control"
-                                                                      placeholder="请输入密码" name="adminPassword"
-                                                                      id="adminPassword"
-                                                                      type="password">
+                                                                     placeholder="请输入密码" name="adminPassword"
+                                                                     id="adminPassword"
+                                                                     type="password">
                     </div>
 
                     <div class="text-right">
@@ -659,6 +659,15 @@
     </div>
 </div>
 <script src="js/t19ctgxcrlxxxxxxxx.js"></script>
+
+<%-- 尝试js新功能 --%>
+<script>
+    function test(elem){
+
+    }
+
+
+</script>
 
 <%-- 背景滚动效果 --%>
 <script>

@@ -27,7 +27,7 @@ public class UserDAOImplTest {
 
     @Before
     public void before() throws Exception {
-        dao = daoFactory.getUserDAO();
+        dao = (UserDAO) daoFactory.getDaoByTableName("user");
         assertNotNull(dao);
     }
 

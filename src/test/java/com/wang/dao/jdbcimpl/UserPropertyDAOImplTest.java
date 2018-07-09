@@ -27,7 +27,7 @@ public class UserPropertyDAOImplTest {
 
     @Before
     public void before() throws Exception {
-        dao = daoFactory.getUserPropertyDAO();
+        dao = (UserPropertyDAO) daoFactory.getDaoByTableName("user_property");
         assertNotNull(dao);
     }
 

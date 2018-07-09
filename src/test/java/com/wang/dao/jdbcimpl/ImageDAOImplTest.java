@@ -28,7 +28,7 @@ public class ImageDAOImplTest {
 
     @Before
     public void before() throws Exception {
-        dao = daoFactory.getImageDAO();
+        dao = (ImageDAO) daoFactory.getDaoByTableName("image");
         assertNotNull(dao);
     }
 

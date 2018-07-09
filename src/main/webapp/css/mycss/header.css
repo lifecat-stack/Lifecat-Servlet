@@ -1,0 +1,14 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /*background: url("../images/homeback.jpg") repeat;*/
+}
+
+#logo-text {
+    height: 44px;
+    width: 152px;
+    font-family: 楷体;
+    font-size: 20px;
+}
