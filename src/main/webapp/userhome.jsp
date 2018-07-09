@@ -28,14 +28,6 @@
 
 </head>
 
-<style>
-    .diary-operation-btn {
-        padding: 1px;
-        background: #9acfea;
-
-    }
-</style>
-
 <body>
 <!--header-->
 <div class="navbar navbar-default">
@@ -442,12 +434,12 @@
                                         <td id="diary_text">${diary.diaryText}</td>
                                         <td id="diary_date">${diary.diaryDate}</td>
                                         <td>
-                                            <button id="delete-diary" class="diary-operation-btn">
+                                            <a href="diary_delete.do?diaryId=${diary.diaryId}">
                                                 删除
-                                            </button>
-                                            <button id="update-diary" class="diary-operation-btn">
+                                            </a>
+                                            <a href="diary_update.do?diaryId=${diary.diaryId}">
                                                 修改
-                                            </button>
+                                            </a>
                                         </td>
                                     </tr>
                                 </c:forEach>
