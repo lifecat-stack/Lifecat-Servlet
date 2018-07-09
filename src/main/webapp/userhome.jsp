@@ -44,7 +44,7 @@
         <!--导航条头部-->
         <div class="navbar-header">
             <!--图片Logo-->
-            <a href="userhome.action" target="_blank" class="navbar-brand">
+            <a href="userhome.jsp" target="_blank" class="navbar-brand">
                 <!--<img src="../../images/peopleicon.png" alt="未加载成功" height="44" width="152" style="margin-top: -13px;"/>-->
                 <text id="logo-text">执子之手，与子偕老</text>
             </a>
@@ -61,13 +61,15 @@
         <div id="my-collapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <!--上传寄语-->
-                <li><a href=updiary.action><span
-                        class="glyphicon glyphicon-pencil"></span>书写寄语</a>
+                <li><a href=updiary.html><span
+                        class="glyphicon glyphicon-pencil"></span>
+                    书写寄语</a>
                 </li>
 
                 <!--上传图片-->
-                <li><a href=upimage.action><span
-                        class="glyphicon glyphicon-pencil"></span>记录图片</a>
+                <li><a href=upimage.html><span
+                        class="glyphicon glyphicon-pencil"></span>
+                    记录图片</a>
                 </li>
 
                 <li><a href="#"><span>      </span></a>
@@ -84,8 +86,9 @@
                     修改密码</a>
                 </li>
 
-                <li><a href="WEB-INF/index.jsp"><span
-                        class="glyphicon glyphicon-log-out"></span>退出</a>
+                <li><a href="index.html"><span
+                        class="glyphicon glyphicon-log-out"></span>
+                    退出</a>
                 </li>
             </ul>
         </div>
