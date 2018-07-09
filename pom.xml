@@ -85,7 +85,12 @@
             <version>1.6.5</version>
             <scope>test</scope>
         </dependency>
-
+        <!--EL-->
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
         <!-- jedis -->
         <dependency>
             <groupId>redis.clients</groupId>

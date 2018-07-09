@@ -18,7 +18,7 @@ public class Page {
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/userhome.jsp
      */
-    public static final String PAGE_USERHOME = "/WEB-INF/jsp/" + "userhome.jsp";
+    public static final String PAGE_USERHOME = "/" + "userhome.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/upimage.jsp
      */

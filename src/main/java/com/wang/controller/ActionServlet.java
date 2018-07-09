@@ -40,7 +40,6 @@ public class ActionServlet extends HttpServlet {
         // 验证通过
         if (formResult) {
             executeSuccess(path, req, resp);
-
         }
 
         // 验证失败
@@ -65,7 +64,7 @@ public class ActionServlet extends HttpServlet {
     private void executeSuccess(String path, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         // 提取url请求信息 /xxx
-        String url = path.substring(path.lastIndexOf("/"), path.lastIndexOf("."));
+        String url = path.substring(path.lastIndexOf("/")+1, path.lastIndexOf("."));
 
         logger.debug("request url is :{}", url);
 

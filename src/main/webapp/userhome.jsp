@@ -273,8 +273,9 @@
                     <div class="col-md-4">
                         <h3>个人信息</h3>
                         <table>
+
                             <tr class="msg">
-                                <td>昵称:{{user_nickname}}</td>
+                                <td>昵称:${user_nickname}</td>
                             </tr>
                             <tr class="msg">
                                 <td>个性签名:{{user_signature}}</td>
@@ -341,6 +342,9 @@
                 <!-- /.row -->
                 <div class="row">
                     <div class="col-md-1">
+                        <form method="get" action="diary_list_query.do">
+                            <button type="submit">刷新</button>
+                        </form>
                         <button id="diary-insert" class="row">新写日记</button>
                         <button id="diary-delete" class="row">删除所选</button>
                         <button id="diary-delete-all" class="row">删除全部</button>
@@ -356,88 +360,15 @@
                                 <th style="width: 15%">作者</th>
                                 <th style="width: 15%">日期</th>
                                 <th style="width: 15%">访问量</th>
-
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll"/></td>
-                                    <td>{{diary.id}}</td>
-                                    <td>{{diary.title}}</td>
-                                    <td>{{diary.text}}</td>
-                                    <td>{{diary.author}}</td>
-                                    <td>{{diary.date}}</td>
-                                    <td>{{diary.views}}</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll"/></td>
-                                    <td>{{diary.id}}</td>
-                                    <td>{{diary.title}}</td>
-                                    <td>{{diary.text}}</td>
-                                    <td>{{diary.author}}</td>
-                                    <td>{{diary.date}}</td>
-                                    <td>{{diary.views}}</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll"/></td>
-                                    <td>{{diary.id}}</td>
-                                    <td>{{diary.title}}</td>
-                                    <td>{{diary.text}}</td>
-                                    <td>{{diary.author}}</td>
-                                    <td>{{diary.date}}</td>
-                                    <td>{{diary.views}}</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll"/></td>
-                                    <td>{{diary.id}}</td>
-                                    <td>{{diary.title}}</td>
-                                    <td>{{diary.text}}</td>
-                                    <td>{{diary.author}}</td>
-                                    <td>{{diary.date}}</td>
-                                    <td>{{diary.views}}</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll"/></td>
-                                    <td>{{diary.id}}</td>
-                                    <td>{{diary.title}}</td>
-                                    <td>{{diary.text}}</td>
-                                    <td>{{diary.author}}</td>
-                                    <td>{{diary.date}}</td>
-                                    <td>{{diary.views}}</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll"/></td>
-                                    <td>{{diary.id}}</td>
-                                    <td>{{diary.title}}</td>
-                                    <td>{{diary.text}}</td>
-                                    <td>{{diary.author}}</td>
-                                    <td>{{diary.date}}</td>
-                                    <td>{{diary.views}}</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll"/></td>
-                                    <td>{{diary.id}}</td>
-                                    <td>{{diary.title}}</td>
-                                    <td>{{diary.text}}</td>
-                                    <td>{{diary.author}}</td>
-                                    <td>{{diary.date}}</td>
-                                    <td>{{diary.views}}</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll"/></td>
-                                    <td>{{diary.id}}</td>
-                                    <td>{{diary.title}}</td>
-                                    <td>{{diary.text}}</td>
-                                    <td>{{diary.author}}</td>
-                                    <td>{{diary.date}}</td>
-                                    <td>{{diary.views}}</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox" name="checkAll"/></td>
-                                    <td>{{diary.id}}</td>
-                                    <td>{{diary.title}}</td>
-                                    <td>{{diary.text}}</td>
-                                    <td>{{diary.author}}</td>
-                                    <td>{{diary.date}}</td>
-                                    <td>{{diary.views}}</td>
-                                </tr>
+                                <c:forEach items="${sessionScope.diaryList}" var="diary">
+                                    <tr>
+                                        <td><input type="checkbox" name="checkAll"/></td>
+                                        <td>${diary.diaryId}</td>
+                                        <td>${diary.diaryName}</td>
+                                        <td>${diary.diaryText}</td>
+                                        <td>${diary.diaryDate}</td>
+                                    </tr>
+                                </c:forEach>
                             </table>
                         </div>
                     </div>

@@ -30,7 +30,10 @@ public class PropertiesReaderTest {
      */
     @Test
     public void testGetPropertiesMap() throws Exception {
-        Map<String ,String > map = new PropertiesReader().getPropertiesMap("serviceName.properties");
+
+		String path = System.getProperty("user.dir")+"\\src\\main\\resources\\jdbcDaoName.properties";
+        System.out.println(path);
+        Map<String ,String > map = new PropertiesReader().getPropertiesMap(path);
         assertNotNull(map);
     }
 

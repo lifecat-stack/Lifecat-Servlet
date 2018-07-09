@@ -1,6 +1,8 @@
 package com.wang.util;
 
-import java.io.IOException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.InputStream;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -14,6 +16,7 @@ import java.util.Properties;
  * @auther ten
  */
 public class PropertiesReader {
+    private Logger logger = LoggerFactory.getLogger(PropertiesReader.class);
     /**
      * 读取制定properties文件
      *
@@ -35,7 +38,8 @@ public class PropertiesReader {
                 String property = props.getProperty(key);
                 map.put(key, property);
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
+            logger.warn("resource not find");
             e.printStackTrace();
         }
 
