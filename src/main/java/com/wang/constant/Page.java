@@ -24,9 +24,9 @@ public class Page {
      */
     public static final String PAGE_UPIMAGE = "/WEB-INF/jsp/" + "upimage.jsp";
     /**
-     * http:xxx.xxx.xxx.xxx:8080/lifecatweb/updiary.jsp
+     * http:xxx.xxx.xxx.xxx:8080/lifecatweb/updiary.html
      */
-    public static final String PAGE_UPDIARY = "/" + "updiary.jsp";
+    public static final String PAGE_UPDIARY = "/" + "updiary.html";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/imageshow.jsp
      */

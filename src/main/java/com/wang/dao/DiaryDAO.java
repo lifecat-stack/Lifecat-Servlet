@@ -40,6 +40,7 @@ public interface DiaryDAO {
      */
     void deleteDiary(Integer diaryId) throws SQLException;
 
+    void deleteAllDiary(Integer userId) throws SQLException;
 
     /**
      * 日记单个查询 :

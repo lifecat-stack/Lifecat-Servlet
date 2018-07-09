@@ -1,16 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
-<%@page import="com.wang.bean.*" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="static com.wang.constant.HOST.*" %>
-<%@ page import="com.wang.service.util.ServiceFactory" %>
-<%@ page import="com.wang.bean.dto.DiariesDTO" %>
-<%@ page import="com.wang.bean.dto.DiaryDTO" %>
-<%@ page import="java.util.List" %>
 <%@ page import="com.wang.util.DateTimeUtil" %>
-<%@ page import="com.wang.bean.dto.ImageDTO" %>
-<%@ page import="com.wang.constant.Directory" %>
-<%@ page import="com.wang.bean.dto.UserPropertyDTO" %>
 
 <script>
     $(function () {
@@ -38,14 +28,6 @@
 <%--}--%>
 <%--</script>--%>
 
-<%
-    // 从session中获取user信息
-    UserDTO userDTO = (UserDTO) request.getSession().getAttribute("user");
-    Integer userId = userDTO.getUserId();
-    String userName = userDTO.getUserName();
-
-    DateTimeUtil time = DateTimeUtil.getInstance();
-%>
 
 <style>
     .msg {
@@ -117,45 +99,25 @@
                     <div class="col-md-4">
                         <h2>个人信息:</h2>
 
-                        <%
-                            UserPropertyDTO userPropertyDTO = null;
-
-                            userPropertyDTO = (UserPropertyDTO) request.getSession().getAttribute("userProperty");
-
-                            if (userPropertyDTO == null) {
-                                userPropertyDTO = new UserPropertyDTO
-                                        .Builder(userId)
-                                        .nickname("lifecat")
-                                        .signature("lifecat is my love")
-                                        .sex("man")
-                                        .email("wshten@gmail.com")
-                                        .birthday("1997-01-01")
-                                        .location("wuxi china")
-                                        .iconPath(Directory.DEFAULT_IMAGE_PATH)
-                                        .build();
-                            }
-                        %>
                         <table>
                             <tr class="msg">
-                                <span>昵称: <%=userPropertyDTO.getNickname()%> </span>
+                                <span>昵称: </span>
                             </tr>
                             <br>
                             <tr class="msg">
-                                <span>个性签名: <%=userPropertyDTO.getSignature()%> </span>
+                                <span>个性签名: </span>
                             </tr>
                             <tr class="msg">
-                                <span>性别: <%=userPropertyDTO.getSex()%> </span>
+                                <span>性别: </span>
                             </tr>
                             <tr class="msg">
-                                <span>邮箱: <%=userPropertyDTO.getEmail()%> </span>
+                                <span>邮箱: </span>
                             </tr>
-                            <br>
                             <tr class="msg">
-                                <span>生日: <%=userPropertyDTO.getBirthday()%>  </span>
+                                <span>生日:  </span>
                             </tr>
-                            <br>
                             <tr class="msg">
-                                <span>地址: <%=userPropertyDTO.getLocation()%>  </span>
+                                <span>地址: </span>
                             </tr>
                         </table>
                     </div>
@@ -176,7 +138,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <img height="140" width="140" src=<%=userPropertyDTO.getIconPath()%>>
+                        <img height="140" width="140" src=>
                     </div>
                 </div>
                 <div class="col-md-1">
@@ -213,45 +175,21 @@
 
                     <div class="col-md-10">
                         <h2>成长日记:</h2>
-                        <%
-                            // 获取日记集
-                            List<DiaryDTO> diaries = null;
 
-                            diaries = (List<DiaryDTO>) request.getSession().getAttribute("diaryList");
-
-                            // 获取diaries失败
-                            if (diaries == null) {
-                                diaries = new ArrayList<>(10);
-                                for (int i = 1; i < 10; i++) {
-                                    DiaryDTO defaultDiary = new DiaryDTO
-                                            .Builder(0)
-                                            .diaryName("我的第" + i + "篇成长寄语")
-                                            .diaryText("爱子心无尽，归家喜及辰")
-                                            .diaryDate(time.getCurrentTime())
-                                            .build();
-                                    diaries.add(defaultDiary);
-                                }
-                            }
-                        %>
                         <table>
-                            <%
-                                /* 循环打印日记信息 */
-                                for (DiaryDTO diary : diaries) {
-                            %>
+
                             <tr class="msg">
                                 <td>
-                                    <span><%=diary.getDiaryName() + ":"%></span>
+                                    <span></span>
                                 </td>
                                 <td>
-                                    <span><%="日记内容:" + diary.getDiaryText()%></span>
+                                    <span></span>
                                 </td>
                                 <td>
-                                    <span><%="发表时间:" + diary.getDiaryDate()%></span>
+                                    <span> </span>
                                 </td>
                             </tr>
-                            <%
-                                }
-                            %>
+
                             <tr class="row">
                             <span><a href="#">1</a>&nbsp;&nbsp;
                             <a href="#">2</a>&nbsp;&nbsp;
@@ -275,43 +213,15 @@
                     </div>
                     <div class="col-md-10">
                         <a href=imageshow.action><h2>成长相册:</h2></a>
-                        <%
-                            // 获取图片集
-                            List<ImageDTO> images = null;
 
-                            images = (List<ImageDTO>) request.getSession().getAttribute("imageList");
-
-                            // 获取images失败
-                            if (images == null) {
-                                images = new ArrayList<>(10);
-                                for (int i = 0; i < 4; i++) {
-                                    ImageDTO defaultImage = new ImageDTO
-                                            .Builder(0, Directory.DEFAULT_IMAGE_PATH, time.getCurrentTime())
-                                            .imageClassId(0)
-                                            .imageText("美好的时刻，记录在lifecat")
-                                            .build();
-                                    images.add(defaultImage);
-                                }
-                            }
-                        %>
                         <table>
                             <tr class="row">
-                                <%
-                                    /*  循环打印demo图片img
-                                     *  倒叙:最新上传的图片最前展示
-                                     *  日志:demo_image_path打印demo图片链接
-                                     */
-                                    for (ImageDTO image : images) {
 
-                                %>
-
-                                <td class="col-md-3"><span><img src=<%=image.getImagePath()%>
+                                <td class="col-md-3"><span><img src=
                                                                         height="200" width="200"
                                                                 style="margin-top: 20px;"/> </span>
                                 </td>
-                                <%
-                                    }
-                                %>
+
                             </tr>
                         </table>
                     </div>

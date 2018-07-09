@@ -36,6 +36,11 @@ class DiaryDAOImpl extends AbstractDAO implements DiaryDAO {
     }
 
     @Override
+    public void deleteAllDiary(Integer userId) throws SQLException {
+
+    }
+
+    @Override
     public DiaryDO queryDiary(String diaryName) throws SQLException {
         return null;
     }

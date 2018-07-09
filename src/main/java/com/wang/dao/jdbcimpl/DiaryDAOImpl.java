@@ -40,7 +40,14 @@ class DiaryDAOImpl extends AbstractDAO implements DiaryDAO {
 
     @Override
     public void deleteDiary(Integer diaryId) throws SQLException {
+        String sql = "UPDATE diary set is_deleted = '0' where diary_id = '" + diaryId + "'";
+        delete(sql);
+    }
 
+    @Override
+    public void deleteAllDiary(Integer userId) throws SQLException {
+         String sql = "UPDATE diary set is_deleted = '0' where user_id = '" + userId + "'";
+        delete(sql);
     }
 
     @Override
@@ -50,7 +57,7 @@ class DiaryDAOImpl extends AbstractDAO implements DiaryDAO {
 
     @Override
     public List<DiaryDO> queryDiaryList(Integer userId) throws SQLException {
-         String sql = "SELECT diary_id,diary_name,diary_text,diary_gmt_modified from diary where user_id = '" + userId + "' and is_deleted = '1'";
+        String sql = "SELECT diary_id,diary_name,diary_text,diary_gmt_modified from diary where user_id = '" + userId + "' and is_deleted = '1'";
         ResultSet rs = query(sql);
         List<DiaryDO> list = new ArrayList<>();
         while (rs.next()) {

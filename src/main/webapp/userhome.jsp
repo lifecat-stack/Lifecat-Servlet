@@ -28,6 +28,14 @@
 
 </head>
 
+<style>
+    .diary-operation-btn {
+        padding: 1px;
+        background: #9acfea;
+
+    }
+</style>
+
 <body>
 <!--header-->
 <div class="navbar navbar-default">
@@ -76,7 +84,7 @@
                     修改密码</a>
                 </li>
 
-                <li><a href="index.jsp"><span
+                <li><a href="WEB-INF/index.jsp"><span
                         class="glyphicon glyphicon-log-out"></span>退出</a>
                 </li>
             </ul>
@@ -402,31 +410,42 @@
                         <form method="get" action="diary_list_query.do">
                             <button type="submit">刷新</button>
                         </form>
-                        <a href="updiary.jsp">
+                        <a href="updiary.html">
                             <button id="diary-insert" class="row">新写日记
                             </button>
                         </a>
                         <button id="diary-delete" class="row">删除所选</button>
-                        <button id="diary-delete-all" class="row">删除全部</button>
+                        <form method="get" action="diary_all_delete.do">
+                            <button id="diary-delete-all" class="row">删除全部</button>
+                        </form>
                     </div>
 
                     <div class="col-md-11">
                         <div id="diary-form">
                             <table>
                                 <th style="width: 5%">√</th>
-                                <th style="width: 10%">序号</th>
+                                <th style="width: 5%">序号</th>
                                 <th style="width: 15%">标题</th>
-                                <th style="width: 25%">内容</th>
+                                <th style="width: 20%">内容</th>
                                 <%--<th style="width: 15%">作者</th>--%>
                                 <th style="width: 15%">日期</th>
+                                <th style="width: 10%">操作</th>
                                 <%--<th style="width: 15%">访问量</th>--%>
                                 <c:forEach items="${sessionScope.diaryList}" var="diary">
                                     <tr>
                                         <td><input type="checkbox" name="checkAll" title="选项"/></td>
-                                        <td>${diary.diaryId}</td>
-                                        <td>${diary.diaryName}</td>
-                                        <td>${diary.diaryText}</td>
-                                        <td>${diary.diaryDate}</td>
+                                        <td id="diary_id">${diary.diaryId}</td>
+                                        <td id="diary_name">${diary.diaryName}</td>
+                                        <td id="diary_text">${diary.diaryText}</td>
+                                        <td id="diary_date">${diary.diaryDate}</td>
+                                        <td>
+                                            <button id="delete-diary" class="diary-operation-btn">
+                                                删除
+                                            </button>
+                                            <button id="update-diary" class="diary-operation-btn">
+                                                修改
+                                            </button>
+                                        </td>
                                     </tr>
                                 </c:forEach>
                             </table>
@@ -476,7 +495,6 @@
                 </div>
             </div>
 
-
         </div>
     </div>
 
@@ -492,6 +510,34 @@
 
 <!--引用外部js库：jQuery-->
 <script src="js/t19ctgxcrlxxxxxxxx.js"></script>
+
+<script>
+    $("#delete-diary").on(
+        "click",
+        function (obj) {
+            var tr = $(obj).parent().parent();
+            var id = tr.children("td#diary_id").text();
+            var name = tr.children("td#diary_name").text();
+            var text = tr.children("td#diary_text").text();
+
+            console.log("id" + id);
+
+            // 利用ajax将数据提交到后台
+            $.ajax({
+                url: "diary_delete.do",
+                type: 'get',
+                contentType: 'charset=utf-8',
+                data: {diaryId: id},
+                success: function (data) {
+                    layer.alert(data);
+                },
+                error: function (error) {
+                    console.log('接口不通' + error);
+                }
+            });
+        }
+    );
+</script>
 
 </body>
 

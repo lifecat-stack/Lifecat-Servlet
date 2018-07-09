@@ -22,23 +22,7 @@
         /*background: url("../img/homeback.jpg") repeat;*/
     }
 </style>
-<%
-    /*
-     *  获取UserDTO
-     *  获取用户名
-     */
-    String username;
-    UserDTO user = (UserDTO) request.getSession().getAttribute("user");
-    if (user != null) {
-        if (user.getUserName() != null) {
-            username = user.getUserName();
-        } else {
-            username = "亲爱的用户";
-        }
-    } else {
-        username = "您未登录";
-    }
-%>
+
 <body>
 
 <div class="navbar navbar-default">
@@ -47,7 +31,7 @@
         <!--导航条头部-->
         <div class="navbar-header">
             <a href="userhome.action" target="_blank" class="navbar-brand">
-                <img src="../images/iconimage.png" height="44" width="152" style="margin-top: -13px;"/>
+                <img src="../../images/iconimage.png" height="44" width="152" style="margin-top: -13px;"/>
             </a>
 
             <!--logo-->
@@ -63,30 +47,40 @@
         <div id="my-collapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <%--上传寄语--%>
-                <li><a href=updiary.action><span
-                        class="glyphicon glyphicon-pencil"></span>书写寄语</a>
+                <li>
+                    <a href=updiary.action><span
+                            class="glyphicon glyphicon-pencil"></span>
+                        书写寄语
+                    </a>
                 </li>
 
                 <%--上传图片--%>
-                <li><a href=upimage.action><span
-                        class="glyphicon glyphicon-pencil"></span>记录图片</a>
+                <li>
+                    <a href=upimage.action><span
+                            class="glyphicon glyphicon-pencil"></span>
+                        记录图片
+                    </a>
                 </li>
 
-                <li><a href="#"><span>      </span></a>
+                <li>
+                    <a href="#"><span>      </span></a>
                 </li>
                 <!-- 用户名信息 -->
-                <li><a href="#" data-toggle="modal" data-target="#updatemsg"><span
-                        class="glyphicon glyphicon-user"></span>
-                    欢迎你 <%=username%>
-                </a>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#updatemsg"><span
+                            class="glyphicon glyphicon-user"></span>
+                        欢迎你
+                    </a>
                 </li>
                 <!-- 修改密码:target跳转到myModal模块 -->
-                <li><a href="#" data-toggle="modal" data-target="#updatepsw"><span
-                        class="glyphicon glyphicon-pencil"></span>
-                    修改密码</a>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#updatepsw"><span
+                            class="glyphicon glyphicon-pencil"></span>
+                        修改密码
+                    </a>
                 </li>
 
-                <li><a href=../index.jsp><span
+                <li><a href=../../index.html><span
                         class="glyphicon glyphicon-log-out"></span>退出</a>
                 </li>
             </ul>
