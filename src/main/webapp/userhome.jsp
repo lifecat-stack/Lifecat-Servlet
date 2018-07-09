@@ -1,5 +1,9 @@
+<%@ page import="com.wang.bean.dto.DiaryDTO" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.wang.service.DiaryListQueryService" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 
@@ -72,7 +76,7 @@
                     修改密码</a>
                 </li>
 
-                <li><a href=../index.html><span
+                <li><a href="index.jsp"><span
                         class="glyphicon glyphicon-log-out"></span>退出</a>
                 </li>
             </ul>
@@ -126,6 +130,59 @@
                             <button class="btn btn-primary btn-lg btn-block">修改</button>
                         </div>
                         <input type="hidden" name="action" value="ModifyPsw">
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+
+
+    <!-- 模态框（Modal）diary-upload --上传新日记 -->
+    <div class="modal fade" id="diary-upload" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">&times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel5">书写新日记</h4>
+                </div>
+                <div class="modal-body">
+
+                    <!-- form表单 -->
+                    <form action="diary_upload.do" class="form col-md-12 center-block"
+                          method="post">
+                        <div class="form-group">
+                            <h4>
+                                <label for="diaryName">日记标题</label>
+                            </h4>
+
+                            <input type="text" id="diaryName" name="diaryName"
+                                   class="form-control input-md" placeholder="请输入标题" title="日记标题">
+
+                        </div>
+                        <div class="form-group">
+                            <h4>
+                                <label for="diaryText">日记内容</label>
+                            </h4>
+
+                            <textarea name="diaryText" id="diaryText" cols="30"
+                                      rows="10" class="form-control input-md">
+                                请输入日记内容
+                            </textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-lg btn-block">修改</button>
+                        </div>
                     </form>
 
                 </div>
@@ -275,22 +332,22 @@
                         <table>
 
                             <tr class="msg">
-                                <td>昵称:${user_nickname}</td>
+                                <td>昵称:${user.user_nickname}</td>
                             </tr>
                             <tr class="msg">
-                                <td>个性签名:{{user_signature}}</td>
+                                <td>个性签名:${user.user_signature}</td>
                             </tr>
                             <tr class="msg">
-                                <td>性别:{{user_sex}}</td>
+                                <td>性别:${user.user_sex}</td>
                             </tr>
                             <tr class="msg">
-                                <td>邮箱:{{user_email}}</td>
+                                <td>邮箱:${user.user_email}</td>
                             </tr>
                             <tr class="msg">
-                                <td>生日:{{user_birthday}}</td>
+                                <td>生日:${user.user_birthday}</td>
                             </tr>
                             <tr class="msg">
-                                <td>地址:{{user_location}}</td>
+                                <td>地址:${user.user_location}</td>
                             </tr>
                         </table>
                     </div>
@@ -308,7 +365,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <img height="140" width="140" src="../images/usericon.jpg"/>
+                        <img height="140" width="140" src="images/usericon.jpg"/>
                     </div>
                 </div>
 
@@ -324,7 +381,7 @@
                 <!-- 搜索框 -->
                 <div class="row">
                     <div class="col-lg-6 col-lg-offset-6">
-                        <form method="post" action="">
+                        <form method="post" action="search.do">
                             <select class="col-lg-3 search-form">
                                 <option value="1">序号</option>
                                 <option value="2">标题</option>
@@ -345,7 +402,10 @@
                         <form method="get" action="diary_list_query.do">
                             <button type="submit">刷新</button>
                         </form>
-                        <button id="diary-insert" class="row">新写日记</button>
+                        <a href="updiary.jsp">
+                            <button id="diary-insert" class="row">新写日记
+                            </button>
+                        </a>
                         <button id="diary-delete" class="row">删除所选</button>
                         <button id="diary-delete-all" class="row">删除全部</button>
                     </div>
@@ -357,12 +417,12 @@
                                 <th style="width: 10%">序号</th>
                                 <th style="width: 15%">标题</th>
                                 <th style="width: 25%">内容</th>
-                                <th style="width: 15%">作者</th>
+                                <%--<th style="width: 15%">作者</th>--%>
                                 <th style="width: 15%">日期</th>
-                                <th style="width: 15%">访问量</th>
+                                <%--<th style="width: 15%">访问量</th>--%>
                                 <c:forEach items="${sessionScope.diaryList}" var="diary">
                                     <tr>
-                                        <td><input type="checkbox" name="checkAll"/></td>
+                                        <td><input type="checkbox" name="checkAll" title="选项"/></td>
                                         <td>${diary.diaryId}</td>
                                         <td>${diary.diaryName}</td>
                                         <td>${diary.diaryText}</td>
@@ -403,7 +463,7 @@
                             <tr class="row">
 
                                 <td class="col-md-3">
-                                    <img src='../images/usericon.jpg' height=200 width=200
+                                    <img src='images/usericon.jpg' height=200 width=200
                                          style="margin-top: 20px;"/>
                                 </td>
 
@@ -431,7 +491,7 @@
 </div>
 
 <!--引用外部js库：jQuery-->
-<script src="../js/t19ctgxcrlxxxxxxxx.js"></script>
+<script src="js/t19ctgxcrlxxxxxxxx.js"></script>
 
 </body>
 

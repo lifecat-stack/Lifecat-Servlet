@@ -22,7 +22,7 @@ public class MybatisDAOFactory implements DAOFactory {
     public Object getDaoByTableName(String tableName) {
         Object obj = null;
 
-        String propertiesName = "mybatisDaoName.properties";
+        String propertiesName = "properties/mybatisDaoName.properties";
 
         Map<String, String> map = new PropertiesReader().getPropertiesMap(propertiesName);
         assert map != null;

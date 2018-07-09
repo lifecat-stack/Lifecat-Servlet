@@ -78,7 +78,7 @@ public class ActionServlet extends HttpServlet {
         // service无对应请求 进入错误界面 error.jsp
         if (service == null) {
             logger.info("service is null");
-            page = Page.PAGE_ERROR;
+            page = Page.PAGE_USERHOME;
             req.setAttribute("errorMsg", "没有此请求");
             req.getRequestDispatcher(page).forward(req, resp);
         }

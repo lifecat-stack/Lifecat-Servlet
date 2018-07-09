@@ -31,10 +31,12 @@ public class PropertiesReaderTest {
     @Test
     public void testGetPropertiesMap() throws Exception {
 
-		String path = System.getProperty("user.dir")+"\\src\\main\\resources\\jdbcDaoName.properties";
+        String path = "/properties/jdbcDaoName.properties";
         System.out.println(path);
-        Map<String ,String > map = new PropertiesReader().getPropertiesMap(path);
+        Map<String, String> map = new PropertiesReader().getPropertiesMap(path);
         assertNotNull(map);
+
+
     }
 
 } 

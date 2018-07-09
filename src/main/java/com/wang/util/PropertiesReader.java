@@ -3,6 +3,7 @@ package com.wang.util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -28,8 +29,9 @@ public class PropertiesReader {
         Properties props = new Properties();
         Map<String, String> map = new HashMap<String, String>(24);
 
+        InputStream in = null;
         try {
-            InputStream in = getClass().getResourceAsStream(propertiesName);
+            in = getClass().getResourceAsStream(propertiesName);
             props.load(in);
             Enumeration en = props.propertyNames();
             // 以等号作为分割key-value
@@ -41,6 +43,13 @@ public class PropertiesReader {
         } catch (Exception e) {
             logger.warn("resource not find");
             e.printStackTrace();
+        }finally {
+            assert in!=null;
+            try {
+                in.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         return map;

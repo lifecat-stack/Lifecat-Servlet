@@ -1,17 +1,17 @@
-package com.wang.dao.jdbcimpl;
+package com.wang.service.util;
 
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
 
 /**
- * JdbcDAOFactory Tester.
+ * ServiceFactory Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>ÆßÔÂ 9, 2018</pre>
  */
-public class JdbcDAOFactoryTest {
+public class ServiceFactoryTest {
 
     @Before
     public void before() throws Exception {
@@ -22,12 +22,12 @@ public class JdbcDAOFactoryTest {
     }
 
     /**
-     * Method: getDaoByTableName(String tableName)
+     * Method: getServiceByClassKey(String key)
      */
     @Test
-    public void testGetDaoByTableName() throws Exception {
-        JdbcDAOFactory factory = new JdbcDAOFactory();
-        factory.getDaoByTableName("diary");
+    public void testGetServiceByClassKey() throws Exception {
+        Service service=ServiceFactory.getServiceByClassKey("diary_list_query");
+        assert service!=null;
     }
 
 

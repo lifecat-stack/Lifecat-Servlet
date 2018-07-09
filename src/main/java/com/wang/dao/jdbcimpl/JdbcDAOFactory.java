@@ -20,7 +20,7 @@ public class JdbcDAOFactory implements DAOFactory {
     public Object getDaoByTableName(String tableName) {
         Object obj = null;
 
-        String propertiesName = "jdbcDaoName.properties";
+        String propertiesName = "/properties/jdbcDaoName.properties";
 
         Map<String, String> map = new PropertiesReader().getPropertiesMap(propertiesName);
         assert map != null;

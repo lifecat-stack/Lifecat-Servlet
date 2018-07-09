@@ -26,13 +26,16 @@ public class ServiceFactory {
      */
     public static Service getServiceByClassKey(String key) {
         Service service = null;
-        String propertiesName = "serviceName.properties";
+        String propertiesName = "/properties/serviceName.properties";
 
         Map<String, String> map = new PropertiesReader().getPropertiesMap(propertiesName);
         assert map != null;
 
+        String val=map.get(key);
+        System.out.println(val);
+
         try {
-            service = (Service) Class.forName(map.get(key)).newInstance();
+            service = (Service) Class.forName(val).newInstance();
         } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
             logger.warn("service not found in {}", propertiesName);
             e.printStackTrace();

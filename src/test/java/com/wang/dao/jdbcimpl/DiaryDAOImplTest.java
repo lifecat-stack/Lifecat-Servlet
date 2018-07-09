@@ -1,8 +1,11 @@
 package com.wang.dao.jdbcimpl;
 
-import org.junit.Test;
-import org.junit.Before;
+import com.wang.bean.doo.DiaryDO;
 import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.List;
 
 /**
  * DiaryDAOImpl Tester.
@@ -66,7 +69,9 @@ public class DiaryDAOImplTest {
      */
     @Test
     public void testQueryDiaryList() throws Exception {
-//TODO: Test goes here... 
+        DiaryDAOImpl dao = new DiaryDAOImpl();
+        List<DiaryDO> list = dao.queryDiaryList(1);
+        System.out.println(list.size());
     }
 
 

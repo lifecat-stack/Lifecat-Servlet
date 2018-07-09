@@ -7,14 +7,6 @@
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageClassDOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageDOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageFeatureDOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/AdminDTOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/AlbumClassDTOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/AlbumDTOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/DiariesDTOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/DiaryDTOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/ImageDTOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/UserDTOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/bean/dto/UserPropertyDTOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/constant/DataBaseTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/constant/DirectoryTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/constant/HOSTTest.java" charset="GBK" />
@@ -26,6 +18,7 @@
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/ImageClassDAOImplTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/ImageDAOImplTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/ImageFeatureDAOImplTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/JdbcDAOFactoryTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/JdbcDAOFactoryTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserDAOImplTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserIconDAOImplTest.java" charset="GBK" />
@@ -60,6 +53,7 @@
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserPropertyUpdateTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserPswUpdateTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserRegisterTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/wang/service/util/ServiceFactoryTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/util/ConnectionsTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/util/DateTimeUtilTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/wang/util/ImageWriterTest.java" charset="GBK" />

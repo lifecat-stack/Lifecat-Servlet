@@ -26,7 +26,7 @@ public class Page {
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/updiary.jsp
      */
-    public static final String PAGE_UPDIARY = "/WEB-INF/jsp/" + "updiary.jsp";
+    public static final String PAGE_UPDIARY = "/" + "updiary.jsp";
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/imageshow.jsp
      */

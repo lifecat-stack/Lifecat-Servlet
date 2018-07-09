@@ -3,7 +3,9 @@ package com.wang.dao.jdbcimpl;
 import com.wang.bean.doo.DiaryDO;
 import com.wang.dao.DiaryDAO;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,17 +14,23 @@ import java.util.List;
  * @auther ten
  */
 class DiaryDAOImpl extends AbstractDAO implements DiaryDAO {
-    private DiaryDAOImpl() {
-    }
-
-    static DiaryDAO newDiaryDAO() {
-        return new DiaryDAOImpl();
+    public DiaryDAOImpl() {
     }
 
     @Override
     public int insertDiary(DiaryDO diaryDO) throws SQLException {
-        return 0;
+        String sql = "INSERT INTO diary(diary_name, diary_text, is_deleted, user_id, diary_gmt_create, diary_gmt_modified) " +
+                "VALUES( ?,?,?,?,?,?)";
+        Object[] args = {
+                diaryDO.getDiaryName(),
+                diaryDO.getdiaryText(),
+                diaryDO.getDeleted(),
+                diaryDO.getUserId(),
+                diaryDO.getdiaryGmtCreate(),
+                diaryDO.getdiaryGmtModified()
+        };
 
+        return insertAndReturnKey(sql, args);
     }
 
     @Override
@@ -42,6 +50,17 @@ class DiaryDAOImpl extends AbstractDAO implements DiaryDAO {
 
     @Override
     public List<DiaryDO> queryDiaryList(Integer userId) throws SQLException {
-        return null;
+         String sql = "SELECT diary_id,diary_name,diary_text,diary_gmt_modified from diary where user_id = '" + userId + "' and is_deleted = '1'";
+        ResultSet rs = query(sql);
+        List<DiaryDO> list = new ArrayList<>();
+        while (rs.next()) {
+            DiaryDO diaryDO = new DiaryDO();
+            diaryDO.setDiaryId(rs.getInt("diary_id"));
+            diaryDO.setDiaryName(rs.getString("diary_name"));
+            diaryDO.setdiaryText(rs.getString("diary_text"));
+            diaryDO.setdiaryGmtModified(rs.getString("diary_gmt_modified"));
+            list.add(diaryDO);
+        }
+        return list;
     }
 }

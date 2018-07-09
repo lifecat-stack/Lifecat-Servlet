@@ -2,13 +2,11 @@ package com.wang.service.impl;
 
 import com.wang.bean.doo.DiaryDO;
 import com.wang.bean.dto.DiaryDTO;
-import com.wang.bean.dto.UserDTO;
 import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.DiaryDAO;
 import com.wang.dao.jdbcimpl.JdbcDAOFactory;
 import com.wang.service.DiaryListQueryService;
-import com.wang.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,22 +25,21 @@ import java.util.List;
  * @date 2018/5/24
  * @auther ten
  */
- class DiaryListQueryServiceImpl implements DiaryListQueryService {
+public class DiaryListQueryServiceImpl implements DiaryListQueryService {
 
     private Logger logger = LoggerFactory.getLogger(DiaryListQueryServiceImpl.class);
 
-    private DiaryListQueryServiceImpl() {
-    }
+    public DiaryListQueryServiceImpl(){
 
-    static Service newService() {
-        return new DiaryListQueryServiceImpl();
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
-        UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
-        Integer userId = userDTO.getUserId();
+//        UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
+//        Integer userId = userDTO.getUserId();
+
+        Integer userId = 1;
 
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
