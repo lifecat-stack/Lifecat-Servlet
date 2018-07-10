@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diary</title>
+    <!--编码信息-->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <!--引用库：bootstrap-->
+    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap/3.3.6/bootstrap.min.css">
+    <!--引用库：jQuery-->
+    <script src="../js/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="table-responsive">
+
+        <h2>修改当前日记</h2>
+
+        <form method="post" action="diary_update.do">
+            <div class="form-group">
+				<textarea class="form-control" rows="1" cols="20" name="diaryName"
+                          id="diaryname"></textarea>
+            </div>
+            <div class="form-group">
+				<textarea class="form-control" rows="10" cols="20" name="diaryText"
+                          id="diarytext"></textarea>
+            </div>
+            <button id="diary-submit" class="btn btn-primary btn-md btn-block">提交更新</button>
+        </form>
+    </div>
+</div>
+
+</body>
+
+<script>
+    $(function () {
+        var url = window.location.href;
+        var str = url.split('?')[1];
+        // [id= , name= , text= ]
+        var args = str.split('&');
+
+        did = args[0].split('=')[1];
+        var name = args[1].split('=')[1];
+        var text = args[2].split('=')[1];
+
+        console.log("id:" + did + " name:" + name + " text:" + text);
+
+        $('#diaryname').val(name);
+        $('#diarytext').val(text);
+    });
+
+    // 获取父iframe值，更新diary
+    // TODO 关闭子iframe
+    // TODO id传值为Null
+    $('#diary-submit').on('click', function () {
+        var loading = layer.load();
+
+        var name = $('#diaryname').val();
+        var text = $('#diarytext').val();
+
+        layer.msg("diary id:" + did + " name:" + name + " text:" + text);
+
+        $.ajax({
+            url: "diary_update.do",
+            type: 'post',
+            contentType: 'charset=utf-8',
+            data: {diaryId: did, diaryName: name, diaryText: text},
+            success: function () {
+                layer.close(loading);
+                layer.msg("更新成功");
+                setTimeout(function () {
+                    parent.location.reload();
+                    // 关闭当前iframe
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);
+                }, 1000)
+            },
+            error: function (error) {
+                layer.close(loading);
+                layer.msg("更新失败");
+                console.log('接口不通' + error);
+                setTimeout(function () {
+                    parent.location.reload();
+                    // 关闭当前iframe
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);
+                }, 1000)
+            }
+        });
+    });
+</script>
+
+</html>

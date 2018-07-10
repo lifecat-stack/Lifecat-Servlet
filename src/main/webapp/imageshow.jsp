@@ -29,7 +29,7 @@
                             刷新
                         </button>
                     </form>
-                    <a href="upimage.html">
+                    <a href="WEB-INF/old_page/upimage.html">
                         <button class="row">
                             上传图片
                         </button>
