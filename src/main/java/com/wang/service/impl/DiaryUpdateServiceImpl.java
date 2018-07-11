@@ -37,6 +37,7 @@ public class DiaryUpdateServiceImpl implements DiaryUpdateService {
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
         logger.debug("diary id:{} name:{} text:{} date:{}", diaryId, diaryName, diaryText, dateTime);
+        assert diaryId != null;
 
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
