@@ -1,5 +1,7 @@
-README -- LifeCat 
+README -- LifeCat version1 
 ===========================
+(改进中，暂时无法部署，不过可以阅读源码，注释覆盖率高，旧版可部署版本已上线)
+
 ![java](https://img.shields.io/badge/language-java-red.svg)
 ![许可](https://img.shields.io/dub/l/vibe-d.svg) 
 :cat: :smiley_cat: :kissing_cat:
@@ -10,7 +12,7 @@ README -- LifeCat
 |author|ten
 |version|Version 1
 |date|2018
-|brief|Java Web
+|framework|jsp servlet mysql
 ******************************************************************************
  #### _@访问链接_  
   * [官网主页](http://47.106.11.84)
@@ -25,9 +27,9 @@ README -- LifeCat
   |title|content|
   |---|---
   |前端|Html CSS JavaScript
-  |前端框架|bootstrap jQuery
-  |后端|jsp servlet jdbc 反射
-  |设计理念|MVC SOA 
+  |前端框架|bootstrap jQuery Layer
+  |后端|jsp servlet jdbc 
+  |设计理念|MVC 
   |设计模式|构建者模式 工厂模式 单例模式 责任链模式 代理模式 观察者模式 外观模式 MVC
   |项目管理|maven
   |单元测试|Junit4
@@ -157,3 +159,10 @@ README -- LifeCat
 ![图片展示](Image/图片展示1.png)
 
 ![图片展示](Image/图片展示2.png)
+
+*****************************************************************************
+ ### 相关项目：
+ #### [LifeCat version2 相应SSM后台管理系统](https://github.com/kevinten10/SSM-lifecat)
+ 
+ #### [LifeCat version3 前后端分离springboot后端](https://github.com/kevinten10/springboot-lifecat)
+ #### [LifeCat version3 前后端分离vuejs前端](https://github.com/kevinten10/Web-lifecat)
