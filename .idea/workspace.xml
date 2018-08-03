@@ -10,12 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/lifecatweb_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/lifecatweb_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,7 +92,7 @@
       <file leaf-file-name="HOST.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="391">
               <caret line="19" column="53" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="53" />
             </state>
           </provider>
@@ -135,7 +130,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="138">
-                <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+                <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
               </first_editor>
               <second_editor />
             </state>
@@ -305,6 +300,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -659,7 +655,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1146,14 +1141,8 @@
       <workItem from="1531299722317" duration="47000" />
       <workItem from="1531304477099" duration="2968000" />
       <workItem from="1531373157064" duration="1278000" />
-      <workItem from="1533275623013" duration="1183000" />
-    </task>
-    <task id="LOCAL-00047" summary=" --version2.0 junit-do">
-      <created>1529196668421</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1529196668421</updated>
+      <workItem from="1533275623013" duration="1274000" />
+      <workItem from="1533278522906" duration="270000" />
     </task>
     <task id="LOCAL-00048" summary=" --version2.0 junit-bean">
       <created>1529204591650</created>
@@ -1491,7 +1480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531299756831</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="--version1.2.0 &#10;  --2018.8.3&#10;  --开发文档v2 100%">
+      <created>1533276841474</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1533276841475</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1527,7 +1523,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="674348000" />
+    <option name="totallyTimeSpent" value="674709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1555,7 +1551,6 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.325419" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.18220946" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Java Enterprise" order="9" sideWeight="0.3846154" side_tool="true" weight="0.11176471" />
@@ -1563,7 +1558,7 @@
       <window_info anchor="right" id="Run" order="12" weight="0.28916308" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.26180258" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.26555794" />
       <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="8" side_tool="true" />
@@ -1577,6 +1572,7 @@
       <window_info id="JRebel" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32998565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.18220946" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" id="R Packages" order="9" />
       <window_info anchor="right" id="R Graphics" order="4" />
@@ -1586,7 +1582,6 @@
       <window_info anchor="right" id="R Packages" order="9" />
       <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.4992948" weight="0.081779055" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.25287357" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="JRebel" order="7" side_tool="true" />
@@ -1595,6 +1590,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2496474" />
       <window_info id="UI Designer" order="4" />
+      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
       <window_info id="Capture Tool" order="2" />
@@ -1603,8 +1599,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
       <window_info anchor="bottom" id="Statistic" order="12" sideWeight="0.4992948" weight="0.69109195" />
-      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.32614943" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
       <window_info id="Java Enterprise" order="9" side_tool="true" weight="0.32957748" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
@@ -1613,9 +1609,9 @@
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8077475" visible="true" weight="0.16713682" />
       <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
+      <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
+      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.32614943" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Structure" order="1" sideWeight="0.50142854" side_tool="true" weight="0.18661971" />
@@ -1658,7 +1654,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" --version2.0 junit service" />
     <MESSAGE value=" --version2.0 linux" />
     <MESSAGE value=" --version2.0 2018.6.21" />
     <MESSAGE value=" --version2.0 2018.6.21 修复了web的bug" />
@@ -1683,7 +1678,8 @@
     <MESSAGE value="--version2.0 &#10;  --2018.7.9&#10;  --完成了行删除操作" />
     <MESSAGE value="--version2.0 &#10;  --2018.7.10&#10;  --ajax完成请求&#10;  --diary“更新”功能&#10;  --diary“删除”功能" />
     <MESSAGE value="--version2.0 &#10;  --2018.7.11&#10;  --修正了url编解码问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="--version2.0 &#10;  --2018.7.11&#10;  --修正了url编解码问题" />
+    <MESSAGE value="--version1.2.0 &#10;  --2018.8.3&#10;  --开发文档v2 100%" />
+    <option name="LAST_COMMIT_MESSAGE" value="--version1.2.0 &#10;  --2018.8.3&#10;  --开发文档v2 100%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1698,6 +1694,60 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Read/standard.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Read/filter.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="138">
+            <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1835,9 +1885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="117" selection-start-line="18" selection-start-column="117" selection-end-line="18" selection-end-column="117" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1855,21 +1902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/include/top.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/include/homePage.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/include/header.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/include/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/properties/jdbcDaoName.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1877,18 +1909,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/mybatisDaoName.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/properties/serviceName.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/util/serviceName.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/util/RedisConnections.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2003,7 +2029,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="391">
           <caret line="19" column="53" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="53" />
         </state>
       </provider>
@@ -2033,7 +2059,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="138">
-            <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           </first_editor>
           <second_editor />
         </state>
