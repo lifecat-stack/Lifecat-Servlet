@@ -1,10 +1,10 @@
 package com.wang.manager;
 
-import com.wang.bean.doo.UserDO;
-import com.wang.bean.doo.UserIconDO;
-import com.wang.bean.doo.UserPropertyDO;
-import com.wang.bean.dto.UserDTO;
-import com.wang.bean.dto.UserPropertyDTO;
+import com.wang.bean.entity.UserDO;
+import com.wang.bean.entity.UserIconDO;
+import com.wang.bean.entity.UserPropertyDO;
+import com.wang.bean.vo.UserPropertyVO;
+import com.wang.bean.vo.UserVO;
 
 /**
  * User模块管理器
@@ -17,19 +17,19 @@ public interface UserManager extends Manager {
      * 用户登录
      *
      * @param userDO UserDO
-     * @return UserDTO UserDTO
+     * @return UserVO UserVO
      * @throws
      */
-    public UserDTO userLogin(UserDO userDO);
+    public UserVO userLogin(UserDO userDO);
 
     /**
      * 用户注册
      *
      * @param userDO 用户名+用户密码
-     * @return UserDTO UserDTO
+     * @return UserVO UserVO
      * @throws
      */
-    public UserDTO userRegister(UserDO userDO);
+    public UserVO userRegister(UserDO userDO);
 
     /**
      * 用户更新信息
@@ -59,9 +59,9 @@ public interface UserManager extends Manager {
      * 用户资料查询
      *
      * @param
-     * @return UserPropertyDTO UserPropertyDTO
+     * @return UserPropertyVO UserPropertyVO
      * @throws
      */
-    public UserPropertyDTO userPropertyQuery(int userId);
+    public UserPropertyVO userPropertyQuery(int userId);
 
 }

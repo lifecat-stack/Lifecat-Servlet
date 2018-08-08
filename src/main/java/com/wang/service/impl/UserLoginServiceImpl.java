@@ -1,7 +1,7 @@
 //package com.wang.service.impl;
 //
 //import com.wang.bean.doo.UserDO;
-//import com.wang.bean.dto.UserDTO;
+//import com.wang.bean.dto.UserVO;
 //import com.wang.constant.Page;
 //import com.wang.dao.DAOFactory;
 //import com.wang.dao.UserDAO;
@@ -71,7 +71,7 @@
 //                    .errormsg("密码错误").page(Page.PAGE_INDEX).build();
 //        }
 //
-//        UserDTO user = new UserDTO.Builder(userDO.getUserId(), userDO.getUserName()).build();
+//        UserVO user = new UserVO.Builder(userDO.getUserId(), userDO.getUserName()).build();
 //        req.getSession().setAttribute("user", user);
 //        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
 //    }

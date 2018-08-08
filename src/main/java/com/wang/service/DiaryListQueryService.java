@@ -1,6 +1,6 @@
 package com.wang.service;
 
-import com.wang.bean.doo.DiaryDO;
+import com.wang.bean.entity.DiaryDO;
 import com.wang.service.util.Service;
 
 import java.util.List;

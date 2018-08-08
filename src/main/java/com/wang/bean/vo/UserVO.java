@@ -1,4 +1,4 @@
-package com.wang.bean.dto;
+package com.wang.bean.vo;
 
 
 /**
@@ -8,7 +8,7 @@ package com.wang.bean.dto;
  *
  * @auther ten
  */
-public class UserDTO {
+public class UserVO {
 
     private Integer userId;
     private String userName;
@@ -18,7 +18,7 @@ public class UserDTO {
      */
     private volatile int hashCode;
 
-    public UserDTO(Integer userId, String userName) {
+    public UserVO(Integer userId, String userName) {
         this.userId = userId;
         this.userName = userName;
     }
@@ -30,14 +30,14 @@ public class UserDTO {
             return true;
         }
         //类型检测
-        if (!(obj instanceof UserDTO)) {
+        if (!(obj instanceof UserVO)) {
             return false;
         }
         //参数检测
-        if (!this.userId.equals(((UserDTO) obj).getUserId())) {
+        if (!this.userId.equals(((UserVO) obj).getUserId())) {
             return false;
         }
-        if (!this.userName.equals(((UserDTO) obj).getUserName())) {
+        if (!this.userName.equals(((UserVO) obj).getUserName())) {
             return false;
         }
 

@@ -1,6 +1,6 @@
 package com.wang.service.impl;
 
-import com.wang.bean.doo.DiaryDO;
+import com.wang.bean.entity.DiaryDO;
 import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.DiaryDAO;

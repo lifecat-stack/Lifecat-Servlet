@@ -1,4 +1,4 @@
-<%@ page import="com.wang.bean.dto.DiaryDTO" %>
+<%@ page import="com.wang.bean.vo.DiaryVO" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.wang.service.DiaryListQueryService" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"

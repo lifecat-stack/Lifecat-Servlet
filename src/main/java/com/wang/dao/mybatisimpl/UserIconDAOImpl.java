@@ -1,6 +1,6 @@
 package com.wang.dao.mybatisimpl;
 
-import com.wang.bean.doo.UserIconDO;
+import com.wang.bean.entity.UserIconDO;
 import com.wang.dao.UserIconDAO;
 
 import java.sql.ResultSet;

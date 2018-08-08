@@ -1,4 +1,4 @@
-package com.wang.bean.doo;
+package com.wang.bean.entity;
 
 import org.junit.*;
 

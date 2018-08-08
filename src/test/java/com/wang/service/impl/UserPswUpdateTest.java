@@ -1,6 +1,6 @@
 //package com.wang.service.impl;
 //
-//import com.wang.bean.dto.UserDTO;
+//import com.wang.bean.dto.UserVO;
 //import com.wang.service.util.Service;
 //import org.easymock.EasyMock;
 //import org.junit.After;
@@ -55,25 +55,25 @@
 //     * Method: execute(HttpServletRequest req, HttpServletResponse resp)
 //     */
 //    @Test
-//    @PrepareForTest({UserDTO.Builder.class})
+//    @PrepareForTest({UserVO.Builder.class})
 //    public void testExecute() throws Exception {
 //        Service service = UserPswUpdateServiceImpl.newService();
 //
 //        final String path = "directoryPath";
 //
-//        UserDTO.Builder fileMock = PowerMock.createMock(UserDTO.Builder.class);
+//        UserVO.Builder fileMock = PowerMock.createMock(UserVO.Builder.class);
 //
 //
-//        UserDTO tested = fileMock.build();
+//        UserVO tested = fileMock.build();
 //
-//        PowerMock.expectNew(UserDTO.Builder.class, 8, "a").andReturn(fileMock);
+//        PowerMock.expectNew(UserVO.Builder.class, 8, "a").andReturn(fileMock);
 //
 //        EasyMock.expect(tested.getUserId()).andReturn(8);
 //
-//        PowerMock.replay(fileMock, UserDTO.Builder.class);
+//        PowerMock.replay(fileMock, UserVO.Builder.class);
 //
 //
-////        UserDTO userDTO = PowerMock.createMockAndExpectNew(UserDTO.Builder.class, 8, "test").build();
+////        UserVO userDTO = PowerMock.createMockAndExpectNew(UserVO.Builder.class, 8, "test").build();
 //
 //        EasyMock.expect(request.getParameter("newPassword1")).andReturn("updatePassword").times(1);  //期望调用的次数
 //        EasyMock.expect(request.getSession()).andReturn(session);

@@ -1,7 +1,7 @@
 package com.wang.manager;
 
-import com.wang.bean.doo.AdminDO;
-import com.wang.bean.dto.AdminDTO;
+import com.wang.bean.entity.AdminDO;
+import com.wang.bean.vo.AdminVO;
 
 /**
  * Admin模块管理器
@@ -14,17 +14,17 @@ public interface AdminManager extends Manager {
      * 管理员登录
      *
      * @param adminDO DO
-     * @return AdminDTO DTO
+     * @return AdminVO DTO
      * @throws
      */
-    public AdminDTO adminLogin(AdminDO adminDO);
+    public AdminVO adminLogin(AdminDO adminDO);
 
     /**
      * 管理员注册
      *
      * @param adminDO DO
-     * @return AdminDTO DTO
+     * @return AdminVO DTO
      * @throws
      */
-    public AdminDTO adminRegister(AdminDO adminDO);
+    public AdminVO adminRegister(AdminDO adminDO);
 }

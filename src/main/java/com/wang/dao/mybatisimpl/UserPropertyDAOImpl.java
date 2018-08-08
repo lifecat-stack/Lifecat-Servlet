@@ -1,6 +1,6 @@
 package com.wang.dao.mybatisimpl;
 
-import com.wang.bean.doo.UserPropertyDO;
+import com.wang.bean.entity.UserPropertyDO;
 import com.wang.dao.UserPropertyDAO;
 
 import java.sql.ResultSet;

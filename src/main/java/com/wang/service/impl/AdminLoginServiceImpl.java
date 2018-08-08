@@ -1,7 +1,7 @@
 //package com.wang.service.impl;
 //
 //import com.wang.bean.doo.AdminDO;
-//import com.wang.bean.dto.AdminDTO;
+//import com.wang.bean.dto.AdminVO;
 //import com.wang.constant.Page;
 //import com.wang.dao.AdminDAO;
 //import com.wang.dao.jdbcimpl.JdbcDAOFactory;
@@ -58,7 +58,7 @@
 //        adminDO = null;
 //
 //
-//        AdminDTO admin = new AdminDTO(adminDO.getAdminId(), adminDO.getAdminName(), adminDO.getAdminLevel()).build();
+//        AdminVO admin = new AdminVO(adminDO.getAdminId(), adminDO.getAdminName(), adminDO.getAdminLevel()).build();
 //        req.getSession().setAttribute("admin", admin);
 //        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
 //    }

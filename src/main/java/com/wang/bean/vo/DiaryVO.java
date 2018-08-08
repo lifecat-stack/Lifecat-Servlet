@@ -1,4 +1,4 @@
-package com.wang.bean.dto;
+package com.wang.bean.vo;
 
 /**
  * DTO :Diary图片对象
@@ -9,7 +9,7 @@ package com.wang.bean.dto;
  *
  * @auther ten
  */
-public class DiaryDTO implements Comparable<DiaryDTO> {
+public class DiaryVO implements Comparable<DiaryVO> {
 
     private Integer diaryId;
     private String diaryName;
@@ -21,7 +21,7 @@ public class DiaryDTO implements Comparable<DiaryDTO> {
      */
     private volatile int hashCode;
 
-    public DiaryDTO(Integer diaryId, String diaryName, String diaryText, String diaryDate) {
+    public DiaryVO(Integer diaryId, String diaryName, String diaryText, String diaryDate) {
         this.diaryId = diaryId;
         this.diaryName = diaryName;
         this.diaryText = diaryText;
@@ -43,7 +43,7 @@ public class DiaryDTO implements Comparable<DiaryDTO> {
      * @return this-other ? 负 : (this-other ? 0 : 正)
      */
     @Override
-    public int compareTo(DiaryDTO diary) {
+    public int compareTo(DiaryVO diary) {
         String date1 = this.diaryDate;
         String date2 = diary.diaryDate;
         for (int i = 0; i < date1.length(); i++) {
@@ -64,20 +64,20 @@ public class DiaryDTO implements Comparable<DiaryDTO> {
             return true;
         }
         //类型检测
-        if (!(obj instanceof DiaryDTO)) {
+        if (!(obj instanceof DiaryVO)) {
             return false;
         }
         //参数检测
-        if (!this.diaryId.equals(((DiaryDTO) obj).getDiaryId())) {
+        if (!this.diaryId.equals(((DiaryVO) obj).getDiaryId())) {
             return false;
         }
-        if (!this.diaryName.equals(((DiaryDTO) obj).getDiaryName())) {
+        if (!this.diaryName.equals(((DiaryVO) obj).getDiaryName())) {
             return false;
         }
-        if (!this.diaryText.equals(((DiaryDTO) obj).getDiaryText())) {
+        if (!this.diaryText.equals(((DiaryVO) obj).getDiaryText())) {
             return false;
         }
-        if (!this.diaryDate.equals(((DiaryDTO) obj).getDiaryDate())) {
+        if (!this.diaryDate.equals(((DiaryVO) obj).getDiaryDate())) {
             return false;
         }
         return true;

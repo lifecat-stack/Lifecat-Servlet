@@ -1,6 +1,6 @@
 package com.wang.dao.jdbcimpl;
 
-import com.wang.bean.doo.ImageDO;
+import com.wang.bean.entity.ImageDO;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.ImageDAO;
 import org.junit.*;

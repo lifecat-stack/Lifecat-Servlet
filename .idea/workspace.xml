@@ -11,6 +11,106 @@
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/AdminDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/AdminDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/entity/AdminDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/DiaryDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/DiaryDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/entity/DiaryDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageClassDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageClassDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/entity/ImageClassDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/entity/ImageDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageFeatureDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/ImageFeatureDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/entity/ImageFeatureDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/entity/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserIconDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserIconDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/entity/UserIconDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserPropertyDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/doo/UserPropertyDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/entity/UserPropertyDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/AdminDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/AdminVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/AlbumClassDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/AlbumClassVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/AlbumDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/AlbumDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/AlbumVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/DiariesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/DiariesVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/DiaryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/DiaryVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/ImageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/ImageVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/bean/dto/UserPropertyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/UserPropertyVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/AdminDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/ImageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserIconDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserIconDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/UserPropertyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AdminDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/DiaryDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/DiaryDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/ImageDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/ImageDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/UserIconDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/UserIconDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/UserPropertyDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/UserPropertyDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/AdminDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/DiaryDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/DiaryDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/ImageDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/ImageDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/UserIconDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/UserIconDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/UserPropertyDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/UserPropertyDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/manager/AdminManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/manager/AdminManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/manager/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/manager/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/manager/impl/AdminManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/manager/impl/AdminManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/AdminLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/AdminLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/AdminRegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/AdminRegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryListQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryListQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryUpdateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryUpdateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryUploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/DiaryUploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageClassQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageListQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageListQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageTextUpdateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageUploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/ImageUploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserIconUpdateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserIconUpdateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyUpdateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPropertyUpdateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPswUpdateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserPswUpdateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/UserRegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/UserRegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/AdminLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/AdminLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryListQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryListQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryUpdateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryUploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/DiaryUploadServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageListQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageListQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageUploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/ImageUploadServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserIconUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserIconUpdateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPropertyQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPropertyQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPropertyUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPropertyUpdateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPswUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserPswUpdateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserRegisterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wang/service/impl/UserRegisterServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/old_page/userhome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/old_page/userhome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/include/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/include/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userhome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userhome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/AdminDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/entity/AdminDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/DiaryDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/DiaryDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/entity/DiaryDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageClassDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageClassDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/entity/ImageClassDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/entity/ImageDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageFeatureDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/ImageFeatureDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/entity/ImageFeatureDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/entity/UserDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserIconDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserIconDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/entity/UserIconDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserPropertyDOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/bean/doo/UserPropertyDOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/bean/entity/UserPropertyDOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/DiaryDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/DiaryDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/ImageDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/ImageDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserIconDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserIconDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserPropertyDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/dao/jdbcimpl/UserPropertyDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserPswUpdateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wang/service/impl/UserPswUpdateTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,36 +159,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dao.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/dao.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/database.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="standard.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/standard.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HOST.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,6 +177,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ActionServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="124" column="25" lean-forward="true" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminDAOImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AdminDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,33 +204,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="UserPropertyDO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/entity/UserPropertyDO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="161">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="138">
-                <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="AdminVO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/vo/AdminVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filter.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Read/filter.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="MyBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/MyBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlbumClassVO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/vo/AlbumClassVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -190,9 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/mycss/index.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/include/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/include/top.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/include/homePage.jsp" />
@@ -241,6 +331,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/bean/entity/AdminDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/AdminDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wang/bean/vo/AdminVO.java" />
       </list>
     </option>
   </component>
@@ -289,18 +382,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="lifecatweb" type="58d84e3e:PackageViewProjectNode" />
-              <item name="lifecatweb" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,11 +403,6 @@
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="Read" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -349,15 +425,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
@@ -367,35 +434,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wang" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="doo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
@@ -430,138 +468,6 @@
               <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisimpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="exfunc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="observer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="openfunc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="subject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="subject" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wang" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -569,93 +475,25 @@
               <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="layerform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="pics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lifecatweb" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lifecatweb" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1142,14 +980,10 @@
       <workItem from="1531304477099" duration="2968000" />
       <workItem from="1531373157064" duration="1278000" />
       <workItem from="1533275623013" duration="1274000" />
-      <workItem from="1533278522906" duration="270000" />
-    </task>
-    <task id="LOCAL-00048" summary=" --version2.0 junit-bean">
-      <created>1529204591650</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1529204591650</updated>
+      <workItem from="1533278522906" duration="517000" />
+      <workItem from="1533282955851" duration="827000" />
+      <workItem from="1533625604241" duration="1387000" />
+      <workItem from="1533698352399" duration="453000" />
     </task>
     <task id="LOCAL-00049" summary=" --version2.0 junit-bean">
       <created>1529206680804</created>
@@ -1487,7 +1321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533276841475</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="--version1.2.0 &#10;  --2018.8.3&#10;  --开发文档v2 100%">
+      <created>1533279004618</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1533279004618</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1523,7 +1364,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="674709000" />
+    <option name="totallyTimeSpent" value="677623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1555,11 +1396,12 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Java Enterprise" order="9" sideWeight="0.3846154" side_tool="true" weight="0.11176471" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="right" id="Run" order="12" weight="0.28916308" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
+      <window_info anchor="right" id="Run" order="12" weight="0.28916308" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.26555794" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.26877683" />
       <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32996634" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.6918195" weight="0.32855093" />
@@ -1567,10 +1409,9 @@
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="JRebel" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32998565" />
+      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32859176" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.18220946" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -1582,6 +1423,7 @@
       <window_info anchor="right" id="R Packages" order="9" />
       <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.4992948" weight="0.081779055" />
       <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.25287357" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="JRebel" order="7" side_tool="true" />
@@ -1590,7 +1432,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2496474" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
       <window_info id="Capture Tool" order="2" />
@@ -1599,8 +1440,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
       <window_info anchor="bottom" id="Statistic" order="12" sideWeight="0.4992948" weight="0.69109195" />
+      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.32614943" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
       <window_info id="Java Enterprise" order="9" side_tool="true" weight="0.32957748" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
@@ -1609,9 +1450,9 @@
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8077475" visible="true" weight="0.16713682" />
       <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
-      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.32614943" />
+      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Structure" order="1" sideWeight="0.50142854" side_tool="true" weight="0.18661971" />
@@ -1694,81 +1535,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Read/standard.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/HOST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Read/filter.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="138">
-            <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/DiaryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/AbstractDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="39" column="42" selection-start-line="32" selection-start-column="8" selection-end-line="39" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1127">
@@ -1797,13 +1563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/init/sql/init.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
@@ -1811,31 +1570,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-541">
-          <caret line="187" column="17" selection-start-line="187" selection-start-column="17" selection-end-line="187" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userhome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9269">
-          <caret line="403" column="11" lean-forward="true" selection-start-line="403" selection-start-column="11" selection-end-line="403" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1334">
-          <caret line="58" column="28" lean-forward="true" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1958,20 +1696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/doo/DiaryDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/action/DispatcherAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Read/bean.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -2020,6 +1744,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3979">
+            <caret line="173" column="91" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="91" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4784">
+          <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userhome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="423" lean-forward="true" selection-start-line="423" selection-end-line="423" />
+          <folding>
+            <element signature="e#12696#12702#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/action/DispatcherAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/entity/AdminDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/entity/DiaryDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/entity/ImageClassDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/entity/ImageDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/entity/ImageFeatureDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/entity/UserIconDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/entity/UserPropertyDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/vo/AlbumClassVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/vo/AdminVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/bean/MyBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -2041,27 +1890,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/constant/DataBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/controller/ActionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="288">
+          <caret line="124" column="25" lean-forward="true" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wang/dao/jdbcimpl/AdminDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="138">
-            <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="207">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
         </state>
       </provider>
     </entry>

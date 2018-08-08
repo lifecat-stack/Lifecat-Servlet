@@ -1,6 +1,6 @@
 package com.wang.dao.jdbcimpl;
 
-import com.wang.bean.doo.DiaryDO;
+import com.wang.bean.entity.DiaryDO;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,7 +1,7 @@
 package com.wang.service.impl;
 
-import com.wang.bean.doo.DiaryDO;
-import com.wang.bean.dto.DiaryDTO;
+import com.wang.bean.entity.DiaryDO;
+import com.wang.bean.vo.DiaryVO;
 import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.DiaryDAO;
@@ -36,7 +36,7 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
-//        UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
+//        UserVO userDTO = (UserVO) req.getSession().getAttribute("user");
 //        Integer userId = userDTO.getUserId();
 
         Integer userId = 1;
@@ -61,15 +61,15 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
                     .build();
         }
 
-        // List<DiaryDTO>
-        List<DiaryDTO> diaryList = new ArrayList<>(16);
+        // List<DiaryVO>
+        List<DiaryVO> diaryList = new ArrayList<>(16);
         for (DiaryDO diaryDO : diaryDOList) {
-            DiaryDTO diaryDTO = new DiaryDTO(
+            DiaryVO diaryVO = new DiaryVO(
                     diaryDO.getDiaryId(),
                     diaryDO.getDiaryName(),
                     diaryDO.getdiaryText(),
                     diaryDO.getdiaryGmtModified());
-            diaryList.add(diaryDTO);
+            diaryList.add(diaryVO);
         }
 
         req.getSession().setAttribute("diaryList", diaryList);

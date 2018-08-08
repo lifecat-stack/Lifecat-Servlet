@@ -1,6 +1,6 @@
 package com.wang.service;
 
-import com.wang.bean.doo.UserPropertyDO;
+import com.wang.bean.entity.UserPropertyDO;
 import com.wang.service.util.Service;
 
 /**

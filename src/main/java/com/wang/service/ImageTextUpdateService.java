@@ -1,6 +1,6 @@
 package com.wang.service;
 
-import com.wang.bean.doo.ImageDO;
+import com.wang.bean.entity.ImageDO;
 import com.wang.service.util.Service;
 
 /**

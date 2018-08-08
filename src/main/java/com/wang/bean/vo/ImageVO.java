@@ -1,4 +1,4 @@
-package com.wang.bean.dto;
+package com.wang.bean.vo;
 
 /**
  * DTO :Image图片对象
@@ -9,7 +9,7 @@ package com.wang.bean.dto;
  *
  * @auther ten
  */
-public class ImageDTO implements Comparable<ImageDTO> {
+public class ImageVO implements Comparable<ImageVO> {
 
     private Integer imageId;
     private String imageText;
@@ -22,26 +22,26 @@ public class ImageDTO implements Comparable<ImageDTO> {
      */
     private volatile int hashCode;
 
-    public ImageDTO(Integer imageId) {
+    public ImageVO(Integer imageId) {
         this.imageId = imageId;
     }
 
-    public ImageDTO imageText(String imageText) {
+    public ImageVO imageText(String imageText) {
         this.imageText = imageText;
         return this;
     }
 
-    public ImageDTO imagePath(String imagePath) {
+    public ImageVO imagePath(String imagePath) {
         this.imagePath = imagePath;
         return this;
     }
 
-    public ImageDTO imageDate(String imageDate) {
+    public ImageVO imageDate(String imageDate) {
         this.imageDate = imageDate;
         return this;
     }
 
-    public ImageDTO imageClassId(Integer imageClassId) {
+    public ImageVO imageClassId(Integer imageClassId) {
         this.imageClassId = imageClassId;
         return this;
     }
@@ -61,7 +61,7 @@ public class ImageDTO implements Comparable<ImageDTO> {
      * @return this-other ? 负 : (this-other ? 0 : 正)
      */
     @Override
-    public int compareTo(ImageDTO img) {
+    public int compareTo(ImageVO img) {
         String date1 = this.imageDate;
         String date2 = img.imageDate;
         for (int i = 0; i < date1.length(); i++) {
@@ -81,20 +81,20 @@ public class ImageDTO implements Comparable<ImageDTO> {
             return true;
         }
         //类型检测
-        if (!(obj instanceof ImageDTO)) {
+        if (!(obj instanceof ImageVO)) {
             return false;
         }
         //参数检测
-        if (!this.imageId.equals(((ImageDTO) obj).getImageId())) {
+        if (!this.imageId.equals(((ImageVO) obj).getImageId())) {
             return false;
         }
-        if (!this.imageDate.equals(((ImageDTO) obj).getImageDate())) {
+        if (!this.imageDate.equals(((ImageVO) obj).getImageDate())) {
             return false;
         }
-        if (!this.imagePath.equals(((ImageDTO) obj).getImagePath())) {
+        if (!this.imagePath.equals(((ImageVO) obj).getImagePath())) {
             return false;
         }
-        if (!this.imageText.equals(((ImageDTO) obj).getImageText())) {
+        if (!this.imageText.equals(((ImageVO) obj).getImageText())) {
             return false;
         }
         return true;

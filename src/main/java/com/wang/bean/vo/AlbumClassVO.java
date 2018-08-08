@@ -1,4 +1,4 @@
-package com.wang.bean.dto;
+package com.wang.bean.vo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,20 +8,20 @@ import java.util.List;
  *
  * @auther ten
  */
-public class AlbumClassDTO {
+public class AlbumClassVO {
 
-    private final List<ImageDTO> imageClassList;
+    private final List<ImageVO> imageClassList;
     private final Integer userId;
     private final Integer imageClassId;
 
-    private AlbumClassDTO(int userId, int imageClassId) {
+    private AlbumClassVO(int userId, int imageClassId) {
         this.userId = userId;
         this.imageClassId = imageClassId;
         imageClassList = new ArrayList<>();
     }
 
-    public static AlbumClassDTO newAlbumClass(int userId, int imageClassId) {
-        return new AlbumClassDTO(userId, imageClassId);
+    public static AlbumClassVO newAlbumClass(int userId, int imageClassId) {
+        return new AlbumClassVO(userId, imageClassId);
     }
 
     /**
@@ -29,16 +29,16 @@ public class AlbumClassDTO {
      *
      * @param image ImageDTO对象
      */
-    public void addImage(ImageDTO image) {
+    public void addImage(ImageVO image) {
         imageClassList.add(image);
     }
 
     /**
-     * {@literal 获取List<ImageDTO>}
+     * {@literal 获取List<ImageVO>}
      *
-     * @return {@literal List<ImageDTO>}
+     * @return {@literal List<ImageVO>}
      */
-    public List<ImageDTO> getImageClassList() {
+    public List<ImageVO> getImageClassList() {
         return this.imageClassList;
     }
 

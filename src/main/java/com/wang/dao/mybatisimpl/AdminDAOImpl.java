@@ -1,6 +1,6 @@
 package com.wang.dao.mybatisimpl;
 
-import com.wang.bean.doo.AdminDO;
+import com.wang.bean.entity.AdminDO;
 import com.wang.dao.AdminDAO;
 
 import java.sql.ResultSet;

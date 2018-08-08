@@ -1,4 +1,4 @@
-package com.wang.bean.dto;
+package com.wang.bean.vo;
 
 /**
  * DTO :Admin管理员账号
@@ -7,7 +7,7 @@ package com.wang.bean.dto;
  *
  * @auther ten
  */
-public class AdminDTO {
+public class AdminVO {
 
     private Integer adminId;
     private String adminName;
@@ -18,7 +18,7 @@ public class AdminDTO {
      */
     private volatile int hashCode;
 
-    public AdminDTO(Integer adminId, String adminName, String adminLevel) {
+    public AdminVO(Integer adminId, String adminName, String adminLevel) {
         this.adminId = adminId;
         this.adminName = adminName;
         this.adminLevel = adminLevel;
@@ -31,17 +31,17 @@ public class AdminDTO {
             return true;
         }
         //类型检测
-        if (!(obj instanceof AdminDTO)) {
+        if (!(obj instanceof AdminVO)) {
             return false;
         }
         //参数检测
-        if (!this.adminId.equals(((AdminDTO) obj).getAdminId())) {
+        if (!this.adminId.equals(((AdminVO) obj).getAdminId())) {
             return false;
         }
-        if (!this.adminName.equals(((AdminDTO) obj).getAdminName())) {
+        if (!this.adminName.equals(((AdminVO) obj).getAdminName())) {
             return false;
         }
-        if (!this.adminLevel.equals(((AdminDTO) obj).getAdminLevel())) {
+        if (!this.adminLevel.equals(((AdminVO) obj).getAdminLevel())) {
             return false;
         }
         return true;

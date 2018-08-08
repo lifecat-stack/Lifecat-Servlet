@@ -1,6 +1,6 @@
 package com.wang.dao;
 
-import com.wang.bean.doo.UserIconDO;
+import com.wang.bean.entity.UserIconDO;
 
 import java.sql.SQLException;
 

@@ -1,7 +1,7 @@
 //package com.wang.manager.impl;
 //
 //import com.wang.bean.doo.AdminDO;
-//import com.wang.bean.dto.AdminDTO;
+//import com.wang.bean.dto.AdminVO;
 //import com.wang.dao.AdminDAO;
 //import com.wang.dao.DAOFactory;
 //import com.wang.dao.jdbcimpl.JdbcDAOFactory;
@@ -40,10 +40,10 @@
 //     * 管理员登录
 //     *
 //     * @param adminDO Form提交的信息
-//     * @return AdminDTO Admin数据传输对象
+//     * @return AdminVO Admin数据传输对象
 //     */
 //    @Override
-//    public AdminDTO adminLogin(AdminDO adminDO) {
+//    public AdminVO adminLogin(AdminDO adminDO) {
 //
 //        String adminName = adminDO.getAdminName();
 //
@@ -62,7 +62,7 @@
 //        }
 //
 //        // DTO
-//        return new AdminDTO.Builder(
+//        return new AdminVO.Builder(
 //                admin.getAdminId(),
 //                admin.getAdminName(),
 //                admin.getAdminLevel()
@@ -101,7 +101,7 @@
 //    }
 //
 //    @Override
-//    public AdminDTO adminRegister(AdminDO adminDO) {
+//    public AdminVO adminRegister(AdminDO adminDO) {
 //        return null;
 //    }
 //}

@@ -1,6 +1,6 @@
 package com.wang.service.impl;
 
-import com.wang.bean.doo.DiaryDO;
+import com.wang.bean.entity.DiaryDO;
 import com.wang.constant.Page;
 import com.wang.dao.DAOFactory;
 import com.wang.dao.DiaryDAO;
@@ -33,7 +33,7 @@ public class DiaryUploadServiceImpl implements DiaryUploadService {
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         // userId
-//        UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
+//        UserVO userDTO = (UserVO) req.getSession().getAttribute("user");
 //        Integer userId = userDTO.getUserId();
 
         Integer userId =1;

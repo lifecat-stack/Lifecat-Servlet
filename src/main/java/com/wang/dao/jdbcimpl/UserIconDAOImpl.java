@@ -1,7 +1,7 @@
 package com.wang.dao.jdbcimpl;
 
 import com.wang.dao.UserIconDAO;
-import com.wang.bean.doo.UserIconDO;
+import com.wang.bean.entity.UserIconDO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -1,4 +1,4 @@
-package com.wang.bean.dto;
+package com.wang.bean.vo;
 
 /**
  * DTO :UserProperty用户个人资料
@@ -7,7 +7,7 @@ package com.wang.bean.dto;
  *
  * @auther ten
  */
-public class UserPropertyDTO {
+public class UserPropertyVO {
 
     private Integer userId;
     private String nickname;
@@ -18,41 +18,41 @@ public class UserPropertyDTO {
     private String birthday;
     private String iconPath;
 
-    public UserPropertyDTO(Integer userId) {
+    public UserPropertyVO(Integer userId) {
         this.userId = userId;
     }
 
-    public UserPropertyDTO nickname(String val) {
+    public UserPropertyVO nickname(String val) {
         this.nickname = val;
         return this;
     }
 
-    public UserPropertyDTO signature(String val) {
+    public UserPropertyVO signature(String val) {
         this.signature = val;
         return this;
     }
 
-    public UserPropertyDTO email(String val) {
+    public UserPropertyVO email(String val) {
         this.email = val;
         return this;
     }
 
-    public UserPropertyDTO sex(String val) {
+    public UserPropertyVO sex(String val) {
         this.sex = val;
         return this;
     }
 
-    public UserPropertyDTO location(String val) {
+    public UserPropertyVO location(String val) {
         this.location = val;
         return this;
     }
 
-    public UserPropertyDTO birthday(String val) {
+    public UserPropertyVO birthday(String val) {
         this.birthday = val;
         return this;
     }
 
-    public UserPropertyDTO iconPath(String val) {
+    public UserPropertyVO iconPath(String val) {
         this.iconPath = val;
         return this;
     }

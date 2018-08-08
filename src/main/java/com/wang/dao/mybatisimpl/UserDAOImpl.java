@@ -1,6 +1,6 @@
 package com.wang.dao.mybatisimpl;
 
-import com.wang.bean.doo.UserDO;
+import com.wang.bean.entity.UserDO;
 import com.wang.dao.UserDAO;
 import com.wang.util.SqlSessionFactoryUtils;
 import org.apache.ibatis.session.SqlSession;

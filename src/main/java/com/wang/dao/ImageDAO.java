@@ -1,6 +1,6 @@
 package com.wang.dao;
 
-import com.wang.bean.doo.ImageDO;
+import com.wang.bean.entity.ImageDO;
 
 import java.sql.SQLException;
 import java.util.List;

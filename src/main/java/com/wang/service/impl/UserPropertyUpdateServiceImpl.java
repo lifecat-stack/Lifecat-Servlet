@@ -2,7 +2,7 @@
 //
 //import com.wang.bean.doo.UserDO;
 //import com.wang.bean.doo.UserPropertyDO;
-//import com.wang.bean.dto.UserDTO;
+//import com.wang.bean.dto.UserVO;
 //import com.wang.constant.Page;
 //import com.wang.dao.DAOFactory;
 //import com.wang.dao.UserPropertyDAO;
@@ -39,7 +39,7 @@
 //    @Override
 //    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 //
-//        UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
+//        UserVO userDTO = (UserVO) req.getSession().getAttribute("user");
 //        Integer userId = userDTO.getUserId();
 //
 //        String nickname = req.getParameter("nickname");

@@ -1,6 +1,6 @@
 package com.wang.dao.jdbcimpl;
 
-import com.wang.bean.doo.DiaryDO;
+import com.wang.bean.entity.DiaryDO;
 import com.wang.dao.DiaryDAO;
 
 import java.sql.ResultSet;

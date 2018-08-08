@@ -1,8 +1,8 @@
 //package com.wang.service.impl;
 //
 //import com.wang.bean.doo.UserPropertyDO;
-//import com.wang.bean.dto.UserDTO;
-//import com.wang.bean.dto.UserPropertyDTO;
+//import com.wang.bean.dto.UserVO;
+//import com.wang.bean.dto.UserPropertyVO;
 //import com.wang.constant.Page;
 //import com.wang.dao.DAOFactory;
 //import com.wang.dao.UserIconDAO;
@@ -36,7 +36,7 @@
 //    @Override
 //    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 //
-//        UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
+//        UserVO userDTO = (UserVO) req.getSession().getAttribute("user");
 //        Integer userId = userDTO.getUserId();
 //
 //        DAOFactory factory = new JdbcDAOFactory();
@@ -65,7 +65,7 @@
 //        }
 //
 //        assert userPropertyDO != null;
-//        UserPropertyDTO userPropertyDTO = new UserPropertyDTO.Builder(userId)
+//        UserPropertyVO userPropertyDTO = new UserPropertyVO.Builder(userId)
 //                .nickname(userPropertyDO.getPropertyNickname())
 //                .signature(userPropertyDO.getPropertySignature())
 //                .sex(userPropertyDO.getPropertySex())

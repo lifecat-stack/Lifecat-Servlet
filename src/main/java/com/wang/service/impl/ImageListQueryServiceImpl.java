@@ -1,8 +1,8 @@
 //package com.wang.service.impl;
 //
 //import com.wang.bean.doo.ImageDO;
-//import com.wang.bean.dto.ImageDTO;
-//import com.wang.bean.dto.UserDTO;
+//import com.wang.bean.dto.ImageVO;
+//import com.wang.bean.dto.UserVO;
 //import com.wang.constant.Page;
 //import com.wang.dao.DAOFactory;
 //import com.wang.dao.ImageDAO;
@@ -39,7 +39,7 @@
 //
 //    @Override
 //    public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
-//        UserDTO userDTO = (UserDTO) req.getSession().getAttribute("user");
+//        UserVO userDTO = (UserVO) req.getSession().getAttribute("user");
 //        Integer userId = userDTO.getUserId();
 //
 //        // 获取DAO实例
@@ -62,10 +62,10 @@
 //                    .build();
 //        }
 //
-//        // List<ImageDTO>
-//        List<ImageDTO> imageList = new ArrayList<>(64);
+//        // List<ImageVO>
+//        List<ImageVO> imageList = new ArrayList<>(64);
 //        for (ImageDO imageDO : imageDOList) {
-//            ImageDTO imageDTO = new ImageDTO.Builder(
+//            ImageVO imageDTO = new ImageVO.Builder(
 //                    imageDO.getImageId(),
 //                    imageDO.getImagePath(),
 //                    imageDO.getImageGmtCreate())

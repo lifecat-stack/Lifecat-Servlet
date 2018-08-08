@@ -1,4 +1,4 @@
-package com.wang.bean.dto;
+package com.wang.bean.vo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,18 +8,18 @@ import java.util.List;
  *
  * @auther ten
  */
-public class DiariesDTO {
+public class DiariesVO {
 
-    private final List<DiaryDTO> diaryList;
+    private final List<DiaryVO> diaryList;
     private final Integer userId;
 
-    private DiariesDTO(int userId) {
+    private DiariesVO(int userId) {
         this.userId = userId;
         diaryList = new ArrayList<>();
     }
 
-    public static DiariesDTO newDiaries(int userId) {
-        return new DiariesDTO(userId);
+    public static DiariesVO newDiaries(int userId) {
+        return new DiariesVO(userId);
     }
 
     /**
@@ -27,16 +27,16 @@ public class DiariesDTO {
      *
      * @param diary DiaryDTO对象
      */
-    public void addDiary(DiaryDTO diary) {
+    public void addDiary(DiaryVO diary) {
         diaryList.add(diary);
     }
 
     /**
-     * {@literal 获取List<DiaryDTO>}
+     * {@literal 获取List<DiaryVO>}
      *
-     * @return {@literal List<DiaryDTO>}
+     * @return {@literal List<DiaryVO>}
      */
-    public List<DiaryDTO> getDiaryList() {
+    public List<DiaryVO> getDiaryList() {
         return this.diaryList;
     }
 

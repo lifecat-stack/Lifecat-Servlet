@@ -1,7 +1,7 @@
 //package com.wang.service.impl;
 //
 //import com.wang.bean.doo.UserDO;
-//import com.wang.bean.dto.UserDTO;
+//import com.wang.bean.dto.UserVO;
 //import com.wang.constant.Page;
 //import com.wang.dao.DAOFactory;
 //import com.wang.dao.UserDAO;
@@ -94,7 +94,7 @@
 //            return new ServiceResult.Builder(false)
 //                    .errormsg("sql query exception").page(Page.PAGE_INDEX).build();
 //        }
-//        UserDTO user = new UserDTO.Builder(userDO2.getUserId(), userDO2.getUserName()).build();
+//        UserVO user = new UserVO.Builder(userDO2.getUserId(), userDO2.getUserName()).build();
 //        req.getSession().setAttribute("user", user);
 //        logger.info("user_register success");
 //        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();

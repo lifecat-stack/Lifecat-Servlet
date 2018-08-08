@@ -1,6 +1,6 @@
 package com.wang.dao;
 
-import com.wang.bean.doo.AdminDO;
+import com.wang.bean.entity.AdminDO;
 
 import java.sql.SQLException;
 

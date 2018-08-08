@@ -1,7 +1,7 @@
 package com.wang.dao.jdbcimpl;
 
 import com.wang.dao.AdminDAO;
-import com.wang.bean.doo.AdminDO;
+import com.wang.bean.entity.AdminDO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
