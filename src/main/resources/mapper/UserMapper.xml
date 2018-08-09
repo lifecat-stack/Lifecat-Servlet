@@ -1,43 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
-        PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
-        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.spring.mapper.UserMapper">
 
-    <insert id="insertUserAndGetKey" parameterType="userDO" useGeneratedKeys="true" keyProperty="userId">
-        INSERT INTO user (user_name, user_password, user_level, user_gmt_create, user_gmt_modified)
-        VALUES (#{userName}, #{userPassword}, #{userLevel}, #{userGmtCreate}, #{userGmtModified})
-    </insert>
+    <resultMap id="UserList" type="userDO">
+        <id property="userId" column="user_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userPassword" column="user_password"/>
+        <result property="userLevel" column="user_level"/>
+        <result property="userGmtCreate" column="user_gmt_create"/>
+        <result property="userGmtModified" column="user_gmt_modified"/>
+    </resultMap>
 
-    <select id="queryUserByName" parameterType="string" resultType="userDO">
+    <select id="selectUserList" resultMap="UserList">
         select
             user_id,
+            user_name,
             user_password,
             user_level,
             user_gmt_create,
             user_gmt_modified
+        from user;
+    </select>
+
+    <select id="selectUserByName" parameterType="map" resultType="userDO">
+        select
+            user_id as userId,
+            user_name as userName,
+            user_password as userPassword,
+            user_level as userLevel,
+            user_gmt_create as userGmtCreate,
+            user_gmt_modified as userGmtModified
         from user
         where user_name = #{userName}
-
     </select>
 
-    <select id="isUserExistedByName" parameterType="string" resultType="boolean">
-        select count(user_id) as count
-        from user
-        where user_name = #{userName}
-    </select>
+    <insert id="insertUser" parameterType="userDO">
+        INSERT INTO user (
+            user_name,
+            user_password,
+            user_level,
+            user_gmt_create,
+            user_gmt_modified)
+        VALUES (
+            #{userName},
+            #{userPassword},
+            #{userLevel},
+            #{userGmtCreate},
+            #{userGmtModified})
+    </insert>
 
-    <select id="queryUserPasswordByName" parameterType="string" resultType="userDO">
-        select user_password
-        from user
-        where user_name = #{serName}
-
-    </select>
-
-    <update id="updateUserPassword" parameterType="userDO">
+    <update id="updateUser" parameterType="userDO">
         update user
-        set user_password = #{userPassword}
+        set
+            user_name         = #{userName},
+            user_password     = #{userPassword},
+            user_level        = #{userLevel},
+            user_gmt_modified = #{userGmtModified}
         where user_id = #{userId}
-
     </update>
+
+    <delete id="deleteUserById" parameterType="int">
+        delete from user
+        where user_id = #{userId}
+    </delete>
+
 </mapper>

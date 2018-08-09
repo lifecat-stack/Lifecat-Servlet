@@ -1,6 +1,6 @@
-<%@ page import="com.wang.bean.vo.DiaryVO" %>
+<%@ page import="com.ten.bean.vo.DiaryVO" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.wang.service.DiaryListQueryService" %>
+<%@ page import="com.ten.service.DiaryListQueryService" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
