@@ -651,6 +651,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wang.model" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.wang.service.serviceimpl" />
       <recent name="com.wang.dao" />
@@ -666,25 +669,22 @@
       <recent name="com.wang.filter" />
       <recent name="com.wang.dao" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\lifecatweb\src\main\java\com\wang\dao\mybatisimpl" />
+      <recent name="D:\JavaProject\lifecatweb\src\main\resources" />
+      <recent name="D:\Java\lifecatweb\src\main\webapp\js" />
+      <recent name="D:\Java\lifecatweb\src\main\webapp" />
+      <recent name="D:\Java\lifecatweb\src\main\java\com\wang\util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wang.db" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaProject\lifecatweb\Read" />
       <recent name="D:\JavaProject\lifecatweb\init\sql" />
       <recent name="D:\Java\lifecatweb\src\main\webapp\WEB-INF\old_page" />
       <recent name="D:\Java\lifecatweb\src\main\webapp\layerform" />
       <recent name="D:\Java\lifecatweb\src\main\webapp" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\lifecatweb\src\main\webapp\js" />
-      <recent name="D:\Java\lifecatweb\src\main\webapp" />
-      <recent name="D:\Java\lifecatweb\src\main\java\com\wang\util" />
-      <recent name="D:\Java\lifecatweb\src\main\webapp\css" />
-      <recent name="D:\Java\lifecatweb\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wang.db" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.wang.model" />
     </key>
   </component>
   <component name="RunDashboard">
