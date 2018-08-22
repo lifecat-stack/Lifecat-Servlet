@@ -7,14 +7,17 @@ package com.ten.constant;
  * @auther ten
  */
 public class Page {
+
     private Page() {
         throw new AssertionError();
     }
+
 
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/index.jsp
      */
     public static final String PAGE_INDEX = "/index.jsp";
+    public static final String WELCOME = "/lifecatweb" + PAGE_INDEX;
     /**
      * http:xxx.xxx.xxx.xxx:8080/lifecatweb/userhome.jsp
      */

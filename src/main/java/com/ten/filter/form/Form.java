@@ -1,7 +1,5 @@
 package com.ten.filter.form;
 
-import com.ten.filter.form.impl.FormResult;
-
 import javax.servlet.ServletRequest;
 
 /**

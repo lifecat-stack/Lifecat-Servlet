@@ -1,21 +1,20 @@
 package com.ten.filter.form.impl;
 
 import com.ten.filter.form.Form;
+import com.ten.filter.form.FormResult;
 
 import javax.servlet.ServletRequest;
 
 /**
  * register.do
- * <p>
- * 访问权限: 包访问
  *
  * @auther ten
  */
-class UserRegisterForm extends BaseVerification implements Form {
+public class UserRegisterForm extends BaseVerification implements Form {
     private UserRegisterForm() {
     }
 
-    static Form getForm() {
+    public static Form getForm() {
         return new UserRegisterForm();
     }
 

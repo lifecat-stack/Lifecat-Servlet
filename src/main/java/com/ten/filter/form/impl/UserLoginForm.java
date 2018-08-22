@@ -1,6 +1,7 @@
 package com.ten.filter.form.impl;
 
 import com.ten.filter.form.Form;
+import com.ten.filter.form.FormResult;
 
 import javax.servlet.ServletRequest;
 
@@ -9,12 +10,11 @@ import javax.servlet.ServletRequest;
  *
  * @auther ten
  */
-class UserLoginForm extends BaseVerification implements Form {
-
+public class UserLoginForm extends BaseVerification implements Form {
     private UserLoginForm() {
     }
 
-    static Form getForm() {
+    public static Form getForm() {
         return new UserLoginForm();
     }
 

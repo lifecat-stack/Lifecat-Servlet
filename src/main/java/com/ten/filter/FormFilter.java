@@ -1,8 +1,8 @@
 package com.ten.filter;
 
 import com.ten.filter.form.Form;
-import com.ten.filter.form.impl.FormResult;
-import com.ten.filter.form.impl.FormFactory;
+import com.ten.filter.form.FormResult;
+import com.ten.filter.form.FormFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

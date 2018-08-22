@@ -1,7 +1,7 @@
 package com.ten.controller;
 
 import com.ten.constant.Page;
-import com.ten.filter.form.impl.FormResult;
+import com.ten.filter.form.FormResult;
 import com.ten.service.util.Service;
 import com.ten.service.util.ServiceFactory;
 import com.ten.service.impl.ServiceResult;
@@ -128,7 +128,7 @@ public class ActionServlet extends HttpServlet {
         logger.debug("dispatcher url: {}", url);
         // webapp目录下 执行客户端转发
         if ("/index.jsp".equals(url)) {
-            resp.sendRedirect(Page.PAGE_INDEX);
+            resp.sendRedirect(Page.WELCOME);
         }
         // WEB-INF目录下 执行服务器转发
         else {

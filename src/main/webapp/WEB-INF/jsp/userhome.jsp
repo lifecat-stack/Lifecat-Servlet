@@ -367,10 +367,6 @@
 
             var tr = $(this).parent().parent();
             var id = tr.children("td[class='diary-id']").text();
-            var name = tr.children("td#diary_name").text();
-            var text = tr.children("td#diary_text").text();
-
-            console.log("id" + id);
 
             // 利用ajax将数据提交到后台
             $.ajax({

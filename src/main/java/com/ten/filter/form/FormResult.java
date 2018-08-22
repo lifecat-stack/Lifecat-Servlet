@@ -1,4 +1,4 @@
-package com.ten.filter.form.impl;
+package com.ten.filter.form;
 
 import com.ten.bean.MyBuilder;
 
@@ -26,7 +26,7 @@ public class FormResult {
      *
      * @auther ten
      */
-    protected static class Builder implements MyBuilder<FormResult> {
+    public  static class Builder implements MyBuilder<FormResult> {
 
         private final boolean success;
 

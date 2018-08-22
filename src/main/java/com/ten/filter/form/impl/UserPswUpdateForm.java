@@ -1,21 +1,20 @@
 package com.ten.filter.form.impl;
 
 import com.ten.filter.form.Form;
+import com.ten.filter.form.FormResult;
 
 import javax.servlet.ServletRequest;
 
 /**
  * modifypsw.do
- * <p>
- * 访问权限: 包访问
  *
  * @auther ten
  */
-class UserPswUpdateForm extends BaseVerification implements Form {
+public class UserPswUpdateForm extends BaseVerification implements Form {
     private UserPswUpdateForm() {
     }
 
-    static Form getForm() {
+    public static Form getForm() {
         return new UserPswUpdateForm();
     }
 

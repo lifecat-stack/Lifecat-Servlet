@@ -1,6 +1,6 @@
-package com.ten.filter.form.impl;
+package com.ten.filter.form;
 
-import com.ten.filter.form.Form;
+import com.ten.filter.form.impl.*;
 
 /**
  * FormFactory: Form工厂
@@ -21,13 +21,13 @@ public class FormFactory {
         } else if ("user_register".equals(url)) {
             form = UserRegisterForm.getForm();
         } else if ("admin_login".equals(url)) {
-            form  = UserLoginForm.getForm();
+            // TODO
         } else if ("admin_register".equals(url)) {
-            form = UserRegisterForm.getForm();
+            // TODO
         } else if ("user_property_update".equals(url)) {
             form = UserPropertyUpdateForm.getForm();
         } else if ("user_password_update".equals(url)) {
-            form = UserPropertyUpdateForm.getForm();
+            form = UserPswUpdateForm.getForm();
         } else if ("image_upload".equals(url)) {
             form = ImageUploadForm.getForm();
         } else if ("diary_upload".equals(url)) {
