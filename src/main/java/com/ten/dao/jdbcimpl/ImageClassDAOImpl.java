@@ -7,11 +7,8 @@ import com.ten.dao.ImageClassDAO;
  *
  * @auther ten
  */
-class ImageClassDAOImpl extends AbstractDAO implements ImageClassDAO {
+public class ImageClassDAOImpl extends AbstractDAO implements ImageClassDAO {
 
-     private ImageClassDAOImpl(){}
+    public  ImageClassDAOImpl(){}
 
-    static ImageClassDAO newImageClassDAO() {
-        return new ImageClassDAOImpl();
-    }
-}
+ }

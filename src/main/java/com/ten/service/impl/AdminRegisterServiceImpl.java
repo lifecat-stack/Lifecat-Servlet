@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2018/5/24
  * @auther ten
  */
- class AdminRegisterServiceImpl implements AdminRegisterService {
+public class AdminRegisterServiceImpl implements AdminRegisterService {
 
     private Logger logger = LoggerFactory.getLogger(AdminRegisterServiceImpl.class);
 

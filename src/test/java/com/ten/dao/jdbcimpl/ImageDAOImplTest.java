@@ -47,7 +47,6 @@ public class ImageDAOImplTest {
      */
     @Test
     public void testNewImageDAO() throws Exception {
-        assertNotNull(ImageDAOImpl.newImageDAO());
     }
 
     /**

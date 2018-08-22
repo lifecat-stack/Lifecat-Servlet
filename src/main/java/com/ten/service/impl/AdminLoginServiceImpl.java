@@ -19,7 +19,7 @@ import java.sql.SQLException;
  * @date 2018/5/24
  * @auther ten
  */
-class AdminLoginServiceImpl implements AdminLoginService {
+public class AdminLoginServiceImpl implements AdminLoginService {
 
     private static final Logger logger = LoggerFactory.getLogger(AdminLoginServiceImpl.class);
 

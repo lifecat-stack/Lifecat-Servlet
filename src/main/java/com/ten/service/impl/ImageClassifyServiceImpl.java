@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2018/5/24
  * @auther ten
  */
-class ImageClassifyServiceImpl implements ImageClassifyService {
+public class ImageClassifyServiceImpl implements ImageClassifyService {
     private Logger logger = LoggerFactory.getLogger(ImageClassifyServiceImpl.class);
 
     public ImageClassifyServiceImpl() {

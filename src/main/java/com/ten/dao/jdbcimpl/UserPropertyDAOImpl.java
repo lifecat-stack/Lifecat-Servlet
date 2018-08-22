@@ -11,14 +11,11 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-class UserPropertyDAOImpl extends AbstractDAO implements UserPropertyDAO {
+public class UserPropertyDAOImpl extends AbstractDAO implements UserPropertyDAO {
 
-    private UserPropertyDAOImpl() {
+    public  UserPropertyDAOImpl() {
     }
 
-    static UserPropertyDAO newUserPropertyDAO() {
-        return new UserPropertyDAOImpl();
-    }
 
     @Override
     public void insertUserProperty(UserPropertyDO userPropertyDO) throws SQLException {

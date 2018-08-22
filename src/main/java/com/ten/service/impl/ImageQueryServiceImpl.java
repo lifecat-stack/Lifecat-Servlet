@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2018/5/24
  * @auther ten
  */
-class ImageQueryServiceImpl implements ImageQueryService {
+public class ImageQueryServiceImpl implements ImageQueryService {
     private Logger logger = LoggerFactory.getLogger(ImageQueryServiceImpl.class);
 
     public ImageQueryServiceImpl() {

@@ -46,7 +46,6 @@ public class UserIconDAOImplTest {
      */
     @Test
     public void testNewUserIconDAO() throws Exception {
-        assertNotNull(UserIconDAOImpl.newUserIconDAO());
     }
 
     /**

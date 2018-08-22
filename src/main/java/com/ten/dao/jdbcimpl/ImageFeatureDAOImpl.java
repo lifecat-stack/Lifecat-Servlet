@@ -7,11 +7,8 @@ import com.ten.dao.ImageFeatureDAO;
  *
  * @auther ten
  */
-class ImageFeatureDAOImpl extends AbstractDAO  implements ImageFeatureDAO {
-    private ImageFeatureDAOImpl() {
+public class ImageFeatureDAOImpl extends AbstractDAO  implements ImageFeatureDAO {
+    public  ImageFeatureDAOImpl() {
     }
 
-    static ImageFeatureDAO newImageFeatureDAO() {
-        return new ImageFeatureDAOImpl();
-    }
-}
+ }

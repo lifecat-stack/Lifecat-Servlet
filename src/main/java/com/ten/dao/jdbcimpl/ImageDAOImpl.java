@@ -13,14 +13,11 @@ import java.util.List;
  *
  * @auther ten
  */
-class ImageDAOImpl extends AbstractDAO implements ImageDAO {
+public class ImageDAOImpl extends AbstractDAO implements ImageDAO {
 
-    private ImageDAOImpl() {
+    public  ImageDAOImpl() {
     }
 
-    static ImageDAO newImageDAO() {
-        return new ImageDAOImpl();
-    }
 
     @Override
     public int insertImage(ImageDO imageDO) throws SQLException {

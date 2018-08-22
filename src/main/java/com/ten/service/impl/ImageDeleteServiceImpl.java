@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2018/5/24
  * @auther ten
  */
- class ImageDeleteServiceImpl implements ImageDeleteService {
+public class ImageDeleteServiceImpl implements ImageDeleteService {
      private Logger logger = LoggerFactory.getLogger(ImageDeleteServiceImpl.class);
 
     public ImageDeleteServiceImpl() {

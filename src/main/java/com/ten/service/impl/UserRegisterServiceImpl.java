@@ -20,7 +20,7 @@ import java.sql.SQLException;
  * @date 2018/5/24
  * @auther ten
  */
-class UserRegisterServiceImpl implements UserRegisterService {
+public class UserRegisterServiceImpl implements UserRegisterService {
 
     private Logger logger = LoggerFactory.getLogger(UserRegisterServiceImpl.class);
 

@@ -46,7 +46,6 @@ public class UserPropertyDAOImplTest {
      */
     @Test
     public void testNewUserPropertyDAO() throws Exception {
-        assertNotNull(UserPropertyDAOImpl.newUserPropertyDAO());
     }
 
     /**

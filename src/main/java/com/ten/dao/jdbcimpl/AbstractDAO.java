@@ -19,7 +19,7 @@ import java.sql.*;
  * @date 2018/5/22
  * @auther ten
  */
-abstract class AbstractDAO implements DAO, KeyGenerator {
+public abstract class AbstractDAO implements DAO, KeyGenerator {
     private static Logger logger = LoggerFactory.getLogger(AbstractDAO.class);
 
     /**

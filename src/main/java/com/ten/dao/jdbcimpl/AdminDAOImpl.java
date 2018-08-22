@@ -11,12 +11,8 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-class AdminDAOImpl extends AbstractDAO implements AdminDAO {
-    AdminDAOImpl() {
-    }
-
-    static AdminDAO newAdminDAO() {
-        return new AdminDAOImpl();
+public class AdminDAOImpl extends AbstractDAO implements AdminDAO {
+    public AdminDAOImpl() {
     }
 
     @Override

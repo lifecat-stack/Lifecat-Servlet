@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @auther ten
  */
-class DiaryDAOImpl extends AbstractDAO implements DiaryDAO {
+public class DiaryDAOImpl extends AbstractDAO implements DiaryDAO {
     public DiaryDAOImpl() {
     }
 

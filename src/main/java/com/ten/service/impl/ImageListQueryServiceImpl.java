@@ -26,7 +26,7 @@ import java.util.List;
  * @date 2018/5/24
  * @auther ten
  */
-class ImageListQueryServiceImpl implements ImageListQueryService {
+public class ImageListQueryServiceImpl implements ImageListQueryService {
     private Logger logger = LoggerFactory.getLogger(ImageListQueryServiceImpl.class);
 
     public ImageListQueryServiceImpl() {

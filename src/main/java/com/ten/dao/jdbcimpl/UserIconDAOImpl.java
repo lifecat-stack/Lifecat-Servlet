@@ -11,13 +11,10 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-class UserIconDAOImpl extends AbstractDAO implements UserIconDAO {
-    private UserIconDAOImpl() {
+public class UserIconDAOImpl extends AbstractDAO implements UserIconDAO {
+    public  UserIconDAOImpl() {
     }
 
-    static UserIconDAO newUserIconDAO() {
-        return new UserIconDAOImpl();
-    }
 
     @Override
     public void insertUserIcon(UserIconDO userIconDO) throws SQLException {

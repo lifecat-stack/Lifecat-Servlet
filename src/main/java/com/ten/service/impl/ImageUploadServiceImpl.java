@@ -27,7 +27,7 @@ import java.sql.SQLException;
  * @date 2018/5/24
  * @auther ten
  */
-class ImageUploadServiceImpl implements ImageUploadService {
+public class ImageUploadServiceImpl implements ImageUploadService {
     private Logger logger = LoggerFactory.getLogger(ImageUploadServiceImpl.class);
 
     public ImageUploadServiceImpl() {

@@ -46,7 +46,6 @@ public class UserDAOImplTest {
      */
     @Test
     public void testNewUserDAO() throws Exception {
-        assertNotNull(UserDAOImpl.newUserDAO());
     }
 
     /**
