@@ -129,7 +129,7 @@ public class ActionServlet extends HttpServlet {
         logger.debug("dispatcher url: {}", url);
         // webapp目录下 执行客户端转发
         if ("/index.jsp".equals(url)) {
-            url = "http://localhost:8080/lifecatweb/index.html";
+            url = "http://localhost:8080/lifecatweb/index.jsp";
             resp.sendRedirect(url);
         }
         // WEB-INF目录下 执行服务器转发

@@ -20,21 +20,16 @@ public class FormFactory {
             form = UserLoginForm.getForm();
         } else if ("user_register".equals(url)) {
             form = UserRegisterForm.getForm();
-
         } else if ("admin_login".equals(url)) {
-            // TODO
+            form  = UserLoginForm.getForm();
         } else if ("admin_register".equals(url)) {
-            // TODO
-
+            form = UserRegisterForm.getForm();
         } else if ("user_property_update".equals(url)) {
             form = UserPropertyUpdateForm.getForm();
-
         } else if ("user_password_update".equals(url)) {
             form = UserPropertyUpdateForm.getForm();
-
         } else if ("image_upload".equals(url)) {
             form = ImageUploadForm.getForm();
-
         } else if ("diary_upload".equals(url)) {
             form = DiaryUploadForm.getForm();
         }

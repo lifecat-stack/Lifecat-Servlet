@@ -11,22 +11,22 @@
     <!--编码信息-->
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
     <!--引用库：bootstrap-->
-    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap/3.3.6/bootstrap.min.css">
+    <script src="../../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap/3.3.6/bootstrap.min.css">
     <!--引用库：jQuery-->
-    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../../js/jquery/2.0.0/jquery.min.js"></script>
     <!--引用库：mycss-->
-    <link rel="stylesheet" href="css/mycss/header.css">
-    <link rel="stylesheet" href="css/mycss/homePage.css">
-    <link rel="stylesheet" href="css/mycss/footer.css">
+    <link rel="stylesheet" href="../../css/mycss/header.css">
+    <link rel="stylesheet" href="../../css/mycss/homePage.css">
+    <link rel="stylesheet" href="../../css/mycss/footer.css">
     <!--引用库：myjs-->
-    <script src="js/myjs/bordertap.js"></script>
-    <script src="js/myjs/rollbackground.js"></script>
-    <script src="js/myjs/toptap.js"></script>
+    <script src="../../js/myjs/bordertap.js"></script>
+    <script src="../../js/myjs/rollbackground.js"></script>
+    <script src="../../js/myjs/toptap.js"></script>
     <!--引入库：layer-->
-    <script src="js/layer/layer.js"></script>
+    <script src="../../js/layer/layer.js"></script>
     <!--引入库：标题栏layer-->
-    <script src="js/myjs/navLayerButton.js"></script>
+    <script src="../../js/myjs/navLayerButton.js"></script>
 </head>
 
 <!--启动时：发送刷新请求-->
@@ -98,7 +98,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="index.html">
+                    <a href="../../index.jsp">
                         <span class="glyphicon glyphicon-log-out"></span>
                         退出
                     </a>
@@ -330,7 +330,7 @@
                             <tr class="row">
 
                                 <td class="col-md-3">
-                                    <img src='images/usericon.jpg' height=200 width=200
+                                    <img src='../../images/usericon.jpg' height=200 width=200
                                          style="margin-top: 20px;"/>
                                 </td>
 
@@ -357,7 +357,7 @@
 </div>
 
 <!--引用外部js库：jQuery-->
-<script src="js/t19ctgxcrlxxxxxxxx.js"></script>
+<script src="../../js/t19ctgxcrlxxxxxxxx.js"></script>
 
 </body>
 

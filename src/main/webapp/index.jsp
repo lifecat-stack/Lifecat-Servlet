@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isELIgnored="false" %>
+
 <html lang="en">
 <head>
     <!--
@@ -41,11 +43,11 @@
     <!--页面标签图标-->
     <link rel="icon" href="images/webicon.png" type="image/x-icon">
 
+    <!--引用库：jQuery-->
+    <script src="js/jquery/2.0.0/jquery.min.js"></script>
     <!--引用库：bootstrap-->
     <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap/3.3.6/bootstrap.min.css">
-    <!--引用库：jQuery-->
-    <script src="js/jquery/2.0.0/jquery.min.js"></script>
 
     <!--引用外部样式表：index.css-->
     <style type="text/css">
@@ -66,7 +68,7 @@
             </div>
             <div class="modal-body">
 
-                <form class="form-group" action="user/user_login.do"
+                <form class="form-group" action="user_login.do"
                       method="post">
                     <div class="form-group">
                         <label for="userName">账号</label> <input class="form-control"
@@ -105,7 +107,7 @@
             </div>
             <div class="modal-body">
                 <!-- 注册表单 -->
-                <form class="form-group" action="index.jsp/user_register.do" method="post">
+                <form class="form-group" action="user_register.do" method="post">
                     <div class="form-group">
                         <label for="rUserName">注册账号</label> <input class="form-control"
                                                                    type="text" placeholder="请输入想注册的账号" name="rUserName"
@@ -149,7 +151,7 @@
             </div>
             <div class="modal-body">
                 <!-- 登录表单 -->
-                <form class="form-group" action="index.jsp/admin_login.do" method="post">
+                <form class="form-group" action="admin_login.do" method="post">
                     <div class="form-group">
                         <label for="adminName">账号</label> <input class="form-control"
                                                                  type="text" placeholder="请输入账号" name="adminName"
@@ -166,6 +168,28 @@
                         <button class="btn btn-primary" type="submit">登录</button>
                         <button class="btn btn-danger" data-dismiss="modal">取消</button>
                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 体验 -->
+<div id="experience" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-title">
+                <h1 class="text-center">体验</h1>
+            </div>
+            <div class="modal-body">
+                <label for="adminName">账号:admin</label>
+                <label for="adminPassword">密码:admin</label>
+                <label>请选择管理员登录</label>
                 </form>
             </div>
         </div>
@@ -239,14 +263,8 @@
     </div>
 </div>
 
-<script>
-
-</script>
-
 <!--引用外部js库：背景滚动-->
 <script type="text/javascript" src="js/myjs/rollbackground.js"></script>
-<!--引用外部js库：jQuery-->
-<script src="js/t19ctgxcrlxxxxxxxx.js"></script>
 
 </body>
 </html>

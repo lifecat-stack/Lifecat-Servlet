@@ -31,7 +31,7 @@
         <!--导航条头部-->
         <div class="navbar-header">
             <a href="userhome.action" target="_blank" class="navbar-brand">
-                <img src="../../images/iconimage.png" height="44" width="152" style="margin-top: -13px;"/>
+                <img src="../../../images/iconimage.png" height="44" width="152" style="margin-top: -13px;"/>
             </a>
 
             <!--logo-->
@@ -80,7 +80,7 @@
                     </a>
                 </li>
 
-                <li><a href=../../index.html><span
+                <li><a href=../WEB-INF/old_page/index.jsp><span
                         class="glyphicon glyphicon-log-out"></span>退出</a>
                 </li>
             </ul>

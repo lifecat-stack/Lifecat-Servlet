@@ -9,10 +9,10 @@
     <!--编码信息-->
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
     <!--引用库：bootstrap-->
-    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap/3.3.6/bootstrap.min.css">
+    <script src="../../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap/3.3.6/bootstrap.min.css">
     <!--引用库：jQuery-->
-    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../../js/jquery/2.0.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                             刷新
                         </button>
                     </form>
-                    <a href="WEB-INF/old_page/upimage.html">
+                    <a href="../old_page/upimage.html">
                         <button class="row">
                             上传图片
                         </button>
@@ -40,7 +40,7 @@
                 <div class="col-md-11">
                     <span>
                         <h2>
-                            <a href="imageshow2.html">
+                            <a href="imageshow2.jsp">
                                 智能图像分类
                             </a>
                         </h2>

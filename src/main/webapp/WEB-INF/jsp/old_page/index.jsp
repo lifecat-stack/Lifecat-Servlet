@@ -9,11 +9,11 @@
     <meta name="renderer" content="webkit"/>
 
     <title>成长相册</title>
-    <script src="../js/jquery/2.0.0/jquery.min.js"></script>
-    <link href="../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
-    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script src="../../../js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="../../../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="../../../js/bootstrap/3.3.6/bootstrap.min.js"></script>
 
-    <link rel="icon" href="../images/webicon.png" type="image/x-icon">
+    <link rel="icon" href="../../../images/webicon.png" type="image/x-icon">
 
     <style>
         * {
@@ -126,7 +126,7 @@
 
         .logo {
             float: left;
-            background-image: url(../images/welcomelogo.png);
+            background-image: url(../../../images/welcomelogo.png);
             display: block;
             width: 280px;
             height: 100px;
@@ -180,7 +180,7 @@
         .slogan {
             width: 600px;
             height: 300px;
-            background: url(../images/backgroundtext.png) no-repeat 0 0;
+            background: url(../../../images/backgroundtext.png) no-repeat 0 0;
             display: inline-block;
             background-size: 600px;
         }
@@ -226,7 +226,7 @@
             position: absolute;
             left: 20px;
             top: 14px;
-            background: url(../images/peopleicon.png) no-repeat 0 0;
+            background: url(../../../images/peopleicon.png) no-repeat 0 0;
             display: block;
             width: 24px;
             height: 24px;
@@ -234,15 +234,15 @@
         }
 
         .main-entry a .title .seller {
-            background-image: url(../images/emailicon.png);
+            background-image: url(../../../images/emailicon.png);
         }
 
         .main-entry a .title .developer {
-            background-image: url(../images/peopleicon.png);
+            background-image: url(../../../images/peopleicon.png);
         }
 
         .main-entry a .title .developer2 {
-            background-image: url(../images/talkicon.png);
+            background-image: url(../../../images/talkicon.png);
         }
 
         .main-entry s {
@@ -375,7 +375,7 @@
             float: left;
             margin-right: 5px;
             height: 28px;
-            background: url(../images/trademark.png) no-repeat 0 0;
+            background: url(../../../images/trademark.png) no-repeat 0 0;
         }
 
         a.pic1 {
@@ -642,11 +642,11 @@
 
             <div class="items">
                 <div class="item item1"
-                     style="background-image:url(../images/background1.jpg)"></div>
+                     style="background-image:url(../../../images/background1.jpg)"></div>
                 <div class="item item2"
-                     style="background-image:url(../images/background2.jpg)"></div>
+                     style="background-image:url(../../../images/background2.jpg)"></div>
                 <div class="item item3"
-                     style="background-image:url(../images/background3.jpg)"></div>
+                     style="background-image:url(../../../images/background3.jpg)"></div>
             </div>
 
         </div>
@@ -659,7 +659,7 @@
         </div>
     </div>
 </div>
-<script src="../js/t19ctgxcrlxxxxxxxx.js"></script>
+<script src="../../../js/t19ctgxcrlxxxxxxxx.js"></script>
 
 <%-- 尝试js新功能 --%>
 <script>

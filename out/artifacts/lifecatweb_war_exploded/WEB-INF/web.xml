@@ -5,7 +5,7 @@
          version="4.0">
     <!--首页-->
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
     <error-page>
@@ -16,7 +16,7 @@
     <!--Encoding Filter-->
     <filter>
         <filter-name>EncodingFilter</filter-name>
-        <filter-class>com.wang.filter.EncodingFilter</filter-class>
+        <filter-class>com.ten.filter.EncodingFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>EncodingFilter</filter-name>
@@ -26,7 +26,7 @@
     <!--Form Filter-->
     <filter>
         <filter-name>FormFilter</filter-name>
-        <filter-class>com.wang.filter.FormFilter</filter-class>
+        <filter-class>com.ten.filter.FormFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>FormFilter</filter-name>
@@ -36,7 +36,7 @@
     <!--Directory 请求转发器 Servlet-->
     <servlet>
         <servlet-name>Web</servlet-name>
-        <servlet-class>com.wang.controller.ActionServlet</servlet-class>
+        <servlet-class>com.ten.controller.ActionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Web</servlet-name>
@@ -46,7 +46,7 @@
     <!--Directory action转发器 Servlet-->
     <servlet>
         <servlet-name>Action</servlet-name>
-        <servlet-class>com.wang.action.DispatcherAction</servlet-class>
+        <servlet-class>com.ten.action.DispatcherAction</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Action</servlet-name>
