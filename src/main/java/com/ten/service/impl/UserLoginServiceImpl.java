@@ -3,11 +3,9 @@ package com.ten.service.impl;
 import com.ten.bean.entity.UserDO;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.UserDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
 import com.ten.service.UserLoginService;
-import com.ten.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,13 +26,10 @@ class UserLoginServiceImpl implements UserLoginService {
 
     private Logger logger = LoggerFactory.getLogger(UserLoginServiceImpl.class);
 
-    private UserLoginServiceImpl() {
-    }
+    private UserDAO dao;
 
-    static Service newService() {
-        return new UserLoginServiceImpl();
+    public UserLoginServiceImpl() {
     }
-
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
@@ -42,33 +37,16 @@ class UserLoginServiceImpl implements UserLoginService {
         String userName = req.getParameter("userName");
         String userPassword = req.getParameter("userPassword");
 
-        // 获取DAO实例
-        DAOFactory factory = new JdbcDAOFactory();
-        UserDAO dao = (UserDAO) factory.getDaoByTableName("user");
+        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
 
-        // DAO查询user
-        UserDO userDO = null;
-        boolean success = false;
-        try {
-            userDO = dao.queryUser(userName);
-            success = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        if (!success) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("数据库查询异常").page(Page.PAGE_INDEX).build();
-        }
+        UserDO userDO = queryUserByName(userName);
 
         if (userDO == null) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("数据库无此用户").page(Page.PAGE_INDEX).build();
+            return new ServiceResult.Builder(false).errormsg("该用户不存在").page(Page.PAGE_INDEX).build();
         }
 
         if (!userPassword.equals(userDO.getUserPassword())) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("密码错误").page(Page.PAGE_INDEX).build();
+            return new ServiceResult.Builder(false).errormsg("密码错误").page(Page.PAGE_INDEX).build();
         }
 
         UserVO user = new UserVO(userDO.getUserId(), userDO.getUserName());
@@ -83,7 +61,12 @@ class UserLoginServiceImpl implements UserLoginService {
 
     @Override
     public UserDO queryUserByName(String userName) {
-        return null;
+        try {
+            return dao.queryUser(userName);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
 

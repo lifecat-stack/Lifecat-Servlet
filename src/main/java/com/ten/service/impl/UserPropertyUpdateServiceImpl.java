@@ -1,6 +1,5 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.UserDO;
 import com.ten.bean.entity.UserPropertyDO;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
@@ -8,7 +7,6 @@ import com.ten.dao.DAOFactory;
 import com.ten.dao.UserPropertyDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
 import com.ten.service.UserPropertyUpdateService;
-import com.ten.service.util.Service;
 import com.ten.util.DateTimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +17,7 @@ import java.sql.SQLException;
 
 /**
  * 用户资料更新
- *
+ * <p>
  * 失败 Page.PAGE_USERHOME
  * 成功 Page.PAGE_USERHOME
  *
@@ -30,12 +28,11 @@ class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService {
 
     private Logger logger = LoggerFactory.getLogger(UserPropertyUpdateServiceImpl.class);
 
-    private UserPropertyUpdateServiceImpl() {
+    private UserPropertyDAO dao;
+
+    public UserPropertyUpdateServiceImpl() {
     }
 
-    static Service newService() {
-        return new UserPropertyUpdateServiceImpl();
-    }
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
@@ -51,10 +48,8 @@ class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService {
 
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
-        // 将图片信息写入数据库
-        // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        UserPropertyDAO dao = (UserPropertyDAO) factory.getDaoByTableName("user_property");
+        dao = (UserPropertyDAO) factory.getDaoByTableName("user_property");
 
         UserPropertyDO userPropertyDO = new UserPropertyDO();
         userPropertyDO.setUserId(userId);
@@ -67,28 +62,17 @@ class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService {
         userPropertyDO.setPropertyGmtCreate(dateTime);
         userPropertyDO.setPropertyGmtModified(dateTime);
 
-        boolean success2 = false;
-        try {
-            dao.insertUserProperty(userPropertyDO);
-            success2 = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        updateUserProperty(userPropertyDO);
 
-        if (!success2) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("数据库插入异常")
-                    .page(Page.PAGE_USERHOME)
-                    .build();
-        }
-
-        return new ServiceResult.Builder(true)
-                .page(Page.PAGE_USERHOME)
-                .build();
+        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
-    public void updateUserProperty(UserDO userDO) {
-
+    public void updateUserProperty(UserPropertyDO userPropertyDO) {
+        try {
+            dao.insertUserProperty(userPropertyDO);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

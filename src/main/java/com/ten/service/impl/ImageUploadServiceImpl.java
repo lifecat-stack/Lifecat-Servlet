@@ -8,7 +8,6 @@ import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
 import com.ten.service.ImageUploadService;
-import com.ten.service.util.Service;
 import com.ten.util.DateTimeUtil;
 import com.ten.util.ImageWriter;
 import org.slf4j.Logger;
@@ -31,11 +30,7 @@ import java.sql.SQLException;
 class ImageUploadServiceImpl implements ImageUploadService {
     private Logger logger = LoggerFactory.getLogger(ImageUploadServiceImpl.class);
 
-    private ImageUploadServiceImpl() {
-    }
-
-    static Service newService() {
-        return new ImageUploadServiceImpl();
+    public ImageUploadServiceImpl() {
     }
 
     @Override

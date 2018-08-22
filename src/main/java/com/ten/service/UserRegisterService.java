@@ -13,5 +13,5 @@ public interface UserRegisterService extends Service {
 
     boolean isUserExisted(String userName);
 
-    void insertUserToDatabase(UserDO userDO);
+    int insertUserToDatabase(UserDO userDO);
 }

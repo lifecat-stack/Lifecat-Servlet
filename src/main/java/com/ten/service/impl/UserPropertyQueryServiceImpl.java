@@ -29,7 +29,10 @@ class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
 
     private Logger logger = LoggerFactory.getLogger(UserPropertyQueryServiceImpl.class);
 
-    private UserPropertyQueryServiceImpl() {
+    private UserPropertyDAO propertyDAO;
+    private UserIconDAO iconDAO;
+
+    public UserPropertyQueryServiceImpl() {
     }
 
     @Override
@@ -39,32 +42,17 @@ class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
         Integer userId = userDTO.getUserId();
 
         DAOFactory factory = new JdbcDAOFactory();
-        UserPropertyDAO propertyDAO = (UserPropertyDAO) factory.getDaoByTableName("user_property");
-        UserIconDAO iconDAO = (UserIconDAO) factory.getDaoByTableName("user_icon");
+        propertyDAO = (UserPropertyDAO) factory.getDaoByTableName("user_property");
+        iconDAO = (UserIconDAO) factory.getDaoByTableName("user_icon");
 
-        UserPropertyDO userPropertyDO = null;
-        String userIconPath = null;
-        boolean success = false;
-        try {
-            userPropertyDO = propertyDAO.queryUserProperty(userId);
-            userIconPath = iconDAO.queryUserIcon(userId);
-            success = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
+        UserPropertyDO userPropertyDO = queryUserProperty(userId);
+        if (userPropertyDO == null) {
+            return new ServiceResult.Builder(false).errormsg("用户信息不存在").page(Page.PAGE_USERHOME).build();
         }
 
-        if (!success) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("数据库查询异常").page(Page.PAGE_USERHOME).build();
-        }
+        String userIconPath = queryUserIcon(userId);
 
-        if (userPropertyDO == null && userIconPath == null) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("用户信息为空").page(Page.PAGE_USERHOME).build();
-        }
-
-        assert userPropertyDO != null;
-        UserPropertyVO userPropertyDTO = new UserPropertyVO(userId)
+        UserPropertyVO userPropertyVO = new UserPropertyVO(userId)
                 .nickname(userPropertyDO.getPropertyNickname())
                 .signature(userPropertyDO.getPropertySignature())
                 .sex(userPropertyDO.getPropertySex())
@@ -73,12 +61,27 @@ class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
                 .location(userPropertyDO.getPropertyLocation())
                 .iconPath(userIconPath);
 
-        req.getSession().setAttribute("userProperty", userPropertyDTO);
+        req.getSession().setAttribute("userProperty", userPropertyVO);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
     public UserPropertyDO queryUserProperty(int userId) {
-        return null;
+        try {
+            return propertyDAO.queryUserProperty(userId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public String queryUserIcon(int userId) {
+        try {
+            return iconDAO.queryUserIcon(userId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

@@ -1,7 +1,6 @@
 package com.ten.service.impl;
 
 import com.ten.service.ImageDeleteService;
-import com.ten.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,12 +15,9 @@ import javax.servlet.http.HttpServletResponse;
  class ImageDeleteServiceImpl implements ImageDeleteService {
      private Logger logger = LoggerFactory.getLogger(ImageDeleteServiceImpl.class);
 
-    private ImageDeleteServiceImpl() {
+    public ImageDeleteServiceImpl() {
     }
 
-    static Service newService() {
-        return new ImageDeleteServiceImpl();
-    }
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         // TODO

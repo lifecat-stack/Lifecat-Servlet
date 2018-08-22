@@ -1,7 +1,6 @@
 package com.ten.service.impl;
 
 import com.ten.service.ImageClassifyService;
-import com.ten.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,11 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 class ImageClassifyServiceImpl implements ImageClassifyService {
     private Logger logger = LoggerFactory.getLogger(ImageClassifyServiceImpl.class);
 
-    private ImageClassifyServiceImpl() {
-    }
-
-    static Service newService() {
-        return new ImageClassifyServiceImpl();
+    public ImageClassifyServiceImpl() {
     }
 
     @Override

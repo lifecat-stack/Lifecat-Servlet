@@ -1,6 +1,5 @@
 package com.ten.service;
 
-import com.ten.bean.entity.UserDO;
 import com.ten.service.util.Service;
 
 /**
@@ -10,6 +9,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface UserPswUpdateService extends Service {
-    void updateUserPassword(UserDO userDO);
+    void updateUserPassword(int userId, String newpassword);
 }
 

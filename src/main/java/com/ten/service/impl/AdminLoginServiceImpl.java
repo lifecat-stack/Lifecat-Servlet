@@ -5,7 +5,6 @@ import com.ten.bean.vo.AdminVO;
 import com.ten.constant.Page;
 import com.ten.dao.AdminDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
-import com.ten.service.util.Service;
 import com.ten.service.AdminLoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,28 +20,12 @@ import java.sql.SQLException;
  * @auther ten
  */
 class AdminLoginServiceImpl implements AdminLoginService {
-    /**
-     * 日志
-     */
+
     private static final Logger logger = LoggerFactory.getLogger(AdminLoginServiceImpl.class);
-    /**
-     * @param :DAO 访问A
-     */
+
     private AdminDAO dao;
-    /**
-     * DO
-     */
-    private AdminDO adminDO;
-    /**
-     * dao操作成功与否
-     */
-    private boolean success = true;
 
-    private AdminLoginServiceImpl() {
-    }
-
-    public static Service newService() {
-        return new AdminLoginServiceImpl();
+    public AdminLoginServiceImpl() {
     }
 
     @Override
@@ -51,51 +34,21 @@ class AdminLoginServiceImpl implements AdminLoginService {
         String adminName = req.getParameter("adminName");
         String adminPassword = req.getParameter("adminPassword");
 
-        // 获取DAO实例
         dao = (AdminDAO) new JdbcDAOFactory().getDaoByTableName("admin");
 
-        // DAO查询admin
-        adminDO = null;
+        AdminDO adminDO = queryAdminByName(adminName);
 
+        if (adminDO == null) {
+            return new ServiceResult.Builder(false).page(Page.PAGE_INDEX).errormsg("该管理员不存在").build();
+        }
+
+        if (!adminPassword.equals(adminDO.getAdminPassword())) {
+            return new ServiceResult.Builder(false).page(Page.PAGE_INDEX).errormsg("密码错误").build();
+        }
 
         AdminVO admin = new AdminVO(adminDO.getAdminId(), adminDO.getAdminName(), adminDO.getAdminLevel());
         req.getSession().setAttribute("admin", admin);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
-    }
-
-    private String queryAdmin(String adminName) {
-
-        try {
-            adminDO = dao.queryAdmin(adminName);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        printError();
-
-        return null;
-    }
-
-    private void printError() {
-        if (!success) {
-            logger.warn("数据库查询异常");
-            success = false;
-
-        }
-        if (adminDO == null) {
-            logger.warn("数据库无此管理员");
-            success = false;
-
-        }
-        if (!"admin".equals(adminDO.getAdminPassword())) {
-            logger.warn("管理员密码错误");
-            success = false;
-
-        }
-    }
-
-    private void result() {
-
     }
 
     @Override
@@ -105,6 +58,11 @@ class AdminLoginServiceImpl implements AdminLoginService {
 
     @Override
     public AdminDO queryAdminByName(String adminName) {
-        return null;
+        try {
+            return dao.queryAdmin(adminName);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

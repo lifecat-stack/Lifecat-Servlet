@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.UserDO;
+import com.ten.bean.entity.UserPropertyDO;
 import com.ten.service.util.Service;
 
 /**
@@ -13,5 +13,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface UserPropertyUpdateService extends Service {
-    void updateUserProperty(UserDO userDO);
+
+    void updateUserProperty(UserPropertyDO userPropertyDO);
 }

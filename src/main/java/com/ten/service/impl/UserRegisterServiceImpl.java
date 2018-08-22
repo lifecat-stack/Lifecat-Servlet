@@ -3,11 +3,9 @@ package com.ten.service.impl;
 import com.ten.bean.entity.UserDO;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.UserDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
 import com.ten.service.UserRegisterService;
-import com.ten.service.util.Service;
 import com.ten.util.DateTimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,12 +24,11 @@ class UserRegisterServiceImpl implements UserRegisterService {
 
     private Logger logger = LoggerFactory.getLogger(UserRegisterServiceImpl.class);
 
-    private UserRegisterServiceImpl() {
+    private UserDAO dao;
+
+    public UserRegisterServiceImpl() {
     }
 
-    static Service newService() {
-        return new UserRegisterServiceImpl();
-    }
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
@@ -40,23 +37,11 @@ class UserRegisterServiceImpl implements UserRegisterService {
 
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
-        DAOFactory factory = new JdbcDAOFactory();
-        UserDAO dao = (UserDAO) factory.getDaoByTableName("user");
+        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
 
-        boolean isExisted = true;
-        try {
-            isExisted = dao.isUserExisted(rUserName);
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
+        boolean isExisted = isUserExisted(rUserName);
         if (isExisted) {
-            logger.warn("username is existed");
-            return new ServiceResult.Builder(false)
-                    .errormsg("username is existed")
-                    .page(Page.PAGE_INDEX)
-                    .build();
+            return new ServiceResult.Builder(false).errormsg("该用户已存在").page(Page.PAGE_INDEX).build();
         }
 
         UserDO userDO = new UserDO();
@@ -66,48 +51,33 @@ class UserRegisterServiceImpl implements UserRegisterService {
         userDO.setUserGmtCreate(dateTime);
         userDO.setUserGmtModified(dateTime);
 
-        boolean success = false;
-        try {
-            dao.insertUser(userDO);
-            success = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
+        int userId = insertUserToDatabase(userDO);
+        if (userId < 1) {
+            return new ServiceResult.Builder(false).errormsg("注册失败").page(Page.PAGE_INDEX).build();
         }
 
-        if (!success) {
-            logger.warn("sql insert exception");
-            return new ServiceResult.Builder(false)
-                    .errormsg("sql insert exception").page(Page.PAGE_INDEX).build();
-        }
-
-        UserDO userDO2 = null;
-        boolean success2 = false;
-        try {
-            userDO2 = dao.queryUser(rUserName);
-            success2 = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        if (!success2) {
-            logger.warn("sql query exception");
-            return new ServiceResult.Builder(false)
-                    .errormsg("sql query exception").page(Page.PAGE_INDEX).build();
-        }
-        UserVO user = new UserVO(userDO2.getUserId(), userDO2.getUserName());
+        UserVO user = new UserVO(userId, rUserName);
         req.getSession().setAttribute("user", user);
-        logger.info("user_register success");
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
-
     }
 
     @Override
     public boolean isUserExisted(String userName) {
-        return false;
+        try {
+            return dao.isUserExisted(userName);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return true;
+        }
     }
 
     @Override
-    public void insertUserToDatabase(UserDO userDO) {
-
+    public int insertUserToDatabase(UserDO userDO) {
+        try {
+            return dao.insertUser(userDO);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+        }
     }
 }

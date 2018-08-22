@@ -8,7 +8,6 @@ import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
 import com.ten.service.ImageListQueryService;
-import com.ten.service.util.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,11 +29,7 @@ import java.util.List;
 class ImageListQueryServiceImpl implements ImageListQueryService {
     private Logger logger = LoggerFactory.getLogger(ImageListQueryServiceImpl.class);
 
-    private ImageListQueryServiceImpl() {
-    }
-
-    static Service newService() {
-        return new ImageListQueryServiceImpl();
+    public ImageListQueryServiceImpl() {
     }
 
     @Override

@@ -1,13 +1,11 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.UserDO;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.UserDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
 import com.ten.service.UserPswUpdateService;
-import com.ten.service.util.Service;
 import com.ten.util.DateTimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,11 +24,9 @@ class UserPswUpdateServiceImpl implements UserPswUpdateService {
 
     private Logger logger = LoggerFactory.getLogger(UserPswUpdateServiceImpl.class);
 
-    private UserPswUpdateServiceImpl() {
-    }
+    private UserDAO dao;
 
-    static Service newService() {
-        return new UserPswUpdateServiceImpl();
+    public UserPswUpdateServiceImpl() {
     }
 
     @Override
@@ -38,37 +34,25 @@ class UserPswUpdateServiceImpl implements UserPswUpdateService {
         String newpassword = req.getParameter("newPassword1");
 
         UserVO userDTO = (UserVO) req.getSession().getAttribute("user");
-
         Integer userId = userDTO.getUserId();
 
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
         DAOFactory factory = new JdbcDAOFactory();
-        UserDAO dao = (UserDAO) factory.getDaoByTableName("user");
+        dao = (UserDAO) factory.getDaoByTableName("user");
 
-        boolean success = false;
-        try {
-            dao.updateUserPassword(userId, newpassword);
-            success = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        updateUserPassword(userId, newpassword);
 
-        if (success) {
-            logger.warn("password update failure");
-            return new ServiceResult.Builder(false)
-                    .errormsg("password update failure")
-                    .page(Page.PAGE_USERHOME)
-                    .build();
-        }
-
-        logger.info("password update success");
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
-    public void updateUserPassword(UserDO userDO) {
-
+    public void updateUserPassword(int userId, String newpassword) {
+        try {
+            dao.updateUserPassword(userId, newpassword);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
 

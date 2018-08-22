@@ -3,6 +3,8 @@ package com.ten.service;
 import com.ten.bean.entity.UserIconDO;
 import com.ten.service.util.Service;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * 用户头像上传
  * <p>
@@ -14,4 +16,6 @@ import com.ten.service.util.Service;
  */
 public interface UserIconUpdateService extends Service {
     void updateUserIcon(UserIconDO userIconDO);
+
+    void writeUserIcon(HttpServletRequest req);
 }

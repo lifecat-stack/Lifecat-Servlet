@@ -4,14 +4,11 @@ import com.ten.bean.MyBuilder;
 import com.ten.constant.Page;
 
 /**
- * ServiceResult: 返回ServiceModel执行结果对象
- * <p>
- * 访问范围: 构造器包访问
- * 访问范围: getter全局
+ * ServiceResult: 返回Service执行结果对象
  *
  * @auther ten
  */
-public class ServiceResult implements com.ten.service.util.ServiceResult {
+public class ServiceResult {
 
     private final boolean success;
     private final String page;
@@ -23,7 +20,6 @@ public class ServiceResult implements com.ten.service.util.ServiceResult {
         this.errormsg = builder.errormsg;
     }
 
-
     /**
      * Builder: ModelResult构建器
      *
@@ -33,7 +29,6 @@ public class ServiceResult implements com.ten.service.util.ServiceResult {
 
         private final boolean success;
 
-        //page: 默认指向index界面
         private String errormsg = "null";
         private String page = Page.PAGE_INDEX;
 
@@ -57,21 +52,19 @@ public class ServiceResult implements com.ten.service.util.ServiceResult {
         }
     }
 
-    //ServiceResult@{isSuccess:true,page:'http:...index.jsp',errormsg:'null'}
+    // ServiceResult@{isSuccess:true,page:'http:...index.jsp',errormsg:'null'}
     @Override
     public String toString() {
         return "ServiceResult@{isSuccess:" + success + ",page:" + page + ",errormsg:" + errormsg + "}";
     }
 
-    //getter
     public String getErrormsg() {
         return errormsg;
     }
 
-  public boolean isSuccess() {
+    public boolean isSuccess() {
         return success;
     }
-
 
     public String getPage() {
         return page;

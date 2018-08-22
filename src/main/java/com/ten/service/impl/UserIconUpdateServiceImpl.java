@@ -8,7 +8,6 @@ import com.ten.dao.DAOFactory;
 import com.ten.dao.UserIconDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
 import com.ten.service.UserIconUpdateService;
-import com.ten.service.util.Service;
 import com.ten.util.DateTimeUtil;
 import com.ten.util.ImageWriter;
 import org.slf4j.Logger;
@@ -21,22 +20,23 @@ import java.sql.SQLException;
 
 /**
  * 用户头像上传
- *
+ * <p>
  * 失败 Page.PAGE_USERHOME
  * 成功 Page.PAGE_USERHOME
  *
  * @date 2018/5/24
  * @auther ten
  */
- class UserIconUpdateServiceImpl implements UserIconUpdateService {
- private Logger logger = LoggerFactory.getLogger(UserIconUpdateServiceImpl.class);
+class UserIconUpdateServiceImpl implements UserIconUpdateService {
 
-    private UserIconUpdateServiceImpl() {
+    private Logger logger = LoggerFactory.getLogger(UserIconUpdateServiceImpl.class);
+
+    private UserIconDAO dao;
+    private ImageWriter writer;
+
+    public UserIconUpdateServiceImpl() {
     }
 
-    static Service newService() {
-        return new UserIconUpdateServiceImpl();
-    }
     /**
      * 上传icon到服务器并写入数据库
      *
@@ -52,29 +52,14 @@ import java.sql.SQLException;
 
         String iconPath = Directory.IMAGE_PATH + String.valueOf(userId) + "/icon/"
                 + dateTime;
-        ImageWriter writer = ImageWriter.newImageWriter(iconPath);
+        writer = ImageWriter.newImageWriter(iconPath);
 
         // 将图片数据流写入磁盘
-        boolean success = false;
-        try {
-            writer.writeImage(req.getInputStream());
-            success = true;
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        if (!success) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("数据流写入失败")
-                    .page(Page.PAGE_USERHOME)
-                    .build();
-        }
+        writeUserIcon(req);
 
         // 将图片信息写入数据库
-        // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        UserIconDAO dao = (UserIconDAO) factory.getDaoByTableName("user_icon");
-
+        dao = (UserIconDAO) factory.getDaoByTableName("user_icon");
 
         UserIconDO userIconDO = new UserIconDO();
         userIconDO.setUserId(userId);
@@ -82,28 +67,26 @@ import java.sql.SQLException;
         userIconDO.setIconGmtCreate(dateTime);
         userIconDO.setIconGmtModified(dateTime);
 
-        boolean success2 = false;
-        try {
-            dao.insertUserIcon(userIconDO);
-            success2 = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        updateUserIcon(userIconDO);
 
-        if (!success2) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("数据库插入异常")
-                    .page(Page.PAGE_USERHOME)
-                    .build();
-        }
-
-        return new ServiceResult.Builder(true)
-                .page(Page.PAGE_USERHOME)
-                .build();
+        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
     public void updateUserIcon(UserIconDO userIconDO) {
+        try {
+            dao.insertUserIcon(userIconDO);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
+    @Override
+    public void writeUserIcon(HttpServletRequest req) {
+        try {
+            writer.writeImage(req.getInputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

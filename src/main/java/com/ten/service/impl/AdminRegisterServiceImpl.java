@@ -1,7 +1,6 @@
 package com.ten.service.impl;
 
 import com.ten.bean.entity.AdminDO;
-import com.ten.service.util.Service;
 import com.ten.service.AdminRegisterService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,18 +10,16 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 管理员注册
+ * TODO 功能未开放
  *
  * @date 2018/5/24
  * @auther ten
  */
  class AdminRegisterServiceImpl implements AdminRegisterService {
+
     private Logger logger = LoggerFactory.getLogger(AdminRegisterServiceImpl.class);
 
-    private AdminRegisterServiceImpl() {
-    }
-
-    static Service newService() {
-        return new AdminRegisterServiceImpl();
+    public AdminRegisterServiceImpl() {
     }
 
     @Override
@@ -38,6 +35,5 @@ import javax.servlet.http.HttpServletResponse;
 
     @Override
     public void insertAdminToDatabase(AdminDO adminDO) {
-
     }
 }
