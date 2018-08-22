@@ -4,6 +4,8 @@ import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
 
+import static junit.framework.TestCase.assertNotNull;
+
 /**
  * JdbcDAOFactory Tester.
  *
@@ -27,8 +29,7 @@ public class JdbcDAOFactoryTest {
     @Test
     public void testGetDaoByTableName() throws Exception {
         JdbcDAOFactory factory = new JdbcDAOFactory();
-        factory.getDaoByTableName("diary");
+        assertNotNull(factory.getDaoByTableName("diary"));
     }
-
 
 } 

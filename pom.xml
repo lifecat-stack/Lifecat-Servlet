@@ -20,6 +20,11 @@
         </plugins>
     </build>
 
+    <properties>
+        <tomcat.version>8.0.36</tomcat.version>
+        <jstl.version>1.2</jstl.version>
+    </properties>
+
     <dependencies>
         <!-- slf4j -->
         <dependency>
@@ -31,12 +36,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.2</version>
-        </dependency>
-        <!-- servlet -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
         </dependency>
         <!-- Junit -->
         <dependency>
@@ -51,68 +50,38 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.11</version>
         </dependency>
-        <!-- httpunit -->
+        <!-- Servlet -->
         <dependency>
-            <groupId>org.httpunit</groupId>
-            <artifactId>httpunit</artifactId>
-            <version>1.7.2</version>
-            <scope>test</scope>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <scope>provided</scope>
+            <version>${tomcat.version}</version>
         </dependency>
-        <!-- cactus -->
+        <!-- JSP -->
         <dependency>
-            <groupId>cactus</groupId>
-            <artifactId>cactus</artifactId>
-            <version>13-1.7.1</version>
-            <scope>test</scope>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jsp-api</artifactId>
+            <scope>provided</scope>
+            <version>${tomcat.version}</version>
         </dependency>
-        <!-- easymock -->
+        <!-- JSTL -->
+        <!-- jstl -->
         <dependency>
-            <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>
-            <version>3.4</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- powermock -->
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-module-junit4</artifactId>
-            <version>1.6.5</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-api-easymock</artifactId>
-            <version>1.6.5</version>
-            <scope>test</scope>
-        </dependency>
-        <!--EL-->
-        <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        <!-- jedis -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>2.9.0</version>
-        </dependency>
-        <!--jstl-->
-        <dependency>
-            <groupId>javax.servlet</groupId>
+            <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
-        <!-- mybatis -->
+        <!-- jstl-api -->
         <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.2.8</version>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>jstl-api</artifactId>
+            <version>1.2</version>
         </dependency>
+        <!-- jstl-impl -->
         <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-            <version>1.2.2</version>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jstl-impl</artifactId>
+            <version>1.2</version>
         </dependency>
     </dependencies>
 

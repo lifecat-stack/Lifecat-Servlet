@@ -1,7 +1,5 @@
-package com.ten.dao.jdbcimpl;
+package com.ten.dao;
 
-import com.ten.dao.DAO;
-import com.ten.dao.KeyGenerator;
 import com.ten.util.Connections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,8 +17,9 @@ import java.sql.*;
  * @date 2018/5/22
  * @auther ten
  */
-public abstract class AbstractDAO implements DAO, KeyGenerator {
-    private static Logger logger = LoggerFactory.getLogger(AbstractDAO.class);
+public class BaseDAO implements DAO, KeyGenerator {
+
+    private static Logger logger = LoggerFactory.getLogger(BaseDAO.class);
 
     /**
      * insert

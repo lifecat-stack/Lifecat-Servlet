@@ -64,10 +64,9 @@ public class ActionServlet extends HttpServlet {
     private void executeSuccess(String path, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         // 提取url请求信息 /xxx
-        String url = path.substring(path.lastIndexOf("/")+1, path.lastIndexOf("."));
+        String url = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));
 
-        logger.debug("request url is :{}", url);
-
+        logger.debug("request is :{}", url);
 
         // 根据请求信息 调用相应的service
         Service service = ServiceFactory.getServiceByClassKey(url);
@@ -78,7 +77,7 @@ public class ActionServlet extends HttpServlet {
         // service无对应请求 进入错误界面 error.jsp
         if (service == null) {
             logger.info("service is null");
-            page = Page.PAGE_USERHOME;
+            page = Page.PAGE_ERROR;
             req.setAttribute("errorMsg", "没有此请求");
             req.getRequestDispatcher(page).forward(req, resp);
         }
@@ -129,8 +128,7 @@ public class ActionServlet extends HttpServlet {
         logger.debug("dispatcher url: {}", url);
         // webapp目录下 执行客户端转发
         if ("/index.jsp".equals(url)) {
-            url = "http://localhost:8080/lifecatweb/index.jsp";
-            resp.sendRedirect(url);
+            resp.sendRedirect(Page.PAGE_INDEX);
         }
         // WEB-INF目录下 执行服务器转发
         else {

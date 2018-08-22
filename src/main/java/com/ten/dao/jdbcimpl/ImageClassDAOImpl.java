@@ -1,5 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
+import com.ten.dao.BaseDAO;
 import com.ten.dao.ImageClassDAO;
 
 /**
@@ -7,7 +8,7 @@ import com.ten.dao.ImageClassDAO;
  *
  * @auther ten
  */
-public class ImageClassDAOImpl extends AbstractDAO implements ImageClassDAO {
+public class ImageClassDAOImpl extends BaseDAO implements ImageClassDAO {
 
     public  ImageClassDAOImpl(){}
 

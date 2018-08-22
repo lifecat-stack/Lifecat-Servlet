@@ -1,6 +1,7 @@
 package com.ten.dao.jdbcimpl;
 
 import com.ten.bean.entity.DiaryDO;
+import com.ten.dao.BaseDAO;
 import com.ten.dao.DiaryDAO;
 
 import java.sql.ResultSet;
@@ -13,7 +14,7 @@ import java.util.List;
  *
  * @auther ten
  */
-public class DiaryDAOImpl extends AbstractDAO implements DiaryDAO {
+public class DiaryDAOImpl extends BaseDAO implements DiaryDAO {
     public DiaryDAOImpl() {
     }
 
@@ -60,7 +61,16 @@ public class DiaryDAOImpl extends AbstractDAO implements DiaryDAO {
 
     @Override
     public DiaryDO queryDiary(String diaryName) throws SQLException {
-        return null;
+        String sql = "SELECT diary_id,diary_name,diary_text,diary_gmt_modified from diary where diary_name = '" + diaryName + "' and is_deleted = '1'";
+        ResultSet rs = query(sql);
+        rs.next();
+        DiaryDO diaryDO = new DiaryDO();
+        diaryDO.setDiaryId(rs.getInt("diary_id"));
+        diaryDO.setDiaryName(rs.getString("diary_name"));
+        diaryDO.setdiaryText(rs.getString("diary_text"));
+        diaryDO.setdiaryGmtModified(rs.getString("diary_gmt_modified"));
+
+        return diaryDO;
     }
 
     @Override

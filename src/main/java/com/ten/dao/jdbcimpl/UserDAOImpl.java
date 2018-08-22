@@ -1,6 +1,7 @@
 package com.ten.dao.jdbcimpl;
 
 import com.ten.bean.entity.UserDO;
+import com.ten.dao.BaseDAO;
 import com.ten.dao.UserDAO;
 
 import java.sql.ResultSet;
@@ -11,11 +12,10 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public class UserDAOImpl extends AbstractDAO implements UserDAO {
+public class UserDAOImpl extends BaseDAO implements UserDAO {
 
     public  UserDAOImpl() {
     }
-
 
     @Override
     public int insertUser(UserDO userDO) throws SQLException {

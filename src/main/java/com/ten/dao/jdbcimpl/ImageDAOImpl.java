@@ -1,6 +1,7 @@
 package com.ten.dao.jdbcimpl;
 
 import com.ten.bean.entity.ImageDO;
+import com.ten.dao.BaseDAO;
 import com.ten.dao.ImageDAO;
 
 import java.sql.ResultSet;
@@ -13,7 +14,7 @@ import java.util.List;
  *
  * @auther ten
  */
-public class ImageDAOImpl extends AbstractDAO implements ImageDAO {
+public class ImageDAOImpl extends BaseDAO implements ImageDAO {
 
     public  ImageDAOImpl() {
     }

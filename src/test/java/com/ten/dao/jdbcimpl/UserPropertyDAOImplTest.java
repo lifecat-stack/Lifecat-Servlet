@@ -42,13 +42,6 @@ public class UserPropertyDAOImplTest {
     }
 
     /**
-     * Method: newUserPropertyDAO()
-     */
-    @Test
-    public void testNewUserPropertyDAO() throws Exception {
-    }
-
-    /**
      * Method: insertUserProperty(UserPropertyDO userPropertyDO)
      */
     @Test
@@ -57,11 +50,11 @@ public class UserPropertyDAOImplTest {
         assertNotNull(userPropertyDO);
 
         userPropertyDO.setUserId(6);
-        userPropertyDO.setPropertyNickname("昵称");
-        userPropertyDO.setPropertySignature("我的个性签名");
-        userPropertyDO.setPropertySex("男");
-        userPropertyDO.setPropertyEmail("邮箱@qq.com");
-        userPropertyDO.setPropertyLocation("无锡");
+        userPropertyDO.setPropertyNickname("test");
+        userPropertyDO.setPropertySignature("test");
+        userPropertyDO.setPropertySex("man");
+        userPropertyDO.setPropertyEmail("123456@qq.com");
+        userPropertyDO.setPropertyLocation("wx");
         userPropertyDO.setPropertyBirthday("1997-01-01");
         userPropertyDO.setPropertyGmtCreate("2019-01-01 00:00:00");
         userPropertyDO.setPropertyGmtModified("2019-01-01 00:00:00");
@@ -76,11 +69,11 @@ public class UserPropertyDAOImplTest {
     public void testQueryUserProperty() throws Exception {
         UserPropertyDO userPropertyDO = dao.queryUserProperty(6);
 
-        assertEquals("昵称", userPropertyDO.getPropertyNickname());
-        assertEquals("我的个性签名", userPropertyDO.getPropertySignature());
-        assertEquals("男", userPropertyDO.getPropertySex());
-        assertEquals("邮箱@qq.com", userPropertyDO.getPropertyEmail());
-        assertEquals("无锡", userPropertyDO.getPropertyLocation());
+        assertEquals("test", userPropertyDO.getPropertyNickname());
+        assertEquals("test", userPropertyDO.getPropertySignature());
+        assertEquals("man", userPropertyDO.getPropertySex());
+        assertEquals("123456@qq.com", userPropertyDO.getPropertyEmail());
+        assertEquals("wx", userPropertyDO.getPropertyLocation());
         assertEquals("1997-01-01", userPropertyDO.getPropertyBirthday());
         assertEquals("2019-01-01 00:00:00", userPropertyDO.getPropertyGmtCreate());
         assertEquals("2019-01-01 00:00:00", userPropertyDO.getPropertyGmtModified());

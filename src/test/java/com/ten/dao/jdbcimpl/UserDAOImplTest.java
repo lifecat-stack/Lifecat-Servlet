@@ -5,9 +5,7 @@ import com.ten.dao.DAOFactory;
 import com.ten.dao.UserDAO;
 import org.junit.*;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * UserDAOImpl Tester.
@@ -17,6 +15,7 @@ import static org.junit.Assert.assertTrue;
  * @since <pre>ÁùÔÂ 6, 2018</pre>
  */
 public class UserDAOImplTest {
+
     private static DAOFactory daoFactory;
     private UserDAO dao;
 
@@ -33,7 +32,6 @@ public class UserDAOImplTest {
 
     @After
     public void after() throws Exception {
-        dao = null;
     }
 
     @AfterClass
@@ -42,19 +40,11 @@ public class UserDAOImplTest {
     }
 
     /**
-     * Method: newUserDAO()
-     */
-    @Test
-    public void testNewUserDAO() throws Exception {
-    }
-
-    /**
      * Method: insertUser(UserDO userDO)
      */
     @Test
     public void testInsertUser() throws Exception {
         UserDO userDO = new UserDO();
-        assertNotNull(userDO);
 
         userDO.setUserName("test");
         userDO.setUserPassword("123456");
@@ -63,7 +53,7 @@ public class UserDAOImplTest {
         userDO.setUserGmtModified("2019-01-01 00:00:00");
 
         int userId = dao.insertUser(userDO);
-        assertNotNull(userId);
+        assertNotEquals(userId, 0);
     }
 
     /**

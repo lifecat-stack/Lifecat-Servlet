@@ -1,51 +1,49 @@
-<%@ page import="com.ten.bean.vo.DiaryVO" %>
-<%@ page import="java.util.List" %>
-<%@ page import="com.ten.service.DiaryListQueryService" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
-<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <!--编码信息-->
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <!--引用库：bootstrap-->
-    <script src="../../js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../css/bootstrap/3.3.6/bootstrap.min.css">
-    <!--引用库：jQuery-->
-    <script src="../../js/jquery/2.0.0/jquery.min.js"></script>
-    <!--引用库：mycss-->
-    <link rel="stylesheet" href="../../css/mycss/header.css">
-    <link rel="stylesheet" href="../../css/mycss/homePage.css">
-    <link rel="stylesheet" href="../../css/mycss/footer.css">
-    <!--引用库：myjs-->
-    <script src="../../js/myjs/bordertap.js"></script>
-    <script src="../../js/myjs/rollbackground.js"></script>
-    <script src="../../js/myjs/toptap.js"></script>
-    <!--引入库：layer-->
-    <script src="../../js/layer/layer.js"></script>
-    <!--引入库：标题栏layer-->
-    <script src="../../js/myjs/navLayerButton.js"></script>
+
+    <link rel="stylesheet" href="/lifecatweb/css/bootstrap/3.3.6/bootstrap.min.css">
+    <link rel="stylesheet" href="/lifecatweb/css/mycss/header.css">
+    <link rel="stylesheet" href="/lifecatweb/css/mycss/homePage.css">
+    <link rel="stylesheet" href="/lifecatweb/css/mycss/footer.css">
+
+    <script src="/lifecatweb/js/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/lifecatweb/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script src="/lifecatweb/js/myjs/bordertap.js"></script>
+    <script src="/lifecatweb/js/myjs/rollbackground.js"></script>
+    <script src="/lifecatweb/js/myjs/toptap.js"></script>
+    <script src="/lifecatweb/js/layer/layer.js"></script>
+    <script src="/lifecatweb/js/myjs/navLayerButton.js"></script>
 </head>
+
+<script>
+    var userId = '${user.userId}';
+    if (userId == null) {
+        userId = 1;
+    }
+</script>
 
 <!--启动时：发送刷新请求-->
 <script>
-    window.onload = function () {
-        // 利用ajax将数据提交到后台
+    $(document).ready(function () {
         $.ajax({
-            url: "diary_list_query.do",
+            url: "user_property_query.do",
             type: 'get',
             contentType: 'charset=utf-8',
-            data: {"userId": 1},
+            data: {"userId": userId},
             success: function () {
-                layer.msg("刷新成功");
+                layer.msg("信息刷新成功");
             },
             error: function (error) {
-                layer.msg('接口不通' + error);
+                layer.msg('信息接口不通' + error);
             }
         });
-    }
+    })
 </script>
 
 <body>
@@ -98,7 +96,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../../index.jsp">
+                    <a href="/lifecatweb/index.jsp">
                         <span class="glyphicon glyphicon-log-out"></span>
                         退出
                     </a>
@@ -143,12 +141,12 @@
         <div class="col-md-2  dataType">
             <ul class="nav nav-pills nav-stacked">
 
-                <li role="presentation" class="">
+                <li role="presentation" class="active">
                     <a href="#" status="information">个人信息</a>
                 </li>
 
-                <li role="presentation" class="active">
-                    <a href="#" status="diary-list">日记动态</a>
+                <li role="presentation" class="">
+                    <a href="#" status="diary-list" id="get-diary-page">日记动态</a>
                 </li>
 
                 <li role="presentation" class="">
@@ -220,7 +218,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <img height="140" width="140" src=${sessionScope.userProperty.iconPath} alt="用户未登录"/>
+                        <img height="140" width="140" src="${sessionScope.userProperty.iconPath}" alt="用户未登录"/>
                     </div>
                 </div>
 
@@ -330,7 +328,7 @@
                             <tr class="row">
 
                                 <td class="col-md-3">
-                                    <img src='../../images/usericon.jpg' height=200 width=200
+                                    <img src='/lifecatweb/images/usericon.jpg' height=200 width=200
                                          style="margin-top: 20px;"/>
                                 </td>
 
@@ -355,9 +353,6 @@
         &copy;2018 - <strong>成长相册-lifecat</strong> - JN University
     </div>
 </div>
-
-<!--引用外部js库：jQuery-->
-<script src="../../js/t19ctgxcrlxxxxxxxx.js"></script>
 
 </body>
 
@@ -435,6 +430,22 @@
 
 <!--Nav栏layer-->
 <script>
+    // 获取日记列表
+    $(document).on('click','#get-diary-page',function () {
+        $.ajax({
+            url: "diary_list_query.do",
+            type: 'get',
+            contentType: 'charset=utf-8',
+            data: {"userId": userId},
+            success: function () {
+                layer.msg("日记刷新成功");
+            },
+            error: function (error) {
+                layer.msg('日记接口不通' + error);
+            }
+        });
+    })
+
     // “书写寄语”
     $("#nav-diary-button").on('click', function () {
         layer.open({

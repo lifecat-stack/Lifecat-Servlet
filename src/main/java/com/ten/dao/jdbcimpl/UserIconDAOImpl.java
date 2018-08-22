@@ -1,5 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
+import com.ten.dao.BaseDAO;
 import com.ten.dao.UserIconDAO;
 import com.ten.bean.entity.UserIconDO;
 
@@ -11,7 +12,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public class UserIconDAOImpl extends AbstractDAO implements UserIconDAO {
+public class UserIconDAOImpl extends BaseDAO implements UserIconDAO {
     public  UserIconDAOImpl() {
     }
 

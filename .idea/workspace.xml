@@ -10,11 +10,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ant_ant_1_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aspectj_aspectjrt_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cactus_cactus_13_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cactus_cactus_ant_13_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cargo_cargo_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__httpunit_httpunit_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_javax_el_api_3_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jtidy_jtidy_4aug2000r7_dev.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nekohtml_nekohtml_0_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jtidy_jtidy_r938.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_easymock_easymock_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_httpunit_httpunit_1_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_easymock_1_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_api_support_1_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_core_1_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_1_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_module_junit4_common_1_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_powermock_powermock_reflect_1_6_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__rhino_js_1_6R5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xmlParserAPIs_2_6_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lifecatweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lifecatweb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/action/DispatcherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/action/DispatcherAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AbstractDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/controller/ActionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/controller/ActionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/dao/BaseDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AdminDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AdminDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/DiaryDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/DiaryDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageClassDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageClassDAOImpl.java" afterDir="false" />
@@ -23,23 +58,46 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserIconDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserIconDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserPropertyDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserPropertyDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminLoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminRegisterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminRegisterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassifyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassifyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageDeleteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageDeleteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageListQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageListQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageTextUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageTextUpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageUploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageUploadServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserIconUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserIconUpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserLoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyUpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPswUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPswUpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserRegisterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserRegisterServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/exfunc/JavaCallShell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/AdminManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/DiaryManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/ImageManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/ManagerResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/UserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/impl/AdminManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/impl/DiaryManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/impl/ImageManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/manager/impl/UserManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/observer/UserLoginObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/observer/impl/UserLoginDayCountObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/observer/impl/UserLoginTotalObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/openfunc/AndroidGetImageServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/openfunc/AndroidUpImageServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/openfunc/impl/AndroidGetImageServletImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/openfunc/impl/AndroidUpImageServletImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/subject/UserLoginSubject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/subject/impl/UserLoginSubjectImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/util/RedisConnections.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/util/SqlSessionFactoryUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/util/serviceName.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DiaryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ImageClassMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ImageFeatureMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ImageMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserIconMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserPropertyMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userhome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userhome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/controller/ActionServletTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AbstractDAOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AdminDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AdminDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/DiaryDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/DiaryDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageClassDAOImplTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageFeatureDAOImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/JdbcDAOFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/JdbcDAOFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserDAOImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserIconDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserIconDAOImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserPropertyDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserPropertyDAOImplTest.java" afterDir="false" />
@@ -82,65 +140,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UserDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserDAOImpl.java">
+      <file leaf-file-name="UserIconDAOImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserIconDAOImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Connections.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/util/Connections.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HOST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserIconDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserIconDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserPropertyDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserPropertyDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageDAOImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageDAOImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-111">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="1518">
+              <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -148,26 +152,80 @@
       <file leaf-file-name="UserPropertyDAOImplTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserPropertyDAOImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="396">
+              <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserIconDAOImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserIconDAOImplTest.java">
+      <file leaf-file-name="JdbcDAOFactoryTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/JdbcDAOFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="235">
+              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAOImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserDAOImplTest.java">
+      <file leaf-file-name="ImageDAOImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageDAOImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="345">
+              <caret line="62" column="32" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="62" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiaryDAOImplTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/DiaryDAOImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiaryDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/DiaryDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiaryDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/DiaryDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="63" column="123" selection-start-line="63" selection-start-column="123" selection-end-line="63" selection-end-column="123" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminDAOImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AdminDAOImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/ImageDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -216,17 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/ImageMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wang/dao/mybatisimpl/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/mybatisimpl/UserPropertyMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/imageshow3.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/layor.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/layor/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/layor/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layor/admin-login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/FormFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/constant/Page.java" />
@@ -251,22 +298,33 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryUploadServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminRegisterServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminLoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userhome.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AbstractDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/DiaryDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AdminDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageClassDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageFeatureDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserIconDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserPropertyDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageDAOImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserPropertyDAOImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserIconDAOImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserDAOImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userhome.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/action/DispatcherAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/controller/ActionServlet.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AbstractDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AbstractDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/BaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/BaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/BaseDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/BaseDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserIconDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserPropertyDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/JdbcDAOFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AdminDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/DiaryDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/DiaryDAOImplTest.java" />
       </list>
     </option>
   </component>
@@ -374,35 +432,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ten" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -431,36 +460,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
@@ -490,14 +490,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -508,6 +500,46 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ten" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ten" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ten" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbcimpl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -537,11 +569,11 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/ten/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15096954" />
     <property name="project.structure.side.proportion" value="0.34747145" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -556,11 +588,11 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ten.dao.jdbcimpl" />
+      <recent name="com.ten.dao" />
       <recent name="com.wang.service.util" />
       <recent name="com.wang.service" />
       <recent name="com.wang.util" />
-      <recent name="com.wang.filter" />
-      <recent name="com.wang.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF\jsp" />
@@ -570,11 +602,11 @@
       <recent name="D:\JavaProject\lifecatweb\Read" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF\lib" />
       <recent name="D:\JavaProject\lifecatweb\src\main\java\com\wang\dao\mybatisimpl" />
       <recent name="D:\JavaProject\lifecatweb\src\main\resources" />
       <recent name="D:\Java\lifecatweb\src\main\webapp\js" />
       <recent name="D:\Java\lifecatweb\src\main\webapp" />
-      <recent name="D:\Java\lifecatweb\src\main\java\com\wang\util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wang.db" />
@@ -595,9 +627,101 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.lifecat">
+  <component name="RunManager" selected="JUnit.AdminDAOImplTest.testIsAdminExisted">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="AdminDAOImplTest.testInsertAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lifecatweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ten.dao.jdbcimpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ten.dao.jdbcimpl" />
+      <option name="MAIN_CLASS_NAME" value="com.ten.dao.jdbcimpl.AdminDAOImplTest" />
+      <option name="METHOD_NAME" value="testInsertAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AdminDAOImplTest.testIsAdminExisted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lifecatweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ten.dao.jdbcimpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ten.dao.jdbcimpl" />
+      <option name="MAIN_CLASS_NAME" value="com.ten.dao.jdbcimpl.AdminDAOImplTest" />
+      <option name="METHOD_NAME" value="testIsAdminExisted" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AdminDAOImplTest.testQueryAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lifecatweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ten.dao.jdbcimpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ten.dao.jdbcimpl" />
+      <option name="MAIN_CLASS_NAME" value="com.ten.dao.jdbcimpl.AdminDAOImplTest" />
+      <option name="METHOD_NAME" value="testQueryAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="DiaryDAOImplTest.testQueryDiary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lifecatweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ten.dao.jdbcimpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ten.dao.jdbcimpl" />
+      <option name="MAIN_CLASS_NAME" value="com.ten.dao.jdbcimpl.DiaryDAOImplTest" />
+      <option name="METHOD_NAME" value="testQueryDiary" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="DiaryDAOImplTest.testQueryDiaryList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lifecatweb" />
@@ -612,75 +736,6 @@
       <option name="PACKAGE_NAME" value="com.ten.dao.jdbcimpl" />
       <option name="MAIN_CLASS_NAME" value="com.ten.dao.jdbcimpl.DiaryDAOImplTest" />
       <option name="METHOD_NAME" value="testQueryDiaryList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="PropertiesReaderTest.testGetPropertiesMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lifecatweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ten.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ten.util" />
-      <option name="MAIN_CLASS_NAME" value="com.ten.util.PropertiesReaderTest" />
-      <option name="METHOD_NAME" value="testGetPropertiesMap" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ServiceFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lifecatweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ten.service.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ten.service.util" />
-      <option name="MAIN_CLASS_NAME" value="com.ten.service.util.ServiceFactoryTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ServiceFactoryTest.testGetServiceByClassKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lifecatweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ten.service.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ten.service.util" />
-      <option name="MAIN_CLASS_NAME" value="com.ten.service.util.ServiceFactoryTest" />
-      <option name="METHOD_NAME" value="testGetServiceByClassKey" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -728,77 +783,6 @@
       <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-    </configuration>
-    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/index.jsp" />
-      <deployment>
-        <artifact name="lifecatweb:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_lifecatweb" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="61759" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="lifecatweb:war" />
-        </option>
-      </method>
     </configuration>
     <configuration name="lifecat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
@@ -907,19 +891,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.lifecat" />
-      <item itemvalue="JUnit.PropertiesReaderTest.testGetPropertiesMap" />
-      <item itemvalue="JUnit.ServiceFactoryTest.testGetServiceByClassKey" />
-      <item itemvalue="JUnit.ServiceFactoryTest" />
+      <item itemvalue="JUnit.DiaryDAOImplTest.testQueryDiary" />
       <item itemvalue="JUnit.DiaryDAOImplTest.testQueryDiaryList" />
-      <item itemvalue="Tomcat Server.index.jsp" />
+      <item itemvalue="JUnit.AdminDAOImplTest.testInsertAdmin" />
+      <item itemvalue="JUnit.AdminDAOImplTest.testQueryAdmin" />
+      <item itemvalue="JUnit.AdminDAOImplTest.testIsAdminExisted" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Tomcat Server.index.jsp" />
+        <item itemvalue="JUnit.AdminDAOImplTest.testIsAdminExisted" />
+        <item itemvalue="JUnit.AdminDAOImplTest.testQueryAdmin" />
+        <item itemvalue="JUnit.AdminDAOImplTest.testInsertAdmin" />
         <item itemvalue="JUnit.DiaryDAOImplTest.testQueryDiaryList" />
-        <item itemvalue="JUnit.ServiceFactoryTest" />
-        <item itemvalue="JUnit.ServiceFactoryTest.testGetServiceByClassKey" />
-        <item itemvalue="JUnit.PropertiesReaderTest.testGetPropertiesMap" />
+        <item itemvalue="JUnit.DiaryDAOImplTest.testQueryDiary" />
       </list>
     </recent_temporary>
   </component>
@@ -1065,14 +1049,7 @@
       <workItem from="1533698352399" duration="2662000" />
       <workItem from="1533779170847" duration="2267000" />
       <workItem from="1534906797259" duration="1008000" />
-      <workItem from="1534908034579" duration="8518000" />
-    </task>
-    <task id="LOCAL-00054" summary=" --version2.0 修复页面访问bug">
-      <created>1529331726473</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1529331726473</updated>
+      <workItem from="1534908034579" duration="14967000" />
     </task>
     <task id="LOCAL-00055" summary=" --version2.0 Readme">
       <created>1529332381543</created>
@@ -1410,43 +1387,50 @@
       <option name="project" value="LOCAL" />
       <updated>1534919111128</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="--version1.4.0&#10;  --2018.8.22&#10;  --修复了因为访问域导致的反射加载失败">
+      <created>1534920048338</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1534920048338</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PropertiesReaderTest_testGetPropertiesMap - 2018.07.09 at 15h 03m 42s.xml">
-      <configuration name="PropertiesReaderTest.testGetPropertiesMap" configurationId="JUnit" />
+    <history-entry file="ImageDAOImplTest_testQueryImage - 2018.08.22 at 16h 19m 24s.xml">
+      <configuration name="ImageDAOImplTest.testQueryImage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PropertiesReaderTest_testGetPropertiesMap - 2018.07.09 at 15h 04m 59s.xml">
-      <configuration name="PropertiesReaderTest.testGetPropertiesMap" configurationId="JUnit" />
+    <history-entry file="ImageDAOImplTest_testQueryImageList - 2018.08.22 at 16h 19m 31s.xml">
+      <configuration name="ImageDAOImplTest.testQueryImageList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceFactoryTest_testGetServiceByClassKey - 2018.07.09 at 15h 15m 48s.xml">
-      <configuration name="ServiceFactoryTest.testGetServiceByClassKey" configurationId="JUnit" />
+    <history-entry file="ImageDAOImplTest_testQueryImageList - 2018.08.22 at 16h 20m 07s.xml">
+      <configuration name="ImageDAOImplTest.testQueryImageList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceFactoryTest_testGetServiceByClassKey - 2018.07.09 at 15h 16m 44s.xml">
-      <configuration name="ServiceFactoryTest.testGetServiceByClassKey" configurationId="JUnit" />
+    <history-entry file="ImageDAOImplTest_testQueryImageClass - 2018.08.22 at 16h 20m 10s.xml">
+      <configuration name="ImageDAOImplTest.testQueryImageClass" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceFactoryTest_testGetServiceByClassKey - 2018.07.09 at 15h 17m 18s.xml">
-      <configuration name="ServiceFactoryTest.testGetServiceByClassKey" configurationId="JUnit" />
+    <history-entry file="ImageDAOImplTest_testUpdateImageText - 2018.08.22 at 16h 20m 22s.xml">
+      <configuration name="ImageDAOImplTest.testUpdateImageText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceFactoryTest_testGetServiceByClassKey - 2018.07.09 at 15h 18m 46s.xml">
-      <configuration name="ServiceFactoryTest.testGetServiceByClassKey" configurationId="JUnit" />
+    <history-entry file="ImageDAOImplTest_testDeleteImage - 2018.08.22 at 16h 20m 26s.xml">
+      <configuration name="ImageDAOImplTest.testDeleteImage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceFactoryTest - 2018.07.09 at 15h 19m 21s.xml">
-      <configuration name="ServiceFactoryTest" configurationId="JUnit" />
+    <history-entry file="DiaryDAOImplTest_testInsertDiary - 2018.08.22 at 16h 23m 18s.xml">
+      <configuration name="DiaryDAOImplTest.testInsertDiary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceFactoryTest - 2018.07.09 at 15h 19m 32s.xml">
-      <configuration name="ServiceFactoryTest" configurationId="JUnit" />
+    <history-entry file="DiaryDAOImplTest_testUpdateDiary - 2018.08.22 at 16h 24m 35s.xml">
+      <configuration name="DiaryDAOImplTest.testUpdateDiary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceFactoryTest - 2018.07.09 at 15h 19m 50s.xml">
-      <configuration name="ServiceFactoryTest" configurationId="JUnit" />
+    <history-entry file="DiaryDAOImplTest_testDeleteDiary - 2018.08.22 at 16h 24m 47s.xml">
+      <configuration name="DiaryDAOImplTest.testDeleteDiary" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiaryDAOImplTest_testQueryDiaryList - 2018.07.09 at 15h 49m 43s.xml">
-      <configuration name="DiaryDAOImplTest.testQueryDiaryList" configurationId="JUnit" />
+    <history-entry file="DiaryDAOImplTest_testQueryDiary - 2018.08.22 at 16h 27m 10s.xml">
+      <configuration name="DiaryDAOImplTest.testQueryDiary" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="691625000" />
+    <option name="totallyTimeSpent" value="698074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1459,6 +1443,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
@@ -1479,7 +1464,7 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Java Enterprise" order="9" sideWeight="0.3846154" side_tool="true" weight="0.11176471" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="17" visible="true" weight="0.29799107" />
+      <window_info active="true" anchor="bottom" id="Run" order="17" visible="true" weight="0.31138393" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.28004292" />
@@ -1577,7 +1562,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="--version2.0 &#10;  --2018.6.23" />
     <MESSAGE value="--version2.0 &#10;  --2018.6.25&#10;  --修复了外部接口bug" />
     <MESSAGE value="--version2.0 &#10;  --2018.6.27&#10;  --controller层函数分解，单一职责原则" />
     <MESSAGE value="--version2.0 &#10;  --2018.6.27&#10;  --service服务接口" />
@@ -1602,7 +1586,8 @@
     <MESSAGE value="--version1.3.0 &#10;  --2018.8.9&#10;  --与其他版本统一命名" />
     <MESSAGE value="--version1.4.0 &#10;  --2018.8.22&#10;  --重构" />
     <MESSAGE value="--version1.4.0&#10;  --2018.8.22&#10;  --重构" />
-    <option name="LAST_COMMIT_MESSAGE" value="--version1.4.0&#10;  --2018.8.22&#10;  --重构" />
+    <MESSAGE value="--version1.4.0&#10;  --2018.8.22&#10;  --修复了因为访问域导致的反射加载失败" />
+    <option name="LAST_COMMIT_MESSAGE" value="--version1.4.0&#10;  --2018.8.22&#10;  --修复了因为访问域导致的反射加载失败" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1617,401 +1602,371 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/UserPswUpdateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/UserIconUpdateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/controller/ActionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/util/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/AdminLoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserRegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPswUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyQueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserIconUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ServiceResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageUploadServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageTextUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageQueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageListQueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageDeleteServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/openfunc/impl/AndroidGetImageServletImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/manager/impl/AdminManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#2485#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassQueryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/manager/impl/DiaryManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#380#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassifyServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/manager/impl/ImageManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#426#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryUploadServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/manager/impl/UserManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state>
+          <folding>
+            <element signature="e#0#1764#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryListQueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryDeleteServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryAllDeleteServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminRegisterServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/manager/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminLoginServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/manager/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-765">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userhome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/UserLoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserLoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/entity/AdminDO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/manager/ImageManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/entity/DiaryDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/entity/ImageClassDO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/manager/DiaryManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/AdminDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/manager/AdminManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="207">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/mybatisimpl/AdminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/mybatisimpl/DiaryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/mybatisimpl/ImageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/properties/serviceName.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="52" />
+        <state relative-caret-position="161">
+          <caret line="7" column="19" selection-start-line="7" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/jdbcDaoName.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AbstractDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyQueryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="-633">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userhome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/action/DispatcherAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="29" column="59" lean-forward="true" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/vo/AdminVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/vo/UserVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/vo/UserPropertyVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/vo/ImageVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/vo/DiaryVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/vo/DiariesVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/vo/AlbumVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/bean/vo/AlbumClassVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/controller/ActionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="130" column="45" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/AdminDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="105">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/DiaryDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AbstractDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="437">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageClassDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/KeyGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageFeatureDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="230">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/JdbcDAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AbstractDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserIconDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/DAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="-61">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserPropertyDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/BaseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="278">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageDAOImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/BaseDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserPropertyDAOImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserIconDAOImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserDAOImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        <state relative-caret-position="270">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="299">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/util/Connections.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserDAOImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="-1467">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/UserIconDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        <state relative-caret-position="195">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserIconDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+        <state relative-caret-position="185">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserIconDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserPropertyDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageFeatureDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/JdbcDAOFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/ImageDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageClassDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AdminDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="62" column="32" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="62" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/DiaryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/DiaryDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="63" column="123" selection-start-line="63" selection-start-column="123" selection-end-line="63" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/DiaryDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
@@ -2021,7 +1976,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>lifecatweb:war</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2034,7 +1989,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (lifecatweb)|Web</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2070,7 +2025,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>lifecatweb</last-edited>
+          <last-edited>Web|lifecatweb</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2082,7 +2037,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: javax.servlet:jstl:1.2</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>

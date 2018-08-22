@@ -2,6 +2,7 @@ package com.ten.dao.jdbcimpl;
 
 import com.ten.dao.AdminDAO;
 import com.ten.bean.entity.AdminDO;
+import com.ten.dao.BaseDAO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,14 +12,14 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public class AdminDAOImpl extends AbstractDAO implements AdminDAO {
+public class AdminDAOImpl extends BaseDAO implements AdminDAO {
     public AdminDAOImpl() {
     }
 
     @Override
     public void insertAdmin(AdminDO adminDO) throws SQLException {
         String sql = "insert into admin(admin_name,admin_password" +
-                ",admin_levle,admin_gmt_create,admin_gmt_modified) " +
+                ",admin_level,admin_gmt_create,admin_gmt_modified) " +
                 "values(?,?,?,?,?)";
         Object[] args = {adminDO.getAdminName(), adminDO.getAdminPassword(), adminDO.getAdminLevel(),
                 adminDO.getAdminGmtCreate(), adminDO.getAdminGmtModified()};

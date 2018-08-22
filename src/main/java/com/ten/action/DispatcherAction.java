@@ -27,11 +27,11 @@ public class DispatcherAction extends HttpServlet {
         // 获取要访问的jsp页面名
         String uri = req.getRequestURI();
         String action = uri.substring(uri.lastIndexOf("/") + 1, uri.lastIndexOf("."));
-        logger.info("action is " + action);
+        logger.info("request WEB-INF path is : " + action);
 
         // 生成WEB-INF路径
         String url = "/WEB-INF/jsp/" + action + ".jsp";
-        logger.info("dispatcher is " + url);
+        logger.info("dispatcher WEB-INF path is : " + url);
 
         // 执行转发
         req.getRequestDispatcher(url).forward(req, resp);

@@ -1,5 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
+import com.ten.dao.BaseDAO;
 import com.ten.dao.ImageFeatureDAO;
 
 /**
@@ -7,7 +8,7 @@ import com.ten.dao.ImageFeatureDAO;
  *
  * @auther ten
  */
-public class ImageFeatureDAOImpl extends AbstractDAO  implements ImageFeatureDAO {
+public class ImageFeatureDAOImpl extends BaseDAO implements ImageFeatureDAO {
     public  ImageFeatureDAOImpl() {
     }
 

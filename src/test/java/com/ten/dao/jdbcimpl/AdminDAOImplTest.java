@@ -1,8 +1,12 @@
 package com.ten.dao.jdbcimpl;
 
-import org.junit.Test;
-import org.junit.Before;
-import org.junit.After;
+import com.ten.bean.entity.AdminDO;
+import com.ten.dao.AdminDAO;
+import com.ten.dao.DAOFactory;
+import org.junit.*;
+
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * AdminDAOImpl Tester.
@@ -13,28 +17,45 @@ import org.junit.After;
  */
 public class AdminDAOImplTest {
 
+    private static DAOFactory daoFactory;
+    private AdminDAO dao;
+
+    @BeforeClass
+    public static void beforeClass() throws Exception {
+        daoFactory = new JdbcDAOFactory();
+    }
+
     @Before
     public void before() throws Exception {
+        dao = (AdminDAO) daoFactory.getDaoByTableName("admin");
+        assertNotNull(dao);
     }
 
     @After
     public void after() throws Exception {
+        dao = null;
     }
 
-    /**
-     * Method: newAdminDAO()
-     */
-    @Test
-    public void testNewAdminDAO() throws Exception {
-//TODO: Test goes here... 
+    @AfterClass
+    public static void afterClass() throws Exception {
+        daoFactory = null;
     }
+
 
     /**
      * Method: insertAdmin(AdminDO adminDO)
      */
     @Test
     public void testInsertAdmin() throws Exception {
-//TODO: Test goes here... 
+        AdminDO adminDO = new AdminDO();
+
+        adminDO.setAdminName("test");
+        adminDO.setAdminPassword("test");
+        adminDO.setAdminGmtCreate("2000-1-1 00:00:00");
+        adminDO.setAdminGmtModified("2000-1-1 00:00:00");
+        adminDO.setAdminLevel("admin");
+
+        dao.insertAdmin(adminDO);
     }
 
     /**
@@ -42,7 +63,9 @@ public class AdminDAOImplTest {
      */
     @Test
     public void testQueryAdmin() throws Exception {
-//TODO: Test goes here... 
+        AdminDO adminDO = dao.queryAdmin("test");
+
+        assertNotNull(adminDO);
     }
 
     /**
@@ -50,7 +73,7 @@ public class AdminDAOImplTest {
      */
     @Test
     public void testIsAdminExisted() throws Exception {
-//TODO: Test goes here... 
+        assertTrue(dao.isAdminExisted("test"));
     }
 
 

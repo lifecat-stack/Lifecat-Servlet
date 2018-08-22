@@ -5,7 +5,6 @@ import com.ten.dao.DAOFactory;
 import com.ten.dao.UserIconDAO;
 import org.junit.*;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
@@ -16,6 +15,7 @@ import static org.junit.Assert.assertNotNull;
  * @since <pre>ÁùÔÂ 6, 2018</pre>
  */
 public class UserIconDAOImplTest {
+
     private static DAOFactory daoFactory;
     private UserIconDAO dao;
 
@@ -32,20 +32,10 @@ public class UserIconDAOImplTest {
 
     @After
     public void after() throws Exception {
-        dao = null;
     }
 
     @AfterClass
     public static void afterClass() throws Exception {
-        daoFactory = null;
-    }
-
-
-    /**
-     * Method: newUserIconDAO()
-     */
-    @Test
-    public void testNewUserIconDAO() throws Exception {
     }
 
     /**
@@ -84,8 +74,7 @@ public class UserIconDAOImplTest {
      */
     @Test
     public void testQueryUserIcon() throws Exception {
-        assertEquals("D:/Java/lifecatweb/src/main/webapp/image/one/icon/icon2.jpg", dao.queryUserIcon(6));
+        assertNotNull(dao.queryUserIcon(1));
     }
-
 
 } 

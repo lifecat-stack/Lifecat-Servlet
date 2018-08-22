@@ -1,5 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
+import com.ten.dao.BaseDAO;
 import com.ten.dao.UserPropertyDAO;
 import com.ten.bean.entity.UserPropertyDO;
 
@@ -11,7 +12,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public class UserPropertyDAOImpl extends AbstractDAO implements UserPropertyDAO {
+public class UserPropertyDAOImpl extends BaseDAO implements UserPropertyDAO {
 
     public  UserPropertyDAOImpl() {
     }

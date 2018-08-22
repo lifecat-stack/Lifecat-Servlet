@@ -30,5 +30,5 @@ public class DataBase {
     /**
      * 数据库密码
      */
-    public static final String MYSQL_PASSWORD = "wudiWSH123";
+    public static final String MYSQL_PASSWORD = "wangshihao";
 }
