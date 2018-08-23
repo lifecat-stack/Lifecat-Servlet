@@ -2,7 +2,7 @@ package com.ten.service.impl;
 
 import com.ten.bean.entity.DiaryDO;
 import com.ten.bean.vo.DiaryVO;
-import com.ten.constant.WEBINF;
+import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
@@ -18,9 +18,6 @@ import java.util.List;
 
 /**
  * 日记数据集获取
- * <p>
- * 失败 com.ten.constant.WEBINF.DIARY
- * 成功 Page.PAGE_DIARYSHOW
  *
  * @date 2018/5/24
  * @auther ten
@@ -32,26 +29,15 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
     private DiaryDAO dao;
 
     public DiaryListQueryServiceImpl() {
+        DAOFactory factory = new JdbcDAOFactory();
+        dao = (DiaryDAO) factory.getDaoByTableName("diary");
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         Integer userId = Integer.valueOf(req.getParameter("userId"));
 
-        // 获取DAO实例
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (DiaryDAO) factory.getDaoByTableName("diary");
-
-        List<DiaryDO> diaryDOList = null;
-        boolean success = false;
-
-
-        if (!success) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("数据库查询异常")
-                    .page(WEBINF.DIARY)
-                    .build();
-        }
+        List<DiaryDO> diaryDOList = queryDiaryListByUserId(userId);
 
         // List<DiaryVO>
         List<DiaryVO> diaryList = new ArrayList<>(16);
@@ -64,8 +50,9 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
             diaryList.add(diaryVO);
         }
 
+        logger.info("diary_list_query get list size : " + diaryList.size());
         req.getSession().setAttribute("diaryList", diaryList);
-        return new ServiceResult.Builder(true).page().build();
+        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override

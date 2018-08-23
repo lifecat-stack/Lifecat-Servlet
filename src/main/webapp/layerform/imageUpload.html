@@ -4,38 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Image</title>
-    <!--编码信息-->
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <!--引用库：bootstrap-->
-    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/bootstrap/3.3.6/bootstrap.min.css">
-    <!--引用库：jQuery-->
+    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
     <script src="../js/jquery/2.0.0/jquery.min.js"></script>
 </head>
 
 <script>
-    function showPreview(obj) {
-        var str = obj.value;
-        document.getElementById("#show-image").innerHTML = "<img src='" + str + "' style='width: 140px; height: 140px'/>";
+    // 预览
+    function showPreview() {
+        var str = $(this).val();
+        $("#show-image").html("<img src='" + str + "' style='width: 140px; height: 140px'/>");
     }
 </script>
 
 <body>
-
 <div class="container">
     <div class="table-responsive">
-
         <h2>编辑照片描述</h2>
-
         <form method="post" id="editForm" action="image_upload.do" enctype="multipart/form-data">
             <div class="form-group">
-                <input type="text" class="form-control" name="imageText">
-            </div>
-            <div class="form-group">
                 <input type="file" class="form-control" name="image"
-                       id="upimage" onchange="showPreview()">
+                       id="image" onchange="showPreview()">
             </div>
-            <div class="form-group">
+            <div class="form-group" style='width: 140px; height: 140px'>
                 <div id="show-image"></div>
             </div>
             <button type="submit" class="btn btn-primary btn-md btn-block">提交</button>

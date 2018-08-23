@@ -3,62 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Property</title>
-    <!--引用库：bootstrap-->
-    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/bootstrap/3.3.6/bootstrap.min.css">
-    <!--引用库：jQuery-->
+    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
     <script src="../js/jquery/2.0.0/jquery.min.js"></script>
 </head>
 
 <body>
 <div class="container">
     <div class="table-responsive">
-
-        <form action="user_property_update.do" class="form col-md-12 center-block"
-              method="post">
+        <form action="user_property_update.do" class="form col-md-12 center-block" method="post">
             <div class="form-group">
                 <h5>新昵称</h5>
-                <input type="text" name="nickname" class="form-control input-lg"
-                       placeholder="" title="输入昵称">
+                <input name="nickname"
+                       type="text" class="form-control input-lg"
+                       placeholder="xiaoming" title="输入昵称">
             </div>
             <div class="form-group">
                 <h5>个性签名</h5>
-                <input type="text" name="signature" class="form-control input-lg"
-                       placeholder="" title="输入签名">
+                <input name="signature"
+                       type="text" class="form-control input-lg"
+                       placeholder="woooo" title="输入签名">
             </div>
             <div class="form-group">
                 <h5>性别</h5>
-                <input type="text" name="sex" class="form-control input-lg"
-                       placeholder="" title="输入性别">
+                <input name="sex"
+                       type="text" class="form-control input-lg"
+                       placeholder="man" title="输入性别">
             </div>
 
             <div class="form-group">
                 <h5>邮箱</h5>
-                <input type="text" name="email"
-                       class="form-control input-lg" placeholder="" title="输入邮箱">
+                <input name="email"
+                       type="text" class="form-control input-lg"
+                       placeholder="123456@qq.com" title="输入邮箱">
             </div>
             <div class="form-group">
                 <h5>地址</h5>
-                <input type="text" name="location" class="form-control input-lg"
-                       placeholder="" title="你的地址">
+                <input name="location"
+                       type="text" class="form-control input-lg"
+                       placeholder="china" title="你的地址">
             </div>
             <div class="form-group">
                 <h5>生日</h5>
-                <input type="text" name="birthday" class="form-control input-lg"
-                       placeholder="" title="输入生日">
+                <input name="birthday"
+                       type="text" class="form-control input-lg"
+                       placeholder="2000.1.1" title="输入生日">
             </div>
-
             <div class="form-group">
                 <button class="btn btn-primary btn-lg btn-block">修改</button>
             </div>
-            <input type="hidden" name="action" value="SetMsg">
         </form>
     </div>
-
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-    </div>
-
 </div>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 <html>
@@ -59,7 +60,7 @@
                     <th style="width: 15%">日期</th>
                     <th style="width: 10%">操作</th>
                     <%--<th style="width: 15%">访问量</th>--%>
-                    <c:forEach items="${sessionScope.diaryList}" var="diary">
+                    <c:forEach items="${sessionScope.diaryList}" begin="0" end="10" var="diary">
                         <tr>
                             <td><input type="checkbox" name="checkAll" title="选项"/></td>
                             <td class="diary-id">${diary.diaryId}</td>

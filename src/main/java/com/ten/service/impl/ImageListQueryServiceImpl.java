@@ -2,7 +2,7 @@ package com.ten.service.impl;
 
 import com.ten.bean.entity.ImageDO;
 import com.ten.bean.vo.ImageVO;
-import com.ten.constant.WEBINF;
+import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
@@ -32,14 +32,13 @@ public class ImageListQueryServiceImpl implements ImageListQueryService {
     private ImageDAO dao;
 
     public ImageListQueryServiceImpl() {
+        DAOFactory factory = new JdbcDAOFactory();
+        dao = (ImageDAO) factory.getDaoByTableName("image");
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         int userId = Integer.parseInt(req.getParameter("userId"));
-
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (ImageDAO) factory.getDaoByTableName("image");
 
         List<ImageDO> imageDOList = queryImageListByUserId(userId);
 
@@ -49,13 +48,13 @@ public class ImageListQueryServiceImpl implements ImageListQueryService {
                     imageDO.getImageId())
                     .imagePath(imageDO.getImagePath())
                     .imageDate(imageDO.getImageGmtCreate())
-                    .imageText(imageDO.getImageText())
-                    .imageClassId(imageDO.getClassId());
+                    .imageText(imageDO.getImageText());
             imageList.add(imageDTO);
         }
 
+        logger.info("image_list_query get list size : " + imageList.size());
         req.getSession().setAttribute("imageList", imageList);
-        return new ServiceResult.Builder(true).page(WEBINF.ALBUM).build();
+        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override

@@ -2,7 +2,7 @@ package com.ten.service.impl;
 
 import com.ten.bean.entity.UserPropertyDO;
 import com.ten.bean.vo.UserPropertyVO;
-import com.ten.bean.vo.UserVO;
+import com.ten.constant.Page;
 import com.ten.constant.WEBINF;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.UserIconDAO;
@@ -33,17 +33,15 @@ public class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
     private UserIconDAO iconDAO;
 
     public UserPropertyQueryServiceImpl() {
+        DAOFactory factory = new JdbcDAOFactory();
+        propertyDAO = (UserPropertyDAO) factory.getDaoByTableName("user_property");
+        iconDAO = (UserIconDAO) factory.getDaoByTableName("user_icon");
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
-        UserVO userDTO = (UserVO) req.getSession().getAttribute("user");
-        Integer userId = userDTO.getUserId();
-
-        DAOFactory factory = new JdbcDAOFactory();
-        propertyDAO = (UserPropertyDAO) factory.getDaoByTableName("user_property");
-        iconDAO = (UserIconDAO) factory.getDaoByTableName("user_icon");
+        Integer userId = Integer.valueOf(req.getParameter("userId"));
 
         UserPropertyDO userPropertyDO = queryUserProperty(userId);
         if (userPropertyDO == null) {
@@ -62,7 +60,7 @@ public class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
                 .iconPath(userIconPath);
 
         req.getSession().setAttribute("userProperty", userPropertyVO);
-        return new ServiceResult.Builder(true).page(WEBINF.USER).build();
+        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override

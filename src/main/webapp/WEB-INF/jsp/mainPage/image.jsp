@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
 <html>
@@ -12,23 +13,40 @@
     <script src="/lifecatweb/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
 <body>
-<!-- 相册栏 -->
-<div class="row" status="image-list">
+<!-- 图片的展示栏 -->
+<div class="container">
+    <!-- 相册栏 -->
     <div class="row">
-        <div class="col-md-1">
-        </div>
+        <div class="col-md-1"></div>
         <div class="col-md-10">
             <table>
-                <tr class="row">
-                    <td class="col-md-3">
-                        <img src='/lifecatweb/images/usericon.jpg' height=200 width=200
-                             style="margin-top: 20px;"/>
-                    </td>
-                </tr>
+                <thead class="row">
+                <th class="col-lg-1">序号</th>
+                <th class="col-lg-2">标题</th>
+                <th class="col-lg-2">时间</th>
+                <th class="col-lg-4">展示</th>
+                </thead>
+                <tbody>
+                <c:forEach items="${sessionScope.imageList}" begin="0" end="3" var="image">
+                    <tr>
+                        <td>
+                                ${image.imageId}
+                        </td>
+                        <td>
+                                ${image.imageText}
+                        </td>
+                        <td>
+                                ${image.imageDate}
+                        </td>
+                        <td>
+                            <img src="${image.imagePath}" height="100" width="100" style="margin-top: 2px;"/>
+                        </td>
+                    </tr>
+                </c:forEach>
+                </tbody>
             </table>
         </div>
-        <div class="col-md-1">
-        </div>
+        <div class="col-md-1"></div>
     </div>
 </div>
 </body>

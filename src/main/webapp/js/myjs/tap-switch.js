@@ -101,7 +101,8 @@ $(document).on('click', '#get-diary-page', function () {
         contentType: 'charset=utf-8',
         data: {"userId": userId},
         success: function () {
-diaryTap()        },
+            diaryTap()
+        },
         error: function (error) {
             layer.msg('日记接口不通' + error);
         }
@@ -116,7 +117,8 @@ $(document).on('click', '#get-image-page', function () {
         contentType: 'charset=utf-8',
         data: {"userId": userId},
         success: function () {
-imageTap()        },
+            imageTap()
+        },
         error: function (error) {
             layer.msg('图片列表接口不通' + error);
         }
@@ -131,7 +133,7 @@ $(document).on('click', '#get-album-page', function () {
         contentType: 'charset=utf-8',
         data: {"userId": userId},
         success: function () {
-            layer.msg("相册刷新成功");
+            albumTap()
         },
         error: function (error) {
             layer.msg('相册接口不通' + error);
@@ -147,7 +149,7 @@ $(document).on('click', '#get-classify-page', function () {
         contentType: 'charset=utf-8',
         data: {"userId": userId},
         success: function () {
-            layer.msg("智能相册刷新成功");
+            classifyTap()
         },
         error: function (error) {
             layer.msg('智能相册接口不通' + error);
