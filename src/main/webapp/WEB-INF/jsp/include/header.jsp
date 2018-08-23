@@ -21,7 +21,6 @@
     <script src="/lifecatweb/js/myjs/toptap.js"></script>
     <script src="/lifecatweb/js/layer/layer.js"></script>
     <script src="/lifecatweb/js/myjs/navLayerButton.js"></script>
-    <script src="/lifecatweb/js/myjs/userhome.js"></script>
     <script src="/lifecatweb/js/myjs/diary.js"></script>
     <script src="/lifecatweb/js/myjs/header.js"></script>
     <script src="/lifecatweb/js/myjs/tap-switch.js"></script>

@@ -14,14 +14,10 @@ public class AlbumClassVO {
     private final Integer userId;
     private final Integer imageClassId;
 
-    private AlbumClassVO(int userId, int imageClassId) {
+    public AlbumClassVO(int userId, int imageClassId) {
         this.userId = userId;
         this.imageClassId = imageClassId;
         imageClassList = new ArrayList<>();
-    }
-
-    public static AlbumClassVO newAlbumClass(int userId, int imageClassId) {
-        return new AlbumClassVO(userId, imageClassId);
     }
 
     /**

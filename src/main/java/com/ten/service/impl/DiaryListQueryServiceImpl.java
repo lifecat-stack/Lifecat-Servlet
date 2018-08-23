@@ -50,7 +50,6 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
             diaryList.add(diaryVO);
         }
 
-        logger.info("diary_list_query get list size : " + diaryList.size());
         req.getSession().setAttribute("diaryList", diaryList);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }

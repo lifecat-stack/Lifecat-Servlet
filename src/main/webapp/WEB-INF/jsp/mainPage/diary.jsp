@@ -13,7 +13,6 @@
     <script src="/lifecatweb/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
 <body>
-
 <div class="row" status="diary-list">
     <!-- 搜索框 -->
     <div class="row">
@@ -41,9 +40,6 @@
             <button id="diary-insert" class="row">
                 新写日记
             </button>
-            <button id="diary-delete" class="row">
-                删除所选
-            </button>
             <form method="get" action="diary_all_delete.do">
                 <button id="diary-delete-all" class="row">删除全部</button>
             </form>
@@ -68,12 +64,12 @@
                             <td class="diary-text">${diary.diaryText}</td>
                             <td>${diary.diaryDate}</td>
                             <td>
-                                <button name="diary-delete">
+                                <a href="#" name="diary-delete">
                                     删除
-                                </button>
-                                <button name="diary-update">
+                                </a>
+                                <a href="#" name="diary-update">
                                     修改
-                                </button>
+                                </a>
                             </td>
                         </tr>
                     </c:forEach>
@@ -96,4 +92,63 @@
     </div>
 </div>
 </body>
+<script>
+    // 日记删除
+    $(document).on('click', "a[name='diary-delete']", function () {
+        var tr = $(this).parent().parent();
+        var id = tr.children("td[class='diary-id']").text();
+
+        console.log("id:" + id);
+        var ii = layer.load();
+        $.ajax({
+            url: "diary_delete.do",
+            type: 'get',
+            contentType: 'charset=utf-8',
+            data: {diaryId: id},
+            success: function () {
+                layer.close(ii);
+                layer.msg("删除成功");
+                setTimeout(function () {
+                    window.location.reload()
+                }, 1000)
+            },
+            error: function (error) {
+                layer.close(ii);
+                layer.msg("删除失败");
+                console.log('接口不通' + error);
+            }
+        });
+    });
+
+    // 新写日记
+    $(document).on('click', "#diary-insert", function () {
+        layer.open({
+            type: 2,
+            title: 'diary日记',
+            maxmin: true,
+            shadeClose: true, //点击遮罩关闭层
+            area: ['800px', '520px'],
+            content: 'layerform/diaryUpload.html'
+        });
+    });
+
+    // 日记更新-button
+    $(document).on('click', "a[name='diary-update']", function () {
+        var tr = $(this).parent().parent();
+        var id = tr.children("td[class='diary-id']").text();
+        var name = tr.children("td[class='diary-name']").text();
+        var text = tr.children("td[class='diary-text']").text();
+
+        console.log("当前修改日记 id:" + id + " name:" + name + " text:" + text);
+
+        layer.open({
+            type: 2,
+            title: '修改日记',
+            maxmin: true,
+            shadeClose: true, //点击遮罩关闭层
+            area: ['800px', '520px'],
+            content: 'layerform/diaryUpdate.html?id=' + id + "&name=" + name + "&text=" + text
+        });
+    });
+</script>
 </html>

@@ -26,6 +26,7 @@ public class AdminLoginServiceImpl implements AdminLoginService {
     private AdminDAO dao;
 
     public AdminLoginServiceImpl() {
+        dao = (AdminDAO) new JdbcDAOFactory().getDaoByTableName("admin");
     }
 
     @Override
@@ -33,8 +34,6 @@ public class AdminLoginServiceImpl implements AdminLoginService {
 
         String adminName = req.getParameter("adminName");
         String adminPassword = req.getParameter("adminPassword");
-
-        dao = (AdminDAO) new JdbcDAOFactory().getDaoByTableName("admin");
 
         AdminDO adminDO = queryAdminByName(adminName);
 

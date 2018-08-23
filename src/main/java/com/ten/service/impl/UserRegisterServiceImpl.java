@@ -27,6 +27,7 @@ public class UserRegisterServiceImpl implements UserRegisterService {
     private UserDAO dao;
 
     public UserRegisterServiceImpl() {
+        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
     }
 
     @Override
@@ -36,8 +37,6 @@ public class UserRegisterServiceImpl implements UserRegisterService {
         String rUserPassword = req.getParameter("rUserPassword1");
 
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
-
-        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
 
         boolean isExisted = isUserExisted(rUserName);
         if (isExisted) {

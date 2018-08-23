@@ -35,6 +35,8 @@ public class UserIconUpdateServiceImpl implements UserIconUpdateService {
     private ImageWriter writer;
 
     public UserIconUpdateServiceImpl() {
+        DAOFactory factory = new JdbcDAOFactory();
+        dao = (UserIconDAO) factory.getDaoByTableName("user_icon");
     }
 
     /**
@@ -56,10 +58,6 @@ public class UserIconUpdateServiceImpl implements UserIconUpdateService {
 
         // 将图片数据流写入磁盘
         writeUserIcon(req);
-
-        // 将图片信息写入数据库
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (UserIconDAO) factory.getDaoByTableName("user_icon");
 
         UserIconDO userIconDO = new UserIconDO();
         userIconDO.setUserId(userId);

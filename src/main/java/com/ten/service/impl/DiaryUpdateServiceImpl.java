@@ -23,25 +23,23 @@ import java.sql.SQLException;
 public class DiaryUpdateServiceImpl implements DiaryUpdateService {
     private Logger logger = LoggerFactory.getLogger(DiaryUpdateServiceImpl.class);
 
+    private DiaryDAO dao;
+
     public DiaryUpdateServiceImpl() {
+        DAOFactory factory = new JdbcDAOFactory();
+        dao = (DiaryDAO) factory.getDaoByTableName("diary");
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
-        // form参数
         String diaryId = req.getParameter("diaryId");
         String diaryName = req.getParameter("diaryName");
         String diaryText = req.getParameter("diaryText");
-        // 时间
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
         logger.debug("diary id:{} name:{} text:{} date:{}", diaryId, diaryName, diaryText, dateTime);
         assert diaryId != null;
-
-        // 获取DAO实例
-        DAOFactory factory = new JdbcDAOFactory();
-        DiaryDAO dao = (DiaryDAO) factory.getDaoByTableName("diary");
 
         DiaryDO diaryDO = new DiaryDO();
         diaryDO.setDiaryId(Integer.valueOf(diaryId));
@@ -49,27 +47,16 @@ public class DiaryUpdateServiceImpl implements DiaryUpdateService {
         diaryDO.setdiaryText(diaryText);
         diaryDO.setdiaryGmtModified(dateTime);
 
-        boolean success = false;
-        try {
-            dao.updateDiary(diaryDO);
-            success = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        if (!success) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("数据库更新异常")
-                    .page(Page.PAGE_UPDIARY)
-                    .build();
-        }
-
-        return new ServiceResult.Builder(true)
-                .page(Page.PAGE_USERHOME).build();
+        updateDiary(diaryDO);
+        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
     public void updateDiary(DiaryDO diaryDO) {
-
+        try {
+            dao.updateDiary(diaryDO);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

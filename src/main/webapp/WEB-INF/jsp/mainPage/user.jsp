@@ -12,11 +12,9 @@
     <script src="/lifecatweb/js/jquery/2.0.0/jquery.min.js"></script>
     <script src="/lifecatweb/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
-
 <body>
 <!-- 个人信息栏 -->
 <div class="row" status="information">
-
     <div class="col-md-1"></div>
     <div class="col-md-10">
         <div class="col-md-4">

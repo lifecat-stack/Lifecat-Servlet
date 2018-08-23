@@ -19,32 +19,13 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-            <table>
-                <thead class="row">
-                <th class="col-lg-1">序号</th>
-                <th class="col-lg-2">标题</th>
-                <th class="col-lg-2">时间</th>
-                <th class="col-lg-4">展示</th>
-                </thead>
-                <tbody>
-                <c:forEach items="${sessionScope.imageList}" begin="0" end="3" var="image">
-                    <tr>
-                        <td>
-                                ${image.imageId}
-                        </td>
-                        <td>
-                                ${image.imageText}
-                        </td>
-                        <td>
-                                ${image.imageDate}
-                        </td>
-                        <td>
-                            <img src="${image.imagePath}" height="100" width="100" style="margin-top: 2px;"/>
-                        </td>
-                    </tr>
-                </c:forEach>
-                </tbody>
-            </table>
+            <c:forEach items="${sessionScope.imageList}" var="image" begin="0" end="2">
+                <img src="${image.imagePath}" height="140" width="140" style="margin-top: 2px;"/>
+                <img src="${image.imagePath}" height="140" width="140" style="margin-top: 2px;"/>
+                <img src="${image.imagePath}" height="140" width="140" style="margin-top: 2px;"/>
+                <img src="${image.imagePath}" height="140" width="140" style="margin-top: 2px;"/>
+                <br>
+            </c:forEach>
         </div>
         <div class="col-md-1"></div>
     </div>

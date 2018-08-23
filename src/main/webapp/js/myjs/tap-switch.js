@@ -144,7 +144,7 @@ $(document).on('click', '#get-album-page', function () {
 // 获取智能分类相册列表
 $(document).on('click', '#get-classify-page', function () {
     $.ajax({
-        url: "image_list_query.do",
+        url: "image_class_query.do",
         type: 'get',
         contentType: 'charset=utf-8',
         data: {"userId": userId},

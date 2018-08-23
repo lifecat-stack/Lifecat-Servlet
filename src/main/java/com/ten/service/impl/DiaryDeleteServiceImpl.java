@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 /**
  * 日记删除
- *
+ * <p>
  * 失败 Page.PAGE_DIARYSHOW
  * 成功 Page.PAGE_DIARYSHOW
  *
@@ -22,39 +22,31 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class DiaryDeleteServiceImpl implements DiaryDeleteService {
+
     private Logger logger = LoggerFactory.getLogger(DiaryDeleteServiceImpl.class);
 
+    private DiaryDAO dao;
+
     public DiaryDeleteServiceImpl() {
+        DAOFactory factory = new JdbcDAOFactory();
+        dao = (DiaryDAO) factory.getDaoByTableName("diary");
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
+        int diaryId = Integer.parseInt(req.getParameter("diaryId"));
 
-        String diaryId = req.getParameter("diaryId");
-        logger.debug("diary id is {}",diaryId);
-
-        // 获取DAO实例
-        DAOFactory factory = new JdbcDAOFactory();
-        DiaryDAO dao = (DiaryDAO) factory.getDaoByTableName("diary");
-
-        boolean success = false;
-        try {
-            dao.deleteDiary(Integer.valueOf(diaryId));
-            success = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        if (!success) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("日记删除失败").page(Page.PAGE_USERHOME).build();
-        }
+        deleteDiary(diaryId);
 
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
-    public void deleteDiary() {
-
+    public void deleteDiary(int diaryId) {
+        try {
+            dao.deleteDiary(diaryId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

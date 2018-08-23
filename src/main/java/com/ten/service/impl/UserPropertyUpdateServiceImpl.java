@@ -31,6 +31,8 @@ public class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService 
     private UserPropertyDAO dao;
 
     public UserPropertyUpdateServiceImpl() {
+        DAOFactory factory = new JdbcDAOFactory();
+        dao = (UserPropertyDAO) factory.getDaoByTableName("user_property");
     }
 
     @Override
@@ -47,9 +49,6 @@ public class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService 
         String birthday = req.getParameter("birthday");
 
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
-
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (UserPropertyDAO) factory.getDaoByTableName("user_property");
 
         UserPropertyDO userPropertyDO = new UserPropertyDO();
         userPropertyDO.setUserId(userId);

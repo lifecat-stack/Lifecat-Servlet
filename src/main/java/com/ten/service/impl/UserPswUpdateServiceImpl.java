@@ -27,6 +27,8 @@ public class UserPswUpdateServiceImpl implements UserPswUpdateService {
     private UserDAO dao;
 
     public UserPswUpdateServiceImpl() {
+        DAOFactory factory = new JdbcDAOFactory();
+        dao = (UserDAO) factory.getDaoByTableName("user");
     }
 
     @Override
@@ -37,9 +39,6 @@ public class UserPswUpdateServiceImpl implements UserPswUpdateService {
         Integer userId = userDTO.getUserId();
 
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
-
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (UserDAO) factory.getDaoByTableName("user");
 
         updateUserPassword(userId, newpassword);
 

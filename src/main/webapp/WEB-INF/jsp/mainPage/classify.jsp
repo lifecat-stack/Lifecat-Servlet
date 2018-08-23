@@ -4,50 +4,79 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-
     <link rel="stylesheet" href="/lifecatweb/css/bootstrap/3.3.6/bootstrap.min.css">
     <link rel="stylesheet" href="/lifecatweb/css/fore/style.css">
     <link rel="stylesheet" href="/lifecatweb/css/mycss/homePage.css">
-
+    <link rel="stylesheet" href="/lifecatweb/css/mycss/class.css">
     <script src="/lifecatweb/js/jquery/2.0.0/jquery.min.js"></script>
     <script src="/lifecatweb/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
+<script type="text/javascript">
+    function change_div(id) {
+        if (id === 1) {
+            $("#part1").addClass("show").removeClass("hide");
+            $("#part2").removeClass("show").addClass("hide");
+            $("#part3").removeClass("show").addClass("hide");
+        }
+        else if (id === 2) {
+            $("#part2").addClass("show").removeClass("hide");
+            $("#part1").removeClass("show").addClass("hide");
+            $("#part3").removeClass("show").addClass("hide");
+        }
+        else if (id === 3) {
+            $("#part3").addClass("show").removeClass("hide");
+            $("#part1").removeClass("show").addClass("hide");
+            $("#part2").removeClass("show").addClass("hide");
+        }
+    }
+</script>
 <body>
 <!-- 图片的展示栏 -->
-<div class="container">
-    <!-- 相册栏 -->
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-            <table>
-                <thead class="row">
-                <th class="col-lg-1">序号</th>
-                <th class="col-lg-2">标题</th>
-                <th class="col-lg-2">时间</th>
-                <th class="col-lg-4">展示</th>
-                </thead>
-                <tbody>
-                <c:forEach items="${sessionScope.imageList}" begin="0" end="3" var="image">
-                    <tr>
-                        <td>
-                                ${image.imageId}
-                        </td>
-                        <td>
-                                ${image.imageText}
-                        </td>
-                        <td>
-                                ${image.imageDate}
-                        </td>
-                        <td>
-                            <img src="${image.imagePath}" height="100" width="100" style="margin-top: 2px;"/>
-                        </td>
-                    </tr>
-                </c:forEach>
-                </tbody>
-            </table>
+<div id="wrap">
+    <div id="main">
+        <div id="side_menu">
+            <div>
+                <a href="#" onclick="change_div(1)">
+                    <img src="/lifecatweb/pics/1/class.jpg" alt="人物">
+                </a>
+                <span>人物</span>
+            </div>
+            <div>
+                <a href="#" onclick="change_div(2)">
+                    <img src="/lifecatweb/pics/2/class.jpg" alt="风景">
+                </a>
+                <span>风景</span>
+            </div>
+            <div>
+                <a href="#" onclick="change_div(3)">
+                    <img src="/lifecatweb/pics/3/class.jpg" alt="考试">
+                </a>
+                <span>考试</span>
+            </div>
         </div>
-        <div class="col-md-1"></div>
+
+        <div id="content">
+
+            <div class="gallery show" id="part1">
+                <c:forEach items="${sessionScope.AlbumClassList[0].imageClassList}" var="image" begin="0" end="29">
+                    <img src="${image.imagePath}" height="100" width="100" style="margin-top: 2px;"/>
+                </c:forEach>
+            </div>
+
+            <div class="gallery hide" id="part2">
+                <c:forEach items="${sessionScope.AlbumClassList[1].imageClassList}" var="image" begin="0" end="29">
+                    <img src="${image.imagePath}" height="100" width="100" style="margin-top: 2px;"/>
+                </c:forEach>
+            </div>
+
+            <div class="gallery hide" id="part3">
+                <c:forEach items="${sessionScope.AlbumClassList[2].imageClassList}" var="image" begin="0" end="29">
+                    <img src="${image.imagePath}" height="100" width="100" style="margin-top: 2px;"/>
+                </c:forEach>
+            </div>
+        </div>
     </div>
 </div>
+
 </body>
 </html>

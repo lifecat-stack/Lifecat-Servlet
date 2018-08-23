@@ -52,7 +52,6 @@ public class ImageListQueryServiceImpl implements ImageListQueryService {
             imageList.add(imageDTO);
         }
 
-        logger.info("image_list_query get list size : " + imageList.size());
         req.getSession().setAttribute("imageList", imageList);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }

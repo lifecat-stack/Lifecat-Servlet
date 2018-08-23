@@ -29,6 +29,7 @@ public class UserLoginServiceImpl implements UserLoginService {
     private UserDAO dao;
 
     public UserLoginServiceImpl() {
+        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
     }
 
     @Override
@@ -36,8 +37,6 @@ public class UserLoginServiceImpl implements UserLoginService {
 
         String userName = req.getParameter("userName");
         String userPassword = req.getParameter("userPassword");
-
-        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
 
         UserDO userDO = queryUserByName(userName);
 

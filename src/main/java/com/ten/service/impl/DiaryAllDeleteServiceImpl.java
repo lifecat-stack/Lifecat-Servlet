@@ -1,5 +1,6 @@
 package com.ten.service.impl;
 
+import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
@@ -13,37 +14,32 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 
 public class DiaryAllDeleteServiceImpl implements DiaryAllDeleteService {
+
     private Logger logger = LoggerFactory.getLogger(DiaryAllDeleteServiceImpl.class);
 
+    private DiaryDAO dao;
+
     public DiaryAllDeleteServiceImpl() {
+        DAOFactory factory = new JdbcDAOFactory();
+        dao = (DiaryDAO) factory.getDaoByTableName("diary");
     }
 
     @Override
-    public void deleteAllDiary() {
-
+    public void deleteAllDiary(int userId) {
+        try {
+            dao.deleteAllDiary(userId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
 
-        Integer userId = 1;
+        UserVO user = (UserVO) req.getSession().getAttribute("user");
+        int userId = user.getUserId();
 
-        // 获取DAO实例
-        DAOFactory factory = new JdbcDAOFactory();
-        DiaryDAO dao = (DiaryDAO) factory.getDaoByTableName("diary");
-
-        boolean success = false;
-        try {
-            dao.deleteAllDiary(userId);
-            success = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        if (!success) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("日记删除失败").page(Page.PAGE_USERHOME).build();
-        }
+        deleteAllDiary(userId);
 
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
