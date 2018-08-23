@@ -29,8 +29,14 @@ public class DispatcherAction extends HttpServlet {
         String action = uri.substring(uri.lastIndexOf("/") + 1, uri.lastIndexOf("."));
         logger.info("request WEB-INF path is : " + action);
 
+        String url;
         // 生成WEB-INF路径
-        String url = "/WEB-INF/jsp/" + action + ".jsp";
+        if (uri.contains("tap")) {
+            url = "/WEB-INF/jsp/mainPage/" + action + ".jsp";
+        } else {
+            url = "/WEB-INF/jsp/" + action + ".jsp";
+        }
+
         logger.info("dispatcher WEB-INF path is : " + url);
 
         // 执行转发

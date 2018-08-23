@@ -6,10 +6,10 @@
     <!--编码信息-->
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
     <!--引用库：bootstrap-->
-    <script src="../../js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../css/bootstrap/3.3.6/bootstrap.min.css">
+    <script src="../../../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../../css/bootstrap/3.3.6/bootstrap.min.css">
     <!--引用库：jQuery-->
-    <script src="../../js/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../../../js/jquery/2.0.0/jquery.min.js"></script>
 </head>
 <style>
     body {
@@ -174,7 +174,7 @@
 
 <div id="nav">
     <ul>
-        <li><a class="selected" href="userhome.jsp">首页</a></li>
+        <li><a class="selected" href="../userhome.jsp">首页</a></li>
         <li><a class="selected" href="imageshow.jsp">相册</a></li>
     </ul>
 </div>
@@ -186,19 +186,19 @@
         <div id="side_menu">
             <div>
                 <a href="#">
-                    <img src="../../pics/1/class.jpg" alt="人物" onclick="change_div('part1')">
+                    <img src="../../../pics/1/class.jpg" alt="人物" onclick="change_div('part1')">
                 </a>
                 <span>人物</span>
             </div>
             <div>
                 <a href="#">
-                    <img src="../../pics/2/class.jpg" alt="风景" onclick="change_div('part2')">
+                    <img src="../../../pics/2/class.jpg" alt="风景" onclick="change_div('part2')">
                 </a>
                 <span>风景</span>
             </div>
             <div>
                 <a href="#">
-                    <img src="../../pics/3/class.jpg" alt="考试" onclick="change_div('part3')">
+                    <img src="../../../pics/3/class.jpg" alt="考试" onclick="change_div('part3')">
                 </a>
                 <span>考试</span>
             </div>
