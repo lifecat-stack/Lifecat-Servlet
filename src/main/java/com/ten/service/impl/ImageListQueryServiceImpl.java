@@ -2,8 +2,7 @@ package com.ten.service.impl;
 
 import com.ten.bean.entity.ImageDO;
 import com.ten.bean.vo.ImageVO;
-import com.ten.bean.vo.UserVO;
-import com.ten.constant.Page;
+import com.ten.constant.WEBINF;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
@@ -27,38 +26,24 @@ import java.util.List;
  * @auther ten
  */
 public class ImageListQueryServiceImpl implements ImageListQueryService {
+
     private Logger logger = LoggerFactory.getLogger(ImageListQueryServiceImpl.class);
+
+    private ImageDAO dao;
 
     public ImageListQueryServiceImpl() {
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
-        UserVO userDTO = (UserVO) req.getSession().getAttribute("user");
-        Integer userId = userDTO.getUserId();
+        int userId = Integer.parseInt(req.getParameter("userId"));
 
-        // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        ImageDAO dao = (ImageDAO) factory.getDaoByTableName("image");
+        dao = (ImageDAO) factory.getDaoByTableName("image");
 
-        List<ImageDO> imageDOList = null;
-        boolean success = false;
-        try {
-            imageDOList = dao.queryImageList(userId);
-            success = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        List<ImageDO> imageDOList = queryImageListByUserId(userId);
 
-        if (!success) {
-            return new ServiceResult.Builder(false)
-                    .errormsg("数据库查询异常")
-                    .page(Page.PAGE_USERHOME)
-                    .build();
-        }
-
-        // List<ImageVO>
-        List<ImageVO> imageList = new ArrayList<>(64);
+        List<ImageVO> imageList = new ArrayList<>(16);
         for (ImageDO imageDO : imageDOList) {
             ImageVO imageDTO = new ImageVO(
                     imageDO.getImageId())
@@ -70,13 +55,16 @@ public class ImageListQueryServiceImpl implements ImageListQueryService {
         }
 
         req.getSession().setAttribute("imageList", imageList);
-        return new ServiceResult.Builder(true)
-                .page(Page.PAGE_IMAGESHOW)
-                .build();
+        return new ServiceResult.Builder(true).page(WEBINF.ALBUM).build();
     }
 
     @Override
     public List<ImageDO> queryImageListByUserId(int userId) {
-        return null;
+        try {
+            return dao.queryImageList(userId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

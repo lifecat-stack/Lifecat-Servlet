@@ -3,7 +3,7 @@ package com.ten.service.impl;
 import com.ten.bean.entity.UserPropertyDO;
 import com.ten.bean.vo.UserPropertyVO;
 import com.ten.bean.vo.UserVO;
-import com.ten.constant.Page;
+import com.ten.constant.WEBINF;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.UserIconDAO;
 import com.ten.dao.UserPropertyDAO;
@@ -19,8 +19,8 @@ import java.sql.SQLException;
 /**
  * 查询用户资料
  * <p>
- * 失败 Page.PAGE_USERHOME
- * 成功 Page.PAGE_USERHOME
+ * 失败 com.ten.constant.WEBINF.USER
+ * 成功 com.ten.constant.WEBINF.USER
  *
  * @date 2018/5/24
  * @auther ten
@@ -47,7 +47,7 @@ public class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
 
         UserPropertyDO userPropertyDO = queryUserProperty(userId);
         if (userPropertyDO == null) {
-            return new ServiceResult.Builder(false).errormsg("用户信息不存在").page(Page.PAGE_USERHOME).build();
+            return new ServiceResult.Builder(false).errormsg("用户信息不存在").page(WEBINF.USER).build();
         }
 
         String userIconPath = queryUserIcon(userId);
@@ -62,7 +62,7 @@ public class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
                 .iconPath(userIconPath);
 
         req.getSession().setAttribute("userProperty", userPropertyVO);
-        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
+        return new ServiceResult.Builder(true).page(WEBINF.USER).build();
     }
 
     @Override

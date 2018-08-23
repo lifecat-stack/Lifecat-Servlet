@@ -2,7 +2,7 @@ package com.ten.service.impl;
 
 import com.ten.bean.entity.DiaryDO;
 import com.ten.bean.vo.DiaryVO;
-import com.ten.constant.Page;
+import com.ten.constant.WEBINF;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
 import com.ten.dao.jdbcimpl.JdbcDAOFactory;
@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * 日记数据集获取
  * <p>
- * 失败 Page.PAGE_USERHOME
+ * 失败 com.ten.constant.WEBINF.DIARY
  * 成功 Page.PAGE_DIARYSHOW
  *
  * @date 2018/5/24
@@ -29,35 +29,27 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
 
     private Logger logger = LoggerFactory.getLogger(DiaryListQueryServiceImpl.class);
 
-    public DiaryListQueryServiceImpl(){
+    private DiaryDAO dao;
 
+    public DiaryListQueryServiceImpl() {
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
-
-//        UserVO userDTO = (UserVO) req.getSession().getAttribute("user");
-//        Integer userId = userDTO.getUserId();
-
-        Integer userId = 1;
+        Integer userId = Integer.valueOf(req.getParameter("userId"));
 
         // 获取DAO实例
         DAOFactory factory = new JdbcDAOFactory();
-        DiaryDAO dao = (DiaryDAO) factory.getDaoByTableName("diary");
+        dao = (DiaryDAO) factory.getDaoByTableName("diary");
 
         List<DiaryDO> diaryDOList = null;
         boolean success = false;
-        try {
-            diaryDOList = dao.queryDiaryList(userId);
-            success = true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
 
         if (!success) {
             return new ServiceResult.Builder(false)
                     .errormsg("数据库查询异常")
-                    .page(Page.PAGE_USERHOME)
+                    .page(WEBINF.DIARY)
                     .build();
         }
 
@@ -73,14 +65,16 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
         }
 
         req.getSession().setAttribute("diaryList", diaryList);
-        logger.info("diary list query success");
-        return new ServiceResult.Builder(true)
-                .page(Page.PAGE_USERHOME)
-                .build();
+        return new ServiceResult.Builder(true).page().build();
     }
 
     @Override
     public List<DiaryDO> queryDiaryListByUserId(int userId) {
-        return null;
+        try {
+            return dao.queryDiaryList(userId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

@@ -1,34 +1,5 @@
-// 获取用户资料
-$(document).on('click','#get-user-page',function () {
-    $.ajax({
-        url: "user_property_query.do",
-        type: 'get',
-        contentType: 'charset=utf-8',
-        data: {"userId": userId},
-        success: function () {
-            layer.msg("资料刷新成功");
-        },
-        error: function (error) {
-            layer.msg('资料接口不通' + error);
-        }
-    });
-})
 
-// 获取日记列表
-$(document).on('click','#get-diary-page',function () {
-    $.ajax({
-        url: "diary_list_query.do",
-        type: 'get',
-        contentType: 'charset=utf-8',
-        data: {"userId": userId},
-        success: function () {
-            layer.msg("日记刷新成功");
-        },
-        error: function (error) {
-            layer.msg('日记接口不通' + error);
-        }
-    });
-})
+
 
 // 日记删除
 $("button[name='diary-delete']").on("click",
