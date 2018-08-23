@@ -13,7 +13,6 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class UserDAOImpl extends BaseDAO implements UserDAO {
-
     public  UserDAOImpl() {
     }
 

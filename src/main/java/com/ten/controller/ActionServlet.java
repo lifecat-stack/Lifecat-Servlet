@@ -41,12 +41,10 @@ public class ActionServlet extends HttpServlet {
         if (formResult) {
             executeSuccess(path, req, resp);
         }
-
         // 验证失败
         else {
             // 获取请求界面信息
             String jspUrl = path.substring(11, path.lastIndexOf("/"));
-
             dispatcher(jspUrl, req, resp);
         }
     }

@@ -9,7 +9,6 @@ import com.ten.dao.ImageClassDAO;
  * @auther ten
  */
 public class ImageClassDAOImpl extends BaseDAO implements ImageClassDAO {
-
     public  ImageClassDAOImpl(){}
 
  }

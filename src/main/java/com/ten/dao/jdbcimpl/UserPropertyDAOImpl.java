@@ -13,10 +13,8 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class UserPropertyDAOImpl extends BaseDAO implements UserPropertyDAO {
-
     public  UserPropertyDAOImpl() {
     }
-
 
     @Override
     public void insertUserProperty(UserPropertyDO userPropertyDO) throws SQLException {
