@@ -45,7 +45,7 @@ git clone https://github.com/kevinten10/lifecatweb
 # 生成war文件
 # 放到对应tomcat目录下
 ```
-云部署相关教程: [centos云服务器部署Javaweb应用](Read/linux.md)
+云部署相关教程: [centos云服务器部署Javaweb应用](https://blog.csdn.net/wsh596823919/article/details/79717993)
 
 ## 项目分析
 
