@@ -188,7 +188,7 @@
             </div>
             <div class="modal-body">
                 <label for="adminName">账号:admin</label>
-                <label for="adminPassword">密码:admin</label>
+                <label for="adminPassword">密码:123</label>
                 <label>请选择用户登录</label>
             </div>
         </div>

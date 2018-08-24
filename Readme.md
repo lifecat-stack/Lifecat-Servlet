@@ -8,6 +8,8 @@
 
 #### [线上DEMO地址](http://www.lifecat.club:8080/lifecatweb)
 
+点击'立即登录' 用户名:admin 密码:123
+
 ### 后续项目线上地址 (建议由浅入深的按顺序学习)
 
 [lifecatweb的SSM框架后台管理系统(未部署)](http://47.106.11.84)
