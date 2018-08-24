@@ -2,50 +2,20 @@
 <project version="4">
   <component name="AnalysisUIOptions">
     <option name="GROUP_BY_SEVERITY" value="true" />
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
   </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="lifecatweb:war exploded" />
+      <artifact name="lifecatweb:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="929819b7-af53-440b-9cf9-69809a0118d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/bean/vo/AlbumClassVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/bean/vo/AlbumClassVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/DiaryAllDeleteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/DiaryAllDeleteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/DiaryDeleteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/DiaryDeleteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminLoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryAllDeleteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryAllDeleteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryDeleteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryDeleteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryListQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryListQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryUpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryUploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryUploadServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageListQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageListQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserIconUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserIconUpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserLoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyUpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPswUpdateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPswUpdateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserRegisterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserRegisterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/error/5xx.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/lifecatweb_war/lifecatweb.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/lifecatweb_war/lifecatweb.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/album.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/album.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/classify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/classify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/diary.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/diary.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/homePage.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/imageshow.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/imageshow2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/top.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/updiary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/upimage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/userhome.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myjs/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myjs/diary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myjs/tap-switch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/myjs/tap-switch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myjs/toptap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/myjs/userhome.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,49 +55,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DiaryUploadForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/DiaryUploadForm.java">
+      <file leaf-file-name="Directory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/Directory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="144">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageUploadForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/ImageUploadForm.java">
+      <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="299">
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserLoginForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserLoginForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
+      <file leaf-file-name="backgroundtext.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/images/backgroundtext.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="UserPropertyUpdateForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserPropertyUpdateForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserPswUpdateForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserPswUpdateForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
+      <file leaf-file-name="background3.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/images/background3.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="Page.java" pinned="false" current-in-tab="false">
@@ -139,40 +92,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRegisterForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserRegisterForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WEBINF.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/WEBINF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
+      <file leaf-file-name="icon.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/image/one/icon/icon.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="HOST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="230">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/controller/ActionServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-            </state>
-          </provider>
+      <file leaf-file-name="usericon.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/images/usericon.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="background1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/images/background1.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="image16.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/upimage/image16.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -187,10 +133,10 @@
         <option value="jsf" />
         <option value="HTML File" />
         <option value="Class" />
-        <option value="JavaScript File" />
         <option value="Jsp File" />
         <option value="Interface" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -220,26 +166,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/FormFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/DiaryUploadForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserLoginForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserPropertyUpdateForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserPswUpdateForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserRegisterForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/ImageUploadForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/FormResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/filter/form/FormFactory.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myjs/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/top.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myjs/header.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/top.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ten/action/DispatcherAction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/imageshow2.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/old_page/imageshow.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/constant/WEBINF.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyQueryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/image.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/layerform/diaryUpload.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/layerform/imageUpload.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/layerform/passwordModify.html" />
@@ -247,14 +182,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/layerform/diaryUpdate.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myjs/tap-switch.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/bean/vo/AlbumClassVO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/album.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/classify.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/mycss/class.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/user.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myjs/userhome.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/myjs/diary.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/diary.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userhome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminLoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/service/DiaryAllDeleteService.java" />
@@ -271,6 +201,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyUpdateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPswUpdateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserRegisterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/action/DispatcherAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/controller/ActionServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/ImageClassDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserPropertyDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/dao/jdbcimpl/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myjs/toptap.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/user.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/image.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/diary.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/classify.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/album.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/top.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ten/constant/Directory.java" />
       </list>
     </option>
   </component>
@@ -359,34 +305,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ten" type="462c0819:PsiDirectoryNode" />
               <item name="constant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ten" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
@@ -408,7 +327,41 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="mycss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="myjs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lifecatweb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="upimage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lifecatweb" type="b2602c69:ProjectViewProjectNode" />
@@ -451,6 +404,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -463,7 +417,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,7 +430,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/ten/dao" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SSM-lifecat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -487,9 +440,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.wang.model" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.wang.service.serviceimpl" />
       <recent name="com.wang.dao" />
@@ -505,6 +455,13 @@
       <recent name="com.wang.service.util" />
       <recent name="com.wang.service" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF\jsp\old_page" />
+      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF" />
+      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp" />
+      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF\old_page" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\js\myjs" />
       <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF\lib" />
@@ -515,12 +472,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wang.db" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF\jsp\old_page" />
-      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF\jsp" />
-      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF" />
-      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp" />
-      <recent name="D:\Project\MyJava\lifecatweb\src\main\webapp\WEB-INF\old_page" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wang.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -960,21 +913,9 @@
       <workItem from="1534908034579" duration="16975000" />
       <workItem from="1534979345175" duration="621000" />
       <workItem from="1535002556611" duration="8172000" />
-      <workItem from="1535020706723" duration="9009000" />
-    </task>
-    <task id="LOCAL-00061" summary=" --version2.0 Readme--sql">
-      <created>1529388051296</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1529388051297</updated>
-    </task>
-    <task id="LOCAL-00062" summary=" --version2.0 junit-DAO">
-      <created>1529400461370</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1529400461370</updated>
+      <workItem from="1535020706723" duration="10195000" />
+      <workItem from="1535064982656" duration="1371000" />
+      <workItem from="1535105796883" duration="1770000" />
     </task>
     <task id="LOCAL-00063" summary=" --version2.0 web test">
       <created>1529410567208</created>
@@ -1305,7 +1246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535024302212</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="--version1.5.0&#10;  --2018.8.23&#10;  --修复了大多数Bug&#10;  --可部署版本v3">
+      <created>1535029797701</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1535029797702</updated>
+    </task>
+    <task id="LOCAL-00111" summary="--version1.5.0&#10;  --2018.8.23&#10;  --war">
+      <created>1535030118499</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1535030118499</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1341,7 +1296,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="717884000" />
+    <option name="totallyTimeSpent" value="722211000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1354,7 +1309,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
@@ -1375,10 +1329,10 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Java Enterprise" order="9" sideWeight="0.3846154" side_tool="true" weight="0.11176471" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
-      <window_info active="true" anchor="bottom" id="Run" order="17" visible="true" weight="0.16216215" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.6677928" />
+      <window_info anchor="bottom" id="Run" order="17" visible="true" weight="0.07094595" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.22693133" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.23658799" />
       <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4781382" weight="0.32924107" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -1401,6 +1355,7 @@
       <window_info anchor="right" id="R Packages" order="9" />
       <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.4992948" weight="0.0" />
       <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.6135402" weight="0.18220946" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="JRebel" order="7" side_tool="true" />
@@ -1409,7 +1364,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2496474" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="15" sideWeight="0.4992948" weight="0.26542324" />
       <window_info id="Capture Tool" order="2" />
@@ -1418,8 +1372,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.3864598" side_tool="true" weight="0.09899569" />
       <window_info anchor="bottom" id="Statistic" order="12" sideWeight="0.4992948" weight="0.687231" />
+      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.325419" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
       <window_info id="Java Enterprise" order="9" sideWeight="0.3846154" side_tool="true" weight="0.11176471" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4992948" weight="0.66857964" />
@@ -1428,9 +1382,9 @@
       <window_info anchor="bottom" id="JRebel Executor" order="10" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.28004292" />
       <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
-      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3293371" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="TODO" order="16" sideWeight="0.4992948" weight="0.325419" />
+      <window_info id="Web" order="6" sideWeight="0.19225252" side_tool="true" weight="0.16078985" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info id="Structure" order="1" sideWeight="0.50142854" side_tool="true" weight="0.18661971" />
@@ -1473,8 +1427,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="--version2.0 &#10;  --2018.6.28&#10;  --使用外观模式改写Manager层" />
-    <MESSAGE value="--version2.0 &#10;  --2018.6.28&#10;  --使用观察者模式统计用户登录数量" />
     <MESSAGE value="--version2.0 &#10;  --2018.6.29&#10;  --Manager层" />
     <MESSAGE value="--version2.0 &#10;  --2018.6.29&#10;  --DTO构建者模式优化" />
     <MESSAGE value="--version2.0 &#10;  --2018.7.1" />
@@ -1498,7 +1450,9 @@
     <MESSAGE value="--version1.4.1&#10;  --2018.8.23&#10;  --改进页面切换方式 -&gt; div html填充" />
     <MESSAGE value="--version1.4.1&#10;  --2018.8.23&#10;  --合并tap跳转" />
     <MESSAGE value="--version1.4.1&#10;  --2018.8.23&#10;  --改进layor弹出层" />
-    <option name="LAST_COMMIT_MESSAGE" value="--version1.4.1&#10;  --2018.8.23&#10;  --改进layor弹出层" />
+    <MESSAGE value="--version1.5.0&#10;  --2018.8.23&#10;  --修复了大多数Bug&#10;  --可部署版本v3" />
+    <MESSAGE value="--version1.5.0&#10;  --2018.8.23&#10;  --war" />
+    <option name="LAST_COMMIT_MESSAGE" value="--version1.5.0&#10;  --2018.8.23&#10;  --war" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1513,356 +1467,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myjs/tap-switch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/jdbcDaoName.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/mybatisDaoName.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/serviceName.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userhome.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="16" column="45" selection-start-line="16" selection-end-line="17" />
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/util/Connections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/util/DateTimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-236">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/util/ImageWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/util/PropertiesReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/UserRegisterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/util/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/util/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminLoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="53" column="51" lean-forward="true" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
-          <folding>
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/AdminRegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/DiaryAllDeleteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/diary.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryAllDeleteServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/DiaryDeleteService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/Directory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <caret line="16" column="92" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryDeleteServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="35" column="84" selection-start-line="35" selection-start-column="84" selection-end-line="35" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryListQueryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/DiaryUploadServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassifyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageClassQueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding>
-            <element signature="e#1749#1750#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageDeleteServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageListQueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageQueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageTextUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ImageUploadServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1133">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/ServiceResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserIconUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserLoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding>
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyQueryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPropertyUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="50" column="70" selection-start-line="50" selection-start-column="70" selection-end-line="50" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserPswUpdateServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/service/impl/UserRegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
-          <folding>
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/Form.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/FormFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/FormResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/Verifiable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/BaseVerification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/DiaryUploadForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/ImageUploadForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserLoginForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserPropertyUpdateForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserPswUpdateForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/filter/form/impl/UserRegisterForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/controller/ActionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1873,10 +1495,235 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="299">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/WEBINF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userhome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mycss/homePage.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mycss/header.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mycss/class.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1995">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myjs/toptap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="44" />
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="44" />
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="44" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="28" />
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/image.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="44" />
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="44" />
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="44" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="28" />
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8763">
+          <caret line="381" column="20" lean-forward="true" selection-start-line="381" selection-start-column="20" selection-end-line="381" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/diary.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="44" />
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="44" />
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="44" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="28" />
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/classify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="44" />
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="44" />
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="44" />
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="44" />
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="28" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="28" />
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="41" />
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="41" />
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mainPage/album.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="44" />
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="44" />
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="44" />
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="28" />
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/webicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/welcomelogo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/trademark.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/talkicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/peopleicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/login.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/iconimage.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/homeback.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/emailicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/backgroundtext.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/background3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/image/one/icon/icon.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/usericon.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/background1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/upimage/image7.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/upimage/image16.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/Directory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ten/constant/HOST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1886,7 +1733,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>lifecatweb:war exploded</last-edited>
+          <last-edited>lifecatweb:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1947,7 +1794,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: jstl:jstl:1.2</last-edited>
+          <last-edited>Maven: com.google.protobuf:protobuf-java:2.6.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
