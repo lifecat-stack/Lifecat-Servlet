@@ -6,7 +6,7 @@
 
 > 这是一个Javaweb初学的简易项目, 它使用jsp+servlet+mysql的项目架构, 它具有清晰的流程控制和代码注释, 适合初学者的学习阅读, 同时此项目具有说明文档和后续项目可供学习
 
-#### [线上DEMO地址 www.lifecat.club:8080/lifecatweb](www.lifecat.club:8080/lifecatweb)
+#### [线上DEMO地址](http://www.lifecat.club:8080/lifecatweb)
 
 ### 后续项目线上地址 (建议由浅入深的按顺序学习)
 
