@@ -12,7 +12,7 @@
 
 ### 后续项目线上地址 (建议由浅入深的按顺序学习)
 
-[lifecatweb的SSM框架后台管理系统(未部署)](http://47.106.11.84)
+[lifecatweb的SSM框架后台管理系统](http://www.lifecat.club:8080/ssm)
 
 [Vuejs+SpringBoot前后端分离重构lifecatweb(仅部署前端)](http://www.lifecat.club/lifecat)
 
