@@ -72,3 +72,8 @@ git clone https://github.com/kevinten10/lifecatweb
   [ex hadoop 分布式平台进行数据处理](https://github.com/kevinten10/Hadoop-lifecat)  
   [ex android 相应Android相册应用](https://github.com/kevinten10/Android-lifecat)  
   [ex python 机器学习进行图像智能处理](https://github.com/kevinten10/Python-lifecat)  
+ 
+### LifeCat系列总览
+  [LifeCat系列项目](https://github.com/kevinten10/LifeCat)  
+  
+  如果觉得有用，可以帮忙点个star，谢谢啦！
