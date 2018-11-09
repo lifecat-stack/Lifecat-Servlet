@@ -13,6 +13,7 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface UserPropertyQueryService extends Service {
+
     UserProperty queryUserProperty(int userId);
 
     String  queryUserIcon(int userId);

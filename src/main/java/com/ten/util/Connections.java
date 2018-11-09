@@ -15,7 +15,6 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class Connections {
-
     private static Logger logger = LoggerFactory.getLogger(Connections.class);
 
     private Connections() {
@@ -23,7 +22,7 @@ public class Connections {
     }
 
     private static final String URL = String.format(
-            "jdbc:mysql://%s:%d/%s"+"?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false",
+            "jdbc:mysql://%s:%d/%s" + "?serverTimezone=UTC&characterEncoding=utf-8&useSSL=false",
             HOST.IP, DataBase.MYSQL_PORT, DataBase.DATABASE);
 
     static {

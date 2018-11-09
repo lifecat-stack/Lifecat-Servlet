@@ -17,7 +17,6 @@ import java.io.IOException;
  * @auther ten
  */
 public class EncodingFilter implements Filter {
-
     private static final Logger logger = LoggerFactory.getLogger(EncodingFilter.class);
 
     /**
@@ -34,12 +33,8 @@ public class EncodingFilter implements Filter {
         if (chain == null) {
             throw new NullPointerException("EncodingFilter is null");
         }
-
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
-
-        logger.info("EncodingFilter doFilter()");
-
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         chain.doFilter(request, response);
@@ -47,11 +42,9 @@ public class EncodingFilter implements Filter {
 
     /**
      * init()
-     *
-     * @throws ServletException filter init failure
      */
     @Override
-    public void init(FilterConfig arg0) throws ServletException {
+    public void init(FilterConfig arg0) {
         logger.info("EncodingFilter init()");
     }
 

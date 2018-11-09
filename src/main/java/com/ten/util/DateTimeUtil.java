@@ -9,7 +9,6 @@ import java.util.Date;
  * @auther ten
  */
 public class DateTimeUtil {
-
     private static volatile DateTimeUtil INSTANCE = null;
 
     private DateTimeUtil() {
@@ -28,13 +27,12 @@ public class DateTimeUtil {
     }
 
     /**
-     * 获取当前时间
-     * yyyy-MM-dd HH:mm:ss
+     * 获取当前时间 yyyy-MM-dd HH:mm:ss
      *
      * @return yyyy-MM-dd HH:mm:ss
      */
     public String getCurrentTime() {
-        String tempStr = "";
+        String tempStr;
         Date dt = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         tempStr = sdf.format(dt);

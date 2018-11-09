@@ -9,5 +9,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface ImageDeleteService extends Service {
+
     void deleteImageById(int imageId);
 }

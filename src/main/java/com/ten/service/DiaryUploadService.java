@@ -13,5 +13,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface DiaryUploadService extends Service {
+
     void uploadDiary(Diary diary);
 }

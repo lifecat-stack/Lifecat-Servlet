@@ -10,5 +10,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface ImageQueryService extends Service {
+
     Image queryImage(String imageName);
 }

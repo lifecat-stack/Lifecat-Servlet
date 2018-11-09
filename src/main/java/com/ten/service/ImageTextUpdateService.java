@@ -10,5 +10,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface ImageTextUpdateService extends Service{
+
     void updateImageText(Image image);
 }

@@ -12,5 +12,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface DiaryDeleteService extends Service {
+
     void deleteDiary(int diaryId);
 }

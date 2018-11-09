@@ -15,5 +15,6 @@ import java.util.List;
  * @auther ten
  */
 public interface ImageListQueryService extends Service {
+
     List<Image> queryImageListByUserId(int userId);
 }

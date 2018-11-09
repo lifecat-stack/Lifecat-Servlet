@@ -20,7 +20,6 @@ import java.io.IOException;
  * @auther ten
  */
 public class FormFilter implements Filter {
-
     private Logger logger = LoggerFactory.getLogger(FormFilter.class);
 
     /**
@@ -37,7 +36,8 @@ public class FormFilter implements Filter {
      * @throws NullPointerException 过滤器链异常
      */
     @Override
-    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
+    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
+            throws IOException, ServletException {
         // 检查NPE
         if (chain == null) {
             throw new NullPointerException("FormFilter is null");

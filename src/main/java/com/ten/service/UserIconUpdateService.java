@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
  * @auther ten
  */
 public interface UserIconUpdateService extends Service {
+
     void updateUserIcon(UserIcon userIcon);
 
     void writeUserIcon(HttpServletRequest req);

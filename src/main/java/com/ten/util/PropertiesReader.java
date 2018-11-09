@@ -18,6 +18,7 @@ import java.util.Properties;
  */
 public class PropertiesReader {
     private Logger logger = LoggerFactory.getLogger(PropertiesReader.class);
+
     /**
      * 读取制定properties文件
      *
@@ -43,12 +44,13 @@ public class PropertiesReader {
         } catch (Exception e) {
             logger.warn("resource not find");
             e.printStackTrace();
-        }finally {
-            assert in!=null;
-            try {
-                in.close();
-            } catch (IOException e) {
-                e.printStackTrace();
+        } finally {
+            if (in != null) {
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 

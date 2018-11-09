@@ -15,8 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * 请求处理层 (Web层) :MVC-Controller
- * <p>
+ * Request Dispatcher Controller
  * 对访问控制进行转发, 调用相应Service, 执行逻辑处理
  * 获取Service返回对象ServiceResult, 根据结果执行页面转发
  *
@@ -51,8 +50,7 @@ public class ActionServlet extends HttpServlet {
 
     /**
      * 表单验证通过
-     * 执行service服务
-     * 返回到对应界面
+     * 执行service服务, 返回到对应界面
      *
      * @param path 请求界面url路径
      * @param req  req
@@ -60,7 +58,6 @@ public class ActionServlet extends HttpServlet {
      * @throws ServletException servlet执行失败
      */
     private void executeSuccess(String path, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         // 提取url请求信息 /xxx
         String url = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));
 

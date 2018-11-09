@@ -15,5 +15,6 @@ import java.util.List;
  * @auther ten
  */
 public interface DiaryListQueryService extends Service {
+
     List<Diary> queryDiaryListByUserId(int userId);
 }

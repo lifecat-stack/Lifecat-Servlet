@@ -13,5 +13,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface ImageUploadService extends Service {
+
     void uploadImage(Image image);
 }

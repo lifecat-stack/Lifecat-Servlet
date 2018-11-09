@@ -9,6 +9,7 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface UserPswUpdateService extends Service {
+
     void updateUserPassword(int userId, String newpassword);
 }
 
