@@ -1,16 +1,26 @@
 package com.ten.bean.entity;
 
 /**
- * DO :user_icon
+ * user_icon
  *
  * @auther ten
  */
-public class UserIconDO {
+public class UserIcon {
 
     private Integer userId;
     private String iconPath;
     private String iconGmtCreate;
     private String iconGmtModified;
+
+    @Override
+    public String toString() {
+        return "UserIcon@"
+                + "{UserID:" + userId
+                + ",Path:" + iconPath
+                + ",Create:" + iconGmtCreate
+                + ",Modified:" + iconGmtModified
+                + "}";
+    }
 
     public Integer getUserId() {
         return userId;
@@ -42,19 +52,6 @@ public class UserIconDO {
 
     public void setIconGmtModified(String iconGmtModified) {
         this.iconGmtModified = iconGmtModified;
-    }
-
-    /**
-     * @return UserIconDO@1234{UserID:'',Path:'',Create:'',Modified:''}
-     */
-    @Override
-    public String toString() {
-        return "UserIconDO@" + userId
-                + "{UserID:" + userId
-                + ",Path:" + iconPath
-                + ",Create:" + iconGmtCreate
-                + ",Modified:" + iconGmtModified
-                + "}";
     }
 }
 

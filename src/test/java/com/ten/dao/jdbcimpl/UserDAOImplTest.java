@@ -1,6 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
-import com.ten.bean.entity.UserDO;
+import com.ten.bean.entity.User;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.UserDAO;
 import org.junit.*;
@@ -40,19 +40,19 @@ public class UserDAOImplTest {
     }
 
     /**
-     * Method: insertUser(UserDO userDO)
+     * Method: insertUser(User userDO)
      */
     @Test
     public void testInsertUser() throws Exception {
-        UserDO userDO = new UserDO();
+        User user = new User();
 
-        userDO.setUserName("test");
-        userDO.setUserPassword("123456");
-        userDO.setUserLevel("test");
-        userDO.setUserGmtCreate("2019-01-01 00:00:00");
-        userDO.setUserGmtModified("2019-01-01 00:00:00");
+        user.setUserName("test");
+        user.setUserPassword("123456");
+        user.setUserLevel("test");
+        user.setUserGmtCreate("2019-01-01 00:00:00");
+        user.setUserGmtModified("2019-01-01 00:00:00");
 
-        int userId = dao.insertUser(userDO);
+        int userId = dao.insertUser(user);
         assertNotEquals(userId, 0);
     }
 
@@ -61,12 +61,12 @@ public class UserDAOImplTest {
      */
     @Test
     public void testQueryUser() throws Exception {
-        UserDO userDO = dao.queryUser("test");
-        assertEquals("test", userDO.getUserName());
-        assertEquals("123456", userDO.getUserPassword());
-        assertEquals("test", userDO.getUserLevel());
-        assertEquals("2019-01-01 00:00:00", userDO.getUserGmtCreate());
-        assertEquals("2019-01-01 00:00:00", userDO.getUserGmtModified());
+        User user = dao.queryUser("test");
+        assertEquals("test", user.getUserName());
+        assertEquals("123456", user.getUserPassword());
+        assertEquals("test", user.getUserLevel());
+        assertEquals("2019-01-01 00:00:00", user.getUserGmtCreate());
+        assertEquals("2019-01-01 00:00:00", user.getUserGmtModified());
     }
 
     /**

@@ -16,7 +16,7 @@ public class DataBase {
      */
     public static final int MYSQL_PORT = 3306;
     /**
-     * TODO 数据库
+     * FIXME 数据库
      */
     public static final String DATABASE = "lifecat";
     /**
@@ -24,11 +24,11 @@ public class DataBase {
      */
     public static final String ENCODING = "UTF-8";
     /**
-     * TODO 数据库用户名
+     * FIXME 数据库用户名
      */
     public static final String MYSQL_NAME = "root";
     /**
-     * TODO 数据库密码
+     * FIXME 数据库密码
      */
-    public static final String MYSQL_PASSWORD = "123456";
+    public static final String MYSQL_PASSWORD = "wangshihao";
 }

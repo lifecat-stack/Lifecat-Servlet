@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.UserPropertyDO;
+import com.ten.bean.entity.UserProperty;
 import com.ten.bean.vo.UserPropertyVO;
 import com.ten.constant.Page;
 import com.ten.constant.WEBINF;
@@ -43,20 +43,20 @@ public class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
 
         Integer userId = Integer.valueOf(req.getParameter("userId"));
 
-        UserPropertyDO userPropertyDO = queryUserProperty(userId);
-        if (userPropertyDO == null) {
+        UserProperty userProperty = queryUserProperty(userId);
+        if (userProperty == null) {
             return new ServiceResult.Builder(false).errormsg("用户信息不存在").page(WEBINF.USER).build();
         }
 
         String userIconPath = queryUserIcon(userId);
 
         UserPropertyVO userPropertyVO = new UserPropertyVO(userId)
-                .nickname(userPropertyDO.getPropertyNickname())
-                .signature(userPropertyDO.getPropertySignature())
-                .sex(userPropertyDO.getPropertySex())
-                .email(userPropertyDO.getPropertyEmail())
-                .birthday(userPropertyDO.getPropertyBirthday())
-                .location(userPropertyDO.getPropertyLocation())
+                .nickname(userProperty.getPropertyNickname())
+                .signature(userProperty.getPropertySignature())
+                .sex(userProperty.getPropertySex())
+                .email(userProperty.getPropertyEmail())
+                .birthday(userProperty.getPropertyBirthday())
+                .location(userProperty.getPropertyLocation())
                 .iconPath(userIconPath);
 
         req.getSession().setAttribute("userProperty", userPropertyVO);
@@ -64,7 +64,7 @@ public class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
     }
 
     @Override
-    public UserPropertyDO queryUserProperty(int userId) {
+    public UserProperty queryUserProperty(int userId) {
         try {
             return propertyDAO.queryUserProperty(userId);
         } catch (SQLException e) {

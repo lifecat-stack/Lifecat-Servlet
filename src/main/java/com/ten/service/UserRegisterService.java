@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.UserDO;
+import com.ten.bean.entity.User;
 import com.ten.service.util.Service;
 
 /**
@@ -13,5 +13,5 @@ public interface UserRegisterService extends Service {
 
     boolean isUserExisted(String userName);
 
-    int insertUserToDatabase(UserDO userDO);
+    int insertUserToDatabase(User user);
 }

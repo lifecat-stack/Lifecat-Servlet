@@ -1,19 +1,19 @@
 package com.ten.dao.mybatisimpl;
 
-import com.ten.bean.entity.DiaryDO;
+import com.ten.bean.entity.Diary;
 
 import java.util.List;
 import java.util.Map;
 
 public interface DiaryMapper {
 
-    List<DiaryDO> selectDiaryListByUserId(int userId);
+    List<Diary> selectDiaryListByUserId(int userId);
 
-    DiaryDO selectDiaryByDiaryName(Map<String, String> map);
+    Diary selectDiaryByDiaryName(Map<String, String> map);
 
-    int insertDiary(DiaryDO diaryDO);
+    int insertDiary(Diary diary);
 
-    int updateDiary(DiaryDO diaryDO);
+    int updateDiary(Diary diary);
 
     int deleteDiaryById(int diaryId);
 }

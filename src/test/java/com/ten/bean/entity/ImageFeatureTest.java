@@ -3,18 +3,18 @@ package com.ten.bean.entity;
 import org.junit.*;
 
 /**
- * ImageFeatureDO Tester.
+ * ImageFeature Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>ÁùÔÂ 17, 2018</pre>
  */
-public class ImageFeatureDOTest {
-    private static ImageFeatureDO imageFeatureDO;
+public class ImageFeatureTest {
+    private static ImageFeature imageFeature;
 
     @BeforeClass
     public static void beforeClass() {
-        imageFeatureDO = new ImageFeatureDO();
+        imageFeature = new ImageFeature();
     }
 
     @Before
@@ -27,7 +27,7 @@ public class ImageFeatureDOTest {
 
     @AfterClass
     public static void afterClass() {
-        imageFeatureDO = null;
+        imageFeature = null;
     }
 
     /**
@@ -35,8 +35,8 @@ public class ImageFeatureDOTest {
      */
     @Test
     public void testGetImageId() throws Exception {
-        imageFeatureDO.setImageId(17);
-        assert imageFeatureDO.getImageId() == 17;
+        imageFeature.setImageId(17);
+        assert imageFeature.getImageId() == 17;
     }
 
     /**

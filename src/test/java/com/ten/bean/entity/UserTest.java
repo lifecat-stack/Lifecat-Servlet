@@ -3,18 +3,18 @@ package com.ten.bean.entity;
 import org.junit.*;
 
 /**
- * UserDO Tester.
+ * User Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>���� 20, 2018</pre>
  */
-public class UserDOTest {
-    private static UserDO userDO;
+public class UserTest {
+    private static User user;
 
     @BeforeClass
     public static void beforeClass() {
-        userDO = new UserDO();
+        user = new User();
     }
 
     @Before
@@ -27,7 +27,7 @@ public class UserDOTest {
 
     @AfterClass
     public static void afterClass() {
-        userDO = null;
+        user = null;
     }
 
     /**
@@ -35,8 +35,8 @@ public class UserDOTest {
      */
     @Test
     public void testGetUserId() throws Exception {
-        userDO.setUserId(17);
-        assert userDO.getUserId() == 17;
+        user.setUserId(17);
+        assert user.getUserId() == 17;
     }
 
     /**

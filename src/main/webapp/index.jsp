@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" isELIgnored="false" %>
-
 <html lang="en">
 <head>
     <!--
@@ -25,7 +24,6 @@
     <meta name="renderer" content="webkit"/>
     <!--移动设备优先：禁止缩放-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
     <!--兼容性-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!--编码信息-->
@@ -37,7 +35,6 @@
     <!--网页缓存时间：expires属性-->
     <!--页面不缓存-->
     <meta http-equiv="pragma" content="no-cache"/>
-
     <!--页面标签标题-->
     <title>成长相册</title>
     <!--页面标签图标-->
@@ -53,7 +50,6 @@
     <style type="text/css">
         @import url("css/mycss/index.css");
     </style>
-
 </head>
 
 <body>
@@ -257,7 +253,7 @@
     <!--页脚-->
     <div class="footer">
         <div class="ownership">
-            <span> &copy;2018 - <strong>成长相册-lifecat</strong> - TEN</span>
+            <span> &copy;2018 - <strong>成长相册-lifecat</strong> - Kevinten</span>
         </div>
     </div>
 </div>

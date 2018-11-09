@@ -3,18 +3,18 @@ package com.ten.bean.entity;
 import org.junit.*;
 
 /**
- * ImageDO Tester.
+ * Image Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>ÎåÔÂ 20, 2018</pre>
  */
-public class ImageDOTest {
-    private static ImageDO imageDO;
+public class ImageTest {
+    private static Image image;
 
     @BeforeClass
     public static void beforeClass() {
-        imageDO = new ImageDO();
+        image = new Image();
     }
 
     @Before
@@ -27,7 +27,7 @@ public class ImageDOTest {
 
     @AfterClass
     public static void afterClass() {
-        imageDO = null;
+        image = null;
     }
 
     /**
@@ -35,8 +35,8 @@ public class ImageDOTest {
      */
     @Test
     public void testGetImageId() throws Exception {
-        imageDO.setImageId(17);
-        assert imageDO.getImageId() == 17;
+        image.setImageId(17);
+        assert image.getImageId() == 17;
     }
 
     /**
@@ -51,8 +51,8 @@ public class ImageDOTest {
      */
     @Test
     public void testGetUserId() throws Exception {
-        imageDO.setUserId(17);
-        assert imageDO.getUserId() == 17;
+        image.setUserId(17);
+        assert image.getUserId() == 17;
     }
 
     /**
@@ -67,8 +67,8 @@ public class ImageDOTest {
      */
     @Test
     public void testGetClassId() throws Exception {
-        imageDO.setClassId(17);
-        assert imageDO.getClassId() == 17;
+        image.setClassId(17);
+        assert image.getClassId() == 17;
     }
 
     /**

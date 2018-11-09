@@ -1,6 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
-import com.ten.bean.entity.DiaryDO;
+import com.ten.bean.entity.Diary;
 import com.ten.dao.BaseDAO;
 import com.ten.dao.DiaryDAO;
 
@@ -19,27 +19,27 @@ public class DiaryDAOImpl extends BaseDAO implements DiaryDAO {
     }
 
     @Override
-    public int insertDiary(DiaryDO diaryDO) throws SQLException {
+    public int insertDiary(Diary diary) throws SQLException {
         String sql = "INSERT INTO diary(diary_name, diary_text, is_deleted, user_id, diary_gmt_create, diary_gmt_modified) " +
                 "VALUES( ?,?,?,?,?,?)";
         Object[] args = {
-                diaryDO.getDiaryName(),
-                diaryDO.getdiaryText(),
-                diaryDO.getDeleted(),
-                diaryDO.getUserId(),
-                diaryDO.getdiaryGmtCreate(),
-                diaryDO.getdiaryGmtModified()
+                diary.getDiaryName(),
+                diary.getdiaryText(),
+                diary.getDeleted(),
+                diary.getUserId(),
+                diary.getdiaryGmtCreate(),
+                diary.getdiaryGmtModified()
         };
 
         return insertAndReturnKey(sql, args);
     }
 
     @Override
-    public void updateDiary(DiaryDO diaryDO) throws SQLException {
-        int diaryId = diaryDO.getDiaryId();
-        String diaryName = diaryDO.getDiaryName();
-        String diaryText = diaryDO.getdiaryText();
-        String modifiedTime = diaryDO.getdiaryGmtModified();
+    public void updateDiary(Diary diary) throws SQLException {
+        int diaryId = diary.getDiaryId();
+        String diaryName = diary.getDiaryName();
+        String diaryText = diary.getdiaryText();
+        String modifiedTime = diary.getdiaryGmtModified();
         String sql = "UPDATE diary set diary_name = '" + diaryName + "'," +
                 "diary_text='" + diaryText + "'," +
                 "diary_gmt_modified='" + modifiedTime + "' " +
@@ -60,31 +60,31 @@ public class DiaryDAOImpl extends BaseDAO implements DiaryDAO {
     }
 
     @Override
-    public DiaryDO queryDiary(String diaryName) throws SQLException {
+    public Diary queryDiary(String diaryName) throws SQLException {
         String sql = "SELECT diary_id,diary_name,diary_text,diary_gmt_modified from diary where diary_name = '" + diaryName + "' and is_deleted = '1'";
         ResultSet rs = query(sql);
         rs.next();
-        DiaryDO diaryDO = new DiaryDO();
-        diaryDO.setDiaryId(rs.getInt("diary_id"));
-        diaryDO.setDiaryName(rs.getString("diary_name"));
-        diaryDO.setdiaryText(rs.getString("diary_text"));
-        diaryDO.setdiaryGmtModified(rs.getString("diary_gmt_modified"));
+        Diary diary = new Diary();
+        diary.setDiaryId(rs.getInt("diary_id"));
+        diary.setDiaryName(rs.getString("diary_name"));
+        diary.setdiaryText(rs.getString("diary_text"));
+        diary.setdiaryGmtModified(rs.getString("diary_gmt_modified"));
 
-        return diaryDO;
+        return diary;
     }
 
     @Override
-    public List<DiaryDO> queryDiaryList(Integer userId) throws SQLException {
+    public List<Diary> queryDiaryList(Integer userId) throws SQLException {
         String sql = "SELECT diary_id,diary_name,diary_text,diary_gmt_modified from diary where user_id = '" + userId + "' and is_deleted = '1'";
         ResultSet rs = query(sql);
-        List<DiaryDO> list = new ArrayList<>();
+        List<Diary> list = new ArrayList<>();
         while (rs.next()) {
-            DiaryDO diaryDO = new DiaryDO();
-            diaryDO.setDiaryId(rs.getInt("diary_id"));
-            diaryDO.setDiaryName(rs.getString("diary_name"));
-            diaryDO.setdiaryText(rs.getString("diary_text"));
-            diaryDO.setdiaryGmtModified(rs.getString("diary_gmt_modified"));
-            list.add(diaryDO);
+            Diary diary = new Diary();
+            diary.setDiaryId(rs.getInt("diary_id"));
+            diary.setDiaryName(rs.getString("diary_name"));
+            diary.setdiaryText(rs.getString("diary_text"));
+            diary.setdiaryGmtModified(rs.getString("diary_gmt_modified"));
+            list.add(diary);
         }
         return list;
     }

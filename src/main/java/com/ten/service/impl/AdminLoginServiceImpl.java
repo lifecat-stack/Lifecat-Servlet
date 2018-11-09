@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.AdminDO;
+import com.ten.bean.entity.Admin;
 import com.ten.bean.vo.AdminVO;
 import com.ten.constant.Page;
 import com.ten.dao.AdminDAO;
@@ -35,7 +35,7 @@ public class AdminLoginServiceImpl implements AdminLoginService {
         String adminName = req.getParameter("adminName");
         String adminPassword = req.getParameter("adminPassword");
 
-        AdminDO adminDO = queryAdminByName(adminName);
+        Admin adminDO = queryAdminByName(adminName);
 
         if (adminDO == null) {
             return new ServiceResult.Builder(false).page(Page.PAGE_INDEX).errormsg("该管理员不存在").build();
@@ -56,7 +56,7 @@ public class AdminLoginServiceImpl implements AdminLoginService {
     }
 
     @Override
-    public AdminDO queryAdminByName(String adminName) {
+    public Admin queryAdminByName(String adminName) {
         try {
             return dao.queryAdmin(adminName);
         } catch (SQLException e) {

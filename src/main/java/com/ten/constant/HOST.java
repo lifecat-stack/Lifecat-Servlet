@@ -13,7 +13,7 @@ public class HOST {
     /**
      * TODO 服务器IP
      */
-    public static final String IP = "127.0.0.1";
+    public static final String IP = "111.230.244.153";
     /**
      * 项目名称
      */
@@ -27,6 +27,7 @@ public class HOST {
      */
     static final String PROJECT_CONTEXT =
             "http://" + IP + ":" + TOMCAT_PORT + "/" + PROJECT + "/";
+
     /**
      * Host{ip:123,project:asd}
      */

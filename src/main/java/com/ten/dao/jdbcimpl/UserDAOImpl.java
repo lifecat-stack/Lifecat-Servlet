@@ -1,6 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
-import com.ten.bean.entity.UserDO;
+import com.ten.bean.entity.User;
 import com.ten.dao.BaseDAO;
 import com.ten.dao.UserDAO;
 
@@ -17,26 +17,26 @@ public class UserDAOImpl extends BaseDAO implements UserDAO {
     }
 
     @Override
-    public int insertUser(UserDO userDO) throws SQLException {
+    public int insertUser(User user) throws SQLException {
         String sql = "INSERT INTO user(user_name,user_password,user_level,user_gmt_create,user_gmt_modified)\n"
                 + " VALUES(?,?,?,?,?)";
-        Object[] args = {userDO.getUserName(), userDO.getUserPassword(), userDO.getUserLevel(), userDO.getUserGmtCreate(), userDO.getUserGmtModified()};
+        Object[] args = {user.getUserName(), user.getUserPassword(), user.getUserLevel(), user.getUserGmtCreate(), user.getUserGmtModified()};
         return insertAndReturnKey(sql, args);
     }
 
     @Override
-    public UserDO queryUser(String userName) throws SQLException {
+    public User queryUser(String userName) throws SQLException {
         String sql = "select user_id,user_password,user_level,user_gmt_create,user_gmt_modified from user where user_name = '" + userName + "'";
         ResultSet resultSet = query(sql);
-        UserDO userDO = new UserDO();
+        User user = new User();
         resultSet.next();
-        userDO.setUserId(resultSet.getInt("user_id"));
-        userDO.setUserName(userName);
-        userDO.setUserPassword(resultSet.getString("user_password"));
-        userDO.setUserLevel(resultSet.getString("user_level"));
-        userDO.setUserGmtCreate(resultSet.getString("user_gmt_create"));
-        userDO.setUserGmtModified(resultSet.getString("user_gmt_modified"));
-        return userDO;
+        user.setUserId(resultSet.getInt("user_id"));
+        user.setUserName(userName);
+        user.setUserPassword(resultSet.getString("user_password"));
+        user.setUserLevel(resultSet.getString("user_level"));
+        user.setUserGmtCreate(resultSet.getString("user_gmt_create"));
+        user.setUserGmtModified(resultSet.getString("user_gmt_modified"));
+        return user;
     }
 
     @Override

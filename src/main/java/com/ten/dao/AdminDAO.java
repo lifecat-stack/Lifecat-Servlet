@@ -1,6 +1,6 @@
 package com.ten.dao;
 
-import com.ten.bean.entity.AdminDO;
+import com.ten.bean.entity.Admin;
 
 import java.sql.SQLException;
 
@@ -14,10 +14,10 @@ public interface AdminDAO {
      * 注册 :
      * 插入AdminDO到admin表
      *
-     * @param adminDO AdminDO
+     * @param admin Admin
      * @throws SQLException e
      */
-    void insertAdmin(AdminDO adminDO) throws SQLException;
+    void insertAdmin(Admin admin) throws SQLException;
 
     /**
      * 登录 :
@@ -25,11 +25,11 @@ public interface AdminDAO {
      * 获取数据库admin信息
      *
      * @param adminName 用户名
-     * @return AdminDO AdminDO
+     * @return Admin Admin
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    AdminDO queryAdmin(String adminName) throws SQLException;
+    Admin queryAdmin(String adminName) throws SQLException;
 
     /**
      * 注册 :

@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Directory;
 import com.ten.constant.Page;
@@ -67,17 +67,17 @@ public class ImageUploadServiceImpl implements ImageUploadService {
         DAOFactory factory = new JdbcDAOFactory();
         ImageDAO dao = (ImageDAO) factory.getDaoByTableName("image");
 
-        ImageDO imageDO = new ImageDO();
-        imageDO.setUserId(userId);
-        imageDO.setClassId(0);
-        imageDO.setDeleted(1);
-        imageDO.setImageText(imageText);
-        imageDO.setImagePath(imagePath);
-        imageDO.setImageGmtCreate(dateTime);
-        imageDO.setImageGmtModified(dateTime);
+        Image image = new Image();
+        image.setUserId(userId);
+        image.setClassId(0);
+        image.setDeleted(1);
+        image.setImageText(imageText);
+        image.setImagePath(imagePath);
+        image.setImageGmtCreate(dateTime);
+        image.setImageGmtModified(dateTime);
         boolean success2 = false;
         try {
-            dao.insertImage(imageDO);
+            dao.insertImage(image);
             success2 = true;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -96,7 +96,7 @@ public class ImageUploadServiceImpl implements ImageUploadService {
     }
 
     @Override
-    public void uploadImage(ImageDO imageDO) {
+    public void uploadImage(Image image) {
 
     }
 }

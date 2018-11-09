@@ -5,18 +5,18 @@ import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
 /**
- * DiaryDO Tester.
+ * Diary Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>ÎåÔÂ 20, 2018</pre>
  */
-public class DiaryDOTest {
-    private static DiaryDO diaryDO;
+public class DiaryTest {
+    private static Diary diary;
 
     @BeforeClass
     public static void beforeClass() {
-        diaryDO = new DiaryDO();
+        diary = new Diary();
     }
 
     @Before
@@ -29,7 +29,7 @@ public class DiaryDOTest {
 
     @AfterClass
     public static void afterClass() {
-        diaryDO = null;
+        diary = null;
     }
 
     /**
@@ -37,8 +37,8 @@ public class DiaryDOTest {
      */
     @Test
     public void testGetDiaryId() throws Exception {
-        diaryDO.setDiaryId(17);
-        assert diaryDO.getDiaryId() == 17;
+        diary.setDiaryId(17);
+        assert diary.getDiaryId() == 17;
     }
 
     /**
@@ -53,8 +53,8 @@ public class DiaryDOTest {
      */
     @Test
     public void testGetUserId() throws Exception {
-        diaryDO.setUserId(17);
-        assert diaryDO.getUserId() == 17;
+        diary.setUserId(17);
+        assert diary.getUserId() == 17;
     }
 
     /**
@@ -69,8 +69,8 @@ public class DiaryDOTest {
      */
     @Test
     public void testGetDiaryName() throws Exception {
-        diaryDO.setDiaryName("diary");
-        assertEquals("diary", diaryDO.getDiaryName());
+        diary.setDiaryName("diary");
+        assertEquals("diary", diary.getDiaryName());
     }
 
     /**
@@ -85,8 +85,8 @@ public class DiaryDOTest {
      */
     @Test
     public void testGetdiaryText() throws Exception {
-        diaryDO.setdiaryText("this is text");
-        assertEquals("this is text", diaryDO.getdiaryText());
+        diary.setdiaryText("this is text");
+        assertEquals("this is text", diary.getdiaryText());
     }
 
     /**
@@ -101,8 +101,8 @@ public class DiaryDOTest {
      */
     @Test
     public void testGetDeleted() throws Exception {
-        diaryDO.setDeleted(1);
-        assert diaryDO.getDeleted() == 1;
+        diary.setDeleted(1);
+        assert diary.getDeleted() == 1;
     }
 
     /**
@@ -118,8 +118,8 @@ public class DiaryDOTest {
      */
     @Test
     public void testGetdiaryGmtCreate() throws Exception {
-        diaryDO.setdiaryGmtCreate("2018-01-01 23:59:59");
-        assertEquals("2018-01-01 23:59:59", diaryDO.getdiaryGmtCreate());
+        diary.setdiaryGmtCreate("2018-01-01 23:59:59");
+        assertEquals("2018-01-01 23:59:59", diary.getdiaryGmtCreate());
     }
 
     /**
@@ -134,8 +134,8 @@ public class DiaryDOTest {
      */
     @Test
     public void testGetdiaryGmtModified() throws Exception {
-        diaryDO.setdiaryGmtModified("2018-01-01 23:59:59");
-        assertEquals("2018-01-01 23:59:59", diaryDO.getdiaryGmtModified());
+        diary.setdiaryGmtModified("2018-01-01 23:59:59");
+        assertEquals("2018-01-01 23:59:59", diary.getdiaryGmtModified());
     }
 
     /**
@@ -150,6 +150,6 @@ public class DiaryDOTest {
      */
     @Test
     public void testToString() throws Exception {
-        System.out.println("DiaryDO:" + diaryDO.toString());
+        System.out.println("Diary:" + diary.toString());
     }
 } 

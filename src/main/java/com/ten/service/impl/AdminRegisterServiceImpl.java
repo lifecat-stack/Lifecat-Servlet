@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.AdminDO;
+import com.ten.bean.entity.Admin;
 import com.ten.service.AdminRegisterService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +34,6 @@ public class AdminRegisterServiceImpl implements AdminRegisterService {
     }
 
     @Override
-    public void insertAdminToDatabase(AdminDO adminDO) {
+    public void insertAdminToDatabase(Admin admin) {
     }
 }

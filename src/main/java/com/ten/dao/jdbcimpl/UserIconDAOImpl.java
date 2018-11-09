@@ -2,7 +2,7 @@ package com.ten.dao.jdbcimpl;
 
 import com.ten.dao.BaseDAO;
 import com.ten.dao.UserIconDAO;
-import com.ten.bean.entity.UserIconDO;
+import com.ten.bean.entity.UserIcon;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,20 +18,20 @@ public class UserIconDAOImpl extends BaseDAO implements UserIconDAO {
 
 
     @Override
-    public void insertUserIcon(UserIconDO userIconDO) throws SQLException {
+    public void insertUserIcon(UserIcon userIcon) throws SQLException {
         String sql = "insert into user_icon(user_id,icon_path,icon_gmt_create,icon_gmt_modified) " +
                 " VALUES( ?,?,?,?)";
-        Object[] args = {userIconDO.getUserId(), userIconDO.getIconPath(), userIconDO.getIconGmtCreate(), userIconDO.getIconGmtModified()};
+        Object[] args = {userIcon.getUserId(), userIcon.getIconPath(), userIcon.getIconGmtCreate(), userIcon.getIconGmtModified()};
         insert(sql, args);
     }
 
     @Override
-    public void updateUserIcon(UserIconDO userIconDO) throws SQLException {
+    public void updateUserIcon(UserIcon userIcon) throws SQLException {
         String sql = "update user_icon set icon_path = '"
-                + userIconDO.getIconPath()
+                + userIcon.getIconPath()
                 + "' ,icon_gmt_modified = '"
-                + userIconDO.getIconGmtModified()
-                + "'  where user_id = '" + userIconDO.getUserId() + "'";
+                + userIcon.getIconGmtModified()
+                + "'  where user_id = '" + userIcon.getUserId() + "'";
         update(sql);
     }
 

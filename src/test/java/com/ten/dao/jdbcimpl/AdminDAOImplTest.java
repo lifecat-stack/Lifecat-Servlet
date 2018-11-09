@@ -1,6 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
-import com.ten.bean.entity.AdminDO;
+import com.ten.bean.entity.Admin;
 import com.ten.dao.AdminDAO;
 import com.ten.dao.DAOFactory;
 import org.junit.*;
@@ -43,19 +43,19 @@ public class AdminDAOImplTest {
 
 
     /**
-     * Method: insertAdmin(AdminDO adminDO)
+     * Method: insertAdmin(Admin adminDO)
      */
     @Test
     public void testInsertAdmin() throws Exception {
-        AdminDO adminDO = new AdminDO();
+        Admin admin = new Admin();
 
-        adminDO.setAdminName("test");
-        adminDO.setAdminPassword("test");
-        adminDO.setAdminGmtCreate("2000-1-1 00:00:00");
-        adminDO.setAdminGmtModified("2000-1-1 00:00:00");
-        adminDO.setAdminLevel("admin");
+        admin.setAdminName("test");
+        admin.setAdminPassword("test");
+        admin.setAdminGmtCreate("2000-1-1 00:00:00");
+        admin.setAdminGmtModified("2000-1-1 00:00:00");
+        admin.setAdminLevel("admin");
 
-        dao.insertAdmin(adminDO);
+        dao.insertAdmin(admin);
     }
 
     /**
@@ -63,9 +63,9 @@ public class AdminDAOImplTest {
      */
     @Test
     public void testQueryAdmin() throws Exception {
-        AdminDO adminDO = dao.queryAdmin("test");
+        Admin admin = dao.queryAdmin("test");
 
-        assertNotNull(adminDO);
+        assertNotNull(admin);
     }
 
     /**

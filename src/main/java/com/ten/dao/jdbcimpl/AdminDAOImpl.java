@@ -1,7 +1,7 @@
 package com.ten.dao.jdbcimpl;
 
 import com.ten.dao.AdminDAO;
-import com.ten.bean.entity.AdminDO;
+import com.ten.bean.entity.Admin;
 import com.ten.dao.BaseDAO;
 
 import java.sql.ResultSet;
@@ -17,26 +17,26 @@ public class AdminDAOImpl extends BaseDAO implements AdminDAO {
     }
 
     @Override
-    public void insertAdmin(AdminDO adminDO) throws SQLException {
+    public void insertAdmin(Admin admin) throws SQLException {
         String sql = "insert into admin(admin_name,admin_password" +
                 ",admin_level,admin_gmt_create,admin_gmt_modified) " +
                 "values(?,?,?,?,?)";
-        Object[] args = {adminDO.getAdminName(), adminDO.getAdminPassword(), adminDO.getAdminLevel(),
-                adminDO.getAdminGmtCreate(), adminDO.getAdminGmtModified()};
+        Object[] args = {admin.getAdminName(), admin.getAdminPassword(), admin.getAdminLevel(),
+                admin.getAdminGmtCreate(), admin.getAdminGmtModified()};
         insert(sql, args);
     }
 
     @Override
-    public AdminDO queryAdmin(String adminName) throws SQLException {
+    public Admin queryAdmin(String adminName) throws SQLException {
         String sql = "select admin_id,admin_name,admin_password,admin_level from admin where admin_name = '" + adminName + "'";
         ResultSet resultSet = query(sql);
         resultSet.next();
-        AdminDO adminDO = new AdminDO();
-        adminDO.setAdminId(resultSet.getInt("admin_id"));
-        adminDO.setAdminName(adminName);
-        adminDO.setAdminPassword(resultSet.getString("admin_password"));
-        adminDO.setAdminLevel(resultSet.getString("admin_level"));
-        return adminDO;
+        Admin admin = new Admin();
+        admin.setAdminId(resultSet.getInt("admin_id"));
+        admin.setAdminName(adminName);
+        admin.setAdminPassword(resultSet.getString("admin_password"));
+        admin.setAdminLevel(resultSet.getString("admin_level"));
+        return admin;
     }
 
     @Override

@@ -1,11 +1,11 @@
 package com.ten.bean.entity;
 
 /**
- * DO :user
+ * user
  *
  * @auther ten
  */
-public class UserDO {
+public class User {
 
     private Integer userId;
     private String userName;
@@ -13,6 +13,18 @@ public class UserDO {
     private String userLevel;
     private String userGmtCreate;
     private String userGmtModified;
+
+    @Override
+    public String toString() {
+        return "User@"
+                + "{ID:" + userId
+                + ",Name:" + userName
+                + ",Password:" + userPassword
+                + ",Level:" + userLevel
+                + ",Create:" + userGmtCreate
+                + ",Modified:" + userGmtModified
+                + "}";
+    }
 
     public Integer getUserId() {
         return userId;
@@ -60,20 +72,5 @@ public class UserDO {
 
     public void setUserGmtModified(String userGmtModified) {
         this.userGmtModified = userGmtModified;
-    }
-
-    /**
-     * @return UserDO@1234{ID:'',Name:'',Password:'',Level:'',Create:'',Modified:''}
-     */
-    @Override
-    public String toString() {
-        return "UserDO@" + userId
-                + "{ID:" + userId
-                + ",Name:" + userName
-                + ",Password:" + userPassword
-                + ",Level:" + userLevel
-                + ",Create:" + userGmtCreate
-                + ",Modified:" + userGmtModified
-                + "}";
     }
 }

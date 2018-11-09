@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.service.ImageQueryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +26,7 @@ public class ImageQueryServiceImpl implements ImageQueryService {
     }
 
     @Override
-    public ImageDO queryImage(String imageName) {
+    public Image queryImage(String imageName) {
         return null;
     }
 }

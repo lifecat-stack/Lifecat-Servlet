@@ -1,17 +1,22 @@
 package com.ten.bean.entity;
 
 /**
- * DO :image_feature
+ * image_feature
  *
  * @auther ten
  */
-public class ImageFeatureDO {
+public class ImageFeature {
 
     private Integer imageId;
     private Integer imageClass;
     private String imageFeaturePath;
     private String featureGmtCreate;
     private String featureGmtModified;
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 
     public Integer getImageId() {
         return imageId;

@@ -1,6 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
-import com.ten.bean.entity.UserIconDO;
+import com.ten.bean.entity.UserIcon;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.UserIconDAO;
 import org.junit.*;
@@ -39,34 +39,34 @@ public class UserIconDAOImplTest {
     }
 
     /**
-     * Method: insertUserIcon(UserIconDO userIconDO)
+     * Method: insertUserIcon(UserIcon userIconDO)
      */
     @Test
     public void testInsertUserIcon() throws Exception {
-        UserIconDO userIconDO = new UserIconDO();
-        assertNotNull(userIconDO);
+        UserIcon userIcon = new UserIcon();
+        assertNotNull(userIcon);
 
-        userIconDO.setUserId(6);
-        userIconDO.setIconPath("D:/Java/lifecatweb/src/main/webapp/image/one/icon/icon.jpg");
-        userIconDO.setIconGmtCreate("2019-01-01 00:00:00");
-        userIconDO.setIconGmtModified("2019-01-01 00:00:00");
+        userIcon.setUserId(6);
+        userIcon.setIconPath("D:/Java/lifecatweb/src/main/webapp/image/one/icon/icon.jpg");
+        userIcon.setIconGmtCreate("2019-01-01 00:00:00");
+        userIcon.setIconGmtModified("2019-01-01 00:00:00");
 
-        dao.insertUserIcon(userIconDO);
+        dao.insertUserIcon(userIcon);
     }
 
     /**
-     * Method: updateUserIcon(UserIconDO userIconDO)
+     * Method: updateUserIcon(UserIcon userIconDO)
      */
     @Test
     public void testUpdateUserIcon() throws Exception {
-        UserIconDO userIconDO = new UserIconDO();
-        assertNotNull(userIconDO);
+        UserIcon userIcon = new UserIcon();
+        assertNotNull(userIcon);
 
-        userIconDO.setUserId(6);
-        userIconDO.setIconPath("D:/Java/lifecatweb/src/main/webapp/image/one/icon/icon2.jpg");
-        userIconDO.setIconGmtModified("2020-01-01 00:00:00");
+        userIcon.setUserId(6);
+        userIcon.setIconPath("D:/Java/lifecatweb/src/main/webapp/image/one/icon/icon2.jpg");
+        userIcon.setIconGmtModified("2020-01-01 00:00:00");
 
-        dao.updateUserIcon(userIconDO);
+        dao.updateUserIcon(userIcon);
     }
 
     /**

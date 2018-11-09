@@ -5,18 +5,18 @@ import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
 /**
- * AdminDO Tester.
+ * Admin Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>ÎåÔÂ 20, 2018</pre>
  */
-public class AdminDOTest {
-    private static AdminDO adminDO;
+public class AdminTest {
+    private static Admin admin;
 
     @BeforeClass
     public static void beforeClass() {
-        adminDO = new AdminDO();
+        admin = new Admin();
     }
 
     @Before
@@ -29,7 +29,7 @@ public class AdminDOTest {
 
     @AfterClass
     public static void afterClass() {
-        adminDO = null;
+        admin = null;
     }
 
     /**
@@ -37,8 +37,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminId() throws Exception {
-        adminDO.setAdminId(17);
-        assert adminDO.getAdminId() == 17;
+        admin.setAdminId(17);
+        assert admin.getAdminId() == 17;
     }
 
     /**
@@ -53,8 +53,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminName() throws Exception {
-        adminDO.setAdminName("wang");
-        assertEquals("wang", adminDO.getAdminName());
+        admin.setAdminName("wang");
+        assertEquals("wang", admin.getAdminName());
     }
 
     /**
@@ -69,8 +69,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminPassword() throws Exception {
-        adminDO.setAdminPassword("123456");
-        assertEquals("123456", adminDO.getAdminPassword());
+        admin.setAdminPassword("123456");
+        assertEquals("123456", admin.getAdminPassword());
     }
 
     /**
@@ -85,8 +85,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminLevel() throws Exception {
-        adminDO.setAdminLevel("user");
-        assertEquals("user", adminDO.getAdminLevel());
+        admin.setAdminLevel("user");
+        assertEquals("user", admin.getAdminLevel());
     }
 
     /**
@@ -101,8 +101,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminGmtCreate() throws Exception {
-        adminDO.setAdminGmtCreate("2018-06-01 23:59:59");
-        assertEquals("2018-06-01 23:59:59", adminDO.getAdminGmtCreate());
+        admin.setAdminGmtCreate("2018-06-01 23:59:59");
+        assertEquals("2018-06-01 23:59:59", admin.getAdminGmtCreate());
     }
 
     /**
@@ -117,8 +117,8 @@ public class AdminDOTest {
      */
     @Test
     public void testGetAdminGmtModified() throws Exception {
-        adminDO.setAdminGmtModified("2018-06-01 23:59:59");
-        assertEquals("2018-06-01 23:59:59", adminDO.getAdminGmtModified());
+        admin.setAdminGmtModified("2018-06-01 23:59:59");
+        assertEquals("2018-06-01 23:59:59", admin.getAdminGmtModified());
     }
 
     /**
@@ -133,6 +133,6 @@ public class AdminDOTest {
      */
     @Test
     public void testToString() throws Exception {
-        System.out.println("AdminDO:" + adminDO.toString());
+        System.out.println("Admin:" + admin.toString());
     }
 } 

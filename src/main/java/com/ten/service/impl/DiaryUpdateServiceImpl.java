@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.DiaryDO;
+import com.ten.bean.entity.Diary;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
@@ -41,20 +41,20 @@ public class DiaryUpdateServiceImpl implements DiaryUpdateService {
         logger.debug("diary id:{} name:{} text:{} date:{}", diaryId, diaryName, diaryText, dateTime);
         assert diaryId != null;
 
-        DiaryDO diaryDO = new DiaryDO();
-        diaryDO.setDiaryId(Integer.valueOf(diaryId));
-        diaryDO.setDiaryName(diaryName);
-        diaryDO.setdiaryText(diaryText);
-        diaryDO.setdiaryGmtModified(dateTime);
+        Diary diary = new Diary();
+        diary.setDiaryId(Integer.valueOf(diaryId));
+        diary.setDiaryName(diaryName);
+        diary.setdiaryText(diaryText);
+        diary.setdiaryGmtModified(dateTime);
 
-        updateDiary(diaryDO);
+        updateDiary(diary);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
-    public void updateDiary(DiaryDO diaryDO) {
+    public void updateDiary(Diary diary) {
         try {
-            dao.updateDiary(diaryDO);
+            dao.updateDiary(diary);
         } catch (SQLException e) {
             e.printStackTrace();
         }

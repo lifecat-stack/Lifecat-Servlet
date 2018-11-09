@@ -1,6 +1,6 @@
 package com.ten.dao;
 
-import com.ten.bean.entity.UserIconDO;
+import com.ten.bean.entity.UserIcon;
 
 import java.sql.SQLException;
 
@@ -15,19 +15,19 @@ public interface UserIconDAO {
      * 用户注册时调用
      * 插入默认UserIconDO到user_icon表
      *
-     * @param userIconDO userIconDO
+     * @param userIcon userIcon
      * @throws SQLException e
      */
-    void insertUserIcon(UserIconDO userIconDO) throws SQLException;
+    void insertUserIcon(UserIcon userIcon) throws SQLException;
 
     /**
      * 用户头像更新 :
      * 更新user_icon表
      *
-     * @param userIconDO userIconDO
+     * @param userIcon userIcon
      * @throws SQLException e
      */
-    void updateUserIcon(UserIconDO userIconDO) throws SQLException;
+    void updateUserIcon(UserIcon userIcon) throws SQLException;
 
     /**
      * 用户头像路径查询 :

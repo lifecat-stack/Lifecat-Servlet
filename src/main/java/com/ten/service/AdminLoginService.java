@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.AdminDO;
+import com.ten.bean.entity.Admin;
 import com.ten.service.util.Service;
 
 /**
@@ -24,5 +24,5 @@ public interface AdminLoginService extends Service {
      * @param
      * @throws
      */
-    AdminDO queryAdminByName(String adminName);
+    Admin queryAdminByName(String adminName);
 }

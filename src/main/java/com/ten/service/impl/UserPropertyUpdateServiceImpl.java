@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.UserPropertyDO;
+import com.ten.bean.entity.UserProperty;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
@@ -50,26 +50,26 @@ public class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService 
 
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
-        UserPropertyDO userPropertyDO = new UserPropertyDO();
-        userPropertyDO.setUserId(userId);
-        userPropertyDO.setPropertyNickname(nickname);
-        userPropertyDO.setPropertySignature(signature);
-        userPropertyDO.setPropertySex(sex);
-        userPropertyDO.setPropertyEmail(email);
-        userPropertyDO.setPropertyLocation(location);
-        userPropertyDO.setPropertyBirthday(birthday);
-        userPropertyDO.setPropertyGmtCreate(dateTime);
-        userPropertyDO.setPropertyGmtModified(dateTime);
+        UserProperty userProperty = new UserProperty();
+        userProperty.setUserId(userId);
+        userProperty.setPropertyNickname(nickname);
+        userProperty.setPropertySignature(signature);
+        userProperty.setPropertySex(sex);
+        userProperty.setPropertyEmail(email);
+        userProperty.setPropertyLocation(location);
+        userProperty.setPropertyBirthday(birthday);
+        userProperty.setPropertyGmtCreate(dateTime);
+        userProperty.setPropertyGmtModified(dateTime);
 
-        updateUserProperty(userPropertyDO);
+        updateUserProperty(userProperty);
 
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
-    public void updateUserProperty(UserPropertyDO userPropertyDO) {
+    public void updateUserProperty(UserProperty userProperty) {
         try {
-            dao.insertUserProperty(userPropertyDO);
+            dao.insertUserProperty(userProperty);
         } catch (SQLException e) {
             e.printStackTrace();
         }

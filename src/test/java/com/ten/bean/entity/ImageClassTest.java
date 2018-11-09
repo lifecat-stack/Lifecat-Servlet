@@ -5,18 +5,18 @@ import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
 /**
- * ImageClassDO Tester.
+ * ImageClass Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>ÁùÔÂ 17, 2018</pre>
  */
-public class ImageClassDOTest {
-    private static ImageClassDO imageClassDO;
+public class ImageClassTest {
+    private static ImageClass imageClass;
 
     @BeforeClass
     public static void beforeClass() {
-        imageClassDO = new ImageClassDO();
+        imageClass = new ImageClass();
     }
 
     @Before
@@ -29,7 +29,7 @@ public class ImageClassDOTest {
 
     @AfterClass
     public static void afterClass() {
-        imageClassDO = null;
+        imageClass = null;
     }
 
     /**
@@ -37,8 +37,8 @@ public class ImageClassDOTest {
      */
     @Test
     public void testGetImageClassId() throws Exception {
-        imageClassDO.setImageClassId(17);
-        assert imageClassDO.getImageClassId() == 17;
+        imageClass.setImageClassId(17);
+        assert imageClass.getImageClassId() == 17;
     }
 
     /**
@@ -53,8 +53,8 @@ public class ImageClassDOTest {
      */
     @Test
     public void testGetImageClassName() throws Exception {
-        imageClassDO.setImageClassName("view");
-        assertEquals("view", imageClassDO.getImageClassName());
+        imageClass.setImageClassName("view");
+        assertEquals("view", imageClass.getImageClassName());
     }
 
     /**
@@ -69,8 +69,8 @@ public class ImageClassDOTest {
      */
     @Test
     public void testGetImageClassDesc() throws Exception {
-        imageClassDO.setImageClassDesc("this is view");
-        assertEquals("this is view", imageClassDO.getImageClassDesc());
+        imageClass.setImageClassDesc("this is view");
+        assertEquals("this is view", imageClass.getImageClassDesc());
     }
 
     /**
@@ -85,8 +85,8 @@ public class ImageClassDOTest {
      */
     @Test
     public void testGetClassGmtCreate() throws Exception {
-        imageClassDO.setClassGmtCreate("2018-06-01 23:59:59");
-        assertEquals("2018-06-01 23:59:59", imageClassDO.getClassGmtCreate());
+        imageClass.setClassGmtCreate("2018-06-01 23:59:59");
+        assertEquals("2018-06-01 23:59:59", imageClass.getClassGmtCreate());
     }
 
     /**
@@ -101,8 +101,8 @@ public class ImageClassDOTest {
      */
     @Test
     public void testGetClassGmtModified() throws Exception {
-        imageClassDO.setClassGmtModified("2018-06-01 23:59:59");
-        assertEquals("2018-06-01 23:59:59", imageClassDO.getClassGmtModified());
+        imageClass.setClassGmtModified("2018-06-01 23:59:59");
+        assertEquals("2018-06-01 23:59:59", imageClass.getClassGmtModified());
     }
 
     /**

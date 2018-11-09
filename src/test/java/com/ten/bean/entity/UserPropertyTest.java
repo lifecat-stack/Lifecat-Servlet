@@ -3,18 +3,18 @@ package com.ten.bean.entity;
 import org.junit.*;
 
 /**
- * UserPropertyDO Tester.
+ * UserProperty Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>���� 20, 2018</pre>
  */
-public class UserPropertyDOTest {
-    private static UserPropertyDO userPropertyDO;
+public class UserPropertyTest {
+    private static UserProperty userProperty;
 
     @BeforeClass
     public static void beforeClass() {
-        userPropertyDO = new UserPropertyDO();
+        userProperty = new UserProperty();
     }
 
     @Before
@@ -27,7 +27,7 @@ public class UserPropertyDOTest {
 
     @AfterClass
     public static void afterClass() {
-        userPropertyDO = null;
+        userProperty = null;
     }
 
     /**
@@ -35,8 +35,8 @@ public class UserPropertyDOTest {
      */
     @Test
     public void testGetUserId() throws Exception {
-        userPropertyDO.setUserId(17);
-        assert userPropertyDO.getUserId() == 17;
+        userProperty.setUserId(17);
+        assert userProperty.getUserId() == 17;
     }
 
     /**

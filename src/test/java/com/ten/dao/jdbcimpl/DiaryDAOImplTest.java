@@ -1,6 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
-import com.ten.bean.entity.DiaryDO;
+import com.ten.bean.entity.Diary;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
 import org.junit.*;
@@ -44,38 +44,38 @@ public class DiaryDAOImplTest {
     }
 
     /**
-     * Method: insertDiary(DiaryDO diaryDO)
+     * Method: insertDiary(Diary diaryDO)
      */
     @Test
     public void testInsertDiary() throws Exception {
-        DiaryDO diaryDO = new DiaryDO();
-        assertNotNull(diaryDO);
+        Diary diary = new Diary();
+        assertNotNull(diary);
 
-        diaryDO.setdiaryText("this is test diary");
-        diaryDO.setUserId(1);
-        diaryDO.setDeleted(1);
-        diaryDO.setDiaryName("this is test diary");
-        diaryDO.setdiaryGmtCreate("2019-01-01 00:00:00");
-        diaryDO.setdiaryGmtModified("2019-01-01 00:00:00");
+        diary.setdiaryText("this is test diary");
+        diary.setUserId(1);
+        diary.setDeleted(1);
+        diary.setDiaryName("this is test diary");
+        diary.setdiaryGmtCreate("2019-01-01 00:00:00");
+        diary.setdiaryGmtModified("2019-01-01 00:00:00");
 
-        int key = dao.insertDiary(diaryDO);
+        int key = dao.insertDiary(diary);
         assertNotEquals(key, 0);
     }
 
     /**
-     * Method: updateDiary(DiaryDO diaryDO)
+     * Method: updateDiary(Diary diaryDO)
      */
     @Test
     public void testUpdateDiary() throws Exception {
-        DiaryDO diaryDO = new DiaryDO();
-        assertNotNull(diaryDO);
+        Diary diary = new Diary();
+        assertNotNull(diary);
 
-        diaryDO.setDiaryId(10);
-        diaryDO.setdiaryText("this is update diary");
-        diaryDO.setDiaryName("this is test diary");
-        diaryDO.setdiaryGmtModified("2019-01-01 00:00:00");
+        diary.setDiaryId(10);
+        diary.setdiaryText("this is update diary");
+        diary.setDiaryName("this is test diary");
+        diary.setdiaryGmtModified("2019-01-01 00:00:00");
 
-        dao.updateDiary(diaryDO);
+        dao.updateDiary(diary);
     }
 
     /**
@@ -91,12 +91,12 @@ public class DiaryDAOImplTest {
      */
     @Test
     public void testQueryDiary() throws Exception {
-        DiaryDO diaryDO = dao.queryDiary("diary01");
+        Diary diary = dao.queryDiary("diary01");
 
-        assertNotNull(diaryDO.getDiaryId());
-        assertNotNull(diaryDO.getDiaryName());
-        assertNotNull(diaryDO.getdiaryText());
-        assertNotNull(diaryDO.getdiaryGmtModified());
+        assertNotNull(diary.getDiaryId());
+        assertNotNull(diary.getDiaryName());
+        assertNotNull(diary.getdiaryText());
+        assertNotNull(diary.getdiaryGmtModified());
     }
 
     /**
@@ -105,7 +105,7 @@ public class DiaryDAOImplTest {
     @Test
     public void testQueryDiaryList() throws Exception {
         DiaryDAOImpl dao = new DiaryDAOImpl();
-        List<DiaryDO> list = dao.queryDiaryList(1);
+        List<Diary> list = dao.queryDiaryList(1);
 
         assert list.size() >= 1;
     }

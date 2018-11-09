@@ -2,22 +2,18 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/action/DispatcherActionTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/AdminDOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/DiaryDOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/ImageClassDOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/ImageDOTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/ImageFeatureDOTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/AdminTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/DiaryTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/ImageClassTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/ImageFeatureTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/bean/entity/ImageTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/constant/DataBaseTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/constant/DirectoryTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/constant/HOSTTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/constant/PageTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/controller/ActionServletTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AbstractDAOTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/AdminDAOImplTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/DiaryDAOImplTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageClassDAOImplTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageDAOImplTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/ImageFeatureDAOImplTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/JdbcDAOFactoryTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserDAOImplTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/ten/dao/jdbcimpl/UserIconDAOImplTest.java" charset="GBK" />

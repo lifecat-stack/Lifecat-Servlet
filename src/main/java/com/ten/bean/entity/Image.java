@@ -1,11 +1,11 @@
 package com.ten.bean.entity;
 
 /**
- * DO :image
+ * image
  *
  * @auther ten
  */
-public class ImageDO {
+public class Image {
 
     private Integer imageId;
     private Integer userId;
@@ -15,6 +15,20 @@ public class ImageDO {
     private Integer deleted;
     private String imageGmtCreate;
     private String imageGmtModified;
+
+    @Override
+    public String toString() {
+        return "Image@"
+                + "{ImageID:" + imageId
+                + ",UserID:" + userId
+                + ",ClassID:" + classId
+                + ",Text:" + imageText
+                + ",Path:" + imagePath
+                + ",isDeleted:" + deleted
+                + ",Create:" + imageGmtCreate
+                + ",Modified:" + imageGmtModified
+                + "}";
+    }
 
     public Integer getImageId() {
         return imageId;
@@ -78,22 +92,5 @@ public class ImageDO {
 
     public void setImageGmtModified(String imageGmtModified) {
         this.imageGmtModified = imageGmtModified;
-    }
-
-    /**
-     * @return ImageDO@1234{ImageID:'',UserID:'',ClassID:'',Text:'',Path:'',isDeleted:'',Create:'',Modified:''}
-     */
-    @Override
-    public String toString() {
-        return "ImageDO@" + imageId
-                + "{ImageID:" + imageId
-                + ",UserID:" + userId
-                + ",ClassID:" + classId
-                + ",Text:" + imageText
-                + ",Path:" + imagePath
-                + ",isDeleted:" + deleted
-                + ",Create:" + imageGmtCreate
-                + ",Modified:" + imageGmtModified
-                + "}";
     }
 }

@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.UserDO;
+import com.ten.bean.entity.User;
 import com.ten.service.util.Service;
 
 /**
@@ -27,6 +27,6 @@ public interface UserLoginService extends Service {
      * @param
      * @throws
      */
-    UserDO queryUserByName(String userName);
+    User queryUserByName(String userName);
 }
 

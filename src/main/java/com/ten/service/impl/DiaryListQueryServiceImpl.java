@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.DiaryDO;
+import com.ten.bean.entity.Diary;
 import com.ten.bean.vo.DiaryVO;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
@@ -37,16 +37,16 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         Integer userId = Integer.valueOf(req.getParameter("userId"));
 
-        List<DiaryDO> diaryDOList = queryDiaryListByUserId(userId);
+        List<Diary> diaryDOList = queryDiaryListByUserId(userId);
 
         // List<DiaryVO>
         List<DiaryVO> diaryList = new ArrayList<>(16);
-        for (DiaryDO diaryDO : diaryDOList) {
+        for (Diary diary : diaryDOList) {
             DiaryVO diaryVO = new DiaryVO(
-                    diaryDO.getDiaryId(),
-                    diaryDO.getDiaryName(),
-                    diaryDO.getdiaryText(),
-                    diaryDO.getdiaryGmtModified());
+                    diary.getDiaryId(),
+                    diary.getDiaryName(),
+                    diary.getdiaryText(),
+                    diary.getdiaryGmtModified());
             diaryList.add(diaryVO);
         }
 
@@ -55,7 +55,7 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
     }
 
     @Override
-    public List<DiaryDO> queryDiaryListByUserId(int userId) {
+    public List<Diary> queryDiaryListByUserId(int userId) {
         try {
             return dao.queryDiaryList(userId);
         } catch (SQLException e) {

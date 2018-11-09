@@ -1,11 +1,11 @@
 package com.ten.bean.entity;
 
 /**
- * DO :diary
+ * diary
  *
  * @auther ten
  */
-public class DiaryDO {
+public class Diary {
 
     private Integer diaryId;
     private Integer userId;
@@ -14,6 +14,19 @@ public class DiaryDO {
     private Integer deleted;
     private String diaryGmtCreate;
     private String diaryGmtModified;
+
+    @Override
+    public String toString() {
+        return "Diary@"
+                + "{DiaryId:" + diaryId
+                + ",UserID:" + userId
+                + ",Name:" + diaryName
+                + ",Text:" + diaryText
+                + ",isDeleted:" + deleted
+                + ",Create:" + diaryGmtCreate
+                + ",Modified:" + diaryGmtModified
+                + "}";
+    }
 
     public Integer getDiaryId() {
         return diaryId;
@@ -69,20 +82,5 @@ public class DiaryDO {
 
     public void setdiaryGmtModified(String diaryGmtModified) {
         this.diaryGmtModified = diaryGmtModified;
-    }
-     /**
-     * @return DiaryDO@1234{DiaryId:'',UserID:'',Name:'',Text:'',isDeleted:'',Create:'',Modified:''}
-     */
-    @Override
-    public String toString() {
-        return "DiaryDO@" + diaryId
-                + "{DiaryId:" + diaryId
-                + ",UserID:" + userId
-                + ",Name:" + diaryName
-                + ",Text:" + diaryText
-                + ",isDeleted:" + deleted
-                + ",Create:" + diaryGmtCreate
-                + ",Modified:" + diaryGmtModified
-                + "}";
     }
 }

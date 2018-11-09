@@ -1,6 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
 import org.junit.*;
@@ -44,22 +44,22 @@ public class ImageDAOImplTest {
     }
 
     /**
-     * Method: insertImage(ImageDO imageDO)
+     * Method: insertImage(Image imageDO)
      */
     @Test
     public void testInsertImage() throws Exception {
-        ImageDO imageDO = new ImageDO();
-        assertNotNull(imageDO);
+        Image image = new Image();
+        assertNotNull(image);
 
-        imageDO.setImageText("this is test image");
-        imageDO.setImagePath("test path");
-        imageDO.setDeleted(1);
-        imageDO.setUserId(0);
-        imageDO.setClassId(0);
-        imageDO.setImageGmtCreate("2019-01-01 00:00:00");
-        imageDO.setImageGmtModified("2019-01-01 00:00:00");
+        image.setImageText("this is test image");
+        image.setImagePath("test path");
+        image.setDeleted(1);
+        image.setUserId(0);
+        image.setClassId(0);
+        image.setImageGmtCreate("2019-01-01 00:00:00");
+        image.setImageGmtModified("2019-01-01 00:00:00");
 
-        int key = dao.insertImage(imageDO);
+        int key = dao.insertImage(image);
         assertNotEquals(key, 0);
     }
 
@@ -84,11 +84,11 @@ public class ImageDAOImplTest {
      */
     @Test
     public void testQueryImage() throws Exception {
-        ImageDO imageDO = dao.queryImage(5);
+        Image image = dao.queryImage(5);
 
-        assertNotNull(imageDO.getImageText());
-        assertNotNull(imageDO.getImagePath());
-        assertNotNull(imageDO.getImageGmtCreate());
+        assertNotNull(image.getImageText());
+        assertNotNull(image.getImagePath());
+        assertNotNull(image.getImageGmtCreate());
     }
 
     /**
@@ -96,7 +96,7 @@ public class ImageDAOImplTest {
      */
     @Test
     public void testQueryImageList() throws Exception {
-        List<ImageDO> list = dao.queryImageList(0);
+        List<Image> list = dao.queryImageList(0);
         assert list.size() >= 1;
     }
 
@@ -105,7 +105,7 @@ public class ImageDAOImplTest {
      */
     @Test
     public void testQueryImageClass() throws Exception {
-        List<ImageDO> list = dao.queryImageClass(0, 0);
+        List<Image> list = dao.queryImageClass(0, 0);
         assert list.size() >= 1;
     }
 

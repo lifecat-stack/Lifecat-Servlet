@@ -1,7 +1,7 @@
 package com.ten.dao.mybatisimpl;
 
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 
 import java.util.List;
 import java.util.Map;
@@ -9,15 +9,15 @@ import java.util.Map;
 
 public interface ImageMapper {
 
-    ImageDO selectImageByText(Map<String, String> map);
+    Image selectImageByText(Map<String, String> map);
 
-    List<ImageDO> selectImageListByUserId(int userId);
+    List<Image> selectImageListByUserId(int userId);
 
-    List<ImageDO> selectImageListByClassId(Map<String, Integer> map);
+    List<Image> selectImageListByClassId(Map<String, Integer> map);
 
-    int insertImage(ImageDO imageDO);
+    int insertImage(Image image);
 
-    int updateImage(ImageDO imageDO);
+    int updateImage(Image image);
 
     int deleteImageById(int imageId);
 }

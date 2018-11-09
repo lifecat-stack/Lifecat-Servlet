@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.UserIconDO;
+import com.ten.bean.entity.UserIcon;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Directory;
 import com.ten.constant.Page;
@@ -59,21 +59,21 @@ public class UserIconUpdateServiceImpl implements UserIconUpdateService {
         // 将图片数据流写入磁盘
         writeUserIcon(req);
 
-        UserIconDO userIconDO = new UserIconDO();
-        userIconDO.setUserId(userId);
-        userIconDO.setIconPath(iconPath);
-        userIconDO.setIconGmtCreate(dateTime);
-        userIconDO.setIconGmtModified(dateTime);
+        UserIcon userIcon = new UserIcon();
+        userIcon.setUserId(userId);
+        userIcon.setIconPath(iconPath);
+        userIcon.setIconGmtCreate(dateTime);
+        userIcon.setIconGmtModified(dateTime);
 
-        updateUserIcon(userIconDO);
+        updateUserIcon(userIcon);
 
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
-    public void updateUserIcon(UserIconDO userIconDO) {
+    public void updateUserIcon(UserIcon userIcon) {
         try {
-            dao.insertUserIcon(userIconDO);
+            dao.insertUserIcon(userIcon);
         } catch (SQLException e) {
             e.printStackTrace();
         }

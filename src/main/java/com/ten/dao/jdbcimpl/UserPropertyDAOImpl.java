@@ -1,8 +1,8 @@
 package com.ten.dao.jdbcimpl;
 
+import com.ten.bean.entity.UserProperty;
 import com.ten.dao.BaseDAO;
 import com.ten.dao.UserPropertyDAO;
-import com.ten.bean.entity.UserPropertyDO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -17,7 +17,7 @@ public class UserPropertyDAOImpl extends BaseDAO implements UserPropertyDAO {
     }
 
     @Override
-    public void insertUserProperty(UserPropertyDO userPropertyDO) throws SQLException {
+    public void insertUserProperty(UserProperty userProperty) throws SQLException {
         String sql = "insert into " +
                 "user_property(user_id," +
                 "property_nickname," +
@@ -30,21 +30,21 @@ public class UserPropertyDAOImpl extends BaseDAO implements UserPropertyDAO {
                 "property_gmt_modified)" +
                 " values(?,?,?,?,?,?,?,?,?)";
         Object[] args = {
-                userPropertyDO.getUserId(),
-                userPropertyDO.getPropertyNickname(),
-                userPropertyDO.getPropertySignature(),
-                userPropertyDO.getPropertySex(),
-                userPropertyDO.getPropertyEmail(),
-                userPropertyDO.getPropertyLocation(),
-                userPropertyDO.getPropertyBirthday(),
-                userPropertyDO.getPropertyGmtCreate(),
-                userPropertyDO.getPropertyGmtModified()
+                userProperty.getUserId(),
+                userProperty.getPropertyNickname(),
+                userProperty.getPropertySignature(),
+                userProperty.getPropertySex(),
+                userProperty.getPropertyEmail(),
+                userProperty.getPropertyLocation(),
+                userProperty.getPropertyBirthday(),
+                userProperty.getPropertyGmtCreate(),
+                userProperty.getPropertyGmtModified()
         };
         insert(sql, args);
     }
 
     @Override
-    public UserPropertyDO queryUserProperty(Integer userId) throws SQLException {
+    public UserProperty queryUserProperty(Integer userId) throws SQLException {
         String sql = "select " +
                 "property_nickname," +
                 "property_signature," +
@@ -59,16 +59,16 @@ public class UserPropertyDAOImpl extends BaseDAO implements UserPropertyDAO {
         ResultSet resultSet = query(sql);
         resultSet.next();
 
-        UserPropertyDO userPropertyDO = new UserPropertyDO();
-        userPropertyDO.setUserId(userId);
-        userPropertyDO.setPropertyNickname(resultSet.getString("property_nickname"));
-        userPropertyDO.setPropertySignature(resultSet.getString("property_signature"));
-        userPropertyDO.setPropertySex(resultSet.getString("property_sex"));
-        userPropertyDO.setPropertyEmail(resultSet.getString("property_email"));
-        userPropertyDO.setPropertyLocation(resultSet.getString("property_location"));
-        userPropertyDO.setPropertyBirthday(resultSet.getString("property_birthday"));
-        userPropertyDO.setPropertyGmtCreate(resultSet.getString("property_gmt_create"));
-        userPropertyDO.setPropertyGmtModified(resultSet.getString("property_gmt_modified"));
-        return userPropertyDO;
+        UserProperty userProperty = new UserProperty();
+        userProperty.setUserId(userId);
+        userProperty.setPropertyNickname(resultSet.getString("property_nickname"));
+        userProperty.setPropertySignature(resultSet.getString("property_signature"));
+        userProperty.setPropertySex(resultSet.getString("property_sex"));
+        userProperty.setPropertyEmail(resultSet.getString("property_email"));
+        userProperty.setPropertyLocation(resultSet.getString("property_location"));
+        userProperty.setPropertyBirthday(resultSet.getString("property_birthday"));
+        userProperty.setPropertyGmtCreate(resultSet.getString("property_gmt_create"));
+        userProperty.setPropertyGmtModified(resultSet.getString("property_gmt_modified"));
+        return userProperty;
     }
 }

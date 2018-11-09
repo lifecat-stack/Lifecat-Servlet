@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.DiaryDO;
+import com.ten.bean.entity.Diary;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
@@ -44,21 +44,21 @@ public class DiaryUploadServiceImpl implements DiaryUploadService {
         String diaryText = req.getParameter("diaryText");
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
-        DiaryDO diaryDO = new DiaryDO();
-        diaryDO.setUserId(userId);
-        diaryDO.setDiaryName(diaryName);
-        diaryDO.setdiaryText(diaryText);
-        diaryDO.setDeleted(1);
-        diaryDO.setdiaryGmtCreate(dateTime);
-        diaryDO.setdiaryGmtModified(dateTime);
+        Diary diary = new Diary();
+        diary.setUserId(userId);
+        diary.setDiaryName(diaryName);
+        diary.setdiaryText(diaryText);
+        diary.setDeleted(1);
+        diary.setdiaryGmtCreate(dateTime);
+        diary.setdiaryGmtModified(dateTime);
 
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
-    public void uploadDiary(DiaryDO diaryDO) {
+    public void uploadDiary(Diary diary) {
         try {
-            dao.insertDiary(diaryDO);
+            dao.insertDiary(diary);
         } catch (SQLException e) {
             e.printStackTrace();
         }

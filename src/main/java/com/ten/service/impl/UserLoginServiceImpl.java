@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.UserDO;
+import com.ten.bean.entity.User;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.UserDAO;
@@ -38,7 +38,7 @@ public class UserLoginServiceImpl implements UserLoginService {
         String userName = req.getParameter("userName");
         String userPassword = req.getParameter("userPassword");
 
-        UserDO userDO = queryUserByName(userName);
+        User userDO = queryUserByName(userName);
 
         if (userDO == null) {
             return new ServiceResult.Builder(false).errormsg("该用户不存在").page(Page.PAGE_INDEX).build();
@@ -59,7 +59,7 @@ public class UserLoginServiceImpl implements UserLoginService {
     }
 
     @Override
-    public UserDO queryUserByName(String userName) {
+    public User queryUserByName(String userName) {
         try {
             return dao.queryUser(userName);
         } catch (SQLException e) {

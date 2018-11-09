@@ -1,6 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
-import com.ten.bean.entity.UserPropertyDO;
+import com.ten.bean.entity.UserProperty;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.UserPropertyDAO;
 import org.junit.*;
@@ -42,24 +42,24 @@ public class UserPropertyDAOImplTest {
     }
 
     /**
-     * Method: insertUserProperty(UserPropertyDO userPropertyDO)
+     * Method: insertUserProperty(UserProperty userPropertyDO)
      */
     @Test
     public void testInsertUserProperty() throws Exception {
-        UserPropertyDO userPropertyDO = new UserPropertyDO();
-        assertNotNull(userPropertyDO);
+        UserProperty userProperty = new UserProperty();
+        assertNotNull(userProperty);
 
-        userPropertyDO.setUserId(6);
-        userPropertyDO.setPropertyNickname("test");
-        userPropertyDO.setPropertySignature("test");
-        userPropertyDO.setPropertySex("man");
-        userPropertyDO.setPropertyEmail("123456@qq.com");
-        userPropertyDO.setPropertyLocation("wx");
-        userPropertyDO.setPropertyBirthday("1997-01-01");
-        userPropertyDO.setPropertyGmtCreate("2019-01-01 00:00:00");
-        userPropertyDO.setPropertyGmtModified("2019-01-01 00:00:00");
+        userProperty.setUserId(6);
+        userProperty.setPropertyNickname("test");
+        userProperty.setPropertySignature("test");
+        userProperty.setPropertySex("man");
+        userProperty.setPropertyEmail("123456@qq.com");
+        userProperty.setPropertyLocation("wx");
+        userProperty.setPropertyBirthday("1997-01-01");
+        userProperty.setPropertyGmtCreate("2019-01-01 00:00:00");
+        userProperty.setPropertyGmtModified("2019-01-01 00:00:00");
 
-        dao.insertUserProperty(userPropertyDO);
+        dao.insertUserProperty(userProperty);
     }
 
     /**
@@ -67,16 +67,16 @@ public class UserPropertyDAOImplTest {
      */
     @Test
     public void testQueryUserProperty() throws Exception {
-        UserPropertyDO userPropertyDO = dao.queryUserProperty(6);
+        UserProperty userProperty = dao.queryUserProperty(6);
 
-        assertEquals("test", userPropertyDO.getPropertyNickname());
-        assertEquals("test", userPropertyDO.getPropertySignature());
-        assertEquals("man", userPropertyDO.getPropertySex());
-        assertEquals("123456@qq.com", userPropertyDO.getPropertyEmail());
-        assertEquals("wx", userPropertyDO.getPropertyLocation());
-        assertEquals("1997-01-01", userPropertyDO.getPropertyBirthday());
-        assertEquals("2019-01-01 00:00:00", userPropertyDO.getPropertyGmtCreate());
-        assertEquals("2019-01-01 00:00:00", userPropertyDO.getPropertyGmtModified());
+        assertEquals("test", userProperty.getPropertyNickname());
+        assertEquals("test", userProperty.getPropertySignature());
+        assertEquals("man", userProperty.getPropertySex());
+        assertEquals("123456@qq.com", userProperty.getPropertyEmail());
+        assertEquals("wx", userProperty.getPropertyLocation());
+        assertEquals("1997-01-01", userProperty.getPropertyBirthday());
+        assertEquals("2019-01-01 00:00:00", userProperty.getPropertyGmtCreate());
+        assertEquals("2019-01-01 00:00:00", userProperty.getPropertyGmtModified());
     }
 
 

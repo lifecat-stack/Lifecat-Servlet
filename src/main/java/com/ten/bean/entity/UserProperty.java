@@ -1,11 +1,11 @@
 package com.ten.bean.entity;
 
 /**
- * DO :user_property
+ * user_property
  *
  * @auther ten
  */
-public class UserPropertyDO {
+public class UserProperty {
 
     private Integer userId;
     private String propertyNickname;
@@ -16,6 +16,21 @@ public class UserPropertyDO {
     private String propertyBirthday;
     private String propertyGmtCreate;
     private String propertyGmtModified;
+
+    @Override
+    public String toString() {
+        return "User@"
+                + "{UserID:" + userId
+                + ",Nickname:" + propertyNickname
+                + ",Signature:" + propertySignature
+                + ",Sex:" + propertySex
+                + ",Email:" + propertyEmail
+                + ",Location:" + propertyLocation
+                + ",Birthday:" + propertyBirthday
+                + ",Create:" + propertyGmtCreate
+                + ",Modified:" + propertyGmtModified
+                + "}";
+    }
 
     public Integer getUserId() {
         return userId;
@@ -48,6 +63,7 @@ public class UserPropertyDO {
     public void setPropertySex(String propertySex) {
         this.propertySex = propertySex;
     }
+
     public String getPropertyEmail() {
         return propertyEmail;
     }
@@ -86,23 +102,5 @@ public class UserPropertyDO {
 
     public void setPropertyGmtModified(String propertyGmtModified) {
         this.propertyGmtModified = propertyGmtModified;
-    }
-
-    /**
-     * @return UserPropertyDO@1234{UserID:'',Nickname:'',Signature:'',Sex:'',Email:'',Location:'',Birthday :'',Create:'',Modified:''}
-     */
-    @Override
-    public String toString() {
-        return "UserDO@" + userId
-                + "{UserID:" + userId
-                + ",Nickname:" + propertyNickname
-                + ",Signature:" + propertySignature
-                + ",Sex:" + propertySex
-                + ",Email:" + propertyEmail
-                + ",Location:" + propertyLocation
-                + ",Birthday:" + propertyBirthday
-                + ",Create:" + propertyGmtCreate
-                + ",Modified:" + propertyGmtModified
-                + "}";
     }
 }

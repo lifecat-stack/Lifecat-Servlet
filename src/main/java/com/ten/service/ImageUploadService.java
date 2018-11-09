@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.service.util.Service;
 
 /**
@@ -13,5 +13,5 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface ImageUploadService extends Service {
-    void uploadImage(ImageDO imageDO);
+    void uploadImage(Image image);
 }

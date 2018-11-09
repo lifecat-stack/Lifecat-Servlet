@@ -3,18 +3,18 @@ package com.ten.bean.entity;
 import org.junit.*;
 
 /**
- * UserIconDO Tester.
+ * UserIcon Tester.
  *
  * @author <Authors name>
  * @version 1.0
  * @since <pre>���� 20, 2018</pre>
  */
-public class UserIconDOTest {
-    private static UserIconDO userIconDO;
+public class UserIconTest {
+    private static UserIcon userIcon;
 
     @BeforeClass
     public static void beforeClass() {
-        userIconDO = new UserIconDO();
+        userIcon = new UserIcon();
     }
 
     @Before
@@ -27,7 +27,7 @@ public class UserIconDOTest {
 
     @AfterClass
     public static void afterClass() {
-        userIconDO = null;
+        userIcon = null;
     }
 
     /**
@@ -35,8 +35,8 @@ public class UserIconDOTest {
      */
     @Test
     public void testGetUserId() throws Exception {
-        userIconDO.setUserId(17);
-        assert userIconDO.getUserId() == 17;
+        userIcon.setUserId(17);
+        assert userIcon.getUserId() == 17;
     }
 
     /**
