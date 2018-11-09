@@ -5,7 +5,7 @@ import com.ten.bean.vo.DiaryVO;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.DiaryListQueryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

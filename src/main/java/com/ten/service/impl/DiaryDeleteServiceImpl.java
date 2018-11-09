@@ -3,7 +3,7 @@ package com.ten.service.impl;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.DiaryDeleteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

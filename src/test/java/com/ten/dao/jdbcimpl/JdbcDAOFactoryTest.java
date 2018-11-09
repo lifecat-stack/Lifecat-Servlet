@@ -1,5 +1,6 @@
 package com.ten.dao.jdbcimpl;
 
+import com.ten.dao.JdbcDAOFactory;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;

@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletResponse;
  * @auther ten
  */
 public class AdminRegisterServiceImpl implements AdminRegisterService {
-
     private Logger logger = LoggerFactory.getLogger(AdminRegisterServiceImpl.class);
 
     public AdminRegisterServiceImpl() {

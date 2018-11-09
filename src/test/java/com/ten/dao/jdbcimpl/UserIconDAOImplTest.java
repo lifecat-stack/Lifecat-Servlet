@@ -2,6 +2,7 @@ package com.ten.dao.jdbcimpl;
 
 import com.ten.bean.entity.UserIcon;
 import com.ten.dao.DAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.dao.UserIconDAO;
 import org.junit.*;
 

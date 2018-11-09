@@ -52,6 +52,14 @@
     </style>
 </head>
 
+<script>
+    var error = '${errorMsg}';
+    console.log("errorMsg:" + error);
+    if (error != null) {
+        alert(error);
+    }
+</script>
+
 <body>
 
 <!-- 登录窗口 -->
@@ -67,15 +75,17 @@
                 <form class="form-group" action="user_login.do"
                       method="post">
                     <div class="form-group">
-                        <label for="userName">账号</label> <input class="form-control"
-                                                                type="text" placeholder="请输入账号" name="userName"
-                                                                id="userName">
+                        <label for="userName">账号</label>
+                        <input class="form-control"
+                               type="text" placeholder="请输入账号" name="userName"
+                               id="userName">
                     </div>
                     <div class="form-group">
-                        <label for="userPassword">密码</label> <input class="form-control"
-                                                                    placeholder="请输入密码" name="userPassword"
-                                                                    id="userPassword"
-                                                                    type="password">
+                        <label for="userPassword">密码</label>
+                        <input class="form-control"
+                               placeholder="请输入密码" name="userPassword"
+                               id="userPassword"
+                               type="password">
                     </div>
                     <div class="text-right">
                         <button class="btn btn-primary" type="submit">登录</button>
@@ -105,21 +115,24 @@
                 <!-- 注册表单 -->
                 <form class="form-group" action="user_register.do" method="post">
                     <div class="form-group">
-                        <label for="rUserName">注册账号</label> <input class="form-control"
-                                                                   type="text" placeholder="请输入想注册的账号" name="rUserName"
-                                                                   id="rUserName">
+                        <label for="rUserName">注册账号</label>
+                        <input class="form-control"
+                               type="text" placeholder="请输入想注册的账号" name="rUserName"
+                               id="rUserName">
                     </div>
                     <div class="form-group">
-                        <label for="rUserPassword1">密码</label> <input class="form-control"
-                                                                      placeholder="请输入密码" name="rUserPassword1"
-                                                                      id="rUserPassword1"
-                                                                      type="password">
+                        <label for="rUserPassword1">密码</label>
+                        <input class="form-control"
+                               placeholder="请输入密码" name="rUserPassword1"
+                               id="rUserPassword1"
+                               type="password">
                     </div>
                     <div class="form-group">
-                        <label for="rUserPassword2">确认密码</label> <input class="form-control"
-                                                                        placeholder="请确认密码" name="rUserPassword2"
-                                                                        id="rUserPassword2"
-                                                                        type="password">
+                        <label for="rUserPassword2">确认密码</label>
+                        <input class="form-control"
+                               placeholder="请确认密码" name="rUserPassword2"
+                               id="rUserPassword2"
+                               type="password">
                     </div>
                     <div class="text-right">
                         <button class="btn btn-primary" type="submit">注册</button>
@@ -149,15 +162,17 @@
                 <!-- 登录表单 -->
                 <form class="form-group" action="admin_login.do" method="post">
                     <div class="form-group">
-                        <label for="adminName">账号</label> <input class="form-control"
-                                                                 type="text" placeholder="请输入账号" name="adminName"
-                                                                 id="adminName">
+                        <label for="adminName">账号</label>
+                        <input class="form-control"
+                               type="text" placeholder="请输入账号" name="adminName"
+                               id="adminName">
                     </div>
                     <div class="form-group">
-                        <label for="adminPassword">密码</label> <input class="form-control"
-                                                                     placeholder="请输入密码" name="adminPassword"
-                                                                     id="adminPassword"
-                                                                     type="password">
+                        <label for="adminPassword">密码</label>
+                        <input class="form-control"
+                               placeholder="请输入密码" name="adminPassword"
+                               id="adminPassword"
+                               type="password">
                     </div>
 
                     <div class="text-right">
@@ -184,7 +199,7 @@
             </div>
             <div class="modal-body">
                 <label for="adminName">账号:admin</label>
-                <label for="adminPassword">密码:123</label>
+                <label for="adminPassword">密码:admin</label>
                 <label>请选择用户登录</label>
             </div>
         </div>

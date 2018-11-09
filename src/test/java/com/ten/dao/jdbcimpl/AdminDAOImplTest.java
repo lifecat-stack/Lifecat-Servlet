@@ -3,6 +3,7 @@ package com.ten.dao.jdbcimpl;
 import com.ten.bean.entity.Admin;
 import com.ten.dao.AdminDAO;
 import com.ten.dao.DAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import org.junit.*;
 
 import static org.junit.Assert.assertNotNull;

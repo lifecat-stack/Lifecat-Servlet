@@ -4,7 +4,7 @@ import com.ten.bean.entity.Admin;
 import com.ten.bean.vo.AdminVO;
 import com.ten.constant.Page;
 import com.ten.dao.AdminDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.AdminLoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,48 +20,59 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class AdminLoginServiceImpl implements AdminLoginService {
-
     private static final Logger logger = LoggerFactory.getLogger(AdminLoginServiceImpl.class);
-
-    private AdminDAO dao;
+    private static final AdminDAO DAO = (AdminDAO) JdbcDAOFactory.getDaoByTableName("admin");
 
     public AdminLoginServiceImpl() {
-        dao = (AdminDAO) new JdbcDAOFactory().getDaoByTableName("admin");
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
-
         String adminName = req.getParameter("adminName");
         String adminPassword = req.getParameter("adminPassword");
 
         Admin adminDO = queryAdminByName(adminName);
 
+        // 管理员不存在
         if (adminDO == null) {
-            return new ServiceResult.Builder(false).page(Page.PAGE_INDEX).errormsg("该管理员不存在").build();
+            return new ServiceResult.Builder(false)
+                    .page(Page.PAGE_INDEX)
+                    .errormsg("该管理员不存在")
+                    .build();
         }
 
+        // 管理员密码错误
         if (!adminPassword.equals(adminDO.getAdminPassword())) {
-            return new ServiceResult.Builder(false).page(Page.PAGE_INDEX).errormsg("密码错误").build();
+            return new ServiceResult.Builder(false)
+                    .page(Page.PAGE_INDEX)
+                    .errormsg("管理员密码错误")
+                    .build();
         }
 
-        AdminVO admin = new AdminVO(adminDO.getAdminId(), adminDO.getAdminName(), adminDO.getAdminLevel());
-        req.getSession().setAttribute("admin", admin);
-        return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
-    }
+        // SUCCESS
+        AdminVO adminVO = new AdminVO(
+                adminDO.getAdminId(),
+                adminDO.getAdminName(),
+                adminDO.getAdminLevel());
 
-    @Override
-    public boolean isAdminExisted(String adminName) {
-        return false;
+        req.getSession().setAttribute("admin", adminVO);
+        return new ServiceResult.Builder(true)
+                .page(Page.PAGE_USERHOME)
+                .build();
     }
 
     @Override
     public Admin queryAdminByName(String adminName) {
         try {
-            return dao.queryAdmin(adminName);
+            return DAO.queryAdmin(adminName);
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
         }
+    }
+
+    @Override
+    public boolean isAdminExisted(String adminName) {
+        return true;
     }
 }

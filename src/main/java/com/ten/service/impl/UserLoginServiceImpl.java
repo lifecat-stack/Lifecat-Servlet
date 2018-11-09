@@ -4,7 +4,7 @@ import com.ten.bean.entity.User;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.UserDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.UserLoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

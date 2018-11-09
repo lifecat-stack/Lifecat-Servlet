@@ -4,7 +4,7 @@ import com.ten.bean.entity.Diary;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.DiaryUpdateService;
 import com.ten.util.DateTimeUtil;
 import org.slf4j.Logger;

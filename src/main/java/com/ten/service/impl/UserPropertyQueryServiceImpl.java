@@ -7,7 +7,7 @@ import com.ten.constant.WEBINF;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.UserIconDAO;
 import com.ten.dao.UserPropertyDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.UserPropertyQueryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

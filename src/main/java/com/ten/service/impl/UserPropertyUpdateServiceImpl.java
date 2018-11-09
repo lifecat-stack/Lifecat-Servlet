@@ -5,7 +5,7 @@ import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.UserPropertyDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.UserPropertyUpdateService;
 import com.ten.util.DateTimeUtil;
 import org.slf4j.Logger;

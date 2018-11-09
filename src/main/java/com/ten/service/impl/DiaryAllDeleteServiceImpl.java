@@ -4,7 +4,7 @@ import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.DiaryAllDeleteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,13 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 
 public class DiaryAllDeleteServiceImpl implements DiaryAllDeleteService {
-
-    private Logger logger = LoggerFactory.getLogger(DiaryAllDeleteServiceImpl.class);
-
+    private static final Logger logger = LoggerFactory.getLogger(DiaryAllDeleteServiceImpl.class);
+    private static DAOFactory factory = new JdbcDAOFactory();
     private DiaryDAO dao;
 
     public DiaryAllDeleteServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
         dao = (DiaryDAO) factory.getDaoByTableName("diary");
     }
 

@@ -6,7 +6,7 @@ import com.ten.constant.Directory;
 import com.ten.constant.Page;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.ImageUploadService;
 import com.ten.util.DateTimeUtil;
 import com.ten.util.ImageWriter;

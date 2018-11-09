@@ -3,6 +3,7 @@ package com.ten.dao.jdbcimpl;
 import com.ten.bean.entity.Diary;
 import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
+import com.ten.dao.JdbcDAOFactory;
 import org.junit.*;
 
 import java.util.List;
