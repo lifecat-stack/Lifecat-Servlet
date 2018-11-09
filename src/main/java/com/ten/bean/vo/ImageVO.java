@@ -1,11 +1,7 @@
 package com.ten.bean.vo;
 
 /**
- * DTO :Image图片对象
- * <p>
- * 构建了可变属性集，默认{类型:0,文本:成长记录}
- * 实现comparable接口，可根据上传日期date进行排序
- * 覆盖equals() hashCode()
+ * Image图片对象
  *
  * @auther ten
  */

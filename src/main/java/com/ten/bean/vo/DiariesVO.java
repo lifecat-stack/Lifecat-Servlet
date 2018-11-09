@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * DTO :Diaries集合，用户日记集
+ * Diaries集合，用户日记集
  *
  * @auther ten
  */

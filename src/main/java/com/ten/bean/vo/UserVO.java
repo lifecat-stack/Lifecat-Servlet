@@ -2,9 +2,7 @@ package com.ten.bean.vo;
 
 
 /**
- * DTO :User用户账号
- * <p>
- * 覆盖equals() hashCode()
+ * User用户账号
  *
  * @auther ten
  */
@@ -25,22 +23,18 @@ public class UserVO {
 
     @Override
     public boolean equals(Object obj) {
-        //引用检测
         if (obj == this) {
             return true;
         }
-        //类型检测
         if (!(obj instanceof UserVO)) {
             return false;
         }
-        //参数检测
         if (!this.userId.equals(((UserVO) obj).getUserId())) {
             return false;
         }
         if (!this.userName.equals(((UserVO) obj).getUserName())) {
             return false;
         }
-
         return true;
     }
 
@@ -56,17 +50,11 @@ public class UserVO {
         return result;
     }
 
-    /**
-     * User@1234{wang}
-     */
     @Override
     public String toString() {
-        return "User@" + userId + "{" + userName + "}";
+        return "User@" + "{" + userName + "}";
     }
 
-    /**
-     * getter方法
-     */
     public Integer getUserId() {
         return userId;
     }

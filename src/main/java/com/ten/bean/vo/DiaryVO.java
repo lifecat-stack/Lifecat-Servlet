@@ -1,11 +1,7 @@
 package com.ten.bean.vo;
 
 /**
- * DTO :Diary图片对象
- * <p>
- * 构建了可变属性集，默认{名称,文本,日期}
- * 实现comparable接口，可根据上传日期date进行排序
- * 覆盖equals() hashCode()
+ * Diary图片对象
  *
  * @auther ten
  */
@@ -26,6 +22,12 @@ public class DiaryVO implements Comparable<DiaryVO> {
         this.diaryName = diaryName;
         this.diaryText = diaryText;
         this.diaryDate = diaryDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Diary@" + "{name:" + diaryName + ",text:"
+                + diaryText + ",date:" + diaryDate + "}";
     }
 
     /**
@@ -56,18 +58,14 @@ public class DiaryVO implements Comparable<DiaryVO> {
         return 0;
     }
 
-
     @Override
     public boolean equals(Object obj) {
-        //引用检测
         if (obj == this) {
             return true;
         }
-        //类型检测
         if (!(obj instanceof DiaryVO)) {
             return false;
         }
-        //参数检测
         if (!this.diaryId.equals(((DiaryVO) obj).getDiaryId())) {
             return false;
         }
@@ -97,18 +95,6 @@ public class DiaryVO implements Comparable<DiaryVO> {
         return result;
     }
 
-    /**
-     * Diary@1234{name:'',text:'',date:''}
-     */
-    @Override
-    public String toString() {
-        return "Diary@" + diaryId + "{name:" + diaryName + ",text:"
-                + diaryText + ",date:" + diaryDate + "}";
-    }
-
-    /**
-     * getter
-     */
     public Integer getDiaryId() {
         return diaryId;
     }
