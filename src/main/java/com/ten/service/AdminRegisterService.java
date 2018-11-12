@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.AdminDO;
+import com.ten.bean.entity.Admin;
 import com.ten.service.util.Service;
 
 /**
@@ -24,5 +24,5 @@ public interface AdminRegisterService extends Service {
      * @param
      * @throws
      */
-    void insertAdminToDatabase(AdminDO adminDO);
+    void insertAdminToDatabase(Admin admin);
 }

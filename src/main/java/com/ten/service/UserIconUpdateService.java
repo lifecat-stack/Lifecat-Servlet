@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.UserIconDO;
+import com.ten.bean.entity.UserIcon;
 import com.ten.service.util.Service;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +15,8 @@ import javax.servlet.http.HttpServletRequest;
  * @auther ten
  */
 public interface UserIconUpdateService extends Service {
-    void updateUserIcon(UserIconDO userIconDO);
+
+    void updateUserIcon(UserIcon userIcon);
 
     void writeUserIcon(HttpServletRequest req);
 }

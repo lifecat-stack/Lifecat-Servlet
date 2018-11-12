@@ -1,11 +1,10 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.UserPropertyDO;
+import com.ten.bean.entity.UserProperty;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.dao.UserPropertyDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
 import com.ten.service.UserPropertyUpdateService;
 import com.ten.util.DateTimeUtil;
 import org.slf4j.Logger;
@@ -31,8 +30,7 @@ public class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService 
     private UserPropertyDAO dao;
 
     public UserPropertyUpdateServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (UserPropertyDAO) factory.getDaoByTableName("user_property");
+        dao = (UserPropertyDAO) JdbcDAOFactory.getDaoByTableName("user_property");
     }
 
     @Override
@@ -50,26 +48,26 @@ public class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService 
 
         String dateTime = DateTimeUtil.getInstance().getCurrentTime();
 
-        UserPropertyDO userPropertyDO = new UserPropertyDO();
-        userPropertyDO.setUserId(userId);
-        userPropertyDO.setPropertyNickname(nickname);
-        userPropertyDO.setPropertySignature(signature);
-        userPropertyDO.setPropertySex(sex);
-        userPropertyDO.setPropertyEmail(email);
-        userPropertyDO.setPropertyLocation(location);
-        userPropertyDO.setPropertyBirthday(birthday);
-        userPropertyDO.setPropertyGmtCreate(dateTime);
-        userPropertyDO.setPropertyGmtModified(dateTime);
+        UserProperty userProperty = new UserProperty();
+        userProperty.setUserId(userId);
+        userProperty.setNickname(nickname);
+        userProperty.setSignature(signature);
+        userProperty.setSex(sex);
+        userProperty.setEmail(email);
+        userProperty.setLocation(location);
+        userProperty.setBirthday(birthday);
+        userProperty.setCreateTime(dateTime);
+        userProperty.setUpdateTime(dateTime);
 
-        updateUserProperty(userPropertyDO);
+        updateUserProperty(userProperty);
 
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
 
     @Override
-    public void updateUserProperty(UserPropertyDO userPropertyDO) {
+    public void updateUserProperty(UserProperty userProperty) {
         try {
-            dao.insertUserProperty(userPropertyDO);
+            dao.insertUserProperty(userProperty);
         } catch (SQLException e) {
             e.printStackTrace();
         }

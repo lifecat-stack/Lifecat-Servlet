@@ -1,6 +1,6 @@
 package com.ten.dao;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -16,11 +16,11 @@ public interface ImageDAO {
      * 插入ImageDO到image表
      * 返回自增长主键image_id
      *
-     * @param imageDO imageDO
+     * @param image image
      * @return image_id
      * @throws SQLException e
      */
-    int insertImage(ImageDO imageDO) throws SQLException;
+    int insertImage(Image image) throws SQLException;
 
     /**
      * 图片删除 :
@@ -48,36 +48,36 @@ public interface ImageDAO {
      * image信息封装在ImageDO中返回
      *
      * @param imageId 图片ID
-     * @return ImageDO ImageDO
+     * @return Image Image
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    ImageDO queryImage(int imageId) throws SQLException;
+    Image queryImage(int imageId) throws SQLException;
 
     /**
      * 图片全部查询 :
      * 通过user_id进行查询
      * 获取数据库imagelist信息
-     * imagelist信息封装在{@literal List<ImageDO>}中返回
+     * imagelist信息封装在{@literal List<Image>}中返回
      *
      * @param userId 用户ID
-     * @return {@literal List<ImageDO> List}
+     * @return {@literal List<Image> List}
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    List<ImageDO> queryImageList(int userId) throws SQLException;
+    List<Image> queryImageList(int userId) throws SQLException;
 
     /**
      * 图片分类查询 :
      * 通过user_id和class_id进行查询
      * 获取数据库imagelist信息
-     * imagelist信息封装在{@literal List<ImageDO>}中返回
+     * imagelist信息封装在{@literal List<Image>}中返回
      *
      * @param userId  用户ID
      * @param classId 图片类别ID
-     * @return {@literal List<ImageDO> List}
+     * @return {@literal List<Image> List}
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    List<ImageDO> queryImageClass(int userId, int classId) throws SQLException;
+    List<Image> queryImageClass(int userId, int classId) throws SQLException;
 }

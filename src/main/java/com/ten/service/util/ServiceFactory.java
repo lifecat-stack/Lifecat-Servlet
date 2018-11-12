@@ -31,7 +31,7 @@ public class ServiceFactory {
         Map<String, String> map = new PropertiesReader().getPropertiesMap(propertiesName);
         assert map != null;
 
-        String val=map.get(key);
+        String val = map.get(key);
         System.out.println(val);
 
         try {

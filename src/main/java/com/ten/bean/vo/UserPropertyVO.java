@@ -1,9 +1,7 @@
 package com.ten.bean.vo;
 
 /**
- * DTO :UserProperty用户个人资料
- * <p>
- * 构建可变属性集，设置了默认参数
+ * UserProperty用户个人资料
  *
  * @auther ten
  */
@@ -17,6 +15,19 @@ public class UserPropertyVO {
     private String location;
     private String birthday;
     private String iconPath;
+
+    @Override
+    public String toString() {
+        return "UserProperty@"
+                + "{"
+                + "nickname:" + nickname + ","
+                + "signature" + signature + ","
+                + "email" + email + ","
+                + "sex" + sex + ","
+                + "location" + location + ","
+                + "birthday" + birthday + ","
+                + "iconPath" + iconPath + "}";
+    }
 
     public UserPropertyVO(Integer userId) {
         this.userId = userId;
@@ -57,24 +68,6 @@ public class UserPropertyVO {
         return this;
     }
 
-    /**
-     * UserProperty@1234{nickname:'',signature:'',email:'',sex:'',location:'',birthday:'',iconPath:''}
-     */
-    @Override
-    public String toString() {
-        return "UserProperty@" + userId + "{"
-                + "nickname:" + nickname + ","
-                + "signature" + signature + ","
-                + "email" + email + ","
-                + "sex" + sex + ","
-                + "location" + location + ","
-                + "birthday" + birthday + ","
-                + "iconPath" + iconPath + "}";
-    }
-
-    /**
-     * getter
-     */
     public Integer getUserId() {
         return userId;
     }

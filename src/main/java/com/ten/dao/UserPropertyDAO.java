@@ -1,6 +1,6 @@
 package com.ten.dao;
 
-import com.ten.bean.entity.UserPropertyDO;
+import com.ten.bean.entity.UserProperty;
 
 import java.sql.SQLException;
 
@@ -18,19 +18,10 @@ public interface UserPropertyDAO {
      * 用户注册时启动
      * 插入UserPropertyDO到user_property表
      *
-     * @param userPropertyDO userPropertyDO
+     * @param userProperty userProperty
      * @throws SQLException e
      */
-    void insertUserProperty(UserPropertyDO userPropertyDO) throws SQLException;
-
-//    /**
-//     * 资料更新 :
-//     * 更新user_property表
-//     *
-//     * @param userPropertyDO userPropertyDO
-//     * @throws SQLException e
-//     */
-//    void updateUserProperty(UserPropertyDO userPropertyDO) throws SQLException;
+    void insertUserProperty(UserProperty userProperty) throws SQLException;
 
     /**
      * 资料查询 :
@@ -39,9 +30,9 @@ public interface UserPropertyDAO {
      * 信息封装在UserPropertyDO中返回
      *
      * @param userId 用户ID
-     * @return UserPropertyDO UserPropertyDO
+     * @return UserProperty UserProperty
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    UserPropertyDO queryUserProperty(Integer userId) throws SQLException;
+    UserProperty queryUserProperty(Integer userId) throws SQLException;
 }

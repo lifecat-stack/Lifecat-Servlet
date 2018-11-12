@@ -1,10 +1,10 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.UserDO;
+import com.ten.bean.entity.User;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.UserDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.UserRegisterService;
 import com.ten.util.DateTimeUtil;
 import org.slf4j.Logger;
@@ -27,7 +27,7 @@ public class UserRegisterServiceImpl implements UserRegisterService {
     private UserDAO dao;
 
     public UserRegisterServiceImpl() {
-        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
+        dao = (UserDAO) JdbcDAOFactory.getDaoByTableName("user");
     }
 
     @Override
@@ -43,12 +43,12 @@ public class UserRegisterServiceImpl implements UserRegisterService {
             return new ServiceResult.Builder(false).errormsg("该用户已存在").page(Page.PAGE_INDEX).build();
         }
 
-        UserDO userDO = new UserDO();
+        User userDO = new User();
         userDO.setUserName(rUserName);
         userDO.setUserPassword(rUserPassword);
         userDO.setUserLevel("user");
-        userDO.setUserGmtCreate(dateTime);
-        userDO.setUserGmtModified(dateTime);
+        userDO.setCreateTime(dateTime);
+        userDO.setUpdateTime(dateTime);
 
         int userId = insertUserToDatabase(userDO);
         if (userId < 1) {
@@ -71,9 +71,9 @@ public class UserRegisterServiceImpl implements UserRegisterService {
     }
 
     @Override
-    public int insertUserToDatabase(UserDO userDO) {
+    public int insertUserToDatabase(User user) {
         try {
-            return dao.insertUser(userDO);
+            return dao.insertUser(user);
         } catch (SQLException e) {
             e.printStackTrace();
             return 0;

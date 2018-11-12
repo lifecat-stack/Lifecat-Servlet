@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.bean.vo.AlbumClassVO;
 import com.ten.bean.vo.ImageVO;
 import com.ten.constant.Page;
@@ -54,7 +54,7 @@ public class ImageClassQueryServiceImpl implements ImageClassQueryService {
     }
 
     @Override
-    public List<ImageDO> queryImageByClass(int userId, int classId) {
+    public List<Image> queryImageByClass(int userId, int classId) {
         return null;
     }
 }

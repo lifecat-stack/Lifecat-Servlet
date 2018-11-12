@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.service.util.Service;
 
 /**
@@ -10,5 +10,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface ImageTextUpdateService extends Service{
-    void updateImageText(ImageDO imageDO);
+
+    void updateImageText(Image image);
 }

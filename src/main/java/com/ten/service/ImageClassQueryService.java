@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.service.util.Service;
 
 import java.util.List;
@@ -12,5 +12,6 @@ import java.util.List;
  * @auther ten
  */
 public interface ImageClassQueryService extends Service {
-    List<ImageDO> queryImageByClass(int userId, int classId);
+
+    List<Image> queryImageByClass(int userId, int classId);
 }

@@ -1,11 +1,10 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.DiaryDO;
+import com.ten.bean.entity.Diary;
 import com.ten.bean.vo.DiaryVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.DiaryListQueryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,24 +28,23 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
     private DiaryDAO dao;
 
     public DiaryListQueryServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (DiaryDAO) factory.getDaoByTableName("diary");
+        dao = (DiaryDAO) JdbcDAOFactory.getDaoByTableName("diary");
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         Integer userId = Integer.valueOf(req.getParameter("userId"));
 
-        List<DiaryDO> diaryDOList = queryDiaryListByUserId(userId);
+        List<Diary> diaryDOList = queryDiaryListByUserId(userId);
 
         // List<DiaryVO>
         List<DiaryVO> diaryList = new ArrayList<>(16);
-        for (DiaryDO diaryDO : diaryDOList) {
+        for (Diary diary : diaryDOList) {
             DiaryVO diaryVO = new DiaryVO(
-                    diaryDO.getDiaryId(),
-                    diaryDO.getDiaryName(),
-                    diaryDO.getdiaryText(),
-                    diaryDO.getdiaryGmtModified());
+                    diary.getId(),
+                    diary.getDiaryName(),
+                    diary.getdiaryText(),
+                    diary.getdiaryGmtModified());
             diaryList.add(diaryVO);
         }
 
@@ -55,7 +53,7 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
     }
 
     @Override
-    public List<DiaryDO> queryDiaryListByUserId(int userId) {
+    public List<Diary> queryDiaryListByUserId(int userId) {
         try {
             return dao.queryDiaryList(userId);
         } catch (SQLException e) {

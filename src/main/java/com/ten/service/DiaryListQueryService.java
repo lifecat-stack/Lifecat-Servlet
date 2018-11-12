@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.DiaryDO;
+import com.ten.bean.entity.Diary;
 import com.ten.service.util.Service;
 
 import java.util.List;
@@ -15,5 +15,6 @@ import java.util.List;
  * @auther ten
  */
 public interface DiaryListQueryService extends Service {
-    List<DiaryDO> queryDiaryListByUserId(int userId);
+
+    List<Diary> queryDiaryListByUserId(int userId);
 }

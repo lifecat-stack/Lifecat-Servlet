@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.DiaryDO;
+import com.ten.bean.entity.Diary;
 import com.ten.service.util.Service;
 
 /**
@@ -13,5 +13,6 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface DiaryUploadService extends Service {
-    void uploadDiary(DiaryDO diaryDO);
+
+    void uploadDiary(Diary diary);
 }

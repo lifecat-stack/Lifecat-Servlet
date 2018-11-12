@@ -1,9 +1,7 @@
 package com.ten.bean.vo;
 
 /**
- * DTO :Admin管理员账号
- * <p>
- * 覆盖equals() hashCode()
+ * Admin管理员账号
  *
  * @auther ten
  */
@@ -26,15 +24,12 @@ public class AdminVO {
 
     @Override
     public boolean equals(Object obj) {
-        //引用检测
         if (obj == this) {
             return true;
         }
-        //类型检测
         if (!(obj instanceof AdminVO)) {
             return false;
         }
-        //参数检测
         if (!this.adminId.equals(((AdminVO) obj).getAdminId())) {
             return false;
         }
@@ -60,17 +55,11 @@ public class AdminVO {
         return result;
     }
 
-    /**
-     * Admin@1234{name:wang,level:LEVEL}
-     */
     @Override
     public String toString() {
-        return "Admin@" + adminId + "{name:" + adminName + ",level:" + adminLevel + "}";
+        return "Admin@" + "{name:" + adminName + ",level:" + adminLevel + "}";
     }
 
-    /**
-     * getter方法
-     */
     public Integer getAdminId() {
         return adminId;
     }

@@ -1,12 +1,11 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Directory;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.ImageUploadService;
 import com.ten.util.DateTimeUtil;
 import com.ten.util.ImageWriter;
@@ -64,20 +63,19 @@ public class ImageUploadServiceImpl implements ImageUploadService {
 
         // 将图片信息写入数据库
         // 获取DAO实例
-        DAOFactory factory = new JdbcDAOFactory();
-        ImageDAO dao = (ImageDAO) factory.getDaoByTableName("image");
+        ImageDAO dao = (ImageDAO) JdbcDAOFactory.getDaoByTableName("image");
 
-        ImageDO imageDO = new ImageDO();
-        imageDO.setUserId(userId);
-        imageDO.setClassId(0);
-        imageDO.setDeleted(1);
-        imageDO.setImageText(imageText);
-        imageDO.setImagePath(imagePath);
-        imageDO.setImageGmtCreate(dateTime);
-        imageDO.setImageGmtModified(dateTime);
+        Image image = new Image();
+        image.setUserId(userId);
+        image.setClassId(0);
+        image.setIsDeleted(0);
+        image.setImageText(imageText);
+        image.setImagePath(imagePath);
+        image.setCreateTime(dateTime);
+        image.setUpdateTime(dateTime);
         boolean success2 = false;
         try {
-            dao.insertImage(imageDO);
+            dao.insertImage(image);
             success2 = true;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -96,7 +94,7 @@ public class ImageUploadServiceImpl implements ImageUploadService {
     }
 
     @Override
-    public void uploadImage(ImageDO imageDO) {
+    public void uploadImage(Image image) {
 
     }
 }

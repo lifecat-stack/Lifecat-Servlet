@@ -1,10 +1,10 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.UserDO;
+import com.ten.bean.entity.User;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
 import com.ten.dao.UserDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.UserLoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,7 +29,7 @@ public class UserLoginServiceImpl implements UserLoginService {
     private UserDAO dao;
 
     public UserLoginServiceImpl() {
-        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
+        dao = (UserDAO) JdbcDAOFactory.getDaoByTableName("user");
     }
 
     @Override
@@ -38,7 +38,7 @@ public class UserLoginServiceImpl implements UserLoginService {
         String userName = req.getParameter("userName");
         String userPassword = req.getParameter("userPassword");
 
-        UserDO userDO = queryUserByName(userName);
+        User userDO = queryUserByName(userName);
 
         if (userDO == null) {
             return new ServiceResult.Builder(false).errormsg("该用户不存在").page(Page.PAGE_INDEX).build();
@@ -48,7 +48,7 @@ public class UserLoginServiceImpl implements UserLoginService {
             return new ServiceResult.Builder(false).errormsg("密码错误").page(Page.PAGE_INDEX).build();
         }
 
-        UserVO user = new UserVO(userDO.getUserId(), userDO.getUserName());
+        UserVO user = new UserVO(userDO.getId(), userDO.getUserName());
         req.getSession().setAttribute("user", user);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }
@@ -59,7 +59,7 @@ public class UserLoginServiceImpl implements UserLoginService {
     }
 
     @Override
-    public UserDO queryUserByName(String userName) {
+    public User queryUserByName(String userName) {
         try {
             return dao.queryUser(userName);
         } catch (SQLException e) {

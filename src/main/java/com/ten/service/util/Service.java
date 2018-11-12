@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletResponse;
  * @auther ten
  */
 public interface Service {
-
     /**
      * 业务逻辑处理
      *

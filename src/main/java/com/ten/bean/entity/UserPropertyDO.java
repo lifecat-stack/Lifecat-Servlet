@@ -48,7 +48,6 @@ public class UserPropertyDO {
     public void setPropertySex(String propertySex) {
         this.propertySex = propertySex;
     }
-
     public String getPropertyEmail() {
         return propertyEmail;
     }

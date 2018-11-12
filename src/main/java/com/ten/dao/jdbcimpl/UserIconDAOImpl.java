@@ -2,7 +2,7 @@ package com.ten.dao.jdbcimpl;
 
 import com.ten.dao.BaseDAO;
 import com.ten.dao.UserIconDAO;
-import com.ten.bean.entity.UserIconDO;
+import com.ten.bean.entity.UserIcon;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,25 +13,25 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class UserIconDAOImpl extends BaseDAO implements UserIconDAO {
-    public  UserIconDAOImpl() {
+    public UserIconDAOImpl() {
     }
 
 
     @Override
-    public void insertUserIcon(UserIconDO userIconDO) throws SQLException {
-        String sql = "insert into user_icon(user_id,icon_path,icon_gmt_create,icon_gmt_modified) " +
+    public void insertUserIcon(UserIcon userIcon) throws SQLException {
+        String sql = "insert into user_icon(user_id,icon_path,create_time,update_time) " +
                 " VALUES( ?,?,?,?)";
-        Object[] args = {userIconDO.getUserId(), userIconDO.getIconPath(), userIconDO.getIconGmtCreate(), userIconDO.getIconGmtModified()};
+        Object[] args = {userIcon.getUserId(), userIcon.getIconPath(), userIcon.getCreateTime(), userIcon.getUpdateTime()};
         insert(sql, args);
     }
 
     @Override
-    public void updateUserIcon(UserIconDO userIconDO) throws SQLException {
+    public void updateUserIcon(UserIcon userIcon) throws SQLException {
         String sql = "update user_icon set icon_path = '"
-                + userIconDO.getIconPath()
-                + "' ,icon_gmt_modified = '"
-                + userIconDO.getIconGmtModified()
-                + "'  where user_id = '" + userIconDO.getUserId() + "'";
+                + userIcon.getIconPath()
+                + "' ,update_time = '"
+                + userIcon.getUpdateTime()
+                + "'  where user_id = '" + userIcon.getUserId() + "'";
         update(sql);
     }
 

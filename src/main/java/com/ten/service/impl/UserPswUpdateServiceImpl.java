@@ -2,9 +2,8 @@ package com.ten.service.impl;
 
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.dao.UserDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
 import com.ten.service.UserPswUpdateService;
 import com.ten.util.DateTimeUtil;
 import org.slf4j.Logger;
@@ -27,8 +26,7 @@ public class UserPswUpdateServiceImpl implements UserPswUpdateService {
     private UserDAO dao;
 
     public UserPswUpdateServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (UserDAO) factory.getDaoByTableName("user");
+        dao = (UserDAO) JdbcDAOFactory.getDaoByTableName("user");
     }
 
     @Override

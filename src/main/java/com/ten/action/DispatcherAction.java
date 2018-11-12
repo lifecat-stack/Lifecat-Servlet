@@ -10,17 +10,18 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Action转发
- * <p>
- * 根据*.action的get请求
- * 通过请求服务端转发
- * 访问WEB-INF下的jsp页面
+ * Action Dispatcher Controller
+ * 根据*.action请求, 通过请求服务端转发, 访问WEB-INF下的jsp页面
  *
  * @date 2018/6/18
  * @auther ten
  */
 public class DispatcherAction extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(DispatcherAction.class);
+    /**
+     * TAP子页面
+     */
+    private static final String TAP_PAGE = "tap";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -30,7 +31,7 @@ public class DispatcherAction extends HttpServlet {
 
         String url;
         // 生成WEB-INF路径
-        if (uri.contains("tap")) {
+        if (uri.contains(TAP_PAGE)) {
             url = "/WEB-INF/jsp/mainPage/" + action + ".jsp";
         } else {
             url = "/WEB-INF/jsp/" + action + ".jsp";

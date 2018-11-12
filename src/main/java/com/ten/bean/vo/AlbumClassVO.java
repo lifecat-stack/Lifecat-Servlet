@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * DTO :Album分类集合，不同类别图片集合
+ * Album分类集合，不同类别图片集合
  *
  * @auther ten
  */

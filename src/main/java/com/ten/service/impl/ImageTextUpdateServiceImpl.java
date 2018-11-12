@@ -1,6 +1,6 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.service.ImageTextUpdateService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,7 +27,7 @@ public class ImageTextUpdateServiceImpl implements ImageTextUpdateService {
     }
 
     @Override
-    public void updateImageText(ImageDO imageDO) {
+    public void updateImageText(Image image) {
 
     }
 }

@@ -1,8 +1,8 @@
 package com.ten.dao.jdbcimpl;
 
+import com.ten.bean.entity.UserProperty;
 import com.ten.dao.BaseDAO;
 import com.ten.dao.UserPropertyDAO;
-import com.ten.bean.entity.UserPropertyDO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,62 +13,62 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class UserPropertyDAOImpl extends BaseDAO implements UserPropertyDAO {
-    public  UserPropertyDAOImpl() {
+    public UserPropertyDAOImpl() {
     }
 
     @Override
-    public void insertUserProperty(UserPropertyDO userPropertyDO) throws SQLException {
+    public void insertUserProperty(UserProperty userProperty) throws SQLException {
         String sql = "insert into " +
                 "user_property(user_id," +
-                "property_nickname," +
-                "property_signature," +
-                "property_sex," +
-                "property_email," +
-                "property_location," +
-                "property_birthday," +
-                "property_gmt_create," +
-                "property_gmt_modified)" +
+                "nickname," +
+                "signature," +
+                "sex," +
+                "email," +
+                "location," +
+                "birthday," +
+                "create_time," +
+                "update_time)" +
                 " values(?,?,?,?,?,?,?,?,?)";
         Object[] args = {
-                userPropertyDO.getUserId(),
-                userPropertyDO.getPropertyNickname(),
-                userPropertyDO.getPropertySignature(),
-                userPropertyDO.getPropertySex(),
-                userPropertyDO.getPropertyEmail(),
-                userPropertyDO.getPropertyLocation(),
-                userPropertyDO.getPropertyBirthday(),
-                userPropertyDO.getPropertyGmtCreate(),
-                userPropertyDO.getPropertyGmtModified()
+                userProperty.getUserId(),
+                userProperty.getNickname(),
+                userProperty.getSignature(),
+                userProperty.getSex(),
+                userProperty.getEmail(),
+                userProperty.getLocation(),
+                userProperty.getBirthday(),
+                userProperty.getCreateTime(),
+                userProperty.getUpdateTime()
         };
         insert(sql, args);
     }
 
     @Override
-    public UserPropertyDO queryUserProperty(Integer userId) throws SQLException {
+    public UserProperty queryUserProperty(Integer userId) throws SQLException {
         String sql = "select " +
-                "property_nickname," +
-                "property_signature," +
-                "property_sex," +
-                "property_email," +
-                "property_location," +
-                "property_birthday," +
-                "property_gmt_create," +
-                "property_gmt_modified" +
+                "nickname," +
+                "signature," +
+                "sex," +
+                "email," +
+                "location," +
+                "birthday," +
+                "create_time," +
+                "update_time" +
                 " from user_property where user_id = '" + userId + "'";
 
         ResultSet resultSet = query(sql);
         resultSet.next();
 
-        UserPropertyDO userPropertyDO = new UserPropertyDO();
-        userPropertyDO.setUserId(userId);
-        userPropertyDO.setPropertyNickname(resultSet.getString("property_nickname"));
-        userPropertyDO.setPropertySignature(resultSet.getString("property_signature"));
-        userPropertyDO.setPropertySex(resultSet.getString("property_sex"));
-        userPropertyDO.setPropertyEmail(resultSet.getString("property_email"));
-        userPropertyDO.setPropertyLocation(resultSet.getString("property_location"));
-        userPropertyDO.setPropertyBirthday(resultSet.getString("property_birthday"));
-        userPropertyDO.setPropertyGmtCreate(resultSet.getString("property_gmt_create"));
-        userPropertyDO.setPropertyGmtModified(resultSet.getString("property_gmt_modified"));
-        return userPropertyDO;
+        UserProperty userProperty = new UserProperty();
+        userProperty.setUserId(userId);
+        userProperty.setNickname(resultSet.getString("nickname"));
+        userProperty.setSignature(resultSet.getString("signature"));
+        userProperty.setSex(resultSet.getString("sex"));
+        userProperty.setEmail(resultSet.getString("email"));
+        userProperty.setLocation(resultSet.getString("location"));
+        userProperty.setBirthday(resultSet.getString("birthday"));
+        userProperty.setCreateTime(resultSet.getString("create_time"));
+        userProperty.setUpdateTime(resultSet.getString("update_time"));
+        return userProperty;
     }
 }

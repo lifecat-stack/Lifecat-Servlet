@@ -70,8 +70,7 @@ public class DiaryDO {
     public void setdiaryGmtModified(String diaryGmtModified) {
         this.diaryGmtModified = diaryGmtModified;
     }
-
-    /**
+     /**
      * @return DiaryDO@1234{DiaryId:'',UserID:'',Name:'',Text:'',isDeleted:'',Create:'',Modified:''}
      */
     @Override

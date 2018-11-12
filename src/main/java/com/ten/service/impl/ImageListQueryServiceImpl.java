@@ -1,11 +1,10 @@
 package com.ten.service.impl;
 
-import com.ten.bean.entity.ImageDO;
+import com.ten.bean.entity.Image;
 import com.ten.bean.vo.ImageVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
-import com.ten.dao.jdbcimpl.JdbcDAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.ImageListQueryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,23 +31,22 @@ public class ImageListQueryServiceImpl implements ImageListQueryService {
     private ImageDAO dao;
 
     public ImageListQueryServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (ImageDAO) factory.getDaoByTableName("image");
+        dao = (ImageDAO) JdbcDAOFactory.getDaoByTableName("image");
     }
 
     @Override
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         int userId = Integer.parseInt(req.getParameter("userId"));
 
-        List<ImageDO> imageDOList = queryImageListByUserId(userId);
+        List<Image> imageDOList = queryImageListByUserId(userId);
 
         List<ImageVO> imageList = new ArrayList<>(16);
-        for (ImageDO imageDO : imageDOList) {
+        for (Image image : imageDOList) {
             ImageVO imageDTO = new ImageVO(
-                    imageDO.getImageId())
-                    .imagePath(imageDO.getImagePath())
-                    .imageDate(imageDO.getImageGmtCreate())
-                    .imageText(imageDO.getImageText());
+                    image.getId())
+                    .imagePath(image.getImagePath())
+                    .imageDate(image.getCreateTime())
+                    .imageText(image.getImageText());
             imageList.add(imageDTO);
         }
 
@@ -57,7 +55,7 @@ public class ImageListQueryServiceImpl implements ImageListQueryService {
     }
 
     @Override
-    public List<ImageDO> queryImageListByUserId(int userId) {
+    public List<Image> queryImageListByUserId(int userId) {
         try {
             return dao.queryImageList(userId);
         } catch (SQLException e) {

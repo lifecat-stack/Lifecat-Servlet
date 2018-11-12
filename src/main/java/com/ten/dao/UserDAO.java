@@ -1,6 +1,6 @@
 package com.ten.dao;
 
-import com.ten.bean.entity.UserDO;
+import com.ten.bean.entity.User;
 
 import java.sql.SQLException;
 
@@ -21,10 +21,10 @@ public interface UserDAO {
      * 插入UserDO到user表
      * 返回自增主键user_id
       *
-     * @param userDO UserDO
+     * @param user User
      * @throws SQLException e
      */
-    int insertUser(UserDO userDO) throws SQLException;
+    int insertUser(User user) throws SQLException;
 
     /**
      * 登录 :
@@ -33,11 +33,11 @@ public interface UserDAO {
      * user信息封装在UserDO中返回
      *
      * @param userName 用户名
-     * @return UserDO UserDO
+     * @return User User
      * @throws SQLException         e
      * @throws NullPointerException 记录不存在
      */
-    UserDO queryUser(String userName) throws SQLException;
+    User queryUser(String userName) throws SQLException;
 
     /**
      * 注册-用户是否存在 :

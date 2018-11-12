@@ -1,6 +1,6 @@
 package com.ten.service;
 
-import com.ten.bean.entity.UserPropertyDO;
+import com.ten.bean.entity.UserProperty;
 import com.ten.service.util.Service;
 
 /**
@@ -13,7 +13,8 @@ import com.ten.service.util.Service;
  * @auther ten
  */
 public interface UserPropertyQueryService extends Service {
-    UserPropertyDO queryUserProperty(int userId);
+
+    UserProperty queryUserProperty(int userId);
 
     String  queryUserIcon(int userId);
 }

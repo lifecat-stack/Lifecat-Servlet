@@ -29,7 +29,7 @@ public class ImageWriter {
 
         FileOutputStream fos = new FileOutputStream(imagePath);
         byte[] bbuf = new byte[32];
-        int hasRead = 0;
+        int hasRead;
 
         // 将文件写入服务器的硬盘上
         while ((hasRead = stream.read(bbuf)) > 0) {
