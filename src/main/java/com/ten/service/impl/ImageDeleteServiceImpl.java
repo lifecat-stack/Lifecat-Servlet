@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 /**
  * 图片删除
  *
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * @auther ten
  */
 public class ImageDeleteServiceImpl implements ImageDeleteService {
-     private Logger logger = LoggerFactory.getLogger(ImageDeleteServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(ImageDeleteServiceImpl.class);
 
     public ImageDeleteServiceImpl() {
     }

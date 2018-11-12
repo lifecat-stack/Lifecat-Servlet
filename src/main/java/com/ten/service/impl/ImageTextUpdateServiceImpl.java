@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 /**
  * 更新图片信息
  *
@@ -14,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  * @auther ten
  */
 public class ImageTextUpdateServiceImpl implements ImageTextUpdateService {
-     private Logger logger = LoggerFactory.getLogger(ImageTextUpdateServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(ImageTextUpdateServiceImpl.class);
 
     public ImageTextUpdateServiceImpl() {
     }

@@ -8,7 +8,7 @@
 
 #### [线上DEMO地址](http://www.lifecat.club:8080/lifecatweb)
 
-点击'立即登录' 用户名:admin 密码:123
+点击'立即登录' 用户名:admin 密码:admin
 
 ### 后续项目线上地址 (建议由浅入深的按顺序学习)
 
