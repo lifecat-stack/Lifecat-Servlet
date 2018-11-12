@@ -1,22 +1,14 @@
-# lifecat-web
+# Servlet Web
 
 ![java](https://img.shields.io/badge/language-java-red.svg)
 ![许可](https://img.shields.io/dub/l/vibe-d.svg) 
 :cat: :smiley_cat: :kissing_cat:
 
-> 这是一个Javaweb初学的简易项目, 它使用jsp+servlet+mysql的项目架构, 它具有清晰的流程控制和代码注释, 适合初学者的学习阅读, 同时此项目具有说明文档和后续项目可供学习
+> 基于Jsp + Servlet + Jdbc + Mysql + jQuery技术栈, 实现了DispatcherServlet请求分发机制 + 图像文件的上传/存储/读取功能。代码规范基于《阿里巴巴Java开发手册》。
 
 #### [线上DEMO地址](http://www.lifecat.club:8080/lifecatweb)
 
 点击'立即登录' 用户名:admin 密码:admin
-
-### 后续项目线上地址 (建议由浅入深的按顺序学习)
-
-[lifecatweb的SSM框架后台管理系统](http://www.lifecat.club:8080/ssm)
-
-[Vuejs+SpringBoot前后端分离重构lifecatweb(仅部署前端)](http://www.lifecat.club/lifecat)
-
-[Vuejs+SpringBoot前后端分离重构后台管理系统(仅部署前端)](http://www.lifecat.club/admin)
 
 ## 项目部署
 ### 本地部署
