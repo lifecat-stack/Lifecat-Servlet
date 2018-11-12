@@ -3,9 +3,8 @@ package com.ten.service.impl;
 import com.ten.bean.entity.UserProperty;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
-import com.ten.dao.UserPropertyDAO;
 import com.ten.dao.JdbcDAOFactory;
+import com.ten.dao.UserPropertyDAO;
 import com.ten.service.UserPropertyUpdateService;
 import com.ten.util.DateTimeUtil;
 import org.slf4j.Logger;
@@ -31,8 +30,7 @@ public class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService 
     private UserPropertyDAO dao;
 
     public UserPropertyUpdateServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (UserPropertyDAO) factory.getDaoByTableName("user_property");
+        dao = (UserPropertyDAO) JdbcDAOFactory.getDaoByTableName("user_property");
     }
 
     @Override
@@ -52,14 +50,14 @@ public class UserPropertyUpdateServiceImpl implements UserPropertyUpdateService 
 
         UserProperty userProperty = new UserProperty();
         userProperty.setUserId(userId);
-        userProperty.setPropertyNickname(nickname);
-        userProperty.setPropertySignature(signature);
-        userProperty.setPropertySex(sex);
-        userProperty.setPropertyEmail(email);
-        userProperty.setPropertyLocation(location);
-        userProperty.setPropertyBirthday(birthday);
-        userProperty.setPropertyGmtCreate(dateTime);
-        userProperty.setPropertyGmtModified(dateTime);
+        userProperty.setNickname(nickname);
+        userProperty.setSignature(signature);
+        userProperty.setSex(sex);
+        userProperty.setEmail(email);
+        userProperty.setLocation(location);
+        userProperty.setBirthday(birthday);
+        userProperty.setCreateTime(dateTime);
+        userProperty.setUpdateTime(dateTime);
 
         updateUserProperty(userProperty);
 

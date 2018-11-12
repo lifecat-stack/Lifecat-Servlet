@@ -3,7 +3,6 @@ package com.ten.service.impl;
 import com.ten.bean.entity.Image;
 import com.ten.bean.vo.ImageVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
 import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.ImageListQueryService;
@@ -32,8 +31,7 @@ public class ImageListQueryServiceImpl implements ImageListQueryService {
     private ImageDAO dao;
 
     public ImageListQueryServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (ImageDAO) factory.getDaoByTableName("image");
+        dao = (ImageDAO) JdbcDAOFactory.getDaoByTableName("image");
     }
 
     @Override
@@ -45,9 +43,9 @@ public class ImageListQueryServiceImpl implements ImageListQueryService {
         List<ImageVO> imageList = new ArrayList<>(16);
         for (Image image : imageDOList) {
             ImageVO imageDTO = new ImageVO(
-                    image.getImageId())
+                    image.getId())
                     .imagePath(image.getImagePath())
-                    .imageDate(image.getImageGmtCreate())
+                    .imageDate(image.getCreateTime())
                     .imageText(image.getImageText());
             imageList.add(imageDTO);
         }

@@ -4,10 +4,9 @@ import com.ten.bean.entity.UserProperty;
 import com.ten.bean.vo.UserPropertyVO;
 import com.ten.constant.Page;
 import com.ten.constant.WEBINF;
-import com.ten.dao.DAOFactory;
+import com.ten.dao.JdbcDAOFactory;
 import com.ten.dao.UserIconDAO;
 import com.ten.dao.UserPropertyDAO;
-import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.UserPropertyQueryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,9 +32,8 @@ public class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
     private UserIconDAO iconDAO;
 
     public UserPropertyQueryServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        propertyDAO = (UserPropertyDAO) factory.getDaoByTableName("user_property");
-        iconDAO = (UserIconDAO) factory.getDaoByTableName("user_icon");
+        propertyDAO = (UserPropertyDAO) JdbcDAOFactory.getDaoByTableName("user_property");
+        iconDAO = (UserIconDAO) JdbcDAOFactory.getDaoByTableName("user_icon");
     }
 
     @Override
@@ -51,12 +49,12 @@ public class UserPropertyQueryServiceImpl implements UserPropertyQueryService {
         String userIconPath = queryUserIcon(userId);
 
         UserPropertyVO userPropertyVO = new UserPropertyVO(userId)
-                .nickname(userProperty.getPropertyNickname())
-                .signature(userProperty.getPropertySignature())
-                .sex(userProperty.getPropertySex())
-                .email(userProperty.getPropertyEmail())
-                .birthday(userProperty.getPropertyBirthday())
-                .location(userProperty.getPropertyLocation())
+                .nickname(userProperty.getNickname())
+                .signature(userProperty.getSignature())
+                .sex(userProperty.getSex())
+                .email(userProperty.getEmail())
+                .birthday(userProperty.getBirthday())
+                .location(userProperty.getLocation())
                 .iconPath(userIconPath);
 
         req.getSession().setAttribute("userProperty", userPropertyVO);

@@ -23,15 +23,6 @@ public interface UserPropertyDAO {
      */
     void insertUserProperty(UserProperty userProperty) throws SQLException;
 
-//    /**
-//     * 资料更新 :
-//     * 更新user_property表
-//     *
-//     * @param userPropertyDO userPropertyDO
-//     * @throws SQLException e
-//     */
-//    void updateUserProperty(UserProperty userPropertyDO) throws SQLException;
-
     /**
      * 资料查询 :
      * 通过user_id进行查询

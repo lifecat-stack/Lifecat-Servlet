@@ -20,70 +20,73 @@ public class DiaryDAOImpl extends BaseDAO implements DiaryDAO {
 
     @Override
     public int insertDiary(Diary diary) throws SQLException {
-        String sql = "INSERT INTO diary(diary_name, diary_text, is_deleted, user_id, diary_gmt_create, diary_gmt_modified) " +
+        String sql = "INSERT INTO diary(diary_name, diary_text, is_deleted, user_id, create_time, update_time) " +
                 "VALUES( ?,?,?,?,?,?)";
         Object[] args = {
                 diary.getDiaryName(),
                 diary.getdiaryText(),
-                diary.getDeleted(),
+                diary.getIsDeleted(),
                 diary.getUserId(),
-                diary.getdiaryGmtCreate(),
-                diary.getdiaryGmtModified()
+                diary.getCreateTime(),
+                diary.getUpdateTime()
         };
 
         return insertAndReturnKey(sql, args);
     }
 
     @Override
-    public void updateDiary(Diary diary) throws SQLException {
-        int diaryId = diary.getDiaryId();
+    public int updateDiary(Diary diary) throws SQLException {
+        int diaryId = diary.getId();
         String diaryName = diary.getDiaryName();
         String diaryText = diary.getdiaryText();
         String modifiedTime = diary.getdiaryGmtModified();
         String sql = "UPDATE diary set diary_name = '" + diaryName + "'," +
                 "diary_text='" + diaryText + "'," +
-                "diary_gmt_modified='" + modifiedTime + "' " +
-                "where diary_id = '" + diaryId + "'";
+                "update_time='" + modifiedTime + "' " +
+                "where id = '" + diaryId + "'";
         update(sql);
+        return diaryId;
     }
 
     @Override
-    public void deleteDiary(Integer diaryId) throws SQLException {
-        String sql = "UPDATE diary set is_deleted = '0' where diary_id = '" + diaryId + "'";
+    public int deleteDiary(Integer diaryId) throws SQLException {
+        String sql = "UPDATE diary set is_deleted = '1' where id = '" + diaryId + "'";
         delete(sql);
+        return 1;
     }
 
     @Override
-    public void deleteAllDiary(Integer userId) throws SQLException {
-        String sql = "UPDATE diary set is_deleted = '0' where user_id = '" + userId + "'";
+    public int deleteAllDiary(Integer userId) throws SQLException {
+        String sql = "UPDATE diary set is_deleted = '1' where user_id = '" + userId + "'";
         delete(sql);
+        return 1;
     }
 
     @Override
     public Diary queryDiary(String diaryName) throws SQLException {
-        String sql = "SELECT diary_id,diary_name,diary_text,diary_gmt_modified from diary where diary_name = '" + diaryName + "' and is_deleted = '1'";
+        String sql = "SELECT id,diary_name,diary_text,update_time from diary where diary_name = '" + diaryName + "' and is_deleted = '0'";
         ResultSet rs = query(sql);
         rs.next();
         Diary diary = new Diary();
-        diary.setDiaryId(rs.getInt("diary_id"));
+        diary.setId(rs.getInt("id"));
         diary.setDiaryName(rs.getString("diary_name"));
         diary.setdiaryText(rs.getString("diary_text"));
-        diary.setdiaryGmtModified(rs.getString("diary_gmt_modified"));
+        diary.setdiaryGmtModified(rs.getString("update_time"));
 
         return diary;
     }
 
     @Override
     public List<Diary> queryDiaryList(Integer userId) throws SQLException {
-        String sql = "SELECT diary_id,diary_name,diary_text,diary_gmt_modified from diary where user_id = '" + userId + "' and is_deleted = '1'";
+        String sql = "SELECT id,diary_name,diary_text,update_time from diary where user_id = '" + userId + "' and is_deleted = '0'";
         ResultSet rs = query(sql);
         List<Diary> list = new ArrayList<>();
         while (rs.next()) {
             Diary diary = new Diary();
-            diary.setDiaryId(rs.getInt("diary_id"));
+            diary.setId(rs.getInt("id"));
             diary.setDiaryName(rs.getString("diary_name"));
             diary.setdiaryText(rs.getString("diary_text"));
-            diary.setdiaryGmtModified(rs.getString("diary_gmt_modified"));
+            diary.setdiaryGmtModified(rs.getString("update_time"));
             list.add(diary);
         }
         return list;

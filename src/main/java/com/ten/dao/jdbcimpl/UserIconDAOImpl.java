@@ -13,15 +13,15 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class UserIconDAOImpl extends BaseDAO implements UserIconDAO {
-    public  UserIconDAOImpl() {
+    public UserIconDAOImpl() {
     }
 
 
     @Override
     public void insertUserIcon(UserIcon userIcon) throws SQLException {
-        String sql = "insert into user_icon(user_id,icon_path,icon_gmt_create,icon_gmt_modified) " +
+        String sql = "insert into user_icon(user_id,icon_path,create_time,update_time) " +
                 " VALUES( ?,?,?,?)";
-        Object[] args = {userIcon.getUserId(), userIcon.getIconPath(), userIcon.getIconGmtCreate(), userIcon.getIconGmtModified()};
+        Object[] args = {userIcon.getUserId(), userIcon.getIconPath(), userIcon.getCreateTime(), userIcon.getUpdateTime()};
         insert(sql, args);
     }
 
@@ -29,8 +29,8 @@ public class UserIconDAOImpl extends BaseDAO implements UserIconDAO {
     public void updateUserIcon(UserIcon userIcon) throws SQLException {
         String sql = "update user_icon set icon_path = '"
                 + userIcon.getIconPath()
-                + "' ,icon_gmt_modified = '"
-                + userIcon.getIconGmtModified()
+                + "' ,update_time = '"
+                + userIcon.getUpdateTime()
                 + "'  where user_id = '" + userIcon.getUserId() + "'";
         update(sql);
     }

@@ -4,7 +4,6 @@ import com.ten.bean.entity.Image;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Directory;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.ImageDAO;
 import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.ImageUploadService;
@@ -64,17 +63,16 @@ public class ImageUploadServiceImpl implements ImageUploadService {
 
         // 将图片信息写入数据库
         // 获取DAO实例
-        DAOFactory factory = new JdbcDAOFactory();
-        ImageDAO dao = (ImageDAO) factory.getDaoByTableName("image");
+        ImageDAO dao = (ImageDAO) JdbcDAOFactory.getDaoByTableName("image");
 
         Image image = new Image();
         image.setUserId(userId);
         image.setClassId(0);
-        image.setDeleted(1);
+        image.setIsDeleted(0);
         image.setImageText(imageText);
         image.setImagePath(imagePath);
-        image.setImageGmtCreate(dateTime);
-        image.setImageGmtModified(dateTime);
+        image.setCreateTime(dateTime);
+        image.setUpdateTime(dateTime);
         boolean success2 = false;
         try {
             dao.insertImage(image);

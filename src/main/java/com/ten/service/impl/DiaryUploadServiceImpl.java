@@ -3,7 +3,6 @@ package com.ten.service.impl;
 import com.ten.bean.entity.Diary;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
 import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.DiaryUploadService;
@@ -31,8 +30,7 @@ public class DiaryUploadServiceImpl implements DiaryUploadService {
     private DiaryDAO dao;
 
     public DiaryUploadServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (DiaryDAO) factory.getDaoByTableName("diary");
+        dao = (DiaryDAO) JdbcDAOFactory.getDaoByTableName("diary");
     }
 
     @Override
@@ -48,7 +46,7 @@ public class DiaryUploadServiceImpl implements DiaryUploadService {
         diary.setUserId(userId);
         diary.setDiaryName(diaryName);
         diary.setdiaryText(diaryText);
-        diary.setDeleted(1);
+        diary.setIsDeleted(0);
         diary.setdiaryGmtCreate(dateTime);
         diary.setdiaryGmtModified(dateTime);
 

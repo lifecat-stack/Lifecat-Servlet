@@ -1,96 +1,110 @@
 package com.ten.bean.entity;
 
-/**
- * image
- *
- * @auther ten
- */
 public class Image {
 
-    private Integer imageId;
+    private Integer id;
     private Integer userId;
     private Integer classId;
+    private String imageName;
     private String imageText;
     private String imagePath;
-    private Integer deleted;
-    private String imageGmtCreate;
-    private String imageGmtModified;
+    private String createTime;
+    private String updateTime;
+    private Integer isDeleted;
 
     @Override
     public String toString() {
-        return "Image@"
-                + "{ImageID:" + imageId
-                + ",UserID:" + userId
-                + ",ClassID:" + classId
-                + ",Text:" + imageText
-                + ",Path:" + imagePath
-                + ",isDeleted:" + deleted
-                + ",Create:" + imageGmtCreate
-                + ",Modified:" + imageGmtModified
+        return "Image@{"
+                + "id:" + id
+                + ",userId:" + userId
+                + ",classId:" + classId
+                + ",imageName:" + imageName
+                + ",imageText:" + imageText
+                + ",imagePath:" + imagePath
+                + ",createTime:" + createTime
+                + ",updateTime:" + updateTime
+                + ",isDeleted:" + isDeleted
                 + "}";
     }
 
-    public Integer getImageId() {
-        return imageId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setImageId(Integer imageId) {
-        this.imageId = imageId;
+    public Image setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public Image setImageName(String imageName) {
+        this.imageName = imageName;
+        return this;
     }
 
     public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public Image setUserId(Integer userId) {
         this.userId = userId;
+        return this;
     }
 
     public Integer getClassId() {
         return classId;
     }
 
-    public void setClassId(Integer classId) {
+    public Image setClassId(Integer classId) {
         this.classId = classId;
+        return this;
     }
 
     public String getImageText() {
         return imageText;
     }
 
-    public void setImageText(String imageText) {
+    public Image setImageText(String imageText) {
         this.imageText = imageText;
+        return this;
     }
 
     public String getImagePath() {
         return imagePath;
     }
 
-    public void setImagePath(String imagePath) {
+    public Image setImagePath(String imagePath) {
         this.imagePath = imagePath;
+        return this;
     }
 
-    public Integer getDeleted() {
-        return deleted;
+    public Integer getIsDeleted() {
+        return isDeleted;
     }
 
-    public void setDeleted(Integer deleted) {
-        this.deleted = deleted;
+    public Image setIsDeleted(Integer isDeleted) {
+        this.isDeleted = isDeleted;
+        return this;
     }
 
-    public String getImageGmtCreate() {
-        return imageGmtCreate;
+    public String getCreateTime() {
+        return createTime;
     }
 
-    public void setImageGmtCreate(String imageGmtCreate) {
-        this.imageGmtCreate = imageGmtCreate;
+    public Image setCreateTime(String createTime) {
+        this.createTime = createTime;
+        return this;
     }
 
-    public String getImageGmtModified() {
-        return imageGmtModified;
+    public String getUpdateTime() {
+        return updateTime;
     }
 
-    public void setImageGmtModified(String imageGmtModified) {
-        this.imageGmtModified = imageGmtModified;
+    public Image setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
+        return this;
     }
 }

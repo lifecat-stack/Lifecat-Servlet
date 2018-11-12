@@ -1,76 +1,88 @@
 package com.ten.bean.entity;
 
-/**
- * admin
- *
- * @auther ten
- */
 public class Admin {
 
-    private Integer adminId;
+    private Integer id;
     private String adminName;
     private String adminPassword;
     private String adminLevel;
-    private String adminGmtCreate;
-    private String adminGmtModified;
+    private String createTime;
+    private String updateTime;
+    private Integer isDeleted;
 
     @Override
     public String toString() {
-        return "Admin@"
-                + "{ID:" + adminId
-                + ",Name:" + adminName
-                + ",Password:" + adminPassword
-                + ",Level:" + adminLevel
-                + ",Create:" + adminGmtCreate
-                + ",Modified:" + adminGmtModified
+        return "Admin@{"
+                + "id:" + id
+                + ",adminName:" + adminName
+                + ",adminPassword:" + adminPassword
+                + ",adminLevel:" + adminLevel
+                + ",createTime:" + createTime
+                + ",updateTime:" + updateTime
+                + ",isDeleted:" + isDeleted
                 + "}";
-    }
-
-    public Integer getAdminId() {
-        return adminId;
-    }
-
-    public void setAdminId(Integer adminId) {
-        this.adminId = adminId;
     }
 
     public String getAdminName() {
         return adminName;
     }
 
-    public void setAdminName(String adminName) {
+    public Admin setAdminName(String adminName) {
         this.adminName = adminName;
+        return this;
     }
 
     public String getAdminPassword() {
         return adminPassword;
     }
 
-    public void setAdminPassword(String adminPassword) {
+    public Admin setAdminPassword(String adminPassword) {
         this.adminPassword = adminPassword;
+        return this;
     }
 
     public String getAdminLevel() {
         return adminLevel;
     }
 
-    public void setAdminLevel(String adminLevel) {
+    public Admin setAdminLevel(String adminLevel) {
         this.adminLevel = adminLevel;
+        return this;
     }
 
-    public String getAdminGmtCreate() {
-        return adminGmtCreate;
+    public String getCreateTime() {
+        return createTime;
     }
 
-    public void setAdminGmtCreate(String adminGmtCreate) {
-        this.adminGmtCreate = adminGmtCreate;
+    public Admin setCreateTime(String createTime) {
+        this.createTime = createTime;
+        return this;
     }
 
-    public String getAdminGmtModified() {
-        return adminGmtModified;
+    public String getUpdateTime() {
+        return updateTime;
     }
 
-    public void setAdminGmtModified(String adminGmtModified) {
-        this.adminGmtModified = adminGmtModified;
+    public Admin setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
+        return this;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Admin setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    public Integer getIsDeleted() {
+        return isDeleted;
+    }
+
+    public Admin setIsDeleted(Integer isDeleted) {
+        this.isDeleted = isDeleted;
+        return this;
     }
 }

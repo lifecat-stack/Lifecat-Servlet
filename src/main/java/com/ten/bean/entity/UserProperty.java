@@ -1,106 +1,142 @@
 package com.ten.bean.entity;
 
-/**
- * user_property
- *
- * @auther ten
- */
 public class UserProperty {
 
+    private Integer id;
     private Integer userId;
-    private String propertyNickname;
-    private String propertySignature;
-    private String propertySex;
-    private String propertyEmail;
-    private String propertyLocation;
-    private String propertyBirthday;
-    private String propertyGmtCreate;
-    private String propertyGmtModified;
+    private String userName;
+    private String nickname;
+    private String signature;
+    private String sex;
+    private String email;
+    private String location;
+    private String birthday;
+    private String createTime;
+    private String updateTime;
+    private Integer isDeleted;
 
     @Override
     public String toString() {
-        return "User@"
-                + "{UserID:" + userId
-                + ",Nickname:" + propertyNickname
-                + ",Signature:" + propertySignature
-                + ",Sex:" + propertySex
-                + ",Email:" + propertyEmail
-                + ",Location:" + propertyLocation
-                + ",Birthday:" + propertyBirthday
-                + ",Create:" + propertyGmtCreate
-                + ",Modified:" + propertyGmtModified
+        return "UserProperty@{"
+                + "id:" + id
+                + ",userId:" + userId
+                + ",userName:" + userName
+                + ",nickname:" + nickname
+                + ",signature:" + signature
+                + ",sex:" + sex
+                + ",email:" + email
+                + ",location:" + location
+                + ",birthday:" + birthday
+                + ",createTime:" + createTime
+                + ",updateTime:" + updateTime
                 + "}";
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public UserProperty setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public UserProperty setUserName(String userName) {
+        this.userName = userName;
+        return this;
+    }
+
+    public Integer getIsDeleted() {
+        return isDeleted;
+    }
+
+    public UserProperty setIsDeleted(Integer isDeleted) {
+        this.isDeleted = isDeleted;
+        return this;
     }
 
     public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public UserProperty setUserId(Integer userId) {
         this.userId = userId;
+        return this;
     }
 
-    public String getPropertyNickname() {
-        return propertyNickname;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setPropertyNickname(String propertyNickname) {
-        this.propertyNickname = propertyNickname;
+    public UserProperty setNickname(String nickname) {
+        this.nickname = nickname;
+        return this;
     }
 
-    public String getPropertySignature() {
-        return propertySignature;
+    public String getSignature() {
+        return signature;
     }
 
-    public void setPropertySignature(String propertySignature) {
-        this.propertySignature = propertySignature;
+    public UserProperty setSignature(String signature) {
+        this.signature = signature;
+        return this;
     }
 
-    public String getPropertySex() {
-        return propertySex;
+    public String getSex() {
+        return sex;
     }
 
-    public void setPropertySex(String propertySex) {
-        this.propertySex = propertySex;
+    public UserProperty setSex(String sex) {
+        this.sex = sex;
+        return this;
     }
 
-    public String getPropertyEmail() {
-        return propertyEmail;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPropertyEmail(String propertyEmail) {
-        this.propertyEmail = propertyEmail;
+    public UserProperty setEmail(String email) {
+        this.email = email;
+        return this;
     }
 
-    public String getPropertyLocation() {
-        return propertyLocation;
+    public String getLocation() {
+        return location;
     }
 
-    public void setPropertyLocation(String propertyLocation) {
-        this.propertyLocation = propertyLocation;
+    public UserProperty setLocation(String location) {
+        this.location = location;
+        return this;
     }
 
-    public String getPropertyBirthday() {
-        return propertyBirthday;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setPropertyBirthday(String propertyBirthday) {
-        this.propertyBirthday = propertyBirthday;
+    public UserProperty setBirthday(String birthday) {
+        this.birthday = birthday;
+        return this;
     }
 
-    public String getPropertyGmtCreate() {
-        return propertyGmtCreate;
+    public String getCreateTime() {
+        return createTime;
     }
 
-    public void setPropertyGmtCreate(String propertyGmtCreate) {
-        this.propertyGmtCreate = propertyGmtCreate;
+    public UserProperty setCreateTime(String createTime) {
+        this.createTime = createTime;
+        return this;
     }
 
-    public String getPropertyGmtModified() {
-        return propertyGmtModified;
+    public String getUpdateTime() {
+        return updateTime;
     }
 
-    public void setPropertyGmtModified(String propertyGmtModified) {
-        this.propertyGmtModified = propertyGmtModified;
+    public UserProperty setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
+        return this;
     }
 }

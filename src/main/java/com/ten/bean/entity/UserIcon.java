@@ -1,57 +1,77 @@
 package com.ten.bean.entity;
 
-/**
- * user_icon
- *
- * @auther ten
- */
 public class UserIcon {
 
+    private Integer id;
     private Integer userId;
     private String iconPath;
-    private String iconGmtCreate;
-    private String iconGmtModified;
+    private String createTime;
+    private String updateTime;
+    private Integer isDeleted;
 
     @Override
     public String toString() {
-        return "UserIcon@"
-                + "{UserID:" + userId
-                + ",Path:" + iconPath
-                + ",Create:" + iconGmtCreate
-                + ",Modified:" + iconGmtModified
+        return "UserIcon@{"
+                + "id:" + id
+                + ",userId:" + userId
+                + ",iconPath:" + iconPath
+                + ",createTime:" + createTime
+                + ",updateTime:" + updateTime
                 + "}";
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public UserIcon setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    public Integer getIsDeleted() {
+        return isDeleted;
+    }
+
+    public UserIcon setIsDeleted(Integer isDeleted) {
+        this.isDeleted = isDeleted;
+        return this;
     }
 
     public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public UserIcon setUserId(Integer userId) {
         this.userId = userId;
+        return this;
     }
 
     public String getIconPath() {
         return iconPath;
     }
 
-    public void setIconPath(String iconPath) {
+    public UserIcon setIconPath(String iconPath) {
         this.iconPath = iconPath;
+        return this;
     }
 
-    public String getIconGmtCreate() {
-        return iconGmtCreate;
+    public String getCreateTime() {
+        return createTime;
     }
 
-    public void setIconGmtCreate(String iconGmtCreate) {
-        this.iconGmtCreate = iconGmtCreate;
+    public UserIcon setCreateTime(String createTime) {
+        this.createTime = createTime;
+        return this;
     }
 
-    public String getIconGmtModified() {
-        return iconGmtModified;
+    public String getUpdateTime() {
+        return updateTime;
     }
 
-    public void setIconGmtModified(String iconGmtModified) {
-        this.iconGmtModified = iconGmtModified;
+    public UserIcon setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
+        return this;
     }
 }
 

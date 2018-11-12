@@ -29,7 +29,7 @@ public interface DiaryDAO {
      * @param diary diary
      * @throws SQLException e
      */
-    void updateDiary(Diary diary) throws SQLException;
+    int updateDiary(Diary diary) throws SQLException;
 
     /**
      * 日记删除 :
@@ -38,9 +38,9 @@ public interface DiaryDAO {
      * @param diaryId diaryId
      * @throws SQLException e
      */
-    void deleteDiary(Integer diaryId) throws SQLException;
+    int deleteDiary(Integer diaryId) throws SQLException;
 
-    void deleteAllDiary(Integer userId) throws SQLException;
+    int deleteAllDiary(Integer userId) throws SQLException;
 
     /**
      * 日记单个查询 :

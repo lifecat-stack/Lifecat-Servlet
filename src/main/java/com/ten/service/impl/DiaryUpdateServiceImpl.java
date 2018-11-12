@@ -2,7 +2,6 @@ package com.ten.service.impl;
 
 import com.ten.bean.entity.Diary;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
 import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.DiaryUpdateService;
@@ -26,8 +25,7 @@ public class DiaryUpdateServiceImpl implements DiaryUpdateService {
     private DiaryDAO dao;
 
     public DiaryUpdateServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (DiaryDAO) factory.getDaoByTableName("diary");
+        dao = (DiaryDAO) JdbcDAOFactory.getDaoByTableName("diary");
     }
 
     @Override
@@ -42,7 +40,7 @@ public class DiaryUpdateServiceImpl implements DiaryUpdateService {
         assert diaryId != null;
 
         Diary diary = new Diary();
-        diary.setDiaryId(Integer.valueOf(diaryId));
+        diary.setId(Integer.valueOf(diaryId));
         diary.setDiaryName(diaryName);
         diary.setdiaryText(diaryText);
         diary.setdiaryGmtModified(dateTime);

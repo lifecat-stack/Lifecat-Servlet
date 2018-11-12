@@ -7,54 +7,54 @@ package com.ten.bean.entity;
  */
 public class ImageClass {
 
-    private Integer imageClassId;
+    private Integer id;
     private String imageClassName;
     private String imageClassDesc;
-    private String classGmtCreate;
-    private String classGmtModified;
+    private String createTime;
+    private String updateTime;
 
     @Override
     public String toString() {
         return super.toString();
     }
 
-    public Integer getImageClassId() {
-        return imageClassId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setImageClassId(Integer imageClassId) {
-        this.imageClassId = imageClassId;
+    public ImageClass setId(Integer id) {
+        this.id = id;return this;
     }
 
     public String getImageClassName() {
         return imageClassName;
     }
 
-    public void setImageClassName(String imageClassName) {
-        this.imageClassName = imageClassName;
+    public ImageClass setImageClassName(String imageClassName) {
+        this.imageClassName = imageClassName;return this;
     }
 
     public String getImageClassDesc() {
         return imageClassDesc;
     }
 
-    public void setImageClassDesc(String imageClassDesc) {
-        this.imageClassDesc = imageClassDesc;
+    public ImageClass setImageClassDesc(String imageClassDesc) {
+        this.imageClassDesc = imageClassDesc;return this;
     }
 
-    public String getClassGmtCreate() {
-        return classGmtCreate;
+    public String getCreateTime() {
+        return createTime;
     }
 
-    public void setClassGmtCreate(String classGmtCreate) {
-        this.classGmtCreate = classGmtCreate;
+    public ImageClass setCreateTime(String createTime) {
+        this.createTime = createTime;return this;
     }
 
-    public String getClassGmtModified() {
-        return classGmtModified;
+    public String getUpdateTime() {
+        return updateTime;
     }
 
-    public void setClassGmtModified(String classGmtModified) {
-        this.classGmtModified = classGmtModified;
+    public ImageClass setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;return this;
     }
 }

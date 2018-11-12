@@ -29,7 +29,7 @@ public class UserLoginServiceImpl implements UserLoginService {
     private UserDAO dao;
 
     public UserLoginServiceImpl() {
-        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
+        dao = (UserDAO) JdbcDAOFactory.getDaoByTableName("user");
     }
 
     @Override
@@ -48,7 +48,7 @@ public class UserLoginServiceImpl implements UserLoginService {
             return new ServiceResult.Builder(false).errormsg("密码错误").page(Page.PAGE_INDEX).build();
         }
 
-        UserVO user = new UserVO(userDO.getUserId(), userDO.getUserName());
+        UserVO user = new UserVO(userDO.getId(), userDO.getUserName());
         req.getSession().setAttribute("user", user);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }

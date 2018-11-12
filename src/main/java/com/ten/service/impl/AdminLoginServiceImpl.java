@@ -51,7 +51,7 @@ public class AdminLoginServiceImpl implements AdminLoginService {
 
         // SUCCESS
         AdminVO adminVO = new AdminVO(
-                adminDO.getAdminId(),
+                adminDO.getId(),
                 adminDO.getAdminName(),
                 adminDO.getAdminLevel());
 

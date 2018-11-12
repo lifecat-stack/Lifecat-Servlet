@@ -13,32 +13,32 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class UserPropertyDAOImpl extends BaseDAO implements UserPropertyDAO {
-    public  UserPropertyDAOImpl() {
+    public UserPropertyDAOImpl() {
     }
 
     @Override
     public void insertUserProperty(UserProperty userProperty) throws SQLException {
         String sql = "insert into " +
                 "user_property(user_id," +
-                "property_nickname," +
-                "property_signature," +
-                "property_sex," +
-                "property_email," +
-                "property_location," +
-                "property_birthday," +
-                "property_gmt_create," +
-                "property_gmt_modified)" +
+                "nickname," +
+                "signature," +
+                "sex," +
+                "email," +
+                "location," +
+                "birthday," +
+                "create_time," +
+                "update_time)" +
                 " values(?,?,?,?,?,?,?,?,?)";
         Object[] args = {
                 userProperty.getUserId(),
-                userProperty.getPropertyNickname(),
-                userProperty.getPropertySignature(),
-                userProperty.getPropertySex(),
-                userProperty.getPropertyEmail(),
-                userProperty.getPropertyLocation(),
-                userProperty.getPropertyBirthday(),
-                userProperty.getPropertyGmtCreate(),
-                userProperty.getPropertyGmtModified()
+                userProperty.getNickname(),
+                userProperty.getSignature(),
+                userProperty.getSex(),
+                userProperty.getEmail(),
+                userProperty.getLocation(),
+                userProperty.getBirthday(),
+                userProperty.getCreateTime(),
+                userProperty.getUpdateTime()
         };
         insert(sql, args);
     }
@@ -46,14 +46,14 @@ public class UserPropertyDAOImpl extends BaseDAO implements UserPropertyDAO {
     @Override
     public UserProperty queryUserProperty(Integer userId) throws SQLException {
         String sql = "select " +
-                "property_nickname," +
-                "property_signature," +
-                "property_sex," +
-                "property_email," +
-                "property_location," +
-                "property_birthday," +
-                "property_gmt_create," +
-                "property_gmt_modified" +
+                "nickname," +
+                "signature," +
+                "sex," +
+                "email," +
+                "location," +
+                "birthday," +
+                "create_time," +
+                "update_time" +
                 " from user_property where user_id = '" + userId + "'";
 
         ResultSet resultSet = query(sql);
@@ -61,14 +61,14 @@ public class UserPropertyDAOImpl extends BaseDAO implements UserPropertyDAO {
 
         UserProperty userProperty = new UserProperty();
         userProperty.setUserId(userId);
-        userProperty.setPropertyNickname(resultSet.getString("property_nickname"));
-        userProperty.setPropertySignature(resultSet.getString("property_signature"));
-        userProperty.setPropertySex(resultSet.getString("property_sex"));
-        userProperty.setPropertyEmail(resultSet.getString("property_email"));
-        userProperty.setPropertyLocation(resultSet.getString("property_location"));
-        userProperty.setPropertyBirthday(resultSet.getString("property_birthday"));
-        userProperty.setPropertyGmtCreate(resultSet.getString("property_gmt_create"));
-        userProperty.setPropertyGmtModified(resultSet.getString("property_gmt_modified"));
+        userProperty.setNickname(resultSet.getString("nickname"));
+        userProperty.setSignature(resultSet.getString("signature"));
+        userProperty.setSex(resultSet.getString("sex"));
+        userProperty.setEmail(resultSet.getString("email"));
+        userProperty.setLocation(resultSet.getString("location"));
+        userProperty.setBirthday(resultSet.getString("birthday"));
+        userProperty.setCreateTime(resultSet.getString("create_time"));
+        userProperty.setUpdateTime(resultSet.getString("update_time"));
         return userProperty;
     }
 }

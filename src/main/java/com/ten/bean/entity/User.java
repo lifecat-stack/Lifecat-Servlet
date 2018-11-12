@@ -1,76 +1,87 @@
 package com.ten.bean.entity;
 
-/**
- * user
- *
- * @auther ten
- */
 public class User {
 
-    private Integer userId;
+    private Integer id;
     private String userName;
     private String userPassword;
     private String userLevel;
-    private String userGmtCreate;
-    private String userGmtModified;
+    private String createTime;
+    private String updateTime;
+    private Integer isDeleted;
 
     @Override
     public String toString() {
-        return "User@"
-                + "{ID:" + userId
-                + ",Name:" + userName
-                + ",Password:" + userPassword
-                + ",Level:" + userLevel
-                + ",Create:" + userGmtCreate
-                + ",Modified:" + userGmtModified
+        return "User@{"
+                + "id:" + id
+                + ",userName:" + userName
+                + ",userPassword:" + userPassword
+                + ",userLevel:" + userLevel
+                + ",createTime:" + createTime
+                + ",updateTime:" + updateTime
                 + "}";
     }
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public User setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    public Integer getIsDeleted() {
+        return isDeleted;
+    }
+
+    public User setIsDeleted(Integer isDeleted) {
+        this.isDeleted = isDeleted;
+        return this;
     }
 
     public String getUserName() {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public User setUserName(String userName) {
         this.userName = userName;
+        return this;
     }
 
     public String getUserPassword() {
         return userPassword;
     }
 
-    public void setUserPassword(String userPassword) {
+    public User setUserPassword(String userPassword) {
         this.userPassword = userPassword;
+        return this;
     }
 
     public String getUserLevel() {
         return userLevel;
     }
 
-    public void setUserLevel(String userLevel) {
+    public User setUserLevel(String userLevel) {
         this.userLevel = userLevel;
+        return this;
     }
 
-    public String getUserGmtCreate() {
-        return userGmtCreate;
+    public String getCreateTime() {
+        return createTime;
     }
 
-    public void setUserGmtCreate(String userGmtCreate) {
-        this.userGmtCreate = userGmtCreate;
+    public User setCreateTime(String createTime) {
+        this.createTime = createTime;
+        return this;
     }
 
-    public String getUserGmtModified() {
-        return userGmtModified;
+    public String getUpdateTime() {
+        return updateTime;
     }
 
-    public void setUserGmtModified(String userGmtModified) {
-        this.userGmtModified = userGmtModified;
+    public User setUpdateTime(String updateTime) {
+        this.updateTime = updateTime;
+        return this;
     }
 }

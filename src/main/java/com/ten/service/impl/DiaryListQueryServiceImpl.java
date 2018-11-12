@@ -3,7 +3,6 @@ package com.ten.service.impl;
 import com.ten.bean.entity.Diary;
 import com.ten.bean.vo.DiaryVO;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
 import com.ten.dao.DiaryDAO;
 import com.ten.dao.JdbcDAOFactory;
 import com.ten.service.DiaryListQueryService;
@@ -29,8 +28,7 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
     private DiaryDAO dao;
 
     public DiaryListQueryServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (DiaryDAO) factory.getDaoByTableName("diary");
+        dao = (DiaryDAO) JdbcDAOFactory.getDaoByTableName("diary");
     }
 
     @Override
@@ -43,7 +41,7 @@ public class DiaryListQueryServiceImpl implements DiaryListQueryService {
         List<DiaryVO> diaryList = new ArrayList<>(16);
         for (Diary diary : diaryDOList) {
             DiaryVO diaryVO = new DiaryVO(
-                    diary.getDiaryId(),
+                    diary.getId(),
                     diary.getDiaryName(),
                     diary.getdiaryText(),
                     diary.getdiaryGmtModified());

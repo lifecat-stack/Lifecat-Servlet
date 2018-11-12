@@ -19,20 +19,20 @@ public class AdminDAOImpl extends BaseDAO implements AdminDAO {
     @Override
     public void insertAdmin(Admin admin) throws SQLException {
         String sql = "insert into admin(admin_name,admin_password" +
-                ",admin_level,admin_gmt_create,admin_gmt_modified) " +
-                "values(?,?,?,?,?)";
+                ",admin_level,create_time,update_time,is_deleted) " +
+                "values(?,?,?,?,?,?)";
         Object[] args = {admin.getAdminName(), admin.getAdminPassword(), admin.getAdminLevel(),
-                admin.getAdminGmtCreate(), admin.getAdminGmtModified()};
+                admin.getCreateTime(), admin.getUpdateTime(), admin.getIsDeleted()};
         insert(sql, args);
     }
 
     @Override
     public Admin queryAdmin(String adminName) throws SQLException {
-        String sql = "select admin_id,admin_name,admin_password,admin_level from admin where admin_name = '" + adminName + "'";
+        String sql = "select id,admin_name,admin_password,admin_level from admin where admin_name = '" + adminName + "'";
         ResultSet resultSet = query(sql);
         resultSet.next();
         Admin admin = new Admin();
-        admin.setAdminId(resultSet.getInt("admin_id"));
+        admin.setId(resultSet.getInt("id"));
         admin.setAdminName(adminName);
         admin.setAdminPassword(resultSet.getString("admin_password"));
         admin.setAdminLevel(resultSet.getString("admin_level"));
@@ -41,7 +41,7 @@ public class AdminDAOImpl extends BaseDAO implements AdminDAO {
 
     @Override
     public boolean isAdminExisted(String adminName) throws SQLException {
-        String sql = "select count(admin_id) from admin where admin_name = '" + adminName + "'";
+        String sql = "select count(id) from admin where admin_name = '" + adminName + "'";
 
         ResultSet resultSet = query(sql);
         resultSet.next();

@@ -13,29 +13,29 @@ import java.sql.SQLException;
  * @auther ten
  */
 public class UserDAOImpl extends BaseDAO implements UserDAO {
-    public  UserDAOImpl() {
+    public UserDAOImpl() {
     }
 
     @Override
     public int insertUser(User user) throws SQLException {
-        String sql = "INSERT INTO user(user_name,user_password,user_level,user_gmt_create,user_gmt_modified)\n"
+        String sql = "INSERT INTO user(user_name,user_password,user_level,create_time,update_time)\n"
                 + " VALUES(?,?,?,?,?)";
-        Object[] args = {user.getUserName(), user.getUserPassword(), user.getUserLevel(), user.getUserGmtCreate(), user.getUserGmtModified()};
+        Object[] args = {user.getUserName(), user.getUserPassword(), user.getUserLevel(), user.getCreateTime(), user.getUpdateTime()};
         return insertAndReturnKey(sql, args);
     }
 
     @Override
     public User queryUser(String userName) throws SQLException {
-        String sql = "select user_id,user_password,user_level,user_gmt_create,user_gmt_modified from user where user_name = '" + userName + "'";
+        String sql = "select id,user_password,user_level,create_time,update_time from user where user_name = '" + userName + "'";
         ResultSet resultSet = query(sql);
         User user = new User();
         resultSet.next();
-        user.setUserId(resultSet.getInt("user_id"));
+        user.setId(resultSet.getInt("id"));
         user.setUserName(userName);
         user.setUserPassword(resultSet.getString("user_password"));
         user.setUserLevel(resultSet.getString("user_level"));
-        user.setUserGmtCreate(resultSet.getString("user_gmt_create"));
-        user.setUserGmtModified(resultSet.getString("user_gmt_modified"));
+        user.setCreateTime(resultSet.getString("create_time"));
+        user.setUpdateTime(resultSet.getString("update_time"));
         return user;
     }
 

@@ -27,7 +27,7 @@ public class UserRegisterServiceImpl implements UserRegisterService {
     private UserDAO dao;
 
     public UserRegisterServiceImpl() {
-        dao = (UserDAO) new JdbcDAOFactory().getDaoByTableName("user");
+        dao = (UserDAO) JdbcDAOFactory.getDaoByTableName("user");
     }
 
     @Override
@@ -47,8 +47,8 @@ public class UserRegisterServiceImpl implements UserRegisterService {
         userDO.setUserName(rUserName);
         userDO.setUserPassword(rUserPassword);
         userDO.setUserLevel("user");
-        userDO.setUserGmtCreate(dateTime);
-        userDO.setUserGmtModified(dateTime);
+        userDO.setCreateTime(dateTime);
+        userDO.setUpdateTime(dateTime);
 
         int userId = insertUserToDatabase(userDO);
         if (userId < 1) {

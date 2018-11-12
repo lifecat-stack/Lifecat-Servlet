@@ -4,9 +4,8 @@ import com.ten.bean.entity.UserIcon;
 import com.ten.bean.vo.UserVO;
 import com.ten.constant.Directory;
 import com.ten.constant.Page;
-import com.ten.dao.DAOFactory;
-import com.ten.dao.UserIconDAO;
 import com.ten.dao.JdbcDAOFactory;
+import com.ten.dao.UserIconDAO;
 import com.ten.service.UserIconUpdateService;
 import com.ten.util.DateTimeUtil;
 import com.ten.util.ImageWriter;
@@ -35,8 +34,7 @@ public class UserIconUpdateServiceImpl implements UserIconUpdateService {
     private ImageWriter writer;
 
     public UserIconUpdateServiceImpl() {
-        DAOFactory factory = new JdbcDAOFactory();
-        dao = (UserIconDAO) factory.getDaoByTableName("user_icon");
+        dao = (UserIconDAO) JdbcDAOFactory.getDaoByTableName("user_icon");
     }
 
     /**
@@ -62,8 +60,8 @@ public class UserIconUpdateServiceImpl implements UserIconUpdateService {
         UserIcon userIcon = new UserIcon();
         userIcon.setUserId(userId);
         userIcon.setIconPath(iconPath);
-        userIcon.setIconGmtCreate(dateTime);
-        userIcon.setIconGmtModified(dateTime);
+        userIcon.setCreateTime(dateTime);
+        userIcon.setUpdateTime(dateTime);
 
         updateUserIcon(userIcon);
 
