@@ -12,14 +12,11 @@ import java.io.IOException;
 /**
  * Action Dispatcher Controller
  * 根据*.action请求, 通过请求服务端转发, 访问WEB-INF下的jsp页面
- *
- * @date 2018/6/18
- * @auther ten
  */
 public class DispatcherAction extends HttpServlet {
     private static final Logger logger = LoggerFactory.getLogger(DispatcherAction.class);
     /**
-     * TAP子页面
+     * TAP子页面前缀
      */
     private static final String TAP_PAGE = "tap";
 

@@ -12,15 +12,15 @@ public class Admin {
 
     @Override
     public String toString() {
-        return "Admin@{"
-                + "id:" + id
-                + ",adminName:" + adminName
-                + ",adminPassword:" + adminPassword
-                + ",adminLevel:" + adminLevel
-                + ",createTime:" + createTime
-                + ",updateTime:" + updateTime
-                + ",isDeleted:" + isDeleted
-                + "}";
+        return "Admin{" +
+                "id=" + id +
+                ", adminName='" + adminName + '\'' +
+                ", adminPassword='" + adminPassword + '\'' +
+                ", adminLevel='" + adminLevel + '\'' +
+                ", createTime='" + createTime + '\'' +
+                ", updateTime='" + updateTime + '\'' +
+                ", isDeleted=" + isDeleted +
+                '}';
     }
 
     public String getAdminName() {

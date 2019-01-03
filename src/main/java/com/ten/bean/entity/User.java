@@ -12,14 +12,15 @@ public class User {
 
     @Override
     public String toString() {
-        return "User@{"
-                + "id:" + id
-                + ",userName:" + userName
-                + ",userPassword:" + userPassword
-                + ",userLevel:" + userLevel
-                + ",createTime:" + createTime
-                + ",updateTime:" + updateTime
-                + "}";
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", userLevel='" + userLevel + '\'' +
+                ", createTime='" + createTime + '\'' +
+                ", updateTime='" + updateTime + '\'' +
+                ", isDeleted=" + isDeleted +
+                '}';
     }
 
     public Integer getId() {

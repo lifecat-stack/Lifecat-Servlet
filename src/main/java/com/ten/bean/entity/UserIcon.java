@@ -11,13 +11,14 @@ public class UserIcon {
 
     @Override
     public String toString() {
-        return "UserIcon@{"
-                + "id:" + id
-                + ",userId:" + userId
-                + ",iconPath:" + iconPath
-                + ",createTime:" + createTime
-                + ",updateTime:" + updateTime
-                + "}";
+        return "UserIcon{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", iconPath='" + iconPath + '\'' +
+                ", createTime='" + createTime + '\'' +
+                ", updateTime='" + updateTime + '\'' +
+                ", isDeleted=" + isDeleted +
+                '}';
     }
 
     public Integer getId() {

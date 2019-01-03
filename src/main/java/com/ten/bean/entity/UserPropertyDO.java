@@ -17,6 +17,21 @@ public class UserPropertyDO {
     private String propertyGmtCreate;
     private String propertyGmtModified;
 
+    @Override
+    public String toString() {
+        return "UserPropertyDO{" +
+                "userId=" + userId +
+                ", propertyNickname='" + propertyNickname + '\'' +
+                ", propertySignature='" + propertySignature + '\'' +
+                ", propertySex='" + propertySex + '\'' +
+                ", propertyEmail='" + propertyEmail + '\'' +
+                ", propertyLocation='" + propertyLocation + '\'' +
+                ", propertyBirthday='" + propertyBirthday + '\'' +
+                ", propertyGmtCreate='" + propertyGmtCreate + '\'' +
+                ", propertyGmtModified='" + propertyGmtModified + '\'' +
+                '}';
+    }
+
     public Integer getUserId() {
         return userId;
     }
@@ -48,6 +63,7 @@ public class UserPropertyDO {
     public void setPropertySex(String propertySex) {
         this.propertySex = propertySex;
     }
+
     public String getPropertyEmail() {
         return propertyEmail;
     }
@@ -88,21 +104,4 @@ public class UserPropertyDO {
         this.propertyGmtModified = propertyGmtModified;
     }
 
-    /**
-     * @return UserPropertyDO@1234{UserID:'',Nickname:'',Signature:'',Sex:'',Email:'',Location:'',Birthday :'',Create:'',Modified:''}
-     */
-    @Override
-    public String toString() {
-        return "UserDO@" + userId
-                + "{UserID:" + userId
-                + ",Nickname:" + propertyNickname
-                + ",Signature:" + propertySignature
-                + ",Sex:" + propertySex
-                + ",Email:" + propertyEmail
-                + ",Location:" + propertyLocation
-                + ",Birthday:" + propertyBirthday
-                + ",Create:" + propertyGmtCreate
-                + ",Modified:" + propertyGmtModified
-                + "}";
-    }
 }

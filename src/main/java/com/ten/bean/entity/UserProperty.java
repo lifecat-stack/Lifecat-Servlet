@@ -17,19 +17,20 @@ public class UserProperty {
 
     @Override
     public String toString() {
-        return "UserProperty@{"
-                + "id:" + id
-                + ",userId:" + userId
-                + ",userName:" + userName
-                + ",nickname:" + nickname
-                + ",signature:" + signature
-                + ",sex:" + sex
-                + ",email:" + email
-                + ",location:" + location
-                + ",birthday:" + birthday
-                + ",createTime:" + createTime
-                + ",updateTime:" + updateTime
-                + "}";
+        return "UserProperty{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", signature='" + signature + '\'' +
+                ", sex='" + sex + '\'' +
+                ", email='" + email + '\'' +
+                ", location='" + location + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", createTime='" + createTime + '\'' +
+                ", updateTime='" + updateTime + '\'' +
+                ", isDeleted=" + isDeleted +
+                '}';
     }
 
     public Integer getId() {

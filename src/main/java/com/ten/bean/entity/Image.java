@@ -14,17 +14,17 @@ public class Image {
 
     @Override
     public String toString() {
-        return "Image@{"
-                + "id:" + id
-                + ",userId:" + userId
-                + ",classId:" + classId
-                + ",imageName:" + imageName
-                + ",imageText:" + imageText
-                + ",imagePath:" + imagePath
-                + ",createTime:" + createTime
-                + ",updateTime:" + updateTime
-                + ",isDeleted:" + isDeleted
-                + "}";
+        return "Image{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", classId=" + classId +
+                ", imageName='" + imageName + '\'' +
+                ", imageText='" + imageText + '\'' +
+                ", imagePath='" + imagePath + '\'' +
+                ", createTime='" + createTime + '\'' +
+                ", updateTime='" + updateTime + '\'' +
+                ", isDeleted=" + isDeleted +
+                '}';
     }
 
     public Integer getId() {

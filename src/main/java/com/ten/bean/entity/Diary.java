@@ -12,15 +12,15 @@ public class Diary {
 
     @Override
     public String toString() {
-        return "Diary@{"
-                + "id:" + id
-                + ",userId:" + userId
-                + ",diaryName:" + diaryName
-                + ",diaryText:" + diaryText
-                + ",createTime:" + createTime
-                + ",updateTime:" + updateTime
-                + ",isDeleted:" + isDeleted
-                + "}";
+        return "Diary{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", diaryName='" + diaryName + '\'' +
+                ", diaryText='" + diaryText + '\'' +
+                ", createTime='" + createTime + '\'' +
+                ", updateTime='" + updateTime + '\'' +
+                ", isDeleted=" + isDeleted +
+                '}';
     }
 
     public Integer getId() {

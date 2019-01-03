@@ -15,6 +15,19 @@ public class DiaryDO {
     private String diaryGmtCreate;
     private String diaryGmtModified;
 
+    @Override
+    public String toString() {
+        return "DiaryDO{" +
+                "diaryId=" + diaryId +
+                ", userId=" + userId +
+                ", diaryName='" + diaryName + '\'' +
+                ", diaryText='" + diaryText + '\'' +
+                ", deleted=" + deleted +
+                ", diaryGmtCreate='" + diaryGmtCreate + '\'' +
+                ", diaryGmtModified='" + diaryGmtModified + '\'' +
+                '}';
+    }
+
     public Integer getDiaryId() {
         return diaryId;
     }
@@ -70,19 +83,5 @@ public class DiaryDO {
     public void setdiaryGmtModified(String diaryGmtModified) {
         this.diaryGmtModified = diaryGmtModified;
     }
-     /**
-     * @return DiaryDO@1234{DiaryId:'',UserID:'',Name:'',Text:'',isDeleted:'',Create:'',Modified:''}
-     */
-    @Override
-    public String toString() {
-        return "DiaryDO@" + diaryId
-                + "{DiaryId:" + diaryId
-                + ",UserID:" + userId
-                + ",Name:" + diaryName
-                + ",Text:" + diaryText
-                + ",isDeleted:" + deleted
-                + ",Create:" + diaryGmtCreate
-                + ",Modified:" + diaryGmtModified
-                + "}";
-    }
+
 }

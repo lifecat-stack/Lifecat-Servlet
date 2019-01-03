@@ -15,7 +15,13 @@ public class ImageClass {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "ImageClass{" +
+                "id=" + id +
+                ", imageClassName='" + imageClassName + '\'' +
+                ", imageClassDesc='" + imageClassDesc + '\'' +
+                ", createTime='" + createTime + '\'' +
+                ", updateTime='" + updateTime + '\'' +
+                '}';
     }
 
     public Integer getId() {
