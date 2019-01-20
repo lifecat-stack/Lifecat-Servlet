@@ -31,7 +31,7 @@ public class BaseDaoImpl {
      *
      * @return increase primary key
      */
-    public int insert(String sql, Object[] args) {
+    public int insert(String sql, Object[] args) throws SQLException {
         logger.info("insert:" + sql);
 
         PreparedStatement preparedStatement = connection.prepareStatement(sql);

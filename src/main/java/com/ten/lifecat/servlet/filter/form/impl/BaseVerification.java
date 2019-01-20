@@ -1,6 +1,6 @@
 package com.ten.lifecat.servlet.filter.form.impl;
 
-import com.ten.filter.form.Verifiable;
+import com.ten.lifecat.servlet.filter.form.Verifiable;
 
 /**
  * 表单验证功能实现

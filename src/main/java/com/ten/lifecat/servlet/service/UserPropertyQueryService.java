@@ -2,7 +2,6 @@ package com.ten.lifecat.servlet.service;
 
 import com.ten.lifecat.servlet.entity.UserProperty;
 import com.ten.lifecat.servlet.service.util.Service;
-import com.ten.service.util.Service;
 
 /**
  * 查询用户资料

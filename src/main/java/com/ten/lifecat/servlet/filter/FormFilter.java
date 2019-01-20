@@ -1,8 +1,8 @@
 package com.ten.lifecat.servlet.filter;
 
-import com.ten.filter.form.Form;
-import com.ten.filter.form.FormResult;
-import com.ten.filter.form.FormFactory;
+import com.ten.lifecat.servlet.filter.form.Form;
+import com.ten.lifecat.servlet.filter.form.FormFactory;
+import com.ten.lifecat.servlet.filter.form.FormResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

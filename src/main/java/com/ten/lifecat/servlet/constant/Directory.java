@@ -11,16 +11,16 @@ public class Directory {
     /**
      * 默认显示image存储路径--服务器路径
      */
-    public static final String DEFAULT_IMAGE_PATH = "http://localhost:8080/lifecatweb/images/usericon.jpg";
+    public static final String DEFAULT_IMAGE_PATH = "http://localhost:8080/servlet/images/usericon.jpg";
 
     /**
      * image存储路径--本地路径
      */
-    public static final String IMAGE_PATH = "/usr/local/tomcat/webapp/lifecatweb/src/main/webapp/image/";
+    public static final String IMAGE_PATH = "/usr/local/tomcat/webapp/servlet/src/main/webapp/images/";
     /**
      * 分类展示的父目录--本地路径
      */
-    public static final String CATEGORY_IMAGE_PATH = "/usr/local/tomcat/webapp/lifecatweb/src/main/webapp/pics/";
+    public static final String CATEGORY_IMAGE_PATH = "/usr/local/tomcat/webapp/servlet/src/main/webapp/pics/";
     /**
      * image存储路径--服务器路径
      */

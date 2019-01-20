@@ -5,12 +5,12 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 
-    <link rel="stylesheet" href="/lifecatweb/css/bootstrap/3.3.6/bootstrap.min.css">
-    <link rel="stylesheet" href="/lifecatweb/css/fore/style.css">
-    <link rel="stylesheet" href="/lifecatweb/css/mycss/homePage.css">
+    <link rel="stylesheet" href="/servlet/css/bootstrap/3.3.6/bootstrap.min.css">
+    <link rel="stylesheet" href="/servlet/css/fore/style.css">
+    <link rel="stylesheet" href="/servlet/css/mycss/homePage.css">
 
-    <script src="/lifecatweb/js/jquery/2.0.0/jquery.min.js"></script>
-    <script src="/lifecatweb/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script src="/servlet/js/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/servlet/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="row" status="diary-list">

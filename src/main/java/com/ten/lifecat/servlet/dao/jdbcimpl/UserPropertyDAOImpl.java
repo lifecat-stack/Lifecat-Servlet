@@ -1,8 +1,7 @@
 package com.ten.lifecat.servlet.dao.jdbcimpl;
 
-import com.ten.lifecat.servlet.entity.UserProperty;
 import com.ten.lifecat.servlet.dao.BaseDaoImpl;
-import com.ten.lifecat.servlet.dao.BaseDaoImpl;
+import com.ten.lifecat.servlet.dao.UserPropertyDao;
 import com.ten.lifecat.servlet.entity.UserProperty;
 
 import java.sql.ResultSet;
@@ -13,7 +12,7 @@ import java.sql.SQLException;
  *
  * @auther ten
  */
-public class UserPropertyDAOImpl extends BaseDaoImpl implements UserPropertyDAO {
+public class UserPropertyDAOImpl extends BaseDaoImpl implements UserPropertyDao {
     public UserPropertyDAOImpl() {
     }
 

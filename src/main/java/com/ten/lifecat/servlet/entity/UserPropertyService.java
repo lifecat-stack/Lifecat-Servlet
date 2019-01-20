@@ -1,12 +1,10 @@
 package com.ten.lifecat.servlet.entity;
 
-import org.springframework.stereotype.Service;
+import com.ten.lifecat.servlet.dao.UserPropertyDao;
+
 import javax.annotation.Resource;
 import java.util.List;
 
-import com.ten.lifecat.servlet.dao.UserPropertyDao;
-
-@Service
 public class UserPropertyService {
 
     @Resource

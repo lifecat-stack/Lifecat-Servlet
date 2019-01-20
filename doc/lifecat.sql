@@ -97,12 +97,12 @@ CREATE TABLE `image`  (
 -- ----------------------------
 -- Records of image
 -- ----------------------------
-INSERT INTO `image` VALUES (1, 'lifecat01', '/lifecatweb/upimage/image1.jpg', 1, 1, 1, '2018-01-01 00:00:00', '2018-01-01 00:00:00');
-INSERT INTO `image` VALUES (2, 'img', '/lifecatweb/upimage/image2.jpg', 1, 1, 1, '2018-01-01 00:00:00', '2018-07-20 17:20:14');
-INSERT INTO `image` VALUES (3, 'lifecat03', '/lifecatweb/upimage/image3.jpg', 1, 1, 1, '2018-01-01 00:00:00', '2018-01-01 00:00:00');
-INSERT INTO `image` VALUES (4, 'this is update', '/lifecatweb/upimage/image4.jpg', 1, 1, 1, '2019-01-01 00:00:00', '2019-01-01 00:00:00');
-INSERT INTO `image` VALUES (5, 'this is update', '/lifecatweb/upimage/image5.jpg', 1, 1, 1, '2019-01-01 00:00:00', '2019-01-01 00:00:00');
-INSERT INTO `image` VALUES (6, 'this is test image', '/lifecatweb/upimage/image6.jpg', 1, 1, 1, '2019-01-01 00:00:00', '2019-01-01 00:00:00');
+INSERT INTO `image` VALUES (1, 'lifecat01', '/servlet/upimage/image1.jpg', 1, 1, 1, '2018-01-01 00:00:00', '2018-01-01 00:00:00');
+INSERT INTO `image` VALUES (2, 'img', '/servlet/upimage/image2.jpg', 1, 1, 1, '2018-01-01 00:00:00', '2018-07-20 17:20:14');
+INSERT INTO `image` VALUES (3, 'lifecat03', '/servlet/upimage/image3.jpg', 1, 1, 1, '2018-01-01 00:00:00', '2018-01-01 00:00:00');
+INSERT INTO `image` VALUES (4, 'this is update', '/servlet/upimage/image4.jpg', 1, 1, 1, '2019-01-01 00:00:00', '2019-01-01 00:00:00');
+INSERT INTO `image` VALUES (5, 'this is update', '/servlet/upimage/image5.jpg', 1, 1, 1, '2019-01-01 00:00:00', '2019-01-01 00:00:00');
+INSERT INTO `image` VALUES (6, 'this is test image', '/servlet/upimage/image6.jpg', 1, 1, 1, '2019-01-01 00:00:00', '2019-01-01 00:00:00');
 
 -- ----------------------------
 -- Table structure for image_class
@@ -185,8 +185,8 @@ CREATE TABLE `user_icon`  (
 -- ----------------------------
 -- Records of user_icon
 -- ----------------------------
-INSERT INTO `user_icon` VALUES (1, '/lifecatweb/images/usericon.jpg', '2018-01-01 00:00:00', '2018-01-01 00:00:00');
-INSERT INTO `user_icon` VALUES (6, '/lifecatweb/images/usericon.jpg', '2019-01-01 00:00:00', '2019-01-01 00:00:00');
+INSERT INTO `user_icon` VALUES (1, '/servlet/images/usericon.jpg', '2018-01-01 00:00:00', '2018-01-01 00:00:00');
+INSERT INTO `user_icon` VALUES (6, '/servlet/images/usericon.jpg', '2019-01-01 00:00:00', '2019-01-01 00:00:00');
 
 -- ----------------------------
 -- Table structure for user_property

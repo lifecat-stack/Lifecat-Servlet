@@ -4,12 +4,12 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <link rel="stylesheet" href="/lifecatweb/css/bootstrap/3.3.6/bootstrap.min.css">
-    <link rel="stylesheet" href="/lifecatweb/css/fore/style.css">
-    <link rel="stylesheet" href="/lifecatweb/css/mycss/homePage.css">
-    <link rel="stylesheet" href="/lifecatweb/css/mycss/class.css">
-    <script src="/lifecatweb/js/jquery/2.0.0/jquery.min.js"></script>
-    <script src="/lifecatweb/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/servlet/css/bootstrap/3.3.6/bootstrap.min.css">
+    <link rel="stylesheet" href="/servlet/css/fore/style.css">
+    <link rel="stylesheet" href="/servlet/css/mycss/homePage.css">
+    <link rel="stylesheet" href="/servlet/css/mycss/class.css">
+    <script src="/servlet/js/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/servlet/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
 <script type="text/javascript">
     function change_div(id) {
@@ -37,19 +37,19 @@
         <div id="side_menu">
             <div>
                 <a href="#" onclick="change_div(1)">
-                    <img src="/lifecatweb/pics/1/class.jpg" alt="人物">
+                    <img src="/servlet/pics/1/class.jpg" alt="人物">
                 </a>
                 <span>人物</span>
             </div>
             <div>
                 <a href="#" onclick="change_div(2)">
-                    <img src="/lifecatweb/pics/2/class.jpg" alt="风景">
+                    <img src="/servlet/pics/2/class.jpg" alt="风景">
                 </a>
                 <span>风景</span>
             </div>
             <div>
                 <a href="#" onclick="change_div(3)">
-                    <img src="/lifecatweb/pics/3/class.jpg" alt="考试">
+                    <img src="/servlet/pics/3/class.jpg" alt="考试">
                 </a>
                 <span>考试</span>
             </div>

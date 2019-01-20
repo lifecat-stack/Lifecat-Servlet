@@ -11,11 +11,11 @@ public class HOST {
     /**
      * FIXME 服务器IP
      */
-    public static final String IP = "111.230.244.153";
+    public static final String IP = "www.lifecat.club";
     /**
      * 项目名称
      */
-    private static final String PROJECT = "lifecatweb";
+    private static final String PROJECT = "servlet";
     /**
      * tomcat端口号
      */

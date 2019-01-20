@@ -1,10 +1,10 @@
 package com.ten.lifecat.servlet.service.impl;
 
 import com.ten.lifecat.servlet.entity.Diary;
-import com.ten.constant.Page;
+import com.ten.lifecat.servlet.constant.Page;
 import com.ten.lifecat.servlet.dao.JdbcDAOFactory;
 import com.ten.lifecat.servlet.constant.Page;
-import com.ten.service.DiaryUpdateService;
+import com.ten.lifecat.servlet.service.DiaryUpdateService;
 import com.ten.lifecat.servlet.util.DateTimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

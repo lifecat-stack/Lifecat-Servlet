@@ -1,7 +1,7 @@
 package com.ten.lifecat.servlet.filter.form.impl;
 
-import com.ten.filter.form.Form;
-import com.ten.filter.form.FormResult;
+import com.ten.lifecat.servlet.filter.form.Form;
+import com.ten.lifecat.servlet.filter.form.FormResult;
 
 import javax.servlet.ServletRequest;
 

@@ -1,10 +1,10 @@
 package com.ten.lifecat.servlet.service.impl;
 
+import com.ten.lifecat.servlet.dao.UserDao;
 import com.ten.lifecat.servlet.entity.User;
-import com.ten.bean.vo.UserVO;
-import com.ten.constant.Page;
+import com.ten.lifecat.servlet.constant.Page;
 import com.ten.lifecat.servlet.dao.JdbcDAOFactory;
-import com.ten.service.UserRegisterService;
+import com.ten.lifecat.servlet.service.UserRegisterService;
 import com.ten.lifecat.servlet.util.DateTimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,10 +23,10 @@ public class UserRegisterServiceImpl implements UserRegisterService {
 
     private Logger logger = LoggerFactory.getLogger(UserRegisterServiceImpl.class);
 
-    private UserDAO dao;
+    private UserDao dao;
 
     public UserRegisterServiceImpl() {
-        dao = (UserDAO) JdbcDAOFactory.getDaoByTableName("user");
+        dao = (UserDao) JdbcDAOFactory.getDaoByTableName("user");
     }
 
     @Override
@@ -54,7 +54,7 @@ public class UserRegisterServiceImpl implements UserRegisterService {
             return new ServiceResult.Builder(false).errormsg("注册失败").page(Page.PAGE_INDEX).build();
         }
 
-        UserVO user = new UserVO(userId, rUserName);
+        User user = new User(userId, rUserName);
         req.getSession().setAttribute("user", user);
         return new ServiceResult.Builder(true).page(Page.PAGE_USERHOME).build();
     }

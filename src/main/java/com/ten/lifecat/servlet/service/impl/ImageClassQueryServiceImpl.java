@@ -32,7 +32,7 @@ public class ImageClassQueryServiceImpl implements ImageClassQueryService {
     public ServiceResult execute(HttpServletRequest req, HttpServletResponse resp) {
         int userId = Integer.parseInt(req.getParameter("userId"));
 
-        String mockUrl = "http://localhost:8080/lifecatweb/pics/";
+        String mockUrl = "http://localhost:8080/servlet/pics/";
 
         List<AlbumClassVO> albumClassList = new ArrayList<>(3);
 

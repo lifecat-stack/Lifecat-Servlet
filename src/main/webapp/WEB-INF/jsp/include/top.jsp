@@ -59,7 +59,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/lifecatweb/index.jsp">
+                    <a href="/servlet/index.jsp">
                         <span class="glyphicon glyphicon-log-out"></span>
                         退出
                     </a>

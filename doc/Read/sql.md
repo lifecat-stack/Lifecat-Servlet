@@ -363,11 +363,11 @@
 ---
     Demo:
     INSERT INTO user_icon(user_id,icon_path,icon_gmt_create,icon_gmt_modified)
-    VALUES('1','D:\Java\lifecatweb\src\main\webapp\image\one\icon\icon.jpg','2018-01-01 00:00:00','2018-01-01 00:00:00')
+    VALUES('1','D:\Java\servlet\src\main\webapp\image\one\icon\icon.jpg','2018-01-01 00:00:00','2018-01-01 00:00:00')
     +---------+---------------------------------------------------+---------------------+---------------------+
     | user_id | icon_path                                         | icon_gmt_create     | icon_gmt_modified   |
     +---------+---------------------------------------------------+---------------------+---------------------+
-    |       1 | D:Javalifecatwebsrcmainwebappimageoneiconicon.jpg | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
+    |       1 | D:Javaservletsrcmainwebappimageoneiconicon.jpg | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
     +---------+---------------------------------------------------+---------------------+---------------------+
 #### 查询
     SELECT icon_path FROM user_icon where user_id = ?
@@ -383,24 +383,24 @@
     Demo:
     INSERT INTO image(image_text,image_path,is_deleted,user_id,class_id,image_gmt_create,image_gmt_modified)
     VALUES
-    ('lifecat01','/usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/ten/1/image1.jpg',
+    ('lifecat01','/usr/local/tomcat/apache-tomcat-9.0.6/webapps/servlet/image/ten/1/image1.jpg',
     1,1,1,'2018-01-01 00:00:00','2018-01-01 00:00:00')
     
     INSERT INTO image(image_text,image_path,is_deleted,user_id,class_id,image_gmt_create,image_gmt_modified)
     VALUES
-    ('lifecat02','/usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/ten/1/image2.jpg',
+    ('lifecat02','/usr/local/tomcat/apache-tomcat-9.0.6/webapps/servlet/image/ten/1/image2.jpg',
     1,1,1,'2018-01-01 00:00:00','2018-01-01 00:00:00')
     
     INSERT INTO image(image_text,image_path,is_deleted,user_id,class_id,image_gmt_create,image_gmt_modified)
     VALUES
-    ('lifecat03','/usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/ten/1/image3.jpg',
+    ('lifecat03','/usr/local/tomcat/apache-tomcat-9.0.6/webapps/servlet/image/ten/1/image3.jpg',
     1,1,1,'2018-01-01 00:00:00','2018-01-01 00:00:00')
     +----------+------------+---------------------------------------------------------------------------------+------------+---------+----------+---------------------+---------------------+
     | image_id | image_text | image_path                                                                      | is_deleted | user_id | class_id | image_gmt_create    | image_gmt_modified  |
     +----------+------------+---------------------------------------------------------------------------------+------------+---------+----------+---------------------+---------------------+
-    |        1 | lifecat01  | /usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/ten/1/image1.jpg |          1 |       1 |        1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
-    |        2 | lifecat02  | /usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/ten/1/image2.jpg |          1 |       1 |        1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
-    |        3 | lifecat03  | /usr/local/tomcat/apache-tomcat-9.0.6/webapps/lifecatweb/image/ten/1/image3.jpg |          1 |       1 |        1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
+    |        1 | lifecat01  | /usr/local/tomcat/apache-tomcat-9.0.6/webapps/servlet/image/ten/1/image1.jpg |          1 |       1 |        1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
+    |        2 | lifecat02  | /usr/local/tomcat/apache-tomcat-9.0.6/webapps/servlet/image/ten/1/image2.jpg |          1 |       1 |        1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
+    |        3 | lifecat03  | /usr/local/tomcat/apache-tomcat-9.0.6/webapps/servlet/image/ten/1/image3.jpg |          1 |       1 |        1 | 2018-01-01 00:00:00 | 2018-01-01 00:00:00 |
     +----------+------------+---------------------------------------------------------------------------------+------------+---------+----------+---------------------+---------------------+    
 #### 图片文本内容更新
     UPDATE image set image_text = ? where image_id = ?

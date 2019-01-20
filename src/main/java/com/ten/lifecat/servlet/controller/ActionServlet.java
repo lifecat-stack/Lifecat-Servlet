@@ -2,12 +2,9 @@ package com.ten.lifecat.servlet.controller;
 
 import com.ten.lifecat.servlet.constant.Page;
 import com.ten.lifecat.servlet.filter.form.FormResult;
-import com.ten.lifecat.servlet.constant.Page;
-import com.ten.lifecat.servlet.service.util.Service;
-import com.ten.lifecat.servlet.service.util.ServiceFactory;
-import com.ten.lifecat.servlet.service.util.Service;
-import com.ten.lifecat.servlet.service.util.ServiceFactory;
 import com.ten.lifecat.servlet.service.impl.ServiceResult;
+import com.ten.lifecat.servlet.service.util.Service;
+import com.ten.lifecat.servlet.service.util.ServiceFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,7 +31,7 @@ public class ActionServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // 获取请求URL /lifecatweb/index.jsp/user_login.do
+        // 获取请求URL /servlet/index.jsp/user_login.do
         String path = req.getRequestURI();
 
         boolean formResult = verifyResult(req);

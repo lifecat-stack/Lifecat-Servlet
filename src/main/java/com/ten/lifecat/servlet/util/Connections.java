@@ -1,7 +1,5 @@
 package com.ten.lifecat.servlet.util;
 
-import com.ten.constant.DataBase;
-import com.ten.constant.HOST;
 import com.ten.lifecat.servlet.constant.DataBase;
 import com.ten.lifecat.servlet.constant.HOST;
 import org.slf4j.Logger;

@@ -1,6 +1,6 @@
 package com.ten.lifecat.servlet.filter.form;
 
-import com.ten.filter.form.impl.*;
+import com.ten.lifecat.servlet.filter.form.impl.*;
 import com.ten.lifecat.servlet.filter.form.impl.*;
 
 /**

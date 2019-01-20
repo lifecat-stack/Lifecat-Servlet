@@ -1,6 +1,6 @@
 package com.ten.lifecat.servlet.service.util;
 
-import com.ten.service.impl.ServiceResult;
+import com.ten.lifecat.servlet.service.impl.ServiceResult;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

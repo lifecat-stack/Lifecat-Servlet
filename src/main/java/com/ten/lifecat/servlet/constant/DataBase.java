@@ -15,7 +15,7 @@ public class DataBase {
     /**
      * FIXME 数据库
      */
-    public static final String DATABASE = "lifecat";
+    public static final String DATABASE = "servlet";
     /**
      * 编码格式
      */
