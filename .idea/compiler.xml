@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lifecatweb" />
+        <module name="Lifecat-Servlet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lifecatweb" target="8" />
+      <module name="Lifecat-Servlet" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
