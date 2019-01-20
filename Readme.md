@@ -14,6 +14,10 @@
 
 开发文档请阅读 [doc/Tutorial.md](doc/Tutorial.md)
 
+## 使用注意
+
+master分支正在优化，若使用，请切换到feature-2分支，此分支可正常部署. 
+
 ## 使用
 ``` bash
 # clone
