@@ -537,11 +537,11 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/ten/dao" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lifecat-SSM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15096954" />
     <property name="project.structure.side.proportion" value="0.34747145" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -1750,7 +1750,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (Lifecat-Servlet)|Web</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1799,7 +1799,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.google.protobuf:protobuf-java:2.6.0</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
